@@ -1,0 +1,63 @@
+#page_home {
+
+	#tagline {
+
+		padding-bottom: 0;
+
+		h3 {
+			line-height: 1.5em;
+		}
+
+	}
+
+	#slider {
+		margin-top: 1em;
+	}
+
+	#brands {
+
+		.row {
+			margin: 5em 0;
+			margin-bottom: 0;
+		}
+
+		.dev-brand-outer {
+			position: relative;
+			height: 6em;
+
+			.dev-brand {
+				max-height: 100%;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+	}
+
+	.testimonial {
+		padding-bottom: 0;
+	}
+
+	#projects {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		#projects_list {
+			margin-top: 2em;
+
+			.project-description {
+				@include multi-line-ellipsis();
+			}
+
+			.project-cta {
+				margin-top: 1em;
+			}
+		}
+	}
+}

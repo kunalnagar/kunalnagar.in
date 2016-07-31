@@ -1,0 +1,13 @@
+@mixin multi-line-ellipsis($max-height: 5em, $max-width: 18em) {
+	overflow: hidden;
+	position: relative;
+	max-height: $max-height;
+	max-width: $max-width;
+
+	&:before {
+		content: '[...]';
+		position: absolute;
+		right: 0;
+		bottom: -7%;
+	}
+}
