@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<!--Boilerplate-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Main CSS File-->
+		<link rel="stylesheet" href="/css/style.min.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="layout">
+			<div id="header">
+  	<div class="container">
+    	<a href="/" id="logo">
+      		<span class="visible-large">Kunal Nagar</span>
+      		<span class="visible-small">KN</span>
+    	</a>
+    	<nav>
+      		<ul>
+        		<li id="about"><a href="/about/">About</a></li>
+        		<li id="twitter"><a href="https://twitter.com/_kunalnagar">Twitter</a></li>
+        		<li id="archive"><a href="/blog/">Archive</a></li>
+        		<li id="rss"><a href="/feed.xml">RSS</a></li>
+      		</ul>
+    	</nav>
+  	</div>
+</div>
+
+			<div id="main" class="container">
+				<div id="layout">
+					<div class="post">
+						<header>
+							<h3>
+								<a href="/blog/deploying-laravel-5-on-godaddy-shared-hosting">Deploy Laravel 5 on GoDaddy Shared Hosting</a>
+							</h3>
+							<p class="post-meta">
+								<span>Jan 08, 2015</span>
+							</p>
+						</header>
+						<p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd#.lup9tnaqo">Medium</a>.</p>
+
+<p>So your awesome project is ready for deployment and you need to set it up on GoDaddy shared hosting servers.</p>
+
+<h4 id="requirements">Requirements</h4>
+
+<p>Here are some things that you need before we get started:</p>
+
+<ul>
+  <li>A GoDaddy shared hosting account</li>
+  <li>SSH Access</li>
+  <li>Awesome Laravel Project to be deployed</li>
+</ul>
+
+<h4 id="steps">Steps</h4>
+
+<p>Before we start, let’s assume that your home directory on the server is</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">/home/content/kunalnagar/html</code></pre></figure>
+
+<p>and all your code goes into the html folder.</p>
+
+<ul>
+  <li>Create a folder on the same level as the html folder to hold your future Laravel installations. It’s just good practice.</li>
+  <li>Connect via SFTP to your shared hosting server.</li>
+  <li>Zip your entire project directory and upload it to the new folder you just created. Unzip it.</li>
+  <li>Move the public folder into the html folder and rename it to something like awesome-project.</li>
+</ul>
+
+<p>The approach mentioned above makes all of our application logic safe and our public folder is the one that is exposed.</p>
+
+<p>Open up the index.php file and change the paths to reflect our new directory structure. Here are the following lines you should change:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">require __DIR__.<span class="s1">'/../bootstrap/autoload.php'</span>;
+<span class="nv">$app</span> <span class="o">=</span> require_once __DIR__.<span class="s1">'/../bootstrap/app.php'</span>;</code></pre></figure>
+
+<p>Finally, we modify the main .htaccess file in the html directory. We do this so that you don’t have to type:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">http://yoursite.com/awesome-project</code></pre></figure>
+
+<p>Here are the contents of the .htaccess file:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">RewriteEngine On
+RewriteCond %<span class="o">{</span>REQUEST_URI<span class="o">}</span> !^awesome-project
+RewriteRule ^<span class="o">(</span>.<span class="k">*</span><span class="o">)</span><span class="nv">$ </span>awesome-project/<span class="nv">$1</span> <span class="o">[</span>L]</code></pre></figure>
+
+<p>And you’re done! Try visiting:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">http://yoursite.com</code></pre></figure>
+
+<p>and enjoy your awesome new project.</p>
+
+<p><em>Please note that this article only discusses deploying the project files. If you need to deploy your migrations, there are tons of articles that you can look up. The confusing part is setting up the directory structure and this article covers that point.</em></p>
+
+
+						<p class="share">
+							<span>Share on:</span>
+							<a href="https://twitter.com/intent/tweet?url=/blog/deploying-laravel-5-on-godaddy-shared-hosting&amp;text=Deploy Laravel 5 on GoDaddy Shared Hosting&amp;via=_kunalnagar">Twitter</a>,
+							<a href="https://facebook.com/sharer.php?u=/blog/deploying-laravel-5-on-godaddy-shared-hosting">Facebook</a>,
+							<a href="https://plus.google.com/share?url=/blog/deploying-laravel-5-on-godaddy-shared-hosting">Google+</a>,
+							<a href="https://www.linkedin.com/cws/share?url=/blog/deploying-laravel-5-on-godaddy-shared-hosting">LinkedIn</a>
+							or use the <a href="/blog/deploying-laravel-5-on-godaddy-shared-hosting">Permalink</a>
+						</p>
+						<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = "/blog/deploying-laravel-5-on-godaddy-shared-hosting";
+		this.page.identifier = "/blog/deploying-laravel-5-on-godaddy-shared-hosting";
+	};
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//kunalnagar.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
+		<script src="/js/main.js"></script>
+		<script id="dsq-count-scr" src="//kunalnagar.disqus.com/count.js" async></script>
+	</body>
+</html>

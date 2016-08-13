@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<!--Boilerplate-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Main CSS File-->
+		<link rel="stylesheet" href="/css/style.min.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="layout">
+			<div id="header">
+  	<div class="container">
+    	<a href="/" id="logo">
+      		<span class="visible-large">Kunal Nagar</span>
+      		<span class="visible-small">KN</span>
+    	</a>
+    	<nav>
+      		<ul>
+        		<li id="about"><a href="/about/">About</a></li>
+        		<li id="twitter"><a href="https://twitter.com/_kunalnagar">Twitter</a></li>
+        		<li id="archive"><a href="/blog/">Archive</a></li>
+        		<li id="rss"><a href="/feed.xml">RSS</a></li>
+      		</ul>
+    	</nav>
+  	</div>
+</div>
+
+			<div id="main" class="container">
+				<div id="layout">
+					<div class="post">
+						<header>
+							<h3>
+								<a href="/blog/fix-google-drive-dark-mode-icon">Fix Google Drive Dark Mode Icon</a>
+							</h3>
+							<p class="post-meta">
+								<span>Feb 11, 2015</span>
+							</p>
+						</header>
+						<p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
+
+<p>Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as <strong>.sh</strong></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#!/bin/bash</span>
+
+<span class="k">function </span>switch_files <span class="o">{</span>
+    mv <span class="nv">$1</span>.png <span class="nv">$1</span>.tmp.png
+    mv <span class="nv">$1</span>-inverse.png <span class="nv">$1</span>.png
+    mv <span class="nv">$1</span>.tmp.png <span class="nv">$1</span>-inverse.png
+    mv <span class="nv">$1</span>@2x.png <span class="nv">$1</span>@2x.tmp.png
+    mv <span class="nv">$1</span>-inverse@2x.png <span class="nv">$1</span>@2x.png
+    mv <span class="nv">$1</span>@2x.tmp.png <span class="nv">$1</span>-inverse@2x.png
+<span class="o">}</span>
+
+<span class="nv">RUNNING</span><span class="o">=</span><span class="sb">`</span>ps aux | grep <span class="s1">'/Google Drive'</span> | grep -v grep | wc -l | bc<span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$RUNNING</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="o">]</span>; <span class="k">then
+    </span>killall <span class="s1">'Google Drive'</span>
+    <span class="k">while</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$RUNNING</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="o">]</span>; <span class="k">do
+        </span>sleep 1
+        <span class="nv">RUNNING</span><span class="o">=</span><span class="sb">`</span>ps aux | grep <span class="s1">'/Google Drive'</span> | grep -v grep | wc -l | bc<span class="sb">`</span>
+    <span class="k">done
+fi
+</span>sleep 3
+
+<span class="nb">cd</span> <span class="s1">'/Applications/Google Drive.app/Contents/Resources/'</span>
+switch_files mac-animate1
+switch_files mac-animate2
+switch_files mac-animate3
+switch_files mac-animate4
+switch_files mac-animate5
+switch_files mac-animate6
+switch_files mac-animate7
+switch_files mac-animate8
+switch_files mac-error
+switch_files mac-inactive
+switch_files mac-normal
+switch_files mac-paused
+open <span class="s1">'/Applications/Google Drive.app'</span></code></pre></figure>
+
+<p>Then, run the following command:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">bash ~/Desktop/fix-google-drive-dark-mode-icons.sh</code></pre></figure>
+
+<p>It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.</p>
+
+						<p class="share">
+							<span>Share on:</span>
+							<a href="https://twitter.com/intent/tweet?url=/blog/fix-google-drive-dark-mode-icon&amp;text=Fix Google Drive Dark Mode Icon&amp;via=_kunalnagar">Twitter</a>,
+							<a href="https://facebook.com/sharer.php?u=/blog/fix-google-drive-dark-mode-icon">Facebook</a>,
+							<a href="https://plus.google.com/share?url=/blog/fix-google-drive-dark-mode-icon">Google+</a>,
+							<a href="https://www.linkedin.com/cws/share?url=/blog/fix-google-drive-dark-mode-icon">LinkedIn</a>
+							or use the <a href="/blog/fix-google-drive-dark-mode-icon">Permalink</a>
+						</p>
+						<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = "/blog/fix-google-drive-dark-mode-icon";
+		this.page.identifier = "/blog/fix-google-drive-dark-mode-icon";
+	};
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//kunalnagar.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
+		<script src="/js/main.js"></script>
+		<script id="dsq-count-scr" src="//kunalnagar.disqus.com/count.js" async></script>
+	</body>
+</html>

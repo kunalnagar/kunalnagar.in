@@ -16,8 +16,12 @@
 		<![endif]-->
 	</head>
 	<body>
-		{% include navbar.html %}
-		{{ content }}
+		<div id="layout">
+			{% include navbar.html %}
+			<div id="main" class="container">
+			{{ content }}
+			</div>
+		</div>
 		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
 		<script src="/js/main.js"></script>
 	</body>

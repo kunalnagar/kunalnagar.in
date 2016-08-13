@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development &amp; Design | Kunal Nagar Jaipur</title>
+    <description>If you are a company or an agency that cares about creating great users experiences on the web using fast, responsive web applications, I can help.
+</description>
+    <link>http://kunalnagar.in/</link>
+    <atom:link href="http://kunalnagar.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 13 Aug 2016 07:46:53 +0530</pubDate>
+    <lastBuildDate>Sat, 13 Aug 2016 07:46:53 +0530</lastBuildDate>
+    <generator>Jekyll v3.2.0</generator>
+    
+      <item>
+        <title>Bartender 2 for Mac OS X</title>
+        <description>&lt;p&gt;Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.&lt;/p&gt;
+
+&lt;h4 id=&quot;features&quot;&gt;Features&lt;/h4&gt;
+
+&lt;p&gt;Here are some of the top features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lets you tidy your menu bar apps how you want.&lt;/li&gt;
+  &lt;li&gt;See your menu bar apps when you want.&lt;/li&gt;
+  &lt;li&gt;Hide the apps you need to run, but do not need to see.&lt;/li&gt;
+  &lt;li&gt;Have the clean looking menu bar you want.&lt;/li&gt;
+  &lt;li&gt;Re-arrange the menu bar items as you wish.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;take-control-of-your-menu-bar&quot;&gt;Take Control of your Menu Bar&lt;/h4&gt;
+
+&lt;p&gt;Bartender allows you to choose which apps stay in the menu bar and which apps are hidden under the Bartender Bar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-1.png&quot; alt=&quot;Cleaned up Mac OS X Menu Bar&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;bartender-bar&quot;&gt;Bartender Bar&lt;/h4&gt;
+
+&lt;p&gt;Clicking on the Bartender icon will reveal the Bartender Bar. You can also assign a Hotkey to it like Alfred.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-2.png&quot; alt=&quot;Bartender Bar&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;other-features&quot;&gt;Other Features&lt;/h4&gt;
+
+&lt;p&gt;Here are some additional features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Recently updated apps with a notification will be shown outside the Bartender Bar (if hidden) for a certain amount of time that can be configured.&lt;/li&gt;
+  &lt;li&gt;Re-order all your menu bar items.&lt;/li&gt;
+  &lt;li&gt;Bartender Bar can be placed anywhere you want.&lt;/li&gt;
+  &lt;li&gt;It even hides the Notification Centre Icon.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It has also been featured in popular blogs such as &lt;a href=&quot;http://www.macstories.net/roundups/my-must-have-mac-apps-2012-edition/&quot;&gt;MacStories&lt;/a&gt; and &lt;a href=&quot;http://www.macworld.com/article/2023414/favorite-mac-gems-of-2012.html&quot;&gt;MacWorld&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;pricing&quot;&gt;Pricing&lt;/h4&gt;
+
+&lt;p&gt;Bartender 2 is free to download for try for 4 weeks. After that, you need to purchase the full version which costs &lt;strong&gt;$15&lt;/strong&gt; and I highly recommend that you buy it if you like a clean minimal OS X Menu Bar.&lt;/p&gt;
+
+&lt;p&gt;For more information, please visit the &lt;a href=&quot;http://www.macbartender.com/&quot;&gt;official site&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Feb 2016 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/mac-bartender-os-x-menu-bar-minimalism</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/mac-bartender-os-x-menu-bar-minimalism</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Browse YouTube like a boss</title>
+        <description>&lt;p&gt;YouTube is great. I use it all the time to learn, relax, listen to music and probably have a laugh or two. So I built a Chrome Extension that is a lighter version of YouTube Playlists.&lt;/p&gt;
+
+&lt;p&gt;It adds two things to youtube.com:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An “Add to Jukebox” button next to every video&lt;/li&gt;
+  &lt;li&gt;A Sidebar for consuming videos and making a list&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As soon as you activate the extension, you’ll see an “Add to Jukebox” button next to every video on YouTube.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-1.png&quot; alt=&quot;Add to Jukebox Button&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just click on it and the video will be automatically added to the Jukebox sidebar. You can continue adding more videos or just browse YouTube while the video keeps playing in the sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-2.png&quot; alt=&quot;YouTube Jukebox Sidebar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Videos are saved so even if you refresh the page, they will still be visible in the list unless you explicitly delete them. Each video gets a play button, trash and repeat button. When you click on the video, it starts playing and the status is denoted by a green line next to the video.&lt;/p&gt;
+
+&lt;p&gt;You can find the Add to Jukebox button on indvidual videos, search results, your YouTube home page and many more. It’s everywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-3.png&quot; alt=&quot;YouTube Jukebox Single Video&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-4.png&quot; alt=&quot;YouTube Jukebox Search Results&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-5.png&quot; alt=&quot;YouTube Jukebox Home Page&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;download&quot;&gt;Download&lt;/h4&gt;
+
+&lt;p&gt;It’s free and you can download it &lt;a href=&quot;https://chrome.google.com/webstore/detail/youtube-jukebox/hdncjkfadfcjifpibmgpmcldjdmemkcd?hl=en-US&amp;amp;gl=IN&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;demo&quot;&gt;Demo&lt;/h4&gt;
+
+&lt;p&gt;
+	&lt;iframe width=&quot;100%&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/wrkE5Aci5CI?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/chrome-extension-youtube-jukebox</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/chrome-extension-youtube-jukebox</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Custom 404 Pro</title>
+        <description>&lt;p&gt;Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has &lt;strong&gt;8,000+ active installs&lt;/strong&gt; as of August 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-0.png&quot; alt=&quot;Active Installs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While this may sound trivial to many developers, I built this for people who are less technical and don’t know how to write PHP. It was one of my friends, actually, who gave me the idea as they weren’t able to figure this out.&lt;/p&gt;
+
+&lt;h4 id=&quot;global-redirect-settings&quot;&gt;Global Redirect Settings&lt;/h4&gt;
+
+&lt;p&gt;These settings apply to all Logs. For example, if you choose the URL option, the plugin will redirect any 404s to the URL you specify. Here is a screenshot of what I had when this Blog was still WordPress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-1.png&quot; alt=&quot;Default Settings on kunalnagar.in&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A couple more options for you to choose from:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None (Do nothing)&lt;/li&gt;
+  &lt;li&gt;WordPress Page (Select an already created Page)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-2.png&quot; alt=&quot;WordPress Page Redirect&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You also get a Log Viewer to see all the 404s that happened on your site. The plugin records the following data for every 404:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User IP Address&lt;/li&gt;
+  &lt;li&gt;404 Path (The invalid URL that resulted in the 404)&lt;/li&gt;
+  &lt;li&gt;User Agent (Browser Type, etc)&lt;/li&gt;
+  &lt;li&gt;Global Settings Type&lt;/li&gt;
+  &lt;li&gt;Date&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-3.png&quot; alt=&quot;Recording 404 Logs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is an option to filter the Logs as well. In the screenshot above, you can see the filters being chosen as Internet Explorer, v8.0, Operating System (Windows).&lt;/p&gt;
+
+&lt;p&gt;You can also change the Settings for Individual Logs. For example, if the Global Settings say to redirect to a specific URL, you can set a specific 404 or Log to redirect to a specific URL just by editing the Log.&lt;/p&gt;
+
+&lt;p&gt;For example, let’s take the following Log and edit it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-4.png&quot; alt=&quot;Edit Single Log&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-5.png&quot; alt=&quot;Log Custom Fields&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just enter the custom URL in the respective field and everytime a 404 happens on that path, it will redirect to the custom URL and override the Global Settings for this Log.&lt;/p&gt;
+
+&lt;h4 id=&quot;general-settings&quot;&gt;General Settings&lt;/h4&gt;
+
+&lt;p&gt;There are some general settings available with the plugin:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Email (sends an email to the Admin on every 404)&lt;/li&gt;
+  &lt;li&gt;Clear Logs (helpful if you have tons of logs)&lt;/li&gt;
+  &lt;li&gt;Logging Status (enabled/disabled)&lt;/li&gt;
+  &lt;li&gt;Error Type (302/301/404)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/custom-404-pro/custom-404-pro-6.png&quot; alt=&quot;General Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There have been requests from users to record the 404 as a soft 302 or a 301 redirect. You can set that up here as well.&lt;/p&gt;
+
+&lt;h4 id=&quot;download&quot;&gt;Download&lt;/h4&gt;
+
+&lt;p&gt;The plugin is free and you can download it &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro&quot;&gt;here&lt;/a&gt;. Please rate the plugin if you enjoyed using it.&lt;/p&gt;
+
+&lt;p&gt;It is also open-sourced which means anyone can contribute. You can find the code on &lt;a href=&quot;https://github.com/kunalnagar/custom-404-pro&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 22 Apr 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/custom-404-pro</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/custom-404-pro</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Ionic Push Notifications</title>
+        <description>&lt;p&gt;Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s &lt;a href=&quot;http://ngcordova.com&quot;&gt;ngCordova&lt;/a&gt; service allows us to handle push notifications easily. This article assumes that you have a basic understanding of &lt;a href=&quot;http://developer.telerik.com/featured/what-is-a-hybrid-mobile-app/&quot;&gt;Hybrid Mobile Applications&lt;/a&gt; and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a &lt;a href=&quot;http://ionicframework.com/getting-started/&quot;&gt;Getting Started Tutorial for Ionic&lt;/a&gt; and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h4&gt;
+
+&lt;p&gt;We will be using a PHP script to send a push notification to our Ionic app. Our app will be running on an Android Device and it will use &lt;a href=&quot;https://developer.android.com/google/gcm/index.html&quot;&gt;Google Cloud Messaging (GCM)&lt;/a&gt; to handle notifications.&lt;/p&gt;
+
+&lt;h5 id=&quot;step-1&quot;&gt;Step 1&lt;/h5&gt;
+
+&lt;p&gt;Create a new Ionic App using the Get Started Tutorial on Ionic’s website.&lt;/p&gt;
+
+&lt;h5 id=&quot;step-2&quot;&gt;Step 2&lt;/h5&gt;
+
+&lt;p&gt;Add the Android Platform to our app using:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;ionic platform add android&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;step-3&quot;&gt;Step 3&lt;/h5&gt;
+
+&lt;p&gt;Build out the app using the process described here so that we can get the SHA1 key. To generate the .keystore file, use this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To get the SHA1 from the keystore, use this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You will get something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Alias name: androiddebugkey
+Creation date: 17 Feb 12
+Entry &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: &lt;span class=&quot;nv&quot;&gt;CN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Android Debug, &lt;span class=&quot;nv&quot;&gt;O&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Android, &lt;span class=&quot;nv&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;US
+Issuer: &lt;span class=&quot;nv&quot;&gt;CN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Android Debug, &lt;span class=&quot;nv&quot;&gt;O&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Android, &lt;span class=&quot;nv&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;US
+Serial number: 4f3dfc69
+Valid from: Fri Feb 17 15:06:17 SGT 2012 &lt;span class=&quot;k&quot;&gt;until&lt;/span&gt;: Sun Feb 09 15:06:17 SGT 2042
+Certificate fingerprints:
+MD5: 11:10:11:11:11:11:11:11:11:11:11:11:11:11:11:11
+SHA1: 11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:01:11
+Signature algorithm name: SHA1withRSA
+Version: 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We need the SHA1 key to register our Google App in the next step.&lt;/p&gt;
+
+&lt;h5 id=&quot;step-4&quot;&gt;Step 4&lt;/h5&gt;
+
+&lt;p&gt;Register a Google App in the &lt;a href=&quot;https://console.developers.google.com/&quot;&gt;API Console&lt;/a&gt;. Use any package name and enter the SHA1 that we extracted in our previous step.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/ionic-push-notifications/api-console.png&quot; alt=&quot;Edit Client Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After you save, you will get a screen with the following information. Copy the Client ID as we need it for future reference.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/ionic-push-notifications/api-console-2.png&quot; alt=&quot;Client ID Data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once that is done, you also need to create a Public API Access Key that will be used in the PHP script to authorise our app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/ionic-push-notifications/public-api-access.png&quot; alt=&quot;Public API Access&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Enable the GCM API in the APIs tab on the left. In my case, I have already activated it which is why it shows Disable API.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/ionic-push-notifications/enable-gcm.png&quot; alt=&quot;Enable GCM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last but not the least, copy your Project ID from the Overview tab. This is called the SENDER ID and we will use this in our Ionic App Controller.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/ionic-push-notifications/project-details.png&quot; alt=&quot;Project Details&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-5&quot;&gt;Step 5&lt;/h4&gt;
+
+&lt;p&gt;Now that our Google app is all setup, we can begin writing a PHP script that will accept a GET parameter of the registration ID to send a push notification. You can include multiple IDs that are comma-separated, but in this case we will be using just one. But how do we get a Registration ID?&lt;/p&gt;
+
+&lt;p&gt;Before our PHP script can send push notifications, we need to register our Android Device to receive notifications. This is done with the help of the &lt;a href=&quot;http://ngcordova.com/docs/plugins/pushNotifications/&quot;&gt;Push Notification plugin from ngCordova&lt;/a&gt; that we will discuss in Step 6.&lt;/p&gt;
+
+&lt;p&gt;Here is the PHP script:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// API access key from Google API's Console
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'API_ACCESS_KEY'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'ENTER_PUBLIC_API_ACCESS_KEY_FROM_API_CONSOLE'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$registrationIds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_GET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'id'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// prep the bundle
+&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'message'&lt;/span&gt; 	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'New Message'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'title'&lt;/span&gt;		&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'subtitle'&lt;/span&gt;	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Subtitle'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'tickerText'&lt;/span&gt;	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Ticker Text'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'vibrate'&lt;/span&gt;	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'sound'&lt;/span&gt;		&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'largeIcon'&lt;/span&gt;	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'large_icon'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'smallIcon'&lt;/span&gt;	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'small_icon'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'registration_ids'&lt;/span&gt; 	&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$registrationIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'data'&lt;/span&gt;			&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$msg&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$headers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'Authorization: key='&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;API_ACCESS_KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;s1&quot;&gt;'Content-Type: application/json'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;curl_init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CURLOPT_URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'https://android.googleapis.com/gcm/send'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CURLOPT_POST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CURLOPT_HTTPHEADER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$headers&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CURLOPT_RETURNTRANSFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CURLOPT_SSL_VERIFYPEER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CURLOPT_POSTFIELDS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;json_encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$fields&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;curl_exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;curl_close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-6&quot;&gt;Step 6&lt;/h4&gt;
+
+&lt;p&gt;Now that our PHP script is ready, install the Push Notifications plugin from ngCordova and then we need to write Ionic code to register our device:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;angular&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'starter'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'TestCtrl'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$rootScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$cordovaPush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$cordovaDevice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;androidConfig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;senderID&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ENTER_PROJECT_ID_FROM_API_CONSOLE_OVERVIEW&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;deviceready&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$cordovaPush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;androidConfig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// Success&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// Error&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$rootScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'$cordovaPush:notificationReceived'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'registered'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;regid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'registration ID = '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;regid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'message'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;c1&quot;&gt;// this is the actual push notification. its format depends on the data model from the push server&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'message = '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;' msgCount = '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msgcnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'error'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'GCM error = '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;nl&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'An unknown GCM event has occurred'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The above controller allows us to register the device when the app loads and it will give us a registration ID. This is the ID we need to provide to our PHP script to send a push notification to this device. In later stages, you might want to automate all this stuff but in this article, we are only covering the basics of Push Notifications.&lt;/p&gt;
+
+&lt;p&gt;When you run your PHP script, pass in the Registration ID as a GET parameter like:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://localhost/script.php?id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ENTER_REGISTRATION_ID_HERE&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Before you hit Enter, minimise the app on your Android Device and return to the Home Screen so that you can see the proper effect of the Push Notification arriving. Trust me, it feels good.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 21 Apr 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/ionic-push-notifications</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/ionic-push-notifications</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fix RDSRV Malware (VSearch/Downlite)</title>
+        <description>&lt;p&gt;The past week has been an absolute disaster for me as far as Web Security is concerned. My Macbook Pro picked up an adware from some shitty website that would not show up in most Adware Removal Tools. It was after a lot of research and thanks to &lt;a href=&quot;http://www.thesafemac.com/about/&quot;&gt;Thomas from The Safe Mac&lt;/a&gt; that I managed to fix the problem. In this article, I will guide you through the process and how I realised that the problem was not on my Mac, but in my Modem. Learn how to remove rdsrv malware from your network and computer.&lt;/p&gt;
+
+&lt;h4 id=&quot;types-of-adware-threats&quot;&gt;Types of Adware Threats&lt;/h4&gt;
+
+&lt;p&gt;Before we start working on our issue, we need to understand the various types of problems adware can create for us:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Software Threats (on your computer)&lt;/li&gt;
+  &lt;li&gt;Hardware Threats (on your Modem/Router)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;software-threats&quot;&gt;Software Threats&lt;/h5&gt;
+
+&lt;p&gt;These can generally be solved by running an Adware Removal Tool such as &lt;a href=&quot;http://www.adwaremedic.com/index.php&quot;&gt;AdwareMedic for Mac&lt;/a&gt; or &lt;a href=&quot;http://www.bitdefender.com/solutions/adware-removal-tool-for-pc.html&quot;&gt;Bitdefender for Windows&lt;/a&gt;. Its a really quick process and both these tools are more than capable of removing any kind of Adware from your computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-1.png&quot; alt=&quot;Adware Medic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the tool has done its job, you need to reset your browser. For Chrome users, go to Settings &amp;gt; Advanced Settings and at the bottom of the page, there will be an option called Reset Settings. Note: This will clear your browsing history, cache and cookies. Here are some screenshots for resetting Chrome:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-2.png&quot; alt=&quot;Chrome Reset Menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-3.png&quot; alt=&quot;Chrome Advanced Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-4.png&quot; alt=&quot;Chrome Reset Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-5.png&quot; alt=&quot;Chrome Reset Settings Dialog&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After this process is complete, you need to restart your machine and delete anything in the Trash. This should deal with Adware Threats on your computer. If you’re still getting the popups, it means your hardware/network has been hacked. Don’t worry, keep reading.&lt;/p&gt;
+
+&lt;h5 id=&quot;hardware-threats&quot;&gt;Hardware Threats&lt;/h5&gt;
+
+&lt;p&gt;These are pretty tricky to deal with and if you not a technical person, I would recommend you take help from one who is. In such cases, the adware has taken over your hardware device like a modem or a router and is rewriting links before they event get to your browser. Essentially, there are two parts to fixing this threat:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Factory Reset your device to its original settings&lt;/li&gt;
+  &lt;li&gt;Upgrade your device Firmware&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Before you start Factory Resetting any device, its a good idea to make a backup. The following screenshot shows the Reset Screen for a DLink DSL 2520U Modem:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-6.png&quot; alt=&quot;DLink DSL 2520U Dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You also need to download the latest firmware for your router from the respective Manufacturer Page. Make sure that you download the correct firmware and that it is compatible with your version of the modem/router.&lt;/p&gt;
+
+&lt;p&gt;After your modem/router is set to factory defaults and is upgraded with the latest firmware, you need to configure it with your ISP and create a new Wireless Network with a strong password.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Important Note&lt;/u&gt;: If you are still having problems after following both types of adware removal techniques, then it might be possible that a corrupted DNS has been added to your list of DNS servers. On your computer, go to your Network Settings and use manual IP configuration instead of DHCP and insert the correct DNS addresses by yourself.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it! After this process is complete, you will have eliminated almost all kinds of adware threats from your network and computer.&lt;/p&gt;
+
+&lt;h4 id=&quot;safety-measures&quot;&gt;Safety Measures&lt;/h4&gt;
+
+&lt;p&gt;The internet is a scary place. You need to be really cautious online and use your brain to make decisions on what links you should open or not. That being said, there are a few things that you can do so that such issues don’t pop-up (see what I did there?) more often:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a really good Network Password and change it every 3-4 months&lt;/li&gt;
+  &lt;li&gt;Clear your computer cache, temporary and junk files. Use something like &lt;a href=&quot;https://www.piriform.com/ccleaner&quot;&gt;CCleaner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;If you’re on Windows, use a reputable Anti-virus and Adware Protection Tool. Popular choices include &lt;a href=&quot;http://www.bitdefender.com/solutions/adware-removal-tool-for-pc.html&quot;&gt;Bitdefender&lt;/a&gt;, &lt;a href=&quot;http://www.eset.com/&quot;&gt;Eset&lt;/a&gt; etc.&lt;/li&gt;
+  &lt;li&gt;Inspect your Hard Drives regularly for permissions/bad sectors. Here is a &lt;a href=&quot;http://www.pcclassesonline.com/keep-your-macs-hard-drive-healthy/&quot;&gt;good video&lt;/a&gt; if you are on a Mac.&lt;/li&gt;
+  &lt;li&gt;Last but not the least, use common sense. Nobody on the Internet will give you a pill that can enlarge your penis to thrice its size or offer you a million dollars for clicking a link.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Credits: &lt;a href=&quot;http://www.thesafemac.com/about/&quot;&gt;TheSafeMac&lt;/a&gt; and &lt;a href=&quot;http://pcclassesonline.com/&quot;&gt;PCClassesOnline&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 Apr 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/fix-rdsrv-malware-vsearch-downlite</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/fix-rdsrv-malware-vsearch-downlite</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Install Laravel 5 on OS X</title>
+        <description>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I originally wrote this article on &lt;a href=&quot;https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh&quot;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you’re like me, you’ve probably spent countless hours on the web trying to figure out how to install the dev-develop version of Laravel on your machine. As of today, the latest Laravel version 4.2 but if you want to see the awesome Laravel 5 features, you need to upgrade.&lt;/p&gt;
+
+&lt;p&gt;In this article, you will learn how to setup Laravel 5 from scratch on OS X.&lt;/p&gt;
+
+&lt;h4 id=&quot;requirements&quot;&gt;Requirements&lt;/h4&gt;
+
+&lt;p&gt;Here are some things you must have:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Terminal&lt;/li&gt;
+  &lt;li&gt;XAMPP / MAMP (I will show you how to set it up using both of them)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;step-1-installing-composer&quot;&gt;Step 1: Installing Composer&lt;/h4&gt;
+
+&lt;p&gt;Composer is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.&lt;/p&gt;
+
+&lt;p&gt;It allows you to scaffold out a Laravel project and you also have the flexibility of specifying which version of Laravel your want.&lt;/p&gt;
+
+&lt;p&gt;To install composer, run the following commands in the terminal:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This will install Composer globally for you. To verify that your composer installation is successful, try running:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;composer&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;…and you’ll see a bunch of composer commands flow down your terminal screen. Hurray!&lt;/p&gt;
+
+&lt;p&gt;You can also update composer by running:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;composer self-update&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For more information, check out the in-depth guide on their website for &lt;a href=&quot;https://getcomposer.org/doc/00-intro.md&quot;&gt;Getting Started with Composer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-2-configuring-xamppmamp&quot;&gt;Step 2: Configuring XAMPP/MAMP&lt;/h4&gt;
+
+&lt;p&gt;When installing Laravel for the first time, more than 90% of the people face this dreaded PHP error:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;MCrypt PHP extension not installed.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;…and then they spend countless hours on the internet trying to figure out how to solve this and most of them will tell you to install MAMP. But what if you have XAMPP installed?&lt;/p&gt;
+
+&lt;h5 id=&quot;for-xampp-users&quot;&gt;For XAMPP users&lt;/h5&gt;
+
+&lt;p&gt;I’m using XAMPP 1.8.3–2 on my Mac and it comes with the MCrypt extension out of the box. All you need is to include it’s path in your .bash_profile&lt;/p&gt;
+
+&lt;p&gt;Open your .bash_profile by running:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;vim ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;…and paste the following line at the end:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/Applications/XAMPP/xamppfiles/bin:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Save the file by pressing : and typing wq and then press enter to quit out.&lt;/p&gt;
+
+&lt;p&gt;Remember to reload the .bash_profile by running:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h5 id=&quot;for-mamp-users&quot;&gt;For MAMP users&lt;/h5&gt;
+
+&lt;p&gt;The procedure is pretty much the same. You start out by opening your .bash_profile and pasting the following line at the end:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/Applications/MAMP/bin/php/php5.6/bin:&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Important note: This assumes that you have PHP 5.6 installed on your machine.&lt;/p&gt;
+
+&lt;p&gt;Remember to reload the .bash_profile by running:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-3-installing-laravel-5&quot;&gt;Step 3: Installing Laravel 5&lt;/h4&gt;
+
+&lt;p&gt;To create a new Laravel 5 project, run the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;composer create-project laravel/laravel dev-develop&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This will pull in the latest dev branch from the Github repo. If you want the latest stable version, run the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;composer create-project laravel/laravel --prefer-dist&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If everything goes well, try running:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;php artisan -V&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and if it says:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Laravel Framework version 5.0-dev&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;then you’re good to go!&lt;/p&gt;
+
+&lt;p&gt;To see your new shiny Laravel installation in action visit the public directory in the project to see the awesome new Laravel 5 home page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/install-laravel-5-on-os-x/laravel-1.png&quot; alt=&quot;Laravel 5 Home Page&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-4-installing-laravel-homestead&quot;&gt;Step 4: Installing Laravel Homestead&lt;/h4&gt;
+
+&lt;p&gt;If you have XAMPP/MAMP installed, you can actually browse to your project’s public directory to see the app in action.&lt;/p&gt;
+
+&lt;p&gt;To be honest, I’ve moved on from software like XAMPP and MAMP. They are good if you are just getting started, but for you to get better at deploying apps via the command line and really understand how things work, you need to &lt;a href=&quot;https://www.youtube.com/watch?v=kHue-HaXXzg&quot;&gt;let it go&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Laravel Homestead is an official, pre-packaged Vagrant “box” that provides you a wonderful development environment without requiring you to install PHP, HHVM, a web server, and any other server software on your local machine.&lt;/p&gt;
+
+&lt;p&gt;In other words, Laravel Homestead provides a complete environment for your Laravel project. It’s like having your own Rackspace or Digital Ocean server.&lt;/p&gt;
+
+&lt;p&gt;It uses Vagrant which allows you to create lightweight, reproducible, and portable development environments locally.&lt;/p&gt;
+
+&lt;p&gt;Before installing Laravel Homestead, you need to install 2 things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vagrant &lt;a href=&quot;https://www.vagrantup.com/downloads.html&quot;&gt;(Download)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Oracle VirtualBox &lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;(Download)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you have installed Vagrant on your machine, it is time to install Homestead.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;vagrant box add laravel/homestead&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It might take some time to install depending on your internet connection.&lt;/p&gt;
+
+&lt;p&gt;What it is essentially doing is installing a copy of the latest Ubuntu version with a complete LAMP stack setup so you have your own server that you can SSH into.&lt;/p&gt;
+
+&lt;p&gt;In fact, the files on your local machine are synced with the VM so essentially, if you make any change on your local machine, it is synced back to the VM. Note that everything is happening locally.&lt;/p&gt;
+
+&lt;p&gt;Once the installation completes, you need to create a Homestead.yaml file that will hold all the configuration for our VM.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;homestead init&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;By default, this will create a Homestead.yaml file in your root directory.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;~/.homestead/Homestead.yaml&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Open up the file and let’s discuss what’s relevant:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;authorize: ~/.ssh/id_rsa.pub&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You need to setup an SSH key on your machine that will allow you to SSH into your VM.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;folders:
+  — map: ~/path/to/project
+    to: /home/vagrant/project-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The above code maps the project on your machine to the project on the VM. For example, if your project directory is:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;~/Documents/LaravelProjects/laravel-test&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It’s going to map to the following in the VM:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;/home/vagrant/laravel-test&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Let’s look at the most important part:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;sites:
+  — map: project.app
+    to: /home/vagrant/project-name/public&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The above code provides you with a handy alias to enter in the browser that points to your project’s public directory which is how Laravel serves your app.&lt;/p&gt;
+
+&lt;p&gt;For example, you can enter something like:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://personal.app&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;…and see your Laravel project. You can also use the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://localhost:8000&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Okay, so we are ready to start Homestead. To do that, run the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;homestead up&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It will spit out a bunch of commands in your terminal. Once it’s done, you can SSH into your shiny new server by:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;homestead ssh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;…and if everything is setup correctly, you’ll see the following prompt:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;vagrant@homestead:~/project-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Congratulations! You just set up a new Laravel 5 project from scratch.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 Apr 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/install-laravel-5-on-os-x</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/install-laravel-5-on-os-x</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Setup Multiple SSH Keys on a Mac</title>
+        <description>&lt;p&gt;Learn how to setup multiple SSH keys on your mac. This can be useful when you need multiple accounts (may be for personal use or work) to be setup on a single mac.&lt;/p&gt;
+
+&lt;p&gt;
+	&lt;iframe width=&quot;100%&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/9u4QPEMFK4A?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&quot;video-notes&quot;&gt;Video Notes&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/generating-an-ssh-key/&quot;&gt;Generating SSH Keys (Github Article)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Boilerplate Text for Config file:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Host testgithub
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_rsa_testgithub&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 13 Feb 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/setup-multiple-ssh-keys-mac</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/setup-multiple-ssh-keys-mac</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fix Google Drive Dark Mode Icon</title>
+        <description>&lt;p&gt;If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.&lt;/p&gt;
+
+&lt;p&gt;Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as &lt;strong&gt;.sh&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;switch_files &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    mv &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.png &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.tmp.png
+    mv &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;-inverse.png &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.png
+    mv &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;.tmp.png &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;-inverse.png
+    mv &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;@2x.png &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;@2x.tmp.png
+    mv &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;-inverse@2x.png &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;@2x.png
+    mv &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;@2x.tmp.png &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;-inverse@2x.png
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;RUNNING&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;ps aux | grep &lt;span class=&quot;s1&quot;&gt;'/Google Drive'&lt;/span&gt; | grep -v grep | wc -l | bc&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$RUNNING&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then
+    &lt;/span&gt;killall &lt;span class=&quot;s1&quot;&gt;'Google Drive'&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$RUNNING&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;do
+        &lt;/span&gt;sleep 1
+        &lt;span class=&quot;nv&quot;&gt;RUNNING&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;ps aux | grep &lt;span class=&quot;s1&quot;&gt;'/Google Drive'&lt;/span&gt; | grep -v grep | wc -l | bc&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;done
+fi
+&lt;/span&gt;sleep 3
+
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/Applications/Google Drive.app/Contents/Resources/'&lt;/span&gt;
+switch_files mac-animate1
+switch_files mac-animate2
+switch_files mac-animate3
+switch_files mac-animate4
+switch_files mac-animate5
+switch_files mac-animate6
+switch_files mac-animate7
+switch_files mac-animate8
+switch_files mac-error
+switch_files mac-inactive
+switch_files mac-normal
+switch_files mac-paused
+open &lt;span class=&quot;s1&quot;&gt;'/Applications/Google Drive.app'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then, run the following command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;bash ~/Desktop/fix-google-drive-dark-mode-icons.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Feb 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/fix-google-drive-dark-mode-icon</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/fix-google-drive-dark-mode-icon</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Deploy Laravel 5 on GoDaddy Shared Hosting</title>
+        <description>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I originally wrote this article on &lt;a href=&quot;https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd#.lup9tnaqo&quot;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So your awesome project is ready for deployment and you need to set it up on GoDaddy shared hosting servers.&lt;/p&gt;
+
+&lt;h4 id=&quot;requirements&quot;&gt;Requirements&lt;/h4&gt;
+
+&lt;p&gt;Here are some things that you need before we get started:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A GoDaddy shared hosting account&lt;/li&gt;
+  &lt;li&gt;SSH Access&lt;/li&gt;
+  &lt;li&gt;Awesome Laravel Project to be deployed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;steps&quot;&gt;Steps&lt;/h4&gt;
+
+&lt;p&gt;Before we start, let’s assume that your home directory on the server is&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;/home/content/kunalnagar/html&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and all your code goes into the html folder.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a folder on the same level as the html folder to hold your future Laravel installations. It’s just good practice.&lt;/li&gt;
+  &lt;li&gt;Connect via SFTP to your shared hosting server.&lt;/li&gt;
+  &lt;li&gt;Zip your entire project directory and upload it to the new folder you just created. Unzip it.&lt;/li&gt;
+  &lt;li&gt;Move the public folder into the html folder and rename it to something like awesome-project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The approach mentioned above makes all of our application logic safe and our public folder is the one that is exposed.&lt;/p&gt;
+
+&lt;p&gt;Open up the index.php file and change the paths to reflect our new directory structure. Here are the following lines you should change:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;require __DIR__.&lt;span class=&quot;s1&quot;&gt;'/../bootstrap/autoload.php'&lt;/span&gt;;
+&lt;span class=&quot;nv&quot;&gt;$app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; require_once __DIR__.&lt;span class=&quot;s1&quot;&gt;'/../bootstrap/app.php'&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Finally, we modify the main .htaccess file in the html directory. We do this so that you don’t have to type:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://yoursite.com/awesome-project&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here are the contents of the .htaccess file:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;RewriteEngine On
+RewriteCond %&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;REQUEST_URI&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; !^awesome-project
+RewriteRule ^&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;awesome-project/&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;L]&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And you’re done! Try visiting:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://yoursite.com&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and enjoy your awesome new project.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please note that this article only discusses deploying the project files. If you need to deploy your migrations, there are tons of articles that you can look up. The confusing part is setting up the directory structure and this article covers that point.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 08 Jan 2015 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/deploying-laravel-5-on-godaddy-shared-hosting</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/deploying-laravel-5-on-godaddy-shared-hosting</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

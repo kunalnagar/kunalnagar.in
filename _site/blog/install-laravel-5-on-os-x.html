@@ -1,0 +1,265 @@
+<html>
+	<head>
+		<!--Boilerplate-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Main CSS File-->
+		<link rel="stylesheet" href="/css/style.min.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="layout">
+			<div id="header">
+  	<div class="container">
+    	<a href="/" id="logo">
+      		<span class="visible-large">Kunal Nagar</span>
+      		<span class="visible-small">KN</span>
+    	</a>
+    	<nav>
+      		<ul>
+        		<li id="about"><a href="/about/">About</a></li>
+        		<li id="twitter"><a href="https://twitter.com/_kunalnagar">Twitter</a></li>
+        		<li id="archive"><a href="/blog/">Archive</a></li>
+        		<li id="rss"><a href="/feed.xml">RSS</a></li>
+      		</ul>
+    	</nav>
+  	</div>
+</div>
+
+			<div id="main" class="container">
+				<div id="layout">
+					<div class="post">
+						<header>
+							<h3>
+								<a href="/blog/install-laravel-5-on-os-x">Install Laravel 5 on OS X</a>
+							</h3>
+							<p class="post-meta">
+								<span>Apr 14, 2015</span>
+							</p>
+						</header>
+						<p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
+
+<p>If you’re like me, you’ve probably spent countless hours on the web trying to figure out how to install the dev-develop version of Laravel on your machine. As of today, the latest Laravel version 4.2 but if you want to see the awesome Laravel 5 features, you need to upgrade.</p>
+
+<p>In this article, you will learn how to setup Laravel 5 from scratch on OS X.</p>
+
+<h4 id="requirements">Requirements</h4>
+
+<p>Here are some things you must have:</p>
+
+<ul>
+  <li>A Terminal</li>
+  <li>XAMPP / MAMP (I will show you how to set it up using both of them)</li>
+</ul>
+
+<h4 id="step-1-installing-composer">Step 1: Installing Composer</h4>
+
+<p>Composer is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.</p>
+
+<p>It allows you to scaffold out a Laravel project and you also have the flexibility of specifying which version of Laravel your want.</p>
+
+<p>To install composer, run the following commands in the terminal:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer</code></pre></figure>
+
+<p>This will install Composer globally for you. To verify that your composer installation is successful, try running:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer</code></pre></figure>
+
+<p>…and you’ll see a bunch of composer commands flow down your terminal screen. Hurray!</p>
+
+<p>You can also update composer by running:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer self-update</code></pre></figure>
+
+<p>For more information, check out the in-depth guide on their website for <a href="https://getcomposer.org/doc/00-intro.md">Getting Started with Composer</a>.</p>
+
+<h4 id="step-2-configuring-xamppmamp">Step 2: Configuring XAMPP/MAMP</h4>
+
+<p>When installing Laravel for the first time, more than 90% of the people face this dreaded PHP error:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">MCrypt PHP extension not installed.</code></pre></figure>
+
+<p>…and then they spend countless hours on the internet trying to figure out how to solve this and most of them will tell you to install MAMP. But what if you have XAMPP installed?</p>
+
+<h5 id="for-xampp-users">For XAMPP users</h5>
+
+<p>I’m using XAMPP 1.8.3–2 on my Mac and it comes with the MCrypt extension out of the box. All you need is to include it’s path in your .bash_profile</p>
+
+<p>Open your .bash_profile by running:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">vim ~/.bash_profile</code></pre></figure>
+
+<p>…and paste the following line at the end:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/Applications/XAMPP/xamppfiles/bin:</span><span class="nv">$PATH</span><span class="s2">"</span></code></pre></figure>
+
+<p>Save the file by pressing : and typing wq and then press enter to quit out.</p>
+
+<p>Remember to reload the .bash_profile by running:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">source</span> ~/.bash_profile</code></pre></figure>
+
+<h5 id="for-mamp-users">For MAMP users</h5>
+
+<p>The procedure is pretty much the same. You start out by opening your .bash_profile and pasting the following line at the end:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/Applications/MAMP/bin/php/php5.6/bin:<span class="nv">$PATH</span></code></pre></figure>
+
+<p>Important note: This assumes that you have PHP 5.6 installed on your machine.</p>
+
+<p>Remember to reload the .bash_profile by running:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">source</span> ~/.bash_profile</code></pre></figure>
+
+<h4 id="step-3-installing-laravel-5">Step 3: Installing Laravel 5</h4>
+
+<p>To create a new Laravel 5 project, run the following:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer create-project laravel/laravel dev-develop</code></pre></figure>
+
+<p>This will pull in the latest dev branch from the Github repo. If you want the latest stable version, run the following:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer create-project laravel/laravel --prefer-dist</code></pre></figure>
+
+<p>If everything goes well, try running:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">php artisan -V</code></pre></figure>
+
+<p>and if it says:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">Laravel Framework version 5.0-dev</code></pre></figure>
+
+<p>then you’re good to go!</p>
+
+<p>To see your new shiny Laravel installation in action visit the public directory in the project to see the awesome new Laravel 5 home page.</p>
+
+<p><img src="/img/blog/install-laravel-5-on-os-x/laravel-1.png" alt="Laravel 5 Home Page" /></p>
+
+<h4 id="step-4-installing-laravel-homestead">Step 4: Installing Laravel Homestead</h4>
+
+<p>If you have XAMPP/MAMP installed, you can actually browse to your project’s public directory to see the app in action.</p>
+
+<p>To be honest, I’ve moved on from software like XAMPP and MAMP. They are good if you are just getting started, but for you to get better at deploying apps via the command line and really understand how things work, you need to <a href="https://www.youtube.com/watch?v=kHue-HaXXzg">let it go</a>.</p>
+
+<p>Laravel Homestead is an official, pre-packaged Vagrant “box” that provides you a wonderful development environment without requiring you to install PHP, HHVM, a web server, and any other server software on your local machine.</p>
+
+<p>In other words, Laravel Homestead provides a complete environment for your Laravel project. It’s like having your own Rackspace or Digital Ocean server.</p>
+
+<p>It uses Vagrant which allows you to create lightweight, reproducible, and portable development environments locally.</p>
+
+<p>Before installing Laravel Homestead, you need to install 2 things:</p>
+
+<ul>
+  <li>Vagrant <a href="https://www.vagrantup.com/downloads.html">(Download)</a></li>
+  <li>Oracle VirtualBox <a href="https://www.virtualbox.org/wiki/Downloads">(Download)</a></li>
+</ul>
+
+<p>Once you have installed Vagrant on your machine, it is time to install Homestead.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">vagrant box add laravel/homestead</code></pre></figure>
+
+<p>It might take some time to install depending on your internet connection.</p>
+
+<p>What it is essentially doing is installing a copy of the latest Ubuntu version with a complete LAMP stack setup so you have your own server that you can SSH into.</p>
+
+<p>In fact, the files on your local machine are synced with the VM so essentially, if you make any change on your local machine, it is synced back to the VM. Note that everything is happening locally.</p>
+
+<p>Once the installation completes, you need to create a Homestead.yaml file that will hold all the configuration for our VM.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">homestead init</code></pre></figure>
+
+<p>By default, this will create a Homestead.yaml file in your root directory.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">~/.homestead/Homestead.yaml</code></pre></figure>
+
+<p>Open up the file and let’s discuss what’s relevant:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">authorize: ~/.ssh/id_rsa.pub</code></pre></figure>
+
+<p>You need to setup an SSH key on your machine that will allow you to SSH into your VM.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">folders:
+  — map: ~/path/to/project
+    to: /home/vagrant/project-name</code></pre></figure>
+
+<p>The above code maps the project on your machine to the project on the VM. For example, if your project directory is:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">~/Documents/LaravelProjects/laravel-test</code></pre></figure>
+
+<p>It’s going to map to the following in the VM:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">/home/vagrant/laravel-test</code></pre></figure>
+
+<p>Let’s look at the most important part:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">sites:
+  — map: project.app
+    to: /home/vagrant/project-name/public</code></pre></figure>
+
+<p>The above code provides you with a handy alias to enter in the browser that points to your project’s public directory which is how Laravel serves your app.</p>
+
+<p>For example, you can enter something like:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">http://personal.app</code></pre></figure>
+
+<p>…and see your Laravel project. You can also use the following:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">http://localhost:8000</code></pre></figure>
+
+<p>Okay, so we are ready to start Homestead. To do that, run the following:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">homestead up</code></pre></figure>
+
+<p>It will spit out a bunch of commands in your terminal. Once it’s done, you can SSH into your shiny new server by:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">homestead ssh</code></pre></figure>
+
+<p>…and if everything is setup correctly, you’ll see the following prompt:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">vagrant@homestead:~/project-name</code></pre></figure>
+
+<p>Congratulations! You just set up a new Laravel 5 project from scratch.</p>
+
+
+						<p class="share">
+							<span>Share on:</span>
+							<a href="https://twitter.com/intent/tweet?url=/blog/install-laravel-5-on-os-x&amp;text=Install Laravel 5 on OS X&amp;via=_kunalnagar">Twitter</a>,
+							<a href="https://facebook.com/sharer.php?u=/blog/install-laravel-5-on-os-x">Facebook</a>,
+							<a href="https://plus.google.com/share?url=/blog/install-laravel-5-on-os-x">Google+</a>,
+							<a href="https://www.linkedin.com/cws/share?url=/blog/install-laravel-5-on-os-x">LinkedIn</a>
+							or use the <a href="/blog/install-laravel-5-on-os-x">Permalink</a>
+						</p>
+						<div id="disqus_thread"></div>
+<script>
+	var disqus_config = function () {
+		this.page.url = "/blog/install-laravel-5-on-os-x";
+		this.page.identifier = "/blog/install-laravel-5-on-os-x";
+	};
+	(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//kunalnagar.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
+		<script src="/js/main.js"></script>
+		<script id="dsq-count-scr" src="//kunalnagar.disqus.com/count.js" async></script>
+	</body>
+</html>

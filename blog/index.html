@@ -1,20 +1,47 @@
 ---
 layout: default
 ---
-<div class="container">
-	<h1 class="page-heading">Posts</h1>
 
-	<ul class="post-list">
-		{% for post in site.posts %}
-		<li>
-			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-			<h2>
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-			</h2>
-		</li>
-		{% endfor %}
-	</ul>
-
-	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div id="layout">
+	<article class="post">
+		<header>
+			<h3><a href="/archive/">Archive</a></h3>
+		</header>
+		<ul class="archive-list-headers">
+			{% for post in site.posts %}
+				{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+				{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+				{% if year != nyear %}
+				<li><h4><a href="#{{ year }}">{{ year }}</a></h4></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<p>
+			Looking for a specific post?  You can either browse the list of posts below, or use the google toolbar to search this site.
+		</p>
+		<form method="get" action="http://www.google.com/search">
+			<input class="archive-search" type="text" name="q" maxlength="255" value="">
+			<input class="btn archive-search-submit" type="submit" value="Search">
+			<input style="display:none" type="radio" name="sitesearch" value="kunalnagar.in" checked="">
+		</form>
+		<ul class="archive-list">
+			{% for post in site.posts %}
+				{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+				{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+				{% if year != nyear %}
+					<li class="year-start">
+						<h4>
+							<a name="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</a>
+						</h4>
+					</li>
+				{% endif %}
+				<li class="archive-entry">
+					<div class="archive-date">{{ post.date | date: '%Y/%m/%d' }}</div>
+					<div class="archive-url">
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
+	</article>
 </div>

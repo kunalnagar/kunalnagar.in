@@ -2,137 +2,22 @@
 layout: default
 ---
 
-<div id="page_home">
-	<!--<div class="container"><hr /></div>-->
-	<section id="tagline" class="single-section">
-		<div class="container">
-			<h3 class="col-lg-8 col-lg-offset-2 text-center">
-				If you're looking for someone to create great user experiences using
-				responsive web applications, <span class="i-can-help">I can help</span>.
+<div class="landing-page">
+	{% for post in site.posts limit:1 %}
+	<div class="post">
+		<header>
+			<h3>
+				<a href="{{ post.url }}">{{ post.title }}</a>
 			</h3>
-		</div>
-	</section>
-	<section id="brands" class="single-section">
-		<div class="container">
-			<div class="page-header">
-				<h3>Technologies</h3>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-sm-4 col-xs-4 dev-brand-outer">
-					<img src="/img/dev-icons/angular-bw.svg" class="img-responsive dev-brand" alt="AngularJS" />
-				</div>
-				<div class="col-lg-4 col-sm-4 col-xs-4 dev-brand-outer">
-					<img src="/img/dev-icons/laravel-bw.svg" class="img-responsive dev-brand" alt="Laravel" />
-				</div>
-				<div class="col-lg-4 col-sm-4 col-xs-4 dev-brand-outer">
-					<img src="/img/dev-icons/nodejs-bw.svg" class="img-responsive dev-brand" alt="NodeJS" />
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-sm-4 col-xs-4 dev-brand-outer">
-					<img src="/img/dev-icons/sass-bw.svg" class="img-responsive dev-brand" alt="Sass" />
-				</div>
-				<div class="col-lg-4 col-sm-4 col-xs-4 dev-brand-outer">
-					<img src="/img/dev-icons/html5-bw.svg" class="img-responsive dev-brand" alt="HTML5" />
-				</div>
-				<div class="col-lg-4 col-sm-4 col-xs-4 dev-brand-outer">
-					<img src="/img/dev-icons/grunt-bw.svg" class="img-responsive dev-brand" alt="Grunt" />
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="main_services" class="single-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div id="web_dev_design">
-						<div class="page-header">
-							<h3>Web Development & Design</h3>
-						</div>
-						<p>
-							I work with companies across the globe, delivering web sites and
-							web applications for small and medium businesses with a strong focus
-							responsive design and performance.
-						</p>
-						<a href="/mobile-apps" class="btn btn-primary">
-							<span>Learn More</span>
-							<i class="fa fa-arrow-right icon-right"></i>
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div id="mobile_app_dev">
-						<div class="page-header">
-							<h3>Hybrid Mobile Applications</h3>
-						</div>
-						<p>
-							I work with companies across the globe, delivering web sites and
-							web applications for small and medium businesses with a strong focus
-							responsive design and performance.
-						</p>
-						<a href="/mobile-apps" class="btn btn-primary">
-							<span>Learn More</span>
-							<i class="fa fa-arrow-right icon-right"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="single-section testimonial">
-		<div class="container">
-			<blockquote>
-				<p>We are extremely satisfied with the work Kunal has done in presenting our brand identity.</p>
-				<footer>Dr. Arvind Asopa, Director at <cite title="Source Title"><a href="http://asopahospital.com">Asopa Hospital</a></cite></footer>
-			</blockquote>
-		</div>
-	</section>
-	<section id="projects" class="single-section">
-		<div class="container">
-			<div class="page-header">
-				<h3>
-					Recent Projects
-					<small>
-						<a href="/portfolio" class="pull-right">View All</a>
-					</small>
-				</h3>
-			</div>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, eum explicabo fugiat nemo numquam possimus quam. Architecto in laudantium minus molestias recusandae reiciendis suscipit? A consectetur earum optio vel.
+			<p class="post-meta">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
 			</p>
-			<div id="projects_list">
-				<div class="row">
-					{% for project in site.data.projects %}
-					<div class="col-lg-4">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h3 class="panel-title">{{ project.name }}</h3>
-							</div>
-							<div class="panel-body">
-								<p>
-									<img src="{{ project.imageUrl }}" class="img-responsive" alt="{{ project.name }}" />
-								</p>
-								<p class="project-description">{{ project.description }}</p>
-								<p class="project-cta">
-									<a href="{{ project.link }}" class="btn btn-primary">
-										<span>View Case Study</span>
-										<i class="fa fa-arrow-right icon-right"></i>
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="single-section testimonial">
-		<div class="container">
-			<blockquote>
-				<p>Kunal's expertise as a Web Developer is commendable! I would strongly recommend him for his dedication to this field and his passion for his work.</p>
-				<footer>Purnima Voria, Fonder & CEO at <cite title="National US India Chamber of Commerce"><a href="http://www.nuicc.org/">NUICC</a></cite></footer>
-			</blockquote>
-		</div>
-	</section>
+		</header>
+		{{ post.content }}
+		{% include share.html %}
+		<div class="comments">
+	    	<a href="{{ post.url }}">Leave a Comment</a>
+	    </div>
+	</div>
+	{% endfor %}
 </div>

@@ -1,0 +1,40 @@
+#footer {
+	margin-top: 2em;
+	padding: 2em 0;
+	background-color: #2f2f2f;
+
+	a {
+		color: #c7c7c7;
+	    font-size: 1.2em;
+	    padding-left: 0;
+	    text-decoration: none;
+
+	    &:hover {
+	    	color: $link-hover-color;
+	    }
+	}
+
+	#about_excerpt {
+		color: #ecebeb;
+	    font-size: 1.2em;
+	    line-height: 1.8em;
+	    padding-bottom: 0;
+	    padding-top: 1em;
+	}
+
+	#subscribe_rss {
+		padding-top: 0;
+		padding-bottom: 1em;
+	}
+
+	#copyright {
+		font-family: Montserrat,sans-serif;
+	}
+
+	#personal_img {
+
+		img {
+			width: 8em;
+		}
+	}
+}

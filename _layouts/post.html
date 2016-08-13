@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<!--Boilerplate-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Main CSS File-->
+		<link rel="stylesheet" href="/css/style.min.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="layout">
+			{% include navbar.html %}
+			<div id="main" class="container">
+				<div id="layout">
+					<div class="post">
+						<header>
+							<h3>
+								<a href="{{ page.url }}">{{ page.title }}</a>
+							</h3>
+							<p class="post-meta">
+								<span>{{ page.date | date: "%b %d, %Y" }}</span>
+							</p>
+						</header>
+						{{ content }}
+						<p class="share">
+							<span>Share on:</span>
+							<a href="https://twitter.com/intent/tweet?url={{ page.url }}&amp;text={{ page.title }}&amp;via=_kunalnagar">Twitter</a>,
+							<a href="https://facebook.com/sharer.php?u={{ page.url }}">Facebook</a>,
+							<a href="https://plus.google.com/share?url={{ page.url }}">Google+</a>,
+							<a href="https://www.linkedin.com/cws/share?url={{ page.url }}">LinkedIn</a>
+							or use the <a href="{{ page.url }}">Permalink</a>
+						</p>
+						{% include disqus.html %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
+		<script src="/js/main.js"></script>
+		<script id="dsq-count-scr" src="//{{ site.name }}.disqus.com/count.js" async></script>
+	</body>
+</html>
