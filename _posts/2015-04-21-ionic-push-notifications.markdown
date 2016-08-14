@@ -3,8 +3,8 @@ layout: post
 title:  "Ionic Push Notifications"
 date:   2015-04-21
 description: "Learn how to set up Push Notifications in Ionic"
-thumbfb: "/img/ionic-push-notifications/fb-ionic-push-notifications.jpg"
-thumbtwitter: "/img/ionic-push-notifications/twitter-ionic-push-notifications.jpg"
+thumbfb: "/img/blog/ionic-push-notifications/fb-ionic-push-notifications.jpg"
+thumbtwitter: "/img/blog/ionic-push-notifications/twitter-ionic-push-notifications.jpg"
 permalink: /blog/ionic-push-notifications/
 ---
 

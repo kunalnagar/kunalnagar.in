@@ -3,8 +3,8 @@ layout: post
 title:  "Custom 404 Pro"
 date:   2015-04-22
 description: "Learn how to set up Custom 404 Pro to manage your WordPress 404 Errors."
-thumbfb: "/img/custom-404-pro/fb-custom-404-pro.jpg"
-thumbtwitter: "/img/custom-404-pro/twitter-custom-404-pro.jpg"
+thumbfb: "/img/blog/custom-404-pro/fb-custom-404-pro.jpg"
+thumbtwitter: "/img/blog/custom-404-pro/twitter-custom-404-pro.jpg"
 permalink: /blog/custom-404-pro/
 ---
 

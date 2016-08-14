@@ -3,8 +3,8 @@ layout: post
 title:  "Install Laravel 5 on OS X"
 date:   2015-04-14
 description: "Learn how to install Laravel 5 on OS X using the dev-develop branch."
-thumbfb: "/img/install-laravel-5-on-os-x/fb-install-laravel-5-on-os-x.jpg"
-thumbtwitter: "/img/install-laravel-5-on-os-x/twitter-install-laravel-5-on-os-x.jpg"
+thumbfb: "/img/blog/install-laravel-5-on-os-x/fb-install-laravel-5-on-os-x.jpg"
+thumbtwitter: "/img/blog/install-laravel-5-on-os-x/twitter-install-laravel-5-on-os-x.jpg"
 permalink: /blog/install-laravel-5-on-os-x/
 ---
 
