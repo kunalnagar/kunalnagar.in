@@ -2,6 +2,7 @@
 layout: post
 title:  "Install Laravel 5 on OS X"
 date:   2015-04-14
+permalink: /blog/install-laravel-5-on-os-x/
 ---
 
 **Note:** I originally wrote this article on [Medium][medium-link].

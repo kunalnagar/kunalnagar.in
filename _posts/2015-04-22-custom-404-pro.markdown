@@ -2,6 +2,7 @@
 layout: post
 title:  "Custom 404 Pro"
 date:   2015-04-22
+permalink: /blog/custom-404-pro/
 ---
 
 Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has **8,000+ active installs** as of August 2016.

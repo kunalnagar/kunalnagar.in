@@ -2,6 +2,7 @@
 layout: post
 title:  "Deploy Laravel 5 on GoDaddy Shared Hosting"
 date:   2015-01-08
+permalink: /blog/deploying-laravel-5-on-godaddy-shared-hosting/
 ---
 
 **Note:** I originally wrote this article on [Medium][medium-link].

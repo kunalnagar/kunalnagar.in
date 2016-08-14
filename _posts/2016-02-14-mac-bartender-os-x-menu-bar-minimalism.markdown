@@ -2,6 +2,7 @@
 layout: post
 title:  "Bartender 2 for Mac OS X"
 date:   2016-02-14
+permalink: /blog/mac-bartender-os-x-menu-bar-minimalism/
 ---
 
 Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.

@@ -2,6 +2,7 @@
 layout: post
 title:  "Fix Google Drive Dark Mode Icon"
 date:   2015-02-11
+permalink: /blog/fix-google-drive-dark-mode-icon/
 ---
 
 If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.

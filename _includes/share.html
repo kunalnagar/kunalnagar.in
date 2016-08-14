@@ -1,7 +1,7 @@
 <p class="share">
 	<span>Share on:</span>
-	<a href="https://twitter.com/intent/tweet?url={{ post.url }}&amp;text={{ post.title }}&amp;via=_kunalnagar">Twitter</a>,
-	<a href="https://facebook.com/sharer.php?u={{ post.url }}">Facebook</a>,
-	<a href="https://plus.google.com/share?url={{ post.url }}">Google+</a>
-	or use the <a href="{{ post.url }}">Permalink</a>
+	<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ post.url }}&amp;text={{ post.title }}&amp;via=_kunalnagar">Twitter</a>,
+	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ post.url }}">Facebook</a>,
+	<a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}">Google+</a>
+	or use the <a href="{{ site.url }}{{ post.url }}">Permalink</a>
 </p>

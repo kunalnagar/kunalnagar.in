@@ -2,6 +2,7 @@
 layout: post
 title:  "Ionic Push Notifications"
 date:   2015-04-21
+permalink: /blog/ionic-push-notifications/
 ---
 
 Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s [ngCordova][ng-cordova] service allows us to handle push notifications easily. This article assumes that you have a basic understanding of [Hybrid Mobile Applications][hybrid-mobile-apps] and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a [Getting Started Tutorial for Ionic][getting-started-ionic] and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.

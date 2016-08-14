@@ -9,6 +9,9 @@
   src: url("../fonts/pn-bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
+#disqus_thread iframe {
+  box-shadow: none; }
+
 .highlight {
   background: #ffffff; }
 

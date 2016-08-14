@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+#disqus_thread {
+
+	iframe {
+		box-shadow: none;
+	}
+}
+
 .highlight {
     background: #ffffff;
 }

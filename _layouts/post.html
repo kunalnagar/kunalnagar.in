@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<title>{{ page.title }}</title>
 		<!--Boilerplate-->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,11 +33,11 @@
 						{{ content }}
 						<p class="share">
 							<span>Share on:</span>
-							<a href="https://twitter.com/intent/tweet?url={{ page.url }}&amp;text={{ page.title }}&amp;via=_kunalnagar">Twitter</a>,
-							<a href="https://facebook.com/sharer.php?u={{ page.url }}">Facebook</a>,
-							<a href="https://plus.google.com/share?url={{ page.url }}">Google+</a>,
-							<a href="https://www.linkedin.com/cws/share?url={{ page.url }}">LinkedIn</a>
-							or use the <a href="{{ page.url }}">Permalink</a>
+							<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=_kunalnagar">Twitter</a>,
+							<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a>,
+							<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Google+</a>,
+							<a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}">LinkedIn</a>
+							or use the <a href="{{ site.url }}{{ page.url }}">Permalink</a>
 						</p>
 						{% include disqus.html %}
 					</div>

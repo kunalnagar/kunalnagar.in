@@ -30,3 +30,4 @@ host: 0.0.0.0
 markdown: kramdown
 exclude: ["css", "_scss", "node_modules"]
 keep_files: ["css", "js"]
+include: ['.htaccess']

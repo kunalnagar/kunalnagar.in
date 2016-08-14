@@ -2,6 +2,7 @@
 layout: post
 title:  "Browse YouTube like a boss"
 date:   2015-10-18
+permalink: /blog/chrome-extension-youtube-jukebox/
 ---
 
 YouTube is great. I use it all the time to learn, relax, listen to music and probably have a laugh or two. So I built a Chrome Extension that is a lighter version of YouTube Playlists.
