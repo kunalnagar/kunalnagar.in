@@ -31,6 +31,8 @@ markdown: kramdown
 exclude: ["css", "_scss", "node_modules"]
 keep_files: ["css", "js"]
 include: ['.htaccess']
+gems:
+ - jekyll-sitemap
 
 # Facebook Open Graph App Info
 fb_admins: https://www.facebook.com/kunalnagar88
