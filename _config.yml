@@ -16,8 +16,8 @@
 title: Web Development & Design | Kunal Nagar Jaipur
 name: kunalnagar
 email: me@kunalnagar.in
-description: > # this means to ignore newlines until "baseurl:"
-  If you are a company or an agency that cares about creating great users experiences on the web using fast, responsive web applications, I can help.
+locale: en_US
+description: If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kunalnagar.in" # the base hostname & protocol for your site
 twitter_username: _kunalnagar
@@ -31,3 +31,8 @@ markdown: kramdown
 exclude: ["css", "_scss", "node_modules"]
 keep_files: ["css", "js"]
 include: ['.htaccess']
+
+# Facebook Open Graph App Info
+fb_admins: https://www.facebook.com/kunalnagar88
+fb_appid: 1761328640797363
+avatar: http://i.imgur.com/sd7Zl.jpg
