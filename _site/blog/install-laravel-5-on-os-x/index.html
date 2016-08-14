@@ -1,4 +1,4 @@
-<html itemscope itemtype="http://schema.org/Article">
+<html>
 	<head>
 		<title>Install Laravel 5 on OS X</title>
 		<!--Boilerplate-->
@@ -46,14 +46,15 @@
 
 
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-51202219-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
+  ga('create', 'UA-51202219-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
 
 		<!--Main CSS File-->
 		<link rel="stylesheet" href="/css/style.min.css">
@@ -86,16 +87,15 @@
 
 			<div id="main" class="container">
 				<div id="layout">
-					<div class="post">
+					<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+						<meta itemprop="keywords" content="" />
+						<meta itemprop="description" content="Learn how to install Laravel 5 on OS X using the dev-develop branch." />
 						<header>
-							<h3>
-								<a href="/blog/install-laravel-5-on-os-x/">Install Laravel 5 on OS X</a>
-							</h3>
-							<p class="post-meta">
-								<span>Apr 14, 2015</span>
-							</p>
+							<h3 itemprop="name">Install Laravel 5 on OS X</h3>
+							<time class="published post-meta" itemprop="datePublished" datetime="2015-04-14">April 14, 2015</time>
 						</header>
-						<p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
+						<div class="entry" itemprop="articleBody">
+							<p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
 
 <p>If you’re like me, you’ve probably spent countless hours on the web trying to figure out how to install the dev-develop version of Laravel on your machine. As of today, the latest Laravel version 4.2 but if you want to see the awesome Laravel 5 features, you need to upgrade.</p>
 
@@ -281,6 +281,7 @@ mv composer.phar /usr/local/bin/composer</code></pre></figure>
 <p>Congratulations! You just set up a new Laravel 5 project from scratch.</p>
 
 
+						</div>
 						<p class="share">
 							<span>Share on:</span>
 							<a href="https://twitter.com/intent/tweet?url=http://kunalnagar.in/blog/install-laravel-5-on-os-x/&amp;text=Install Laravel 5 on OS X&amp;via=_kunalnagar">Twitter</a>,
@@ -304,7 +305,7 @@ mv composer.phar /usr/local/bin/composer</code></pre></figure>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-					</div>
+					</article>
 				</div>
 			</div>
 		</div>

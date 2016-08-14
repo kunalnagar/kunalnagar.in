@@ -1,4 +1,4 @@
-<html itemscope itemtype="http://schema.org/Article">
+<html>
 	<head>
 		<title>Custom 404 Pro</title>
 		<!--Boilerplate-->
@@ -46,14 +46,15 @@
 
 
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-51202219-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
+  ga('create', 'UA-51202219-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
 
 		<!--Main CSS File-->
 		<link rel="stylesheet" href="/css/style.min.css">
@@ -86,16 +87,15 @@
 
 			<div id="main" class="container">
 				<div id="layout">
-					<div class="post">
+					<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+						<meta itemprop="keywords" content="" />
+						<meta itemprop="description" content="Learn how to set up Custom 404 Pro to manage your WordPress 404 Errors." />
 						<header>
-							<h3>
-								<a href="/blog/custom-404-pro/">Custom 404 Pro</a>
-							</h3>
-							<p class="post-meta">
-								<span>Apr 22, 2015</span>
-							</p>
+							<h3 itemprop="name">Custom 404 Pro</h3>
+							<time class="published post-meta" itemprop="datePublished" datetime="2015-04-22">April 22, 2015</time>
 						</header>
-						<p>Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has <strong>8,000+ active installs</strong> as of August 2016.</p>
+						<div class="entry" itemprop="articleBody">
+							<p>Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has <strong>8,000+ active installs</strong> as of August 2016.</p>
 
 <p><img src="/img/blog/custom-404-pro/custom-404-pro-0.png" alt="Active Installs" /></p>
 
@@ -162,6 +162,7 @@
 <p>It is also open-sourced which means anyone can contribute. You can find the code on <a href="https://github.com/kunalnagar/custom-404-pro">GitHub</a>.</p>
 
 
+						</div>
 						<p class="share">
 							<span>Share on:</span>
 							<a href="https://twitter.com/intent/tweet?url=http://kunalnagar.in/blog/custom-404-pro/&amp;text=Custom 404 Pro&amp;via=_kunalnagar">Twitter</a>,
@@ -185,7 +186,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-					</div>
+					</article>
 				</div>
 			</div>
 		</div>

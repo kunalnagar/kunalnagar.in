@@ -1,4 +1,4 @@
-<html itemscope itemtype="http://schema.org/Article">
+<html>
 	<head>
 		<title>Fix Google Drive Dark Mode Icon</title>
 		<!--Boilerplate-->
@@ -46,14 +46,15 @@
 
 
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-51202219-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
+  ga('create', 'UA-51202219-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
 
 		<!--Main CSS File-->
 		<link rel="stylesheet" href="/css/style.min.css">
@@ -86,16 +87,15 @@
 
 			<div id="main" class="container">
 				<div id="layout">
-					<div class="post">
+					<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+						<meta itemprop="keywords" content="" />
+						<meta itemprop="description" content="Learn how to fix the Google Drive Icon in Dark Mode on OS X Yosemite" />
 						<header>
-							<h3>
-								<a href="/blog/fix-google-drive-dark-mode-icon/">Fix Google Drive Dark Mode Icon</a>
-							</h3>
-							<p class="post-meta">
-								<span>Feb 11, 2015</span>
-							</p>
+							<h3 itemprop="name">Fix Google Drive Dark Mode Icon</h3>
+							<time class="published post-meta" itemprop="datePublished" datetime="2015-02-11">February 11, 2015</time>
 						</header>
-						<p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
+						<div class="entry" itemprop="articleBody">
+							<p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
 
 <p>Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as <strong>.sh</strong></p>
 
@@ -141,6 +141,7 @@ open <span class="s1">'/Applications/Google Drive.app'</span></code></pre></figu
 
 <p>It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.</p>
 
+						</div>
 						<p class="share">
 							<span>Share on:</span>
 							<a href="https://twitter.com/intent/tweet?url=http://kunalnagar.in/blog/fix-google-drive-dark-mode-icon/&amp;text=Fix Google Drive Dark Mode Icon&amp;via=_kunalnagar">Twitter</a>,
@@ -164,7 +165,7 @@ open <span class="s1">'/Applications/Google Drive.app'</span></code></pre></figu
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-					</div>
+					</article>
 				</div>
 			</div>
 		</div>
