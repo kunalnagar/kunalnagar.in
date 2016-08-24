@@ -5,9 +5,49 @@
     <description>If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.</description>
     <link>http://kunalnagar.in/</link>
     <atom:link href="http://kunalnagar.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Aug 2016 17:07:49 +0530</pubDate>
-    <lastBuildDate>Sun, 14 Aug 2016 17:07:49 +0530</lastBuildDate>
+    <pubDate>Wed, 24 Aug 2016 06:57:07 +0530</pubDate>
+    <lastBuildDate>Wed, 24 Aug 2016 06:57:07 +0530</lastBuildDate>
     <generator>Jekyll v3.2.0</generator>
+    
+      <item>
+        <title>TripMode - Your Mobile Data Savior</title>
+        <description>&lt;p&gt;TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.&lt;/p&gt;
+
+&lt;p&gt;TripMode automatically reduces your mobile data consumption when you use a mobile hotspot thus saving you data and money. It has been designed to be as simple as possible and is accessible at any time from the system tray.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/tripmode-mobile-data-savior/tripmode-1.jpg&quot; alt=&quot;TripMode for Mac&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/tripmode-mobile-data-savior/tripmode-2.jpg&quot; alt=&quot;TripMode for Windows&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;features&quot;&gt;Features&lt;/h4&gt;
+
+&lt;p&gt;TripMode primarily has three features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It blocks Internet access, to prevent unwanted traffic. All apps are blocked when TripMode is on. Only the ones that are selected by the user can access the Internet.&lt;/li&gt;
+  &lt;li&gt;It is turned on automatically. Only when it is needed. TripMode remembers which networks it was activated on before, and enables itself automatically when the user is connected to it. No need to dig in menus.&lt;/li&gt;
+  &lt;li&gt;It measures the quantity of traffic, to always stay informed. Keeping track of data consumption is key with limited data plans. TripMode displays the MB consumed per app and in total for the session, day or month.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;TripMode for Windows has its user interface optimized for the Windows versions it’s running on, enabling users with touch-tablets to easily interact with the app for example.&lt;/p&gt;
+
+&lt;h4 id=&quot;pricing--availability&quot;&gt;Pricing &amp;amp; Availability&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Compatible with Microsoft Windows 10, 8.1 and 7.&lt;/li&gt;
+  &lt;li&gt;Paid version: &lt;b&gt;$7.99&lt;/b&gt; VAT incl.&lt;/li&gt;
+  &lt;li&gt;Trial version: Unlimited 7-Days Trial. After the trial is over, users can keep using TripMode for a maximum of 15 min per day. Made for light users.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more information, check out their &lt;a href=&quot;http://www.tripmode.ch/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 24 Aug 2016 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/tripmode-mobile-data-savior/</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/tripmode-mobile-data-savior/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Bartender 2 for Mac OS X</title>
