@@ -627,6 +627,27 @@ a:focus, input:focus {
     outline: none;
 }
 
+.btn-donate {
+	width: 70%;
+    background-color: #39c53d;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.2em;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.7em;
+    margin: 0 auto;
+    width: 100%;
+
+    &:hover {
+    	background-color: darken(#39c53d, 5%);
+    	color: white;
+    	text-decoration: none;
+    }
+}
+
 input {
     vertical-align: baseline;
     height: 29px;
