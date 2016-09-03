@@ -6,6 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<meta name="description" content="{{ page.description }}">
+		<meta name="keywords" content="{{ page.tags | join: ',' }}">
+		<meta name="author" content="Kunal Nagar">
+
 		{% include tags-open-graph.html %}
 		{% include tags-twitter.html %}
 
@@ -35,7 +39,7 @@
 						<meta itemprop="publisher" content="Kunal Nagar" />
 						<header>
 							<h3 itemprop="name">{{ page.title }}</h3>
-							<time class="published post-meta" itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time>
+							<time class="published post-meta" itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
 						</header>
 						<div class="entry" itemprop="articleBody">
 							{{ content }}
