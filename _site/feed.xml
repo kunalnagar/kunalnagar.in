@@ -5,9 +5,86 @@
     <description>If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.</description>
     <link>http://kunalnagar.in/</link>
     <atom:link href="http://kunalnagar.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Sep 2016 17:45:33 +0530</pubDate>
-    <lastBuildDate>Sat, 10 Sep 2016 17:45:33 +0530</lastBuildDate>
+    <pubDate>Sat, 17 Sep 2016 20:38:04 +0530</pubDate>
+    <lastBuildDate>Sat, 17 Sep 2016 20:38:04 +0530</lastBuildDate>
     <generator>Jekyll v3.2.0</generator>
+    
+      <item>
+        <title>Rewrite WordPress Multisites</title>
+        <description>&lt;p&gt;Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, &lt;a href=&quot;https://codex.wordpress.org/Create_A_Network&quot;&gt;WordPress Multisite&lt;/a&gt; is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;&lt;b&gt;Note:&lt;/b&gt; Creating WordPress multisites is out of the scope of this article. For more info, check out &lt;a href=&quot;https://codex.wordpress.org/Create_A_Network&quot;&gt;this link&lt;/a&gt;.&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;When you set up a WordPress Multisite install, you create one root site and then all other multisites are created as subfolders (children). For example, you may end up with something like:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://localhost/blog/ &lt;span class=&quot;c&quot;&gt;# Root Site&lt;/span&gt;
+http://localhost/blog/knowledgebase/ &lt;span class=&quot;c&quot;&gt;# Multisite 1&lt;/span&gt;
+http://localhost/blog/site/ &lt;span class=&quot;c&quot;&gt;# Multisite 2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;As you can see, this is not ideal, you would ideally want something like this, i.e. each multisite at the same level as the root site (blog):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;http://localhost/blog/
+http://localhost/knowledgebase/
+http://localhost/site/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It turns out – you can easily do this in 3 steps:&lt;/p&gt;
+
+&lt;h4 id=&quot;step-1-create-a-root-level-htaccess&quot;&gt;Step 1: Create a root level .htaccess&lt;/h4&gt;
+
+&lt;p&gt;We need to intercept all request to multisites and then rewrite them to their original URLs.&lt;/p&gt;
+
+&lt;p&gt;Please note that this is NOT a redirect, but a rewrite. There’s a &lt;a href=&quot;http://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference&quot;&gt;difference&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Moving along – create an .htaccess file in the root. If you’re using something like XAMPP, create it in the &lt;b&gt;htdocs&lt;/b&gt; folder:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Root Level .htaccess&lt;/span&gt;
+
+RewriteEngine On
+RewriteBase /
+
+&lt;span class=&quot;c&quot;&gt;# Redirect knowledgebase to knowledgebase/&lt;/span&gt;
+RewriteRule knowledgebase&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;knowledgebase/ &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;301,L]
+
+&lt;span class=&quot;c&quot;&gt;# Intercept all requests coming to http://localhost/knowledgebase&lt;/span&gt;
+RewriteCond %&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;REQUEST_URI&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; /knowledgebase
+
+&lt;span class=&quot;c&quot;&gt;# Rewrite the intercepted requests to&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# /knowledgebase/anything-here from /blog/knowledgebase/anything-here&lt;/span&gt;
+RewriteRule ^knowledgebase/&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; blog/knowledgebase/&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;L]&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-2-update-the-database&quot;&gt;Step 2: Update the Database&lt;/h4&gt;
+
+&lt;p&gt;Just rewriting in the &lt;b&gt;.htaccess&lt;/b&gt; is not going to cut it for us. There are some entries in the Database that we need to change:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;c1&quot;&gt;-- Update wp_blogs table to remove /blog from the path&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wp_blogs&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;/knowledgebase/&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;/blog/knowledgebase/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- Update wp_SITE_ID_options siteurl to remove /blog in the URL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wp_2_options&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option_value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;http://localhost/knowledgebase&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;siteurl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- Update wp_SITE_ID_options home to remove /blog in the URL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wp_2_options&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option_value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;http://localhost/knowledgebase&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;option_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&quot;home&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-3-handle-cookiessessions&quot;&gt;Step 3: Handle cookies/sessions&lt;/h4&gt;
+
+&lt;p&gt;Now, we need to handle cookies/sessions since our URLs have changed. Paste the following lines in the &lt;b&gt;wp-config.php&lt;/b&gt; file below the multisite lines:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;define('ADMIN_COOKIE_PATH', '/');
+define('COOKIE_DOMAIN', '');
+define('COOKIEPATH', '');
+define('SITECOOKIEPATH', '');&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;b&gt;And we’re done!&lt;/b&gt; Visit your new multisite URL: &lt;a href=&quot;&quot;&gt;http://localhost/knowledgebase&lt;/a&gt; and you should be good to go!&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; For adding more multisites, add a necessary rule in &lt;b&gt;Step 1&lt;/b&gt; and update the necessary tables in &lt;b&gt;Step 2&lt;/b&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 17 Sep 2016 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/rewrite-wordpress-multisites/</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/rewrite-wordpress-multisites/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Shared Modules using RequireJS</title>
@@ -1106,33 +1183,6 @@ mv composer.phar /usr/local/bin/composer&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         <pubDate>Tue, 14 Apr 2015 00:00:00 +0530</pubDate>
         <link>http://kunalnagar.in/blog/install-laravel-5-on-os-x/</link>
         <guid isPermaLink="true">http://kunalnagar.in/blog/install-laravel-5-on-os-x/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Setup Multiple SSH Keys on a Mac</title>
-        <description>&lt;p&gt;Learn how to setup multiple SSH keys on your mac. This can be useful when you need multiple accounts (may be for personal use or work) to be setup on a single mac.&lt;/p&gt;
-
-&lt;p&gt;
-	&lt;iframe width=&quot;100%&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/9u4QPEMFK4A?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/p&gt;
-
-&lt;h4 id=&quot;video-notes&quot;&gt;Video Notes&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/generating-an-ssh-key/&quot;&gt;Generating SSH Keys (Github Article)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Boilerplate Text for Config file:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Host testgithub
- HostName github.com
- User git
- IdentityFile ~/.ssh/id_rsa_testgithub&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-        <pubDate>Fri, 13 Feb 2015 00:00:00 +0530</pubDate>
-        <link>http://kunalnagar.in/blog/setup-multiple-ssh-keys-mac/</link>
-        <guid isPermaLink="true">http://kunalnagar.in/blog/setup-multiple-ssh-keys-mac/</guid>
         
         
       </item>
