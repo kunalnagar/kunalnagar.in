@@ -18,7 +18,9 @@
 		{% include ga.html %}
 
 		<!--Main CSS File-->
-		<link rel="stylesheet" href="/css/style.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,50 +30,27 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="layout">
-			{% include navbar.html %}
-			<div id="main" class="container">
-				<div id="layout">
-					<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
-						<meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
-						<meta itemprop="description" content="{{ page.description }}" />
-						<meta itemprop="headline" content="{{ page.title }}" />
-						<meta itemprop="image" content="{{ page.thumbfb }}" />
-						<meta itemprop="author" content="Kunal Nagar" />
-						<meta itemprop="publisher" content="Kunal Nagar" />
-						<header>
-							<h3 itemprop="name">{{ page.title }}</h3>
-							<time class="published post-meta" itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%b %d, %Y" }}</time>
-						</header>
-						<div class="entry" itemprop="articleBody">
-							{{ content }}
-						</div>
-						<div itemprop="author">
-							<span itemscope itemtype="http://schema.org/Person">
-								<meta itemprop="name" content="Kunal Nagar" />
-								<meta itemprop="worksFor" content="ScaleGrid Inc." />
-							</span>
-						</div>
-						<!-- <div itemprop="publisher">
-							<span itemscope itemtype="http://schema.org/Person">
-								<meta itemprop="name" content="Kunal Nagar" />
-							</span>
-						</div> -->
-						<p class="share">
-							<span><b>Share on:</b></span>
-							<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=_kunalnagar">Twitter</a>,
-							<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a>,
-							<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Google+</a>,
-							<a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}">LinkedIn</a>
-							or use the <a href="{{ site.url }}{{ page.url }}">Permalink</a>
-						</p>
-						{% include disqus.html %}
-					</article>
-				</div>
+		{% include navbar.html %}
+		<div id="main" class="container">
+			<div class="page-post page-outer">
+			<header>
+	            <h3>{{ page.title }}</h3>
+	            <time class="published post-meta">{{ page.date | date: "%b %d, %Y" }}</time>
+	        </header>
+			{{ content }}
+			<p class="share">
+				<span><b>Share on:</b></span>
+				<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;text={{ page.title }}&amp;via=_kunalnagar">Twitter</a>,
+				<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}">Facebook</a>,
+				<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Google+</a>,
+				<a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}">LinkedIn</a>
+				or use the <a href="{{ site.url }}{{ page.url }}">Permalink</a>
+			</p>
+			{% include disqus.html %}
 			</div>
+			<!-- <script src="https://use.fontawesome.com/7dd3e58787.js"></script> -->
+			<script src="/js/main.js"></script>
+			<script id="dsq-count-scr" src="//{{ site.name }}.disqus.com/count.js" async></script>
 		</div>
-		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
-		<script src="/js/main.js"></script>
-		<script id="dsq-count-scr" src="//{{ site.name }}.disqus.com/count.js" async></script>
 	</body>
 </html>

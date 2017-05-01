@@ -1,8 +1,5 @@
-<html>
+<html lang="en">
 	<head>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<title>{{ site.title }}</title>
 		<!--Boilerplate-->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +9,19 @@
 		<meta name="keywords" content="{{ page.tags | join: ',' }}">
 		<meta name="author" content="Kunal Nagar">
 
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<title>{{ site.title }}</title>
+
 		{% include tags-open-graph.html %}
 		{% include tags-twitter.html %}
 
 		{% include ga.html %}
 
 		<!--Main CSS File-->
-		<link rel="stylesheet" href="/css/style.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,13 +31,13 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="layout">
-			{% include navbar.html %}
-			<div id="main" class="container">
-			{{ content }}
-			</div>
+		{% include navbar.html %}
+		<div id="main" class="container">
+		{{ content }}
 		</div>
-		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
+		<!-- <script src="https://use.fontawesome.com/7dd3e58787.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="/js/main.js"></script>
 	</body>
 </html>

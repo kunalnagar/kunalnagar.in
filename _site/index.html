@@ -1,8 +1,5 @@
-<html>
+<html lang="en">
 	<head>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<title>Web Development & Design | Kunal Nagar Jaipur</title>
 		<!--Boilerplate-->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +9,12 @@
 		<meta name="keywords" content="">
 		<meta name="author" content="Kunal Nagar">
 
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<title>Web Development & Design | Kunal Nagar</title>
+
 		<!-- Open Graph Tags Start -->
-<meta property="og:title" content="Web Development & Design | Kunal Nagar Jaipur">
+<meta property="og:title" content="Web Development & Design | Kunal Nagar">
 
 <meta property="og:type" content="website">
 
@@ -23,7 +24,7 @@
 
 <meta property="og:description" content="If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.">
 
-<meta property="og:site_name" content="Web Development & Design | Kunal Nagar Jaipur">
+<meta property="og:site_name" content="Web Development & Design | Kunal Nagar">
 
 <meta property="og:locale" content="en_US">
 
@@ -37,7 +38,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@_kunalnagar">
 <meta name="twitter:creator" content="@_kunalnagar">
-<meta name="twitter:title" content="Web Development & Design | Kunal Nagar Jaipur">
+<meta name="twitter:title" content="Web Development & Design | Kunal Nagar">
 <meta name="twitter:description" content="If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.">
 <meta name="twitter:image" content="http://i.imgur.com/sd7Zl.jpg">
 <!-- Twitter Card Tags End -->
@@ -55,7 +56,9 @@
 
 
 		<!--Main CSS File-->
-		<link rel="stylesheet" href="/css/style.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,122 +68,57 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="layout">
-			<div id="header">
-  	<div class="container">
-    	<a href="/" id="logo">
-      		<span class="visible-large">Kunal Nagar</span>
-      		<span class="visible-small">KN</span>
-    	</a>
-    	<nav>
-      		<ul>
-        		<li id="about"><a href="/about/">About</a></li>
-        		<li id="twitter"><a href="https://twitter.com/_kunalnagar">Twitter</a></li>
-        		<li id="archive"><a href="/blog/">Archive</a></li>
-        		<li id="rss"><a href="/feed.xml">RSS</a></li>
-      		</ul>
-    	</nav>
-  	</div>
-</div>
+		<nav id="main_nav">
+    <a href="/">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+            <title>Home</title>
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Plain-Logo-3">
+                    <g>
+                        <rect id="Rectangle-1" fill="#000000" x="1.8189894e-12" y="-3.63797881e-12" width="39.9832387" height="39.9832387"></rect>
+                        <text id="K" font-family="BrandonGrotesque-Medium, Brandon Grotesque" font-size="23.3810086" font-weight="400" fill="#FFFFFF">
+                            <tspan x="12.2552603" y="29.0489356">K</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
+</nav>
 
-			<div id="main" class="container">
-			<div class="landing-page">
-	
-	<div class="post">
-		<header>
-			<h3>
-				<a href="/blog/rewrite-wordpress-multisites/">Rewrite WordPress Multisites</a>
-			</h3>
-			<p class="post-meta">
-				<span>Sep 17, 2016</span>
-			</p>
-		</header>
-		<p>Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, <a href="https://codex.wordpress.org/Create_A_Network">WordPress Multisite</a> is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</p>
+		<div id="main" class="container">
+		<style>
+	nav a {
+		display: none;
+	}
+</style>
 
-<p><i><b>Note:</b> Creating WordPress multisites is out of the scope of this article. For more info, check out <a href="https://codex.wordpress.org/Create_A_Network">this link</a>.</i></p>
-
-<p>When you set up a WordPress Multisite install, you create one root site and then all other multisites are created as subfolders (children). For example, you may end up with something like:</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">http://localhost/blog/ <span class="c"># Root Site</span>
-http://localhost/blog/knowledgebase/ <span class="c"># Multisite 1</span>
-http://localhost/blog/site/ <span class="c"># Multisite 2</span></code></pre></figure>
-
-<p>As you can see, this is not ideal, you would ideally want something like this, i.e. each multisite at the same level as the root site (blog):</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">http://localhost/blog/
-http://localhost/knowledgebase/
-http://localhost/site/</code></pre></figure>
-
-<p>It turns out – you can easily do this in 3 steps:</p>
-
-<h4 id="step-1-create-a-root-level-htaccess">Step 1: Create a root level .htaccess</h4>
-
-<p>We need to intercept all request to multisites and then rewrite them to their original URLs.</p>
-
-<p>Please note that this is NOT a redirect, but a rewrite. There’s a <a href="http://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference">difference</a>.</p>
-
-<p>Moving along – create an .htaccess file in the root. If you’re using something like XAMPP, create it in the <b>htdocs</b> folder:</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Root Level .htaccess</span>
-
-RewriteEngine On
-RewriteBase /
-
-<span class="c"># Redirect knowledgebase to knowledgebase/</span>
-RewriteRule knowledgebase<span class="nv">$ </span>knowledgebase/ <span class="o">[</span><span class="nv">R</span><span class="o">=</span>301,L]
-
-<span class="c"># Intercept all requests coming to http://localhost/knowledgebase</span>
-RewriteCond %<span class="o">{</span>REQUEST_URI<span class="o">}</span> /knowledgebase
-
-<span class="c"># Rewrite the intercepted requests to</span>
-<span class="c"># /knowledgebase/anything-here from /blog/knowledgebase/anything-here</span>
-RewriteRule ^knowledgebase/<span class="o">(</span>.<span class="k">*</span><span class="o">)</span> blog/knowledgebase/<span class="nv">$1</span> <span class="o">[</span>L]</code></pre></figure>
-
-<h4 id="step-2-update-the-database">Step 2: Update the Database</h4>
-
-<p>Just rewriting in the <b>.htaccess</b> is not going to cut it for us. There are some entries in the Database that we need to change:</p>
-
-<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="c1">-- Update wp_blogs table to remove /blog from the path</span>
-<span class="k">UPDATE</span> <span class="n">wp_blogs</span> <span class="k">SET</span> <span class="n">path</span><span class="o">=</span><span class="nv">"/knowledgebase/"</span> <span class="k">WHERE</span> <span class="n">path</span><span class="o">=</span><span class="nv">"/blog/knowledgebase/"</span><span class="p">;</span>
-
-<span class="c1">-- Update wp_SITE_ID_options siteurl to remove /blog in the URL</span>
-<span class="k">UPDATE</span> <span class="n">wp_2_options</span> <span class="k">SET</span> <span class="n">option_value</span><span class="o">=</span><span class="nv">"http://localhost/knowledgebase"</span> <span class="k">WHERE</span> <span class="n">option_name</span><span class="o">=</span><span class="nv">"siteurl"</span><span class="p">;</span>
-
-<span class="c1">-- Update wp_SITE_ID_options home to remove /blog in the URL</span>
-<span class="k">UPDATE</span> <span class="n">wp_2_options</span> <span class="k">SET</span> <span class="n">option_value</span><span class="o">=</span><span class="nv">"http://localhost/knowledgebase"</span> <span class="k">WHERE</span> <span class="n">option_name</span><span class="o">=</span><span class="nv">"home"</span><span class="p">;</span></code></pre></figure>
-
-<h4 id="step-3-handle-cookiessessions">Step 3: Handle cookies/sessions</h4>
-
-<p>Now, we need to handle cookies/sessions since our URLs have changed. Paste the following lines in the <b>wp-config.php</b> file below the multisite lines:</p>
-
-<figure class="highlight"><pre><code class="language-php" data-lang="php">define('ADMIN_COOKIE_PATH', '/');
-define('COOKIE_DOMAIN', '');
-define('COOKIEPATH', '');
-define('SITECOOKIEPATH', '');</code></pre></figure>
-
-<p><b>And we’re done!</b> Visit your new multisite URL: <a href="">http://localhost/knowledgebase</a> and you should be good to go!</p>
-
-<p><b>Note:</b> For adding more multisites, add a necessary rule in <b>Step 1</b> and update the necessary tables in <b>Step 2</b>.</p>
-
-
-		<p class="share">
-	<span><b>Share on:</b></span>
-	<a href="https://twitter.com/intent/tweet?url=http://kunalnagar.in/blog/rewrite-wordpress-multisites/&amp;text=Rewrite WordPress Multisites&amp;via=_kunalnagar">Twitter</a>,
-	<a href="https://facebook.com/sharer.php?u=http://kunalnagar.in/blog/rewrite-wordpress-multisites/">Facebook</a>,
-	<a href="https://plus.google.com/share?url=http://kunalnagar.in/blog/rewrite-wordpress-multisites/">Google+</a>
-	or use the <a href="http://kunalnagar.in/blog/rewrite-wordpress-multisites/">Permalink</a>
-</p>
-
-		<div class="comments">
-	    	<a href="/blog/rewrite-wordpress-multisites/">Leave a Comment</a>
-	    </div>
-	</div>
-	
-</div>
-
-			</div>
+<div class="page-home">
+	<div class="home-intro text-center">
+		<img src="/img/logo-main.svg" class="logo-main" />
+		<h1>Hi. I am Kunal.</h1>
+		<h3>UI/UX Developer @ <a href="https://scalegrid.io" target="_blank" class="underline">ScaleGrid Inc.</a></h3>
+		<div class="home-meta">
+			<a href="/blog" class="home-meta-single">Blog</a>
+			<a href="/img/Résumé - Kunal Nagar.pdf" target="_blank" class="home-meta-single">Résumé</a>
+			<a href="https://www.linkedin.com/in/kunalnagar88/" class="home-meta-single" target="_blank">LinkedIn</a>
+			<a href="/about" class="home-meta-single">About</a>
+			<a href="/donate/" class="home-meta-single">Donate</a>
 		</div>
-		<script src="https://use.fontawesome.com/7dd3e58787.js"></script>
+	</div>
+	<div class="home-img">
+		<img src="img/me.png" class="img-responsive me" />
+	</div>
+</div>
+
+		</div>
+		<!-- <script src="https://use.fontawesome.com/7dd3e58787.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="/js/main.js"></script>
 	</body>
 </html>
