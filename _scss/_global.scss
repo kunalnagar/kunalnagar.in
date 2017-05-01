@@ -1,960 +1,200 @@
-// @font-face {
-//     font-family: 'proxima-nova';
-//     src: url('../fonts/pn.woff2') format('woff2');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: 'proxima-nova';
-//     src: url('../fonts/pn-bold.woff2') format('woff2');
-//     font-weight: bold;
-//     font-style: normal;
-// }
-
-@font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: url("../fonts/proximanova-bold-webfont.eot");
-    src: url("../fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_novasemibold';
-    src: url("../fonts/proximanova-semibold-webfont.eot");
-    src: url("../fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("../fonts/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_novalight';
-    src: url("../fonts/proximanova-light-webfont.eot");
-    src: url("../fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-light-webfont.woff") format("woff"), url("../fonts/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proximanova-light-webfont.svg#proxima_novalight") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url("../fonts/proximanova-regular-webfont.eot");
-    src: url("../fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_novaregular_italic';
-    src: url("../fonts/proximanova-regularitalic-webfont.eot");
-    src: url("../fonts/proximanova-regularitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regularitalic-webfont.woff") format("woff"), url("../fonts/proximanova-regularitalic-webfont.ttf") format("truetype"), url("../fonts/proximanova-regularitalic-webfont.svg#proxima_novaregular_italic") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_thinthin';
-    src: url("../fonts/proximanovat-thin-webfont.eot");
-    src: url("../fonts/proximanovat-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanovat-thin-webfont.woff2") format("woff2"), url("../fonts/proximanovat-thin-webfont.woff") format("woff"), url("../fonts/proximanovat-thin-webfont.ttf") format("truetype"), url("../fonts/proximanovat-thin-webfont.svg#proxima_nova_thinthin") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_condensedlight';
-    src: url("../fonts/proximanovacond-light-webfont.eot");
-    src: url("../fonts/proximanovacond-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanovacond-light-webfont.woff") format("woff"), url("../fonts/proximanovacond-light-webfont.ttf") format("truetype"), url("../fonts/proximanovacond-light-webfont.svg#proxima_nova_condensedlight") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_cn_rgregular';
-    src: url("../fonts/proximanovacond-regular-webfont.eot");
-    src: url("../fonts/proximanovacond-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanovacond-regular-webfont.woff") format("woff"), url("../fonts/proximanovacond-regular-webfont.ttf") format("truetype"), url("../fonts/proximanovacond-regular-webfont.svg#proxima_nova_cn_rgregular") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_condensedRgIt';
-    src: url("../fonts/proximanovacond-regularit-webfont.eot");
-    src: url("../fonts/proximanovacond-regularit-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanovacond-regularit-webfont.woff") format("woff"), url("../fonts/proximanovacond-regularit-webfont.ttf") format("truetype"), url("../fonts/proximanovacond-regularit-webfont.svg#proxima_nova_condensedRgIt") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_condensedSBd';
-    src: url("../fonts/proximanovacond-semibold-webfont.eot");
-    src: url("../fonts/proximanovacond-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanovacond-semibold-webfont.woff") format("woff"), url("../fonts/proximanovacond-semibold-webfont.ttf") format("truetype"), url("../fonts/proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'proxima_nova_cn_ththin';
-    src: url("../fonts/proximanovacond-thin-webfont.eot");
-    src: url("../fonts/proximanovacond-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanovacond-thin-webfont.woff2") format("woff2"), url("../fonts/proximanovacond-thin-webfont.woff") format("woff"), url("../fonts/proximanovacond-thin-webfont.ttf") format("truetype"), url("../fonts/proximanovacond-thin-webfont.svg#proxima_nova_cn_ththin") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-.proxima-nova {
-    font-family: "proxima_nova_rgregular"
-}
-.proxima-nova-bold {
-    font-family: "proxima_nova_rgbold"
-}
-.proxima-nova-semibold {
-    font-family: "proxima_novasemibold"
-}
-.proxima-nova-thin {
-    font-family: "proxima_nova_thinthin"
-}
-.proxima-nova-light {
-    font-family: "proxima_novalight"
-}
-.proxima-nova-italic {
-    font-family: "proxima_novaregular_italic"
-}
-.proxima-nova-condensed {
-    font-family: "proxima_nova_cn_rgregular"
-}
-.proxima-nova-condensed-bold {
-    font-family: "proxima_nova_condensedSBd"
-}
-.proxima-nova-condensed-thin {
-    font-family: "proxima_nova_cn_ththin"
-}
-.proxima-nova-condensed-light {
-    font-family: "proxima_nova_condensedlight"
-}
-.proxima-nova-condensed-italic {
-    font-family: "proxima_nova_condensedRgIt"
-}
-
-b {
-	font-family: "proxima_nova_rgbold";
-}
-
-#disqus_thread {
-
-	iframe {
-		box-shadow: none;
-	}
-}
-
-.highlight {
-    background: #ffffff;
-}
-
-.highlight .c {
-    color: #999988;
-    font-style: italic;
-}
-
-
-/* Comment */
-
-.highlight .err {
-    color: #a61717;
-    background-color: #e3d2d2;
-}
-
-
-/* Error */
-
-.highlight .k {
-    font-weight: bold;
-}
-
-
-/* Keyword */
-
-.highlight .o {
-    font-weight: bold;
-}
-
-
-/* Operator */
-
-.highlight .cm {
-    color: #999988;
-    font-style: italic;
-}
-
-
-/* Comment.Multiline */
-
-.highlight .cp {
-    color: #999999;
-    font-weight: bold;
-}
-
-
-/* Comment.Preproc */
-
-.highlight .c1 {
-    color: #999988;
-    font-style: italic;
-}
-
-
-/* Comment.Single */
-
-.highlight .cs {
-    color: #999999;
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-/* Comment.Special */
-
-.highlight .gd {
-    color: #000000;
-    background-color: #ffdddd;
-}
-
-
-/* Generic.Deleted */
-
-.highlight .gd .x {
-    color: #000000;
-    background-color: #ffaaaa;
-}
-
-
-/* Generic.Deleted.Specific */
-
-.highlight .ge {
-    font-style: italic;
-}
-
-
-/* Generic.Emph */
-
-.highlight .gr {
-    color: #aa0000;
-}
-
-
-/* Generic.Error */
-
-.highlight .gh {
-    color: #999999;
-}
-
-
-/* Generic.Heading */
-
-.highlight .gi {
-    color: #000000;
-    background-color: #ddffdd;
-}
-
-
-/* Generic.Inserted */
-
-.highlight .gi .x {
-    color: #000000;
-    background-color: #aaffaa;
-}
-
-
-/* Generic.Inserted.Specific */
-
-.highlight .go {
-    color: #888888;
-}
-
-
-/* Generic.Output */
-
-.highlight .gp {
-    color: #555555;
-}
-
-
-/* Generic.Prompt */
-
-.highlight .gs {
-    font-weight: bold;
-}
-
-
-/* Generic.Strong */
-
-.highlight .gu {
-    color: #aaaaaa;
-}
-
-
-/* Generic.Subheading */
-
-.highlight .gt {
-    color: #aa0000;
-}
-
-
-/* Generic.Traceback */
-
-.highlight .kc {
-    font-weight: bold;
-}
-
-
-/* Keyword.Constant */
-
-.highlight .kd {
-    font-weight: bold;
-}
-
-
-/* Keyword.Declaration */
-
-.highlight .kp {
-    font-weight: bold;
-}
-
-
-/* Keyword.Pseudo */
-
-.highlight .kr {
-    font-weight: bold;
-}
-
-
-/* Keyword.Reserved */
-
-.highlight .kt {
-    color: #445588;
-    font-weight: bold;
-}
-
-
-/* Keyword.Type */
-
-.highlight .m {
-    color: #009999;
-}
-
-
-/* Literal.Number */
-
-.highlight .s {
-    color: #d14;
-}
-
-
-/* Literal.String */
-
-.highlight .na {
-    color: #008080;
-}
-
-
-/* Name.Attribute */
-
-.highlight .nb {
-    color: #0086B3;
-}
-
-
-/* Name.Builtin */
-
-.highlight .nc {
-    color: #445588;
-    font-weight: bold;
-}
-
-
-/* Name.Class */
-
-.highlight .no {
-    color: #008080;
-}
-
-
-/* Name.Constant */
-
-.highlight .ni {
-    color: #800080;
-}
-
-
-/* Name.Entity */
-
-.highlight .ne {
-    color: #990000;
-    font-weight: bold;
-}
-
-
-/* Name.Exception */
-
-.highlight .nf {
-    color: #990000;
-    font-weight: bold;
-}
-
-
-/* Name.Function */
-
-.highlight .nn {
-    color: #555555;
-}
-
-
-/* Name.Namespace */
-
-.highlight .nt {
-    color: #000080;
-}
-
-
-/* Name.Tag */
-
-.highlight .nv {
-    color: #008080;
-}
-
-
-/* Name.Variable */
-
-.highlight .ow {
-    font-weight: bold;
-}
-
-
-/* Operator.Word */
-
-.highlight .w {
-    color: #bbbbbb;
-}
-
-
-/* Text.Whitespace */
-
-.highlight .mf {
-    color: #009999;
-}
-
-
-/* Literal.Number.Float */
-
-.highlight .mh {
-    color: #009999;
-}
-
-
-/* Literal.Number.Hex */
-
-.highlight .mi {
-    color: #009999;
-}
-
-
-/* Literal.Number.Integer */
-
-.highlight .mo {
-    color: #009999;
-}
-
-
-/* Literal.Number.Oct */
-
-.highlight .sb {
-    color: #d14;
-}
-
-
-/* Literal.String.Backtick */
-
-.highlight .sc {
-    color: #d14;
-}
-
-
-/* Literal.String.Char */
-
-.highlight .sd {
-    color: #d14;
-}
-
-
-/* Literal.String.Doc */
-
-.highlight .s2 {
-    color: #d14;
-}
-
-
-/* Literal.String.Double */
-
-.highlight .se {
-    color: #d14;
-}
-
-
-/* Literal.String.Escape */
-
-.highlight .sh {
-    color: #d14;
-}
-
-
-/* Literal.String.Heredoc */
-
-.highlight .si {
-    color: #d14;
-}
-
-
-/* Literal.String.Interpol */
-
-.highlight .sx {
-    color: #d14;
-}
-
-
-/* Literal.String.Other */
-
-.highlight .sr {
-    color: #009926;
-}
-
-
-/* Literal.String.Regex */
-
-.highlight .s1 {
-    color: #d14;
-}
-
-
-/* Literal.String.Single */
-
-.highlight .ss {
-    color: #990073;
-}
-
-
-/* Literal.String.Symbol */
-
-.highlight .bp {
-    color: #999999;
-}
-
-
-/* Name.Builtin.Pseudo */
-
-.highlight .vc {
-    color: #008080;
-}
-
-
-/* Name.Variable.Class */
-
-.highlight .vg {
-    color: #008080;
-}
-
-
-/* Name.Variable.Global */
-
-.highlight .vi {
-    color: #008080;
-}
-
-
-/* Name.Variable.Instance */
-
-.highlight .il {
-    color: #009999;
-}
-
-
-/* Literal.Number.Integer.Long */
-
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-html {
-    border-top: 6px solid #444;
-    // font: 1.125em/1.5 "proxima_nova_rgregular", "helvetica neue", helvetica, arial, sans-serif;
-    font: 1.125em/1.5 "proxima_nova_rgregular", "helvetica neue", helvetica, arial, sans-serif;
-    // font-family: "proxima_nova_rgregular";
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    color: #444;
-}
+$brand-color: #000000;
 
 body {
-    margin: 0;
-    margin-bottom: 2em;
-    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif !important;
+    line-height: 1.8em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1.5rem;
-    font-family: "adelle", georgia, times, "times new roman", serif;
-    color: #4c494f;
+	font-family: 'Josefin Slab', serif;
 }
 
-h3 {
-    font-size: 1.66667rem;
-    line-height: 1.4;
-}
-
-h5 {
-    font-size: 1em;
+.no-float {
+	float: none;
 }
 
 a {
-    text-decoration: none;
-    text-shadow: none;
-    color: #239cc3;
-    -webkit-transition: color 0.3s linear;
-    -moz-transition: color 0.3s linear;
-    -ms-transition: color 0.3s linear;
-    -o-transition: color 0.3s linear;
-    transition: color 0.3s linear;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #d54e21;
-}
-
-a:focus, input:focus {
-    outline: none;
-}
-
-.btn-donate {
-	width: 70%;
-    background-color: #39c53d;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1.2em;
-    border: none;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0.7em;
-    margin: 0 auto;
-    width: 100%;
+    color: #333333;
 
     &:hover {
-    	background-color: darken(#39c53d, 5%);
-    	color: white;
-    	text-decoration: none;
+        color: #333333;
     }
 }
 
-input {
-    vertical-align: baseline;
-    height: 29px;
+.underline {
+    text-decoration: underline;
 }
 
-p {
-    margin: 0 0 1.5rem;
-    word-wrap: break-word;
+.page-outer {
+	padding: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
-blockquote {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
+.page-home {
+
+    .home-intro {
+        font-family: 'Josefin Slab', serif;
+        float: left;
+        width: 66.1%;
+        padding-right: 1em;
+        padding-top: 23vh;
+
+        .logo-main {
+            margin-bottom: 2em;
+        }
+
+        .home-meta {
+            padding-top: 4%;
+            border-top: 2px solid black;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 5%;
+            font-size: 17px;
+
+            .home-meta-single {
+                margin-right: 2em;
+            }
+        }
+    }
+
+    .home-img {
+        float: right;
+        width: 33.9%;
+
+        img {
+        	width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            transition: opacity .25s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
 }
 
-ul, ol {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
-}
-
-ul {
-    padding-left: 40px;
-    margin-bottom: 1.5rem;
-    list-style-type: disc;
-}
-
-ol {
-    padding-left: 2.2em;
-    margin-bottom: 1.5rem;
-}
-
-img {
-    max-width: 100%;
-}
-
-pre {
-    margin: 0;
-}
-
-
-/* ------- End of Generic styles ---------- */
-
-.container {
-    width: 90%;
-    max-width: 42em;
-    margin: 0 auto;
-}
-
-#header {
-    margin-bottom: 3rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ccc;
-    background: #f7f7f7;
-}
-
-#header #logo {
-    font-size: 1.33333rem;
-    line-height: 1;
-    font-family: "adelle", georgia, times, "times new roman", serif;
-}
-
-#header .container a:hover {
-    text-decoration: none;
-}
-
-#header nav {
-    float: right;
-    font-size: 1.16667rem;
-    line-height: 1.333333333;
-}
-
-#header nav ul {
+#main_nav {
+    width: 60px;
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-#header nav li {
     display: inline-block;
-    padding-left: 0.75rem;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+
+    a {
+    	text-decoration: none;
+    }
+
+    svg {
+        margin: 8px;
+        margin-top: 25px;
+    }
 }
 
-#header li a {
-    font-size: 0.8em;
-}
+#main {
+    // width: 100%;
+    // height: 100%;
+    // padding-left: 80px;
+    // position: relative;
 
+    // width: 93%;
+    // height: 100%;
+    // margin-left: 80px;
+    // position: relative;
+    // padding-left: 0;
 
-/* End of Header & Footer Styles */
-
-.post > header {
+    width: calc(100% - 60px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 60px;
     position: relative;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
-}
-
-.post > header > h3 {
-    margin-bottom: 0.25rem;
-}
-
-.post > header > h3 > a {
-    color: #4c494f;
-    text-decoration: none;
-}
-
-.post > header > h3 > a:hover {
-    color: #d54e21;
-}
-
-.post > header .post-meta {
-    color: #d7d7db;
-    margin-bottom: 0.5rem;
-}
-
-.post .comments {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5em;
-    margin-bottom: 1.5rem;
-    border-top: 1px solid #ccc;
-}
-
-.post .tags {
-    font-weight: bold;
-}
-
-.post .tags > a {
-    font-weight: normal;
-}
-
-.post .share span {
-    font-weight: bold;
-}
-
-.post .post-excerpt-list {
-    padding-bottom: 1.5em;
-}
-
-.post h4 {
-    font-size: 1.33333rem;
-}
-
-.post blockquote {
-    padding: 0.75rem 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #f0f2f4;
-}
-
-.post blockquote > p:last-child {
-    margin-bottom: 0px;
-}
-
-.post img,
-.post iframe {
-    padding: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
-
-.highlight {
-    display: block;
-    overflow: auto;
-    margin: 0 0 1.5rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: #f0f2f4;
-}
-
-.categories {
-    background: #f0f2f4;
-    padding: 1rem 0;
-    box-shadow: 0 1px 0 #fff;
-    border-radius: 4px;
-}
-
-.categories ol {
-    list-style: none !important;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.categories ol li {
-    display: inline-block;
-    line-height: 2.5em;
-    margin: 0 0.65em !important;
-}
-
-.archive-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.archive-list .archive-entry {
-    display: table-table;
-}
-
-.archive-list .archive-date, .archive-list .archive-url {
-    display: table-cell;
-}
-
-.archive-list .archive-date {
-    padding-left: 20px;
-    width: 140px;
-}
-
-.archive-list h4 {
-    margin-bottom: 0;
-}
-
-.archive-list .year-start {
-    margin-top: 25px;
-    margin-bottom: 10px;
 }
 
 .archive-list-headers {
-    list-style: none;
+	list-style: none;
+    display: inline-block;
     padding-left: 0;
-    margin: 0 auto;
-    width: 95%;
-    display: table;
-}
+    width: 100%;
 
-.archive-list-headers li {
-    display: table-cell;
-    text-align: center;
-}
-
-.archive-list-headers li h4:after {
-    content: "\00b7";
-    color: rgba(0, 0, 0, 0.2);
-    position: relative;
-    left: 17px;
-}
-
-.archive-list-headers li:last-child h4:after {
-    content: none;
-}
-
-.btn {
-    font: 0.85em/1.5 "proxima-nova", "helvetica neue", helvetica, arial, sans-serif;
-    padding: 0 0.5rem;
-    border: 1px solid #ccc;
-    font-weight: bold;
-    text-shadow: 0 1px 0 #fff;
-    white-space: nowrap;
-    color: #666;
-    background-color: #f0f2f4;
-    cursor: pointer;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px #fff;
-    height: 29px;
-    -webkit-transition: background-color 0.3s linear;
-    -moz-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    -o-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
-}
-
-.btn:hover {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-
-/* Media queries */
-
-.visible-small {
-    display: none;
-}
-
-.visible-large {
-    display: inherit;
-}
-
-@media (max-width: 570px) {
-    .visible-small {
-        display: inherit;
-    }
-    .visible-large {
-        display: none;
+    li {
+    	margin-right: 3em;
+	    text-align: center;
+	    display: inline-block;
     }
 }
 
-@media (max-width: 480px) {
-    html {
-        font-size: 1em;
+.archive-list {
+
+	margin: 0 auto;
+    width: 60%;
+
+    li {
+    	list-style-type: none;
     }
-    #header {
-        margin-bottom: 1.5rem;
+
+    .archive-entry {
+    	margin-bottom: 0.5em;
     }
-    .post > header > h3 {
-        margin-bottom: 0.375rem;
-    }
-    img {
-        display: block;
-        float: none;
-    }
-    #header nav li#rss {
-        display: none;
-    }
+
+	.year-start {
+		margin-top: 2em;
+	}
+
+	.archive-date {
+		color: #afafaf;
+	    font-weight: 100;
+	    margin-right: 1em;
+	    min-width: 6em;
+	    display: inline-block;
+	}
+}
+
+.page-about {
+
+	.carousel {
+		margin-left: 2em;
+		margin-bottom: 2em;
+
+		img {
+			width: 40em !important;
+			height: 27em !important;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.page-post {
+	padding-left: 5em;
+	padding-right: 5em;
+
+	a {
+		text-decoration: underline;
+	}
+
+	.published.post-meta {
+		color: gray;
+	    margin-bottom: 2em;
+	    padding-bottom: 1em;
+	    display: block;
+	    border-bottom: 1px solid black;
+	}
+
+	h4 {
+		margin-top: 2em;
+	}
+}
+
+.page-donate {
+	a {
+		text-decoration: underline;
+	}
 }

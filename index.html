@@ -2,22 +2,26 @@
 layout: default
 ---
 
-<div class="landing-page">
-	{% for post in site.posts limit:1 %}
-	<div class="post">
-		<header>
-			<h3>
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</h3>
-			<p class="post-meta">
-				<span>{{ post.date | date: "%b %d, %Y" }}</span>
-			</p>
-		</header>
-		{{ post.content }}
-		{% include share.html %}
-		<div class="comments">
-	    	<a href="{{ post.url }}">Leave a Comment</a>
-	    </div>
+<style>
+	nav a {
+		display: none;
+	}
+</style>
+
+<div class="page-home">
+	<div class="home-intro text-center">
+		<img src="/img/logo-main.svg" class="logo-main" />
+		<h1>Hi. I am Kunal.</h1>
+		<h3>UI/UX Developer @ <a href="https://scalegrid.io" target="_blank" class="underline">ScaleGrid Inc.</a></h3>
+		<div class="home-meta">
+			<a href="/blog" class="home-meta-single">Blog</a>
+			<a href="/img/Résumé - Kunal Nagar.pdf" target="_blank" class="home-meta-single">Résumé</a>
+			<a href="https://www.linkedin.com/in/kunalnagar88/" class="home-meta-single" target="_blank">LinkedIn</a>
+			<a href="/about" class="home-meta-single">About</a>
+			<a href="/donate/" class="home-meta-single">Donate</a>
+		</div>
 	</div>
-	{% endfor %}
+	<div class="home-img">
+		<img src="img/me.png" class="img-responsive me" />
+	</div>
 </div>

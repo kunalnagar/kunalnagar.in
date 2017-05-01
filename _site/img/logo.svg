@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Plain Logo 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1.14980367e-13" y="0.0631313131" width="49.9790484" height="49.9159435"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="49.9790484" height="49.9159435" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-488.000000, -487.000000)">
+            <g id="Plain-Logo-3" transform="translate(488.000000, 487.000000)">
+                <g>
+                    <use id="Rectangle-1" stroke="#979797" mask="url(#mask-2)" fill="#000000" xlink:href="#path-1"></use>
+                    <text id="K" font-family="BrandonGrotesque-Medium, Brandon Grotesque" font-size="29.2262607" font-weight="400" fill="#FFFFFF">
+                        <tspan x="15.3190754" y="36.1179104">K</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
