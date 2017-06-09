@@ -20,6 +20,14 @@ a {
   padding: 1em;
   padding-left: 3em;
   padding-right: 3em; }
+  @media only screen and (max-width: 768px) {
+    .page-outer {
+      padding: 0 1em; } }
+
+.logo-other-link {
+  margin-bottom: 2em; }
+  .logo-other-link .logo-other {
+    height: 4em; }
 
 .page-home .home-intro {
   font-family: 'Josefin Slab', serif;
@@ -36,8 +44,24 @@ a {
     margin: 0 auto;
     margin-top: 5%;
     font-size: 17px; }
+    @media only screen and (max-width: 768px) {
+      .page-home .home-intro .home-meta {
+        margin-top: 2em;
+        padding-top: 2%; } }
     .page-home .home-intro .home-meta .home-meta-single {
       margin-right: 2em; }
+      @media only screen and (max-width: 768px) {
+        .page-home .home-intro .home-meta .home-meta-single {
+          margin-right: 0;
+          display: block;
+          margin-top: 1em;
+          font-size: 1.5em; } }
+  @media only screen and (max-width: 768px) {
+    .page-home .home-intro {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+      padding-top: 8vh; } }
 .page-home .home-img {
   float: right;
   width: 33.9%; }
@@ -73,6 +97,11 @@ a {
   margin-right: 0;
   margin-left: 60px;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    #main {
+      /* For mobile phones: */
+      margin-left: 0;
+      width: 100%; } }
 
 .archive-list-headers {
   list-style: none;
@@ -87,6 +116,9 @@ a {
 .archive-list {
   margin: 0 auto;
   width: 60%; }
+  @media only screen and (max-width: 768px) {
+    .archive-list {
+      width: 100%; } }
   .archive-list li {
     list-style-type: none; }
   .archive-list .archive-entry {
@@ -99,19 +131,34 @@ a {
     margin-right: 1em;
     min-width: 6em;
     display: inline-block; }
+    @media only screen and (max-width: 768px) {
+      .archive-list .archive-date {
+        display: block; } }
 
 .page-about .carousel {
   margin-left: 2em;
   margin-bottom: 2em; }
+  @media only screen and (max-width: 768px) {
+    .page-about .carousel {
+      margin-left: 0; } }
   .page-about .carousel img {
     width: 40em !important;
     height: 27em !important; }
+    @media only screen and (max-width: 768px) {
+      .page-about .carousel img {
+        width: 100% !important;
+        height: auto !important; } }
 .page-about a {
   text-decoration: underline; }
 
 .page-post {
   padding-left: 5em;
   padding-right: 5em; }
+  @media only screen and (max-width: 768px) {
+    .page-post {
+      padding: 0 1em; } }
+  .page-post img {
+    max-width: 100%; }
   .page-post a {
     text-decoration: underline; }
   .page-post .published.post-meta {

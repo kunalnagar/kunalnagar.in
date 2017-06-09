@@ -29,6 +29,20 @@ a {
 	padding: 1em;
 	padding-left: 3em;
 	padding-right: 3em;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 1em;
+    }
+}
+
+.logo-other-link {
+
+    margin-bottom: 2em;
+
+    .logo-other {
+        height: 4em;
+    }
+
 }
 
 .page-home {
@@ -52,9 +66,29 @@ a {
             margin-top: 5%;
             font-size: 17px;
 
+            @media only screen and (max-width: 768px) {
+                margin-top: 2em;
+                padding-top: 2%;
+            }
+
             .home-meta-single {
                 margin-right: 2em;
+
+                @media only screen and (max-width: 768px) {
+                    margin-right: 0;
+                    display: block;
+                    margin-top: 1em;
+                    font-size: 1.5em;
+                }
+
             }
+        }
+
+        @media only screen and (max-width: 768px) {
+            float: none;
+            width: 100%;
+            padding-right: 0;
+            padding-top: 8vh;
         }
     }
 
@@ -114,6 +148,12 @@ a {
     margin-right: 0;
     margin-left: 60px;
     position: relative;
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 .archive-list-headers {
@@ -134,6 +174,10 @@ a {
 	margin: 0 auto;
     width: 60%;
 
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+
     li {
     	list-style-type: none;
     }
@@ -152,6 +196,10 @@ a {
 	    margin-right: 1em;
 	    min-width: 6em;
 	    display: inline-block;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
 	}
 }
 
@@ -161,9 +209,18 @@ a {
 		margin-left: 2em;
 		margin-bottom: 2em;
 
+        @media only screen and (max-width: 768px) {
+            margin-left: 0;
+        }
+
 		img {
 			width: 40em !important;
 			height: 27em !important;
+
+            @media only screen and (max-width: 768px) {
+                width: 100% !important;
+                height: auto !important;
+            }
 		}
 	}
 
@@ -175,6 +232,14 @@ a {
 .page-post {
 	padding-left: 5em;
 	padding-right: 5em;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 1em;
+    }
+
+    img {
+        max-width: 100%;
+    }
 
 	a {
 		text-decoration: underline;
