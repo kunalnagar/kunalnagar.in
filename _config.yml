@@ -18,8 +18,8 @@ name: kunalnagar
 email: me@kunalnagar.in
 locale: en_US
 description: If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://kunalnagar.in" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://kunalnagar.in" # the base hostname & protocol for your site
 twitter_username: _kunalnagar
 github_username:  kunalnagar
 permalink: "/blog/:title"
