@@ -5,9 +5,58 @@
     <description>If you are a company or an agency that cares about creating great user experiences on the web using fast, responsive web applications, I can help.</description>
     <link>http://kunalnagar.in/</link>
     <atom:link href="http://kunalnagar.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Oct 2017 14:10:20 +0530</pubDate>
-    <lastBuildDate>Sun, 01 Oct 2017 14:10:20 +0530</lastBuildDate>
+    <pubDate>Sat, 24 Feb 2018 12:15:09 +0530</pubDate>
+    <lastBuildDate>Sat, 24 Feb 2018 12:15:09 +0530</lastBuildDate>
     <generator>Jekyll v3.2.0</generator>
+    
+      <item>
+        <title>YouTube to Mp3 converter</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/oA-D7TdjVnE?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;So my parents listen to music on YouTube. Because apparently, services like &lt;a href=&quot;https://www.saavn.com/&quot;&gt;Saavn&lt;/a&gt; or &lt;a href=&quot;https://gaana.com/&quot;&gt;Gaana&lt;/a&gt; don’t make sense to them. And honestly, I can’t blame them. They’re gonna use what seems familiar to them.&lt;/p&gt;
+
+&lt;p&gt;One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.png&quot; alt=&quot;Sample Android Malware Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hence, I decided to create a converter for them that is ad-free and does the job. You enter a URL, click Convert and you get an mp3 file to download. From here on, I will be discussing how to build such a thing and what is the concept behind these converters and how they work. So if you’re not interested, shoo off.&lt;/p&gt;
+
+&lt;p&gt;Alright. You’re interested in how to build such a thing. You can do this in any technology you want. I will be discussing the business logic first and then suggest doing it in Node.js - because that’s how I did it.&lt;/p&gt;
+
+&lt;h3 id=&quot;business-logic&quot;&gt;Business Logic&lt;/h3&gt;
+&lt;p&gt;A YouTube to Mp3 converter is quite simple, actually.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You use the YouTube API to send a URL and it sends you back a list of formats that the video is available in based on the quality when it was uploaded.&lt;/li&gt;
+  &lt;li&gt;It returns a couple of standard formats like mp4, mov etc and one format called m4a.&lt;/li&gt;
+  &lt;li&gt;We download that m4a and then use ffmpeg to convert it to mp3&lt;/li&gt;
+  &lt;li&gt;And we’re done.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;implementing-in-nodejs&quot;&gt;Implementing in Node.js&lt;/h3&gt;
+&lt;p&gt;Unless you’re really passionate about building this thing out, I would recommend using the already built Node packages out there for downloading and converting YouTube videos. There are node packages for doing this thing entirely as well. But you’re here to learn, so let’s convert out Business Logic to code. Here are the packages you’ll need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fent/node-ytdl-core&quot;&gt;node-ytdl-core&lt;/a&gt; for getting the YouTube info for a particular URL&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fluent-ffmpeg/node-fluent-ffmpeg&quot;&gt;node-fluent-ffmpeg&lt;/a&gt; to convert the received m4a file to mp3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As far as the backend, we’ll be using &lt;a href=&quot;https://expressjs.com/&quot;&gt;ExpressJS&lt;/a&gt; hosted on &lt;a href=&quot;https://heroku.com&quot;&gt;Heroku&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll need to install &lt;a href=&quot;https://www.ffmpeg.org/&quot;&gt;ffmpeg&lt;/a&gt; on Heroku first for the node package to work. For that, you’ll need a &lt;a href=&quot;https://devcenter.heroku.com/articles/buildpacks&quot;&gt;Heroku Buildpack&lt;/a&gt;. I used &lt;a href=&quot;https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest&quot;&gt;this one&lt;/a&gt;. Basically, Heroku Buildpacks allow you to specify the technologies you will need for a specific project. By default, if you push Node.js code to Heroku, a Node.js Buildpack is automatically applied to your project. You can check out all the Buildpacks in your project on it’s Settings page.&lt;/p&gt;
+
+&lt;p&gt;If you’re working on this locally, you’ll need to install ffmpeg on your machine as well. Here’s how you &lt;a href=&quot;https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/wiki/Installing-ffmpeg-on-Mac-OS-X&quot;&gt;install it on a mac&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to give away the code here, so that’s for you to figure out. I have suggested all the packages you might need and where to host it as well.&lt;/p&gt;
+
+&lt;p&gt;If you have questions, please leave them in the comments below and I’ll be more than happy to answer.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Feb 2018 00:00:00 +0530</pubDate>
+        <link>http://kunalnagar.in/blog/youtube-to-mp3-converter/</link>
+        <guid isPermaLink="true">http://kunalnagar.in/blog/youtube-to-mp3-converter/</guid>
+        
+        
+      </item>
     
       <item>
         <title>My horrible experience with ACT Fibernet</title>
@@ -1055,80 +1104,6 @@ Version: 3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         <pubDate>Tue, 21 Apr 2015 00:00:00 +0530</pubDate>
         <link>http://kunalnagar.in/blog/ionic-push-notifications/</link>
         <guid isPermaLink="true">http://kunalnagar.in/blog/ionic-push-notifications/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Fix RDSRV Malware (VSearch/Downlite)</title>
-        <description>&lt;p&gt;The past week has been an absolute disaster for me as far as Web Security is concerned. My Macbook Pro picked up an adware from some shitty website that would not show up in most Adware Removal Tools. It was after a lot of research and thanks to &lt;a href=&quot;http://www.thesafemac.com/about/&quot;&gt;Thomas from The Safe Mac&lt;/a&gt; that I managed to fix the problem. In this article, I will guide you through the process and how I realised that the problem was not on my Mac, but in my Modem. Learn how to remove rdsrv malware from your network and computer.&lt;/p&gt;
-
-&lt;h4 id=&quot;types-of-adware-threats&quot;&gt;Types of Adware Threats&lt;/h4&gt;
-
-&lt;p&gt;Before we start working on our issue, we need to understand the various types of problems adware can create for us:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Software Threats (on your computer)&lt;/li&gt;
-  &lt;li&gt;Hardware Threats (on your Modem/Router)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;software-threats&quot;&gt;Software Threats&lt;/h5&gt;
-
-&lt;p&gt;These can generally be solved by running an Adware Removal Tool such as &lt;a href=&quot;http://www.adwaremedic.com/index.php&quot;&gt;AdwareMedic for Mac&lt;/a&gt; or &lt;a href=&quot;http://www.bitdefender.com/solutions/adware-removal-tool-for-pc.html&quot;&gt;Bitdefender for Windows&lt;/a&gt;. Its a really quick process and both these tools are more than capable of removing any kind of Adware from your computer.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-1.png&quot; alt=&quot;Adware Medic&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once the tool has done its job, you need to reset your browser. For Chrome users, go to Settings &amp;gt; Advanced Settings and at the bottom of the page, there will be an option called Reset Settings. Note: This will clear your browsing history, cache and cookies. Here are some screenshots for resetting Chrome:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-2.png&quot; alt=&quot;Chrome Reset Menu&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-3.png&quot; alt=&quot;Chrome Advanced Settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-4.png&quot; alt=&quot;Chrome Reset Settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-5.png&quot; alt=&quot;Chrome Reset Settings Dialog&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After this process is complete, you need to restart your machine and delete anything in the Trash. This should deal with Adware Threats on your computer. If you’re still getting the popups, it means your hardware/network has been hacked. Don’t worry, keep reading.&lt;/p&gt;
-
-&lt;h5 id=&quot;hardware-threats&quot;&gt;Hardware Threats&lt;/h5&gt;
-
-&lt;p&gt;These are pretty tricky to deal with and if you not a technical person, I would recommend you take help from one who is. In such cases, the adware has taken over your hardware device like a modem or a router and is rewriting links before they event get to your browser. Essentially, there are two parts to fixing this threat:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Factory Reset your device to its original settings&lt;/li&gt;
-  &lt;li&gt;Upgrade your device Firmware&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Before you start Factory Resetting any device, its a good idea to make a backup. The following screenshot shows the Reset Screen for a DLink DSL 2520U Modem:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/blog/fix-rdsrv-malware-vsearch-downlite/malware-6.png&quot; alt=&quot;DLink DSL 2520U Dashboard&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You also need to download the latest firmware for your router from the respective Manufacturer Page. Make sure that you download the correct firmware and that it is compatible with your version of the modem/router.&lt;/p&gt;
-
-&lt;p&gt;After your modem/router is set to factory defaults and is upgraded with the latest firmware, you need to configure it with your ISP and create a new Wireless Network with a strong password.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;u&gt;Important Note&lt;/u&gt;: If you are still having problems after following both types of adware removal techniques, then it might be possible that a corrupted DNS has been added to your list of DNS servers. On your computer, go to your Network Settings and use manual IP configuration instead of DHCP and insert the correct DNS addresses by yourself.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;That’s it! After this process is complete, you will have eliminated almost all kinds of adware threats from your network and computer.&lt;/p&gt;
-
-&lt;h4 id=&quot;safety-measures&quot;&gt;Safety Measures&lt;/h4&gt;
-
-&lt;p&gt;The internet is a scary place. You need to be really cautious online and use your brain to make decisions on what links you should open or not. That being said, there are a few things that you can do so that such issues don’t pop-up (see what I did there?) more often:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create a really good Network Password and change it every 3-4 months&lt;/li&gt;
-  &lt;li&gt;Clear your computer cache, temporary and junk files. Use something like &lt;a href=&quot;https://www.piriform.com/ccleaner&quot;&gt;CCleaner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;If you’re on Windows, use a reputable Anti-virus and Adware Protection Tool. Popular choices include &lt;a href=&quot;http://www.bitdefender.com/solutions/adware-removal-tool-for-pc.html&quot;&gt;Bitdefender&lt;/a&gt;, &lt;a href=&quot;http://www.eset.com/&quot;&gt;Eset&lt;/a&gt; etc.&lt;/li&gt;
-  &lt;li&gt;Inspect your Hard Drives regularly for permissions/bad sectors. Here is a &lt;a href=&quot;http://www.pcclassesonline.com/keep-your-macs-hard-drive-healthy/&quot;&gt;good video&lt;/a&gt; if you are on a Mac.&lt;/li&gt;
-  &lt;li&gt;Last but not the least, use common sense. Nobody on the Internet will give you a pill that can enlarge your penis to thrice its size or offer you a million dollars for clicking a link.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Credits: &lt;a href=&quot;http://www.thesafemac.com/about/&quot;&gt;TheSafeMac&lt;/a&gt; and &lt;a href=&quot;http://pcclassesonline.com/&quot;&gt;PCClassesOnline&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 14 Apr 2015 00:00:00 +0530</pubDate>
-        <link>http://kunalnagar.in/blog/fix-rdsrv-malware-vsearch-downlite/</link>
-        <guid isPermaLink="true">http://kunalnagar.in/blog/fix-rdsrv-malware-vsearch-downlite/</guid>
         
         
       </item>
