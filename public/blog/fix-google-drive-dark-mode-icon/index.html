@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kunal Nagar</title>
+	<meta name="robots" content="index, follow">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/main-96f6bfac.css" />
+	
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-51202219-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+	<main class="kunal">
+		<div class="container">
+	<section class="header">
+		<h2 class="header__heading">
+			<span class="emoji header__emoji">🏠</span><a href="/" class="header__link-home">Kunal Nagar</a>
+		</h2>
+		<hr />
+	</section>
+</div>
+		
+	<section>
+		<h3>Fix Google Drive Dark Mode Icon</h3>
+		<article>
+			<p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
+
+<p>Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as <strong>.sh</strong></p>
+
+<pre><code class="shell">
+#!/bin/bash
+
+function switch_files {
+    mv $1.png $1.tmp.png
+    mv $1-inverse.png $1.png
+    mv $1.tmp.png $1-inverse.png
+    mv $1@2x.png $1@2x.tmp.png
+    mv $1-inverse@2x.png $1@2x.png
+    mv $1@2x.tmp.png $1-inverse@2x.png
+}
+
+RUNNING=`ps aux | grep '/Google Drive' | grep -v grep | wc -l | bc`
+if [ "$RUNNING" = "1" ]; then
+    killall 'Google Drive'
+    while [ "$RUNNING" = "1" ]; do
+        sleep 1
+        RUNNING=`ps aux | grep '/Google Drive' | grep -v grep | wc -l | bc`
+    done
+fi
+sleep 3
+
+cd '/Applications/Google Drive.app/Contents/Resources/'
+switch_files mac-animate1
+switch_files mac-animate2
+switch_files mac-animate3
+switch_files mac-animate4
+switch_files mac-animate5
+switch_files mac-animate6
+switch_files mac-animate7
+switch_files mac-animate8
+switch_files mac-error
+switch_files mac-inactive
+switch_files mac-normal
+switch_files mac-paused
+open '/Applications/Google Drive.app'
+</code></pre>
+
+<p>Then, run the following command:</p>
+
+<pre><code class="shell">
+bash ~/Desktop/fix-google-drive-dark-mode-icons.sh
+</code></pre>
+
+<p>It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.</p>
+
+		</article>
+	</section>
+	<hr />
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+(function() {
+    	
+      	
+      	
+     		
+      	console.log('woooot');
+      	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      	var disqus_shortname = 'kunalnagar';
+      	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	</main>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

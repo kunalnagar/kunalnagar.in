@@ -1,0 +1,55 @@
+$color-link: #1327f0;
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+img {
+	border: 1px solid #d0d0d0;
+    padding: 0.5em;
+    margin: 0.5em;
+    max-width: 95%;
+}
+
+.emoji {
+	margin-right: 0.5em;
+}
+
+.header {
+
+	.header__heading {
+		margin-bottom: 0;
+	}
+
+	.header__emoji {
+		font-size: 0.8em;
+	}
+
+	.header__link-home {
+		color: black;
+		vertical-align: middle;
+
+		&:hover {
+			color: $color-link;
+			text-decoration: underline;
+		}
+	}
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+
+.blog-list {
+
+	.blog-list-single {
+		margin-bottom: 0.5em;
+
+		.blog-list-single__date {
+			margin-right: 1em;
+		}
+	}
+}
+
+@import "pygments";

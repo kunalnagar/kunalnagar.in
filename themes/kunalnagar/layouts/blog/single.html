@@ -1,0 +1,10 @@
+{{ define "main" }}
+	<section>
+		<h3>{{ .Title }}</h3>
+		<article>
+			{{ .Content }}
+		</article>
+	</section>
+	<hr />
+	{{ if .Site.DisqusShortname }}{{ partial "disqus.html" . }}{{ end }}
+{{ end }}
