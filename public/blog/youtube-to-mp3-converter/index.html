@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kunal Nagar</title>
+	<meta name="robots" content="index, follow">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/main-96f6bfac.css" />
+	
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-51202219-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+	<main class="kunal">
+		<div class="container">
+	<section class="header">
+		<h2 class="header__heading">
+			<span class="emoji header__emoji">🏠</span><a href="/" class="header__link-home">Kunal Nagar</a>
+		</h2>
+		<hr />
+	</section>
+</div>
+		
+	<section>
+		<h3>YouTube to Mp3 converter</h3>
+		<article>
+			
+
+<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/oA-D7TdjVnE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br /></p>
+
+<p>So my parents listen to music on YouTube. Because apparently, services like <a href="https://www.saavn.com/">Saavn</a> or <a href="https://gaana.com/">Gaana</a> don&rsquo;t make sense to them. And honestly, I can&rsquo;t blame them. They&rsquo;re gonna use what seems familiar to them.</p>
+
+<p>One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.</p>
+
+<p><img src="/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG" alt="Sample Android Malware Screenshot" /></p>
+
+<p>Hence, I decided to create a converter for them that is ad-free and does the job. You enter a URL, click Convert and you get an mp3 file to download. From here on, I will be discussing how to build such a thing and what is the concept behind these converters and how they work. So if you&rsquo;re not interested, shoo off.</p>
+
+<p>Alright. You&rsquo;re interested in how to build such a thing. You can do this in any technology you want. I will be discussing the business logic first and then suggest doing it in Node.js - because that&rsquo;s how I did it.</p>
+
+<h3 id="business-logic">Business Logic</h3>
+
+<p>A YouTube to Mp3 converter is quite simple, actually.
+* You use the YouTube API to send a URL and it sends you back a list of formats that the video is available in based on the quality when it was uploaded.
+* It returns a couple of standard formats like mp4, mov etc and one format called m4a.
+* We download that m4a and then use ffmpeg to convert it to mp3
+* And we&rsquo;re done.</p>
+
+<h3 id="implementing-in-node-js">Implementing in Node.js</h3>
+
+<p>Unless you&rsquo;re really passionate about building this thing out, I would recommend using the already built Node packages out there for downloading and converting YouTube videos. There are node packages for doing this thing entirely as well. But you&rsquo;re here to learn, so let&rsquo;s convert out Business Logic to code. Here are the packages you&rsquo;ll need:</p>
+
+<ul>
+<li><a href="https://github.com/fent/node-ytdl-core">node-ytdl-core</a> for getting the YouTube info for a particular URL</li>
+<li><a href="https://github.com/fluent-ffmpeg/node-fluent-ffmpeg">node-fluent-ffmpeg</a> to convert the received m4a file to mp3</li>
+</ul>
+
+<p>As far as the backend, we&rsquo;ll be using <a href="https://expressjs.com/">ExpressJS</a> hosted on <a href="https://heroku.com">Heroku</a></p>
+
+<p>You&rsquo;ll need to install <a href="https://www.ffmpeg.org/">ffmpeg</a> on Heroku first for the node package to work. For that, you&rsquo;ll need a <a href="https://devcenter.heroku.com/articles/buildpacks">Heroku Buildpack</a>. I used <a href="https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest">this one</a>. Basically, Heroku Buildpacks allow you to specify the technologies you will need for a specific project. By default, if you push Node.js code to Heroku, a Node.js Buildpack is automatically applied to your project. You can check out all the Buildpacks in your project on it&rsquo;s Settings page.</p>
+
+<p>If you&rsquo;re working on this locally, you&rsquo;ll need to install ffmpeg on your machine as well. Here&rsquo;s how you <a href="https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/wiki/Installing-ffmpeg-on-Mac-OS-X">install it on a mac</a>.</p>
+
+<p>I&rsquo;m not going to give away the code here, so that&rsquo;s for you to figure out. I have suggested all the packages you might need and where to host it as well.</p>
+
+<p>If you have questions, please leave them in the comments below and I&rsquo;ll be more than happy to answer.</p>
+
+		</article>
+	</section>
+	<hr />
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+(function() {
+    	
+      	
+      	
+     		
+      	console.log('woooot');
+      	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      	var disqus_shortname = 'kunalnagar';
+      	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	</main>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

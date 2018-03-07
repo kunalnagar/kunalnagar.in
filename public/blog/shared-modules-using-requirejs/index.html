@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kunal Nagar</title>
+	<meta name="robots" content="index, follow">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/main-96f6bfac.css" />
+	
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+	
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-51202219-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body>
+	<main class="kunal">
+		<div class="container">
+	<section class="header">
+		<h2 class="header__heading">
+			<span class="emoji header__emoji">🏠</span><a href="/" class="header__link-home">Kunal Nagar</a>
+		</h2>
+		<hr />
+	</section>
+</div>
+		
+	<section>
+		<h3>Shared Modules using RequireJS</h3>
+		<article>
+			<p>Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</p>
+
+<p>Before we start, I&rsquo;m assuming that you know a bit about RequireJS. If not, I suggest you visit their <a href="http://requirejs.org/">website</a> and learn about <a href="http://requirejs.org/docs/whyamd.html">AMD (Asynchronous Module Definition)</a>.</p>
+
+<p>Here is the basic folder structure that we&rsquo;re going to follow. I&rsquo;ll explain this in detail below:</p>
+
+<p><img src="/img/blog/shared-modules-using-requirejs/requirejs-1.png" alt="Folder Structure" /></p>
+
+<p>The common folder contains the individual common modules like Logger, Modal and Tabs.</p>
+
+<ul>
+<li><b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like <a href="https://logentries.com/">Logentries</a> or <a href="https://sentry.io/welcome/">Sentry</a></li>
+<li><b>modal.js</b> &amp; <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs</li>
+</ul>
+
+<p>Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.</p>
+
+<pre><code class="javascript">
+// logger.js
+(function() {
+
+    'use strict';
+
+    define([], function() {
+
+        var _logMessage = function(msg) {
+            console.log(msg);
+        };
+
+        var _warnMessage = function(msg) {
+            console.warn(msg);
+        };
+
+        var _errorMessage = function(msg) {
+            console.error(msg);
+        };
+
+        return {
+            log: _logMessage,
+            warn: _warnMessage,
+            error: _errorMessage
+        };
+
+    });
+})();
+</code></pre>
+
+<p>Now, assume that we need to share this across different Modules (<b>module-1</b>, <b>module-2</b>, etc). Here is how we can do it:</p>
+
+<pre><code class="javascript">
+// module-1.js
+(function() {
+
+    'use strict';
+
+    define(['./common/logger/logger'], function(Logger) {
+
+        Logger.log('Hello World!');
+
+        return {};
+
+    });
+})();
+</code></pre>
+
+<p>If we need to share multiple common modules, we can do something like:</p>
+
+<pre><code class="javascript">
+// module-2.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/logger/logger',
+        './common/modal/modal'
+    ], function(Logger, Modal) {
+
+        Logger.log('Hello World!');
+
+        Modal.init('INSERT_DIV_ID_HERE');
+        Modal.center('INSERT_DIV_ID_HERE');
+
+        return {};
+
+    });
+})();
+</code></pre>
+
+<p>As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:</p>
+
+<pre><code class="javascript">
+// common.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/logger/logger',
+        './common/modal/modal'
+    ], function(Logger, Modal) {
+
+        return {
+            Logger: Logger,
+            Modal: Modal
+        };
+
+    });
+})();
+</code></pre>
+
+<p>And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:</p>
+
+<pre><code class="javascript">
+// module-3.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/common',
+    ], function(Helpers) {
+
+        Helpers.Logger.log('Hello World!');
+        Helpers.Modal.init('INSERT_DIV_ID_HERE');
+
+        return {};
+
+    });
+})();
+</code></pre>
+
+<p>Thanks for taking the time to read this. Build something awesome!</p>
+
+		</article>
+	</section>
+	<hr />
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+(function() {
+    	
+      	
+      	
+     		
+      	console.log('woooot');
+      	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      	var disqus_shortname = 'kunalnagar';
+      	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	</main>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
