@@ -3,7 +3,7 @@
 		<ul class="blog-list">
 			{{ range .Data.Pages.ByPublishDate.Reverse }}
 			<li class="blog-list-single">
-				<span class="blog-list-single__date">{{ .Date.Format "Jan 02, 2006" }}</span><a href="{{ .Permalink }}">{{ .Title }}</a>
+				<span class="blog-list-single__date">{{ .Date.Format "Jan 02, 2006" }}</span><a href="{{ .Permalink }}" class="btn-link-blog-single">{{ .Title }}</a>
 			</li>
 			{{ end }}
 		</ul>
