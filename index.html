@@ -1,0 +1,45 @@
+---
+layout: default
+title: Front-End Web Developer
+---
+
+<div class="page page-home">
+    <section id="section_intro" class="section">
+        <div class="container">
+            <h1>Hi, I'm Kunal.</h1>
+            <p>
+                I'm a front-end web developer, currently working at {% include components/link.html link=site.data.links.scalegrid.root text="ScaleGrid" %}, a Database-as-a-Service (DBaaS) that lets you host {% include components/link.html link=site.data.links.scalegrid.mongodb.root text="MongoDB" %}, {% include components/link.html link=site.data.links.scalegrid.redis.root text="Redis" %}, {% include components/link.html link=site.data.links.scalegrid.mysql.root text="MySQL" %} and {% include components/link.html link=site.data.links.scalegrid.postgresql.root text="PostgreSQL" %} in your own AWS or Azure account Instances.
+            </p>
+            <a href="https://twitter.com/_kunalnagar?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-dnt="true" data-show-count="true">Follow @_kunalnagar</a>
+        </div>
+    </section>
+    <!-- <section id="section_projects" class="section section-default">
+        <div class="container">
+            <div class="section--header">
+                <h2 class="section--header--heading">Projects</h2>
+                <a href="/projects" class="section--header--cta">See more</a>
+            </div>
+            <div class="section--body">
+                <p>Here are some of the things I've worked on.</p>
+            </div>
+            <div class="card-group">
+                {% for project in site.projects %}
+                    {% if project.tags contains 'Featured' %}
+                        {% include components/card.html img=project.cover title=project.title excerpt=project.excerpt tags=project.tags link=project.url %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section> -->
+    <!-- <section id="section_blog" class="section">
+        <div class="container">
+            <div class="section--header">
+                <h2 class="section--header--heading">I write, occasionally.</h2>
+                <a href="/blog" class="section--header--cta">See more</a>
+            </div>
+            <div class="card-group">
+
+            </div>
+        </div>
+    </section> -->
+</div>

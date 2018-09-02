@@ -1,0 +1,13 @@
+Migrate from gulp to grunt:
+    ☐ Figure out equivalent dependencies
+    ☐ Scss to CSS
+    ☐ Minify CSS
+    ☐ Version CSS (probably a hashing lib)
+    ☐ Concat JS
+    ☐ Minify JS
+    ☐ Version JS (probably a hashing lib)
+    ☐ Critical CSS
+    ☐ Watch Task
+    ☐ Release Task (cleanup included)
+    ☐
+

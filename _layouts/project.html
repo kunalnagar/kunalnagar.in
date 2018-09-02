@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>{{ page.title }} | Kunal Nagar</title>
+    <meta name="robots" content="index, follow">
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-51202219-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+    {% include header.html %}
+    <div class="page page-project-single">
+        <div class="container">
+            <section class="section">
+                {{ content }}
+            </section>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

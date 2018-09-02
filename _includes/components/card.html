@@ -1,0 +1,13 @@
+<div class="component--card">
+    <img src="{{ include.img }}" class="component--card--cover">
+    <div class="component--card--body">
+        <p class="component--card--body--heading">{{ include.title }}</p>
+        <p class="component--card--body--description">{{ include.excerpt }}</p>
+        <a href="{{ include.link }}" class="btn component--card--body--cta">Learn more</a>
+        <div class="component--card--body--tags">
+            {% for tag in include.tags %}
+            <a href="/projects/tags/#{{ tag }}" class="tag">{{ tag }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

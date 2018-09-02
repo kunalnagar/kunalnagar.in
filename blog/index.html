@@ -1,0 +1,24 @@
+---
+layout: default
+title: Articles
+---
+
+<div class="page page--blog-list">
+    <section class="section">
+        <div class="container">
+            <div class="section--header">
+                <h1 class="section--header--heading">I write, occasionally.</h1>
+            </div>
+            <div class="section--body">
+                <ul class="blog-list">
+                {% for post in site.posts %}
+                    <li class="blog-list--single">
+                        <span class="blog-list--single--date">{{ post.date | date: "%b %d, %Y" }}</span>
+                        <a href="{{ post.url }}" class="blog-list--single--title">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,111 @@
+{
+    "site": {
+        "root": {
+            "url": "/",
+            "title": "Hi.",
+            "sameTab": true
+        },
+        "projects": {
+            "root": {
+                "url": "/projects",
+                "title": "Projects",
+                "sameTab": true
+            }
+        },
+        "resume": {
+            "root": {
+                "url": "/assets/downloads/Résumé - Kunal Nagar.pdf",
+                "title": "Résumé"
+            }
+        },
+        "blog": {
+            "root": {
+                "url": "/blog",
+                "title": "Blog",
+                "sameTab": true
+            }
+        },
+        "about": {
+            "root": {
+                "url": "/about",
+                "title": "About",
+                "sameTab": true
+            }
+        },
+        "contact": {
+            "root": {
+                "url": "/contact",
+                "title": "Contact",
+                "sameTab": true
+            }
+        },
+        "twitter": {
+            "tweet": {
+                "url": "https://twitter.com/home?status=%40_kunalnagar%20I%27d%20like%20to%20talk%20to%20you%20about%20a%20million%20dollar%20idea.",
+                "title": "Clicking this will open Twitter in a new window/tab/app where you can Compose a Tweet, to me."
+            }
+        }
+    },
+    "viraltag": {
+        "root": {
+            "url": "https://www.viraltag.com/",
+            "title": "Viraltag: The Best Social Media Scheduler"
+        }
+    },
+    "scalegrid": {
+        "root": {
+            "url": "https://scalegrid.io",
+            "title": "ScaleGrid Inc."
+        },
+        "mongodb": {
+            "root": {
+                "url": "https://scalegrid.io/mongodb/products.html",
+                "title": "MongoDB at ScaleGrid"
+            }
+        },
+        "redis": {
+            "root": {
+                "url": "https://scalegrid.io/redis/products.html",
+                "title": "Redis at ScaleGrid"
+            }
+        },
+        "mysql": {
+            "root": {
+                "url": "https://scalegrid.io/mysql/products.html",
+                "title": "MySQL at ScaleGrid"
+            }
+        },
+        "postgresql": {
+            "root": {
+                "url": "https://scalegrid.io/postgresql/products.html",
+                "title": "PostgreSQL at ScaleGrid"
+            }
+        }
+    },
+    "projects": {
+        "root": {
+            "url": "/projects",
+            "title": "View Projects"
+        },
+        "tags": {
+            "viraltag": {
+                "url": "/projects/tags/#Viraltag",
+                "title": "View content related to Viraltag"
+            },
+            "scalegrid": {
+                "url": "/projects/tags/#ScaleGrid",
+                "title": "View content related to ScaleGrid"
+            }
+        }
+    },
+    "misc": {
+        "pict": {
+            "url": "https://pict.edu/",
+            "title": "Pune Institute of Computer Technology (PICT)"
+        },
+        "bits": {
+            "url": "http://www.bits-pilani.ac.in/dubai/",
+            "title": "BITS Pilani, Dubai Campus"
+        }
+    }
+}

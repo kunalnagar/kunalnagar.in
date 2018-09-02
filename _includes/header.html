@@ -1,0 +1,18 @@
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<nav id="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="{{ site.data.links.site.root.url }}" ><img src="/assets/img/logo-simple.svg" title="Hi." /></a>
+        </div>
+        <ul class="navbar-items">
+            <!-- <li>{% include components/link.html link=site.data.links.site.projects.root text="Projects" %}</li> -->
+            <li>{% include components/link.html link=site.data.links.site.resume.root text="Résumé" %}</li>
+            <li>{% include components/link.html link=site.data.links.site.blog.root text="Blog" %}</li>
+            <li>{% include components/link.html link=site.data.links.site.about.root text="About" %}</li>
+            <li>{% include components/link.html link=site.data.links.site.contact.root text="Contact" %}</li>
+        </ul>
+    </div>
+</nav>
