@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Contact | Kunal Nagar</title>
+    <meta name="robots" content="index, follow">
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-51202219-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<nav id="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" ><img src="/assets/img/logo-simple.svg" title="Hi." /></a>
+        </div>
+        <ul class="navbar-items">
+            <!-- <li>
+<a href="/projects" rel="noopener noreferrer" title="Projects" class="btn-link ">Projects</a>
+
+</li> -->
+            <li>
+<a href="/assets/downloads/Résumé - Kunal Nagar.pdf" target="_blank" rel="noopener noreferrer" title="Résumé" class="btn-link ">Résumé</a>
+
+</li>
+            <li>
+<a href="/blog" rel="noopener noreferrer" title="Blog" class="btn-link ">Blog</a>
+
+</li>
+            <li>
+<a href="/about" rel="noopener noreferrer" title="About" class="btn-link ">About</a>
+
+</li>
+            <li>
+<a href="/contact" rel="noopener noreferrer" title="Contact" class="btn-link ">Contact</a>
+
+</li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="page page-contact">
+    <section class="section">
+        <div class="container">
+            <div class="section--header">
+                <h1 class="section--header--heading">I talk, occasionally.</h1>
+            </div>
+            <div class="section--body">
+                <p>
+                    Talk to me. You've landed on this page because of three possible reasons:
+                    <ul>
+                        <li>My site has extremely good SEO <small><em>(probably not)</em></small></li>
+                        <li>You like my work and want to talk about working together <small><em>(probably)</em></small></li>
+                        <li>You're a recruiter and want to sell me on why I should work with this upcoming startup that you can't provide the name of. In such a case, I highly recommend you find someone else. If you're passionate about what you do, please put some original thought into your outreach.</li>
+                    </ul>
+                </p>
+                <p class="alert alert-info">
+                    <b><u>Note</u>: </b> If you're worried about your data being collected, you shouldn't, because I honestly don't care. When you submit this form below,
+                    an email is sent to me with whatever you've written. I go through the email and if I decide to work with you, I send you an email back and you end
+                    up in my Contact List. If that works for you, please go ahead and talk about how I can help you.
+                </p>
+                <form id="form_contact" role="form" method="POST" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="contact_name">Name</label>
+                        <input type="text" id="contact_name" name="name" class="form-control" name="name" placeholder="What do I call you?" required autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_email">Email</label>
+                        <input type="email" id="contact_email" name="email" class="form-control" name="email" placeholder="I'll use this email to reply back to you" required autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_message">Message</label>
+                        <textarea id="contact_message" name="message" rows="10" class="form-control" placeholder="How can I contribute to your million dollar idea?" required autocomplete="off"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="contact_cta" class="btn btn-cta">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <p class="form-control footnote">
+                            If, for some reason, you find this form too intimidating, feel free to tweet 
+<a href="https://twitter.com/home?status=%40_kunalnagar%20I%27d%20like%20to%20talk%20to%20you%20about%20a%20million%20dollar%20idea." target="_blank" rel="noopener noreferrer" title="Clicking this will open Twitter in a new window/tab/app where you can Compose a Tweet, to me." class="btn-link ">@_kunalnagar</a>
+
+. Just don't spam me with cat pics, I like dogs better.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+
+<div class="alert component--notification">
+    <div class="component--notification--main">
+        <p class="component--notification--main--status"></p>
+        <p class="component--notification--main--message"></p>
+    </div>
+    <div class="component--notification--buttons">
+        <button type="button" class="btn btn-dismiss">Okay</button>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+<script type="text/javascript" src="/assets/js/components/notification.js"></script>
+<script type="text/javascript" src="/assets/js/contact.js"></script>
+
+    <script type="text/javascript">
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = '//' + u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+    async('platform.twitter.com/widgets.js', function() {});
+    async('cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function() {
+        hljs.configure({
+            tabReplace: '    '
+        });
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

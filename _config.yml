@@ -22,6 +22,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _kunalnagar
 github_username:  kunalnagar
 
+destination: ./public
+
 collections:
     projects:
         output: false

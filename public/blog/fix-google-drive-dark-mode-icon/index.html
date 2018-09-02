@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Fix Google Drive Dark Mode Icon | Kunal Nagar</title>
+    <meta name="robots" content="index, follow">
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-51202219-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<nav id="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" ><img src="/assets/img/logo-simple.svg" title="Hi." /></a>
+        </div>
+        <ul class="navbar-items">
+            <!-- <li>
+<a href="/projects" rel="noopener noreferrer" title="Projects" class="btn-link ">Projects</a>
+
+</li> -->
+            <li>
+<a href="/assets/downloads/Résumé - Kunal Nagar.pdf" target="_blank" rel="noopener noreferrer" title="Résumé" class="btn-link ">Résumé</a>
+
+</li>
+            <li>
+<a href="/blog" rel="noopener noreferrer" title="Blog" class="btn-link ">Blog</a>
+
+</li>
+            <li>
+<a href="/about" rel="noopener noreferrer" title="About" class="btn-link ">About</a>
+
+</li>
+            <li>
+<a href="/contact" rel="noopener noreferrer" title="Contact" class="btn-link ">Contact</a>
+
+</li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="page page-blog-single">
+        <div class="container">
+            <section class="section">
+                <article class="blog-single">
+                    <h1 class="blog-single--title">Fix Google Drive Dark Mode Icon</h1>
+                    <p class="blog-single--posted">Feb 11, 2015</p>
+                    <p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
+
+<p>Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as <strong>.sh</strong></p>
+
+<pre><code class="shell">#!/bin/bash
+
+function switch_files {
+    mv $1.png $1.tmp.png
+    mv $1-inverse.png $1.png
+    mv $1.tmp.png $1-inverse.png
+    mv $1@2x.png $1@2x.tmp.png
+    mv $1-inverse@2x.png $1@2x.png
+    mv $1@2x.tmp.png $1-inverse@2x.png
+}
+
+RUNNING=`ps aux | grep '/Google Drive' | grep -v grep | wc -l | bc`
+if [ "$RUNNING" = "1" ]; then
+    killall 'Google Drive'
+    while [ "$RUNNING" = "1" ]; do
+        sleep 1
+        RUNNING=`ps aux | grep '/Google Drive' | grep -v grep | wc -l | bc`
+    done
+fi
+sleep 3
+
+cd '/Applications/Google Drive.app/Contents/Resources/'
+switch_files mac-animate1
+switch_files mac-animate2
+switch_files mac-animate3
+switch_files mac-animate4
+switch_files mac-animate5
+switch_files mac-animate6
+switch_files mac-animate7
+switch_files mac-animate8
+switch_files mac-error
+switch_files mac-inactive
+switch_files mac-normal
+switch_files mac-paused
+open '/Applications/Google Drive.app'
+</code></pre>
+
+<p>Then, run the following command:</p>
+
+<pre><code class="shell">bash ~/Desktop/fix-google-drive-dark-mode-icons.sh
+</code></pre>
+
+<p>It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.</p>
+
+                </article>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript">
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = '//' + u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+    async('platform.twitter.com/widgets.js', function() {});
+    async('cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function() {
+        hljs.configure({
+            tabReplace: '    '
+        });
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>

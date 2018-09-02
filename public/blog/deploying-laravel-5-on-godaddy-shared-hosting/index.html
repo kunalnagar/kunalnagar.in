@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Deploy Laravel 5 on GoDaddy Shared Hosting | Kunal Nagar</title>
+    <meta name="robots" content="index, follow">
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-51202219-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<nav id="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" ><img src="/assets/img/logo-simple.svg" title="Hi." /></a>
+        </div>
+        <ul class="navbar-items">
+            <!-- <li>
+<a href="/projects" rel="noopener noreferrer" title="Projects" class="btn-link ">Projects</a>
+
+</li> -->
+            <li>
+<a href="/assets/downloads/Résumé - Kunal Nagar.pdf" target="_blank" rel="noopener noreferrer" title="Résumé" class="btn-link ">Résumé</a>
+
+</li>
+            <li>
+<a href="/blog" rel="noopener noreferrer" title="Blog" class="btn-link ">Blog</a>
+
+</li>
+            <li>
+<a href="/about" rel="noopener noreferrer" title="About" class="btn-link ">About</a>
+
+</li>
+            <li>
+<a href="/contact" rel="noopener noreferrer" title="Contact" class="btn-link ">Contact</a>
+
+</li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="page page-blog-single">
+        <div class="container">
+            <section class="section">
+                <article class="blog-single">
+                    <h1 class="blog-single--title">Deploy Laravel 5 on GoDaddy Shared Hosting</h1>
+                    <p class="blog-single--posted">Jan 08, 2015</p>
+                    <p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd#.lup9tnaqo">Medium</a>.</p>
+
+<p>So your awesome project is ready for deployment and you need to set it up on GoDaddy shared hosting servers.</p>
+
+<h4 id="requirements">Requirements</h4>
+
+<p>Here are some things that you need before we get started:</p>
+
+<ul>
+  <li>A GoDaddy shared hosting account</li>
+  <li>SSH Access</li>
+  <li>Awesome Laravel Project to be deployed</li>
+</ul>
+
+<h4 id="steps">Steps</h4>
+
+<p>Before we start, let’s assume that your home directory on the server is</p>
+
+<pre><code class="shell">/home/content/kunalnagar/html
+</code></pre>
+
+<p>and all your code goes into the html folder.</p>
+
+<ul>
+  <li>Create a folder on the same level as the html folder to hold your future Laravel installations. It’s just good practice.</li>
+  <li>Connect via SFTP to your shared hosting server.</li>
+  <li>Zip your entire project directory and upload it to the new folder you just created. Unzip it.</li>
+  <li>Move the public folder into the html folder and rename it to something like awesome-project.</li>
+</ul>
+
+<p>The approach mentioned above makes all of our application logic safe and our public folder is the one that is exposed.</p>
+
+<p>Open up the index.php file and change the paths to reflect our new directory structure. Here are the following lines you should change:</p>
+
+<pre><code class="shell">require __DIR__.'/../bootstrap/autoload.php';
+$app = require_once __DIR__.'/../bootstrap/app.php';
+</code></pre>
+
+<p>Finally, we modify the main .htaccess file in the html directory. We do this so that you don’t have to type:</p>
+
+<pre><code class="shell">http://yoursite.com/awesome-project
+</code></pre>
+
+<p>Here are the contents of the .htaccess file:</p>
+
+<pre><code class="shell">RewriteEngine On
+RewriteCond %{REQUEST_URI} !^awesome-project
+RewriteRule ^(.*)$ awesome-project/$1 [L]
+</code></pre>
+
+<p>And you’re done! Try visiting:</p>
+
+<pre><code class="shell">http://yoursite.com
+</code></pre>
+
+<p>and enjoy your awesome new project.</p>
+
+<p><em>Please note that this article only discusses deploying the project files. If you need to deploy your migrations, there are tons of articles that you can look up. The confusing part is setting up the directory structure and this article covers that point.</em></p>
+
+
+                </article>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript">
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = '//' + u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+    async('platform.twitter.com/widgets.js', function() {});
+    async('cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function() {
+        hljs.configure({
+            tabReplace: '    '
+        });
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+
+</body>
+</html>
