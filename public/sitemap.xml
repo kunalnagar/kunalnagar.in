@@ -61,10 +61,13 @@
 <lastmod>2018-02-24T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>/about.html</loc>
+<loc>/404/</loc>
 </url>
 <url>
-<loc>/contact.html</loc>
+<loc>/about/</loc>
+</url>
+<url>
+<loc>/contact/</loc>
 </url>
 <url>
 <loc>/blog/</loc>
