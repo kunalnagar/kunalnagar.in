@@ -4,59 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="description">
+    <meta name="description" content="Learn how to create a copy to Clipboard Widget like GitHub uses for their Cloning Paths using ZeroClipboard.">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>GitHub Copy Path Widget using ZeroClipboard | Kunal Nagar</title>
+    <title>GitHub Copy Path Widget using ZeroClipboard · Kunal Nagar</title>
     <meta name="robots" content="index, follow">
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-51202219-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<nav id="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" ><img src="/assets/img/logo-simple.svg" title="Hi." /></a>
-        </div>
-        <ul class="navbar-items">
-            <!-- <li>
-<a href="/projects" rel="noopener noreferrer" title="Projects" class="btn-link ">Projects</a>
-
-</li> -->
-            <li>
-<a href="/assets/downloads/Résumé - Kunal Nagar.pdf" target="_blank" rel="noopener noreferrer" title="Résumé" class="btn-link ">Résumé</a>
-
-</li>
-            <li>
-<a href="/blog" rel="noopener noreferrer" title="Blog" class="btn-link ">Blog</a>
-
-</li>
-            <li>
-<a href="/about" rel="noopener noreferrer" title="About" class="btn-link ">About</a>
-
-</li>
-            <li>
-<a href="/contact" rel="noopener noreferrer" title="Contact" class="btn-link ">Contact</a>
-
-</li>
-        </ul>
-    </div>
+    <nav id="navbar">
+    <ul class="navbar-items">
+        <li>Kunal Nagar</li>
+        <li><a href="/">/</a></li>
+        <li><a href="/assets/downloads/Résumé - Kunal Nagar.pdf">Résumé</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <!-- <li><a href="#">People</a></li> -->
+    </ul>
 </nav>
 
-    <div class="page page-blog-single">
-        <div class="container">
-            <section class="section">
-                <article class="blog-single">
-                    <h1 class="blog-single--title">GitHub Copy Path Widget using ZeroClipboard</h1>
-                    <p class="blog-single--posted">Sep 03, 2016</p>
-                    <p>In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</p>
+    <div id="content">
+        <h1>GitHub Copy Path Widget using ZeroClipboard</h1>
+        <p class="by-line">Sep 03, 2016 <a href="/blog/github-style-copy-path-zeroclipboard/">permalink</a></p>
+        <p>In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</p>
 
 <p><img src="/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png" alt="ZeroClipboard in Chrome" /></p>
 
@@ -359,26 +328,17 @@ var _initNoFlash = function() {
 <p>If you have any questions, please fire away in the comments below. Thanks!</p>
 
 
-                </article>
-            </section>
-        </div>
     </div>
-    <script type="text/javascript">
-    function async(u, c) {
-        var d = document, t = 'script',
-            o = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        o.src = '//' + u;
-        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-        s.parentNode.insertBefore(o, s);
-    }
-    async('platform.twitter.com/widgets.js', function() {});
-    async('cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function() {
-        hljs.configure({
-            tabReplace: '    '
-        });
-        hljs.initHighlightingOnLoad();
-    });
+    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 
 </body>

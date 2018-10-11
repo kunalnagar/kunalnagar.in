@@ -8,6 +8,8 @@ thumbtwitter: "/img/blog/chrome-extension-youtube-jukebox/twitter-chrome-extensi
 permalink: /blog/chrome-extension-youtube-jukebox/
 ---
 
+<p><b>Disclaimer:</b> This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.</p>
+
 YouTube is great. I use it all the time to learn, relax, listen to music and probably have a laugh or two. So I built a Chrome Extension that is a lighter version of YouTube Playlists.
 
 It adds two things to youtube.com:
@@ -39,4 +41,4 @@ It’s free and you can download it [here](https://chrome.google.com/webstore/de
 
 ## Demo
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/wrkE5Aci5CI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=wrkE5Aci5CI">Watch</a> on YouTube
