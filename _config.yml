@@ -22,6 +22,8 @@ url: "https://kunalnagar.in" # the base hostname & protocol for your site, e.g. 
 twitter_username: _kunalnagar
 github_username:  kunalnagar
 
+include: ['.htaccess']
+
 permalink: pretty
 destination: ./public
 

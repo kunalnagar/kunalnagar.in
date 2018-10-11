@@ -4,59 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="description">
+    <meta name="description" content="Learn how to set up Push Notifications in Ionic">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>Ionic Push Notifications | Kunal Nagar</title>
+    <title>Ionic Push Notifications · Kunal Nagar</title>
     <meta name="robots" content="index, follow">
-    <script>
-        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-        ga('create', 'UA-51202219-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<nav id="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" ><img src="/assets/img/logo-simple.svg" title="Hi." /></a>
-        </div>
-        <ul class="navbar-items">
-            <!-- <li>
-<a href="/projects" rel="noopener noreferrer" title="Projects" class="btn-link ">Projects</a>
-
-</li> -->
-            <li>
-<a href="/assets/downloads/Résumé - Kunal Nagar.pdf" target="_blank" rel="noopener noreferrer" title="Résumé" class="btn-link ">Résumé</a>
-
-</li>
-            <li>
-<a href="/blog" rel="noopener noreferrer" title="Blog" class="btn-link ">Blog</a>
-
-</li>
-            <li>
-<a href="/about" rel="noopener noreferrer" title="About" class="btn-link ">About</a>
-
-</li>
-            <li>
-<a href="/contact" rel="noopener noreferrer" title="Contact" class="btn-link ">Contact</a>
-
-</li>
-        </ul>
-    </div>
+    <nav id="navbar">
+    <ul class="navbar-items">
+        <li>Kunal Nagar</li>
+        <li><a href="/">/</a></li>
+        <li><a href="/assets/downloads/Résumé - Kunal Nagar.pdf">Résumé</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <!-- <li><a href="#">People</a></li> -->
+    </ul>
 </nav>
 
-    <div class="page page-blog-single">
-        <div class="container">
-            <section class="section">
-                <article class="blog-single">
-                    <h1 class="blog-single--title">Ionic Push Notifications</h1>
-                    <p class="blog-single--posted">Apr 21, 2015</p>
-                    <p>Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s <a href="http://ngcordova.com">ngCordova</a> service allows us to handle push notifications easily. This article assumes that you have a basic understanding of <a href="http://developer.telerik.com/featured/what-is-a-hybrid-mobile-app/">Hybrid Mobile Applications</a> and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a <a href="http://ionicframework.com/getting-started/">Getting Started Tutorial for Ionic</a> and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.</p>
+    <div id="content">
+        <h1>Ionic Push Notifications</h1>
+        <p class="by-line">Apr 21, 2015 <a href="/blog/ionic-push-notifications/">permalink</a></p>
+        <p>Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s <a href="http://ngcordova.com">ngCordova</a> service allows us to handle push notifications easily. This article assumes that you have a basic understanding of <a href="http://developer.telerik.com/featured/what-is-a-hybrid-mobile-app/">Hybrid Mobile Applications</a> and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a <a href="http://ionicframework.com/getting-started/">Getting Started Tutorial for Ionic</a> and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.</p>
 
 <h2 id="how-does-it-work">How does it work?</h2>
 
@@ -233,26 +202,17 @@ echo $result;
 <p>Before you hit Enter, minimise the app on your Android Device and return to the Home Screen so that you can see the proper effect of the Push Notification arriving. Trust me, it feels good.</p>
 
 
-                </article>
-            </section>
-        </div>
     </div>
-    <script type="text/javascript">
-    function async(u, c) {
-        var d = document, t = 'script',
-            o = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        o.src = '//' + u;
-        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-        s.parentNode.insertBefore(o, s);
-    }
-    async('platform.twitter.com/widgets.js', function() {});
-    async('cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function() {
-        hljs.configure({
-            tabReplace: '    '
-        });
-        hljs.initHighlightingOnLoad();
-    });
+    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 
 </body>

@@ -7,7 +7,7 @@ permalink: /blog/youtube-to-mp3-converter/
 tags: [Open Source, Woot, Blah]
 ---
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/oA-D7TdjVnE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br />
+<a href="https://www.youtube.com/watch?v=oA-D7TdjVnE">Demo</a>
 
 So my parents listen to music on YouTube. Because apparently, services like [Saavn](https://www.saavn.com/) or [Gaana](https://gaana.com/) don't make sense to them. And honestly, I can't blame them. They're gonna use what seems familiar to them.
 

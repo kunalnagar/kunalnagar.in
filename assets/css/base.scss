@@ -1,12 +1,5 @@
 ---
 ---
 
-@import "vendor/normalize/normalize";
 @import "variables";
 @import "layouts/layout";
-@import "modules/navbar";
-@import "modules/notification";
-
-body {
-    font-family: $font-family-base;
-}
