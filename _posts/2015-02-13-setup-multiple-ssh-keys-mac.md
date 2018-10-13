@@ -3,8 +3,6 @@ layout: post
 title:  "Setup Multiple SSH Keys on a Mac"
 date:   2015-02-13
 description: "Learn how to set up multiple SSH keys on a Mac."
-thumbfb: "/img/blog/setup-multiple-ssh-keys-mac/fb-setup-multiple-ssh-keys-mac.jpg"
-thumbtwitter: "/img/blog/setup-multiple-ssh-keys-mac/twitter-setup-multiple-ssh-keys-mac.jpg"
 permalink: /blog/setup-multiple-ssh-keys-mac/
 ---
 

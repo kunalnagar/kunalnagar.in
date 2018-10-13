@@ -3,8 +3,6 @@ layout: post
 title:  "Deploy Laravel 5 on GoDaddy Shared Hosting"
 date:   2015-01-08
 description: "Learn how to deploy Laravel 5 on GoDaddy Shared Hosting."
-thumbfb: "/img/blog/deploying-laravel-5-on-godaddy-shared-hosting/fb-deploying-laravel-5-on-godaddy-shared-hosting.jpg"
-thumbtwitter: "/img/blog/deploying-laravel-5-on-godaddy-shared-hosting/twitter-deploying-laravel-5-on-godaddy-shared-hosting.jpg"
 permalink: /blog/deploying-laravel-5-on-godaddy-shared-hosting/
 ---
 

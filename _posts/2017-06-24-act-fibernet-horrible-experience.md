@@ -3,8 +3,6 @@ layout: post
 title:  "My horrible experience with ACT Fibernet"
 date:   2017-06-24
 description: "In my opinion, ACT Fibernet is the worst ISP and has the worst Customer Service I have ever encountered."
-thumbfb: "/img/blog/act-fibernet-horrible-experience/fb-act-fibernet-horrible-experience.jpg"
-thumbtwitter: "/img/blog/act-fibernet-horrible-experience/twitter-act-fibernet-horrible-experience.jpg"
 permalink: /blog/act-fibernet-horrible-experience/
 ---
 

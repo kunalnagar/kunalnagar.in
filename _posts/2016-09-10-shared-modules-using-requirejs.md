@@ -3,8 +3,6 @@ layout: post
 title:  "Shared Modules using RequireJS"
 date:   2016-09-10
 description: "Learn how to create modules that can be shared across other modules using RequireJS"
-thumbfb: "/img/blog/shared-modules-using-requirejs/fb-shared-modules-using-requirejs.jpg"
-thumbtwitter: "/img/blog/shared-modules-using-requirejs/twitter-shared-modules-using-requirejs.jpg"
 permalink: /blog/shared-modules-using-requirejs/
 ---
 

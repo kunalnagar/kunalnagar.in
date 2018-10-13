@@ -3,8 +3,6 @@ layout: post
 title:  "TripMode - Your Mobile Data Savior"
 date:   2016-08-24
 description: "TripMode is the best way to stop updates and other background processes from consuming your mobile data."
-thumbfb: "/img/blog/tripmode-mobile-data-savior/fb-tripmode-mobile-data-savior.jpg"
-thumbtwitter: "/img/blog/tripmode-mobile-data-savior/twitter-tripmode-mobile-data-savior.jpg"
 permalink: /blog/tripmode-mobile-data-savior/
 ---
 
