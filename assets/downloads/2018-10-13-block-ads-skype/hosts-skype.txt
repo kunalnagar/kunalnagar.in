@@ -1,0 +1,29 @@
+# Block Skype ads
+127.0.0.1 *.msads.net
+127.0.0.1 *.msecn.net
+127.0.0.1 *.rad.msn.com
+127.0.0.1 a.ads2.msads.net
+127.0.0.1 ac3.msn.com
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 adnexus.net
+127.0.0.1 adnxs.com
+127.0.0.1 ads1.msn.com
+127.0.0.1 ads2.msads.net
+127.0.0.1 aka-cdn-ns.adtech.de
+# Keep "apps.skype.com" if you want to see Skype Home (prepend # at line below)!
+127.0.0.1 apps.skype.com
+127.0.0.1 b.ads2.msads.net
+127.0.0.1 bs.serving-sys.com
+127.0.0.1 cdn.atdmt.com
+127.0.0.1 cds26.ams9.msecn.net
+127.0.0.1 db3aqu.atdmt.com
+127.0.0.1 ec.atdmt.com
+127.0.0.1 flex.msn.com
+127.0.0.1 g.msn.com
+127.0.0.1 live.rads.msn.com
+127.0.0.1 msntest.serving-sys.com
+127.0.0.1 rad.msn.com
+127.0.0.1 sO.2mdn.net
+127.0.0.1 secure.flashtalking.com
+127.0.0.1 static.2mdn.net
+127.0.0.1 static.2mdn.net
