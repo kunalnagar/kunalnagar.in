@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-12T00:53:19+05:30</updated><id>http://localhost:4000/</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">YouTube to Mp3 converter</title><link href="http://localhost:4000/blog/youtube-to-mp3-converter/" rel="alternate" type="text/html" title="YouTube to Mp3 converter" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-02-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/youtube-to-mp3-converter</id><content type="html" xml:base="http://localhost:4000/blog/youtube-to-mp3-converter/">&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oA-D7TdjVnE&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2018-10-13T13:37:23+05:30</updated><id>https://kunalnagar.in/</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Block Ads in Skype</title><link href="https://kunalnagar.in/blog/block-ads-skype/" rel="alternate" type="text/html" title="Block Ads in Skype" /><published>2018-10-13T00:00:00+05:30</published><updated>2018-10-13T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/block-ads-skype</id><content type="html" xml:base="https://kunalnagar.in/blog/block-ads-skype/">&lt;p&gt;I hate ads. So much so that I’ve created a &lt;a href=&quot;https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en&quot;&gt;Chrome Extension&lt;/a&gt; to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Side note:&lt;/b&gt; If you’re a privacy nut, you might want to check out my &lt;a href=&quot;/assets/downloads/siteblock.txt&quot;&gt;hosts&lt;/a&gt; file. It will block crypto-miners, google ads, youtube ads and much more. As always, &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;feedback&lt;/a&gt; is appreciated.&lt;/p&gt;
+
+&lt;p&gt;I figured out a way to block Skype ads using a handful of host file entries. Download a &lt;a href=&quot;/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt&quot;&gt;.txt&lt;/a&gt; version here. I’ve mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).&lt;/p&gt;
+
+&lt;pre&gt;
+# Block Skype ads (core)
+127.0.0.1 *.msads.net
+127.0.0.1 *.msecn.net
+127.0.0.1 *.rad.msn.com
+127.0.0.1 a.ads2.msads.net
+127.0.0.1 ac3.msn.com
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 adnexus.net
+127.0.0.1 adnxs.com
+127.0.0.1 ads1.msn.com
+127.0.0.1 ads2.msads.net
+127.0.0.1 aka-cdn-ns.adtech.de
+
+# If you want to see Skype Home, comment the line below
+127.0.0.1 apps.skype.com
+
+127.0.0.1 b.ads2.msads.net
+127.0.0.1 bs.serving-sys.com
+127.0.0.1 cdn.atdmt.com
+127.0.0.1 cds26.ams9.msecn.net
+127.0.0.1 db3aqu.atdmt.com
+127.0.0.1 ec.atdmt.com
+127.0.0.1 flex.msn.com
+127.0.0.1 g.msn.com
+127.0.0.1 live.rads.msn.com
+127.0.0.1 msntest.serving-sys.com
+127.0.0.1 rad.msn.com
+127.0.0.1 sO.2mdn.net
+127.0.0.1 secure.flashtalking.com
+127.0.0.1 static.2mdn.net
+127.0.0.1 static.2mdn.net
+&lt;/pre&gt;
+
+&lt;p&gt;The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.&lt;/p&gt;
+
+&lt;p&gt;Based on your OS, go to: &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/skype/YOUR_USER_NAME/config.xml&lt;/code&gt; and set all &lt;code class=&quot;highlighter-rouge&quot;&gt;Advert&lt;/code&gt; related values to 0.&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;AdvertEastRailsEnabled&amp;gt;0&amp;lt;/AdvertEastRailsEnabled&amp;gt;
+&amp;lt;AdvertLargeEastRailCutoff&amp;gt;0&amp;lt;/AdvertLargeEastRailCutoff&amp;gt;
+&amp;lt;AdvertNorthRailCutoff&amp;gt;0&amp;lt;/AdvertNorthRailCutoff&amp;gt;
+&amp;lt;AdvertPlaceholder&amp;gt;0&amp;lt;/AdvertPlaceholder&amp;gt;
+&amp;lt;AdvertSmallEastRailCutoff&amp;gt;0&amp;lt;/AdvertSmallEastRailCutoff&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;Tell me&lt;/a&gt; about it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry><entry><title type="html">YouTube to Mp3 converter</title><link href="https://kunalnagar.in/blog/youtube-to-mp3-converter/" rel="alternate" type="text/html" title="YouTube to Mp3 converter" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-02-24T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/youtube-to-mp3-converter</id><content type="html" xml:base="https://kunalnagar.in/blog/youtube-to-mp3-converter/">&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oA-D7TdjVnE&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So my parents listen to music on YouTube. Because apparently, services like &lt;a href=&quot;https://www.saavn.com/&quot;&gt;Saavn&lt;/a&gt; or &lt;a href=&quot;https://gaana.com/&quot;&gt;Gaana&lt;/a&gt; don’t make sense to them. And honestly, I can’t blame them. They’re gonna use what seems familiar to them.&lt;/p&gt;
 
@@ -35,7 +87,7 @@
 
 &lt;p&gt;I’m not going to give away the code here, so that’s for you to figure out. I have suggested all the packages you might need and where to host it as well.&lt;/p&gt;
 
-&lt;p&gt;If you have questions, please leave them in the comments below and I’ll be more than happy to answer.&lt;/p&gt;</content><author><name></name></author><category term="Open Source" /><category term="Woot" /><category term="Blah" /><summary type="html">Demo</summary></entry><entry><title type="html">My horrible experience with ACT Fibernet</title><link href="http://localhost:4000/blog/act-fibernet-horrible-experience/" rel="alternate" type="text/html" title="My horrible experience with ACT Fibernet" /><published>2017-06-24T00:00:00+05:30</published><updated>2017-06-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/act-fibernet-horrible-experience</id><content type="html" xml:base="http://localhost:4000/blog/act-fibernet-horrible-experience/">&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Contains more cursing than usual. Reader discretion is advised.&lt;/p&gt;
+&lt;p&gt;If you have questions, please leave them in the comments below and I’ll be more than happy to answer.&lt;/p&gt;</content><author><name></name></author><category term="Open Source" /><category term="Woot" /><category term="Blah" /><summary type="html">Demo</summary></entry><entry><title type="html">My horrible experience with ACT Fibernet</title><link href="https://kunalnagar.in/blog/act-fibernet-horrible-experience/" rel="alternate" type="text/html" title="My horrible experience with ACT Fibernet" /><published>2017-06-24T00:00:00+05:30</published><updated>2017-06-24T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/act-fibernet-horrible-experience</id><content type="html" xml:base="https://kunalnagar.in/blog/act-fibernet-horrible-experience/">&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Contains more cursing than usual. Reader discretion is advised.&lt;/p&gt;
 
 &lt;p&gt;May 13, 2015 - I move to an apartment in Bangalore to start my new job and get my own high speed internet connection, or as the cool kids say - Fibernet connection. I was so happy.&lt;/p&gt;
 
@@ -162,7 +214,7 @@
 
 &lt;p&gt;I am now with Hathaway and they are doing a splendid job. I don’t have any connectivity issues with them and their speed is on point.&lt;/p&gt;
 
-&lt;p&gt;I hope this post has given you some insight on things to consider while choosing an ISP. DON’T CHOOSE ACT.&lt;/p&gt;</content><author><name></name></author><summary type="html">Note: Contains more cursing than usual. Reader discretion is advised.</summary></entry><entry><title type="html">Rewrite WordPress Multisites</title><link href="http://localhost:4000/blog/rewrite-wordpress-multisites/" rel="alternate" type="text/html" title="Rewrite WordPress Multisites" /><published>2016-09-17T00:00:00+05:30</published><updated>2016-09-17T00:00:00+05:30</updated><id>http://localhost:4000/blog/rewrite-wordpress-multisites</id><content type="html" xml:base="http://localhost:4000/blog/rewrite-wordpress-multisites/">&lt;p&gt;Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, &lt;a href=&quot;https://codex.wordpress.org/Create_A_Network&quot;&gt;WordPress Multisite&lt;/a&gt; is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.&lt;/p&gt;
+&lt;p&gt;I hope this post has given you some insight on things to consider while choosing an ISP. DON’T CHOOSE ACT.&lt;/p&gt;</content><author><name></name></author><summary type="html">Note: Contains more cursing than usual. Reader discretion is advised.</summary></entry><entry><title type="html">Rewrite WordPress Multisites</title><link href="https://kunalnagar.in/blog/rewrite-wordpress-multisites/" rel="alternate" type="text/html" title="Rewrite WordPress Multisites" /><published>2016-09-17T00:00:00+05:30</published><updated>2016-09-17T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/rewrite-wordpress-multisites</id><content type="html" xml:base="https://kunalnagar.in/blog/rewrite-wordpress-multisites/">&lt;p&gt;Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, &lt;a href=&quot;https://codex.wordpress.org/Create_A_Network&quot;&gt;WordPress Multisite&lt;/a&gt; is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.&lt;/p&gt;
 
 &lt;p&gt;&lt;i&gt;&lt;b&gt;Note:&lt;/b&gt; Creating WordPress multisites is out of the scope of this article. For more info, check out &lt;a href=&quot;https://codex.wordpress.org/Create_A_Network&quot;&gt;this link&lt;/a&gt;.&lt;/i&gt;&lt;/p&gt;
 
@@ -232,7 +284,7 @@ define('SITECOOKIEPATH', '');
 
 &lt;p&gt;&lt;b&gt;And we’re done!&lt;/b&gt; Visit your new multisite URL: &lt;a href=&quot;&quot;&gt;http://localhost/knowledgebase&lt;/a&gt; and you should be good to go!&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; For adding more multisites, add a necessary rule in &lt;b&gt;Step 1&lt;/b&gt; and update the necessary tables in &lt;b&gt;Step 2&lt;/b&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, WordPress Multisite is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</summary></entry><entry><title type="html">Shared Modules using RequireJS</title><link href="http://localhost:4000/blog/shared-modules-using-requirejs/" rel="alternate" type="text/html" title="Shared Modules using RequireJS" /><published>2016-09-10T00:00:00+05:30</published><updated>2016-09-10T00:00:00+05:30</updated><id>http://localhost:4000/blog/shared-modules-using-requirejs</id><content type="html" xml:base="http://localhost:4000/blog/shared-modules-using-requirejs/">&lt;p&gt;Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; For adding more multisites, add a necessary rule in &lt;b&gt;Step 1&lt;/b&gt; and update the necessary tables in &lt;b&gt;Step 2&lt;/b&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, WordPress Multisite is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</summary></entry><entry><title type="html">Shared Modules using RequireJS</title><link href="https://kunalnagar.in/blog/shared-modules-using-requirejs/" rel="alternate" type="text/html" title="Shared Modules using RequireJS" /><published>2016-09-10T00:00:00+05:30</published><updated>2016-09-10T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/shared-modules-using-requirejs</id><content type="html" xml:base="https://kunalnagar.in/blog/shared-modules-using-requirejs/">&lt;p&gt;Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.&lt;/p&gt;
 
 &lt;p&gt;Before we start, I’m assuming that you know a bit about RequireJS. If not, I suggest you visit their &lt;a href=&quot;http://requirejs.org/&quot;&gt;website&lt;/a&gt; and learn about &lt;a href=&quot;http://requirejs.org/docs/whyamd.html&quot;&gt;AMD (Asynchronous Module Definition)&lt;/a&gt;.&lt;/p&gt;
 
@@ -359,7 +411,7 @@ define('SITECOOKIEPATH', '');
 })();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Thanks for taking the time to read this. Build something awesome!&lt;/p&gt;</content><author><name></name></author><summary type="html">Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</summary></entry><entry><title type="html">GitHub Copy Path Widget using ZeroClipboard</title><link href="http://localhost:4000/blog/github-style-copy-path-zeroclipboard/" rel="alternate" type="text/html" title="GitHub Copy Path Widget using ZeroClipboard" /><published>2016-09-03T00:00:00+05:30</published><updated>2016-09-03T00:00:00+05:30</updated><id>http://localhost:4000/blog/github-style-copy-path-zeroclipboard</id><content type="html" xml:base="http://localhost:4000/blog/github-style-copy-path-zeroclipboard/">&lt;p&gt;In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.&lt;/p&gt;
+&lt;p&gt;Thanks for taking the time to read this. Build something awesome!&lt;/p&gt;</content><author><name></name></author><summary type="html">Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</summary></entry><entry><title type="html">GitHub Copy Path Widget using ZeroClipboard</title><link href="https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard/" rel="alternate" type="text/html" title="GitHub Copy Path Widget using ZeroClipboard" /><published>2016-09-03T00:00:00+05:30</published><updated>2016-09-03T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard</id><content type="html" xml:base="https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard/">&lt;p&gt;In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png&quot; alt=&quot;ZeroClipboard in Chrome&quot; /&gt;&lt;/p&gt;
 
@@ -659,7 +711,7 @@ var _initNoFlash = function() {
 
 &lt;p&gt;Demo: &lt;a href=&quot;https://kunalnagar.github.io/zeroclipboard-demo/&quot;&gt;https://kunalnagar.github.io/zeroclipboard-demo/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;If you have any questions, please fire away in the comments below. Thanks!&lt;/p&gt;</content><author><name></name></author><summary type="html">In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</summary></entry><entry><title type="html">TripMode - Your Mobile Data Savior</title><link href="http://localhost:4000/blog/tripmode-mobile-data-savior/" rel="alternate" type="text/html" title="TripMode - Your Mobile Data Savior" /><published>2016-08-24T00:00:00+05:30</published><updated>2016-08-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/tripmode-mobile-data-savior</id><content type="html" xml:base="http://localhost:4000/blog/tripmode-mobile-data-savior/">&lt;p&gt;TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.&lt;/p&gt;
+&lt;p&gt;If you have any questions, please fire away in the comments below. Thanks!&lt;/p&gt;</content><author><name></name></author><summary type="html">In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</summary></entry><entry><title type="html">TripMode - Your Mobile Data Savior</title><link href="https://kunalnagar.in/blog/tripmode-mobile-data-savior/" rel="alternate" type="text/html" title="TripMode - Your Mobile Data Savior" /><published>2016-08-24T00:00:00+05:30</published><updated>2016-08-24T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/tripmode-mobile-data-savior</id><content type="html" xml:base="https://kunalnagar.in/blog/tripmode-mobile-data-savior/">&lt;p&gt;TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.&lt;/p&gt;
 
 &lt;p&gt;TripMode automatically reduces your mobile data consumption when you use a mobile hotspot thus saving you data and money. It has been designed to be as simple as possible and is accessible at any time from the system tray.&lt;/p&gt;
 
@@ -687,7 +739,7 @@ var _initNoFlash = function() {
   &lt;li&gt;Trial version: Unlimited 7-Days Trial. After the trial is over, users can keep using TripMode for a maximum of 15 min per day. Made for light users.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For more information, check out their &lt;a href=&quot;http://www.tripmode.ch/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.</summary></entry><entry><title type="html">Bartender 2 for Mac OS X</title><link href="http://localhost:4000/blog/mac-bartender-os-x-menu-bar-minimalism/" rel="alternate" type="text/html" title="Bartender 2 for Mac OS X" /><published>2016-02-14T00:00:00+05:30</published><updated>2016-02-14T00:00:00+05:30</updated><id>http://localhost:4000/blog/mac-bartender-os-x-menu-bar-minimalism</id><content type="html" xml:base="http://localhost:4000/blog/mac-bartender-os-x-menu-bar-minimalism/">&lt;p&gt;Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.&lt;/p&gt;
+&lt;p&gt;For more information, check out their &lt;a href=&quot;http://www.tripmode.ch/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.</summary></entry><entry><title type="html">Bartender 2 for Mac OS X</title><link href="https://kunalnagar.in/blog/mac-bartender-os-x-menu-bar-minimalism/" rel="alternate" type="text/html" title="Bartender 2 for Mac OS X" /><published>2016-02-14T00:00:00+05:30</published><updated>2016-02-14T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/mac-bartender-os-x-menu-bar-minimalism</id><content type="html" xml:base="https://kunalnagar.in/blog/mac-bartender-os-x-menu-bar-minimalism/">&lt;p&gt;Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.&lt;/p&gt;
 
 &lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
 
@@ -730,7 +782,7 @@ var _initNoFlash = function() {
 
 &lt;p&gt;Bartender 2 is free to download for try for 4 weeks. After that, you need to purchase the full version which costs &lt;strong&gt;$15&lt;/strong&gt; and I highly recommend that you buy it if you like a clean minimal OS X Menu Bar.&lt;/p&gt;
 
-&lt;p&gt;For more information, please visit the &lt;a href=&quot;http://www.macbartender.com/&quot;&gt;official site&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.</summary></entry><entry><title type="html">Browse YouTube like a boss</title><link href="http://localhost:4000/blog/chrome-extension-youtube-jukebox/" rel="alternate" type="text/html" title="Browse YouTube like a boss" /><published>2015-10-18T00:00:00+05:30</published><updated>2015-10-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/chrome-extension-youtube-jukebox</id><content type="html" xml:base="http://localhost:4000/blog/chrome-extension-youtube-jukebox/">&lt;p&gt;&lt;b&gt;Disclaimer:&lt;/b&gt; This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.&lt;/p&gt;
+&lt;p&gt;For more information, please visit the &lt;a href=&quot;http://www.macbartender.com/&quot;&gt;official site&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.</summary></entry><entry><title type="html">Browse YouTube like a boss</title><link href="https://kunalnagar.in/blog/chrome-extension-youtube-jukebox/" rel="alternate" type="text/html" title="Browse YouTube like a boss" /><published>2015-10-18T00:00:00+05:30</published><updated>2015-10-18T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/chrome-extension-youtube-jukebox</id><content type="html" xml:base="https://kunalnagar.in/blog/chrome-extension-youtube-jukebox/">&lt;p&gt;&lt;b&gt;Disclaimer:&lt;/b&gt; This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.&lt;/p&gt;
 
 &lt;p&gt;YouTube is great. I use it all the time to learn, relax, listen to music and probably have a laugh or two. So I built a Chrome Extension that is a lighter version of YouTube Playlists.&lt;/p&gt;
 
@@ -765,7 +817,7 @@ var _initNoFlash = function() {
 
 &lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=wrkE5Aci5CI&quot;&gt;Watch&lt;/a&gt; on YouTube&lt;/p&gt;</content><author><name></name></author><summary type="html">Disclaimer: This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.</summary></entry><entry><title type="html">Custom 404 Pro</title><link href="http://localhost:4000/blog/custom-404-pro/" rel="alternate" type="text/html" title="Custom 404 Pro" /><published>2015-04-22T00:00:00+05:30</published><updated>2015-04-22T00:00:00+05:30</updated><id>http://localhost:4000/blog/custom-404-pro</id><content type="html" xml:base="http://localhost:4000/blog/custom-404-pro/">&lt;p&gt;Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has &lt;strong&gt;8,000+ active installs&lt;/strong&gt; as of August 2016.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=wrkE5Aci5CI&quot;&gt;Watch&lt;/a&gt; on YouTube&lt;/p&gt;</content><author><name></name></author><summary type="html">Disclaimer: This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.</summary></entry><entry><title type="html">Custom 404 Pro</title><link href="https://kunalnagar.in/blog/custom-404-pro/" rel="alternate" type="text/html" title="Custom 404 Pro" /><published>2015-04-22T00:00:00+05:30</published><updated>2015-04-22T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/custom-404-pro</id><content type="html" xml:base="https://kunalnagar.in/blog/custom-404-pro/">&lt;p&gt;Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has &lt;strong&gt;8,000+ active installs&lt;/strong&gt; as of August 2016.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-0.png&quot; alt=&quot;Active Installs&quot; /&gt;&lt;/p&gt;
 
@@ -829,178 +881,4 @@ var _initNoFlash = function() {
 
 &lt;p&gt;The plugin is free and you can download it &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro&quot;&gt;here&lt;/a&gt;. Please rate the plugin if you enjoyed using it.&lt;/p&gt;
 
-&lt;p&gt;It is also open-sourced which means anyone can contribute. You can find the code on &lt;a href=&quot;https://github.com/kunalnagar/custom-404-pro&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has 8,000+ active installs as of August 2016.</summary></entry><entry><title type="html">Ionic Push Notifications</title><link href="http://localhost:4000/blog/ionic-push-notifications/" rel="alternate" type="text/html" title="Ionic Push Notifications" /><published>2015-04-21T00:00:00+05:30</published><updated>2015-04-21T00:00:00+05:30</updated><id>http://localhost:4000/blog/ionic-push-notifications</id><content type="html" xml:base="http://localhost:4000/blog/ionic-push-notifications/">&lt;p&gt;Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s &lt;a href=&quot;http://ngcordova.com&quot;&gt;ngCordova&lt;/a&gt; service allows us to handle push notifications easily. This article assumes that you have a basic understanding of &lt;a href=&quot;http://developer.telerik.com/featured/what-is-a-hybrid-mobile-app/&quot;&gt;Hybrid Mobile Applications&lt;/a&gt; and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a &lt;a href=&quot;http://ionicframework.com/getting-started/&quot;&gt;Getting Started Tutorial for Ionic&lt;/a&gt; and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
-
-&lt;p&gt;We will be using a PHP script to send a push notification to our Ionic app. Our app will be running on an Android Device and it will use &lt;a href=&quot;https://developer.android.com/google/gcm/index.html&quot;&gt;Google Cloud Messaging (GCM)&lt;/a&gt; to handle notifications.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
-
-&lt;p&gt;Create a new Ionic App using the Get Started Tutorial on Ionic’s website.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
-
-&lt;p&gt;Add the Android Platform to our app using:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;ionic platform add android
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
-
-&lt;p&gt;Build out the app using the process described here so that we can get the SHA1 key. To generate the .keystore file, use this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To get the SHA1 from the keystore, use this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You will get something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;Alias name: androiddebugkey
-Creation date: 17 Feb 12
-Entry type: PrivateKeyEntry
-Certificate chain length: 1
-Certificate[1]:
-Owner: CN=Android Debug, O=Android, C=US
-Issuer: CN=Android Debug, O=Android, C=US
-Serial number: 4f3dfc69
-Valid from: Fri Feb 17 15:06:17 SGT 2012 until: Sun Feb 09 15:06:17 SGT 2042
-Certificate fingerprints:
-MD5: 11:10:11:11:11:11:11:11:11:11:11:11:11:11:11:11
-SHA1: 11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:01:11
-Signature algorithm name: SHA1withRSA
-Version: 3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We need the SHA1 key to register our Google App in the next step.&lt;/p&gt;
-
-&lt;h3 id=&quot;step-4&quot;&gt;Step 4&lt;/h3&gt;
-
-&lt;p&gt;Register a Google App in the &lt;a href=&quot;https://console.developers.google.com/&quot;&gt;API Console&lt;/a&gt;. Use any package name and enter the SHA1 that we extracted in our previous step.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/ionic-push-notifications/api-console.png&quot; alt=&quot;Edit Client Settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After you save, you will get a screen with the following information. Copy the Client ID as we need it for future reference.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/ionic-push-notifications/api-console-2.png&quot; alt=&quot;Client ID Data&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once that is done, you also need to create a Public API Access Key that will be used in the PHP script to authorise our app.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/ionic-push-notifications/public-api-access.png&quot; alt=&quot;Public API Access&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Enable the GCM API in the APIs tab on the left. In my case, I have already activated it which is why it shows Disable API.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/ionic-push-notifications/enable-gcm.png&quot; alt=&quot;Enable GCM&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Last but not the least, copy your Project ID from the Overview tab. This is called the SENDER ID and we will use this in our Ionic App Controller.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/ionic-push-notifications/project-details.png&quot; alt=&quot;Project Details&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;step-5&quot;&gt;Step 5&lt;/h3&gt;
-
-&lt;p&gt;Now that our Google app is all setup, we can begin writing a PHP script that will accept a GET parameter of the registration ID to send a push notification. You can include multiple IDs that are comma-separated, but in this case we will be using just one. But how do we get a Registration ID?&lt;/p&gt;
-
-&lt;p&gt;Before our PHP script can send push notifications, we need to register our Android Device to receive notifications. This is done with the help of the &lt;a href=&quot;http://ngcordova.com/docs/plugins/pushNotifications/&quot;&gt;Push Notification plugin from ngCordova&lt;/a&gt; that we will discuss i Step 6.&lt;/p&gt;
-
-&lt;p&gt;Here is the PHP script:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;php&quot;&gt;&lt;?php
-
-// API access key from Google API's Console
-define( 'API_ACCESS_KEY', 'ENTER_PUBLIC_API_ACCESS_KEY_FROM_API_CONSOLE' );
-
-$registrationIds = array( $_GET['id'] );
-
-// prep the bundle
-$msg = array
-(
-	'message' 	=&gt; 'New Message',
-	'title'		=&gt; 'Title',
-	'subtitle'	=&gt; 'Subtitle',
-	'tickerText'	=&gt; 'Ticker Text',
-	'vibrate'	=&gt; 1,
-	'sound'		=&gt; 1,
-	'largeIcon'	=&gt; 'large_icon',
-	'smallIcon'	=&gt; 'small_icon'
-);
-
-$fields = array
-(
-	'registration_ids' 	=&gt; $registrationIds,
-	'data'			=&gt; $msg
-);
-
-$headers = array
-(
-	'Authorization: key=' . API_ACCESS_KEY,
-	'Content-Type: application/json'
-);
-
-$ch = curl_init();
-curl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
-curl_setopt( $ch,CURLOPT_POST, true );
-curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
-curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
-curl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );
-curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );
-$result = curl_exec($ch );
-curl_close( $ch );
-
-echo $result;
-
-?&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;step-6&quot;&gt;Step 6&lt;/h3&gt;
-
-&lt;p&gt;Now that our PHP script is ready, install the Push Notifications plugin from ngCordova and then we need to write Ionic code to register our device:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;angular.module('starter').controller('TestCtrl', function($rootScope, $scope, $cordovaPush, $cordovaDevice) {
-    var androidConfig = {
-        &quot;senderID&quot;: &quot;ENTER_PROJECT_ID_FROM_API_CONSOLE_OVERVIEW&quot;,
-    };
-    document.addEventListener(&quot;deviceready&quot;, function() {
-        $cordovaPush.register(androidConfig).then(function(result) {
-            console.log(result);
-            // Success
-        }, function(err) {
-            console.log(err);
-            // Error
-        })
-        $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
-            console.log(event);
-            console.log(notification);
-            switch (notification.event) {
-                case 'registered':
-                    if (notification.regid.length &amp;gt; 0) {
-                        alert('registration ID = ' + notification.regid);
-                    }
-                    break;
-                case 'message':
-                    // this is the actual push notification. its format depends on the data model from the push server
-                    alert('message = ' + notification.message + ' msgCount = ' + notification.msgcnt);
-                    break;
-                case 'error':
-                    alert('GCM error = ' + notification.msg);
-                    break;
-                default:
-                    alert('An unknown GCM event has occurred');
-                    break;
-            }
-        });
-    }, false);
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The above controller allows us to register the device when the app loads and it will give us a registration ID. This is the ID we need to provide to our PHP script to send a push notification to this device. In later stages, you might want to automate all this stuff but in this article, we are only covering the basics of Push Notifications.&lt;/p&gt;
-
-&lt;p&gt;When you run your PHP script, pass in the Registration ID as a GET parameter like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;http://localhost/script.php?id=ENTER_REGISTRATION_ID_HERE
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Before you hit Enter, minimise the app on your Android Device and return to the Home Screen so that you can see the proper effect of the Push Notification arriving. Trust me, it feels good.&lt;/p&gt;</content><author><name></name></author><summary type="html">Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s ngCordova service allows us to handle push notifications easily. This article assumes that you have a basic understanding of Hybrid Mobile Applications and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a Getting Started Tutorial for Ionic and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.</summary></entry></feed>
+&lt;p&gt;It is also open-sourced which means anyone can contribute. You can find the code on &lt;a href=&quot;https://github.com/kunalnagar/custom-404-pro&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has 8,000+ active installs as of August 2016.</summary></entry></feed>
