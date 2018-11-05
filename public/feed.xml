@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-19T05:48:10+05:30</updated><id>http://localhost:4000/</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Sync 1Password Locally</title><link href="http://localhost:4000/blog/sync-1password-local/" rel="alternate" type="text/html" title="Sync 1Password Locally" /><published>2018-10-19T00:00:00+05:30</published><updated>2018-10-19T00:00:00+05:30</updated><id>http://localhost:4000/blog/sync-1password-local</id><content type="html" xml:base="http://localhost:4000/blog/sync-1password-local/">&lt;p&gt;I love &lt;a href=&quot;https://1password.com/&quot;&gt;1Password&lt;/a&gt;. It is by far the best Password Manager I have used. I bought the Standalone version back in November 2014 and connected it to my Dropbox account.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-06T00:10:26+05:30</updated><id>http://localhost:4000/</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>http://localhost:4000/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
+
+&lt;p&gt;I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.&lt;/p&gt;
+
+&lt;p&gt;This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.&lt;/p&gt;
+
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I use &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; on this site, just because it’s simple and works out of the box. I used &lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt; for a while but I could never figure out how permalinks and URLs work there.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I use &lt;a href=&quot;https://bitbucket.org/&quot;&gt;Bitbucket&lt;/a&gt; to store this site’s code in a private repository.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I have a DigitalOcean &lt;a href=&quot;https://www.digitalocean.com/products/droplets/&quot;&gt;droplet&lt;/a&gt; which serves my &lt;a href=&quot;https://nextcloud.com/&quot;&gt;Nextcloud&lt;/a&gt; instance and this site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;As mentioned, I use &lt;a href=&quot;https://codeship.com/&quot;&gt;Codeship&lt;/a&gt; to make the magic happen. I highly recommend checking them out. Their free tier works for most scenarios.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;recipe&quot;&gt;Recipe&lt;/h3&gt;
+
+&lt;p&gt;At this point, I’m assuming that you have a static site that you want to deploy stored in a repository somewhere. I’ll be using Bitbucket in this case, but any &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; provider will do.&lt;/p&gt;
+
+&lt;h4 id=&quot;setting-up-codeship&quot;&gt;Setting up Codeship&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Log in to Codeship and create a new project&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make sure you have your repository SSH URL handy. It looks like:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;git@&amp;lt;provider&amp;gt;:&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;.git&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You will land on the Tests page. Click on Deploy where you will have to give a branch name that Codeship will watch and do subsequent builds from. In my case, if any commits are pushed to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; (including pull requests), a build is triggered.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;deployment&quot;&gt;Deployment&lt;/h4&gt;
+
+&lt;p&gt;Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Every project on Codeship has a public SSH key. Go to project &amp;gt; General settings and you should find it there. Make sure this key is &lt;a href=&quot;https://www.ssh.com/ssh/authorized_keys/&quot;&gt;authorized&lt;/a&gt; on your DigitalOcean droplet as it will be used to automatically push code to your droplet.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To push code from Codeship to your droplet, we will use &lt;a href=&quot;https://kb.iu.edu/d/agye&quot;&gt;Secure Copy or scp&lt;/a&gt;. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;scp -rp ~/clone/* user@droplet:/var/www/html/&amp;lt;folder&amp;gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The above command will deploy your built code to a folder on your droplet.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For Jekyll sites, the final code lives in the &lt;code class=&quot;highlighter-rouge&quot;&gt;public&lt;/code&gt; directory by default. Point the &lt;code class=&quot;highlighter-rouge&quot;&gt;.htaccess&lt;/code&gt; file on your droplet to the public folder and you should be set!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Helpful links:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://documentation.codeship.com/basic/continuous-deployment/deployment-to-digitalocean/&quot;&gt;Deploy to DigitalOcean&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://documentation.codeship.com/basic/continuous-deployment/deployment-with-custom-scripts/&quot;&gt;Deploy with Custom Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard *.github.io and *.gitlab.io domains. But what if you have your own VPS and want the same experience?</summary></entry><entry><title type="html">Sync 1Password Locally</title><link href="http://localhost:4000/blog/sync-1password-local/" rel="alternate" type="text/html" title="Sync 1Password Locally" /><published>2018-10-19T00:00:00+05:30</published><updated>2018-10-19T00:00:00+05:30</updated><id>http://localhost:4000/blog/sync-1password-local</id><content type="html" xml:base="http://localhost:4000/blog/sync-1password-local/">&lt;p&gt;I love &lt;a href=&quot;https://1password.com/&quot;&gt;1Password&lt;/a&gt;. It is by far the best Password Manager I have used. I bought the Standalone version back in November 2014 and connected it to my Dropbox account.&lt;/p&gt;
 
 &lt;p&gt;I recently figured out that the 1Password vault can be synced locally as well. No need for Dropbox.&lt;/p&gt;
 
@@ -814,39 +895,4 @@ var _initNoFlash = function() {
 
 &lt;p&gt;Bartender 2 is free to download for try for 4 weeks. After that, you need to purchase the full version which costs &lt;strong&gt;$15&lt;/strong&gt; and I highly recommend that you buy it if you like a clean minimal OS X Menu Bar.&lt;/p&gt;
 
-&lt;p&gt;For more information, please visit the &lt;a href=&quot;http://www.macbartender.com/&quot;&gt;official site&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.</summary></entry><entry><title type="html">Browse YouTube like a boss</title><link href="http://localhost:4000/blog/chrome-extension-youtube-jukebox/" rel="alternate" type="text/html" title="Browse YouTube like a boss" /><published>2015-10-18T00:00:00+05:30</published><updated>2015-10-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/chrome-extension-youtube-jukebox</id><content type="html" xml:base="http://localhost:4000/blog/chrome-extension-youtube-jukebox/">&lt;p&gt;&lt;b&gt;Disclaimer:&lt;/b&gt; This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.&lt;/p&gt;
-
-&lt;p&gt;YouTube is great. I use it all the time to learn, relax, listen to music and probably have a laugh or two. So I built a Chrome Extension that is a lighter version of YouTube Playlists.&lt;/p&gt;
-
-&lt;p&gt;It adds two things to youtube.com:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;An “Add to Jukebox” button next to every video&lt;/li&gt;
-  &lt;li&gt;A Sidebar for consuming videos and making a list&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As soon as you activate the extension, you’ll see an “Add to Jukebox” button next to every video on YouTube.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-1.png&quot; alt=&quot;Add to Jukebox Button&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Just click on it and the video will be automatically added to the Jukebox sidebar. You can continue adding more videos or just browse YouTube while the video keeps playing in the sidebar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-2.png&quot; alt=&quot;YouTube Jukebox Sidebar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Videos are saved so even if you refresh the page, they will still be visible in the list unless you explicitly delete them. Each video gets a play button, trash and repeat button. When you click on the video, it starts playing and the status is denoted by a green line next to the video.&lt;/p&gt;
-
-&lt;p&gt;You can find the Add to Jukebox button on indvidual videos, search results, your YouTube home page and many more. It’s everywhere.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-3.png&quot; alt=&quot;YouTube Jukebox Single Video&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-4.png&quot; alt=&quot;YouTube Jukebox Search Results&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-5.png&quot; alt=&quot;YouTube Jukebox Home Page&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
-
-&lt;p&gt;It’s free and you can download it &lt;a href=&quot;https://chrome.google.com/webstore/detail/youtube-jukebox/hdncjkfadfcjifpibmgpmcldjdmemkcd?hl=en-US&amp;amp;gl=IN&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=wrkE5Aci5CI&quot;&gt;Watch&lt;/a&gt; on YouTube&lt;/p&gt;</content><author><name></name></author><summary type="html">Disclaimer: This extension does not work with the latest YouTube layout. I plan on updating the Chrome Extension soon.</summary></entry></feed>
+&lt;p&gt;For more information, please visit the &lt;a href=&quot;http://www.macbartender.com/&quot;&gt;official site&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.</summary></entry></feed>
