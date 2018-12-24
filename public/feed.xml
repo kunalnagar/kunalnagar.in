@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-06T00:10:26+05:30</updated><id>http://localhost:4000/</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>http://localhost:4000/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-24T09:34:43+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
+
+&lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;Create a new registry file and paste the following contents in it. For example, you can name it &lt;code&gt;photoviewer.reg&lt;/code&gt;, it doesn’t really matter.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll]
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell]
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open]
+&quot;MuiVerb&quot;=&quot;@photoviewer.dll,-3043&quot;
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\DropTarget]
+&quot;Clsid&quot;=&quot;{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}&quot;
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print]
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\DropTarget]
+&quot;Clsid&quot;=&quot;{60fd46de-f830-4894-a628-6fa81bc0190d}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, you should have a file on your machine called &lt;code&gt;photoviewer.reg&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+
+&lt;p&gt;Double click the registry file we created and follow the instructions.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+
+&lt;p&gt;Once the registry entries have been successfully added, &lt;em&gt;right-click on an image&lt;/em&gt; &amp;gt; &lt;em&gt;Open with&lt;/em&gt; &amp;gt; &lt;em&gt;Another application&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A dialog will pop-up, choose more apps (not from the app store) and select “Windows Photo Viewer” from the list.&lt;/p&gt;
+
+&lt;p&gt;And you’re done! If you don’t see the Windows Photo Viewer option still, try logging out and back in again.&lt;/p&gt;</content><author><name></name></author><summary type="html">Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.</summary></entry><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>http://localhost:4000/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
 
 &lt;p&gt;I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.&lt;/p&gt;
 
@@ -852,47 +913,4 @@ var _initNoFlash = function() {
   &lt;li&gt;Trial version: Unlimited 7-Days Trial. After the trial is over, users can keep using TripMode for a maximum of 15 min per day. Made for light users.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For more information, check out their &lt;a href=&quot;http://www.tripmode.ch/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.</summary></entry><entry><title type="html">Bartender 2 for Mac OS X</title><link href="http://localhost:4000/blog/mac-bartender-os-x-menu-bar-minimalism/" rel="alternate" type="text/html" title="Bartender 2 for Mac OS X" /><published>2016-02-14T00:00:00+05:30</published><updated>2016-02-14T00:00:00+05:30</updated><id>http://localhost:4000/blog/mac-bartender-os-x-menu-bar-minimalism</id><content type="html" xml:base="http://localhost:4000/blog/mac-bartender-os-x-menu-bar-minimalism/">&lt;p&gt;Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;Here are some of the top features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Lets you tidy your menu bar apps how you want.&lt;/li&gt;
-  &lt;li&gt;See your menu bar apps when you want.&lt;/li&gt;
-  &lt;li&gt;Hide the apps you need to run, but do not need to see.&lt;/li&gt;
-  &lt;li&gt;Have the clean looking menu bar you want.&lt;/li&gt;
-  &lt;li&gt;Re-arrange the menu bar items as you wish.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;take-control-of-your-menu-bar&quot;&gt;Take Control of your Menu Bar&lt;/h2&gt;
-
-&lt;p&gt;Bartender allows you to choose which apps stay in the menu bar and which apps are hidden under the Bartender Bar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-1.png&quot; alt=&quot;Cleaned up Mac OS X Menu Bar&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;bartender-bar&quot;&gt;Bartender Bar&lt;/h2&gt;
-
-&lt;p&gt;Clicking on the Bartender icon will reveal the Bartender Bar. You can also assign a Hotkey to it like Alfred.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-2.png&quot; alt=&quot;Bartender Bar&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;other-features&quot;&gt;Other Features&lt;/h2&gt;
-
-&lt;p&gt;Here are some additional features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Recently updated apps with a notification will be shown outside the Bartender Bar (if hidden) for a certain amount of time that can be configured.&lt;/li&gt;
-  &lt;li&gt;Re-order all your menu bar items.&lt;/li&gt;
-  &lt;li&gt;Bartender Bar can be placed anywhere you want.&lt;/li&gt;
-  &lt;li&gt;It even hides the Notification Centre Icon.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It has also been featured in popular blogs such as &lt;a href=&quot;http://www.macstories.net/roundups/my-must-have-mac-apps-2012-edition/&quot;&gt;MacStories&lt;/a&gt; and &lt;a href=&quot;http://www.macworld.com/article/2023414/favorite-mac-gems-of-2012.html&quot;&gt;MacWorld&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;pricing&quot;&gt;Pricing&lt;/h2&gt;
-
-&lt;p&gt;Bartender 2 is free to download for try for 4 weeks. After that, you need to purchase the full version which costs &lt;strong&gt;$15&lt;/strong&gt; and I highly recommend that you buy it if you like a clean minimal OS X Menu Bar.&lt;/p&gt;
-
-&lt;p&gt;For more information, please visit the &lt;a href=&quot;http://www.macbartender.com/&quot;&gt;official site&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Bartender 2 for Mac OS X is an amazing piece of software that allows you to de-clutter your OS X Menu Bar. You can organise your menu bar apps by moving or rearranging them or moving them to the Bartender Bar.</summary></entry></feed>
+&lt;p&gt;For more information, check out their &lt;a href=&quot;http://www.tripmode.ch/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.</summary></entry></feed>
