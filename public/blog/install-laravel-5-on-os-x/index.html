@@ -13,19 +13,33 @@
 </head>
 <body>
     <nav id="navbar">
-    <ul class="navbar-items">
-        <li>Kunal Nagar</li>
-        <li><a href="/">/</a></li>
-        <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
-        <li><a href="/foss">Open Source</a></li>
-        <li><a href="/blog">Blog</a></li>
-    </ul>
+    <div class="container">
+        <div class="navbar-container">
+            <h1 class="navbar-logo">
+                <svg id="Full_Logo_SVG" data-name="Full Logo SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287.7" height="115.2" viewBox="0 0 959 384">
+                  <g>
+                    <rect x="352" width="255" height="240"/>
+                    <image id="K" x="451" y="81" width="68" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAA90lEQVQ4ja3Vuw3CMBAGYIsFICtkBSZAyixeIRIdXVZgBTMCHXUqekraFFngR5bO4XD8ODtYiqI4vi/RnR8KwBvATNdJFTQAFxb7ALC3nbx1Ug6AZnEjgMa9mEtBD5sWrAYMYEd/gBjMYiWgCJOCYkwCephtOp6UDGj/pAhLgYRNRVgMDGC9CAuBAcwVopV4O+/ZVu+ulHIz/0Z3+2x+VoTwD1cFAGBY37UW1Ox9Q4tfls8AuKpmIK/iiR39enKHSYC5zWFgY8fNII3n+Rz+AbbJFVS5Y3dePr9FqgEprmdxL36m8CYGKZZPeuM6txyjBwDPJR44fwCKHxx9YzQ8cAAAAABJRU5ErkJggg=="/>
+                  </g>
+                  <image id="NAGAR" y="305" width="959" height="79" xlink:href="data:img/png;base64,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"/>
+                </svg>
+
+            </h1>
+            <ul class="navbar-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
+                <li><a href="/foss">Open Source</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-    <div id="content">
-        <h1>Install Laravel 5 on OS X</h1>
-        <p class="by-line">Apr 14, 2015 <a href="/blog/install-laravel-5-on-os-x/">permalink</a></p>
-        <p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
+    <div class="page page-blog--single">
+        <div id="content" class="container">
+            <h1>Install Laravel 5 on OS X</h1>
+            <p class="by-line">Apr 14, 2015 <a href="/blog/install-laravel-5-on-os-x/">permalink</a></p>
+            <p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
 
 <p>If you’re like me, you’ve probably spent countless hours on the web trying to figure out how to install the dev-develop version of Laravel on your machine. As of today, the latest Laravel version 4.2 but if you want to see the awesome Laravel 5 features, you need to upgrade.</p>
 
@@ -237,6 +251,7 @@ mv composer.phar /usr/local/bin/composer
 <p>Congratulations! You just set up a new Laravel 5 project from scratch.</p>
 
 
+        </div>
     </div>
     <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">

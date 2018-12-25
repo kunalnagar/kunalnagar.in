@@ -13,7 +13,7 @@ So my parents listen to music on YouTube. Because apparently, services like [Saa
 
 One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.
 
-![Sample Android Malware Screenshot](/assets/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG)
+<!-- ![Sample Android Malware Screenshot](/assets/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG) -->
 
 Hence, I decided to create a converter for them that is ad-free and does the job. You enter a URL, click Convert and you get an mp3 file to download. From here on, I will be discussing how to build such a thing and what is the concept behind these converters and how they work. So if you're not interested, shoo off.
 
