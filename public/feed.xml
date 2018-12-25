@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-24T09:34:43+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-25T10:29:01+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
 
 &lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
 
@@ -178,8 +178,7 @@
 
 &lt;p&gt;I figured out a way to block Skype ads using a handful of host file entries. Download a &lt;a href=&quot;/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt&quot;&gt;.txt&lt;/a&gt; version here. I’ve mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).&lt;/p&gt;
 
-&lt;pre&gt;
-# Block Skype ads (core)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Block Skype ads (core)
 127.0.0.1 *.msads.net
 127.0.0.1 *.msecn.net
 127.0.0.1 *.rad.msn.com
@@ -210,19 +209,18 @@
 127.0.0.1 secure.flashtalking.com
 127.0.0.1 static.2mdn.net
 127.0.0.1 static.2mdn.net
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.&lt;/p&gt;
 
 &lt;p&gt;Based on your OS, go to: &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/skype/YOUR_USER_NAME/config.xml&lt;/code&gt; and set all &lt;code class=&quot;highlighter-rouge&quot;&gt;Advert&lt;/code&gt; related values to 0.&lt;/p&gt;
 
-&lt;pre&gt;
-&amp;lt;AdvertEastRailsEnabled&amp;gt;0&amp;lt;/AdvertEastRailsEnabled&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;AdvertEastRailsEnabled&amp;gt;0&amp;lt;/AdvertEastRailsEnabled&amp;gt;
 &amp;lt;AdvertLargeEastRailCutoff&amp;gt;0&amp;lt;/AdvertLargeEastRailCutoff&amp;gt;
 &amp;lt;AdvertNorthRailCutoff&amp;gt;0&amp;lt;/AdvertNorthRailCutoff&amp;gt;
 &amp;lt;AdvertPlaceholder&amp;gt;0&amp;lt;/AdvertPlaceholder&amp;gt;
 &amp;lt;AdvertSmallEastRailCutoff&amp;gt;0&amp;lt;/AdvertSmallEastRailCutoff&amp;gt;
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;Tell me&lt;/a&gt; about it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry><entry><title type="html">YouTube to Mp3 converter</title><link href="http://localhost:4000/blog/youtube-to-mp3-converter/" rel="alternate" type="text/html" title="YouTube to Mp3 converter" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-02-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/youtube-to-mp3-converter</id><content type="html" xml:base="http://localhost:4000/blog/youtube-to-mp3-converter/">&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oA-D7TdjVnE&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
 
@@ -230,7 +228,7 @@
 
 &lt;p&gt;One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG&quot; alt=&quot;Sample Android Malware Screenshot&quot; /&gt;&lt;/p&gt;
+&lt;!-- ![Sample Android Malware Screenshot](/assets/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG) --&gt;
 
 &lt;p&gt;Hence, I decided to create a converter for them that is ad-free and does the job. You enter a URL, click Convert and you get an mp3 file to download. From here on, I will be discussing how to build such a thing and what is the concept behind these converters and how they work. So if you’re not interested, shoo off.&lt;/p&gt;
 
