@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-02-24T00:42:38+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Customize your Bash Prompt</title><link href="https://kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://kunalnagar.in/blog/customize-bash-prompt/">&lt;h3 id=&quot;rant&quot;&gt;Rant&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-02-24T00:55:16+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Customize your Bash Prompt</title><link href="https://kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://kunalnagar.in/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
 
-&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing in ther terminal rather than admiring how colourful my terminal is.&lt;/p&gt;
-
-&lt;p&gt;By default, macOS gives you this terminal&lt;/p&gt;
+&lt;p&gt;By default, macOS gives you this terminal:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/n57DPG3.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
 
@@ -14,7 +12,7 @@
 
 &lt;h3 id=&quot;my-setup&quot;&gt;My setup&lt;/h3&gt;
 
-&lt;p&gt;Here’s what I have and it works for me very well. It may not, for you, but it does for me.&lt;/p&gt;
+&lt;p&gt;Here’s what I have and I’m really happy with it.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
 
@@ -38,7 +36,7 @@
 
 &lt;h3 id=&quot;how-to-set-it-up&quot;&gt;How to set it up&lt;/h3&gt;
 
-&lt;p&gt;If you’re really impressed by it and just want the code, copy paste the following in your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; and move on with your life as usual.&lt;/p&gt;
+&lt;p&gt;If you’re really impressed by it and just want the code, copy paste the following in your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; and move on with your life.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git_prompt() {
     
@@ -138,7 +136,7 @@ updates-v3
 
 &lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
 
-&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">Rant</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="https://kunalnagar.in/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="https://kunalnagar.in/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="https://kunalnagar.in/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="https://kunalnagar.in/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
 
 &lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
 
