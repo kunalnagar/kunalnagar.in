@@ -6,11 +6,9 @@ description: "I like to keep my bash prompt clean and simple. Learn how to setup
 permalink: /blog/customize-bash-prompt/
 ---
 
-### Rant
+I like to keep my bash prompt really minimal. I'm not into colours. I'm not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I'm doing.
 
-I like to keep my bash prompt really minimal. I'm not into colours. I'm not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I'm doing in ther terminal rather than admiring how colourful my terminal is.
-
-By default, macOS gives you this terminal
+By default, macOS gives you this terminal:
 
 ![Imgur](https://i.imgur.com/n57DPG3.png)
 
@@ -22,7 +20,7 @@ Plus, when I navigate to a git repo, it doesn't even show what branch I'm on. Do
 
 ### My setup
 
-Here's what I have and it works for me very well. It may not, for you, but it does for me.
+Here's what I have and I'm really happy with it.
 
 ![Imgur](https://i.imgur.com/3Dwoh1Z.png)
 
@@ -42,7 +40,7 @@ Things I don't need here:
 
 ### How to set it up
 
-If you're really impressed by it and just want the code, copy paste the following in your ```~/.bash_profile``` and move on with your life as usual.
+If you're really impressed by it and just want the code, copy paste the following in your ```~/.bash_profile``` and move on with your life.
 
 ```
 git_prompt() {
