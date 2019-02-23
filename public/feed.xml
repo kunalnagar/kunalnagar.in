@@ -1,4 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-25T10:29:01+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-24T00:34:51+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Customize your Bash Prompt</title><link href="http://localhost:4000/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/customize-bash-prompt</id><content type="html" xml:base="http://localhost:4000/blog/customize-bash-prompt/">&lt;h3 id=&quot;rant&quot;&gt;Rant&lt;/h3&gt;
+
+&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing in ther terminal rather than admiring how colourful my terminal is.&lt;/p&gt;
+
+&lt;p&gt;By default, macOS gives you this terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/n57DPG3.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I fucking hate it. Why do I need to see my machine name every time I open the terminal? &lt;a href=&quot;https://www.merriam-webster.com/dictionary/phooey&quot;&gt;Phooey&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Plus, when I navigate to a git repo, it doesn’t even show what branch I’m on. Double phooey.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sNgVmfJ.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;my-setup&quot;&gt;My setup&lt;/h3&gt;
+
+&lt;p&gt;Here’s what I have and it works for me very well. It may not, for you, but it does for me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-do-i-like-about-it&quot;&gt;What do I like about it?&lt;/h3&gt;
+
+&lt;p&gt;Couple of things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shows me what user I’m logged in as (good on unix systems when you want to switch between root and normal user)&lt;/li&gt;
+  &lt;li&gt;Shows me the full (read FULL) path of where I am. Yes, FULL.&lt;/li&gt;
+  &lt;li&gt;Shows me the branch I’m on (if I’m in a git repo)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Things I don’t need here:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Machine name&lt;/li&gt;
+  &lt;li&gt;Date&lt;/li&gt;
+  &lt;li&gt;10 billion colours&lt;/li&gt;
+  &lt;li&gt;Emoji.      &lt;small&gt;&lt;small&gt;&lt;small&gt;Well…&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-set-it-up&quot;&gt;How to set it up&lt;/h3&gt;
+
+&lt;p&gt;If you’re really impressed by it and just want the code, copy paste the following in your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; and move on with your life as usual.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git_prompt() {
+    
+    local branchName=&quot;&quot;;
+    
+    # Check if the current directory is in a Git repository.
+    if git rev-parse --git-dir &amp;gt; /dev/null 2&amp;gt;&amp;amp;1; then
+        branchName=&quot;$(git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null || \
+	        git rev-parse --short HEAD 2&amp;gt; /dev/null || \
+		    echo '(unknown)')&quot;;
+        echo -e &quot;(${branchName})&quot;;
+    else
+        return;
+    fi;
+
+}
+
+PS1=&quot;\n[\u] at \w&quot;;
+
+PS1+=&quot; \$(git_prompt)&quot;;
+
+PS1+=&quot;\n=&amp;gt; &quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re like me and want to understand what this gibberish means, read on.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git_prompt()&lt;/code&gt; method spits out the current branch name, if it exists. Let’s try to break it down.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+
+&lt;p&gt;Let’s run the first half of the command in a git repo and a normal folder and see what happens&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; git rev-parse --git-dir
+.git
+
+[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; cd ..
+
+[kunalnagar] at ~/Documents/Code
+=&amp;gt; git rev-parse --git-dir
+fatal: not a git repository (or any of the parent directories): .git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So basically, this command is used to check if our current working directory is a git repo or not.&lt;/p&gt;
+
+&lt;p&gt;What’s the writing to &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/null&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;2&amp;gt;&amp;amp;1&lt;/code&gt; mean? Read more &lt;a href=&quot;https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+
+&lt;p&gt;Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null
+updates-v3
+
+[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; cd ..
+
+[kunalnagar] at ~/Documents/Code
+=&amp;gt; git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git symbolic-ref&lt;/code&gt; allows us to read, modify and delete &lt;a href=&quot;https://stackoverflow.com/a/1526526&quot;&gt;symbolic refs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information on the flags, check out &lt;a href=&quot;https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--quiet&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--short&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see from the above example, when the above command is run, it spits out the branch name.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git rev-parse&lt;/code&gt; is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null || git rev-parse
+updates-v3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+
+&lt;p&gt;Cool, now we have the branch name. Now we just need to set the bash variable &lt;code class=&quot;highlighter-rouge&quot;&gt;PS&lt;/code&gt; to show our minimal prompt&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS1=&quot;\n[\u] at \w&quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\n&lt;/code&gt;: New line&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\u&lt;/code&gt;: Current user (name)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\w&lt;/code&gt;: Path relative to home (notice the tilda in the path names in the screenshots)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS1+=&quot; \$(git_prompt)&quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This appends the branch name in parentheses (if it’s a git repo)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS1+=&quot;\n=&amp;gt; &quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
+
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">Rant</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
 
 &lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
 
@@ -883,32 +1023,4 @@ var _initNoFlash = function() {
 
 &lt;p&gt;Demo: &lt;a href=&quot;https://kunalnagar.github.io/zeroclipboard-demo/&quot;&gt;https://kunalnagar.github.io/zeroclipboard-demo/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;If you have any questions, please fire away in the comments below. Thanks!&lt;/p&gt;</content><author><name></name></author><summary type="html">In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</summary></entry><entry><title type="html">TripMode - Your Mobile Data Savior</title><link href="http://localhost:4000/blog/tripmode-mobile-data-savior/" rel="alternate" type="text/html" title="TripMode - Your Mobile Data Savior" /><published>2016-08-24T00:00:00+05:30</published><updated>2016-08-24T00:00:00+05:30</updated><id>http://localhost:4000/blog/tripmode-mobile-data-savior</id><content type="html" xml:base="http://localhost:4000/blog/tripmode-mobile-data-savior/">&lt;p&gt;TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.&lt;/p&gt;
-
-&lt;p&gt;TripMode automatically reduces your mobile data consumption when you use a mobile hotspot thus saving you data and money. It has been designed to be as simple as possible and is accessible at any time from the system tray.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/tripmode-mobile-data-savior/tripmode-1.jpg&quot; alt=&quot;TripMode for Mac&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/tripmode-mobile-data-savior/tripmode-2.jpg&quot; alt=&quot;TripMode for Windows&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;TripMode primarily has three features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It blocks Internet access, to prevent unwanted traffic. All apps are blocked when TripMode is on. Only the ones that are selected by the user can access the Internet.&lt;/li&gt;
-  &lt;li&gt;It is turned on automatically. Only when it is needed. TripMode remembers which networks it was activated on before, and enables itself automatically when the user is connected to it. No need to dig in menus.&lt;/li&gt;
-  &lt;li&gt;It measures the quantity of traffic, to always stay informed. Keeping track of data consumption is key with limited data plans. TripMode displays the MB consumed per app and in total for the session, day or month.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;TripMode for Windows has its user interface optimized for the Windows versions it’s running on, enabling users with touch-tablets to easily interact with the app for example.&lt;/p&gt;
-
-&lt;h2 id=&quot;pricing--availability&quot;&gt;Pricing &amp;amp; Availability&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Compatible with Microsoft Windows 10, 8.1 and 7.&lt;/li&gt;
-  &lt;li&gt;Paid version: &lt;b&gt;$7.99&lt;/b&gt; VAT incl.&lt;/li&gt;
-  &lt;li&gt;Trial version: Unlimited 7-Days Trial. After the trial is over, users can keep using TripMode for a maximum of 15 min per day. Made for light users.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For more information, check out their &lt;a href=&quot;http://www.tripmode.ch/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TripMode is the best way to stop updates and other background processes from consuming your mobile data. It’s the perfect companion for people who travel a lot and need to keep their mobile data under control.</summary></entry></feed>
+&lt;p&gt;If you have any questions, please fire away in the comments below. Thanks!&lt;/p&gt;</content><author><name></name></author><summary type="html">In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</summary></entry></feed>
