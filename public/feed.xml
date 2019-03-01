@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-02-24T00:55:16+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Customize your Bash Prompt</title><link href="https://kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://kunalnagar.in/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-03-01T18:59:23+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h3&gt;
+
+&lt;p&gt;I’m assuming you are registered with an Indane gas agency. Mine was &lt;a href=&quot;https://goo.gl/maps/7t2LnjqDFTN2&quot;&gt;Gajanana Enterprises Koramangala&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a list of stuff you’ll need before you visit the agency:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Original documents of the connection&lt;/li&gt;
+  &lt;li&gt;Gas Regulator&lt;/li&gt;
+  &lt;li&gt;ID Proof (1 copy, carry original) - I carried my Aadhar card&lt;/li&gt;
+  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
+  &lt;li&gt;Gas cylinders&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was &lt;strong&gt;Rs. 3,050/-&lt;/strong&gt; as shown below. This is the amount you’ll get back after the transfer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qdD7fha.png&quot; alt=&quot;https://i.imgur.com/qdD7fha.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h3&gt;
+
+&lt;p&gt;If you don’t own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to visit the agency on the same day the cylinders are being picked up.&lt;/li&gt;
+  &lt;li&gt;The cylinders need to reach the agency BEFORE the transfer process can be started.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-3-visit-current-agency&quot;&gt;Step 3: Visit current agency&lt;/h3&gt;
+
+&lt;p&gt;Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.&lt;/p&gt;
+
+&lt;p&gt;During the process, you’ll have to tell them the destination city and state.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Only city and state name is required. So for me, it would be &lt;em&gt;Jaipur Rajasthan&lt;/em&gt;. You can register with any agency in the destination city.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; alt=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The staff will put in a request for transfer. It usually takes a while for the request to sync to the &lt;strong&gt;Indane Central server&lt;/strong&gt;. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; alt=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep this document safely as you need to present it to the other agency where you’re transferring.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency’s copy of the above document.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4-visit-transferring-agency&quot;&gt;Step 4: Visit transferring agency&lt;/h3&gt;
+
+&lt;p&gt;Once you have the Transfer document, you need to visit the transferring agency with the following details:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Transfer document&lt;/li&gt;
+  &lt;li&gt;ID Proof (1 copy, carry original)&lt;/li&gt;
+  &lt;li&gt;Adress Proof (1 copy, carry original)&lt;/li&gt;
+  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For me, the ID proof and the address proof are the same (Aadhar card), so I carried two copies of the Aadhar card.&lt;/p&gt;
+
+&lt;p&gt;Once you’re at the agency, you’ll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.&lt;/p&gt;
+
+&lt;p&gt;Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.&lt;/p&gt;
+
+&lt;p&gt;You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; alt=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="https://kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://kunalnagar.in/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
 
 &lt;p&gt;By default, macOS gives you this terminal:&lt;/p&gt;
 
@@ -721,304 +789,4 @@ define('SITECOOKIEPATH', '');
 })();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Thanks for taking the time to read this. Build something awesome!&lt;/p&gt;</content><author><name></name></author><summary type="html">Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</summary></entry><entry><title type="html">GitHub Copy Path Widget using ZeroClipboard</title><link href="https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard/" rel="alternate" type="text/html" title="GitHub Copy Path Widget using ZeroClipboard" /><published>2016-09-03T00:00:00+05:30</published><updated>2016-09-03T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard</id><content type="html" xml:base="https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard/">&lt;p&gt;In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png&quot; alt=&quot;ZeroClipboard in Chrome&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is how the widget looks natively in Chrome (Copy button enabled)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-2.png&quot; alt=&quot;ZeroClipboard in Safari/Firefox&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is how the widget looks natively in Safari (Copy button disabled since Flash is not installed)&lt;/p&gt;
-
-&lt;p&gt;We are going to be creating a similar widget with just the input text box and the copy button. Let’s see how it’s done.&lt;/p&gt;
-
-&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zeroclipboard/zeroclipboard&quot;&gt;ZeroClipboard&lt;/a&gt; For the actual copy task&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; For Visual Flair&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://fontawesome.io/&quot;&gt;FontAwesome&lt;/a&gt; For the Copy Icon&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
-
-&lt;p&gt;Here is the HTML that contains two copy widgets. We’re going to write code that works across multiple instances of the Widget.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-        &amp;lt;link href=&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; /&amp;gt;
-        &amp;lt;link href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; /&amp;gt;
-        &amp;lt;link href=&amp;quot;style.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; /&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
-            &amp;lt;div class=&amp;quot;main-container&amp;quot;&amp;gt;
-                &amp;lt;div class=&amp;quot;input-group&amp;quot;&amp;gt;
-                    &amp;lt;input class=&amp;quot;form-control copy-text&amp;quot; type=&amp;quot;text&amp;quot; value=&amp;quot;I am the copied text!&amp;quot; readonly /&amp;gt;
-                    &amp;lt;span class=&amp;quot;input-group-btn&amp;quot;&amp;gt;
-                        &amp;lt;button class=&amp;quot;btn btn-default btn-copy&amp;quot; type=&amp;quot;button&amp;quot;&amp;gt;
-                            &amp;lt;i class=&amp;quot;fa fa-clipboard&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;amp;nbsp;Copy
-                        &amp;lt;/button&amp;gt;
-                    &amp;lt;/span&amp;gt;
-                &amp;lt;/div&amp;gt;
-                &amp;lt;div class=&amp;quot;input-group&amp;quot;&amp;gt;
-                    &amp;lt;input class=&amp;quot;form-control copy-text&amp;quot; type=&amp;quot;text&amp;quot; value=&amp;quot;I am a different copied text!&amp;quot; readonly /&amp;gt;
-                    &amp;lt;span class=&amp;quot;input-group-btn&amp;quot;&amp;gt;
-                        &amp;lt;button class=&amp;quot;btn btn-default btn-copy&amp;quot; type=&amp;quot;button&amp;quot;&amp;gt;
-                            &amp;lt;i class=&amp;quot;fa fa-clipboard&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;amp;nbsp;Copy
-                        &amp;lt;/button&amp;gt;
-                    &amp;lt;/span&amp;gt;
-                &amp;lt;/div&amp;gt;
-            &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;
-        &amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-        &amp;lt;script src=&amp;quot;lib/ZeroClipboard.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-        &amp;lt;script src=&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-        &amp;lt;script src=&amp;quot;main.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
-
-&lt;p&gt;Let’s start writing some JavaScript. Begin by checking if Flash is installed or not.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;
-// Check if Flash is installed or not
-var _isFlashInstalled = function() {
-    var hasFlash = false;
-    try {
-        var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
-        if (fo) {
-            hasFlash = true;
-        }
-    } catch (e) {
-        if (navigator.mimeTypes
-            &amp;amp;&amp;amp; navigator.mimeTypes['application/x-shockwave-flash'] != undefined
-            &amp;amp;&amp;amp; navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin
-        ) {
-            hasFlash = true;
-        }
-    }
-    return hasFlash;
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
-
-&lt;p&gt;If Flash is installed:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;
-// Fires when Flash is installed
-var _initFlash = function() {
-
-    // Create a client to work on. In our case, we've created
-    // a client out of all the copy buttons
-    var client = new ZeroClipboard($('.btn-copy'));
-
-    // Fires when the client is ready
-    client.on('ready', function(e) {
-
-        // Create a tooltip that says &quot;Copy to Cliboard&quot;
-        // when you hover over the Copy button
-        $('.btn-copy').tooltip({
-            placement: 'bottom',
-            title: 'Copy to clipboard',
-            container: 'body',
-            trigger: 'manual'
-        });
-
-        // Enable the tooltip
-        $('.btn-copy').hover(function() {
-            $(this).tooltip('toggle');
-        });
-    });
-
-    // Fires when the button has been clicked and the content
-    // of the input box is being copied
-    client.on('copy', function(e) {
-
-        // Find the nearest input box and copy it's contents
-        var val = $(e.target)
-                    .closest('.input-group')
-                    .find('.copy-text')
-                    .val();
-        e.clipboardData.setData('text/plain', val);
-    });
-
-    // Fires when the contents of the Input box have been copied
-    client.on('aftercopy', function(e) {
-
-        // Change the tooltip to say &quot;Copied!&quot;
-        $(e.target)
-            .attr('data-original-title', 'Copied!')
-            .tooltip('fixTitle')
-            .tooltip('show');
-
-        // Reset the tooltip back to the original text
-        setTimeout(function() {
-            $(e.target)
-                .attr('data-original-title', 'Copy to clipboard')
-                .tooltip('fixTitle');
-        }, 2000);
-    });
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If Flash is not insalled:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;
-// Fires when Flash is not installed.
-var _initNoFlash = function() {
-
-    // Hide the Copy Button
-    $('.input-group-btn').hide();
-
-    // Make the input text boxes full width
-    $('.input-group').css({
-        'width': '100%'
-    });
-
-    // Fix their border-radius properties
-    $('.copy-text').css({
-        'border-radius': '4px'
-    });
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, it all comes together in a single file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;
-(function() {
-
-    'use strict';
-
-    var App = function() {
-
-        // Check if Flash is installed or not
-        var _isFlashInstalled = function() {
-            var hasFlash = false;
-            try {
-                var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
-                if (fo) {
-                    hasFlash = true;
-                }
-            } catch (e) {
-                if (navigator.mimeTypes
-                    &amp;amp;&amp;amp; navigator.mimeTypes['application/x-shockwave-flash'] != undefined
-                    &amp;amp;&amp;amp; navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin
-                ) {
-                    hasFlash = true;
-                }
-            }
-            return hasFlash;
-        };
-
-        // Fires when Flash is installed
-        var _initFlash = function() {
-
-            // Create a client to work on. In our case, we've created
-            // a client out of all the copy buttons
-            var client = new ZeroClipboard($('.btn-copy'));
-
-            // Fires when the client is ready
-            client.on('ready', function(e) {
-
-                // Create a tooltip that says &quot;Copy to Cliboard&quot;
-                // when you hover over the Copy button
-                $('.btn-copy').tooltip({
-                    placement: 'bottom',
-                    title: 'Copy to clipboard',
-                    container: 'body',
-                    trigger: 'manual'
-                });
-
-                // Enable the tooltip
-                $('.btn-copy').hover(function() {
-                    $(this).tooltip('toggle');
-                });
-            });
-
-            // Fires when the button has been clicked and the content
-            // of the input box is being copied
-            client.on('copy', function(e) {
-
-                // Find the nearest input box and copy it's contents
-                var val = $(e.target)
-                            .closest('.input-group')
-                            .find('.copy-text')
-                            .val();
-                e.clipboardData.setData('text/plain', val);
-            });
-
-            // Fires when the contents of the Input box have been copied
-            client.on('aftercopy', function(e) {
-
-                // Change the tooltip to say &quot;Copied!&quot;
-                $(e.target)
-                    .attr('data-original-title', 'Copied!')
-                    .tooltip('fixTitle')
-                    .tooltip('show');
-
-                // Reset the tooltip back to the original text
-                setTimeout(function() {
-                    $(e.target)
-                        .attr('data-original-title', 'Copy to clipboard')
-                        .tooltip('fixTitle');
-                }, 2000);
-            });
-        };
-
-        // Fires when Flash is not installed
-        var _initNoFlash = function() {
-
-            // Hide the Copy Button
-            $('.input-group-btn').hide();
-
-            // Make the input text boxes full width
-            $('.input-group').css({
-                'width': '100%'
-            });
-
-            // Fix their border-radius properties
-            $('.copy-text').css({
-                'border-radius': '4px'
-            });
-        };
-
-        // Main init
-        var _init = function() {
-            if(_isFlashInstalled) {
-                _initFlash();
-            } else {
-                _initNoFlash();
-            }
-        };
-
-        return {
-            init: _init
-        }
-
-    };
-
-    $(function() {
-
-        var app = new App();
-        app.init();
-
-    });
-
-})();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;download--demo&quot;&gt;Download &amp;amp; Demo&lt;/h2&gt;
-
-&lt;p&gt;The code is readily available for your perusal on GitHub. Please note that I would have given a CodePen/JSFiddle link, but their sandboxing policies don’t allow ZeroClipboard to function at full capacity in all browsers while editing code.&lt;/p&gt;
-
-&lt;p&gt;GitHub: &lt;a href=&quot;https://github.com/kunalnagar/zeroclipboard-demo&quot;&gt;https://github.com/kunalnagar/zeroclipboard-demo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Demo: &lt;a href=&quot;https://kunalnagar.github.io/zeroclipboard-demo/&quot;&gt;https://kunalnagar.github.io/zeroclipboard-demo/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you have any questions, please fire away in the comments below. Thanks!&lt;/p&gt;</content><author><name></name></author><summary type="html">In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp;amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</summary></entry></feed>
+&lt;p&gt;Thanks for taking the time to read this. Build something awesome!&lt;/p&gt;</content><author><name></name></author><summary type="html">Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</summary></entry></feed>
