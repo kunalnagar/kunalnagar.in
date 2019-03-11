@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Fix permissions on XAMPP for Mac for WordPress Development">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>Blog · Kunal Nagar</title>
+    <title>Permissions fix for WordPress development on XAMPP (Mac) · Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
@@ -35,126 +35,39 @@
     </div>
 </nav>
 
-    <div id="content">
-        <div class="page page-blog">
-    <div class="container">
-        <p>I write, occasionally.</p>
-        <ul>
-        
-            <li>
-                <span>Mar 11, 2019</span>
-                <a href="/blog/wordpress-xampp-permissions-fix/">Permissions fix for WordPress development on XAMPP (Mac)</a>
-            </li>
-        
-            <li>
-                <span>Mar 01, 2019</span>
-                <a href="/blog/transfer-indane-gas-connection-another-state/">Transfer your Indane gas connection to another state</a>
-            </li>
-        
-            <li>
-                <span>Feb 23, 2019</span>
-                <a href="/blog/customize-bash-prompt/">Customize your Bash Prompt</a>
-            </li>
-        
-            <li>
-                <span>Dec 23, 2018</span>
-                <a href="/blog/set-windows-photo-viewer-default/">Set Windows Photo Viewer as your Default Image Viewer</a>
-            </li>
-        
-            <li>
-                <span>Nov 06, 2018</span>
-                <a href="/blog/deploy-sites-codeship-digital-ocean/">How I use Codeship and DigitalOcean to deploy websites</a>
-            </li>
-        
-            <li>
-                <span>Oct 19, 2018</span>
-                <a href="/blog/sync-1password-local/">Sync 1Password Locally</a>
-            </li>
-        
-            <li>
-                <span>Oct 13, 2018</span>
-                <a href="/blog/block-ads-skype/">Block Ads in Skype</a>
-            </li>
-        
-            <li>
-                <span>Feb 24, 2018</span>
-                <a href="/blog/youtube-to-mp3-converter/">YouTube to Mp3 converter</a>
-            </li>
-        
-            <li>
-                <span>Jun 24, 2017</span>
-                <a href="/blog/act-fibernet-horrible-experience/">My horrible experience with ACT Fibernet</a>
-            </li>
-        
-            <li>
-                <span>Sep 17, 2016</span>
-                <a href="/blog/rewrite-wordpress-multisites/">Rewrite WordPress Multisites</a>
-            </li>
-        
-            <li>
-                <span>Sep 10, 2016</span>
-                <a href="/blog/shared-modules-using-requirejs/">Shared Modules using RequireJS</a>
-            </li>
-        
-            <li>
-                <span>Sep 03, 2016</span>
-                <a href="/blog/github-style-copy-path-zeroclipboard/">GitHub Copy Path Widget using ZeroClipboard</a>
-            </li>
-        
-            <li>
-                <span>Aug 24, 2016</span>
-                <a href="/blog/tripmode-mobile-data-savior/">TripMode - Your Mobile Data Savior</a>
-            </li>
-        
-            <li>
-                <span>Feb 14, 2016</span>
-                <a href="/blog/mac-bartender-os-x-menu-bar-minimalism/">Bartender 2 for Mac OS X</a>
-            </li>
-        
-            <li>
-                <span>Oct 18, 2015</span>
-                <a href="/blog/chrome-extension-youtube-jukebox/">Browse YouTube like a boss</a>
-            </li>
-        
-            <li>
-                <span>Apr 22, 2015</span>
-                <a href="/blog/custom-404-pro/">Custom 404 Pro</a>
-            </li>
-        
-            <li>
-                <span>Apr 21, 2015</span>
-                <a href="/blog/ionic-push-notifications/">Ionic Push Notifications</a>
-            </li>
-        
-            <li>
-                <span>Apr 14, 2015</span>
-                <a href="/blog/install-laravel-5-on-os-x/">Install Laravel 5 on OS X</a>
-            </li>
-        
-            <li>
-                <span>Apr 14, 2015</span>
-                <a href="/blog/fix-rdsrv-malware-vsearch-downlite/">Fix RDSRV Malware (VSearch/Downlite)</a>
-            </li>
-        
-            <li>
-                <span>Feb 13, 2015</span>
-                <a href="/blog/setup-multiple-ssh-keys-mac/">Setup Multiple SSH Keys on a Mac</a>
-            </li>
-        
-            <li>
-                <span>Feb 11, 2015</span>
-                <a href="/blog/fix-google-drive-dark-mode-icon/">Fix Google Drive Dark Mode Icon</a>
-            </li>
-        
-            <li>
-                <span>Jan 08, 2015</span>
-                <a href="/blog/deploying-laravel-5-on-godaddy-shared-hosting/">Deploy Laravel 5 on GoDaddy Shared Hosting</a>
-            </li>
-        
-        </ul>
-    </div>
-</div>
+    <div class="page page-blog--single">
+        <div id="content" class="container">
+            <h1>Permissions fix for WordPress development on XAMPP (Mac)</h1>
+            <p class="by-line">Mar 11, 2019 <a href="/blog/wordpress-xampp-permissions-fix/">permalink</a></p>
+            <p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
 
+<h3 id="identifying-the-issue">Identifying the issue</h3>
+
+<p>After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User: daemon
+Group: xampp
+</code></pre></div></div>
+
+<p>You can find this under <code class="highlighter-rouge">/Applications/XAMPP/etc/httpd.conf</code></p>
+
+<p>This means that there must be a <code class="highlighter-rouge">daemon</code> user on your Mac that’s part of the <code class="highlighter-rouge">xampp</code> group to allow writes.</p>
+
+<h3 id="the-fix">The Fix</h3>
+
+<p>Just change the user to your <code class="highlighter-rouge">mac_username</code> and the group to <code class="highlighter-rouge">staff</code>. My Mac’s username is <code class="highlighter-rouge">kunalnagar</code>, and so my config looks like the following:</p>
+
+<p><img src="https://i.imgur.com/DEMPMFo.png" alt="" /></p>
+
+<p>And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the <code class="highlighter-rouge">htdocs</code> directory.</p>
+
+<p>If you set up a new WordPress install, the <code class="highlighter-rouge">wp-config.php</code> file will be automatically written for you.</p>
+
+<hr />
+
+<p><strong>Side note:</strong> I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. <a href="https://wordpress.org/plugins/custom-404-pro/">Check it out!</a></p>
+
+        </div>
     </div>
     <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">

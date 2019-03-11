@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-03-01T19:25:12+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-03-11T16:29:35+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+05:30</published><updated>2019-03-11T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
+
+&lt;h3 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h3&gt;
+
+&lt;p&gt;After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User: daemon
+Group: xampp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can find this under &lt;code class=&quot;highlighter-rouge&quot;&gt;/Applications/XAMPP/etc/httpd.conf&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This means that there must be a &lt;code class=&quot;highlighter-rouge&quot;&gt;daemon&lt;/code&gt; user on your Mac that’s part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;xampp&lt;/code&gt; group to allow writes.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-fix&quot;&gt;The Fix&lt;/h3&gt;
+
+&lt;p&gt;Just change the user to your &lt;code class=&quot;highlighter-rouge&quot;&gt;mac_username&lt;/code&gt; and the group to &lt;code class=&quot;highlighter-rouge&quot;&gt;staff&lt;/code&gt;. My Mac’s username is &lt;code class=&quot;highlighter-rouge&quot;&gt;kunalnagar&lt;/code&gt;, and so my config looks like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DEMPMFo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the &lt;code class=&quot;highlighter-rouge&quot;&gt;htdocs&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;If you set up a new WordPress install, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file will be automatically written for you.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
 
 &lt;h3 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h3&gt;
 
@@ -662,131 +688,4 @@ define('SITECOOKIEPATH', '');
 
 &lt;p&gt;&lt;b&gt;And we’re done!&lt;/b&gt; Visit your new multisite URL: &lt;a href=&quot;&quot;&gt;http://localhost/knowledgebase&lt;/a&gt; and you should be good to go!&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; For adding more multisites, add a necessary rule in &lt;b&gt;Step 1&lt;/b&gt; and update the necessary tables in &lt;b&gt;Step 2&lt;/b&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, WordPress Multisite is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</summary></entry><entry><title type="html">Shared Modules using RequireJS</title><link href="https://kunalnagar.in/blog/shared-modules-using-requirejs/" rel="alternate" type="text/html" title="Shared Modules using RequireJS" /><published>2016-09-10T00:00:00+05:30</published><updated>2016-09-10T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/shared-modules-using-requirejs</id><content type="html" xml:base="https://kunalnagar.in/blog/shared-modules-using-requirejs/">&lt;p&gt;Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.&lt;/p&gt;
-
-&lt;p&gt;Before we start, I’m assuming that you know a bit about RequireJS. If not, I suggest you visit their &lt;a href=&quot;http://requirejs.org/&quot;&gt;website&lt;/a&gt; and learn about &lt;a href=&quot;http://requirejs.org/docs/whyamd.html&quot;&gt;AMD (Asynchronous Module Definition)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here is the basic folder structure that we’re going to follow. I’ll explain this in detail below:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png&quot; alt=&quot;Folder Structure&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The common folder contains the individual common modules like Logger, Modal and Tabs.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;b&gt;logger.js&lt;/b&gt; - may contain code to output/log code either to the Console or to a third party tool like &lt;a href=&quot;https://logentries.com/&quot;&gt;Logentries&lt;/a&gt; or &lt;a href=&quot;https://sentry.io/welcome/&quot;&gt;Sentry&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;modal.js&lt;/b&gt; &amp;amp; &lt;b&gt;tabs.js&lt;/b&gt; - may contain code to initialise, destroy, center, show, hide modals/tabs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here is an example of &lt;b&gt;logger.js&lt;/b&gt; that can be used to log messages. Note the use of the Singleton Pattern.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;// logger.js
-(function() {
-
-    'use strict';
-
-    define([], function() {
-
-        var _logMessage = function(msg) {
-            console.log(msg);
-        };
-
-        var _warnMessage = function(msg) {
-            console.warn(msg);
-        };
-
-        var _errorMessage = function(msg) {
-            console.error(msg);
-        };
-
-        return {
-            log: _logMessage,
-            warn: _warnMessage,
-            error: _errorMessage
-        };
-
-    });
-})();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, assume that we need to share this across different Modules (&lt;b&gt;module-1&lt;/b&gt;, &lt;b&gt;module-2&lt;/b&gt;, etc). Here is how we can do it:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;// module-1.js
-(function() {
-
-    'use strict';
-
-    define(['./common/logger/logger'], function(Logger) {
-
-        Logger.log('Hello World!');
-
-        return {};
-
-    });
-})();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If we need to share multiple common modules, we can do something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;// module-2.js
-(function() {
-
-    'use strict';
-
-    define([
-        './common/logger/logger',
-        './common/modal/modal'
-    ], function(Logger, Modal) {
-
-        Logger.log('Hello World!');
-
-        Modal.init('INSERT_DIV_ID_HERE');
-        Modal.center('INSERT_DIV_ID_HERE');
-
-        return {};
-
-    });
-})();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;// common.js
-(function() {
-
-    'use strict';
-
-    define([
-        './common/logger/logger',
-        './common/modal/modal'
-    ], function(Logger, Modal) {
-
-        return {
-            Logger: Logger,
-            Modal: Modal
-        };
-
-    });
-})();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;// module-3.js
-(function() {
-
-    'use strict';
-
-    define([
-        './common/common',
-    ], function(Helpers) {
-
-        Helpers.Logger.log('Hello World!');
-        Helpers.Modal.init('INSERT_DIV_ID_HERE');
-
-        return {};
-
-    });
-})();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Thanks for taking the time to read this. Build something awesome!&lt;/p&gt;</content><author><name></name></author><summary type="html">Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</summary></entry></feed>
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; For adding more multisites, add a necessary rule in &lt;b&gt;Step 1&lt;/b&gt; and update the necessary tables in &lt;b&gt;Step 2&lt;/b&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, WordPress Multisite is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</summary></entry></feed>
