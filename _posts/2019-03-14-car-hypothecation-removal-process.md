@@ -29,7 +29,7 @@ The one I visited was on [CMH Road](https://goo.gl/maps/dDAxnikAUG42). Here are 
 * Try to go early in the morning on weekdays - it opens up at 9am and people usually start queuing up at 8:30am
 * If you're going on a Saturday, pack a bag and some lunch, and possibly dinner as well
 
-![](https://i.imgur.com/IldLWTp.jpg)
+![](https://i.imgur.com/sdMdH1v.jpg)
 
 ### Gathering documents
 
@@ -58,22 +58,22 @@ When your token is called out, you go to the respective counter, and follow the 
 
 Anyway, once everything looks okay, they'll give you an acknowledgement that looks like the following:
 
-![](https://i.imgur.com/YE4vz5H.png)
-![](https://i.imgur.com/Ar8L8f4.png)
+![](https://i.imgur.com/LwrihIa.png)
+![](https://i.imgur.com/euXsulr.png)
 
 Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:
 
 * Loan Foreclosure Letter
 
-![](https://i.imgur.com/LNkvulh.png)
+![](https://i.imgur.com/3IH5TK3.png)
 
 * Form 35 - 2 copies
 
-![](https://i.imgur.com/otvtsvt.png)
+![](https://i.imgur.com/5NURJ7q.png)
 
 * HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)
 
-![](https://i.imgur.com/uPQjSTV.png)
+![](https://i.imgur.com/c6kJSQ1.png)
 
 **Note:** My address had a typo and I didn't realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:
 
@@ -128,19 +128,19 @@ Before going to the RTO, you need to do a few things. Find a stationery shop aro
 
 * A file with a hole on the top left
 
-![](https://i.imgur.com/sFcOBok.png)
+![](https://i.imgur.com/kv2suwl.png)
 
 * Thread
 
-![](https://i.imgur.com/zEfpEZ1.jpg)
+![](https://i.imgur.com/0saesew.jpg)
 
 * Plastic cover
 
-![](https://i.imgur.com/gHfrYIF.jpg)
+![](https://i.imgur.com/pY2m4f0.jpg)
 
 * Postal Cover with Rs. 18/- worth of stamps already pasted on it
 
-![](https://i.imgur.com/TXANIeC.jpg)
+![](https://i.imgur.com/QW8xvFv.jpg)
 
 ### Preparing the file for submission
 
@@ -148,17 +148,17 @@ You will use the items your purchased from the stationery shop to prepare the fi
 
 **Note:** If you're at the Koramangala RTO, this is your guy. He helped me through the entire process - step by step. He's also probably the only one there who doesn't have an attitude problem. So, a huge thanks to him!
 
-![](https://i.imgur.com/wLODRPp.png)
+![](https://i.imgur.com/3n8DpE0.png)
 
 * First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put **Central Bangalore**, you may need to ask the concerned person in the RTO what to put there.
 
-![](https://i.imgur.com/B8UCeDP.jpg)
+![](https://i.imgur.com/5U2hSdi.jpg)
 
 * Put your original RC in the plastic cover
 
 * Write your name, address, mobile number and car registration number on the postal cover
 
-![](https://i.imgur.com/a2nAFY9.png)
+![](https://i.imgur.com/AtHFbRh.png)
 
 Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):
 
@@ -178,7 +178,7 @@ Your file is ready. Get it reviewed by the concerned person - he will sign and d
 
 For Koramangala RTO, it's the following lady.
 
-![](https://i.imgur.com/pQSknGp.png)
+![](https://i.imgur.com/Modqkgz.png)
 
 Give the file to her - she will check the file for any problems and if everything looks good, she'll give you an acknowledgement that looks like the following:
 
