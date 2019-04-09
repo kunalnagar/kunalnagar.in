@@ -27,6 +27,16 @@ Here are direct links to download for your preferred platform:
 - [Windows x32](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-ia32.zip)
 - [Windows x64](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-x64.zip)
 
+### Signing
+
+If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.
+
+**Note:** It is absolutely safe to run the app on Mac/Windows. I'm not interested in your data or running malicious scripts. If you're worried about what the app is doing underneath, the code is all there, have at it :)
+
+Here's the warning on Windows (click to watch demo video on YouTube):
+
+[![Watch the video](https://i.imgur.com/M3LQ1Wx.gif)](https://youtu.be/VIVz7MtNEO0)
+
 ## Screenshot
 
 ![](https://i.imgur.com/WQXyqsj.png)
