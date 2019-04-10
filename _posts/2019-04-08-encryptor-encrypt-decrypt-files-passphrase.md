@@ -24,7 +24,7 @@ Here are direct links to download for your preferred platform:
 
 - [macOS](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-darwin-x64.zip)
 - [Linux x64](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip)
-- [Windows x32](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-ia32.zip)
+- [Windows x86](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-ia32.zip)
 - [Windows x64](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-x64.zip)
 
 ### Signing
