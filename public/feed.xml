@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-04-11T00:47:23+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-04-12T00:42:30+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
 
 &lt;p&gt;encrypt0r provides a simple drag and drop interface to encrypt/decrypt your files using a password.&lt;/p&gt;
 
@@ -17,10 +17,11 @@
 &lt;p&gt;Here are direct links to download for your preferred platform:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-darwin-x64.zip&quot;&gt;macOS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip&quot;&gt;Linux x64&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-ia32.zip&quot;&gt;Windows x86&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-win32-x64.zip&quot;&gt;Windows x64&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac.zip&quot;&gt;macOS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-deb.zip&quot;&gt;Linux x64 Debian&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip&quot;&gt;Linux x64 Source&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip&quot;&gt;Windows x86&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip&quot;&gt;Windows x64&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;signing&quot;&gt;Signing&lt;/h3&gt;
