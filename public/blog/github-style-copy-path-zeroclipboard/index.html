@@ -63,48 +63,46 @@
 
 <p>Here is the HTML that contains two copy widgets. We’re going to write code that works across multiple instances of the Widget.</p>
 
-<pre><code class="html">
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
-        &lt;link href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
-        &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;div class=&quot;container&quot;&gt;
-            &lt;div class=&quot;main-container&quot;&gt;
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;input class=&quot;form-control copy-text&quot; type=&quot;text&quot; value=&quot;I am the copied text!&quot; readonly /&gt;
-                    &lt;span class=&quot;input-group-btn&quot;&gt;
-                        &lt;button class=&quot;btn btn-default btn-copy&quot; type=&quot;button&quot;&gt;
-                            &lt;i class=&quot;fa fa-clipboard&quot;&gt;&lt;/i&gt;&amp;nbsp;Copy
-                        &lt;/button&gt;
-                    &lt;/span&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;input class=&quot;form-control copy-text&quot; type=&quot;text&quot; value=&quot;I am a different copied text!&quot; readonly /&gt;
-                    &lt;span class=&quot;input-group-btn&quot;&gt;
-                        &lt;button class=&quot;btn btn-default btn-copy&quot; type=&quot;button&quot;&gt;
-                            &lt;i class=&quot;fa fa-clipboard&quot;&gt;&lt;/i&gt;&amp;nbsp;Copy
-                        &lt;/button&gt;
-                    &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-        &lt;script src=&quot;lib/ZeroClipboard.js&quot;&gt;&lt;/script&gt;
-        &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-        &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"style.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"main-container"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control copy-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">value=</span><span class="s">"I am the copied text!"</span> <span class="na">readonly</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default btn-copy"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-clipboard"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span>Copy
+                        <span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control copy-text"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">value=</span><span class="s">"I am a different copied text!"</span> <span class="na">readonly</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default btn-copy"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-clipboard"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;</span>Copy
+                        <span class="nt">&lt;/button&gt;</span>
+                    <span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lib/ZeroClipboard.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"main.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
 
 <h2 id="step-2">Step 2</h2>
 
 <p>Let’s start writing some JavaScript. Begin by checking if Flash is installed or not.</p>
 
-<pre><code class="javascript">
-// Check if Flash is installed or not
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Check if Flash is installed or not
 var _isFlashInstalled = function() {
     var hasFlash = false;
     try {
@@ -122,14 +120,13 @@ var _isFlashInstalled = function() {
     }
     return hasFlash;
 };
-</code></pre>
+</code></pre></div></div>
 
 <h2 id="step-3">Step 3</h2>
 
 <p>If Flash is installed:</p>
 
-<pre><code class="javascript">
-// Fires when Flash is installed
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Fires when Flash is installed
 var _initFlash = function() {
 
     // Create a client to work on. In our case, we've created
@@ -183,12 +180,11 @@ var _initFlash = function() {
         }, 2000);
     });
 };
-</code></pre>
+</code></pre></div></div>
 
 <p>If Flash is not insalled:</p>
 
-<pre><code class="javascript">
-// Fires when Flash is not installed.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Fires when Flash is not installed.
 var _initNoFlash = function() {
 
     // Hide the Copy Button
@@ -204,12 +200,11 @@ var _initNoFlash = function() {
         'border-radius': '4px'
     });
 };
-</code></pre>
+</code></pre></div></div>
 
 <p>Finally, it all comes together in a single file:</p>
 
-<pre><code class="javascript">
-(function() {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(function() {
 
     'use strict';
 
@@ -329,7 +324,7 @@ var _initNoFlash = function() {
     });
 
 })();
-</code></pre>
+</code></pre></div></div>
 
 <h2 id="download--demo">Download &amp; Demo</h2>
 

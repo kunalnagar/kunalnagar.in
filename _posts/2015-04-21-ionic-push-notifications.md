@@ -20,24 +20,28 @@ Create a new Ionic App using the Get Started Tutorial on Ionic’s website.
 
 Add the Android Platform to our app using:
 
-<pre><code class="shell">ionic platform add android
-</code></pre>
+```
+ionic platform add android
+```
 
 ### Step 3
 
 Build out the app using the process described here so that we can get the SHA1 key. To generate the .keystore file, use this:
 
-<pre><code class="shell">keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
-</code></pre>
+```
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+```
 
 To get the SHA1 from the keystore, use this:
 
-<pre><code class="shell">keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android
-</code></pre>
+```
+keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android
+```
 
 You will get something like this:
 
-<pre><code class="shell">Alias name: androiddebugkey
+```
+Alias name: androiddebugkey
 Creation date: 17 Feb 12
 Entry type: PrivateKeyEntry
 Certificate chain length: 1
@@ -51,7 +55,7 @@ MD5: 11:10:11:11:11:11:11:11:11:11:11:11:11:11:11:11
 SHA1: 11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:01:11
 Signature algorithm name: SHA1withRSA
 Version: 3
-</code></pre>
+```
 
 We need the SHA1 key to register our Google App in the next step.
 
@@ -85,7 +89,8 @@ Before our PHP script can send push notifications, we need to register our Andro
 
 Here is the PHP script:
 
-<pre><code class="php"><?php
+```
+<?php
 
 // API access key from Google API's Console
 define( 'API_ACCESS_KEY', 'ENTER_PUBLIC_API_ACCESS_KEY_FROM_API_CONSOLE' );
@@ -130,13 +135,14 @@ curl_close( $ch );
 echo $result;
 
 ?>
-</code></pre>
+```
 
 ### Step 6
 
 Now that our PHP script is ready, install the Push Notifications plugin from ngCordova and then we need to write Ionic code to register our device:
 
-<pre><code class="javascript">angular.module('starter').controller('TestCtrl', function($rootScope, $scope, $cordovaPush, $cordovaDevice) {
+```
+angular.module('starter').controller('TestCtrl', function($rootScope, $scope, $cordovaPush, $cordovaDevice) {
     var androidConfig = {
         "senderID": "ENTER_PROJECT_ID_FROM_API_CONSOLE_OVERVIEW",
     };
@@ -171,14 +177,15 @@ Now that our PHP script is ready, install the Push Notifications plugin from ngC
         });
     }, false);
 });
-</code></pre>
+```
 
 The above controller allows us to register the device when the app loads and it will give us a registration ID. This is the ID we need to provide to our PHP script to send a push notification to this device. In later stages, you might want to automate all this stuff but in this article, we are only covering the basics of Push Notifications.
 
 When you run your PHP script, pass in the Registration ID as a GET parameter like:
 
-<pre><code class="shell">http://localhost/script.php?id=ENTER_REGISTRATION_ID_HERE
-</code></pre>
+```
+http://localhost/script.php?id=ENTER_REGISTRATION_ID_HERE
+```
 
 Before you hit Enter, minimise the app on your Android Device and return to the Home Screen so that you can see the proper effect of the Push Notification arriving. Trust me, it feels good.
 

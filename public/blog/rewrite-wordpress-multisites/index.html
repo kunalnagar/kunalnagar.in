@@ -45,17 +45,17 @@
 
 <p>When you set up a WordPress Multisite install, you create one root site and then all other multisites are created as subfolders (children). For example, you may end up with something like:</p>
 
-<pre><code class="shell">http://localhost/blog/ # Root Site
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/blog/ # Root Site
 http://localhost/blog/knowledgebase/ # Multisite 1
 http://localhost/blog/site/ # Multisite 2
-</code></pre>
+</code></pre></div></div>
 
 <p>As you can see, this is not ideal, you would ideally want something like this, i.e. each multisite at the same level as the root site (blog):</p>
 
-<pre><code class="shell">http://localhost/blog/
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/blog/
 http://localhost/knowledgebase/
 http://localhost/site/
-</code></pre>
+</code></pre></div></div>
 
 <p>It turns out – you can easily do this in 3 steps:</p>
 
@@ -67,7 +67,7 @@ http://localhost/site/
 
 <p>Moving along – create an .htaccess file in the root. If you’re using something like XAMPP, create it in the <b>htdocs</b> folder:</p>
 
-<pre><code class="shell"># Root Level .htaccess
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Root Level .htaccess
 
 RewriteEngine On
 RewriteBase /
@@ -81,13 +81,13 @@ RewriteCond %{REQUEST_URI} /knowledgebase
 # Rewrite the intercepted requests to
 # /knowledgebase/anything-here from /blog/knowledgebase/anything-here
 RewriteRule ^knowledgebase/(.*) blog/knowledgebase/$1 [L]
-</code></pre>
+</code></pre></div></div>
 
 <h2 id="step-2-update-the-database">Step 2: Update the Database</h2>
 
 <p>Just rewriting in the <b>.htaccess</b> is not going to cut it for us. There are some entries in the Database that we need to change:</p>
 
-<pre><code class="sql">-- Update wp_blogs table to remove /blog from the path
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- Update wp_blogs table to remove /blog from the path
 UPDATE wp_blogs SET path="/knowledgebase/" WHERE path="/blog/knowledgebase/";
 
 -- Update wp_SITE_ID_options siteurl to remove /blog in the URL
@@ -95,17 +95,17 @@ UPDATE wp_2_options SET option_value="http://localhost/knowledgebase" WHERE opti
 
 -- Update wp_SITE_ID_options home to remove /blog in the URL
 UPDATE wp_2_options SET option_value="http://localhost/knowledgebase" WHERE option_name="home";
-</code></pre>
+</code></pre></div></div>
 
 <h2 id="step-3-handle-cookiessessions">Step 3: Handle cookies/sessions</h2>
 
 <p>Now, we need to handle cookies/sessions since our URLs have changed. Paste the following lines in the <b>wp-config.php</b> file below the multisite lines:</p>
 
-<pre><code class="php">define('ADMIN_COOKIE_PATH', '/');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
-</code></pre>
+</code></pre></div></div>
 
 <p><b>And we’re done!</b> Visit your new multisite URL: <a href="">http://localhost/knowledgebase</a> and you should be good to go!</p>
 

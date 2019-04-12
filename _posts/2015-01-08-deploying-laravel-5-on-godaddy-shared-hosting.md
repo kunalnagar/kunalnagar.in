@@ -22,8 +22,9 @@ Here are some things that you need before we get started:
 
 Before we start, let’s assume that your home directory on the server is
 
-<pre><code class="shell">/home/content/kunalnagar/html
-</code></pre>
+```
+/home/content/kunalnagar/html
+```
 
 and all your code goes into the html folder.
 
@@ -36,26 +37,30 @@ The approach mentioned above makes all of our application logic safe and our pub
 
 Open up the index.php file and change the paths to reflect our new directory structure. Here are the following lines you should change:
 
-<pre><code class="shell">require __DIR__.'/../bootstrap/autoload.php';
+```
+require __DIR__.'/../bootstrap/autoload.php';
 $app = require_once __DIR__.'/../bootstrap/app.php';
-</code></pre>
+```
 
 Finally, we modify the main .htaccess file in the html directory. We do this so that you don't have to type:
 
-<pre><code class="shell">http://yoursite.com/awesome-project
-</code></pre>
+```
+http://yoursite.com/awesome-project
+```
 
 Here are the contents of the .htaccess file:
 
-<pre><code class="shell">RewriteEngine On
+```
+RewriteEngine On
 RewriteCond %{REQUEST_URI} !^awesome-project
 RewriteRule ^(.*)$ awesome-project/$1 [L]
-</code></pre>
+```
 
 And you’re done! Try visiting:
 
-<pre><code class="shell">http://yoursite.com
-</code></pre>
+```
+http://yoursite.com
+```
 
 and enjoy your awesome new project.
 

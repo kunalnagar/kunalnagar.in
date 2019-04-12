@@ -10,7 +10,8 @@ If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice t
 
 Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as **.sh**
 
-<pre><code class="shell">#!/bin/bash
+```
+#!/bin/bash
 
 function switch_files {
     mv $1.png $1.tmp.png
@@ -45,11 +46,12 @@ switch_files mac-inactive
 switch_files mac-normal
 switch_files mac-paused
 open '/Applications/Google Drive.app'
-</code></pre>
+```
 
 Then, run the following command:
 
-<pre><code class="shell">bash ~/Desktop/fix-google-drive-dark-mode-icons.sh
-</code></pre>
+```
+bash ~/Desktop/fix-google-drive-dark-mode-icons.sh
+```
 
 It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.

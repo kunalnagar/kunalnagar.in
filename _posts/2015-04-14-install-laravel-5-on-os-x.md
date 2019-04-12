@@ -27,21 +27,24 @@ It allows you to scaffold out a Laravel project and you also have the flexibilit
 
 To install composer, run the following commands in the terminal:
 
-<pre><code class="shell">curl -sS https://getcomposer.org/installer | php
+```
+curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
-</code></pre>
+```
 
 This will install Composer globally for you. To verify that your composer installation is successful, try running:
 
-<pre><code class="shell">composer
-</code></pre>
+```
+composer
+```
 
 ...and you'll see a bunch of composer commands flow down your terminal screen. Hurray!
 
 You can also update composer by running:
 
-<pre><code class="shell">composer self-update
-</code></pre>
+```
+composer self-update
+```
 
 For more information, check out the in-depth guide on their website for [Getting Started with Composer][getting-started-composer].
 
@@ -49,8 +52,9 @@ For more information, check out the in-depth guide on their website for [Getting
 
 When installing Laravel for the first time, more than 90% of the people face this dreaded PHP error:
 
-<pre><code class="shell">MCrypt PHP extension not installed.
-</code></pre>
+```
+MCrypt PHP extension not installed.
+```
 
 …and then they spend countless hours on the internet trying to figure out how to solve this and most of them will tell you to install MAMP. But what if you have XAMPP installed?
 
@@ -60,56 +64,65 @@ I'm using XAMPP 1.8.3–2 on my Mac and it comes with the MCrypt extension out o
 
 Open your .bash_profile by running:
 
-<pre><code class="shell">vim ~/.bash_profile
-</code></pre>
+```
+vim ~/.bash_profile
+```
 
 ...and paste the following line at the end:
 
-<pre><code class="shell">export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
-</code></pre>
+```
+export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
+```
 
 Save the file by pressing : and typing wq and then press enter to quit out.
 
 Remember to reload the .bash_profile by running:
 
-<pre><code class="shell">source ~/.bash_profile
-</code></pre>
+```
+source ~/.bash_profile
+```
 
 ### For MAMP users
 
 The procedure is pretty much the same. You start out by opening your .bash_profile and pasting the following line at the end:
 
-<pre><code class="shell">export PATH=/Applications/MAMP/bin/php/php5.6/bin:$PATH
-</code></pre>
+```
+export PATH=/Applications/MAMP/bin/php/php5.6/bin:$PATH
+```
 
 Important note: This assumes that you have PHP 5.6 installed on your machine.
 
 Remember to reload the .bash_profile by running:
 
-<pre><code class="shell">source ~/.bash_profile
-</code></pre>
+```
+source ~/.bash_profile
+```
 
 ## Step 3: Installing Laravel 5
 
 To create a new Laravel 5 project, run the following:
 
-<pre><code class="shell">composer create-project laravel/laravel dev-develop
-</code></pre>
+```
+composer create-project laravel/laravel dev-develop
+```
 
 This will pull in the latest dev branch from the Github repo. If you want the latest stable version, run the following:
 
-<pre><code class="shell">composer create-project laravel/laravel --prefer-dist
-</code></pre>
+```
+composer create-project laravel/laravel --prefer-dist
+```
 
 If everything goes well, try running:
 
-<pre><code class="shell">php artisan -V
-</code></pre>
+```
+php artisan -V
+```
 
 and if it says:
 
-<pre><code class="shell">Laravel Framework version 5.0-dev
-</code></pre>
+```
+Laravel Framework version 5.0-dev
+```
 
 then you're good to go!
 
@@ -136,8 +149,9 @@ Before installing Laravel Homestead, you need to install 2 things:
 
 Once you have installed Vagrant on your machine, it is time to install Homestead.
 
-<pre><code class="shell">vagrant box add laravel/homestead
-</code></pre>
+```
+vagrant box add laravel/homestead
+```
 
 It might take some time to install depending on your internet connection.
 
@@ -147,69 +161,81 @@ In fact, the files on your local machine are synced with the VM so essentially, 
 
 Once the installation completes, you need to create a Homestead.yaml file that will hold all the configuration for our VM.
 
-<pre><code class="shell">homestead init
-</code></pre>
+```
+homestead init
+```
 
 By default, this will create a Homestead.yaml file in your root directory.
 
-<pre><code class="shell">~/.homestead/Homestead.yaml
-</code></pre>
+```
+~/.homestead/Homestead.yaml
+```
 
 Open up the file and let’s discuss what’s relevant:
 
-<pre><code class="shell">authorize: ~/.ssh/id_rsa.pub
-</code></pre>
+```
+authorize: ~/.ssh/id_rsa.pub
+```
 
 You need to setup an SSH key on your machine that will allow you to SSH into your VM.
 
-<pre><code class="shell">folders:
+```
+folders:
   — map: ~/path/to/project
     to: /home/vagrant/project-name
-</code></pre>
+```
 
 The above code maps the project on your machine to the project on the VM. For example, if your project directory is:
 
-<pre><code class="shell">~/Documents/LaravelProjects/laravel-test
-</code></pre>
+```
+~/Documents/LaravelProjects/laravel-test
+```
 
 It’s going to map to the following in the VM:
 
-<pre><code class="shell">/home/vagrant/laravel-test
-</code></pre>
+```
+/home/vagrant/laravel-test
+```
 
 Let’s look at the most important part:
 
-<pre><code class="shell">sites:
+```
+sites:
   — map: project.app
     to: /home/vagrant/project-name/public
-</code></pre>
+```
 
 The above code provides you with a handy alias to enter in the browser that points to your project’s public directory which is how Laravel serves your app.
 
 For example, you can enter something like:
 
-<pre><code class="shell">http://personal.app
-</code></pre>
+```
+http://personal.app
+```
 
 ...and see your Laravel project. You can also use the following:
 
-<pre><code class="shell">http://localhost:8000
-</code></pre>
+```
+http://localhost:8000
+```
 
 Okay, so we are ready to start Homestead. To do that, run the following:
 
-<pre><code class="shell">homestead up
-</code></pre>
+```
+homestead up
+```
 
 It will spit out a bunch of commands in your terminal. Once it’s done, you can SSH into your shiny new server by:
 
-<pre><code class="shell">homestead ssh
-</code></pre>
+```
+homestead ssh
+```
 
 ...and if everything is setup correctly, you'll see the following prompt:
 
-<pre><code class="shell">vagrant@homestead:~/project-name
-</code></pre>
+```
+vagrant@homestead:~/project-name
+```
 
 Congratulations! You just set up a new Laravel 5 project from scratch.
 

@@ -21,7 +21,8 @@ The common folder contains the individual common modules like Logger, Modal and 
 
 Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.
 
-<pre><code class="javascript">// logger.js
+```
+// logger.js
 (function() {
 
     'use strict';
@@ -48,11 +49,12 @@ Here is an example of <b>logger.js</b> that can be used to log messages. Note th
 
     });
 })();
-</code></pre>
+```
 
 Now, assume that we need to share this across different Modules (<b>module-1</b>, <b>module-2</b>, etc). Here is how we can do it:
 
-<pre><code class="javascript">// module-1.js
+```
+// module-1.js
 (function() {
 
     'use strict';
@@ -65,11 +67,12 @@ Now, assume that we need to share this across different Modules (<b>module-1</b>
 
     });
 })();
-</code></pre>
+```
 
 If we need to share multiple common modules, we can do something like:
 
-<pre><code class="javascript">// module-2.js
+```
+// module-2.js
 (function() {
 
     'use strict';
@@ -88,11 +91,12 @@ If we need to share multiple common modules, we can do something like:
 
     });
 })();
-</code></pre>
+```
 
 As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:
 
-<pre><code class="javascript">// common.js
+```
+// common.js
 (function() {
 
     'use strict';
@@ -109,11 +113,12 @@ As you can see, if you have a lot of common modules, the list can grow really bi
 
     });
 })();
-</code></pre>
+```
 
 And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:
 
-<pre><code class="javascript">// module-3.js
+```
+// module-3.js
 (function() {
 
     'use strict';
@@ -129,7 +134,7 @@ And then, you can just import the Common Module file and use the helper function
 
     });
 })();
-</code></pre>
+```
 
 Thanks for taking the time to read this. Build something awesome!
 

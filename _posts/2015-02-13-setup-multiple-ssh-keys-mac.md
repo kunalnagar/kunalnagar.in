@@ -15,10 +15,11 @@ Learn how to setup multiple SSH keys on your mac. This can be useful when you ne
 [Generating SSH Keys (Github Article)][generating-ssh-keys]
 
 Boilerplate Text for Config file:
-<pre><code class="shell">Host testgithub
+```
+Host testgithub
  HostName github.com
  User git
  IdentityFile ~/.ssh/id_rsa_testgithub
-</code></pre>
+```
 
 [generating-ssh-keys]: https://help.github.com/articles/generating-an-ssh-key/
