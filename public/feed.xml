@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-04-17T10:23:59+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-04-18T15:52:15+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+
+&lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
+
+&lt;h3 id=&quot;default-export&quot;&gt;Default Export&lt;/h3&gt;
+
+&lt;p&gt;By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the &lt;a href=&quot;https://www.highcharts.com/docs/export-module/export-module-overview&quot;&gt;exporting module&lt;/a&gt; to be included for that to show up.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/D8hmB7I.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?&lt;/p&gt;
+
+&lt;h3 id=&quot;setup&quot;&gt;Setup&lt;/h3&gt;
+
+&lt;p&gt;You’ll need the following libraries:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Highcharts - Core&lt;/li&gt;
+  &lt;li&gt;Highcharts - Exporting Plugin&lt;/li&gt;
+  &lt;li&gt;Highcharts - Offline Exporting Plugin&lt;/li&gt;
+  &lt;li&gt;jsPDF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://code.highcharts.com/highcharts.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&quot;https://code.highcharts.com/modules/exporting.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&quot;https://code.highcharts.com/modules/offline-exporting.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you want offline exporting and don’t want to send graph data to Highsoft’s servers (for privacy reasons), yo need to add the following option to the Highcharts graph options:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exporting: {
+    enabled: false,
+    fallbackToExportServer: false
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;adding-graphs-to-pdf&quot;&gt;Adding graphs to PDF&lt;/h3&gt;
+
+&lt;p&gt;The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I’ve come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.&lt;/p&gt;
+
+&lt;p&gt;In this example, we’ll be using two charts - one scatter and one pie chart. Let’s assume that their respective Highchart objects are &lt;code class=&quot;highlighter-rouge&quot;&gt;chart1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;chart2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We will also need an instance of jsPDF:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var pdf = new jsPDF('p', 'mm', [1000, 1400]);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you look at the Highcharts API, it has a method called &lt;a href=&quot;https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt;&lt;/a&gt; that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don’t really want that - instead we want the &lt;code class=&quot;highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; (a base64 encoded string) of the image that we can put on the PDF using &lt;a href=&quot;http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;addImage&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chart1.exportChartLocal('image/svg+xml');
+chart2.exportChartLocal('image/svg+xml');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To stop the download popup and get the &lt;code class=&quot;highlighter-rouge&quot;&gt;dataURL&lt;/code&gt;, we need to hook into the &lt;code class=&quot;highlighter-rouge&quot;&gt;downloadURL&lt;/code&gt; method on the base Highcharts object that will give us the &lt;code class=&quot;highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;filename&lt;/code&gt; of the image.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Highcharts.downloadURL = function (dataURL, filename) {
+    pdf.addImage(dataURL, 'SVG', 10, 10);
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Yet another problem here is that there is no callback to the &lt;code class=&quot;highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt; method so we’ll have to use a counter and an array to store the dataURLs in an array.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var counter = 0;
+var imageURLs = [];
+Highcharts.downloadURL = function (dataURL, filename) {
+    imageURLs.push(dataURL);
+    counter++;
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To check if all the dataURLs are added to the array, we need to poll continuously. Once the array is prepared, we loop over it and add the image URLs to the PDF:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var interval = setInterval(function() {
+    if(counter === 2) {
+        clearInterval(interval);
+        imageURLs.forEach(function(img) {
+            pdf.addImage(img, 'SVG', 10, 10);
+            pdf.addPage();
+        });
+        pdf.save('test.pdf');
+    }
+}, 100);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And it’s done! Here’s a demo of the entire process. Switch to the &lt;strong&gt;Result&lt;/strong&gt; tab and click on the &lt;strong&gt;Export&lt;/strong&gt; button to download the PDF. The code contains comments so it’s easy to follow.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; allowpaymentrequest=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
 
 &lt;p&gt;encrypt0r provides a simple drag and drop interface to encrypt/decrypt your files using a password.&lt;/p&gt;
 
@@ -726,41 +813,4 @@ updates-v3
 &amp;lt;AdvertSmallEastRailCutoff&amp;gt;0&amp;lt;/AdvertSmallEastRailCutoff&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;Tell me&lt;/a&gt; about it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry><entry><title type="html">YouTube to Mp3 converter</title><link href="https://kunalnagar.in/blog/youtube-to-mp3-converter/" rel="alternate" type="text/html" title="YouTube to Mp3 converter" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-02-24T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/youtube-to-mp3-converter</id><content type="html" xml:base="https://kunalnagar.in/blog/youtube-to-mp3-converter/">&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=oA-D7TdjVnE&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So my parents listen to music on YouTube. Because apparently, services like &lt;a href=&quot;https://www.saavn.com/&quot;&gt;Saavn&lt;/a&gt; or &lt;a href=&quot;https://gaana.com/&quot;&gt;Gaana&lt;/a&gt; don’t make sense to them. And honestly, I can’t blame them. They’re gonna use what seems familiar to them.&lt;/p&gt;
-
-&lt;p&gt;One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.&lt;/p&gt;
-
-&lt;!-- ![Sample Android Malware Screenshot](/assets/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG) --&gt;
-
-&lt;p&gt;Hence, I decided to create a converter for them that is ad-free and does the job. You enter a URL, click Convert and you get an mp3 file to download. From here on, I will be discussing how to build such a thing and what is the concept behind these converters and how they work. So if you’re not interested, shoo off.&lt;/p&gt;
-
-&lt;p&gt;Alright. You’re interested in how to build such a thing. You can do this in any technology you want. I will be discussing the business logic first and then suggest doing it in Node.js - because that’s how I did it.&lt;/p&gt;
-
-&lt;h2 id=&quot;business-logic&quot;&gt;Business Logic&lt;/h2&gt;
-&lt;p&gt;A YouTube to Mp3 converter is quite simple, actually.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;You use the YouTube API to send a URL and it sends you back a list of formats that the video is available in based on the quality when it was uploaded.&lt;/li&gt;
-  &lt;li&gt;It returns a couple of standard formats like mp4, mov etc and one format called m4a.&lt;/li&gt;
-  &lt;li&gt;We download that m4a and then use ffmpeg to convert it to mp3&lt;/li&gt;
-  &lt;li&gt;And we’re done.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;implementing-in-nodejs&quot;&gt;Implementing in Node.js&lt;/h2&gt;
-&lt;p&gt;Unless you’re really passionate about building this thing out, I would recommend using the already built Node packages out there for downloading and converting YouTube videos. There are node packages for doing this thing entirely as well. But you’re here to learn, so let’s convert out Business Logic to code. Here are the packages you’ll need:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fent/node-ytdl-core&quot;&gt;node-ytdl-core&lt;/a&gt; for getting the YouTube info for a particular URL&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fluent-ffmpeg/node-fluent-ffmpeg&quot;&gt;node-fluent-ffmpeg&lt;/a&gt; to convert the received m4a file to mp3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As far as the backend, we’ll be using &lt;a href=&quot;https://expressjs.com/&quot;&gt;ExpressJS&lt;/a&gt; hosted on &lt;a href=&quot;https://heroku.com&quot;&gt;Heroku&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You’ll need to install &lt;a href=&quot;https://www.ffmpeg.org/&quot;&gt;ffmpeg&lt;/a&gt; on Heroku first for the node package to work. For that, you’ll need a &lt;a href=&quot;https://devcenter.heroku.com/articles/buildpacks&quot;&gt;Heroku Buildpack&lt;/a&gt;. I used &lt;a href=&quot;https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest&quot;&gt;this one&lt;/a&gt;. Basically, Heroku Buildpacks allow you to specify the technologies you will need for a specific project. By default, if you push Node.js code to Heroku, a Node.js Buildpack is automatically applied to your project. You can check out all the Buildpacks in your project on it’s Settings page.&lt;/p&gt;
-
-&lt;p&gt;If you’re working on this locally, you’ll need to install ffmpeg on your machine as well. Here’s how you &lt;a href=&quot;https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/wiki/Installing-ffmpeg-on-Mac-OS-X&quot;&gt;install it on a mac&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I’m not going to give away the code here, so that’s for you to figure out. I have suggested all the packages you might need and where to host it as well.&lt;/p&gt;
-
-&lt;p&gt;If you have questions, please leave them in the comments below and I’ll be more than happy to answer.&lt;/p&gt;</content><author><name></name></author><category term="Open Source" /><category term="Woot" /><category term="Blah" /><summary type="html">Demo</summary></entry></feed>
+&lt;p&gt;Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;Tell me&lt;/a&gt; about it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry></feed>
