@@ -59,7 +59,7 @@ If you want to add a link:
 <BaseButton href="https://google.com" />
 ```
 
-**Note:** This project ships with the free version of Font Awesome icons (solid styles only) by default but there will be an option to add your Subscription key so you can use the entire suite.
+**Note:** This project ships with the [free version of Font Awesome icons](https://fontawesome.com/icons?d=gallery&s=solid&m=free) (solid styles only) by default but there will be an option to add your Subscription key so you can use the entire suite.
 
 ### Advantages
 
