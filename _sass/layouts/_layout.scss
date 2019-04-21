@@ -126,3 +126,22 @@ p {
         padding: 1em;
     }
 }
+
+#app {
+
+    .list {
+        margin: 0;
+        margin-top: 1em;
+        max-height: 50em;
+        overflow-y: auto;
+
+        ul {
+            margin: 0;
+        }
+    }
+
+    img {
+        height: 235px;
+    }
+
+}
