@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-04-20T09:27:07+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-04-21T16:47:32+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it’s important that your product feels cohesive to your customers.&lt;/p&gt;
+
+&lt;h3 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h3&gt;
+
+&lt;p&gt;This project takes inspiration from &lt;a href=&quot;https://vuetifyjs.com/en/&quot;&gt;Vuetify&lt;/a&gt; which is an excellent Material Component Framework.&lt;/p&gt;
+
+&lt;p&gt;But you don’t necessarily want to use Material design for every project that you use. Sometimes, you’d prefer a set of minimally styled components that work consistently across browsers at the very least with an ability to add a theming layer that relates to your product/brand. That’s exactly what this project aims to do.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-vue-base-components&quot;&gt;What are Vue Base Components?&lt;/h3&gt;
+
+&lt;p&gt;Vue Base Components (or any custom components) essentially wrap basic HTML elements like Inputs, Selects, Buttons etc with a little more functionality use in everyday UI/UX patterns. Most of the time, they’re available as &lt;a href=&quot;https://vuejs.org/v2/guide/single-file-components.html&quot;&gt;Single File Components&lt;/a&gt; (ideally) and can be easily imported in your own project.&lt;/p&gt;
+
+&lt;p&gt;Let’s take an example of a simple button.&lt;/p&gt;
+
+&lt;h3 id=&quot;example-basebutton&quot;&gt;Example: BaseButton&lt;/h3&gt;
+
+&lt;p&gt;When developing a custom button, here’s a basic checklist of things you’d like the button to do:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Base button (works out of the box)&lt;/li&gt;
+  &lt;li&gt;Add a link and navigate on click&lt;/li&gt;
+  &lt;li&gt;Icon Support&lt;/li&gt;
+  &lt;li&gt;Loading states&lt;/li&gt;
+  &lt;li&gt;Enabled/Disabled states&lt;/li&gt;
+  &lt;li&gt;Multiple themes (for e.g. link view where the button looks like a link instead of a button)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;BaseButton /&amp;gt;&lt;/code&gt; component out of the box, it will look something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/F2p7Kl9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to add an icon, it’s as simple as doing:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton icon=&quot;save&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qqyZQFz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to change the text:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton icon=&quot;download&quot; text=&quot;Download&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DnQZHND.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to add a link:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton href=&quot;https://google.com&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This project ships with the free version of Font Awesome icons (solid styles only) by default but there will be an option to add your Subscription key so you can use the entire suite.&lt;/p&gt;
+
+&lt;h3 id=&quot;advantages&quot;&gt;Advantages&lt;/h3&gt;
+
+&lt;p&gt;There are a number of advantages to using Base Components - the most important being consistent.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you have&lt;/strong&gt; a primary button in your product, you’d like that button to look the same and function everywhere, no matter what context it’s used in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secondly&lt;/strong&gt;, if you make any updates to your primary button, you would only need to update the Base Button file and all the changes would be propagated to multiple instances throughout your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It’s important to make sure that the API remains consistent. For example, if the &lt;code class=&quot;highlighter-rouge&quot;&gt;prop&lt;/code&gt; for providing a link in a Base Button is changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;href&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;link&lt;/code&gt;, the functionality of the button breaks and the Button is useless.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thirdly&lt;/strong&gt;, Base Components contain event hooks. For example, if you want custom code to be run when your &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;BaseInput /&amp;gt;&lt;/code&gt; is focused, you can hook into the &lt;code class=&quot;highlighter-rouge&quot;&gt;base:input:focus&lt;/code&gt; event.&lt;/p&gt;
+
+&lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;This project is Open Source and under active development. Feel free to submit ideas/PRs!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/vue-base-components&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
 
 &lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
 
@@ -763,54 +835,4 @@ updates-v3
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://support.1password.com/local-folder/&quot;&gt;How to keep a copy of a standalone vault updated in a folder&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://support.1password.com/wlan-server/&quot;&gt;How to use the WLAN server&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">I love 1Password. It is by far the best Password Manager I have used. I bought the Standalone version back in November 2014 and connected it to my Dropbox account.</summary></entry><entry><title type="html">Block Ads in Skype</title><link href="https://kunalnagar.in/blog/block-ads-skype/" rel="alternate" type="text/html" title="Block Ads in Skype" /><published>2018-10-13T00:00:00+05:30</published><updated>2018-10-13T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/block-ads-skype</id><content type="html" xml:base="https://kunalnagar.in/blog/block-ads-skype/">&lt;p&gt;I hate ads. So much so that I’ve created a &lt;a href=&quot;https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en&quot;&gt;Chrome Extension&lt;/a&gt; to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Side note:&lt;/b&gt; If you’re a privacy nut, you might want to check out my &lt;a href=&quot;/assets/downloads/siteblock.txt&quot;&gt;hosts&lt;/a&gt; file. It will block crypto-miners, google ads, youtube ads and much more. As always, &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;feedback&lt;/a&gt; is appreciated.&lt;/p&gt;
-
-&lt;p&gt;I figured out a way to block Skype ads using a handful of host file entries. Download a &lt;a href=&quot;/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt&quot;&gt;.txt&lt;/a&gt; version here. I’ve mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Block Skype ads (core)
-127.0.0.1 *.msads.net
-127.0.0.1 *.msecn.net
-127.0.0.1 *.rad.msn.com
-127.0.0.1 a.ads2.msads.net
-127.0.0.1 ac3.msn.com
-127.0.0.1 ad.doubleclick.net
-127.0.0.1 adnexus.net
-127.0.0.1 adnxs.com
-127.0.0.1 ads1.msn.com
-127.0.0.1 ads2.msads.net
-127.0.0.1 aka-cdn-ns.adtech.de
-
-# If you want to see Skype Home, comment the line below
-127.0.0.1 apps.skype.com
-
-127.0.0.1 b.ads2.msads.net
-127.0.0.1 bs.serving-sys.com
-127.0.0.1 cdn.atdmt.com
-127.0.0.1 cds26.ams9.msecn.net
-127.0.0.1 db3aqu.atdmt.com
-127.0.0.1 ec.atdmt.com
-127.0.0.1 flex.msn.com
-127.0.0.1 g.msn.com
-127.0.0.1 live.rads.msn.com
-127.0.0.1 msntest.serving-sys.com
-127.0.0.1 rad.msn.com
-127.0.0.1 sO.2mdn.net
-127.0.0.1 secure.flashtalking.com
-127.0.0.1 static.2mdn.net
-127.0.0.1 static.2mdn.net
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.&lt;/p&gt;
-
-&lt;p&gt;Based on your OS, go to: &lt;code class=&quot;highlighter-rouge&quot;&gt;%appdata%/skype/YOUR_USER_NAME/config.xml&lt;/code&gt; and set all &lt;code class=&quot;highlighter-rouge&quot;&gt;Advert&lt;/code&gt; related values to 0.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;AdvertEastRailsEnabled&amp;gt;0&amp;lt;/AdvertEastRailsEnabled&amp;gt;
-&amp;lt;AdvertLargeEastRailCutoff&amp;gt;0&amp;lt;/AdvertLargeEastRailCutoff&amp;gt;
-&amp;lt;AdvertNorthRailCutoff&amp;gt;0&amp;lt;/AdvertNorthRailCutoff&amp;gt;
-&amp;lt;AdvertPlaceholder&amp;gt;0&amp;lt;/AdvertPlaceholder&amp;gt;
-&amp;lt;AdvertSmallEastRailCutoff&amp;gt;0&amp;lt;/AdvertSmallEastRailCutoff&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;Tell me&lt;/a&gt; about it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">I love 1Password. It is by far the best Password Manager I have used. I bought the Standalone version back in November 2014 and connected it to my Dropbox account.</summary></entry></feed>
