@@ -3,6 +3,7 @@ layout: post
 title:  "Block Ads in Skype"
 date:   2018-10-13
 description: "Hate Skype Ads? Learn how to remove them at the source."
+img: "/assets/img/foss/adstomp.png"
 permalink: /blog/block-ads-skype/
 ---
 

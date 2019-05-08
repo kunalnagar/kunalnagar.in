@@ -1,54 +1,59 @@
 ---
 layout: default
-title: FOSS
+title: Open Source
 ---
 
-<div class="page page-foss">
-    <div class="container">
-            <p>I build stuff and I try to make it available to as many people as possible. For free.</p>
-    <ul>
-        <li>
-            <b>IMDb API</b> There's no official IMDb API that allows you to fetch titles. So I built a scraper that would fetch the data and massage it as a pretty extensive (?) JSON API. Check it out <a href="https://github.com/kunalnagar/expressyo-imdb-scraper">here</a>
-        </li>
-        <li>
-            <b>vue-imdb</b> Using the IMDb API service above, I built a Vue component to render my personal watchlist on this website's home page. View on <a href="https://github.com/kunalnagar/vue-imdb">GitHub</a>
-        </li>
-        <li>
-            <b>encrypt0r</b> An electron app (Mac, Windows, Linux) that allows you to encrypt/decrypt your files as easy as drag-drop and set a passphrase. That's it. Read more <a href="/blog/encryptor-encrypt-decrypt-files-passphrase/">here</a>!
-        </li>
-        <li>
-            <b>Custom 404 Pro</b> A WordPress plugin (with over 80,000+ installs) that allows you to replace the default 404 page with a custom page. It can be one of the pages under the Pages section or a completely different URL. All 404s can be logged and can be exported if needed. <a href="/blog/custom-404-pro/">Read more</a> about it or <a href="https://wordpress.org/plugins/custom-404-pro/">download</a>.
-        </li>
-        <li>
-            <b>vue-base-components</b> A collection of Vue Base Components that you can use to jumpstart your brand new Vue Project. This project is under active development and inspired by [Vuetify](https://vuetifyjs.com/en/). Read more <a href="/blog/vue-base-components/">here</a>!
-        </li>
-        <li>
-            <b>jquery.peekABar</b> A jQuery notification bar plugin that does the job. Put it on the top or the bottom. Style it however you want, animate it, the works. Take a <a href="http://kunalnagar.github.io/jquery.peekABar/">look</a>.
-        </li>
-        <li>
-            <b>jquery.ghostfm</b> A fan of last.fm? Use this to showcase your listening history. Are you a minimalist? There's a mini widget for you too. Check it <a href="https://kunalnagar.github.io/jquery.ghostfm/">out</a>.
-        </li>
-    </ul>
-    <p>I tinker around. When I see stuff on the internet that's challenging, I try to re-create it. This contains demos, experimental stuff, and things that I may or may not complete in the future.</p>
-    <ul>
-        <li>
-            <b>Highcharts to PDF</b> A <a href="https://kunalnagar.in/blog/highcharts-export-pdf/">fiddle</a> on how to export multiple graphs in Highcharts to a PDF using jsPDF
-        </li>
-        <li>
-            <b>MailChimp signup form</b> This is how signup forms should be. Especially the password section. I try to re-create it <a href="http://kunalnagar.github.io/mailchimp-signup/">here</a>.
-        </li>
-        <li>
-            <b>Clipboard Demo</b> Demos to copy input/paragraph elements to the Clipboard. <a href="https://kunalnagar.github.io/clipboard-demo/">No library</a> required.
-        </li>
-        <li>
-            <b>YouTube Jukebox</b> Subscribed to a lot of channels? Want a way to watch the important ones first? Quickly add them to a <a href="/blog/chrome-extension-youtube-jukebox/">jukebox</a>, sit back and relax.
-        </li>
-        <li>
-            <b>AdStomp</b> I hate ads. But that's how <i>most</i> free content is offered on the Internet. <a href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch">AdStomp</a> helps you with that without triggering adblock warnings.
-        </li>
-        <li>
-            <b>Node.js file upload</b> The basic stuff. Upload a file and get percentage updates. No demo but here's the <a href="https://github.com/kunalnagar/nodejs-basic-file-upload">project</a>.
-        </li>
-    </ul>
-    </div>
+<div class="l-container p-foss">
+    <h1>Open Source</h1>
+    <section class="projects">
+        <p>
+            I build stuff and I try to make it available to as many people as possible. <i>For free.</i>
+        </p>
+        <ul>
+            {% for project in site.data.foss.projects %}
+                <li>
+                    <p class="img"><img src="{{ project.img }}" /></p>
+                    <p class="title">{{ project.title }}</p>
+                    <p class="description">{{ project.description }}</p>
+                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="btn">View</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="section tinkers">
+        <h2>Demos & Experiments</h2>
+        <p>
+            I tinker around. When I see stuff on the internet that's challenging, I try to re-create it. This contains demos and experimental browser API stuff. Take a look!
+        </p>
+        <ul>
+            {% for tinker in site.data.foss.tinkers %}
+                <li>
+                    <p class="img"><img src="{{ tinker.img }}" /></p>
+                    <p class="title">{{ tinker.title }}</p>
+                    <p class="description">{{ tinker.description }}</p>
+                    <a href="{{ tinker.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <!-- <ul>
+            <li>
+                <b>Highcharts to PDF</b> A <a href="https://kunalnagar.in/blog/highcharts-export-pdf/">fiddle</a> on how to export multiple graphs in Highcharts to a PDF using jsPDF
+            </li>
+            <li>
+                <b>MailChimp signup form</b> This is how signup forms should be. Especially the password section. I try to re-create it <a href="http://kunalnagar.github.io/mailchimp-signup/">here</a>.
+            </li>
+            <li>
+                <b>Clipboard Demo</b> Demos to copy input/paragraph elements to the Clipboard. <a href="https://kunalnagar.github.io/clipboard-demo/">No library</a> required.
+            </li>
+            <li>
+                <b>YouTube Jukebox</b> Subscribed to a lot of channels? Want a way to watch the important ones first? Quickly add them to a <a href="/blog/chrome-extension-youtube-jukebox/">jukebox</a>, sit back and relax.
+            </li>
+            <li>
+                <b>AdStomp</b> I hate ads. But that's how <i>most</i> free content is offered on the Internet. <a href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch">AdStomp</a> helps you with that without triggering adblock warnings.
+            </li>
+            <li>
+                <b>Node.js file upload</b> The basic stuff. Upload a file and get percentage updates. No demo but here's the <a href="https://github.com/kunalnagar/nodejs-basic-file-upload">project</a>.
+            </li>
+        </ul> -->
+    </section>
 </div>

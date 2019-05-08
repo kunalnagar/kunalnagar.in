@@ -3,6 +3,7 @@ layout: post
 title:  "Fix Google Drive Dark Mode Icon"
 date:   2015-02-11
 description: "Learn how to fix the Google Drive Icon in Dark Mode on OS X Yosemite"
+img: "/assets/img/foss/google-drive.png"
 permalink: /blog/fix-google-drive-dark-mode-icon/
 ---
 

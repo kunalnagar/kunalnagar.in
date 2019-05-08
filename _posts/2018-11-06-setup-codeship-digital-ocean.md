@@ -3,6 +3,7 @@ layout: post
 title:  "How I use Codeship and DigitalOcean to deploy websites"
 date:   2018-11-06
 description: "Learn how to deploy a static site using Codeship and a DigitalOcean droplet"
+img: "/assets/img/foss/codeship.png"
 permalink: /blog/deploy-sites-codeship-digital-ocean/
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Bartender 2 for Mac OS X"
 date:   2016-02-14
 description: "Learn how to setup Bartender 2 for Mac for a Menu Bar Zen."
+img: "/assets/img/foss/macos.png"
 permalink: /blog/mac-bartender-os-x-menu-bar-minimalism/
 ---
 

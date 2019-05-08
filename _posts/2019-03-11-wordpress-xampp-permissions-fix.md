@@ -3,6 +3,7 @@ layout: post
 title:  "Permissions fix for WordPress development on XAMPP (Mac)"
 date: 2019-03-11
 description: "Fix permissions on XAMPP for Mac for WordPress Development"
+img: "/assets/img/foss/wp.png"
 permalink: /blog/wordpress-xampp-permissions-fix/
 ---
 

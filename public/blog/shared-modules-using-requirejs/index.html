@@ -6,32 +6,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Learn how to create modules that can be shared across other modules using RequireJS">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Shared Modules using RequireJS – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/js.png" class="img" />
+                <div>
+                    <h1 class="title">Shared Modules using RequireJS</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">September 10, 2016</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Shared Modules using RequireJS&url=/blog/shared-modules-using-requirejs/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</p>
+
+<p>Before we start, I’m assuming that you know a bit about RequireJS. If not, I suggest you visit their <a href="http://requirejs.org/">website</a> and learn about <a href="http://requirejs.org/docs/whyamd.html">AMD (Asynchronous Module Definition)</a>.</p>
+
+<p>Here is the basic folder structure that we’re going to follow. I’ll explain this in detail below:</p>
+
+<p><img src="/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png" alt="Folder Structure" /></p>
+
+<p>The common folder contains the individual common modules like Logger, Modal and Tabs.</p>
+
+<ul>
+  <li><b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like <a href="https://logentries.com/">Logentries</a> or <a href="https://sentry.io/welcome/">Sentry</a></li>
+  <li><b>modal.js</b> &amp; <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs</li>
+</ul>
+
+<p>Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// logger.js
+(function() {
+
+    'use strict';
+
+    define([], function() {
+
+        var _logMessage = function(msg) {
+            console.log(msg);
+        };
+
+        var _warnMessage = function(msg) {
+            console.warn(msg);
+        };
+
+        var _errorMessage = function(msg) {
+            console.error(msg);
+        };
+
+        return {
+            log: _logMessage,
+            warn: _warnMessage,
+            error: _errorMessage
+        };
+
+    });
+})();
+</code></pre></div></div>
+
+<p>Now, assume that we need to share this across different Modules (<b>module-1</b>, <b>module-2</b>, etc). Here is how we can do it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-1.js
+(function() {
+
+    'use strict';
+
+    define(['./common/logger/logger'], function(Logger) {
+
+        Logger.log('Hello World!');
+
+        return {};
+
+    });
+})();
+</code></pre></div></div>
+
+<p>If we need to share multiple common modules, we can do something like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-2.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/logger/logger',
+        './common/modal/modal'
+    ], function(Logger, Modal) {
+
+        Logger.log('Hello World!');
+
+        Modal.init('INSERT_DIV_ID_HERE');
+        Modal.center('INSERT_DIV_ID_HERE');
+
+        return {};
+
+    });
+})();
+</code></pre></div></div>
+
+<p>As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// common.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/logger/logger',
+        './common/modal/modal'
+    ], function(Logger, Modal) {
+
+        return {
+            Logger: Logger,
+            Modal: Modal
+        };
+
+    });
+})();
+</code></pre></div></div>
+
+<p>And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-3.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/common',
+    ], function(Helpers) {
+
+        Helpers.Logger.log('Hello World!');
+        Helpers.Modal.init('INSERT_DIV_ID_HERE');
+
+        return {};
+
+    });
+})();
+</code></pre></div></div>
+
+<p>Thanks for taking the time to read this. Build something awesome!</p>
+
+</div>
+        </div>
+    </main>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to create modules that can be shared across other modules using RequireJS">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>Shared Modules using RequireJS · Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <nav id="navbar">
-    <div class="container">
-        <div class="navbar-container">
-            <h1 class="navbar-logo">
-                <svg id="Full_Logo_SVG" data-name="Full Logo SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287.7" height="115.2" viewBox="0 0 959 384">
-                  <g>
-                    <rect x="352" width="255" height="240"/>
-                    <image id="K" x="451" y="81" width="68" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAA90lEQVQ4ja3Vuw3CMBAGYIsFICtkBSZAyixeIRIdXVZgBTMCHXUqekraFFngR5bO4XD8ODtYiqI4vi/RnR8KwBvATNdJFTQAFxb7ALC3nbx1Ug6AZnEjgMa9mEtBD5sWrAYMYEd/gBjMYiWgCJOCYkwCephtOp6UDGj/pAhLgYRNRVgMDGC9CAuBAcwVopV4O+/ZVu+ulHIz/0Z3+2x+VoTwD1cFAGBY37UW1Ox9Q4tfls8AuKpmIK/iiR39enKHSYC5zWFgY8fNII3n+Rz+AbbJFVS5Y3dePr9FqgEprmdxL36m8CYGKZZPeuM6txyjBwDPJR44fwCKHxx9YzQ8cAAAAABJRU5ErkJggg=="/>
-                  </g>
-                  <image id="NAGAR" y="305" width="959" height="79" xlink:href="data:img/png;base64,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"/>
-                </svg>
-
-            </h1>
-            <ul class="navbar-items">
-                <li><a href="/">Home</a></li>
-                <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
-                <li><a href="/foss">Open Source</a></li>
-                <li><a href="/blog">Blog</a></li>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
             </ul>
-        </div>
+        </section>
     </div>
 </nav>
 
@@ -171,7 +380,8 @@
 
         </div>
     </div>
-    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51202219-2']);
@@ -184,4 +394,4 @@
 </script>
 
 </body>
-</html>
+</html> -->

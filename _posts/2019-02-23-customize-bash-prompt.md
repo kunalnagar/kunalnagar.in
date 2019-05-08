@@ -3,6 +3,7 @@ layout: post
 title:  "Customize your Bash Prompt"
 date: 2019-02-23
 description: "I like to keep my bash prompt clean and simple. Learn how to setup a minimal bash prompt."
+img: "/assets/img/foss/terminal.png"
 permalink: /blog/customize-bash-prompt/
 ---
 
@@ -44,9 +45,9 @@ If you're really impressed by it and just want the code, copy paste the followin
 
 ```
 git_prompt() {
-    
+
     local branchName="";
-    
+
     # Check if the current directory is in a Git repository.
     if git rev-parse --git-dir > /dev/null 2>&1; then
         branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
@@ -107,7 +108,7 @@ updates-v3
 => git symbolic-ref --quiet --short HEAD 2> /dev/null
 ```
 
-The ```git symbolic-ref``` allows us to read, modify and delete [symbolic refs](https://stackoverflow.com/a/1526526) 
+The ```git symbolic-ref``` allows us to read, modify and delete [symbolic refs](https://stackoverflow.com/a/1526526)
 
 For more information on the flags, check out [```--quiet```](https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet) and [```--short```](https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short)
 

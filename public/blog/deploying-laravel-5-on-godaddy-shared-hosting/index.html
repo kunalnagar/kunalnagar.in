@@ -6,32 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Learn how to deploy Laravel 5 on GoDaddy Shared Hosting.">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Deploy Laravel 5 on GoDaddy Shared Hosting – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/php.png" class="img" />
+                <div>
+                    <h1 class="title">Deploy Laravel 5 on GoDaddy Shared Hosting</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">January 08, 2015</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Deploy Laravel 5 on GoDaddy Shared Hosting&url=/blog/deploying-laravel-5-on-godaddy-shared-hosting/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd#.lup9tnaqo">Medium</a>.</p>
+
+<p>So your awesome project is ready for deployment and you need to set it up on GoDaddy shared hosting servers.</p>
+
+<h4 id="requirements">Requirements</h4>
+
+<p>Here are some things that you need before we get started:</p>
+
+<ul>
+  <li>A GoDaddy shared hosting account</li>
+  <li>SSH Access</li>
+  <li>Awesome Laravel Project to be deployed</li>
+</ul>
+
+<h4 id="steps">Steps</h4>
+
+<p>Before we start, let’s assume that your home directory on the server is</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/content/kunalnagar/html
+</code></pre></div></div>
+
+<p>and all your code goes into the html folder.</p>
+
+<ul>
+  <li>Create a folder on the same level as the html folder to hold your future Laravel installations. It’s just good practice.</li>
+  <li>Connect via SFTP to your shared hosting server.</li>
+  <li>Zip your entire project directory and upload it to the new folder you just created. Unzip it.</li>
+  <li>Move the public folder into the html folder and rename it to something like awesome-project.</li>
+</ul>
+
+<p>The approach mentioned above makes all of our application logic safe and our public folder is the one that is exposed.</p>
+
+<p>Open up the index.php file and change the paths to reflect our new directory structure. Here are the following lines you should change:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require __DIR__.'/../bootstrap/autoload.php';
+$app = require_once __DIR__.'/../bootstrap/app.php';
+</code></pre></div></div>
+
+<p>Finally, we modify the main .htaccess file in the html directory. We do this so that you don’t have to type:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://yoursite.com/awesome-project
+</code></pre></div></div>
+
+<p>Here are the contents of the .htaccess file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine On
+RewriteCond %{REQUEST_URI} !^awesome-project
+RewriteRule ^(.*)$ awesome-project/$1 [L]
+</code></pre></div></div>
+
+<p>And you’re done! Try visiting:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://yoursite.com
+</code></pre></div></div>
+
+<p>and enjoy your awesome new project.</p>
+
+<p><em>Please note that this article only discusses deploying the project files. If you need to deploy your migrations, there are tons of articles that you can look up. The confusing part is setting up the directory structure and this article covers that point.</em></p>
+
+</div>
+        </div>
+    </main>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to deploy Laravel 5 on GoDaddy Shared Hosting.">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>Deploy Laravel 5 on GoDaddy Shared Hosting · Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <nav id="navbar">
-    <div class="container">
-        <div class="navbar-container">
-            <h1 class="navbar-logo">
-                <svg id="Full_Logo_SVG" data-name="Full Logo SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287.7" height="115.2" viewBox="0 0 959 384">
-                  <g>
-                    <rect x="352" width="255" height="240"/>
-                    <image id="K" x="451" y="81" width="68" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAA90lEQVQ4ja3Vuw3CMBAGYIsFICtkBSZAyixeIRIdXVZgBTMCHXUqekraFFngR5bO4XD8ODtYiqI4vi/RnR8KwBvATNdJFTQAFxb7ALC3nbx1Ug6AZnEjgMa9mEtBD5sWrAYMYEd/gBjMYiWgCJOCYkwCephtOp6UDGj/pAhLgYRNRVgMDGC9CAuBAcwVopV4O+/ZVu+ulHIz/0Z3+2x+VoTwD1cFAGBY37UW1Ox9Q4tfls8AuKpmIK/iiR39enKHSYC5zWFgY8fNII3n+Rz+AbbJFVS5Y3dePr9FqgEprmdxL36m8CYGKZZPeuM6txyjBwDPJR44fwCKHxx9YzQ8cAAAAABJRU5ErkJggg=="/>
-                  </g>
-                  <image id="NAGAR" y="305" width="959" height="79" xlink:href="data:img/png;base64,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"/>
-                </svg>
-
-            </h1>
-            <ul class="navbar-items">
-                <li><a href="/">Home</a></li>
-                <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
-                <li><a href="/foss">Open Source</a></li>
-                <li><a href="/blog">Blog</a></li>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
             </ul>
-        </div>
+        </section>
     </div>
 </nav>
 
@@ -101,7 +240,8 @@ RewriteRule ^(.*)$ awesome-project/$1 [L]
 
         </div>
     </div>
-    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51202219-2']);
@@ -114,4 +254,4 @@ RewriteRule ^(.*)$ awesome-project/$1 [L]
 </script>
 
 </body>
-</html>
+</html> -->

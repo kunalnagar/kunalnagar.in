@@ -1,0 +1,50 @@
+.navbar {
+
+    .navbar-container {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .brand {
+
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+                font-weight: 600;
+                border-bottom: 0;
+                color: black;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 1rem;
+                }
+
+                span {
+                    margin-right: 0.5em;
+                }
+            }
+        }
+
+        .links {
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    margin-left: 1rem;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

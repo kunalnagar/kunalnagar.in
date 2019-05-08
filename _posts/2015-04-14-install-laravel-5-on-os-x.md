@@ -3,6 +3,7 @@ layout: post
 title:  "Install Laravel 5 on OS X"
 date:   2015-04-14
 description: "Learn how to install Laravel 5 on OS X using the dev-develop branch."
+img: "/assets/img/foss/php.png"
 permalink: /blog/install-laravel-5-on-os-x/
 ---
 

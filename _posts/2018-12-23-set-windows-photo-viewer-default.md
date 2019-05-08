@@ -3,6 +3,7 @@ layout: post
 title:  "Set Windows Photo Viewer as your Default Image Viewer"
 date:   2018-12-23
 description: "Learn how to bring back the Windows Photo Viewer as the default instead of the clunky Photos app."
+img: "/assets/img/foss/win10.gif"
 permalink: /blog/set-windows-photo-viewer-default/
 ---
 

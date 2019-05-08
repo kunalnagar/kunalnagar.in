@@ -6,177 +6,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>Blog · Kunal Nagar</title>
+    <title>Blog – Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <nav id="navbar">
-    <div class="container">
-        <div class="navbar-container">
-            <h1 class="navbar-logo">
-                <svg id="Full_Logo_SVG" data-name="Full Logo SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287.7" height="115.2" viewBox="0 0 959 384">
-                  <g>
-                    <rect x="352" width="255" height="240"/>
-                    <image id="K" x="451" y="81" width="68" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAA90lEQVQ4ja3Vuw3CMBAGYIsFICtkBSZAyixeIRIdXVZgBTMCHXUqekraFFngR5bO4XD8ODtYiqI4vi/RnR8KwBvATNdJFTQAFxb7ALC3nbx1Ug6AZnEjgMa9mEtBD5sWrAYMYEd/gBjMYiWgCJOCYkwCephtOp6UDGj/pAhLgYRNRVgMDGC9CAuBAcwVopV4O+/ZVu+ulHIz/0Z3+2x+VoTwD1cFAGBY37UW1Ox9Q4tfls8AuKpmIK/iiR39enKHSYC5zWFgY8fNII3n+Rz+AbbJFVS5Y3dePr9FqgEprmdxL36m8CYGKZZPeuM6txyjBwDPJR44fwCKHxx9YzQ8cAAAAABJRU5ErkJggg=="/>
-                  </g>
-                  <image id="NAGAR" y="305" width="959" height="79" xlink:href="data:img/png;base64,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"/>
-                </svg>
-
-            </h1>
-            <ul class="navbar-items">
-                <li><a href="/">Home</a></li>
-                <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
-                <li><a href="/foss">Open Source</a></li>
-                <li><a href="/blog">Blog</a></li>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
             </ul>
-        </div>
+        </section>
     </div>
 </nav>
 
-    <div id="content">
-        <div class="page page-blog">
-    <div class="container">
-        <p>I write, occasionally.</p>
+    <main><div class="l-container p-blog">
+    <h1>Blog</h1>
+    <section class="projects">
         <ul>
         
             <li>
-                <span>Apr 21, 2019</span>
-                <a href="/blog/vue-base-components/">An Introduction to Vue Base Components</a>
+                <a href="/blog/vue-base-components/">
+                    <p class="img"><img src="/assets/img/foss/vue.png" /></p>
+                    <div class="details">
+                        <p class="title">An Introduction to Vue Base Components</p>
+                        <p class="date">April 21, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Apr 18, 2019</span>
-                <a href="/blog/highcharts-export-pdf/">Export multiple Highcharts graphs as PDF</a>
+                <a href="/blog/highcharts-export-pdf/">
+                    <p class="img"><img src="/assets/img/foss/highcharts.png" /></p>
+                    <div class="details">
+                        <p class="title">Export multiple Highcharts graphs as PDF</p>
+                        <p class="date">April 18, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Apr 08, 2019</span>
-                <a href="/blog/encryptor-encrypt-decrypt-files-passphrase/">encrypt0r - Encrypt and Decrypt files using a Passphrase</a>
+                <a href="/blog/encryptor-encrypt-decrypt-files-passphrase/">
+                    <p class="img"><img src="/assets/img/foss/electron.svg" /></p>
+                    <div class="details">
+                        <p class="title">encrypt0r - Encrypt and Decrypt files using a Passphrase</p>
+                        <p class="date">April 08, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Mar 14, 2019</span>
-                <a href="/blog/car-hypothecation-removal-process/">Car Hypothecation Removal Process</a>
+                <a href="/blog/car-hypothecation-removal-process/">
+                    <p class="img"><img src="/assets/img/foss/car.png" /></p>
+                    <div class="details">
+                        <p class="title">Car Hypothecation Removal Process</p>
+                        <p class="date">March 14, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Mar 11, 2019</span>
-                <a href="/blog/wordpress-xampp-permissions-fix/">Permissions fix for WordPress development on XAMPP (Mac)</a>
+                <a href="/blog/wordpress-xampp-permissions-fix/">
+                    <p class="img"><img src="/assets/img/foss/wp.png" /></p>
+                    <div class="details">
+                        <p class="title">Permissions fix for WordPress development on XAMPP (Mac)</p>
+                        <p class="date">March 11, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Mar 01, 2019</span>
-                <a href="/blog/transfer-indane-gas-connection-another-state/">Transfer your Indane gas connection to another state</a>
+                <a href="/blog/transfer-indane-gas-connection-another-state/">
+                    <p class="img"><img src="/assets/img/foss/gas.png" /></p>
+                    <div class="details">
+                        <p class="title">Transfer your Indane gas connection to another state</p>
+                        <p class="date">March 01, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Feb 23, 2019</span>
-                <a href="/blog/customize-bash-prompt/">Customize your Bash Prompt</a>
+                <a href="/blog/customize-bash-prompt/">
+                    <p class="img"><img src="/assets/img/foss/terminal.png" /></p>
+                    <div class="details">
+                        <p class="title">Customize your Bash Prompt</p>
+                        <p class="date">February 23, 2019</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Dec 23, 2018</span>
-                <a href="/blog/set-windows-photo-viewer-default/">Set Windows Photo Viewer as your Default Image Viewer</a>
+                <a href="/blog/set-windows-photo-viewer-default/">
+                    <p class="img"><img src="/assets/img/foss/win10.gif" /></p>
+                    <div class="details">
+                        <p class="title">Set Windows Photo Viewer as your Default Image Viewer</p>
+                        <p class="date">December 23, 2018</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Nov 06, 2018</span>
-                <a href="/blog/deploy-sites-codeship-digital-ocean/">How I use Codeship and DigitalOcean to deploy websites</a>
+                <a href="/blog/deploy-sites-codeship-digital-ocean/">
+                    <p class="img"><img src="/assets/img/foss/codeship.png" /></p>
+                    <div class="details">
+                        <p class="title">How I use Codeship and DigitalOcean to deploy websites</p>
+                        <p class="date">November 06, 2018</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Oct 19, 2018</span>
-                <a href="/blog/sync-1password-local/">Sync 1Password Locally</a>
+                <a href="/blog/sync-1password-local/">
+                    <p class="img"><img src="/assets/img/foss/1password.png" /></p>
+                    <div class="details">
+                        <p class="title">Sync 1Password Locally</p>
+                        <p class="date">October 19, 2018</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Oct 13, 2018</span>
-                <a href="/blog/block-ads-skype/">Block Ads in Skype</a>
+                <a href="/blog/block-ads-skype/">
+                    <p class="img"><img src="/assets/img/foss/adstomp.png" /></p>
+                    <div class="details">
+                        <p class="title">Block Ads in Skype</p>
+                        <p class="date">October 13, 2018</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Feb 24, 2018</span>
-                <a href="/blog/youtube-to-mp3-converter/">YouTube to Mp3 converter</a>
+                <a href="/blog/youtube-to-mp3-converter/">
+                    <p class="img"><img src="/assets/img/foss/youtube.png" /></p>
+                    <div class="details">
+                        <p class="title">YouTube to Mp3 converter</p>
+                        <p class="date">February 24, 2018</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Jun 24, 2017</span>
-                <a href="/blog/act-fibernet-horrible-experience/">My horrible experience with ACT Fibernet</a>
+                <a href="/blog/act-fibernet-horrible-experience/">
+                    <p class="img"><img src="/assets/img/foss/internet.png" /></p>
+                    <div class="details">
+                        <p class="title">My horrible experience with ACT Fibernet</p>
+                        <p class="date">June 24, 2017</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Sep 17, 2016</span>
-                <a href="/blog/rewrite-wordpress-multisites/">Rewrite WordPress Multisites</a>
+                <a href="/blog/rewrite-wordpress-multisites/">
+                    <p class="img"><img src="/assets/img/foss/wp.png" /></p>
+                    <div class="details">
+                        <p class="title">Rewrite WordPress Multisites</p>
+                        <p class="date">September 17, 2016</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Sep 10, 2016</span>
-                <a href="/blog/shared-modules-using-requirejs/">Shared Modules using RequireJS</a>
+                <a href="/blog/shared-modules-using-requirejs/">
+                    <p class="img"><img src="/assets/img/foss/js.png" /></p>
+                    <div class="details">
+                        <p class="title">Shared Modules using RequireJS</p>
+                        <p class="date">September 10, 2016</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Sep 03, 2016</span>
-                <a href="/blog/github-style-copy-path-zeroclipboard/">GitHub Copy Path Widget using ZeroClipboard</a>
+                <a href="/blog/github-style-copy-path-zeroclipboard/">
+                    <p class="img"><img src="/assets/img/foss/copy-paste.jpg" /></p>
+                    <div class="details">
+                        <p class="title">GitHub Copy Path Widget using ZeroClipboard</p>
+                        <p class="date">September 03, 2016</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Aug 24, 2016</span>
-                <a href="/blog/tripmode-mobile-data-savior/">TripMode - Your Mobile Data Savior</a>
+                <a href="/blog/tripmode-mobile-data-savior/">
+                    <p class="img"><img src="/assets/img/foss/3g.png" /></p>
+                    <div class="details">
+                        <p class="title">TripMode - Your Mobile Data Savior</p>
+                        <p class="date">August 24, 2016</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Feb 14, 2016</span>
-                <a href="/blog/mac-bartender-os-x-menu-bar-minimalism/">Bartender 2 for Mac OS X</a>
+                <a href="/blog/mac-bartender-os-x-menu-bar-minimalism/">
+                    <p class="img"><img src="/assets/img/foss/macos.png" /></p>
+                    <div class="details">
+                        <p class="title">Bartender 2 for Mac OS X</p>
+                        <p class="date">February 14, 2016</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Oct 18, 2015</span>
-                <a href="/blog/chrome-extension-youtube-jukebox/">Browse YouTube like a boss</a>
+                <a href="/blog/chrome-extension-youtube-jukebox/">
+                    <p class="img"><img src="/assets/img/foss/chrome.png" /></p>
+                    <div class="details">
+                        <p class="title">Browse YouTube like a boss</p>
+                        <p class="date">October 18, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Apr 22, 2015</span>
-                <a href="/blog/custom-404-pro/">Custom 404 Pro</a>
+                <a href="/blog/custom-404-pro/">
+                    <p class="img"><img src="/assets/img/foss/wp.png" /></p>
+                    <div class="details">
+                        <p class="title">Custom 404 Pro</p>
+                        <p class="date">April 22, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Apr 21, 2015</span>
-                <a href="/blog/ionic-push-notifications/">Ionic Push Notifications</a>
+                <a href="/blog/ionic-push-notifications/">
+                    <p class="img"><img src="/assets/img/foss/notification.png" /></p>
+                    <div class="details">
+                        <p class="title">Ionic Push Notifications</p>
+                        <p class="date">April 21, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Apr 14, 2015</span>
-                <a href="/blog/install-laravel-5-on-os-x/">Install Laravel 5 on OS X</a>
+                <a href="/blog/install-laravel-5-on-os-x/">
+                    <p class="img"><img src="/assets/img/foss/php.png" /></p>
+                    <div class="details">
+                        <p class="title">Install Laravel 5 on OS X</p>
+                        <p class="date">April 14, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Apr 14, 2015</span>
-                <a href="/blog/fix-rdsrv-malware-vsearch-downlite/">Fix RDSRV Malware (VSearch/Downlite)</a>
+                <a href="/blog/fix-rdsrv-malware-vsearch-downlite/">
+                    <p class="img"><img src="/assets/img/foss/bug.png" /></p>
+                    <div class="details">
+                        <p class="title">Fix RDSRV Malware (VSearch/Downlite)</p>
+                        <p class="date">April 14, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Feb 13, 2015</span>
-                <a href="/blog/setup-multiple-ssh-keys-mac/">Setup Multiple SSH Keys on a Mac</a>
+                <a href="/blog/setup-multiple-ssh-keys-mac/">
+                    <p class="img"><img src="/assets/img/foss/terminal.png" /></p>
+                    <div class="details">
+                        <p class="title">Setup Multiple SSH Keys on a Mac</p>
+                        <p class="date">February 13, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Feb 11, 2015</span>
-                <a href="/blog/fix-google-drive-dark-mode-icon/">Fix Google Drive Dark Mode Icon</a>
+                <a href="/blog/fix-google-drive-dark-mode-icon/">
+                    <p class="img"><img src="/assets/img/foss/google-drive.png" /></p>
+                    <div class="details">
+                        <p class="title">Fix Google Drive Dark Mode Icon</p>
+                        <p class="date">February 11, 2015</p>
+                    </div>
+                </a>
             </li>
         
             <li>
-                <span>Jan 08, 2015</span>
-                <a href="/blog/deploying-laravel-5-on-godaddy-shared-hosting/">Deploy Laravel 5 on GoDaddy Shared Hosting</a>
+                <a href="/blog/deploying-laravel-5-on-godaddy-shared-hosting/">
+                    <p class="img"><img src="/assets/img/foss/php.png" /></p>
+                    <div class="details">
+                        <p class="title">Deploy Laravel 5 on GoDaddy Shared Hosting</p>
+                        <p class="date">January 08, 2015</p>
+                    </div>
+                </a>
             </li>
         
         </ul>
-    </div>
+    </section>
 </div>
-
-    </div>
-    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+</main>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51202219-2']);

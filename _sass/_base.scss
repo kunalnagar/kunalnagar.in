@@ -1,0 +1,80 @@
+::selection {
+    background-color: lighten($color-link, 60%);
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 2px solid lighten($color-link, 65%);
+    color: lighten($color-link, 30%);
+    transition: background-color 100ms ease, border-bottom-color 100ms ease;
+
+    &:hover {
+        background-color: lighten($color-link, 65%);
+        color: lighten($color-link, 20%);
+        border-bottom-color: lighten($color-link, 15%);
+    }
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    border-bottom: 0;
+    background-color: lighten($color-link, 35%);
+    transition: background-color 100ms ease;
+    color: white;
+    font-size: 0.9rem;
+
+    &:hover {
+        background-color: lighten($color-link, 30%);
+        color: white;
+    }
+
+    &.btn-outline {
+        background-color: white;
+        color: lighten($color-link, 30%);
+        border: 2px solid lighten($color-link, 30%);
+
+        &:hover {
+            color: white;
+            background-color: lighten($color-link, 30%);
+        }
+    }
+}
+
+p {
+    margin: 0 0 2rem;
+    line-height: 1.5rem;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+.section {
+    margin: 4rem 0;
+
+    h2 {
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid lighten(gray, 40%);
+        margin-bottom: 2rem;
+    }
+}
+
+.highlighter-rouge {
+    font-size: 1.1em;
+    line-height: 1.3em;
+
+    pre {
+        background-color: #eaeaea63;
+        padding: 1em 1.5em;
+        overflow: auto;
+    }
+}
+
+code.highlighter-rouge {
+    padding: 5px 10px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+

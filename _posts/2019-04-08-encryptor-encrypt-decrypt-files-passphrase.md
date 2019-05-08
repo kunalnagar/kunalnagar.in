@@ -3,6 +3,7 @@ layout: post
 title:  "encrypt0r - Encrypt and Decrypt files using a Passphrase"
 date: 2019-04-08
 description: "Learn how to encrypt and decrypt files with a passphrase using encrypt0r"
+img: "/assets/img/foss/electron.svg"
 permalink: /blog/encryptor-encrypt-decrypt-files-passphrase/
 ---
 

@@ -6,32 +6,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I like to keep my bash prompt clean and simple. Learn how to setup a minimal bash prompt.">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Customize your Bash Prompt – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/terminal.png" class="img" />
+                <div>
+                    <h1 class="title">Customize your Bash Prompt</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">February 23, 2019</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Customize your Bash Prompt&url=/blog/customize-bash-prompt/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</p>
+
+<p>By default, macOS gives you this terminal:</p>
+
+<p><img src="https://i.imgur.com/n57DPG3.png" alt="Imgur" /></p>
+
+<p>I fucking hate it. Why do I need to see my machine name every time I open the terminal? <a href="https://www.merriam-webster.com/dictionary/phooey">Phooey</a>.</p>
+
+<p>Plus, when I navigate to a git repo, it doesn’t even show what branch I’m on. Double phooey.</p>
+
+<p><img src="https://i.imgur.com/sNgVmfJ.png" alt="Imgur" /></p>
+
+<h3 id="my-setup">My setup</h3>
+
+<p>Here’s what I have and I’m really happy with it.</p>
+
+<p><img src="https://i.imgur.com/3Dwoh1Z.png" alt="Imgur" /></p>
+
+<h3 id="what-do-i-like-about-it">What do I like about it?</h3>
+
+<p>Couple of things:</p>
+
+<ul>
+  <li>Shows me what user I’m logged in as (good on unix systems when you want to switch between root and normal user)</li>
+  <li>Shows me the full (read FULL) path of where I am. Yes, FULL.</li>
+  <li>Shows me the branch I’m on (if I’m in a git repo)</li>
+</ul>
+
+<p>Things I don’t need here:</p>
+<ul>
+  <li>Machine name</li>
+  <li>Date</li>
+  <li>10 billion colours</li>
+  <li>Emoji.      <small><small><small>Well…</small></small></small></li>
+</ul>
+
+<h3 id="how-to-set-it-up">How to set it up</h3>
+
+<p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git_prompt() {
+
+    local branchName="";
+
+    # Check if the current directory is in a Git repository.
+    if git rev-parse --git-dir &gt; /dev/null 2&gt;&amp;1; then
+        branchName="$(git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || \
+	        git rev-parse --short HEAD 2&gt; /dev/null || \
+		    echo '(unknown)')";
+        echo -e "(${branchName})";
+    else
+        return;
+    fi;
+
+}
+
+PS1="\n[\u] at \w";
+
+PS1+=" \$(git_prompt)";
+
+PS1+="\n=&gt; ";
+</code></pre></div></div>
+
+<p>If you’re like me and want to understand what this gibberish means, read on.</p>
+
+<p>The <code class="highlighter-rouge">git_prompt()</code> method spits out the current branch name, if it exists. Let’s try to break it down.</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Let’s run the first half of the command in a git repo and a normal folder and see what happens</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&gt; git rev-parse --git-dir
+.git
+
+[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&gt; cd ..
+
+[kunalnagar] at ~/Documents/Code
+=&gt; git rev-parse --git-dir
+fatal: not a git repository (or any of the parent directories): .git
+</code></pre></div></div>
+
+<p>So basically, this command is used to check if our current working directory is a git repo or not.</p>
+
+<p>What’s the writing to <code class="highlighter-rouge">/dev/null</code> and <code class="highlighter-rouge">2&gt;&amp;1</code> mean? Read more <a href="https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts">here</a></p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null
+updates-v3
+
+[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&gt; cd ..
+
+[kunalnagar] at ~/Documents/Code
+=&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">git symbolic-ref</code> allows us to read, modify and delete <a href="https://stackoverflow.com/a/1526526">symbolic refs</a></p>
+
+<p>For more information on the flags, check out <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet"><code class="highlighter-rouge">--quiet</code></a> and <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short"><code class="highlighter-rouge">--short</code></a></p>
+
+<p>As you can see from the above example, when the above command is run, it spits out the branch name.</p>
+
+<p>The <code class="highlighter-rouge">git rev-parse</code> is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || git rev-parse
+updates-v3
+</code></pre></div></div>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="highlighter-rouge">PS</code> to show our minimal prompt</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1="\n[\u] at \w";
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">\n</code>: New line</p>
+
+<p><code class="highlighter-rouge">\u</code>: Current user (name)</p>
+
+<p><code class="highlighter-rouge">\w</code>: Path relative to home (notice the tilda in the path names in the screenshots)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+=" \$(git_prompt)";
+</code></pre></div></div>
+
+<p>This appends the branch name in parentheses (if it’s a git repo)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+="\n=&gt; ";
+</code></pre></div></div>
+
+<p>Just a new line. With a short arrow.</p>
+
+<p>And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.</p>
+</div>
+        </div>
+    </main>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I like to keep my bash prompt clean and simple. Learn how to setup a minimal bash prompt.">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>Customize your Bash Prompt · Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <nav id="navbar">
-    <div class="container">
-        <div class="navbar-container">
-            <h1 class="navbar-logo">
-                <svg id="Full_Logo_SVG" data-name="Full Logo SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287.7" height="115.2" viewBox="0 0 959 384">
-                  <g>
-                    <rect x="352" width="255" height="240"/>
-                    <image id="K" x="451" y="81" width="68" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAA90lEQVQ4ja3Vuw3CMBAGYIsFICtkBSZAyixeIRIdXVZgBTMCHXUqekraFFngR5bO4XD8ODtYiqI4vi/RnR8KwBvATNdJFTQAFxb7ALC3nbx1Ug6AZnEjgMa9mEtBD5sWrAYMYEd/gBjMYiWgCJOCYkwCephtOp6UDGj/pAhLgYRNRVgMDGC9CAuBAcwVopV4O+/ZVu+ulHIz/0Z3+2x+VoTwD1cFAGBY37UW1Ox9Q4tfls8AuKpmIK/iiR39enKHSYC5zWFgY8fNII3n+Rz+AbbJFVS5Y3dePr9FqgEprmdxL36m8CYGKZZPeuM6txyjBwDPJR44fwCKHxx9YzQ8cAAAAABJRU5ErkJggg=="/>
-                  </g>
-                  <image id="NAGAR" y="305" width="959" height="79" xlink:href="data:img/png;base64,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"/>
-                </svg>
-
-            </h1>
-            <ul class="navbar-items">
-                <li><a href="/">Home</a></li>
-                <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
-                <li><a href="/foss">Open Source</a></li>
-                <li><a href="/blog">Blog</a></li>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
             </ul>
-        </div>
+        </section>
     </div>
 </nav>
 
@@ -80,9 +299,9 @@
 <p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git_prompt() {
-    
+
     local branchName="";
-    
+
     # Check if the current directory is in a Git repository.
     if git rev-parse --git-dir &gt; /dev/null 2&gt;&amp;1; then
         branchName="$(git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || \
@@ -181,7 +400,8 @@ updates-v3
 
         </div>
     </div>
-    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51202219-2']);
@@ -194,4 +414,4 @@ updates-v3
 </script>
 
 </body>
-</html>
+</html> -->

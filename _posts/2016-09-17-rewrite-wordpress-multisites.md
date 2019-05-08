@@ -3,6 +3,7 @@ layout: post
 title:  "Rewrite WordPress Multisites"
 date:   2016-09-17
 description: "Learn how to rewrite WordPress Multisites to any folder on your server."
+img: "/assets/img/foss/wp.png"
 permalink: /blog/rewrite-wordpress-multisites/
 ---
 

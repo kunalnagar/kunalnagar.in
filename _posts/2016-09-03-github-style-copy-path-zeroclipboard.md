@@ -3,6 +3,7 @@ layout: post
 title:  "GitHub Copy Path Widget using ZeroClipboard"
 date:   2016-09-03
 description: "Learn how to create a copy to Clipboard Widget like GitHub uses for their Cloning Paths using ZeroClipboard."
+img: "/assets/img/foss/copy-paste.jpg"
 permalink: /blog/github-style-copy-path-zeroclipboard/
 ---
 

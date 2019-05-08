@@ -3,6 +3,7 @@ layout: post
 title:  "Transfer your Indane gas connection to another state"
 date: 2019-03-01
 description: "I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection."
+img: "/assets/img/foss/gas.png"
 permalink: /blog/transfer-indane-gas-connection-another-state/
 ---
 
@@ -33,7 +34,7 @@ If you don't own a vehicle and cannot carry the cylinders, you can call the agen
 
 ### Step 3: Visit current agency
 
-Once the cylinders are at the agency, you can ask any of the staff to start the transfer process. 
+Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.
 
 During the process, you'll have to tell them the destination city and state.
 
@@ -62,7 +63,7 @@ For me, the ID proof and the address proof are the same (Aadhar card), so I carr
 
 Once you're at the agency, you'll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.
 
-Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers. 
+Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.
 
 You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:
 

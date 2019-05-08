@@ -4,6 +4,7 @@ title: YouTube to Mp3 converter
 date: 2018-02-24
 description: Building a YouTube to Mp3 converter with Node.js
 permalink: /blog/youtube-to-mp3-converter/
+img: "/assets/img/foss/youtube.png"
 tags: [Open Source, Woot, Blah]
 ---
 

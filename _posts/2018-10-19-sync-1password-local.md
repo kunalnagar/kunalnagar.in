@@ -3,6 +3,7 @@ layout: post
 title:  "Sync 1Password Locally"
 date:   2018-10-19
 description: "Learn how to Sync 1Password locally"
+img: "/assets/img/foss/1password.png"
 permalink: /blog/sync-1password-local/
 ---
 
