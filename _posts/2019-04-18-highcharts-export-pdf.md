@@ -3,6 +3,7 @@ layout: post
 title:  "Export multiple Highcharts graphs as PDF"
 date: 2019-04-18
 description: "Learn how to export multiple Highcharts graphs to a PDF"
+img: "/assets/img/foss/highcharts.png"
 permalink: /blog/highcharts-export-pdf/
 ---
 
@@ -10,7 +11,7 @@ Most recently, I was tasked to convert a page containing multiple graphs to a si
 
 If you want to skip to the code, there's a fiddle at the end of the post. Knock yourself out.
 
-### Default Export
+## Default Export
 
 By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the [exporting module](https://www.highcharts.com/docs/export-module/export-module-overview) to be included for that to show up.
 
@@ -18,7 +19,7 @@ By default, Highcharts has exporting functionality built in to the hamburger men
 
 While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?
 
-### Setup
+## Setup
 
 You'll need the following libraries:
 
@@ -43,7 +44,7 @@ exporting: {
 }
 ```
 
-### Adding graphs to PDF
+## Adding graphs to PDF
 
 The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I've come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.
 

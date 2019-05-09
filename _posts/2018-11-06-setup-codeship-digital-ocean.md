@@ -3,6 +3,7 @@ layout: post
 title:  "How I use Codeship and DigitalOcean to deploy websites"
 date:   2018-11-06
 description: "Learn how to deploy a static site using Codeship and a DigitalOcean droplet"
+img: "/assets/img/foss/codeship.png"
 permalink: /blog/deploy-sites-codeship-digital-ocean/
 ---
 
@@ -12,7 +13,7 @@ I have been a long-time user of Codeship. I, initially started using it to deplo
 
 This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.
 
-### Ingredients
+## Ingredients
 
 * I use [Jekyll](https://jekyllrb.com/) on this site, just because it's simple and works out of the box. I used [Hugo](https://gohugo.io/) for a while but I could never figure out how permalinks and URLs work there.
 
@@ -22,18 +23,20 @@ This article will guide you through my way of deploying static sites. I want to 
 
 * As mentioned, I use [Codeship](https://codeship.com/) to make the magic happen. I highly recommend checking them out. Their free tier works for most scenarios.
 
-### Recipe
+## Recipe
 
 At this point, I'm assuming that you have a static site that you want to deploy stored in a repository somewhere. I'll be using Bitbucket in this case, but any ```git``` provider will do.
 
-#### Setting up Codeship
+### Setting up Codeship
 
 * Log in to Codeship and create a new project
 
 * In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.
 
 * Make sure you have your repository SSH URL handy. It looks like:
-<pre>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</pre>
+```
+git@<provider>:<username>/<repository>.git
+```
 
 * For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.
 
@@ -41,14 +44,16 @@ At this point, I'm assuming that you have a static site that you want to deploy 
 
 * Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.
 
-#### Deployment
+### Deployment
 
 Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.
 
 * Every project on Codeship has a public SSH key. Go to project > General settings and you should find it there. Make sure this key is [authorized](https://www.ssh.com/ssh/authorized_keys/) on your DigitalOcean droplet as it will be used to automatically push code to your droplet.
 
 * To push code from Codeship to your droplet, we will use [Secure Copy or scp](https://kb.iu.edu/d/agye). Add the following command as a Custom Script under the Deployment Settings of your Codeship project.
-<pre>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;</pre>
+```
+scp -rp ~/clone/* user@droplet:/var/www/html/<folder>
+```
 
 
 * The above command will deploy your built code to a folder on your droplet.

@@ -1,0 +1,8 @@
+.notice {
+    padding: 1rem;
+    border-radius: 2px;
+
+    &-info {
+        background-color: lighten($color-link, 63%);
+    }
+}

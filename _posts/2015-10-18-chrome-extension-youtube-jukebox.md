@@ -3,6 +3,7 @@ layout: post
 title:  "Browse YouTube like a boss"
 date:   2015-10-18
 description: "Enjoy a great YouTube Experience using the YouTube Jukebox Chrome Extension."
+img: "/assets/img/foss/chrome.png"
 permalink: /blog/chrome-extension-youtube-jukebox/
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Car Hypothecation Removal Process"
 date: 2019-03-14
 description: "I recently foreclosed my car loan and had to go through the Hypothecation Removal process."
+img: "/assets/img/foss/car.png"
 permalink: /blog/car-hypothecation-removal-process/
 ---
 

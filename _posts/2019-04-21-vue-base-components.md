@@ -3,6 +3,7 @@ layout: post
 title:  "An Introduction to Vue Base Components"
 date: 2019-04-21
 description: "A collection of Vue Base Components to jumpstart your development"
+img: "/assets/img/foss/vue.png"
 permalink: /blog/vue-base-components/
 ---
 
@@ -10,19 +11,19 @@ permalink: /blog/vue-base-components/
 
 Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it's important that your product feels cohesive to your customers.
 
-### Inspiration
+## Inspiration
 
 This project takes inspiration from [Vuetify](https://vuetifyjs.com/en/) which is an excellent Material Component Framework.
 
 But you don't necessarily want to use Material design for every project that you use. Sometimes, you'd prefer a set of minimally styled components that work consistently across browsers at the very least with an ability to add a theming layer that relates to your product/brand. That's exactly what this project aims to do.
 
-### What are Vue Base Components?
+## What are Vue Base Components?
 
 Vue Base Components (or any custom components) essentially wrap basic HTML elements like Inputs, Selects, Buttons etc with a little more functionality use in everyday UI/UX patterns. Most of the time, they're available as [Single File Components](https://vuejs.org/v2/guide/single-file-components.html) (ideally) and can be easily imported in your own project.
 
 Let's take an example of a simple button.
 
-### Example: BaseButton
+## Example: BaseButton
 
 When developing a custom button, here's a basic checklist of things you'd like the button to do:
 
@@ -61,7 +62,7 @@ If you want to add a link:
 
 **Note:** This project ships with the [free version of Font Awesome icons](https://fontawesome.com/icons?d=gallery&s=solid&m=free) (solid styles only) by default but there will be an option to add your Subscription key so you can use the entire suite.
 
-### Advantages
+## Advantages
 
 There are a number of advantages to using Base Components - the most important being consistent.
 
@@ -73,7 +74,7 @@ There are a number of advantages to using Base Components - the most important b
 
 **Thirdly**, Base Components contain event hooks. For example, if you want custom code to be run when your ```<BaseInput />``` is focused, you can hook into the ```base:input:focus``` event.
 
-### Links
+## Links
 
 This project is Open Source and under active development. Feel free to submit ideas/PRs!
 

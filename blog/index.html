@@ -3,16 +3,21 @@ layout: default
 title: Blog
 ---
 
-<div class="page page-blog">
-    <div class="container">
-        <p>I write, occasionally.</p>
+<div class="l-container p-blog">
+    <h1>Blog</h1>
+    <section class="projects">
         <ul>
         {% for post in site.posts %}
             <li>
-                <span>{{ post.date | date: "%b %d, %Y" }}</span>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post.url }}">
+                    <p class="img"><img src="{{ post.img }}" /></p>
+                    <div class="details">
+                        <p class="title">{{ post.title }}</p>
+                        <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+                    </div>
+                </a>
             </li>
         {% endfor %}
         </ul>
-    </div>
+    </section>
 </div>

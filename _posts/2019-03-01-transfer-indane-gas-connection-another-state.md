@@ -3,12 +3,13 @@ layout: post
 title:  "Transfer your Indane gas connection to another state"
 date: 2019-03-01
 description: "I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection."
+img: "/assets/img/foss/gas.png"
 permalink: /blog/transfer-indane-gas-connection-another-state/
 ---
 
 I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.
 
-### Step 1: Gathering documents
+## Step 1: Gathering documents
 
 I'm assuming you are registered with an Indane gas agency. Mine was [Gajanana Enterprises Koramangala](https://goo.gl/maps/7t2LnjqDFTN2)
 
@@ -24,16 +25,16 @@ The original documents usually contain the deposit amount for two cylinders that
 
 ![https://i.imgur.com/qdD7fha.png](https://i.imgur.com/qdD7fha.png)
 
-### Step 2: Cylinders
+## Step 2: Cylinders
 
 If you don't own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:
 
 * You need to visit the agency on the same day the cylinders are being picked up.
 * The cylinders need to reach the agency BEFORE the transfer process can be started.
 
-### Step 3: Visit current agency
+## Step 3: Visit current agency
 
-Once the cylinders are at the agency, you can ask any of the staff to start the transfer process. 
+Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.
 
 During the process, you'll have to tell them the destination city and state.
 
@@ -49,7 +50,7 @@ The staff will put in a request for transfer. It usually takes a while for the r
 
 The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency's copy of the above document.
 
-### Step 4: Visit transferring agency
+## Step 4: Visit transferring agency
 
 Once you have the Transfer document, you need to visit the transferring agency with the following details:
 
@@ -62,7 +63,7 @@ For me, the ID proof and the address proof are the same (Aadhar card), so I carr
 
 Once you're at the agency, you'll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.
 
-Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers. 
+Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.
 
 You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:
 

@@ -6,46 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Learn how to deploy a static site using Codeship and a DigitalOcean droplet">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>How I use Codeship and DigitalOcean to deploy websites · Kunal Nagar</title>
+    <title>How I use Codeship and DigitalOcean to deploy websites – Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
 </head>
 <body>
-    <nav id="navbar">
-    <div class="container">
-        <div class="navbar-container">
-            <h1 class="navbar-logo">
-                <svg id="Full_Logo_SVG" data-name="Full Logo SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="287.7" height="115.2" viewBox="0 0 959 384">
-                  <g>
-                    <rect x="352" width="255" height="240"/>
-                    <image id="K" x="451" y="81" width="68" height="80" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAA90lEQVQ4ja3Vuw3CMBAGYIsFICtkBSZAyixeIRIdXVZgBTMCHXUqekraFFngR5bO4XD8ODtYiqI4vi/RnR8KwBvATNdJFTQAFxb7ALC3nbx1Ug6AZnEjgMa9mEtBD5sWrAYMYEd/gBjMYiWgCJOCYkwCephtOp6UDGj/pAhLgYRNRVgMDGC9CAuBAcwVopV4O+/ZVu+ulHIz/0Z3+2x+VoTwD1cFAGBY37UW1Ox9Q4tfls8AuKpmIK/iiR39enKHSYC5zWFgY8fNII3n+Rz+AbbJFVS5Y3dePr9FqgEprmdxL36m8CYGKZZPeuM6txyjBwDPJR44fwCKHxx9YzQ8cAAAAABJRU5ErkJggg=="/>
-                  </g>
-                  <image id="NAGAR" y="305" width="959" height="79" xlink:href="data:img/png;base64,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"/>
-                </svg>
-
-            </h1>
-            <ul class="navbar-items">
-                <li><a href="/">Home</a></li>
-                <li><a href="/assets/downloads/Resume_Kunal_Nagar.pdf">Résumé</a></li>
-                <li><a href="/foss">Open Source</a></li>
-                <li><a href="/blog">Blog</a></li>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
             </ul>
-        </div>
+        </section>
     </div>
 </nav>
 
-    <div class="page page-blog--single">
-        <div id="content" class="container">
-            <h1>How I use Codeship and DigitalOcean to deploy websites</h1>
-            <p class="by-line">Nov 06, 2018 <a href="/blog/deploy-sites-codeship-digital-ocean/">permalink</a></p>
-            <p>Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard <code class="highlighter-rouge">*.github.io</code> and <code class="highlighter-rouge">*.gitlab.io</code> domains. But what if you have your own VPS and want the same experience?</p>
+    <main>
+        <div class="l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/codeship.png" class="img" />
+                <div>
+                    <h1 class="title">How I use Codeship and DigitalOcean to deploy websites</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">November 06, 2018</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=How I use Codeship and DigitalOcean to deploy websites&url=/blog/deploy-sites-codeship-digital-ocean/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard <code class="highlighter-rouge">*.github.io</code> and <code class="highlighter-rouge">*.gitlab.io</code> domains. But what if you have your own VPS and want the same experience?</p>
 
 <p>I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.</p>
 
 <p>This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.</p>
 
-<h3 id="ingredients">Ingredients</h3>
+<h2 id="ingredients">Ingredients</h2>
 
 <ul>
   <li>
@@ -62,11 +77,11 @@
   </li>
 </ul>
 
-<h3 id="recipe">Recipe</h3>
+<h2 id="recipe">Recipe</h2>
 
 <p>At this point, I’m assuming that you have a static site that you want to deploy stored in a repository somewhere. I’ll be using Bitbucket in this case, but any <code class="highlighter-rouge">git</code> provider will do.</p>
 
-<h4 id="setting-up-codeship">Setting up Codeship</h4>
+<h3 id="setting-up-codeship">Setting up Codeship</h3>
 
 <ul>
   <li>
@@ -75,25 +90,20 @@
   <li>
     <p>In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.</p>
   </li>
-  <li>
-    <p>Make sure you have your repository SSH URL handy. It looks like:</p>
+  <li>Make sure you have your repository SSH URL handy. It looks like:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git
+</code></pre></div>    </div>
   </li>
-</ul>
-<pre>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</pre>
-
-<ul>
   <li>
     <p>For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.</p>
   </li>
   <li>
     <p>You will land on the Tests page. Click on Deploy where you will have to give a branch name that Codeship will watch and do subsequent builds from. In my case, if any commits are pushed to <code class="highlighter-rouge">master</code> (including pull requests), a build is triggered.</p>
   </li>
-  <li>
-    <p>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</p>
-  </li>
+  <li>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</li>
 </ul>
 
-<h4 id="deployment">Deployment</h4>
+<h3 id="deployment">Deployment</h3>
 
 <p>Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.</p>
 
@@ -101,19 +111,14 @@
   <li>
     <p>Every project on Codeship has a public SSH key. Go to project &gt; General settings and you should find it there. Make sure this key is <a href="https://www.ssh.com/ssh/authorized_keys/">authorized</a> on your DigitalOcean droplet as it will be used to automatically push code to your droplet.</p>
   </li>
-  <li>
-    <p>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.</p>
+  <li>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;
+</code></pre></div>    </div>
   </li>
-</ul>
-<pre>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;</pre>
-
-<ul>
   <li>
     <p>The above command will deploy your built code to a folder on your droplet.</p>
   </li>
-  <li>
-    <p>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</p>
-  </li>
+  <li>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</li>
 </ul>
 
 <p>Helpful links:</p>
@@ -121,10 +126,11 @@
   <li><a href="https://documentation.codeship.com/basic/continuous-deployment/deployment-to-digitalocean/">Deploy to DigitalOcean</a></li>
   <li><a href="https://documentation.codeship.com/basic/continuous-deployment/deployment-with-custom-scripts/">Deploy with Custom Scripts</a></li>
 </ul>
-
+</div>
         </div>
-    </div>
-    <script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+    </main>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51202219-2']);
@@ -138,3 +144,140 @@
 
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to deploy a static site using Codeship and a DigitalOcean droplet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>How I use Codeship and DigitalOcean to deploy websites · Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/contact" title="Contact me">Contact</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <div class="page page-blog--single">
+        <div id="content" class="container">
+            <h1>How I use Codeship and DigitalOcean to deploy websites</h1>
+            <p class="by-line">Nov 06, 2018 <a href="/blog/deploy-sites-codeship-digital-ocean/">permalink</a></p>
+            <p>Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard <code class="highlighter-rouge">*.github.io</code> and <code class="highlighter-rouge">*.gitlab.io</code> domains. But what if you have your own VPS and want the same experience?</p>
+
+<p>I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.</p>
+
+<p>This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.</p>
+
+<h2 id="ingredients">Ingredients</h2>
+
+<ul>
+  <li>
+    <p>I use <a href="https://jekyllrb.com/">Jekyll</a> on this site, just because it’s simple and works out of the box. I used <a href="https://gohugo.io/">Hugo</a> for a while but I could never figure out how permalinks and URLs work there.</p>
+  </li>
+  <li>
+    <p>I use <a href="https://bitbucket.org/">Bitbucket</a> to store this site’s code in a private repository.</p>
+  </li>
+  <li>
+    <p>I have a DigitalOcean <a href="https://www.digitalocean.com/products/droplets/">droplet</a> which serves my <a href="https://nextcloud.com/">Nextcloud</a> instance and this site.</p>
+  </li>
+  <li>
+    <p>As mentioned, I use <a href="https://codeship.com/">Codeship</a> to make the magic happen. I highly recommend checking them out. Their free tier works for most scenarios.</p>
+  </li>
+</ul>
+
+<h2 id="recipe">Recipe</h2>
+
+<p>At this point, I’m assuming that you have a static site that you want to deploy stored in a repository somewhere. I’ll be using Bitbucket in this case, but any <code class="highlighter-rouge">git</code> provider will do.</p>
+
+<h3 id="setting-up-codeship">Setting up Codeship</h3>
+
+<ul>
+  <li>
+    <p>Log in to Codeship and create a new project</p>
+  </li>
+  <li>
+    <p>In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.</p>
+  </li>
+  <li>Make sure you have your repository SSH URL handy. It looks like:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.</p>
+  </li>
+  <li>
+    <p>You will land on the Tests page. Click on Deploy where you will have to give a branch name that Codeship will watch and do subsequent builds from. In my case, if any commits are pushed to <code class="highlighter-rouge">master</code> (including pull requests), a build is triggered.</p>
+  </li>
+  <li>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</li>
+</ul>
+
+<h3 id="deployment">Deployment</h3>
+
+<p>Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.</p>
+
+<ul>
+  <li>
+    <p>Every project on Codeship has a public SSH key. Go to project &gt; General settings and you should find it there. Make sure this key is <a href="https://www.ssh.com/ssh/authorized_keys/">authorized</a> on your DigitalOcean droplet as it will be used to automatically push code to your droplet.</p>
+  </li>
+  <li>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The above command will deploy your built code to a folder on your droplet.</p>
+  </li>
+  <li>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</li>
+</ul>
+
+<p>Helpful links:</p>
+<ul>
+  <li><a href="https://documentation.codeship.com/basic/continuous-deployment/deployment-to-digitalocean/">Deploy to DigitalOcean</a></li>
+  <li><a href="https://documentation.codeship.com/basic/continuous-deployment/deployment-with-custom-scripts/">Deploy with Custom Scripts</a></li>
+</ul>
+
+        </div>
+    </div>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" src="https://ssl.google-analytics.com/ga.js" async></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html> -->

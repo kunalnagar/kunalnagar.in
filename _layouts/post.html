@@ -6,6 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.description }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>{{ page.title }} – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+</head>
+<body>
+    {% include header.html %}
+    <main>
+        <div class="l-container p-blog-single">
+            <div class="header">
+                <img src="{{ page.img }}" class="img" />
+                <div>
+                    <h1 class="title">{{ page.title }}</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">{{ page.date | date: "%B %d, %Y" }}</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text={{ page.title }}&url={{ page.url }}&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">{{ content }}</div>
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>{{ page.title }} · Kunal Nagar</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
@@ -22,4 +60,4 @@
     </div>
     {% include footer.html %}
 </body>
-</html>
+</html> -->

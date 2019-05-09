@@ -3,6 +3,7 @@ layout: post
 title:  "encrypt0r - Encrypt and Decrypt files using a Passphrase"
 date: 2019-04-08
 description: "Learn how to encrypt and decrypt files with a passphrase using encrypt0r"
+img: "/assets/img/foss/electron.svg"
 permalink: /blog/encryptor-encrypt-decrypt-files-passphrase/
 ---
 
@@ -28,7 +29,7 @@ Here are direct links to download for your preferred platform:
 - [Windows x86](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip)
 - [Windows x64](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip)
 
-### Signing
+## Signing
 
 If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.
 

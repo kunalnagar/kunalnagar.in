@@ -3,6 +3,7 @@ layout: post
 title:  "Set Windows Photo Viewer as your Default Image Viewer"
 date:   2018-12-23
 description: "Learn how to bring back the Windows Photo Viewer as the default instead of the clunky Photos app."
+img: "/assets/img/foss/win10.gif"
 permalink: /blog/set-windows-photo-viewer-default/
 ---
 
@@ -10,7 +11,7 @@ Every now and then I'll have to use my Windows PC at work. I hate Windows. And I
 
 So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here's how:
 
-### Step 1
+## Step 1
 Create a new registry file and paste the following contents in it. For example, you can name it <code>photoviewer.reg</code>, it doesn't really matter.
 
 ```
@@ -58,11 +59,11 @@ Windows Registry Editor Version 5.00
 
 Now, you should have a file on your machine called <code>photoviewer.reg</code>
 
-### Step 2
+## Step 2
 
 Double click the registry file we created and follow the instructions.
 
-### Step 3
+## Step 3
 
 Once the registry entries have been successfully added, _right-click on an image_ > _Open with_ > _Another application_
 
