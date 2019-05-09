@@ -1,3 +1,4 @@
+// Main Navbar Styles
 .navbar {
 
     .navbar-container {
@@ -6,12 +7,12 @@
         align-items: center;
         justify-content: space-between;
 
+        // Brand
         .brand {
 
             a {
                 display: flex;
                 align-items: center;
-                font-size: 1.1rem;
                 font-weight: 600;
                 border-bottom: 0;
                 color: black;
@@ -23,6 +24,7 @@
                 }
 
                 span {
+                    font-size: 1.3rem;
                     margin-right: 0.5em;
 
                     @media screen and (max-width: 567px) {
@@ -32,6 +34,7 @@
             }
         }
 
+        // Links
         .links {
 
             ul {
@@ -46,17 +49,9 @@
                     &:first-child {
                         margin-left: 0;
                     }
-
-                    a {
-
-                        @media screen and (max-width: 567px) {
-                            font-size: 0.9rem;
-                        }
-                    }
                 }
             }
 
         }
     }
-
 }

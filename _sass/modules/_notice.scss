@@ -1,8 +1,10 @@
+// Notices
+// Currently used only on the home page
 .notice {
     padding: 1rem;
     border-radius: 2px;
 
     &-info {
-        background-color: lighten($color-link, 63%);
+        background-color: lighten($link-color, 32%);
     }
 }
