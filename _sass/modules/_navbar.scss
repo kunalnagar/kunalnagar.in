@@ -24,6 +24,10 @@
 
                 span {
                     margin-right: 0.5em;
+
+                    @media screen and (max-width: 567px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -33,6 +37,7 @@
             ul {
                 list-style-type: none;
                 margin: 0;
+                padding: 0;
 
                 li {
                     display: inline-block;

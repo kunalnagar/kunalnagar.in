@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-05-09T02:55:03+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-05-09T11:43:59+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Front-end web developer based in Bangalore, currently working at ScaleGrid.</subtitle><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it’s important that your product feels cohesive to your customers.&lt;/p&gt;
 
@@ -183,7 +183,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
   &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip&quot;&gt;Windows x64&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;signing&quot;&gt;Signing&lt;/h3&gt;
+&lt;h2 id=&quot;signing&quot;&gt;Signing&lt;/h2&gt;
 
 &lt;p&gt;If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.&lt;/p&gt;
 
@@ -431,7 +431,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+05:30</published><updated>2019-03-11T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
 
-&lt;h3 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h3&gt;
+&lt;h2 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h2&gt;
 
 &lt;p&gt;After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:&lt;/p&gt;
 
@@ -443,7 +443,7 @@ Group: xampp
 
 &lt;p&gt;This means that there must be a &lt;code class=&quot;highlighter-rouge&quot;&gt;daemon&lt;/code&gt; user on your Mac that’s part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;xampp&lt;/code&gt; group to allow writes.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-fix&quot;&gt;The Fix&lt;/h3&gt;
+&lt;h2 id=&quot;the-fix&quot;&gt;The Fix&lt;/h2&gt;
 
 &lt;p&gt;Just change the user to your &lt;code class=&quot;highlighter-rouge&quot;&gt;mac_username&lt;/code&gt; and the group to &lt;code class=&quot;highlighter-rouge&quot;&gt;staff&lt;/code&gt;. My Mac’s username is &lt;code class=&quot;highlighter-rouge&quot;&gt;kunalnagar&lt;/code&gt;, and so my config looks like the following:&lt;/p&gt;
 
@@ -457,7 +457,7 @@ Group: xampp
 
 &lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h3&gt;
+&lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
 
 &lt;p&gt;I’m assuming you are registered with an Indane gas agency. Mine was &lt;a href=&quot;https://goo.gl/maps/7t2LnjqDFTN2&quot;&gt;Gajanana Enterprises Koramangala&lt;/a&gt;&lt;/p&gt;
 
@@ -475,7 +475,7 @@ Group: xampp
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qdD7fha.png&quot; alt=&quot;https://i.imgur.com/qdD7fha.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h3&gt;
+&lt;h2 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h2&gt;
 
 &lt;p&gt;If you don’t own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:&lt;/p&gt;
 
@@ -484,7 +484,7 @@ Group: xampp
   &lt;li&gt;The cylinders need to reach the agency BEFORE the transfer process can be started.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;step-3-visit-current-agency&quot;&gt;Step 3: Visit current agency&lt;/h3&gt;
+&lt;h2 id=&quot;step-3-visit-current-agency&quot;&gt;Step 3: Visit current agency&lt;/h2&gt;
 
 &lt;p&gt;Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.&lt;/p&gt;
 
@@ -502,7 +502,7 @@ Group: xampp
 
 &lt;p&gt;The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency’s copy of the above document.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-4-visit-transferring-agency&quot;&gt;Step 4: Visit transferring agency&lt;/h3&gt;
+&lt;h2 id=&quot;step-4-visit-transferring-agency&quot;&gt;Step 4: Visit transferring agency&lt;/h2&gt;
 
 &lt;p&gt;Once you have the Transfer document, you need to visit the transferring agency with the following details:&lt;/p&gt;
 
@@ -535,13 +535,13 @@ Group: xampp
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sNgVmfJ.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;my-setup&quot;&gt;My setup&lt;/h3&gt;
+&lt;h2 id=&quot;my-setup&quot;&gt;My setup&lt;/h2&gt;
 
 &lt;p&gt;Here’s what I have and I’m really happy with it.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;what-do-i-like-about-it&quot;&gt;What do I like about it?&lt;/h3&gt;
+&lt;h2 id=&quot;what-do-i-like-about-it&quot;&gt;What do I like about it?&lt;/h2&gt;
 
 &lt;p&gt;Couple of things:&lt;/p&gt;
 
@@ -559,7 +559,7 @@ Group: xampp
   &lt;li&gt;Emoji.      &lt;small&gt;&lt;small&gt;&lt;small&gt;Well…&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;how-to-set-it-up&quot;&gt;How to set it up&lt;/h3&gt;
+&lt;h2 id=&quot;how-to-set-it-up&quot;&gt;How to set it up&lt;/h2&gt;
 
 &lt;p&gt;If you’re really impressed by it and just want the code, copy paste the following in your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; and move on with your life.&lt;/p&gt;
 
@@ -590,7 +590,7 @@ PS1+=&quot;\n=&amp;gt; &quot;;
 
 &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git_prompt()&lt;/code&gt; method spits out the current branch name, if it exists. Let’s try to break it down.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
 
 &lt;p&gt;Let’s run the first half of the command in a git repo and a normal folder and see what happens&lt;/p&gt;
 
@@ -610,7 +610,7 @@ fatal: not a git repository (or any of the parent directories): .git
 
 &lt;p&gt;What’s the writing to &lt;code class=&quot;highlighter-rouge&quot;&gt;/dev/null&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;2&amp;gt;&amp;amp;1&lt;/code&gt; mean? Read more &lt;a href=&quot;https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
 
 &lt;p&gt;Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.&lt;/p&gt;
 
@@ -638,7 +638,7 @@ updates-v3
 updates-v3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
 
 &lt;p&gt;Cool, now we have the branch name. Now we just need to set the bash variable &lt;code class=&quot;highlighter-rouge&quot;&gt;PS&lt;/code&gt; to show our minimal prompt&lt;/p&gt;
 
@@ -665,7 +665,7 @@ updates-v3
 
 &lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
 
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
 &lt;p&gt;Create a new registry file and paste the following contents in it. For example, you can name it &lt;code&gt;photoviewer.reg&lt;/code&gt;, it doesn’t really matter.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Windows Registry Editor Version 5.00
@@ -712,11 +712,11 @@ updates-v3
 
 &lt;p&gt;Now, you should have a file on your machine called &lt;code&gt;photoviewer.reg&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
 
 &lt;p&gt;Double click the registry file we created and follow the instructions.&lt;/p&gt;
 
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
 
 &lt;p&gt;Once the registry entries have been successfully added, &lt;em&gt;right-click on an image&lt;/em&gt; &amp;gt; &lt;em&gt;Open with&lt;/em&gt; &amp;gt; &lt;em&gt;Another application&lt;/em&gt;&lt;/p&gt;
 
@@ -728,7 +728,7 @@ updates-v3
 
 &lt;p&gt;This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.&lt;/p&gt;
 
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;h2 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -745,11 +745,11 @@ updates-v3
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;recipe&quot;&gt;Recipe&lt;/h3&gt;
+&lt;h2 id=&quot;recipe&quot;&gt;Recipe&lt;/h2&gt;
 
 &lt;p&gt;At this point, I’m assuming that you have a static site that you want to deploy stored in a repository somewhere. I’ll be using Bitbucket in this case, but any &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; provider will do.&lt;/p&gt;
 
-&lt;h4 id=&quot;setting-up-codeship&quot;&gt;Setting up Codeship&lt;/h4&gt;
+&lt;h3 id=&quot;setting-up-codeship&quot;&gt;Setting up Codeship&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -758,25 +758,20 @@ updates-v3
   &lt;li&gt;
     &lt;p&gt;In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make sure you have your repository SSH URL handy. It looks like:&lt;/p&gt;
+  &lt;li&gt;Make sure you have your repository SSH URL handy. It looks like:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git@&amp;lt;provider&amp;gt;:&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;git@&amp;lt;provider&amp;gt;:&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;.git&lt;/pre&gt;
-
-&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;You will land on the Tests page. Click on Deploy where you will have to give a branch name that Codeship will watch and do subsequent builds from. In my case, if any commits are pushed to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; (including pull requests), a build is triggered.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;deployment&quot;&gt;Deployment&lt;/h4&gt;
+&lt;h3 id=&quot;deployment&quot;&gt;Deployment&lt;/h3&gt;
 
 &lt;p&gt;Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.&lt;/p&gt;
 
@@ -784,19 +779,14 @@ updates-v3
   &lt;li&gt;
     &lt;p&gt;Every project on Codeship has a public SSH key. Go to project &amp;gt; General settings and you should find it there. Make sure this key is &lt;a href=&quot;https://www.ssh.com/ssh/authorized_keys/&quot;&gt;authorized&lt;/a&gt; on your DigitalOcean droplet as it will be used to automatically push code to your droplet.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To push code from Codeship to your droplet, we will use &lt;a href=&quot;https://kb.iu.edu/d/agye&quot;&gt;Secure Copy or scp&lt;/a&gt;. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.&lt;/p&gt;
+  &lt;li&gt;To push code from Codeship to your droplet, we will use &lt;a href=&quot;https://kb.iu.edu/d/agye&quot;&gt;Secure Copy or scp&lt;/a&gt;. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp -rp ~/clone/* user@droplet:/var/www/html/&amp;lt;folder&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;scp -rp ~/clone/* user@droplet:/var/www/html/&amp;lt;folder&amp;gt;&lt;/pre&gt;
-
-&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;The above command will deploy your built code to a folder on your droplet.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;For Jekyll sites, the final code lives in the &lt;code class=&quot;highlighter-rouge&quot;&gt;public&lt;/code&gt; directory by default. Point the &lt;code class=&quot;highlighter-rouge&quot;&gt;.htaccess&lt;/code&gt; file on your droplet to the public folder and you should be set!&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;For Jekyll sites, the final code lives in the &lt;code class=&quot;highlighter-rouge&quot;&gt;public&lt;/code&gt; directory by default. Point the &lt;code class=&quot;highlighter-rouge&quot;&gt;.htaccess&lt;/code&gt; file on your droplet to the public folder and you should be set!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Helpful links:&lt;/p&gt;

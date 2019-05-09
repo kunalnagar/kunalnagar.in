@@ -14,8 +14,6 @@ So my parents listen to music on YouTube. Because apparently, services like [Saa
 
 One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.
 
-<!-- ![Sample Android Malware Screenshot](/assets/img/blog/youtube-to-mp3-converter/youtube-to-mp3-converter-1.PNG) -->
-
 Hence, I decided to create a converter for them that is ad-free and does the job. You enter a URL, click Convert and you get an mp3 file to download. From here on, I will be discussing how to build such a thing and what is the concept behind these converters and how they work. So if you're not interested, shoo off.
 
 Alright. You're interested in how to build such a thing. You can do this in any technology you want. I will be discussing the business logic first and then suggest doing it in Node.js - because that's how I did it.
@@ -40,5 +38,3 @@ You'll need to install [ffmpeg](https://www.ffmpeg.org/) on Heroku first for the
 If you're working on this locally, you'll need to install ffmpeg on your machine as well. Here's how you [install it on a mac](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/wiki/Installing-ffmpeg-on-Mac-OS-X).
 
 I'm not going to give away the code here, so that's for you to figure out. I have suggested all the packages you might need and where to host it as well.
-
-If you have questions, please leave them in the comments below and I'll be more than happy to answer.

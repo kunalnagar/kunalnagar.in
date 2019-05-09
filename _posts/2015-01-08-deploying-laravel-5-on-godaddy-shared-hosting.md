@@ -11,7 +11,7 @@ permalink: /blog/deploying-laravel-5-on-godaddy-shared-hosting/
 
 So your awesome project is ready for deployment and you need to set it up on GoDaddy shared hosting servers.
 
-#### Requirements
+## Requirements
 
 Here are some things that you need before we get started:
 
@@ -19,7 +19,7 @@ Here are some things that you need before we get started:
 * SSH Access
 * Awesome Laravel Project to be deployed
 
-#### Steps
+## Steps
 
 Before we start, let’s assume that your home directory on the server is
 

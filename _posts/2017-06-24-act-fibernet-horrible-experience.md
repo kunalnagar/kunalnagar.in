@@ -119,11 +119,11 @@ WELL HELLO THERE.
 
 Turns out that legal cases do scare the shit out of them. And this happened a day later.
 
-<img src="/img/blog/act-fibernet-horrible-experience/disconnection.png" style="height: 500px;" />
+<img src="/assets/img/blog/act-fibernet-horrible-experience/disconnection.png" style="height: 500px;" />
 
 And this happened after 3 days.
 
-<img src="/img/blog/act-fibernet-horrible-experience/refund.png" style="height: 500px;" />
+<img src="/assets/img/blog/act-fibernet-horrible-experience/refund.png" style="height: 500px;" />
 
 After 3 weeks of constant calling and headaches with this ISP, I finally got my money back.
 

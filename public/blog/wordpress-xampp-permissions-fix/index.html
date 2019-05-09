@@ -56,7 +56,7 @@
             </div>
             <div class="content"><p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
 
-<h3 id="identifying-the-issue">Identifying the issue</h3>
+<h2 id="identifying-the-issue">Identifying the issue</h2>
 
 <p>After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:</p>
 
@@ -68,7 +68,7 @@ Group: xampp
 
 <p>This means that there must be a <code class="highlighter-rouge">daemon</code> user on your Mac that’s part of the <code class="highlighter-rouge">xampp</code> group to allow writes.</p>
 
-<h3 id="the-fix">The Fix</h3>
+<h2 id="the-fix">The Fix</h2>
 
 <p>Just change the user to your <code class="highlighter-rouge">mac_username</code> and the group to <code class="highlighter-rouge">staff</code>. My Mac’s username is <code class="highlighter-rouge">kunalnagar</code>, and so my config looks like the following:</p>
 
@@ -148,7 +148,7 @@ Group: xampp
             <p class="by-line">Mar 11, 2019 <a href="/blog/wordpress-xampp-permissions-fix/">permalink</a></p>
             <p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
 
-<h3 id="identifying-the-issue">Identifying the issue</h3>
+<h2 id="identifying-the-issue">Identifying the issue</h2>
 
 <p>After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:</p>
 
@@ -160,7 +160,7 @@ Group: xampp
 
 <p>This means that there must be a <code class="highlighter-rouge">daemon</code> user on your Mac that’s part of the <code class="highlighter-rouge">xampp</code> group to allow writes.</p>
 
-<h3 id="the-fix">The Fix</h3>
+<h2 id="the-fix">The Fix</h2>
 
 <p>Just change the user to your <code class="highlighter-rouge">mac_username</code> and the group to <code class="highlighter-rouge">staff</code>. My Mac’s username is <code class="highlighter-rouge">kunalnagar</code>, and so my config looks like the following:</p>
 

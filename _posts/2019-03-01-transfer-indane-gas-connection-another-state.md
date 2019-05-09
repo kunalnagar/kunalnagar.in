@@ -9,7 +9,7 @@ permalink: /blog/transfer-indane-gas-connection-another-state/
 
 I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.
 
-### Step 1: Gathering documents
+## Step 1: Gathering documents
 
 I'm assuming you are registered with an Indane gas agency. Mine was [Gajanana Enterprises Koramangala](https://goo.gl/maps/7t2LnjqDFTN2)
 
@@ -25,14 +25,14 @@ The original documents usually contain the deposit amount for two cylinders that
 
 ![https://i.imgur.com/qdD7fha.png](https://i.imgur.com/qdD7fha.png)
 
-### Step 2: Cylinders
+## Step 2: Cylinders
 
 If you don't own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:
 
 * You need to visit the agency on the same day the cylinders are being picked up.
 * The cylinders need to reach the agency BEFORE the transfer process can be started.
 
-### Step 3: Visit current agency
+## Step 3: Visit current agency
 
 Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.
 
@@ -50,7 +50,7 @@ The staff will put in a request for transfer. It usually takes a while for the r
 
 The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency's copy of the above document.
 
-### Step 4: Visit transferring agency
+## Step 4: Visit transferring agency
 
 Once you have the Transfer document, you need to visit the transferring agency with the following details:
 

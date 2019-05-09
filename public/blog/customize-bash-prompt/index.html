@@ -66,13 +66,13 @@
 
 <p><img src="https://i.imgur.com/sNgVmfJ.png" alt="Imgur" /></p>
 
-<h3 id="my-setup">My setup</h3>
+<h2 id="my-setup">My setup</h2>
 
 <p>Here’s what I have and I’m really happy with it.</p>
 
 <p><img src="https://i.imgur.com/3Dwoh1Z.png" alt="Imgur" /></p>
 
-<h3 id="what-do-i-like-about-it">What do I like about it?</h3>
+<h2 id="what-do-i-like-about-it">What do I like about it?</h2>
 
 <p>Couple of things:</p>
 
@@ -90,7 +90,7 @@
   <li>Emoji.      <small><small><small>Well…</small></small></small></li>
 </ul>
 
-<h3 id="how-to-set-it-up">How to set it up</h3>
+<h2 id="how-to-set-it-up">How to set it up</h2>
 
 <p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
 
@@ -121,7 +121,7 @@ PS1+="\n=&gt; ";
 
 <p>The <code class="highlighter-rouge">git_prompt()</code> method spits out the current branch name, if it exists. Let’s try to break it down.</p>
 
-<h3 id="step-1">Step 1</h3>
+<h2 id="step-1">Step 1</h2>
 
 <p>Let’s run the first half of the command in a git repo and a normal folder and see what happens</p>
 
@@ -141,7 +141,7 @@ fatal: not a git repository (or any of the parent directories): .git
 
 <p>What’s the writing to <code class="highlighter-rouge">/dev/null</code> and <code class="highlighter-rouge">2&gt;&amp;1</code> mean? Read more <a href="https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts">here</a></p>
 
-<h3 id="step-2">Step 2</h3>
+<h2 id="step-2">Step 2</h2>
 
 <p>Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.</p>
 
@@ -169,7 +169,7 @@ updates-v3
 updates-v3
 </code></pre></div></div>
 
-<h3 id="step-3">Step 3</h3>
+<h2 id="step-3">Step 3</h2>
 
 <p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="highlighter-rouge">PS</code> to show our minimal prompt</p>
 
@@ -270,13 +270,13 @@ updates-v3
 
 <p><img src="https://i.imgur.com/sNgVmfJ.png" alt="Imgur" /></p>
 
-<h3 id="my-setup">My setup</h3>
+<h2 id="my-setup">My setup</h2>
 
 <p>Here’s what I have and I’m really happy with it.</p>
 
 <p><img src="https://i.imgur.com/3Dwoh1Z.png" alt="Imgur" /></p>
 
-<h3 id="what-do-i-like-about-it">What do I like about it?</h3>
+<h2 id="what-do-i-like-about-it">What do I like about it?</h2>
 
 <p>Couple of things:</p>
 
@@ -294,7 +294,7 @@ updates-v3
   <li>Emoji.      <small><small><small>Well…</small></small></small></li>
 </ul>
 
-<h3 id="how-to-set-it-up">How to set it up</h3>
+<h2 id="how-to-set-it-up">How to set it up</h2>
 
 <p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
 
@@ -325,7 +325,7 @@ PS1+="\n=&gt; ";
 
 <p>The <code class="highlighter-rouge">git_prompt()</code> method spits out the current branch name, if it exists. Let’s try to break it down.</p>
 
-<h3 id="step-1">Step 1</h3>
+<h2 id="step-1">Step 1</h2>
 
 <p>Let’s run the first half of the command in a git repo and a normal folder and see what happens</p>
 
@@ -345,7 +345,7 @@ fatal: not a git repository (or any of the parent directories): .git
 
 <p>What’s the writing to <code class="highlighter-rouge">/dev/null</code> and <code class="highlighter-rouge">2&gt;&amp;1</code> mean? Read more <a href="https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts">here</a></p>
 
-<h3 id="step-2">Step 2</h3>
+<h2 id="step-2">Step 2</h2>
 
 <p>Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.</p>
 
@@ -373,7 +373,7 @@ updates-v3
 updates-v3
 </code></pre></div></div>
 
-<h3 id="step-3">Step 3</h3>
+<h2 id="step-3">Step 3</h2>
 
 <p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="highlighter-rouge">PS</code> to show our minimal prompt</p>
 

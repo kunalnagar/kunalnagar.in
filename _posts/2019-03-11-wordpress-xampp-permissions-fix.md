@@ -9,7 +9,7 @@ permalink: /blog/wordpress-xampp-permissions-fix/
 
 I use XAMPP for WordPress Development on my mac. It's easy, fast and doesn't require too much setup. If you've used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the ```wp-config.php``` file is not automatically created because of permissions issues.
 
-### Identifying the issue
+## Identifying the issue
 
 After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:
 
@@ -22,7 +22,7 @@ You can find this under ```/Applications/XAMPP/etc/httpd.conf```
 
 This means that there must be a ```daemon``` user on your Mac that's part of the ```xampp``` group to allow writes.
 
-### The Fix
+## The Fix
 
 Just change the user to your ```mac_username``` and the group to ```staff```. My Mac's username is ```kunalnagar```, and so my config looks like the following:
 

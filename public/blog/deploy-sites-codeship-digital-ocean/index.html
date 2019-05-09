@@ -60,7 +60,7 @@
 
 <p>This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.</p>
 
-<h3 id="ingredients">Ingredients</h3>
+<h2 id="ingredients">Ingredients</h2>
 
 <ul>
   <li>
@@ -77,11 +77,11 @@
   </li>
 </ul>
 
-<h3 id="recipe">Recipe</h3>
+<h2 id="recipe">Recipe</h2>
 
 <p>At this point, I’m assuming that you have a static site that you want to deploy stored in a repository somewhere. I’ll be using Bitbucket in this case, but any <code class="highlighter-rouge">git</code> provider will do.</p>
 
-<h4 id="setting-up-codeship">Setting up Codeship</h4>
+<h3 id="setting-up-codeship">Setting up Codeship</h3>
 
 <ul>
   <li>
@@ -90,25 +90,20 @@
   <li>
     <p>In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.</p>
   </li>
-  <li>
-    <p>Make sure you have your repository SSH URL handy. It looks like:</p>
+  <li>Make sure you have your repository SSH URL handy. It looks like:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git
+</code></pre></div>    </div>
   </li>
-</ul>
-<pre>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</pre>
-
-<ul>
   <li>
     <p>For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.</p>
   </li>
   <li>
     <p>You will land on the Tests page. Click on Deploy where you will have to give a branch name that Codeship will watch and do subsequent builds from. In my case, if any commits are pushed to <code class="highlighter-rouge">master</code> (including pull requests), a build is triggered.</p>
   </li>
-  <li>
-    <p>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</p>
-  </li>
+  <li>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</li>
 </ul>
 
-<h4 id="deployment">Deployment</h4>
+<h3 id="deployment">Deployment</h3>
 
 <p>Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.</p>
 
@@ -116,19 +111,14 @@
   <li>
     <p>Every project on Codeship has a public SSH key. Go to project &gt; General settings and you should find it there. Make sure this key is <a href="https://www.ssh.com/ssh/authorized_keys/">authorized</a> on your DigitalOcean droplet as it will be used to automatically push code to your droplet.</p>
   </li>
-  <li>
-    <p>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.</p>
+  <li>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;
+</code></pre></div>    </div>
   </li>
-</ul>
-<pre>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;</pre>
-
-<ul>
   <li>
     <p>The above command will deploy your built code to a folder on your droplet.</p>
   </li>
-  <li>
-    <p>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</p>
-  </li>
+  <li>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</li>
 </ul>
 
 <p>Helpful links:</p>
@@ -207,7 +197,7 @@
 
 <p>This article will guide you through my way of deploying static sites. I want to be able to do a push commit, and the site should automatically be live in a few minutes. If you want a similar experience, read on.</p>
 
-<h3 id="ingredients">Ingredients</h3>
+<h2 id="ingredients">Ingredients</h2>
 
 <ul>
   <li>
@@ -224,11 +214,11 @@
   </li>
 </ul>
 
-<h3 id="recipe">Recipe</h3>
+<h2 id="recipe">Recipe</h2>
 
 <p>At this point, I’m assuming that you have a static site that you want to deploy stored in a repository somewhere. I’ll be using Bitbucket in this case, but any <code class="highlighter-rouge">git</code> provider will do.</p>
 
-<h4 id="setting-up-codeship">Setting up Codeship</h4>
+<h3 id="setting-up-codeship">Setting up Codeship</h3>
 
 <ul>
   <li>
@@ -237,25 +227,20 @@
   <li>
     <p>In the free tier (at least), you can only create a new project from GitHub, Bitbucket or GitLab.</p>
   </li>
-  <li>
-    <p>Make sure you have your repository SSH URL handy. It looks like:</p>
+  <li>Make sure you have your repository SSH URL handy. It looks like:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git
+</code></pre></div>    </div>
   </li>
-</ul>
-<pre>git@&lt;provider&gt;:&lt;username&gt;/&lt;repository&gt;.git</pre>
-
-<ul>
   <li>
     <p>For project type, select Codeship Basic. Although I would highly recommend checking out their Pro plans in case you need more control.</p>
   </li>
   <li>
     <p>You will land on the Tests page. Click on Deploy where you will have to give a branch name that Codeship will watch and do subsequent builds from. In my case, if any commits are pushed to <code class="highlighter-rouge">master</code> (including pull requests), a build is triggered.</p>
   </li>
-  <li>
-    <p>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</p>
-  </li>
+  <li>Once done, click Save and go to Dashboard. Codeship is all set to watch your master branch for changes and trigger a build.</li>
 </ul>
 
-<h4 id="deployment">Deployment</h4>
+<h3 id="deployment">Deployment</h3>
 
 <p>Once a build is triggered and successfully finished, you want to deploy your site to a VPS. As mentioned previously, I will be using a DigitalOcean droplet.</p>
 
@@ -263,19 +248,14 @@
   <li>
     <p>Every project on Codeship has a public SSH key. Go to project &gt; General settings and you should find it there. Make sure this key is <a href="https://www.ssh.com/ssh/authorized_keys/">authorized</a> on your DigitalOcean droplet as it will be used to automatically push code to your droplet.</p>
   </li>
-  <li>
-    <p>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.</p>
+  <li>To push code from Codeship to your droplet, we will use <a href="https://kb.iu.edu/d/agye">Secure Copy or scp</a>. Add the following command as a Custom Script under the Deployment Settings of your Codeship project.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;
+</code></pre></div>    </div>
   </li>
-</ul>
-<pre>scp -rp ~/clone/* user@droplet:/var/www/html/&lt;folder&gt;</pre>
-
-<ul>
   <li>
     <p>The above command will deploy your built code to a folder on your droplet.</p>
   </li>
-  <li>
-    <p>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</p>
-  </li>
+  <li>For Jekyll sites, the final code lives in the <code class="highlighter-rouge">public</code> directory by default. Point the <code class="highlighter-rouge">.htaccess</code> file on your droplet to the public folder and you should be set!</li>
 </ul>
 
 <p>Helpful links:</p>

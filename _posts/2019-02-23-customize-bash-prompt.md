@@ -19,13 +19,13 @@ Plus, when I navigate to a git repo, it doesn't even show what branch I'm on. Do
 
 ![Imgur](https://i.imgur.com/sNgVmfJ.png)
 
-### My setup
+## My setup
 
 Here's what I have and I'm really happy with it.
 
 ![Imgur](https://i.imgur.com/3Dwoh1Z.png)
 
-### What do I like about it?
+## What do I like about it?
 
 Couple of things:
 
@@ -39,7 +39,7 @@ Things I don't need here:
 - 10 billion colours
 - Emoji.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small><small><small>Well...</small></small></small>
 
-### How to set it up
+## How to set it up
 
 If you're really impressed by it and just want the code, copy paste the following in your ```~/.bash_profile``` and move on with your life.
 
@@ -71,7 +71,7 @@ If you're like me and want to understand what this gibberish means, read on.
 
 The ```git_prompt()``` method spits out the current branch name, if it exists. Let's try to break it down.
 
-### Step 1
+## Step 1
 
 Let's run the first half of the command in a git repo and a normal folder and see what happens
 
@@ -92,7 +92,7 @@ So basically, this command is used to check if our current working directory is 
 
 What's the writing to ```/dev/null``` and ```2>&1``` mean? Read more [here](https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts)
 
-### Step 2
+## Step 2
 
 Once we've figured out that we are, actually, inside a git repo, we need to figure out what branch we're in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I've found that works across a wide range of scenarios.
 
@@ -122,7 +122,7 @@ The ```git rev-parse``` is used as a safety net in scenarios like detached heads
 updates-v3
 ```
 
-### Step 3
+## Step 3
 
 Cool, now we have the branch name. Now we just need to set the bash variable ```PS``` to show our minimal prompt
 
