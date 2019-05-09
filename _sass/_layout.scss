@@ -6,6 +6,10 @@ html, body {
 
 main {
     margin-top: 3rem;
+
+    @media screen and (max-width: 567px) {
+        margin-top: 1rem;
+    }
 }
 
 .l {
@@ -142,13 +146,21 @@ main {
         .header {
             display: flex;
 
+            @media screen and (max-width: 567px) {
+                display: block;
+            }
+
             .img {
                 height: 120px;
                 margin-right: 2rem;
+
+                @media screen and (max-width: 567px) {
+                    height: 70px;
+                }
             }
 
             .title {
-                font-weight: 500;
+                font-weight: 400;
                 color: #2f2f2f;
                 margin-top: 0;
                 margin-bottom: 0.7rem;

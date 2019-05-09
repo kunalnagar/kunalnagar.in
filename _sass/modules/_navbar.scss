@@ -46,6 +46,13 @@
                     &:first-child {
                         margin-left: 0;
                     }
+
+                    a {
+
+                        @media screen and (max-width: 567px) {
+                            font-size: 0.9rem;
+                        }
+                    }
                 }
             }
 
