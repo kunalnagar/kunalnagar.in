@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "img": "/assets/img/foss/react.png",
+            "title": "react-twitter",
+            "description": "Twitter's JavaScript Widgets as React components",
+            "link": "https://github.com/kunalnagar/react-twitter"
+        },
+        {
             "img": "/assets/img/foss/imdb.png",
             "title": "IMDb API",
             "description": "An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists",
