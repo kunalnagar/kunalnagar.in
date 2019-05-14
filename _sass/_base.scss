@@ -7,12 +7,12 @@
 a {
     text-decoration: none;
     font-weight: 600;
-    border-bottom: 2px solid lighten($link-color, 35%);
+    border-bottom: 2px solid lighten($link-color, 48%);
     transition: background-color 100ms ease, border-bottom-color 100ms ease;
 
     &:hover {
         text-decoration: none;
-        background-color: lighten($link-color, 32%);
+        background-color: lighten($link-color, 52%);
         border-bottom-color: $link-hover-color;
     }
 }
