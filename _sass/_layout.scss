@@ -58,7 +58,7 @@ main {
                 &.description {
                     width: 60%;
                     margin-right: 2.5rem;
-                    color: gray;
+                    color: lighten(black, 35%);
 
                     @media screen and (max-width: 567px) {
                         display: none;
