@@ -9,7 +9,7 @@ permalink: /blog/wordpress-redis-speed/
 
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can be combined with other databases like MySQL to provide a mechanism to cache your queries.
 
-# How does this work?
+## How does this work?
 
 ![](https://scalegrid.io/blog/wp-content/uploads/2018/05/Capture2.png)
 

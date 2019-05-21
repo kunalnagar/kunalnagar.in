@@ -38,6 +38,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-minifier
 
 sass:
     style: compressed

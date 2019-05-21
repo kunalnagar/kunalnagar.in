@@ -8,7 +8,7 @@ img: "/assets/img/foss/youtube.png"
 tags: [Open Source, Woot, Blah]
 ---
 
-<a href="https://www.youtube.com/watch?v=oA-D7TdjVnE">Demo</a>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/oA-D7TdjVnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 So my parents listen to music on YouTube. Because apparently, services like [Saavn](https://www.saavn.com/) or [Gaana](https://gaana.com/) don't make sense to them. And honestly, I can't blame them. They're gonna use what seems familiar to them.
 

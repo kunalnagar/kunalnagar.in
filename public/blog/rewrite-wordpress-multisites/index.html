@@ -1,88 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Learn how to rewrite WordPress Multisites to any folder on your server.">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>Rewrite WordPress Multisites – Kunal Nagar</title>
-    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
-    <meta name="robots" content="index, follow">
-    <style type="text/css">
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,nav,section{display:block}img{border:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font:normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem}body{color:#000;background:#fff;font-size:1rem}p,ul{margin:0 0 1.5rem 0}h1,h2{margin:1.5rem 0;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:1.2;color:#404040}h2:not(:first-child){margin:1.5rem 0}h2:not(:first-child){margin-top:2rem}h1{font-size:1.75rem}h2{font-size:1.5rem}@media (min-width:600px){h2:not(:first-child){margin-top:2.5rem}h1{font-size:2.25rem}h2{font-size:2rem}}a{color:#1a4cb1;text-decoration:none}.container{max-width:1200px;padding:0 1rem;margin-left:auto;margin-right:auto}::-webkit-input-placeholder,::-moz-placeholder,:-moz-placeholder,:-ms-input-placeholder{color:#9a9a9a}a{text-decoration:none;font-weight:600;border-bottom:2px solid #c9d8f7}ul li{line-height:2rem}main{margin-top:3rem}@media screen and (max-width:567px){main{margin-top:1rem}}.container{max-width:800px}.l-flex{display:flex}.l-items-center{align-items:center}.p-blog-single .header{display:flex}@media screen and (max-width:567px){.p-blog-single .header{display:block}}.p-blog-single .header .img{height:120px;margin-right:2rem}@media screen and (max-width:567px){.p-blog-single .header .img{height:70px}}.p-blog-single .header .title{font-weight:400;color:#2f2f2f;margin-top:0;margin-bottom:0.7rem;line-height:2.5rem}.p-blog-single .header .date{color:gray;font-size:0.7rem}.p-blog-single .header .breadcrumb-separator{color:gray;font-size:0.7rem;margin:0 0.5rem}.p-blog-single .header .btn-share{font-size:0.7rem;color:#6d6d6d;border:0;font-weight:600}.p-blog-single .content{margin-top:3rem}.p-blog-single .content h2{font-weight:500;padding-bottom:0.2rem;border-bottom:2px solid #e6e6e6;margin-top:2rem;margin-bottom:1rem}.p-blog-single .content img{max-width:100%}.navbar .navbar-container{height:90px;display:flex;align-items:center;justify-content:space-between}.navbar .navbar-container .brand a{display:flex;align-items:center;font-weight:600;border-bottom:0;color:black}.navbar .navbar-container .brand a img{width:35px;height:35px;margin-right:1rem}.navbar .navbar-container .brand a span{font-size:1.3rem;margin-right:0.5em}@media screen and (max-width:567px){.navbar .navbar-container .brand a span{display:none}}.navbar .navbar-container .links ul{list-style-type:none;margin:0;padding:0}.navbar .navbar-container .links ul li{display:inline-block;margin-left:1rem}.navbar .navbar-container .links ul li:first-child{margin-left:0}
-</style>
-
-</head>
-<body>
-    <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
-</nav>
-
-    <main>
-        <div class="container l-container p-blog-single">
-            <div class="header">
-                <img src="/assets/img/foss/wp.png" class="img" />
-                <div>
-                    <h1 class="title">Rewrite WordPress Multisites</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">September 17, 2016</time>
-                        <span class="breadcrumb-separator">/</span>
-                        <a href="http://twitter.com/share?text=Rewrite WordPress Multisites&url=/blog/rewrite-wordpress-multisites/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="content"><p>Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, <a href="https://codex.wordpress.org/Create_A_Network">WordPress Multisite</a> is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</p>
-
-<p><i><b>Note:</b> Creating WordPress multisites is out of the scope of this article. For more info, check out <a href="https://codex.wordpress.org/Create_A_Network">this link</a>.</i></p>
-
-<p>When you set up a WordPress Multisite install, you create one root site and then all other multisites are created as subfolders (children). For example, you may end up with something like:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/blog/ # Root Site
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Learn how to rewrite WordPress Multisites to any folder on your server."> <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <title>Rewrite WordPress Multisites – Kunal Nagar</title> <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png"> <meta name="robots" content="index, follow"> <style type="text/css">html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,nav,section{display:block}img{border:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font:normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem}body{color:#000;background:#fff;font-size:1rem}p,ul{margin:0 0 1.5rem 0}h1,h2{margin:1.5rem 0;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:1.2;color:#404040}h2:not(:first-child){margin:1.5rem 0}h2:not(:first-child){margin-top:2rem}h1{font-size:1.75rem}h2{font-size:1.5rem}@media(min-width:600px){h2:not(:first-child){margin-top:2.5rem}h1{font-size:2.25rem}h2{font-size:2rem}}a{color:#1a4cb1;text-decoration:none}.container{max-width:1200px;padding:0 1rem;margin-left:auto;margin-right:auto}::-webkit-input-placeholder,::-moz-placeholder,:-moz-placeholder,:-ms-input-placeholder{color:#9a9a9a}a{text-decoration:none;font-weight:600;border-bottom:2px solid #c9d8f7}ul li{line-height:2rem}main{margin-top:3rem}@media screen and (max-width:567px){main{margin-top:1rem}}.container{max-width:800px}.l-flex{display:flex}.l-items-center{align-items:center}.p-blog-single .header{display:flex}@media screen and (max-width:567px){.p-blog-single .header{display:block}}.p-blog-single .header .img{height:120px;margin-right:2rem}@media screen and (max-width:567px){.p-blog-single .header .img{height:70px}}.p-blog-single .header .title{font-weight:400;color:#2f2f2f;margin-top:0;margin-bottom:.7rem;line-height:2.5rem}.p-blog-single .header .date{color:gray;font-size:.7rem}.p-blog-single .header .breadcrumb-separator{color:gray;font-size:.7rem;margin:0 .5rem}.p-blog-single .header .btn-share{font-size:.7rem;color:#6d6d6d;border:0;font-weight:600}.p-blog-single .content{margin-top:3rem}.p-blog-single .content h2{font-weight:500;padding-bottom:.2rem;border-bottom:2px solid #e6e6e6;margin-top:2rem;margin-bottom:1rem}.p-blog-single .content img{max-width:100%}.navbar .navbar-container{height:90px;display:flex;align-items:center;justify-content:space-between}.navbar .navbar-container .brand a{display:flex;align-items:center;font-weight:600;border-bottom:0;color:black}.navbar .navbar-container .brand a img{width:35px;height:35px;margin-right:1rem}.navbar .navbar-container .brand a span{font-size:1.3rem;margin-right:.5em}@media screen and (max-width:567px){.navbar .navbar-container .brand a span{display:none}}.navbar .navbar-container .links ul{list-style-type:none;margin:0;padding:0}.navbar .navbar-container .links ul li{display:inline-block;margin-left:1rem}.navbar .navbar-container .links ul li:first-child{margin-left:0}</style> </head> <body> <nav class="navbar"> <div class="container l-container navbar-container"> <section class="brand"> <a href="/" class="link" title="Home"> <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo"/> <span>Kunal Nagar</span> </a> </section> <section class="links"> <ul> <li> <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a> </li> <li> <a href="/foss" title="View open source work">Open Source</a> </li> <li> <a href="/blog" title="Read blog">Blog</a> </li> </ul> </section> </div> </nav> <main> <div class="container l-container p-blog-single"> <div class="header"> <img src="/assets/img/foss/wp.png" class="img"/> <div> <h1 class="title">Rewrite WordPress Multisites</h1> <div class="l-flex l-items-center"> <time class="date">September 17, 2016</time> <span class="breadcrumb-separator">/</span> <a href="http://twitter.com/share?text=Rewrite WordPress Multisites&url=/blog/rewrite-wordpress-multisites/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer"> Share </a> </div> </div> </div> <div class="content"><p>Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, <a href="https://codex.wordpress.org/Create_A_Network">WordPress Multisite</a> is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</p> <p><i><b>Note:</b> Creating WordPress multisites is out of the scope of this article. For more info, check out <a href="https://codex.wordpress.org/Create_A_Network">this link</a>.</i></p> <p>When you set up a WordPress Multisite install, you create one root site and then all other multisites are created as subfolders (children). For example, you may end up with something like:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/blog/ # Root Site
 http://localhost/blog/knowledgebase/ # Multisite 1
 http://localhost/blog/site/ # Multisite 2
-</code></pre></div></div>
-
-<p>As you can see, this is not ideal, you would ideally want something like this, i.e. each multisite at the same level as the root site (blog):</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/blog/
+</code></pre></div></div> <p>As you can see, this is not ideal, you would ideally want something like this, i.e. each multisite at the same level as the root site (blog):</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/blog/
 http://localhost/knowledgebase/
 http://localhost/site/
-</code></pre></div></div>
-
-<p>It turns out – you can easily do this in 3 steps:</p>
-
-<h2 id="step-1-create-a-root-level-htaccess">Step 1: Create a root level .htaccess</h2>
-
-<p>We need to intercept all request to multisites and then rewrite them to their original URLs.</p>
-
-<p>Please note that this is NOT a redirect, but a rewrite. There’s a <a href="http://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference">difference</a>.</p>
-
-<p>Moving along – create an .htaccess file in the root. If you’re using something like XAMPP, create it in the <b>htdocs</b> folder:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Root Level .htaccess
+</code></pre></div></div> <p>It turns out – you can easily do this in 3 steps:</p> <h2 id="step-1-create-a-root-level-htaccess">Step 1: Create a root level .htaccess</h2> <p>We need to intercept all request to multisites and then rewrite them to their original URLs.</p> <p>Please note that this is NOT a redirect, but a rewrite. There’s a <a href="http://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference">difference</a>.</p> <p>Moving along – create an .htaccess file in the root. If you’re using something like XAMPP, create it in the <b>htdocs</b> folder:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Root Level .htaccess
 
 RewriteEngine On
 RewriteBase /
@@ -96,13 +18,7 @@ RewriteCond %{REQUEST_URI} /knowledgebase
 # Rewrite the intercepted requests to
 # /knowledgebase/anything-here from /blog/knowledgebase/anything-here
 RewriteRule ^knowledgebase/(.*) blog/knowledgebase/$1 [L]
-</code></pre></div></div>
-
-<h2 id="step-2-update-the-database">Step 2: Update the Database</h2>
-
-<p>Just rewriting in the <b>.htaccess</b> is not going to cut it for us. There are some entries in the Database that we need to change:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- Update wp_blogs table to remove /blog from the path
+</code></pre></div></div> <h2 id="step-2-update-the-database">Step 2: Update the Database</h2> <p>Just rewriting in the <b>.htaccess</b> is not going to cut it for us. There are some entries in the Database that we need to change:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- Update wp_blogs table to remove /blog from the path
 UPDATE wp_blogs SET path="/knowledgebase/" WHERE path="/blog/knowledgebase/";
 
 -- Update wp_SITE_ID_options siteurl to remove /blog in the URL
@@ -110,36 +26,8 @@ UPDATE wp_2_options SET option_value="http://localhost/knowledgebase" WHERE opti
 
 -- Update wp_SITE_ID_options home to remove /blog in the URL
 UPDATE wp_2_options SET option_value="http://localhost/knowledgebase" WHERE option_name="home";
-</code></pre></div></div>
-
-<h2 id="step-3-handle-cookiessessions">Step 3: Handle cookies/sessions</h2>
-
-<p>Now, we need to handle cookies/sessions since our URLs have changed. Paste the following lines in the <b>wp-config.php</b> file below the multisite lines:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>define('ADMIN_COOKIE_PATH', '/');
+</code></pre></div></div> <h2 id="step-3-handle-cookiessessions">Step 3: Handle cookies/sessions</h2> <p>Now, we need to handle cookies/sessions since our URLs have changed. Paste the following lines in the <b>wp-config.php</b> file below the multisite lines:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
-</code></pre></div></div>
-
-<p><b>And we’re done!</b> Visit your new multisite URL: <a href="">http://localhost/knowledgebase</a> and you should be good to go!</p>
-
-<p><b>Note:</b> For adding more multisites, add a necessary rule in <b>Step 1</b> and update the necessary tables in <b>Step 2</b>.</p>
-
-</div>
-        </div>
-    </main>
-    <link rel="stylesheet" href="/assets/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-51202219-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-
-</body>
-</html>
+</code></pre></div></div> <p><b>And we’re done!</b> Visit your new multisite URL: <a href="">http://localhost/knowledgebase</a> and you should be good to go!</p> <p><b>Note:</b> For adding more multisites, add a necessary rule in <b>Step 1</b> and update the necessary tables in <b>Step 2</b>.</p> </div> </div> </main> <link rel="stylesheet" href="/assets/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript> <script src="/assets/js/main.js" async defer></script> <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-51202219-2"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script> </body> </html>

@@ -1,77 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Learn how to create modules that can be shared across other modules using RequireJS">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>Shared Modules using RequireJS – Kunal Nagar</title>
-    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
-    <meta name="robots" content="index, follow">
-    <style type="text/css">
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,nav,section{display:block}img{border:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font:normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem}body{color:#000;background:#fff;font-size:1rem}p,ul{margin:0 0 1.5rem 0}h1,h2{margin:1.5rem 0;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:1.2;color:#404040}h2:not(:first-child){margin:1.5rem 0}h2:not(:first-child){margin-top:2rem}h1{font-size:1.75rem}h2{font-size:1.5rem}@media (min-width:600px){h2:not(:first-child){margin-top:2.5rem}h1{font-size:2.25rem}h2{font-size:2rem}}a{color:#1a4cb1;text-decoration:none}.container{max-width:1200px;padding:0 1rem;margin-left:auto;margin-right:auto}::-webkit-input-placeholder,::-moz-placeholder,:-moz-placeholder,:-ms-input-placeholder{color:#9a9a9a}a{text-decoration:none;font-weight:600;border-bottom:2px solid #c9d8f7}ul li{line-height:2rem}main{margin-top:3rem}@media screen and (max-width:567px){main{margin-top:1rem}}.container{max-width:800px}.l-flex{display:flex}.l-items-center{align-items:center}.p-blog-single .header{display:flex}@media screen and (max-width:567px){.p-blog-single .header{display:block}}.p-blog-single .header .img{height:120px;margin-right:2rem}@media screen and (max-width:567px){.p-blog-single .header .img{height:70px}}.p-blog-single .header .title{font-weight:400;color:#2f2f2f;margin-top:0;margin-bottom:0.7rem;line-height:2.5rem}.p-blog-single .header .date{color:gray;font-size:0.7rem}.p-blog-single .header .breadcrumb-separator{color:gray;font-size:0.7rem;margin:0 0.5rem}.p-blog-single .header .btn-share{font-size:0.7rem;color:#6d6d6d;border:0;font-weight:600}.p-blog-single .content{margin-top:3rem}.p-blog-single .content h2{font-weight:500;padding-bottom:0.2rem;border-bottom:2px solid #e6e6e6;margin-top:2rem;margin-bottom:1rem}.p-blog-single .content img{max-width:100%}.navbar .navbar-container{height:90px;display:flex;align-items:center;justify-content:space-between}.navbar .navbar-container .brand a{display:flex;align-items:center;font-weight:600;border-bottom:0;color:black}.navbar .navbar-container .brand a img{width:35px;height:35px;margin-right:1rem}.navbar .navbar-container .brand a span{font-size:1.3rem;margin-right:0.5em}@media screen and (max-width:567px){.navbar .navbar-container .brand a span{display:none}}.navbar .navbar-container .links ul{list-style-type:none;margin:0;padding:0}.navbar .navbar-container .links ul li{display:inline-block;margin-left:1rem}.navbar .navbar-container .links ul li:first-child{margin-left:0}
-</style>
-
-</head>
-<body>
-    <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
-</nav>
-
-    <main>
-        <div class="container l-container p-blog-single">
-            <div class="header">
-                <img src="/assets/img/foss/js.png" class="img" />
-                <div>
-                    <h1 class="title">Shared Modules using RequireJS</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">September 10, 2016</time>
-                        <span class="breadcrumb-separator">/</span>
-                        <a href="http://twitter.com/share?text=Shared Modules using RequireJS&url=/blog/shared-modules-using-requirejs/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="content"><p>Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</p>
-
-<p>Before we start, I’m assuming that you know a bit about RequireJS. If not, I suggest you visit their <a href="http://requirejs.org/">website</a> and learn about <a href="http://requirejs.org/docs/whyamd.html">AMD (Asynchronous Module Definition)</a>.</p>
-
-<p>Here is the basic folder structure that we’re going to follow. I’ll explain this in detail below:</p>
-
-<p><img src="/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png" alt="Folder Structure" /></p>
-
-<p>The common folder contains the individual common modules like Logger, Modal and Tabs.</p>
-
-<ul>
-  <li><b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like <a href="https://logentries.com/">Logentries</a> or <a href="https://sentry.io/welcome/">Sentry</a></li>
-  <li><b>modal.js</b> &amp; <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs</li>
-</ul>
-
-<p>Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// logger.js
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Learn how to create modules that can be shared across other modules using RequireJS"> <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <title>Shared Modules using RequireJS – Kunal Nagar</title> <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png"> <meta name="robots" content="index, follow"> <style type="text/css">html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,nav,section{display:block}img{border:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font:normal normal normal 1rem/1.6 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:1rem}body{color:#000;background:#fff;font-size:1rem}p,ul{margin:0 0 1.5rem 0}h1,h2{margin:1.5rem 0;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;line-height:1.2;color:#404040}h2:not(:first-child){margin:1.5rem 0}h2:not(:first-child){margin-top:2rem}h1{font-size:1.75rem}h2{font-size:1.5rem}@media(min-width:600px){h2:not(:first-child){margin-top:2.5rem}h1{font-size:2.25rem}h2{font-size:2rem}}a{color:#1a4cb1;text-decoration:none}.container{max-width:1200px;padding:0 1rem;margin-left:auto;margin-right:auto}::-webkit-input-placeholder,::-moz-placeholder,:-moz-placeholder,:-ms-input-placeholder{color:#9a9a9a}a{text-decoration:none;font-weight:600;border-bottom:2px solid #c9d8f7}ul li{line-height:2rem}main{margin-top:3rem}@media screen and (max-width:567px){main{margin-top:1rem}}.container{max-width:800px}.l-flex{display:flex}.l-items-center{align-items:center}.p-blog-single .header{display:flex}@media screen and (max-width:567px){.p-blog-single .header{display:block}}.p-blog-single .header .img{height:120px;margin-right:2rem}@media screen and (max-width:567px){.p-blog-single .header .img{height:70px}}.p-blog-single .header .title{font-weight:400;color:#2f2f2f;margin-top:0;margin-bottom:.7rem;line-height:2.5rem}.p-blog-single .header .date{color:gray;font-size:.7rem}.p-blog-single .header .breadcrumb-separator{color:gray;font-size:.7rem;margin:0 .5rem}.p-blog-single .header .btn-share{font-size:.7rem;color:#6d6d6d;border:0;font-weight:600}.p-blog-single .content{margin-top:3rem}.p-blog-single .content h2{font-weight:500;padding-bottom:.2rem;border-bottom:2px solid #e6e6e6;margin-top:2rem;margin-bottom:1rem}.p-blog-single .content img{max-width:100%}.navbar .navbar-container{height:90px;display:flex;align-items:center;justify-content:space-between}.navbar .navbar-container .brand a{display:flex;align-items:center;font-weight:600;border-bottom:0;color:black}.navbar .navbar-container .brand a img{width:35px;height:35px;margin-right:1rem}.navbar .navbar-container .brand a span{font-size:1.3rem;margin-right:.5em}@media screen and (max-width:567px){.navbar .navbar-container .brand a span{display:none}}.navbar .navbar-container .links ul{list-style-type:none;margin:0;padding:0}.navbar .navbar-container .links ul li{display:inline-block;margin-left:1rem}.navbar .navbar-container .links ul li:first-child{margin-left:0}</style> </head> <body> <nav class="navbar"> <div class="container l-container navbar-container"> <section class="brand"> <a href="/" class="link" title="Home"> <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo"/> <span>Kunal Nagar</span> </a> </section> <section class="links"> <ul> <li> <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a> </li> <li> <a href="/foss" title="View open source work">Open Source</a> </li> <li> <a href="/blog" title="Read blog">Blog</a> </li> </ul> </section> </div> </nav> <main> <div class="container l-container p-blog-single"> <div class="header"> <img src="/assets/img/foss/js.png" class="img"/> <div> <h1 class="title">Shared Modules using RequireJS</h1> <div class="l-flex l-items-center"> <time class="date">September 10, 2016</time> <span class="breadcrumb-separator">/</span> <a href="http://twitter.com/share?text=Shared Modules using RequireJS&url=/blog/shared-modules-using-requirejs/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer"> Share </a> </div> </div> </div> <div class="content"><p>Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</p> <p>Before we start, I’m assuming that you know a bit about RequireJS. If not, I suggest you visit their <a href="http://requirejs.org/">website</a> and learn about <a href="http://requirejs.org/docs/whyamd.html">AMD (Asynchronous Module Definition)</a>.</p> <p>Here is the basic folder structure that we’re going to follow. I’ll explain this in detail below:</p> <p><img src="/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png" alt="Folder Structure"/></p> <p>The common folder contains the individual common modules like Logger, Modal and Tabs.</p> <ul> <li><b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like <a href="https://logentries.com/">Logentries</a> or <a href="https://sentry.io/welcome/">Sentry</a></li> <li><b>modal.js</b> &amp; <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs</li> </ul> <p>Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// logger.js
 (function() {
 
     'use strict';
@@ -98,11 +25,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,
 
     });
 })();
-</code></pre></div></div>
-
-<p>Now, assume that we need to share this across different Modules (<b>module-1</b>, <b>module-2</b>, etc). Here is how we can do it:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-1.js
+</code></pre></div></div> <p>Now, assume that we need to share this across different Modules (<b>module-1</b>, <b>module-2</b>, etc). Here is how we can do it:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-1.js
 (function() {
 
     'use strict';
@@ -115,11 +38,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,
 
     });
 })();
-</code></pre></div></div>
-
-<p>If we need to share multiple common modules, we can do something like:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-2.js
+</code></pre></div></div> <p>If we need to share multiple common modules, we can do something like:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-2.js
 (function() {
 
     'use strict';
@@ -138,11 +57,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,
 
     });
 })();
-</code></pre></div></div>
-
-<p>As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// common.js
+</code></pre></div></div> <p>As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// common.js
 (function() {
 
     'use strict';
@@ -159,11 +74,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,
 
     });
 })();
-</code></pre></div></div>
-
-<p>And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-3.js
+</code></pre></div></div> <p>And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-3.js
 (function() {
 
     'use strict';
@@ -179,24 +90,4 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}main,
 
     });
 })();
-</code></pre></div></div>
-
-<p>Thanks for taking the time to read this. Build something awesome!</p>
-
-</div>
-        </div>
-    </main>
-    <link rel="stylesheet" href="/assets/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-51202219-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-
-</body>
-</html>
+</code></pre></div></div> <p>Thanks for taking the time to read this. Build something awesome!</p> </div> </div> </main> <link rel="stylesheet" href="/assets/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript> <script src="/assets/js/main.js" async defer></script> <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-51202219-2"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script> </body> </html>
