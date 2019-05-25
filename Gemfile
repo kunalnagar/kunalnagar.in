@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-watch'
   gem 'jekyll-minifier'
+  gem 'jekyll-compress-images'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
