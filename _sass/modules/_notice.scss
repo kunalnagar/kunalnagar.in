@@ -1,10 +1,13 @@
-// Notices
-// Currently used only on the home page
 .notice {
     padding: 1rem;
     border-radius: 2px;
+    color: darken($primary-color, 10%);
 
     &-info {
-        background-color: lighten($link-color, 45%);
+        background-color: lighten($link-color, 50%);
+    }
+
+    &-default {
+        background-color: lighten(gray, 20%);
     }
 }
