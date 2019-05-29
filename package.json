@@ -1,19 +1,19 @@
 {
-  "name": "personal-main",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "primitive-ui": "^1.5.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@bitbucket_kunalnagar:kunalnagar/personal-main.git"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "personal-main",
+    "version": "2.0.0",
+    "description": "Personal website for Kunal Nagar",
+    "homepage": "https://kunalnagar.in",
+    "dependencies": {},
+    "devDependencies": {
+        "normalize-scss": "^7.0.1"
+    },
+    "scripts": {
+        "dev": "bundle exec jekyll serve -l",
+        "build": "bundle exec jekyll build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@bitbucket_kunalnagar:kunalnagar/personal-main.git"
+    },
+    "author": "Kunal Nagar <knlnagar@gmail.com>"
 }

@@ -1,23 +1,20 @@
-.d-flex {
-    display: flex;
-
-    &.items-center {
-        align-items: center;
-    }
-}
-
-.f-1 {
-    flex: 1;
-}
-
-code.highlighter-rouge {
-    padding: 5px 10px;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-}
-
 .highlighter-rouge {
     font-size: 1.1em;
     line-height: 1.3em;
+    max-width: 100%;
+    overflow-x: auto;
+
+    pre {
+        background-color: #eaeaea63;
+        padding: 1em 1.5em;
+        overflow: auto;
+    }
+}
+
+code.highlighter-rouge {
+    padding: 2px 5px;
+    margin: 0.2em;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
 }

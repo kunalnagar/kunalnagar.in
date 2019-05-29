@@ -1,9 +1,9 @@
 ---
 ---
 
+@import "normalize-scss/sass/normalize/import-now";
 @import "variables";
-// Primitive UI: https://taniarascia.github.io/primitive/
-@import "primitive-ui/src/scss/main";
 @import "base";
+@import "utils";
 @import "layout";
 @import "modules/modules";
