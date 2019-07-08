@@ -1,18 +1,16 @@
 {
-    "name": "personal-main",
-    "version": "2.0.0",
+    "name": "kunalnagar.github.io",
+    "version": "3.0.0",
     "description": "Personal website for Kunal Nagar",
     "homepage": "https://kunalnagar.in",
     "dependencies": {},
-    "devDependencies": {
-        "normalize-scss": "^7.0.1"
-    },
+    "devDependencies": {},
     "scripts": {
         "dev": "bundle exec jekyll serve -l"
     },
     "repository": {
         "type": "git",
-        "url": "git@bitbucket_kunalnagar:kunalnagar/personal-main.git"
+        "url": "git@github.com:kunalnagar/kunalnagar.github.io.git"
     },
     "author": "Kunal Nagar <knlnagar@gmail.com>"
 }
