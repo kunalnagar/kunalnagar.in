@@ -8,8 +8,7 @@
         "normalize-scss": "^7.0.1"
     },
     "scripts": {
-        "dev": "bundle exec jekyll serve -l",
-        "build": "bundle exec jekyll build"
+        "dev": "bundle exec jekyll serve -l"
     },
     "repository": {
         "type": "git",
