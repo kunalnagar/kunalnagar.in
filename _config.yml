@@ -25,6 +25,7 @@ github_username:  "kunalnagar"
 google_analytics_key: "UA-51202219-2"
 
 permalink: pretty
+destination: ./docs
 
 # Ignore the projects data type until it's all sorted out
 collections:
@@ -38,13 +39,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-exclude: []
-
 sass:
     style: compressed
-    load_paths:
-        - _sass
-        - node_modules
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

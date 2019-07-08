@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to use Redis as an Object Cache to Speed Up Your WordPress Installation">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Speed up WordPress using Redis – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="container l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/wp.png" class="img" />
+                <div>
+                    <h1 class="title">Speed up WordPress using Redis</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">May 31, 2018</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Speed up WordPress using Redis&url=/blog/wordpress-redis-speed/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can be combined with other databases like MySQL to provide a mechanism to cache your queries.</p>
+
+<h2 id="how-does-this-work">How does this work?</h2>
+
+<p><img src="https://scalegrid.io/blog/wp-content/uploads/2018/05/Capture2.png" alt="" /></p>
+
+<p>When a user requests a WordPress page for the first time, a MySQL query is performed on the server. Redis caches this query, so when another user requests the same WordPress page, the results are provided from Redis without the need to query the database again.</p>
+
+<p><strong>For the full post , check out the</strong> <a href="https://scalegrid.io/blog/using-redis-object-cache-to-speed-up-your-wordpress-installation/">ScaleGrid blog</a>.</p>
+</div>
+        </div>
+    </main>
+    <footer>
+    <script src="/assets/js/main.js" async defer></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51202219-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</footer>
+
+</body>
+</html>

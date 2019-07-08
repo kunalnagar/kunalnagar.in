@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to set up Push Notifications in Ionic">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Ionic Push Notifications – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="container l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/notification.png" class="img" />
+                <div>
+                    <h1 class="title">Ionic Push Notifications</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">April 21, 2015</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Ionic Push Notifications&url=/blog/ionic-push-notifications/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>Setting up push notifications in a hybrid mobile app can be a challenging task if you don’t know the mechanics of it. Fortunately, Ionic’s <a href="http://ngcordova.com">ngCordova</a> service allows us to handle push notifications easily. This article assumes that you have a basic understanding of <a href="http://developer.telerik.com/featured/what-is-a-hybrid-mobile-app/">Hybrid Mobile Applications</a> and how to deploy them to an Android device. If not, I will try and mention the steps explicitly when I can. Please also note that this is not a <a href="http://ionicframework.com/getting-started/">Getting Started Tutorial for Ionic</a> and you need to have a development environment setup beforehand with the Android SDK. In this article, we will mostly be discussing how to send Ionic Push Notifications.</p>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+
+<p>We will be using a PHP script to send a push notification to our Ionic app. Our app will be running on an Android Device and it will use <a href="https://developer.android.com/google/gcm/index.html">Google Cloud Messaging (GCM)</a> to handle notifications.</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Create a new Ionic App using the Get Started Tutorial on Ionic’s website.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Add the Android Platform to our app using:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic platform add android
+</code></pre></div></div>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Build out the app using the process described here so that we can get the SHA1 key. To generate the .keystore file, use this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+</code></pre></div></div>
+
+<p>To get the SHA1 from the keystore, use this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android
+</code></pre></div></div>
+
+<p>You will get something like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias name: androiddebugkey
+Creation date: 17 Feb 12
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 4f3dfc69
+Valid from: Fri Feb 17 15:06:17 SGT 2012 until: Sun Feb 09 15:06:17 SGT 2042
+Certificate fingerprints:
+MD5: 11:10:11:11:11:11:11:11:11:11:11:11:11:11:11:11
+SHA1: 11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:01:11
+Signature algorithm name: SHA1withRSA
+Version: 3
+</code></pre></div></div>
+
+<p>We need the SHA1 key to register our Google App in the next step.</p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Register a Google App in the <a href="https://console.developers.google.com/">API Console</a>. Use any package name and enter the SHA1 that we extracted in our previous step.</p>
+
+<p><img src="/assets/img/blog/ionic-push-notifications/api-console.png" alt="Edit Client Settings" /></p>
+
+<p>After you save, you will get a screen with the following information. Copy the Client ID as we need it for future reference.</p>
+
+<p><img src="/assets/img/blog/ionic-push-notifications/api-console-2.png" alt="Client ID Data" /></p>
+
+<p>Once that is done, you also need to create a Public API Access Key that will be used in the PHP script to authorise our app.</p>
+
+<p><img src="/assets/img/blog/ionic-push-notifications/public-api-access.png" alt="Public API Access" /></p>
+
+<p>Enable the GCM API in the APIs tab on the left. In my case, I have already activated it which is why it shows Disable API.</p>
+
+<p><img src="/assets/img/blog/ionic-push-notifications/enable-gcm.png" alt="Enable GCM" /></p>
+
+<p>Last but not the least, copy your Project ID from the Overview tab. This is called the SENDER ID and we will use this in our Ionic App Controller.</p>
+
+<p><img src="/assets/img/blog/ionic-push-notifications/project-details.png" alt="Project Details" /></p>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>Now that our Google app is all setup, we can begin writing a PHP script that will accept a GET parameter of the registration ID to send a push notification. You can include multiple IDs that are comma-separated, but in this case we will be using just one. But how do we get a Registration ID?</p>
+
+<p>Before our PHP script can send push notifications, we need to register our Android Device to receive notifications. This is done with the help of the <a href="http://ngcordova.com/docs/plugins/pushNotifications/">Push Notification plugin from ngCordova</a> that we will discuss i Step 6.</p>
+
+<p>Here is the PHP script:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// API access key from Google API's Console</span>
+<span class="nb">define</span><span class="p">(</span> <span class="s1">'API_ACCESS_KEY'</span><span class="p">,</span> <span class="s1">'ENTER_PUBLIC_API_ACCESS_KEY_FROM_API_CONSOLE'</span> <span class="p">);</span>
+
+<span class="nv">$registrationIds</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span> <span class="p">);</span>
+
+<span class="c1">// prep the bundle</span>
+<span class="nv">$msg</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+	<span class="s1">'message'</span> 	<span class="o">=&gt;</span> <span class="s1">'New Message'</span><span class="p">,</span>
+	<span class="s1">'title'</span>		<span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
+	<span class="s1">'subtitle'</span>	<span class="o">=&gt;</span> <span class="s1">'Subtitle'</span><span class="p">,</span>
+	<span class="s1">'tickerText'</span>	<span class="o">=&gt;</span> <span class="s1">'Ticker Text'</span><span class="p">,</span>
+	<span class="s1">'vibrate'</span>	<span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
+	<span class="s1">'sound'</span>		<span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
+	<span class="s1">'largeIcon'</span>	<span class="o">=&gt;</span> <span class="s1">'large_icon'</span><span class="p">,</span>
+	<span class="s1">'smallIcon'</span>	<span class="o">=&gt;</span> <span class="s1">'small_icon'</span>
+<span class="p">);</span>
+
+<span class="nv">$fields</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+	<span class="s1">'registration_ids'</span> 	<span class="o">=&gt;</span> <span class="nv">$registrationIds</span><span class="p">,</span>
+	<span class="s1">'data'</span>			<span class="o">=&gt;</span> <span class="nv">$msg</span>
+<span class="p">);</span>
+
+<span class="nv">$headers</span> <span class="o">=</span> <span class="k">array</span>
+<span class="p">(</span>
+	<span class="s1">'Authorization: key='</span> <span class="o">.</span> <span class="nx">API_ACCESS_KEY</span><span class="p">,</span>
+	<span class="s1">'Content-Type: application/json'</span>
+<span class="p">);</span>
+
+<span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="s1">'https://android.googleapis.com/gcm/send'</span> <span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="nv">$headers</span> <span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_SSL_VERIFYPEER</span><span class="p">,</span> <span class="kc">false</span> <span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nb">json_encode</span><span class="p">(</span> <span class="nv">$fields</span> <span class="p">)</span> <span class="p">);</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span> <span class="p">);</span>
+<span class="nb">curl_close</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">);</span>
+
+<span class="k">echo</span> <span class="nv">$result</span><span class="p">;</span>
+
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Now that our PHP script is ready, install the Push Notifications plugin from ngCordova and then we need to write Ionic code to register our device:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>angular.module('starter').controller('TestCtrl', function($rootScope, $scope, $cordovaPush, $cordovaDevice) {
+    var androidConfig = {
+        "senderID": "ENTER_PROJECT_ID_FROM_API_CONSOLE_OVERVIEW",
+    };
+    document.addEventListener("deviceready", function() {
+        $cordovaPush.register(androidConfig).then(function(result) {
+            console.log(result);
+            // Success
+        }, function(err) {
+            console.log(err);
+            // Error
+        })
+        $rootScope.$on('$cordovaPush:notificationReceived', function(event, notification) {
+            console.log(event);
+            console.log(notification);
+            switch (notification.event) {
+                case 'registered':
+                    if (notification.regid.length &gt; 0) {
+                        alert('registration ID = ' + notification.regid);
+                    }
+                    break;
+                case 'message':
+                    // this is the actual push notification. its format depends on the data model from the push server
+                    alert('message = ' + notification.message + ' msgCount = ' + notification.msgcnt);
+                    break;
+                case 'error':
+                    alert('GCM error = ' + notification.msg);
+                    break;
+                default:
+                    alert('An unknown GCM event has occurred');
+                    break;
+            }
+        });
+    }, false);
+});
+</code></pre></div></div>
+
+<p>The above controller allows us to register the device when the app loads and it will give us a registration ID. This is the ID we need to provide to our PHP script to send a push notification to this device. In later stages, you might want to automate all this stuff but in this article, we are only covering the basics of Push Notifications.</p>
+
+<p>When you run your PHP script, pass in the Registration ID as a GET parameter like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/script.php?id=ENTER_REGISTRATION_ID_HERE
+</code></pre></div></div>
+
+<p>Before you hit Enter, minimise the app on your Android Device and return to the Home Screen so that you can see the proper effect of the Push Notification arriving. Trust me, it feels good.</p>
+
+</div>
+        </div>
+    </main>
+    <footer>
+    <script src="/assets/js/main.js" async defer></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51202219-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</footer>
+
+</body>
+</html>

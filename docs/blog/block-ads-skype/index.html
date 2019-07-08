@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hate Skype Ads? Learn how to remove them at the source.">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Block Ads in Skype – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="container l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/adstomp.png" class="img" />
+                <div>
+                    <h1 class="title">Block Ads in Skype</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">October 13, 2018</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Block Ads in Skype&url=/blog/block-ads-skype/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>I hate ads. So much so that I’ve created a <a href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en">Chrome Extension</a> to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</p>
+
+<p><b>Side note:</b> If you’re a privacy nut, you might want to check out my <a href="/assets/downloads/siteblock.txt">hosts</a> file. It will block crypto-miners, google ads, youtube ads and much more. As always, <a href="mailto:knlnagar@gmail.com">feedback</a> is appreciated.</p>
+
+<p>I figured out a way to block Skype ads using a handful of host file entries. Download a <a href="/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt">.txt</a> version here. I’ve mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Block Skype ads (core)
+127.0.0.1 *.msads.net
+127.0.0.1 *.msecn.net
+127.0.0.1 *.rad.msn.com
+127.0.0.1 a.ads2.msads.net
+127.0.0.1 ac3.msn.com
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 adnexus.net
+127.0.0.1 adnxs.com
+127.0.0.1 ads1.msn.com
+127.0.0.1 ads2.msads.net
+127.0.0.1 aka-cdn-ns.adtech.de
+
+# If you want to see Skype Home, comment the line below
+127.0.0.1 apps.skype.com
+
+127.0.0.1 b.ads2.msads.net
+127.0.0.1 bs.serving-sys.com
+127.0.0.1 cdn.atdmt.com
+127.0.0.1 cds26.ams9.msecn.net
+127.0.0.1 db3aqu.atdmt.com
+127.0.0.1 ec.atdmt.com
+127.0.0.1 flex.msn.com
+127.0.0.1 g.msn.com
+127.0.0.1 live.rads.msn.com
+127.0.0.1 msntest.serving-sys.com
+127.0.0.1 rad.msn.com
+127.0.0.1 sO.2mdn.net
+127.0.0.1 secure.flashtalking.com
+127.0.0.1 static.2mdn.net
+127.0.0.1 static.2mdn.net
+</code></pre></div></div>
+
+<p>The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.</p>
+
+<p>Based on your OS, go to: <code class="highlighter-rouge">%appdata%/skype/YOUR_USER_NAME/config.xml</code> and set all <code class="highlighter-rouge">Advert</code> related values to 0.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;AdvertEastRailsEnabled&gt;0&lt;/AdvertEastRailsEnabled&gt;
+&lt;AdvertLargeEastRailCutoff&gt;0&lt;/AdvertLargeEastRailCutoff&gt;
+&lt;AdvertNorthRailCutoff&gt;0&lt;/AdvertNorthRailCutoff&gt;
+&lt;AdvertPlaceholder&gt;0&lt;/AdvertPlaceholder&gt;
+&lt;AdvertSmallEastRailCutoff&gt;0&lt;/AdvertSmallEastRailCutoff&gt;
+</code></pre></div></div>
+
+<p>Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? <a href="mailto:knlnagar@gmail.com">Tell me</a> about it.</p>
+</div>
+        </div>
+    </main>
+    <footer>
+    <script src="/assets/js/main.js" async defer></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51202219-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</footer>
+
+</body>
+</html>

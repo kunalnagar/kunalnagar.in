@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kunalnagar
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kunalnagar.in
+  * I am kunalnagar (https://keybase.io/kunalnagar) on keybase.
+  * I have a public key ASCpO4MhFc1fHNn-jD_YlnkeKCyAMnKAFy2gkbmvZcblowo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203b4de1dc72d9a12a6dfe61688e85be23f104adbb31fb5f41e8c45f451ecaa2ad0a",
+      "host": "keybase.io",
+      "kid": "0120a93b832115cd5f1cd9fe8c3fd896791e282c80327280172da091b9af65c6e5a30a",
+      "uid": "ce9eb35fe38e54cffb25718249fadd19",
+      "username": "kunalnagar"
+    },
+    "merkle_root": {
+      "ctime": 1562568788,
+      "hash": "4aee842ecc721883eedb5bda16d52ae2676f27e919688dc71e2d744be9c81796a37af27d65c44f5d22c07ef9c5d1ac40289ff558b0fcf2321cb27dd2e8ca3563",
+      "hash_meta": "0833fa0186be8a615029849c218de592ea11a4275089297850cc157f77ea7d1d",
+      "seqno": 5712218
+    },
+    "service": {
+      "entropy": "PxyBjRZxZRi1YoX7IlKmK/vN",
+      "hostname": "kunalnagar.in",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1562568835,
+  "expire_in": 504576000,
+  "prev": "674dcd8509239f4d674e893e8ffda98688a4af7ecbcdf9a8e1a9a881e8bb01c5",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgqTuDIRXNXxzZ/ow/2JZ5HigsgDJygBctoJG5r2XG5aMKp3BheWxvYWTESpcCCsQgZ03NhQkjn01nTok+j/2phoikr37Lzfmo4amogei7AcXEIIvsgnRXr8HMPo0TOPbWpukazT4up2c6Fdgtkl6RLommAgHCo3NpZ8RAY5YLAfvvQCkiJvGoa6gjmIO3eJ9qv4eNcKVgnCn95dfo5+RDVQr/tACogK1VEKQVlzS4WEMkvO/vJ+FVA7hWDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBtC0OfxIA9onoX4s4AC6lrSibaOwl64IGK5z01RvtREo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kunalnagar
+
+==================================================================

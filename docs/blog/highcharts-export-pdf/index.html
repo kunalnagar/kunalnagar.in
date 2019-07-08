@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to export multiple Highcharts graphs to a PDF">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Export multiple Highcharts graphs as PDF – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="container l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/highcharts.png" class="img" />
+                <div>
+                    <h1 class="title">Export multiple Highcharts graphs as PDF</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">April 18, 2019</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Export multiple Highcharts graphs as PDF&url=/blog/highcharts-export-pdf/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</p>
+
+<p>If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.</p>
+
+<h2 id="default-export">Default Export</h2>
+
+<p>By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the <a href="https://www.highcharts.com/docs/export-module/export-module-overview">exporting module</a> to be included for that to show up.</p>
+
+<p><img src="https://i.imgur.com/D8hmB7I.png" alt="" /></p>
+
+<p>While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>You’ll need the following libraries:</p>
+
+<ul>
+  <li>Highcharts - Core</li>
+  <li>Highcharts - Exporting Plugin</li>
+  <li>Highcharts - Offline Exporting Plugin</li>
+  <li>jsPDF</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src="https://code.highcharts.com/highcharts.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.highcharts.com/modules/exporting.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.highcharts.com/modules/offline-exporting.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<p><strong>Note:</strong> If you want offline exporting and don’t want to send graph data to Highsoft’s servers (for privacy reasons), yo need to add the following option to the Highcharts graph options:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exporting: {
+    enabled: false,
+    fallbackToExportServer: false
+}
+</code></pre></div></div>
+
+<h2 id="adding-graphs-to-pdf">Adding graphs to PDF</h2>
+
+<p>The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I’ve come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.</p>
+
+<p>In this example, we’ll be using two charts - one scatter and one pie chart. Let’s assume that their respective Highchart objects are <code class="highlighter-rouge">chart1</code> and <code class="highlighter-rouge">chart2</code></p>
+
+<p>We will also need an instance of jsPDF:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var pdf = new jsPDF('p', 'mm', [1000, 1400]);
+</code></pre></div></div>
+
+<p>If you look at the Highcharts API, it has a method called <a href="https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal"><code class="highlighter-rouge">exportChartLocal</code></a> that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don’t really want that - instead we want the <code class="highlighter-rouge">dataURL</code> (a base64 encoded string) of the image that we can put on the PDF using <a href="http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html"><code class="highlighter-rouge">addImage</code></a>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chart1.exportChartLocal('image/svg+xml');
+chart2.exportChartLocal('image/svg+xml');
+</code></pre></div></div>
+
+<p>To stop the download popup and get the <code class="highlighter-rouge">dataURL</code>, we need to hook into the <code class="highlighter-rouge">downloadURL</code> method on the base Highcharts object that will give us the <code class="highlighter-rouge">dataURL</code> and the <code class="highlighter-rouge">filename</code> of the image.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Highcharts.downloadURL = function (dataURL, filename) {
+    pdf.addImage(dataURL, 'SVG', 10, 10);
+};
+</code></pre></div></div>
+
+<p>Yet another problem here is that there is no callback to the <code class="highlighter-rouge">exportChartLocal</code> method so we’ll have to use a counter and an array to store the dataURLs in an array.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var counter = 0;
+var imageURLs = [];
+Highcharts.downloadURL = function (dataURL, filename) {
+    imageURLs.push(dataURL);
+    counter++;
+};
+</code></pre></div></div>
+
+<p>To check if all the dataURLs are added to the array, we need to poll continuously. Once the array is prepared, we loop over it and add the image URLs to the PDF:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var interval = setInterval(function() {
+    if(counter === 2) {
+        clearInterval(interval);
+        imageURLs.forEach(function(img) {
+            pdf.addImage(img, 'SVG', 10, 10);
+            pdf.addPage();
+        });
+        pdf.save('test.pdf');
+    }
+}, 100);
+</code></pre></div></div>
+
+<p>And it’s done! Here’s a demo of the entire process. Switch to the <strong>Result</strong> tab and click on the <strong>Export</strong> button to download the PDF. The code contains comments so it’s easy to follow.</p>
+
+<iframe width="100%" height="500" src="//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="" frameborder="0"></iframe>
+</div>
+        </div>
+    </main>
+    <footer>
+    <script src="/assets/js/main.js" async defer></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51202219-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</footer>
+
+</body>
+</html>

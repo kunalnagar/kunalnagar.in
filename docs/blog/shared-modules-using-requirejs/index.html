@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to create modules that can be shared across other modules using RequireJS">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Shared Modules using RequireJS – Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+    <main>
+        <div class="container l-container p-blog-single">
+            <div class="header">
+                <img src="/assets/img/foss/js.png" class="img" />
+                <div>
+                    <h1 class="title">Shared Modules using RequireJS</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">September 10, 2016</time>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="http://twitter.com/share?text=Shared Modules using RequireJS&url=/blog/shared-modules-using-requirejs/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><p>Every application needs a set of modules that are shared across all other modules. Things like String/Array helpers, Loggers etc are used across your application and it makes sense to create wrappers around them and expose them via a Common Module.</p>
+
+<p>Before we start, I’m assuming that you know a bit about RequireJS. If not, I suggest you visit their <a href="http://requirejs.org/">website</a> and learn about <a href="http://requirejs.org/docs/whyamd.html">AMD (Asynchronous Module Definition)</a>.</p>
+
+<p>Here is the basic folder structure that we’re going to follow. I’ll explain this in detail below:</p>
+
+<p><img src="/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png" alt="Folder Structure" /></p>
+
+<p>The common folder contains the individual common modules like Logger, Modal and Tabs.</p>
+
+<ul>
+  <li><b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like <a href="https://logentries.com/">Logentries</a> or <a href="https://sentry.io/welcome/">Sentry</a></li>
+  <li><b>modal.js</b> &amp; <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs</li>
+</ul>
+
+<p>Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// logger.js
+(function() {
+
+    'use strict';
+
+    define([], function() {
+
+        var _logMessage = function(msg) {
+            console.log(msg);
+        };
+
+        var _warnMessage = function(msg) {
+            console.warn(msg);
+        };
+
+        var _errorMessage = function(msg) {
+            console.error(msg);
+        };
+
+        return {
+            log: _logMessage,
+            warn: _warnMessage,
+            error: _errorMessage
+        };
+
+    });
+})();
+</code></pre></div></div>
+
+<p>Now, assume that we need to share this across different Modules (<b>module-1</b>, <b>module-2</b>, etc). Here is how we can do it:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-1.js
+(function() {
+
+    'use strict';
+
+    define(['./common/logger/logger'], function(Logger) {
+
+        Logger.log('Hello World!');
+
+        return {};
+
+    });
+})();
+</code></pre></div></div>
+
+<p>If we need to share multiple common modules, we can do something like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-2.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/logger/logger',
+        './common/modal/modal'
+    ], function(Logger, Modal) {
+
+        Logger.log('Hello World!');
+
+        Modal.init('INSERT_DIV_ID_HERE');
+        Modal.center('INSERT_DIV_ID_HERE');
+
+        return {};
+
+    });
+})();
+</code></pre></div></div>
+
+<p>As you can see, if you have a lot of common modules, the list can grow really big really fast. It helps to consolidate all these modules into a single Common Module. Something like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// common.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/logger/logger',
+        './common/modal/modal'
+    ], function(Logger, Modal) {
+
+        return {
+            Logger: Logger,
+            Modal: Modal
+        };
+
+    });
+})();
+</code></pre></div></div>
+
+<p>And then, you can just import the Common Module file and use the helper functions using the dot notation. Here is a quick example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// module-3.js
+(function() {
+
+    'use strict';
+
+    define([
+        './common/common',
+    ], function(Helpers) {
+
+        Helpers.Logger.log('Hello World!');
+        Helpers.Modal.init('INSERT_DIV_ID_HERE');
+
+        return {};
+
+    });
+})();
+</code></pre></div></div>
+
+<p>Thanks for taking the time to read this. Build something awesome!</p>
+
+</div>
+        </div>
+    </main>
+    <footer>
+    <script src="/assets/js/main.js" async defer></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51202219-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</footer>
+
+</body>
+</html>
