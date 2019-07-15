@@ -4,8 +4,9 @@ title: Frontend Developer
 ---
 <div class="container l-container p-home">
     <section class="section intro">
+        <h2 class="section-heading">Hello.</h2>
         <p>
-            Hi, I'm <i>Kunal.</i> I'm a frontend developer at <a href="https://scalegrid.io" target="_blank" rel="noopener noreferrer">ScaleGrid</a>, where we build tools that allow users to configure their database clusters.
+            I'm a frontend developer at <a href="https://scalegrid.io" target="_blank" rel="noopener noreferrer">ScaleGrid</a>, where we build tools that allow users to configure their database clusters.
         </p>
         <p>
             I <i>love</i> Open Source and writing about the <a href="/blog/custom-404-pro/">things I build</a>.
@@ -17,12 +18,37 @@ title: Frontend Developer
             <b>Currently looking</b> for <i>frontend</i> or <i>full-stack</i> opportunities in the Vancouver or Toronto area.
         </p>
     </section>
-    <section class="section contact">
+    <section class="section">
+        <h2 class="section-heading">Open Source</h2>
         <ul>
-            <li><a href="mailto:knlnagar@gmail.com" target="_blank" rel="noopener noreferer">Email</a></li>
-            <li><a href="https://github.com/kunalnagar" target="_blank" rel="noopener noreferer">GitHub</a></li>
-            <li><a href="https://twitter.com/_kunalnagar" target="_blank" rel="noopener noreferer">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/kunalnagar88/" target="_blank" rel="noopener noreferer">LinkedIn</a></li>
+            {% for project in site.data.foss.projects limit:5 %}
+            <li><a href="{{ project.url }}">{{ project.title }}</a> - {{ project.description }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="section">
+        <h2 class="section-heading">Demos & Experiments</h2>
+        <ul>
+            {% for tinker in site.data.foss.tinkers limit:5 %}
+            <li><a href="{{ tinker.url }}">{{ tinker.title }}</a> - {{ tinker.description }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="section">
+        <h2 class="section-heading">Latest Posts</h2>
+        <ul>
+            {% for post in site.posts limit:5 %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.description }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="section">
+        <h2 class="section-heading">Contact</h2>
+        <ul>
+            <li><a href="mailto:knlnagar@gmail.com" target="_blank" rel="noopener noreferer">Email</a> - knlnagar@gmail.com</li>
+            <li><a href="https://github.com/kunalnagar" target="_blank" rel="noopener noreferer">GitHub</a> - @kunalnagar</li>
+            <li><a href="https://twitter.com/_kunalnagar" target="_blank" rel="noopener noreferer">Twitter</a> - @_kunalnagar</li>
+            <li><a href="https://www.linkedin.com/in/kunalnagar88/" target="_blank" rel="noopener noreferer">LinkedIn</a> - @kunalnagar88</li>
         </ul>
     </section>
 </div>

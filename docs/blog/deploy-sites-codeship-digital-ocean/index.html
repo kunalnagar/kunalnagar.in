@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <main>
+        <nav class="navbar">
     <div class="container l-container navbar-container">
         <section class="brand">
             <a href="/" class="link" title="Home">
@@ -36,12 +37,11 @@
     </div>
 </nav>
 
-    <main>
         <div class="container l-container p-blog-single">
-            <div class="header">
+            <section class="section header">
                 <img src="/assets/img/foss/codeship.png" class="img" />
                 <div>
-                    <h1 class="title">How I use Codeship and DigitalOcean to deploy websites</h1>
+                    <h1 class="section-heading title">How I use Codeship and DigitalOcean to deploy websites</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">November 06, 2018</time>
                         <span class="breadcrumb-separator">/</span>
@@ -50,8 +50,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="content"><p>Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard <code class="highlighter-rouge">*.github.io</code> and <code class="highlighter-rouge">*.gitlab.io</code> domains. But what if you have your own VPS and want the same experience?</p>
+            </section>
+            <section class="section content"><p>Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard <code class="highlighter-rouge">*.github.io</code> and <code class="highlighter-rouge">*.gitlab.io</code> domains. But what if you have your own VPS and want the same experience?</p>
 
 <p>I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.</p>
 
@@ -123,10 +123,9 @@
   <li><a href="https://documentation.codeship.com/basic/continuous-deployment/deployment-to-digitalocean/">Deploy to DigitalOcean</a></li>
   <li><a href="https://documentation.codeship.com/basic/continuous-deployment/deployment-with-custom-scripts/">Deploy with Custom Scripts</a></li>
 </ul>
-</div>
+</section>
         </div>
-    </main>
-    <footer>
+        <footer>
     <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -140,5 +139,6 @@
     </script>
 </footer>
 
+    </main>
 </body>
 </html>

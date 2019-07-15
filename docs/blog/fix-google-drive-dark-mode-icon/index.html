@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <main>
+        <nav class="navbar">
     <div class="container l-container navbar-container">
         <section class="brand">
             <a href="/" class="link" title="Home">
@@ -36,12 +37,11 @@
     </div>
 </nav>
 
-    <main>
         <div class="container l-container p-blog-single">
-            <div class="header">
+            <section class="section header">
                 <img src="/assets/img/foss/google-drive.png" class="img" />
                 <div>
-                    <h1 class="title">Fix Google Drive Dark Mode Icon</h1>
+                    <h1 class="section-heading title">Fix Google Drive Dark Mode Icon</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">February 11, 2015</time>
                         <span class="breadcrumb-separator">/</span>
@@ -50,8 +50,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="content"><p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
+            </section>
+            <section class="section content"><p>If you are using Dark Mode for the Dock in OS X Yosemite, then you will notice that the Google Drive icon is hardly visible. In fact, some of you might not even notice it and think that Google Drive isn’t working at all.</p>
 
 <p>Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as <strong>.sh</strong></p>
 
@@ -98,10 +98,9 @@ open <span class="s1">'/Applications/Google Drive.app'</span>
 </code></pre></div></div>
 
 <p>It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.</p>
-</div>
+</section>
         </div>
-    </main>
-    <footer>
+        <footer>
     <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -115,5 +114,6 @@ open <span class="s1">'/Applications/Google Drive.app'</span>
     </script>
 </footer>
 
+    </main>
 </body>
 </html>

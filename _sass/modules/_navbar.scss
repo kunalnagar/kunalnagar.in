@@ -5,6 +5,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 1em;
+        padding-bottom: 0;
 
         .brand {
 
@@ -48,6 +50,7 @@
 
                     a {
                         font-weight: bold;
+                        text-decoration: none;
                     }
                 }
             }

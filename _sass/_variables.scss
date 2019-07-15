@@ -1,7 +1,8 @@
-$primary-color:                 #005ea5;
+$primary-color:                 #455372;
 $selection-color:               lighten($primary-color, 55%);
-$link-color:                    $primary-color;
-$link-hover-color:              lighten($primary-color, 20%);
+$link-color:                    #039;
+$link-hover-color:              lighten($link-color, 20%);
 $link-bg-color:                 #ffbf47;
 
-$font-family:                   Arial, sans-serif;
+$font-family:                   verdana, sans-serif;
+$headings-font-family:          arial, verdana, sans-serif;

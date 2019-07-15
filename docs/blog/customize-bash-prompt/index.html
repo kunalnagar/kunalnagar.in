@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <main>
+        <nav class="navbar">
     <div class="container l-container navbar-container">
         <section class="brand">
             <a href="/" class="link" title="Home">
@@ -36,12 +37,11 @@
     </div>
 </nav>
 
-    <main>
         <div class="container l-container p-blog-single">
-            <div class="header">
+            <section class="section header">
                 <img src="/assets/img/foss/terminal.png" class="img" />
                 <div>
-                    <h1 class="title">Customize your Bash Prompt</h1>
+                    <h1 class="section-heading title">Customize your Bash Prompt</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">February 23, 2019</time>
                         <span class="breadcrumb-separator">/</span>
@@ -50,8 +50,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="content"><p>I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</p>
+            </section>
+            <section class="section content"><p>I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</p>
 
 <p>By default, macOS gives you this terminal:</p>
 
@@ -190,10 +190,9 @@ updates-v3
 <p>Just a new line. With a short arrow.</p>
 
 <p>And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.</p>
-</div>
+</section>
         </div>
-    </main>
-    <footer>
+        <footer>
     <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -207,5 +206,6 @@ updates-v3
     </script>
 </footer>
 
+    </main>
 </body>
 </html>

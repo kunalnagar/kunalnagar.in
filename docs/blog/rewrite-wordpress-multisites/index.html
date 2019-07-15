@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <main>
+        <nav class="navbar">
     <div class="container l-container navbar-container">
         <section class="brand">
             <a href="/" class="link" title="Home">
@@ -36,12 +37,11 @@
     </div>
 </nav>
 
-    <main>
         <div class="container l-container p-blog-single">
-            <div class="header">
+            <section class="section header">
                 <img src="/assets/img/foss/wp.png" class="img" />
                 <div>
-                    <h1 class="title">Rewrite WordPress Multisites</h1>
+                    <h1 class="section-heading title">Rewrite WordPress Multisites</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">September 17, 2016</time>
                         <span class="breadcrumb-separator">/</span>
@@ -50,8 +50,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="content"><p>Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, <a href="https://codex.wordpress.org/Create_A_Network">WordPress Multisite</a> is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</p>
+            </section>
+            <section class="section content"><p>Recently, one of my tasks was to create a Blog and a Knowledge Base and use similar credentials and login-flows for both of their Admin Consoles. Without a doubt, <a href="https://codex.wordpress.org/Create_A_Network">WordPress Multisite</a> is the perfect choice for this since you don’t have to manage your Auth/Settings/Dashboard in multiple places.</p>
 
 <p><i><b>Note:</b> Creating WordPress multisites is out of the scope of this article. For more info, check out <a href="https://codex.wordpress.org/Create_A_Network">this link</a>.</i></p>
 
@@ -123,10 +123,9 @@ define('SITECOOKIEPATH', '');
 
 <p><b>Note:</b> For adding more multisites, add a necessary rule in <b>Step 1</b> and update the necessary tables in <b>Step 2</b>.</p>
 
-</div>
+</section>
         </div>
-    </main>
-    <footer>
+        <footer>
     <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -140,5 +139,6 @@ define('SITECOOKIEPATH', '');
     </script>
 </footer>
 
+    </main>
 </body>
 </html>

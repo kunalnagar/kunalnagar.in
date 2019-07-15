@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-07-08T14:37:49+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-07-16T04:33:35+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="https://kunalnagar.in/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/install-free-ssl-godaddy</id><content type="html" xml:base="https://kunalnagar.in/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://in.godaddy.com/hosting/web-hosting&quot;&gt;A GoDaddy account&lt;/a&gt; - I have a Deluxe Hosting plan with access to cPanel&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sslforfree.com/&quot;&gt;SSLForFree&lt;/a&gt; - A site to create your SSL certificates&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dnschecker.org/&quot;&gt;DNSChecker&lt;/a&gt; - A DNS Check Propagation Tool&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
+
+&lt;p&gt;Visit SSLForFree and enter your domain on the homepage. I would recommend adding support for sub-domains along with the main domain just in case you plan on going down this path in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AfhLxJ5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on Create and you’ll go to a page where you need to Manually Verify your Domain&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
+
+&lt;p&gt;You’ll receive a set of instructions to modify the domain DNS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nvTDcK3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open your GoDaddy account, navigate to the Domain DNS settings and follow the TXT record.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Instead of entering the entire &lt;code class=&quot;highlighter-rouge&quot;&gt;_acme-challenge.yourdomain.com&lt;/code&gt;, just use &lt;code class=&quot;highlighter-rouge&quot;&gt;_acme-challenge&lt;/code&gt; in the name/host box. This is how one of the entries should look like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jFH0vFP.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
+
+&lt;p&gt;Once the TXT records are added, visit the DNSChecker site, add your name/host value in the box, choose TXT and hit Search.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sbu69oL.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll have to wait about 5-10 minutes for the DNS to finish propgating and once it’s finished you’ll see the following success shot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BXUJlrg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4&quot;&gt;Step 4&lt;/h2&gt;
+
+&lt;p&gt;After you see all green checks, go back to SSLForFree and click on the link in Step 3 to verify that the DNS settings have taken effect. You’ll see a screen like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/9MIElfe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you see this screen, you’re halfway there. Click on the “Download SSL Certificate link” and you’ll be presented with the following textareas:&lt;/p&gt;
+
+&lt;p&gt;*&lt;/p&gt;
+
+&lt;h2 id=&quot;step-5&quot;&gt;Step 5&lt;/h2&gt;
+
+&lt;p&gt;Open GoDaddy and go to your cPanel dashboard &amp;gt; &lt;em&gt;SSL settings&lt;/em&gt; &amp;gt; &lt;em&gt;Manage SSL sites&lt;/em&gt;. Choose the domain for which you want to install the SSL for. Enter the above three keys in the textboxes and click on &lt;em&gt;Install Certificate&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/W6UcB4G.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When your certificate is successfully installed, you’ll see it in the Manage section of the SSL page and you’re ready to go. Visit the domain with the HTTPS prefix and you should see your secured website!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/IsEbaDz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it’s important that your product feels cohesive to your customers.&lt;/p&gt;
 
@@ -793,36 +849,4 @@ updates-v3
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://documentation.codeship.com/basic/continuous-deployment/deployment-to-digitalocean/&quot;&gt;Deploy to DigitalOcean&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://documentation.codeship.com/basic/continuous-deployment/deployment-with-custom-scripts/&quot;&gt;Deploy with Custom Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard *.github.io and *.gitlab.io domains. But what if you have your own VPS and want the same experience?</summary></entry><entry><title type="html">Sync 1Password Locally</title><link href="https://kunalnagar.in/blog/sync-1password-local/" rel="alternate" type="text/html" title="Sync 1Password Locally" /><published>2018-10-19T00:00:00+05:30</published><updated>2018-10-19T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/sync-1password-local</id><content type="html" xml:base="https://kunalnagar.in/blog/sync-1password-local/">&lt;p&gt;I love &lt;a href=&quot;https://1password.com/&quot;&gt;1Password&lt;/a&gt;. It is by far the best Password Manager I have used. I bought the Standalone version back in November 2014 and connected it to my Dropbox account.&lt;/p&gt;
-
-&lt;p&gt;I recently figured out that the 1Password vault can be synced locally as well. No need for Dropbox.&lt;/p&gt;
-
-&lt;p&gt;So here’s my setup:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I have a folder on my Nextcloud that stores my 1Password data. This is because I &lt;a href=&quot;https://www.davidculley.com/dropbox-privacy-concerns/&quot;&gt;don’t&lt;/a&gt; &lt;a href=&quot;https://techcrunch.com/2014/10/11/edward-snowden-new-yorker-festival/&quot;&gt;trust&lt;/a&gt; &lt;a href=&quot;https://cloudmounter.net/dropbox-privacy.html&quot;&gt;Dropbox&lt;/a&gt; anymore.&lt;/li&gt;
-  &lt;li&gt;I run a WLAN server from the 1Password app on my Mac that syncs with my iPhone&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;setup-1password-on-your-computer&quot;&gt;Setup 1Password on your computer&lt;/h3&gt;
-
-&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;1Password app&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;Sync&lt;/code&gt; and choose &lt;code class=&quot;highlighter-rouge&quot;&gt;Folder&lt;/code&gt; from the drop-down list where you might have Dropbox/iCloud etc. You’ll get a warning to delete the data on Dropbox, I didn’t do that. Once my Vault was transferred successfully to my Nextcloud folder, I deleted the 1Password Vault manually from my Dropbox.&lt;/p&gt;
-
-&lt;p&gt;Next step, we need to figure out how to sync the vault with the iOS app. It was easy when it was stored on Dropbox. Apparently, 1Password &lt;a href=&quot;https://discussions.agilebits.com/discussion/86142/nextcloud-owncloud-webdav-syncing&quot;&gt;does not want to provide support for WebDAV&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;1Password app&lt;/code&gt; &amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;WLAN Server&lt;/code&gt; and check the box saying &lt;code class=&quot;highlighter-rouge&quot;&gt;Run a WLAN server...&lt;/code&gt;. It will give you a code, hold on to that.&lt;/p&gt;
-
-&lt;h3 id=&quot;setup-1password-on-your-phone&quot;&gt;Setup 1Password on your phone&lt;/h3&gt;
-
-&lt;p&gt;Open the 1Password app on your phone, go to Settings and Erase all data. Remember, your iPhone is still syncing data from your Dropbox folder and we need to change that.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Doing this will only erase the data on your phone, not on Dropbox.&lt;/p&gt;
-
-&lt;p&gt;Once your data is deleted, restart the app and choose the option to sync via WLAN Server. Make sure you are on the same network as your computer and you will see the WLAN server. Tap on it, enter the code you were presented before, enter your master password and you should be set!&lt;/p&gt;
-
-&lt;p&gt;By following this guide, you should successfully moved your Vault away from Dropbox, and onto a local folder or Nextcloud and also setup syncing on your phone. The only caveat is that you can’t sync your phone when you’re not on the same network as your computer. I think I can live with that.&lt;/p&gt;
-
-&lt;p&gt;Helpful links:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.1password.com/local-folder/&quot;&gt;How to keep a copy of a standalone vault updated in a folder&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.1password.com/wlan-server/&quot;&gt;How to use the WLAN server&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">I love 1Password. It is by far the best Password Manager I have used. I bought the Standalone version back in November 2014 and connected it to my Dropbox account.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard *.github.io and *.gitlab.io domains. But what if you have your own VPS and want the same experience?</summary></entry></feed>

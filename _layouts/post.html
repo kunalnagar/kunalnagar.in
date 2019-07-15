@@ -12,13 +12,13 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
-    {% include header.html %}
     <main>
+        {% include header.html %}
         <div class="container l-container p-blog-single">
-            <div class="header">
+            <section class="section header">
                 <img src="{{ page.img }}" class="img" />
                 <div>
-                    <h1 class="title">{{ page.title }}</h1>
+                    <h1 class="section-heading title">{{ page.title }}</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">{{ page.date | date: "%B %d, %Y" }}</time>
                         <span class="breadcrumb-separator">/</span>
@@ -27,10 +27,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="content">{{ content }}</div>
+            </section>
+            <section class="section content">{{ content }}</section>
         </div>
+        {% include footer.html %}
     </main>
-    {% include footer.html %}
 </body>
 </html>

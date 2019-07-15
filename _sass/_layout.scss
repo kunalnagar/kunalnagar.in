@@ -1,14 +1,18 @@
-html,
-body {
-    font-family: $font-family;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    min-height: 100%;
+    border: 1px solid #dedede;
+    margin-top: 3em;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 10px 20px;
-    max-width: 600px;
+    padding: 1rem 2.5rem;
+
+    @media screen and (max-width: 650px) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .p-home {
@@ -106,8 +110,8 @@ body {
                 }
 
                 &:hover {
-                    background-color: lighten($link-color, 50%);
-                    border-color: lighten($link-color, 10%);
+                    background-color: lighten($link-color, 65%);
+                    border-color: lighten($link-color, 35%);
                 }
 
                 p {
@@ -150,7 +154,7 @@ body {
         }
 
         .img {
-            height: 120px;
+            height: 65px;
             margin-right: 2rem;
 
             @media screen and (max-width: 567px) {
@@ -198,7 +202,6 @@ body {
         h3 {
             font-weight: 500;
             padding-bottom: 0.2rem;
-            border-bottom: 2px solid #e6e6e6;
             margin-top: 2rem;
             margin-bottom: 1rem;
 
@@ -223,6 +226,7 @@ body {
         }
 
         img {
+            margin: 1em 0;
             max-width: 100%;
         }
 

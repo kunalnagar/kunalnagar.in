@@ -1,8 +1,9 @@
 html,
 body {
     font-family: $font-family;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    font-size: small;
+    background-color: #f1f1f1;
+    height: 100%;
 }
 
 ::selection {
@@ -15,18 +16,31 @@ a {
     &:hover {
         color: $link-hover-color;
     }
+}
 
-    &:focus {
-        background: $link-bg-color;
-        outline: 3px solid $link-bg-color;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    padding-bottom: 0.3rem;
+    margin: 1em 0 0.2em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    margin: 0 0 0.6em 0;
+    line-height: 1.5rem;
+}
+
+ul {
+
+    li {
+        line-height: 1.6rem;
     }
 }
 
-p,
-ul li {
-    line-height: 1.7rem;
-}
-
 .section {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
+
+    &-heading {
+        margin-bottom: 1rem;
+    }
 }

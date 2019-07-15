@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
-    <nav class="navbar">
+    <main>
+        <nav class="navbar">
     <div class="container l-container navbar-container">
         <section class="brand">
             <a href="/" class="link" title="Home">
@@ -36,12 +37,11 @@
     </div>
 </nav>
 
-    <main>
         <div class="container l-container p-blog-single">
-            <div class="header">
+            <section class="section header">
                 <img src="/assets/img/foss/wp.png" class="img" />
                 <div>
-                    <h1 class="title">Speed up WordPress using Redis</h1>
+                    <h1 class="section-heading title">Speed up WordPress using Redis</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">May 31, 2018</time>
                         <span class="breadcrumb-separator">/</span>
@@ -50,8 +50,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="content"><p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can be combined with other databases like MySQL to provide a mechanism to cache your queries.</p>
+            </section>
+            <section class="section content"><p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can be combined with other databases like MySQL to provide a mechanism to cache your queries.</p>
 
 <h2 id="how-does-this-work">How does this work?</h2>
 
@@ -60,10 +60,9 @@
 <p>When a user requests a WordPress page for the first time, a MySQL query is performed on the server. Redis caches this query, so when another user requests the same WordPress page, the results are provided from Redis without the need to query the database again.</p>
 
 <p><strong>For the full post , check out the</strong> <a href="https://scalegrid.io/blog/using-redis-object-cache-to-speed-up-your-wordpress-installation/">ScaleGrid blog</a>.</p>
-</div>
+</section>
         </div>
-    </main>
-    <footer>
+        <footer>
     <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -77,5 +76,6 @@
     </script>
 </footer>
 
+    </main>
 </body>
 </html>
