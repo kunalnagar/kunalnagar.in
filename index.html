@@ -27,14 +27,6 @@ title: Frontend Developer
         </ul>
     </section>
     <section class="section">
-        <h2 class="section-heading">Demos & Experiments</h2>
-        <ul>
-            {% for tinker in site.data.foss.tinkers limit:5 %}
-            <li><a href="{{ tinker.link }}">{{ tinker.title }}</a> - {{ tinker.description }}</li>
-            {% endfor %}
-        </ul>
-    </section>
-    <section class="section">
         <h2 class="section-heading">Latest Posts</h2>
         <ul>
             {% for post in site.posts limit:5 %}
@@ -43,12 +35,21 @@ title: Frontend Developer
         </ul>
     </section>
     <section class="section">
+        <h2 class="section-heading">Demos & Experiments</h2>
+        <ul>
+            {% for tinker in site.data.foss.tinkers limit:5 %}
+            <li><a href="{{ tinker.link }}">{{ tinker.title }}</a> - {{ tinker.description }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="section">
         <h2 class="section-heading">Contact</h2>
         <ul>
-            <li><a href="mailto:knlnagar@gmail.com" target="_blank" rel="noopener noreferer">Email</a> - knlnagar@gmail.com</li>
-            <li><a href="https://github.com/kunalnagar" target="_blank" rel="noopener noreferer">GitHub</a> - @kunalnagar</li>
-            <li><a href="https://twitter.com/_kunalnagar" target="_blank" rel="noopener noreferer">Twitter</a> - @_kunalnagar</li>
-            <li><a href="https://www.linkedin.com/in/kunalnagar88/" target="_blank" rel="noopener noreferer">LinkedIn</a> - @kunalnagar88</li>
+            <li><a href="mailto:knlnagar@gmail.com" target="_blank" rel="noopener noreferer">Email</a></li>
+            <li><a href="https://keybase.io/kunalnagar" target="_blank" rel="noopener noreferer">Keybase</a></li>
+            <li><a href="https://www.linkedin.com/in/kunalnagar88/" target="_blank" rel="noopener noreferer">LinkedIn</a></li>
+            <li><a href="https://github.com/kunalnagar" target="_blank" rel="noopener noreferer">GitHub</a></li>
+            <li><a href="https://twitter.com/_kunalnagar" target="_blank" rel="noopener noreferer">Twitter</a></li>
         </ul>
     </section>
 </div>
