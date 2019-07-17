@@ -62,3 +62,7 @@ Open GoDaddy and go to your cPanel dashboard > _SSL settings_ > _Manage SSL site
 When your certificate is successfully installed, you'll see it in the Manage section of the SSL page and you're ready to go. Visit the domain with the HTTPS prefix and you should see your secured website!
 
 ![](https://i.imgur.com/IsEbaDz.png)
+
+If you'd like to know more about what LetsEncrypt is doing to provide free SSL to the world, check out this video:
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ksqTu7TX83g' frameborder='0' allowfullscreen></iframe></div>
