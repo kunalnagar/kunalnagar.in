@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-07-18T00:04:59+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="https://kunalnagar.in/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/install-free-ssl-godaddy</id><content type="html" xml:base="https://kunalnagar.in/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-07-19T00:32:23+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="https://kunalnagar.in/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/install-free-ssl-godaddy</id><content type="html" xml:base="https://kunalnagar.in/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://in.godaddy.com/hosting/web-hosting&quot;&gt;A GoDaddy account&lt;/a&gt; - I have a Deluxe Hosting plan with access to cPanel&lt;/li&gt;
@@ -250,19 +250,13 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It is absolutely safe to run the app on Mac/Windows. I’m not interested in your data or running malicious scripts. If you’re worried about what the app is doing underneath, the code is all there, have at it :)&lt;/p&gt;
 
-&lt;p&gt;Here’s the warning on Windows (click to watch demo video on YouTube):&lt;/p&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/VIVz7MtNEO0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/VIVz7MtNEO0&quot;&gt;&lt;img src=&quot;https://i.imgur.com/M3LQ1Wx.gif&quot; alt=&quot;Watch the video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
 
-&lt;h2 id=&quot;screenshot&quot;&gt;Screenshot&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;demo-video&quot;&gt;Demo Video&lt;/h2&gt;
-
-&lt;p&gt;Click on the GIF below to view the video on YouTube&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/WBf2bRMRFME&quot;&gt;&lt;img src=&quot;https://i.imgur.com/wdViVGA.gif&quot; alt=&quot;Watch the video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/WBf2bRMRFME&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;bugscontribute&quot;&gt;Bugs/Contribute&lt;/h2&gt;
 

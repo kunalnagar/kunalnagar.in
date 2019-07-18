@@ -35,19 +35,11 @@ If you download the app on Mac/Windows, you will get an untrusted developer warn
 
 **Note:** It is absolutely safe to run the app on Mac/Windows. I'm not interested in your data or running malicious scripts. If you're worried about what the app is doing underneath, the code is all there, have at it :)
 
-Here's the warning on Windows (click to watch demo video on YouTube):
+{% include components/yt.html id="VIVz7MtNEO0" %}
 
-[![Watch the video](https://i.imgur.com/M3LQ1Wx.gif)](https://youtu.be/VIVz7MtNEO0)
+## Demo
 
-## Screenshot
-
-![](https://i.imgur.com/WQXyqsj.png)
-
-## Demo Video
-
-Click on the GIF below to view the video on YouTube
-
-[![Watch the video](https://i.imgur.com/wdViVGA.gif)](https://youtu.be/WBf2bRMRFME)
+{% include components/yt.html id="WBf2bRMRFME" %}
 
 ## Bugs/Contribute
 
