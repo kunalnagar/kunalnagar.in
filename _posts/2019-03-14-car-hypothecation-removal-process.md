@@ -30,7 +30,7 @@ The one I visited was on [CMH Road](https://goo.gl/maps/dDAxnikAUG42). Here are 
 * Try to go early in the morning on weekdays - it opens up at 9am and people usually start queuing up at 8:30am
 * If you're going on a Saturday, pack a bag and some lunch, and possibly dinner as well
 
-![](https://i.imgur.com/sdMdH1v.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/sdMdH1v.jpg" %}
 
 ### Gathering documents
 
@@ -59,22 +59,22 @@ When your token is called out, you go to the respective counter, and follow the 
 
 Anyway, once everything looks okay, they'll give you an acknowledgement that looks like the following:
 
-![](https://i.imgur.com/LwrihIa.png)
-![](https://i.imgur.com/euXsulr.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/LwrihIa.png" %}
+{% include components/lightbox-img.html src="https://i.imgur.com/euXsulr.png" %}
 
 Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:
 
 * Loan Foreclosure Letter
 
-![](https://i.imgur.com/3IH5TK3.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/3IH5TK3.png" %}
 
 * Form 35 - 2 copies
 
-![](https://i.imgur.com/5NURJ7q.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/5NURJ7q.png" %}
 
 * HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)
 
-![](https://i.imgur.com/c6kJSQ1.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/c6kJSQ1.png" %}
 
 **Note:** My address had a typo and I didn't realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:
 
@@ -101,7 +101,7 @@ Please follow these steps:
 * Once everything looks good, you will be presented with a form to fill out. You'll also need your insurance details.
 * Fill out the form, make the payment (Rs. 200/-) and you'll get an application receipt that looks like the following:
 
-![](https://i.imgur.com/5svcpQq.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/5svcpQq.png" %}
 
 You'll also get a confirmation on your mobile with the application number. Keep this number handy (I usually screenshot such messages) as you will need it later to check the status of your application online.
 
@@ -129,19 +129,19 @@ Before going to the RTO, you need to do a few things. Find a stationery shop aro
 
 * A file with a hole on the top left
 
-![](https://i.imgur.com/kv2suwl.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/kv2suwl.png" %}
 
 * Thread
 
-![](https://i.imgur.com/0saesew.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/0saesew.jpg" %}
 
 * Plastic cover
 
-![](https://i.imgur.com/pY2m4f0.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/pY2m4f0.jpg" %}
 
 * Postal Cover with Rs. 18/- worth of stamps already pasted on it
 
-![](https://i.imgur.com/QW8xvFv.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/QW8xvFv.jpg" %}
 
 ### Preparing the file for submission
 
@@ -149,17 +149,17 @@ You will use the items your purchased from the stationery shop to prepare the fi
 
 **Note:** If you're at the Koramangala RTO, this is your guy. He helped me through the entire process - step by step. He's also probably the only one there who doesn't have an attitude problem. So, a huge thanks to him!
 
-![](https://i.imgur.com/3n8DpE0.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/3n8DpE0.png" %}
 
 * First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put **Central Bangalore**, you may need to ask the concerned person in the RTO what to put there.
 
-![](https://i.imgur.com/5U2hSdi.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/5U2hSdi.jpg" %}
 
 * Put your original RC in the plastic cover
 
 * Write your name, address, mobile number and car registration number on the postal cover
 
-![](https://i.imgur.com/AtHFbRh.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/AtHFbRh.png" %}
 
 Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):
 
@@ -179,11 +179,11 @@ Your file is ready. Get it reviewed by the concerned person - he will sign and d
 
 For Koramangala RTO, it's the following lady.
 
-![](https://i.imgur.com/Modqkgz.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/Modqkgz.png" %}
 
 Give the file to her - she will check the file for any problems and if everything looks good, she'll give you an acknowledgement that looks like the following:
 
-![](https://i.imgur.com/S18dWNr.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/S18dWNr.png" %}
 
 **Keep this acknowledgement safely. Since your original RC has been submitted, this is the only proof.**
 
@@ -193,7 +193,7 @@ And you're done!
 
 To track the progress of your application, you can bookmark [this link](https://vahan.parivahan.gov.in/vahanservice/vahan/ui/appl_status/form_Know_Appl_Status.xhtml), enter the application number and track the progress.
 
-![](https://i.imgur.com/FAMJ2dk.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/FAMJ2dk.png" %}
 
 Once the status changes to **Approved**, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.
 

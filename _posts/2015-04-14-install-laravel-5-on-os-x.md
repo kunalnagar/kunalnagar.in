@@ -129,7 +129,7 @@ then you're good to go!
 
 To see your new shiny Laravel installation in action visit the public directory in the project to see the awesome new Laravel 5 home page.
 
-![Laravel 5 Home Page](/assets/img/blog/install-laravel-5-on-os-x/laravel-1.png)
+{% include components/lightbox-img.html src="/assets/img/blog/install-laravel-5-on-os-x/laravel-1.png" %}
 
 ## Step 4: Installing Laravel Homestead
 

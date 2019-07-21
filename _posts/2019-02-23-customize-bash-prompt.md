@@ -11,19 +11,19 @@ I like to keep my bash prompt really minimal. I'm not into colours. I'm not into
 
 By default, macOS gives you this terminal:
 
-![Imgur](https://i.imgur.com/n57DPG3.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/n57DPG3.png" %}
 
 I fucking hate it. Why do I need to see my machine name every time I open the terminal? [Phooey](https://www.merriam-webster.com/dictionary/phooey).
 
 Plus, when I navigate to a git repo, it doesn't even show what branch I'm on. Double phooey.
 
-![Imgur](https://i.imgur.com/sNgVmfJ.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/sNgVmfJ.png" %}
 
 ## My setup
 
 Here's what I have and I'm really happy with it.
 
-![Imgur](https://i.imgur.com/3Dwoh1Z.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/3Dwoh1Z.png" %}
 
 ## What do I like about it?
 

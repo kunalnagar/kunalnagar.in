@@ -64,23 +64,23 @@ We need the SHA1 key to register our Google App in the next step.
 
 Register a Google App in the [API Console][api-console]. Use any package name and enter the SHA1 that we extracted in our previous step.
 
-![Edit Client Settings](/assets/img/blog/ionic-push-notifications/api-console.png)
+{% include components/lightbox-img.html src="/assets/img/blog/ionic-push-notifications/api-console.png" %}
 
 After you save, you will get a screen with the following information. Copy the Client ID as we need it for future reference.
 
-![Client ID Data](/assets/img/blog/ionic-push-notifications/api-console-2.png)
+{% include components/lightbox-img.html src="/assets/img/blog/ionic-push-notifications/api-console-2.png" %}
 
 Once that is done, you also need to create a Public API Access Key that will be used in the PHP script to authorise our app.
 
-![Public API Access](/assets/img/blog/ionic-push-notifications/public-api-access.png)
+{% include components/lightbox-img.html src="/assets/img/blog/ionic-push-notifications/public-api-access.png" %}
 
 Enable the GCM API in the APIs tab on the left. In my case, I have already activated it which is why it shows Disable API.
 
-![Enable GCM](/assets/img/blog/ionic-push-notifications/enable-gcm.png)
+{% include components/lightbox-img.html src="/assets/img/blog/ionic-push-notifications/enable-gcm.png" %}
 
 Last but not the least, copy your Project ID from the Overview tab. This is called the SENDER ID and we will use this in our Ionic App Controller.
 
-![Project Details](/assets/img/blog/ionic-push-notifications/project-details.png)
+{% include components/lightbox-img.html src="/assets/img/blog/ionic-push-notifications/project-details.png" %}
 
 ### Step 5
 

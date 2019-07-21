@@ -235,6 +235,11 @@ main {
             img {
                 max-width: 100%;
             }
+
+            @media screen and (max-width: 567px) {
+            	margin: 0.5em auto;
+            	max-width: 100%;
+	        }
         }
 
         ul {

@@ -13,7 +13,7 @@ Before we start, I'm assuming that you know a bit about RequireJS. If not, I sug
 
 Here is the basic folder structure that we're going to follow. I'll explain this in detail below:
 
-![Folder Structure](/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png)
+{% include components/lightbox-img.html src="/assets/img/blog/shared-modules-using-requirejs/requirejs-1.png" %}
 
 The common folder contains the individual common modules like Logger, Modal and Tabs.
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-21T19:59:31+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="http://localhost:4000/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/install-free-ssl-godaddy</id><content type="html" xml:base="http://localhost:4000/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-07-21T20:16:08+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="https://kunalnagar.in/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/install-free-ssl-godaddy</id><content type="html" xml:base="https://kunalnagar.in/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://in.godaddy.com/hosting/web-hosting&quot;&gt;A GoDaddy account&lt;/a&gt; - I have a Deluxe Hosting plan with access to cPanel&lt;/li&gt;
@@ -75,7 +75,7 @@
 &lt;p&gt;If you’d like to know more about what LetsEncrypt is doing to provide free SSL to the world, check out this video:&lt;/p&gt;
 
 &lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
-&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ksqTu7TX83g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">An Introduction to Vue Base Components</title><link href="http://localhost:4000/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>http://localhost:4000/blog/vue-base-components</id><content type="html" xml:base="http://localhost:4000/blog/vue-base-components/">&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/wB8Tk90.png&quot; data-lightbox=&quot;https://i.imgur.com/wB8Tk90.png&quot; class=&quot;lightbox-img&quot;&gt;
+&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ksqTu7TX83g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/wB8Tk90.png&quot; data-lightbox=&quot;https://i.imgur.com/wB8Tk90.png&quot; class=&quot;lightbox-img&quot;&gt;
     &lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
@@ -155,7 +155,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/vue-base-components&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="http://localhost:4000/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/highcharts-export-pdf</id><content type="html" xml:base="http://localhost:4000/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
 
 &lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
 
@@ -244,7 +244,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;And it’s done! Here’s a demo of the entire process. Switch to the &lt;strong&gt;Result&lt;/strong&gt; tab and click on the &lt;strong&gt;Export&lt;/strong&gt; button to download the PDF. The code contains comments so it’s easy to follow.&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; allowpaymentrequest=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="http://localhost:4000/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>http://localhost:4000/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="http://localhost:4000/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; allowpaymentrequest=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
 
 &lt;p&gt;encrypt0r provides a simple drag and drop interface to encrypt/decrypt your files using a password.&lt;/p&gt;
 
@@ -276,9 +276,8 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It is absolutely safe to run the app on Mac/Windows. I’m not interested in your data or running malicious scripts. If you’re worried about what the app is doing underneath, the code is all there, have at it :)&lt;/p&gt;
 
-&lt;p&gt;Here’s the warning on Windows (click to watch demo video on YouTube):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/VIVz7MtNEO0&quot;&gt;&lt;img src=&quot;https://i.imgur.com/M3LQ1Wx.gif&quot; alt=&quot;Watch the video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/VIVz7MtNEO0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;screenshot&quot;&gt;Screenshot&lt;/h2&gt;
 
@@ -286,15 +285,14 @@ Highcharts.downloadURL = function (dataURL, filename) {
     &lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;demo-video&quot;&gt;Demo Video&lt;/h2&gt;
+&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
 
-&lt;p&gt;Click on the GIF below to view the video on YouTube&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/WBf2bRMRFME&quot;&gt;&lt;img src=&quot;https://i.imgur.com/wdViVGA.gif&quot; alt=&quot;Watch the video&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/WBf2bRMRFME&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;bugscontribute&quot;&gt;Bugs/Contribute&lt;/h2&gt;
 
-&lt;p&gt;Found a problem? Have improvements? Create a new &lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/issues&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.</summary></entry><entry><title type="html">Car Hypothecation Removal Process</title><link href="http://localhost:4000/blog/car-hypothecation-removal-process/" rel="alternate" type="text/html" title="Car Hypothecation Removal Process" /><published>2019-03-14T00:00:00+05:30</published><updated>2019-03-14T00:00:00+05:30</updated><id>http://localhost:4000/blog/car-hypothecation-removal-process</id><content type="html" xml:base="http://localhost:4000/blog/car-hypothecation-removal-process/">&lt;p&gt;This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.&lt;/p&gt;
+&lt;p&gt;Found a problem? Have improvements? Create a new &lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/issues&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.</summary></entry><entry><title type="html">Car Hypothecation Removal Process</title><link href="https://kunalnagar.in/blog/car-hypothecation-removal-process/" rel="alternate" type="text/html" title="Car Hypothecation Removal Process" /><published>2019-03-14T00:00:00+05:30</published><updated>2019-03-14T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/car-hypothecation-removal-process</id><content type="html" xml:base="https://kunalnagar.in/blog/car-hypothecation-removal-process/">&lt;p&gt;This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-hypothecation&quot;&gt;What is hypothecation?&lt;/h2&gt;
 
@@ -319,7 +317,9 @@ Highcharts.downloadURL = function (dataURL, filename) {
   &lt;li&gt;If you’re going on a Saturday, pack a bag and some lunch, and possibly dinner as well&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; data-lightbox=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;gathering-documents&quot;&gt;Gathering documents&lt;/h3&gt;
 
@@ -351,8 +351,13 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;Anyway, once everything looks okay, they’ll give you an acknowledgement that looks like the following:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/LwrihIa.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;https://i.imgur.com/euXsulr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/LwrihIa.png&quot; data-lightbox=&quot;https://i.imgur.com/LwrihIa.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/LwrihIa.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/euXsulr.png&quot; data-lightbox=&quot;https://i.imgur.com/euXsulr.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/euXsulr.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:&lt;/p&gt;
 
@@ -360,19 +365,25 @@ Highcharts.downloadURL = function (dataURL, filename) {
   &lt;li&gt;Loan Foreclosure Letter&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3IH5TK3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/3IH5TK3.png&quot; data-lightbox=&quot;https://i.imgur.com/3IH5TK3.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/3IH5TK3.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Form 35 - 2 copies&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5NURJ7q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/5NURJ7q.png&quot; data-lightbox=&quot;https://i.imgur.com/5NURJ7q.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/5NURJ7q.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/c6kJSQ1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/c6kJSQ1.png&quot; data-lightbox=&quot;https://i.imgur.com/c6kJSQ1.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/c6kJSQ1.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; My address had a typo and I didn’t realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:&lt;/p&gt;
 
@@ -403,7 +414,9 @@ Highcharts.downloadURL = function (dataURL, filename) {
   &lt;li&gt;Fill out the form, make the payment (Rs. 200/-) and you’ll get an application receipt that looks like the following:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5svcpQq.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/5svcpQq.png&quot; data-lightbox=&quot;https://i.imgur.com/5svcpQq.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/5svcpQq.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll also get a confirmation on your mobile with the application number. Keep this number handy (I usually screenshot such messages) as you will need it later to check the status of your application online.&lt;/p&gt;
 
@@ -435,25 +448,33 @@ Highcharts.downloadURL = function (dataURL, filename) {
   &lt;li&gt;A file with a hole on the top left&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kv2suwl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/kv2suwl.png&quot; data-lightbox=&quot;https://i.imgur.com/kv2suwl.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/kv2suwl.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Thread&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/0saesew.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/0saesew.jpg&quot; data-lightbox=&quot;https://i.imgur.com/0saesew.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/0saesew.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Plastic cover&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; data-lightbox=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Postal Cover with Rs. 18/- worth of stamps already pasted on it&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; data-lightbox=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;preparing-the-file-for-submission&quot;&gt;Preparing the file for submission&lt;/h3&gt;
 
@@ -461,13 +482,17 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you’re at the Koramangala RTO, this is your guy. He helped me through the entire process - step by step. He’s also probably the only one there who doesn’t have an attitude problem. So, a huge thanks to him!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3n8DpE0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/3n8DpE0.png&quot; data-lightbox=&quot;https://i.imgur.com/3n8DpE0.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/3n8DpE0.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put &lt;strong&gt;Central Bangalore&lt;/strong&gt;, you may need to ask the concerned person in the RTO what to put there.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; data-lightbox=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -478,7 +503,9 @@ Highcharts.downloadURL = function (dataURL, filename) {
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AtHFbRh.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/AtHFbRh.png&quot; data-lightbox=&quot;https://i.imgur.com/AtHFbRh.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/AtHFbRh.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):&lt;/p&gt;
 
@@ -500,11 +527,15 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;For Koramangala RTO, it’s the following lady.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Modqkgz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Modqkgz.png&quot; data-lightbox=&quot;https://i.imgur.com/Modqkgz.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/Modqkgz.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Give the file to her - she will check the file for any problems and if everything looks good, she’ll give you an acknowledgement that looks like the following:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/S18dWNr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/S18dWNr.png&quot; data-lightbox=&quot;https://i.imgur.com/S18dWNr.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/S18dWNr.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keep this acknowledgement safely. Since your original RC has been submitted, this is the only proof.&lt;/strong&gt;&lt;/p&gt;
 
@@ -514,11 +545,13 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;To track the progress of your application, you can bookmark &lt;a href=&quot;https://vahan.parivahan.gov.in/vahanservice/vahan/ui/appl_status/form_Know_Appl_Status.xhtml&quot;&gt;this link&lt;/a&gt;, enter the application number and track the progress.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FAMJ2dk.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/FAMJ2dk.png&quot; data-lightbox=&quot;https://i.imgur.com/FAMJ2dk.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/FAMJ2dk.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once the status changes to &lt;strong&gt;Approved&lt;/strong&gt;, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.&lt;/p&gt;
 
-&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="http://localhost:4000/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+05:30</published><updated>2019-03-11T00:00:00+05:30</updated><id>http://localhost:4000/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="http://localhost:4000/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
+&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+05:30</published><updated>2019-03-11T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
 
 &lt;h2 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h2&gt;
 
@@ -536,7 +569,9 @@ Group: xampp
 
 &lt;p&gt;Just change the user to your &lt;code class=&quot;highlighter-rouge&quot;&gt;mac_username&lt;/code&gt; and the group to &lt;code class=&quot;highlighter-rouge&quot;&gt;staff&lt;/code&gt;. My Mac’s username is &lt;code class=&quot;highlighter-rouge&quot;&gt;kunalnagar&lt;/code&gt;, and so my config looks like the following:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DEMPMFo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/DEMPMFo.png&quot; data-lightbox=&quot;https://i.imgur.com/DEMPMFo.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/DEMPMFo.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the &lt;code class=&quot;highlighter-rouge&quot;&gt;htdocs&lt;/code&gt; directory.&lt;/p&gt;
 
@@ -544,7 +579,7 @@ Group: xampp
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="http://localhost:4000/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>http://localhost:4000/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="http://localhost:4000/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
 
@@ -562,7 +597,9 @@ Group: xampp
 
 &lt;p&gt;The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was &lt;strong&gt;Rs. 3,050/-&lt;/strong&gt; as shown below. This is the amount you’ll get back after the transfer.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qdD7fha.png&quot; alt=&quot;https://i.imgur.com/qdD7fha.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/qdD7fha.png&quot; data-lightbox=&quot;https://i.imgur.com/qdD7fha.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/qdD7fha.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h2&gt;
 
@@ -581,11 +618,15 @@ Group: xampp
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Only city and state name is required. So for me, it would be &lt;em&gt;Jaipur Rajasthan&lt;/em&gt;. You can register with any agency in the destination city.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; alt=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; data-lightbox=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The staff will put in a request for transfer. It usually takes a while for the request to sync to the &lt;strong&gt;Indane Central server&lt;/strong&gt;. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; alt=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; data-lightbox=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keep this document safely as you need to present it to the other agency where you’re transferring.&lt;/strong&gt;&lt;/p&gt;
 
@@ -610,25 +651,33 @@ Group: xampp
 
 &lt;p&gt;You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; alt=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; data-lightbox=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="http://localhost:4000/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/customize-bash-prompt</id><content type="html" xml:base="http://localhost:4000/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
+&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="https://kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://kunalnagar.in/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
 
 &lt;p&gt;By default, macOS gives you this terminal:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/n57DPG3.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/n57DPG3.png&quot; data-lightbox=&quot;https://i.imgur.com/n57DPG3.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/n57DPG3.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I fucking hate it. Why do I need to see my machine name every time I open the terminal? &lt;a href=&quot;https://www.merriam-webster.com/dictionary/phooey&quot;&gt;Phooey&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Plus, when I navigate to a git repo, it doesn’t even show what branch I’m on. Double phooey.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sNgVmfJ.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/sNgVmfJ.png&quot; data-lightbox=&quot;https://i.imgur.com/sNgVmfJ.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/sNgVmfJ.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;my-setup&quot;&gt;My setup&lt;/h2&gt;
 
 &lt;p&gt;Here’s what I have and I’m really happy with it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; data-lightbox=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;what-do-i-like-about-it&quot;&gt;What do I like about it?&lt;/h2&gt;
 
@@ -750,7 +799,7 @@ updates-v3
 
 &lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
 
-&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="https://kunalnagar.in/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="https://kunalnagar.in/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
 
 &lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
 
@@ -811,7 +860,7 @@ updates-v3
 
 &lt;p&gt;A dialog will pop-up, choose more apps (not from the app store) and select “Windows Photo Viewer” from the list.&lt;/p&gt;
 
-&lt;p&gt;And you’re done! If you don’t see the Windows Photo Viewer option still, try logging out and back in again.&lt;/p&gt;</content><author><name></name></author><summary type="html">Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.</summary></entry><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>http://localhost:4000/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
+&lt;p&gt;And you’re done! If you don’t see the Windows Photo Viewer option still, try logging out and back in again.&lt;/p&gt;</content><author><name></name></author><summary type="html">Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.</summary></entry><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="https://kunalnagar.in/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="https://kunalnagar.in/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
 
 &lt;p&gt;I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.&lt;/p&gt;
 

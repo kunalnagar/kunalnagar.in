@@ -23,13 +23,13 @@ Here are some of the top features:
 
 Bartender allows you to choose which apps stay in the menu bar and which apps are hidden under the Bartender Bar.
 
-![Cleaned up Mac OS X Menu Bar](/assets/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-1.png)
+{% include components/lightbox-img.html src="/assets/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-1.png" %}
 
 ## Bartender Bar
 
 Clicking on the Bartender icon will reveal the Bartender Bar. You can also assign a Hotkey to it like Alfred.
 
-![Bartender Bar](/assets/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-2.png)
+{% include components/lightbox-img.html src="/assets/img/blog/mac-bartender-os-x-menu-bar-minimalism/bartender-2.png" %}
 
 ## Other Features
 

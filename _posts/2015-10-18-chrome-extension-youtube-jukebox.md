@@ -18,21 +18,21 @@ It adds two things to youtube.com:
 
 As soon as you activate the extension, you’ll see an “Add to Jukebox” button next to every video on YouTube.
 
-![Add to Jukebox Button](/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-1.png)
+{% include components/lightbox-img.html src="/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-1.png" %}
 
 Just click on it and the video will be automatically added to the Jukebox sidebar. You can continue adding more videos or just browse YouTube while the video keeps playing in the sidebar.
 
-![YouTube Jukebox Sidebar](/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-2.png)
+{% include components/lightbox-img.html src="/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-2.png" %}
 
 Videos are saved so even if you refresh the page, they will still be visible in the list unless you explicitly delete them. Each video gets a play button, trash and repeat button. When you click on the video, it starts playing and the status is denoted by a green line next to the video.
 
 You can find the Add to Jukebox button on indvidual videos, search results, your YouTube home page and many more. It's everywhere.
 
-![YouTube Jukebox Single Video](/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-3.png)
+{% include components/lightbox-img.html src="/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-3.png" %}
 
-![YouTube Jukebox Search Results](/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-4.png)
+{% include components/lightbox-img.html src="/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-4.png" %}
 
-![YouTube Jukebox Home Page](/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-5.png)
+{% include components/lightbox-img.html src="/assets/img/blog/chrome-extension-youtube-jukebox/yt-jukebox-5.png" %}
 
 ## Download
 

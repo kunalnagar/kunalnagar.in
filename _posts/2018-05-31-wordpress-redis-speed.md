@@ -11,7 +11,7 @@ Redis is an open source (BSD licensed), in-memory data structure store, used as 
 
 ## How does this work?
 
-![](https://scalegrid.io/blog/wp-content/uploads/2018/05/Capture2.png)
+{% include components/lightbox-img.html src="https://scalegrid.io/blog/wp-content/uploads/2018/05/Capture2.png" %}
 
 When a user requests a WordPress page for the first time, a MySQL query is performed on the server. Redis caches this query, so when another user requests the same WordPress page, the results are provided from Redis without the need to query the database again.
 

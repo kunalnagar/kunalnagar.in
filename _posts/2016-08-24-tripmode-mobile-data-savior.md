@@ -11,9 +11,9 @@ TripMode is the best way to stop updates and other background processes from con
 
 TripMode automatically reduces your mobile data consumption when you use a mobile hotspot thus saving you data and money. It has been designed to be as simple as possible and is accessible at any time from the system tray.
 
-![TripMode for Mac](/assets/img/blog/tripmode-mobile-data-savior/tripmode-1.jpg)
+{% include components/lightbox-img.html src="/assets/img/blog/tripmode-mobile-data-savior/tripmode-1.jpg" %}
 
-![TripMode for Windows](/assets/img/blog/tripmode-mobile-data-savior/tripmode-2.jpg)
+{% include components/lightbox-img.html src="/assets/img/blog/tripmode-mobile-data-savior/tripmode-2.jpg" %}
 
 ## Features
 

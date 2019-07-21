@@ -99,13 +99,13 @@ I got a call from the Retention team YET again. My brain was fried in so many wa
 
 I finally looked up to the internet to get some help and I found all sorts of complaints from people about their shitty service. Things like:
 
-![](/assets/img/blog/act-fibernet-horrible-experience/review-1.png)
+{% include components/lightbox-img.html src="/assets/img/blog/act-fibernet-horrible-experience/review-1.png" %}
 
-![](/assets/img/blog/act-fibernet-horrible-experience/review-2.png)
+{% include components/lightbox-img.html src="/assets/img/blog/act-fibernet-horrible-experience/review-2.png" %}
 
-![](/assets/img/blog/act-fibernet-horrible-experience/review-3.png)
+{% include components/lightbox-img.html src="/assets/img/blog/act-fibernet-horrible-experience/review-3.png" %}
 
-![](/assets/img/blog/act-fibernet-horrible-experience/review-4.png)
+{% include components/lightbox-img.html src="/assets/img/blog/act-fibernet-horrible-experience/review-4.png" %}
 
 ## The Consumer Court Threat
 
@@ -119,11 +119,11 @@ WELL HELLO THERE.
 
 Turns out that legal cases do scare the shit out of them. And this happened a day later.
 
-<img src="/assets/img/blog/act-fibernet-horrible-experience/disconnection.png" style="height: 500px;" />
+{% include components/lightbox-img.html src="/assets/img/blog/act-fibernet-horrible-experience/disconnection.png" %}
 
 And this happened after 3 days.
 
-<img src="/assets/img/blog/act-fibernet-horrible-experience/refund.png" style="height: 500px;" />
+{% include components/lightbox-img.html src="/assets/img/blog/act-fibernet-horrible-experience/refund.png" %}
 
 After 3 weeks of constant calling and headaches with this ISP, I finally got my money back.
 

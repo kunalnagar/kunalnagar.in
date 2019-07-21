@@ -9,11 +9,11 @@ permalink: /blog/github-style-copy-path-zeroclipboard/
 
 In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox & Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.
 
-![ZeroClipboard in Chrome](/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png)
+{% include components/lightbox-img.html src="/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png" %}
 
 Here is how the widget looks natively in Chrome (Copy button enabled)
 
-![ZeroClipboard in Safari/Firefox](/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-2.png)
+{% include components/lightbox-img.html src="/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-2.png" %}
 
 Here is how the widget looks natively in Safari (Copy button disabled since Flash is not installed)
 

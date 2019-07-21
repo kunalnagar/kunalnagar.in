@@ -26,7 +26,7 @@ This means that there must be a ```daemon``` user on your Mac that's part of the
 
 Just change the user to your ```mac_username``` and the group to ```staff```. My Mac's username is ```kunalnagar```, and so my config looks like the following:
 
-![](https://i.imgur.com/DEMPMFo.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/DEMPMFo.png" %}
 
 And that's it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the ```htdocs``` directory.
 

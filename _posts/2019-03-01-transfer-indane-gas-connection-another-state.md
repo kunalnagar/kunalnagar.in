@@ -23,7 +23,7 @@ Here is a list of stuff you'll need before you visit the agency:
 
 The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was **Rs. 3,050/-** as shown below. This is the amount you'll get back after the transfer.
 
-![https://i.imgur.com/qdD7fha.png](https://i.imgur.com/qdD7fha.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/qdD7fha.png" %}
 
 ## Step 2: Cylinders
 
@@ -40,11 +40,11 @@ During the process, you'll have to tell them the destination city and state.
 
 **Note:** Only city and state name is required. So for me, it would be *Jaipur Rajasthan*. You can register with any agency in the destination city.
 
-![https://i.imgur.com/Y3PfQC6.jpg](https://i.imgur.com/Y3PfQC6.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/Y3PfQC6.jpg" %}
 
 The staff will put in a request for transfer. It usually takes a while for the request to sync to the **Indane Central server**. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:
 
-![https://i.imgur.com/LcFYHf8.jpg](https://i.imgur.com/LcFYHf8.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/LcFYHf8.jpg" %}
 
 **Keep this document safely as you need to present it to the other agency where you're transferring.**
 
@@ -67,6 +67,6 @@ Anyway, after the request is acknowledged, you should receive a confirmation on 
 
 You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:
 
-![https://i.imgur.com/J0mbeYm.jpg](https://i.imgur.com/J0mbeYm.jpg)
+{% include components/lightbox-img.html src="https://i.imgur.com/J0mbeYm.jpg" %}
 
 And you're done! Hope you find this guide helpful. Share it with someone you think might need it.
