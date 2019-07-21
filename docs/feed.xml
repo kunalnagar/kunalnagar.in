@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-07-18T00:04:59+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="https://kunalnagar.in/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/install-free-ssl-godaddy</id><content type="html" xml:base="https://kunalnagar.in/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-21T19:59:31+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="http://localhost:4000/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/install-free-ssl-godaddy</id><content type="html" xml:base="http://localhost:4000/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://in.godaddy.com/hosting/web-hosting&quot;&gt;A GoDaddy account&lt;/a&gt; - I have a Deluxe Hosting plan with access to cPanel&lt;/li&gt;
@@ -10,7 +10,9 @@
 
 &lt;p&gt;Visit SSLForFree and enter your domain on the homepage. I would recommend adding support for sub-domains along with the main domain just in case you plan on going down this path in the future.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AfhLxJ5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/AfhLxJ5.png&quot; data-lightbox=&quot;https://i.imgur.com/AfhLxJ5.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/AfhLxJ5.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on Create and you’ll go to a page where you need to Manually Verify your Domain&lt;/p&gt;
 
@@ -18,29 +20,39 @@
 
 &lt;p&gt;You’ll receive a set of instructions to modify the domain DNS.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nvTDcK3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/nvTDcK3.png&quot; data-lightbox=&quot;https://i.imgur.com/nvTDcK3.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/nvTDcK3.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Open your GoDaddy account, navigate to the Domain DNS settings and follow the TXT record.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Instead of entering the entire &lt;code class=&quot;highlighter-rouge&quot;&gt;_acme-challenge.yourdomain.com&lt;/code&gt;, just use &lt;code class=&quot;highlighter-rouge&quot;&gt;_acme-challenge&lt;/code&gt; in the name/host box. This is how one of the entries should look like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jFH0vFP.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/jFH0vFP.png&quot; data-lightbox=&quot;https://i.imgur.com/jFH0vFP.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/jFH0vFP.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
 
 &lt;p&gt;Once the TXT records are added, visit the DNSChecker site, add your name/host value in the box, choose TXT and hit Search.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sbu69oL.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/sbu69oL.png&quot; data-lightbox=&quot;https://i.imgur.com/sbu69oL.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/sbu69oL.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll have to wait about 5-10 minutes for the DNS to finish propgating and once it’s finished you’ll see the following success shot:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/BXUJlrg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/BXUJlrg.png&quot; data-lightbox=&quot;https://i.imgur.com/BXUJlrg.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/BXUJlrg.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-4&quot;&gt;Step 4&lt;/h2&gt;
 
 &lt;p&gt;After you see all green checks, go back to SSLForFree and click on the link in Step 3 to verify that the DNS settings have taken effect. You’ll see a screen like the following:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/9MIElfe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/9MIElfe.png&quot; data-lightbox=&quot;https://i.imgur.com/9MIElfe.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/9MIElfe.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you see this screen, you’re halfway there. Click on the “Download SSL Certificate link” and you’ll be presented with the following textareas:&lt;/p&gt;
 
@@ -50,16 +62,22 @@
 
 &lt;p&gt;Open GoDaddy and go to your cPanel dashboard &amp;gt; &lt;em&gt;SSL settings&lt;/em&gt; &amp;gt; &lt;em&gt;Manage SSL sites&lt;/em&gt;. Choose the domain for which you want to install the SSL for. Enter the above three keys in the textboxes and click on &lt;em&gt;Install Certificate&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/W6UcB4G.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/W6UcB4G.png&quot; data-lightbox=&quot;https://i.imgur.com/W6UcB4G.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/W6UcB4G.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;When your certificate is successfully installed, you’ll see it in the Manage section of the SSL page and you’re ready to go. Visit the domain with the HTTPS prefix and you should see your secured website!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/IsEbaDz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/IsEbaDz.png&quot; data-lightbox=&quot;https://i.imgur.com/IsEbaDz.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/IsEbaDz.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you’d like to know more about what LetsEncrypt is doing to provide free SSL to the world, check out this video:&lt;/p&gt;
 
 &lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
-&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ksqTu7TX83g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://kunalnagar.in/blog/vue-base-components/">&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;embed-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/ksqTu7TX83g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">An Introduction to Vue Base Components</title><link href="http://localhost:4000/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+05:30</published><updated>2019-04-21T00:00:00+05:30</updated><id>http://localhost:4000/blog/vue-base-components</id><content type="html" xml:base="http://localhost:4000/blog/vue-base-components/">&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/wB8Tk90.png&quot; data-lightbox=&quot;https://i.imgur.com/wB8Tk90.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it’s important that your product feels cohesive to your customers.&lt;/p&gt;
 
@@ -90,21 +108,27 @@
 
 &lt;p&gt;When you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;BaseButton /&amp;gt;&lt;/code&gt; component out of the box, it will look something like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/F2p7Kl9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/F2p7Kl9.png&quot; data-lightbox=&quot;https://i.imgur.com/F2p7Kl9.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/F2p7Kl9.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to add an icon, it’s as simple as doing:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton icon=&quot;save&quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/qqyZQFz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/qqyZQFz.png&quot; data-lightbox=&quot;https://i.imgur.com/qqyZQFz.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/qqyZQFz.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to change the text:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton icon=&quot;download&quot; text=&quot;Download&quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DnQZHND.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/DnQZHND.png&quot; data-lightbox=&quot;https://i.imgur.com/DnQZHND.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/DnQZHND.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you want to add a link:&lt;/p&gt;
 
@@ -131,7 +155,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/vue-base-components&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="http://localhost:4000/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+05:30</published><updated>2019-04-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/highcharts-export-pdf</id><content type="html" xml:base="http://localhost:4000/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
 
 &lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
 
@@ -139,7 +163,9 @@
 
 &lt;p&gt;By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the &lt;a href=&quot;https://www.highcharts.com/docs/export-module/export-module-overview&quot;&gt;exporting module&lt;/a&gt; to be included for that to show up.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/D8hmB7I.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/D8hmB7I.png&quot; data-lightbox=&quot;https://i.imgur.com/D8hmB7I.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/D8hmB7I.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?&lt;/p&gt;
 
@@ -218,7 +244,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;And it’s done! Here’s a demo of the entire process. Switch to the &lt;strong&gt;Result&lt;/strong&gt; tab and click on the &lt;strong&gt;Export&lt;/strong&gt; button to download the PDF. The code contains comments so it’s easy to follow.&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; allowpaymentrequest=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; allowpaymentrequest=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="http://localhost:4000/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+05:30</published><updated>2019-04-08T00:00:00+05:30</updated><id>http://localhost:4000/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="http://localhost:4000/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
 
 &lt;p&gt;encrypt0r provides a simple drag and drop interface to encrypt/decrypt your files using a password.&lt;/p&gt;
 
@@ -256,7 +282,9 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;h2 id=&quot;screenshot&quot;&gt;Screenshot&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/WQXyqsj.png&quot; data-lightbox=&quot;https://i.imgur.com/WQXyqsj.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;demo-video&quot;&gt;Demo Video&lt;/h2&gt;
 
@@ -266,7 +294,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;h2 id=&quot;bugscontribute&quot;&gt;Bugs/Contribute&lt;/h2&gt;
 
-&lt;p&gt;Found a problem? Have improvements? Create a new &lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/issues&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.</summary></entry><entry><title type="html">Car Hypothecation Removal Process</title><link href="https://kunalnagar.in/blog/car-hypothecation-removal-process/" rel="alternate" type="text/html" title="Car Hypothecation Removal Process" /><published>2019-03-14T00:00:00+05:30</published><updated>2019-03-14T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/car-hypothecation-removal-process</id><content type="html" xml:base="https://kunalnagar.in/blog/car-hypothecation-removal-process/">&lt;p&gt;This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.&lt;/p&gt;
+&lt;p&gt;Found a problem? Have improvements? Create a new &lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/issues&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.</summary></entry><entry><title type="html">Car Hypothecation Removal Process</title><link href="http://localhost:4000/blog/car-hypothecation-removal-process/" rel="alternate" type="text/html" title="Car Hypothecation Removal Process" /><published>2019-03-14T00:00:00+05:30</published><updated>2019-03-14T00:00:00+05:30</updated><id>http://localhost:4000/blog/car-hypothecation-removal-process</id><content type="html" xml:base="http://localhost:4000/blog/car-hypothecation-removal-process/">&lt;p&gt;This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-hypothecation&quot;&gt;What is hypothecation?&lt;/h2&gt;
 
@@ -490,7 +518,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;Once the status changes to &lt;strong&gt;Approved&lt;/strong&gt;, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.&lt;/p&gt;
 
-&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+05:30</published><updated>2019-03-11T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
+&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="http://localhost:4000/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+05:30</published><updated>2019-03-11T00:00:00+05:30</updated><id>http://localhost:4000/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="http://localhost:4000/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
 
 &lt;h2 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h2&gt;
 
@@ -516,7 +544,7 @@ Group: xampp
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="http://localhost:4000/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+05:30</published><updated>2019-03-01T00:00:00+05:30</updated><id>http://localhost:4000/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="http://localhost:4000/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
 
@@ -584,7 +612,7 @@ Group: xampp
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; alt=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="https://kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://kunalnagar.in/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
+&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="http://localhost:4000/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+05:30</published><updated>2019-02-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/customize-bash-prompt</id><content type="html" xml:base="http://localhost:4000/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
 
 &lt;p&gt;By default, macOS gives you this terminal:&lt;/p&gt;
 
@@ -722,7 +750,7 @@ updates-v3
 
 &lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
 
-&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="https://kunalnagar.in/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="https://kunalnagar.in/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="http://localhost:4000/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>http://localhost:4000/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="http://localhost:4000/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
 
 &lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
 
@@ -783,7 +811,7 @@ updates-v3
 
 &lt;p&gt;A dialog will pop-up, choose more apps (not from the app store) and select “Windows Photo Viewer” from the list.&lt;/p&gt;
 
-&lt;p&gt;And you’re done! If you don’t see the Windows Photo Viewer option still, try logging out and back in again.&lt;/p&gt;</content><author><name></name></author><summary type="html">Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.</summary></entry><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="https://kunalnagar.in/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="https://kunalnagar.in/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
+&lt;p&gt;And you’re done! If you don’t see the Windows Photo Viewer option still, try logging out and back in again.&lt;/p&gt;</content><author><name></name></author><summary type="html">Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.</summary></entry><entry><title type="html">How I use Codeship and DigitalOcean to deploy websites</title><link href="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/" rel="alternate" type="text/html" title="How I use Codeship and DigitalOcean to deploy websites" /><published>2018-11-06T00:00:00+05:30</published><updated>2018-11-06T00:00:00+05:30</updated><id>http://localhost:4000/blog/setup-codeship-digital-ocean</id><content type="html" xml:base="http://localhost:4000/blog/deploy-sites-codeship-digital-ocean/">&lt;p&gt;Services like GitHub and Gitlab allow users to deploy static sites with a push commit. You can even add a custom domain and have the site served from it instead of the standard &lt;code class=&quot;highlighter-rouge&quot;&gt;*.github.io&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;*.gitlab.io&lt;/code&gt; domains. But what if you have your own VPS and want the same experience?&lt;/p&gt;
 
 &lt;p&gt;I have been a long-time user of Codeship. I, initially started using it to deploy coding challenges when applying to various companies but then, one weekend, I realised I could do the same with this site as well.&lt;/p&gt;
 

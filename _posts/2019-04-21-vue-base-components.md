@@ -7,7 +7,7 @@ img: "/assets/img/foss/vue.png"
 permalink: /blog/vue-base-components/
 ---
 
-![](https://i.imgur.com/wB8Tk90.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/wB8Tk90.png" %}
 
 Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it's important that your product feels cohesive to your customers.
 
@@ -36,7 +36,7 @@ When developing a custom button, here's a basic checklist of things you'd like t
 
 When you use the ```<BaseButton />``` component out of the box, it will look something like:
 
-![](https://i.imgur.com/F2p7Kl9.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/F2p7Kl9.png" %}
 
 If you want to add an icon, it's as simple as doing:
 
@@ -44,7 +44,7 @@ If you want to add an icon, it's as simple as doing:
 <BaseButton icon="save" />
 ```
 
-![](https://i.imgur.com/qqyZQFz.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/qqyZQFz.png" %}
 
 If you want to change the text:
 
@@ -52,7 +52,7 @@ If you want to change the text:
 <BaseButton icon="download" text="Download" />
 ```
 
-![](https://i.imgur.com/DnQZHND.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/DnQZHND.png" %}
 
 If you want to add a link:
 

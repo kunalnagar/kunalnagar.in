@@ -41,7 +41,7 @@ Here's the warning on Windows (click to watch demo video on YouTube):
 
 ## Screenshot
 
-![](https://i.imgur.com/WQXyqsj.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/WQXyqsj.png" %}
 
 ## Demo Video
 

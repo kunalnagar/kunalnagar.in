@@ -15,7 +15,7 @@ If you want to skip to the code, there's a fiddle at the end of the post. Knock 
 
 By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the [exporting module](https://www.highcharts.com/docs/export-module/export-module-overview) to be included for that to show up.
 
-![](https://i.imgur.com/D8hmB7I.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/D8hmB7I.png" %}
 
 While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?
 

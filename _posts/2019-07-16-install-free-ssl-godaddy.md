@@ -17,7 +17,7 @@ This is a straight-forward guide to installing free SSL certificates on GoDaddy.
 
 Visit SSLForFree and enter your domain on the homepage. I would recommend adding support for sub-domains along with the main domain just in case you plan on going down this path in the future.
 
-![](https://i.imgur.com/AfhLxJ5.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/AfhLxJ5.png" %}
 
 Click on Create and you'll go to a page where you need to Manually Verify your Domain
 
@@ -25,29 +25,29 @@ Click on Create and you'll go to a page where you need to Manually Verify your D
 
 You'll receive a set of instructions to modify the domain DNS.
 
-![](https://i.imgur.com/nvTDcK3.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/nvTDcK3.png" %}
 
 Open your GoDaddy account, navigate to the Domain DNS settings and follow the TXT record.
 
 **Note:** Instead of entering the entire ```_acme-challenge.yourdomain.com```, just use ```_acme-challenge``` in the name/host box. This is how one of the entries should look like:
 
-![](https://i.imgur.com/jFH0vFP.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/jFH0vFP.png" %}
 
 ## Step 3
 
 Once the TXT records are added, visit the DNSChecker site, add your name/host value in the box, choose TXT and hit Search.
 
-![](https://i.imgur.com/sbu69oL.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/sbu69oL.png" %}
 
 You'll have to wait about 5-10 minutes for the DNS to finish propgating and once it's finished you'll see the following success shot:
 
-![](https://i.imgur.com/BXUJlrg.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/BXUJlrg.png" %}
 
 ## Step 4
 
 After you see all green checks, go back to SSLForFree and click on the link in Step 3 to verify that the DNS settings have taken effect. You'll see a screen like the following:
 
-![](https://i.imgur.com/9MIElfe.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/9MIElfe.png" %}
 
 If you see this screen, you're halfway there. Click on the "Download SSL Certificate link" and you'll be presented with the following textareas:
 
@@ -57,11 +57,11 @@ If you see this screen, you're halfway there. Click on the "Download SSL Certifi
 
 Open GoDaddy and go to your cPanel dashboard > _SSL settings_ > _Manage SSL sites_. Choose the domain for which you want to install the SSL for. Enter the above three keys in the textboxes and click on _Install Certificate_.
 
-![](https://i.imgur.com/W6UcB4G.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/W6UcB4G.png" %}
 
 When your certificate is successfully installed, you'll see it in the Manage section of the SSL page and you're ready to go. Visit the domain with the HTTPS prefix and you should see your secured website!
 
-![](https://i.imgur.com/IsEbaDz.png)
+{% include components/lightbox-img.html src="https://i.imgur.com/IsEbaDz.png" %}
 
 If you'd like to know more about what LetsEncrypt is doing to provide free SSL to the world, check out this video:
 

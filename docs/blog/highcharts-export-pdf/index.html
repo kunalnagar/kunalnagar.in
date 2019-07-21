@@ -10,6 +10,7 @@
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <main>
@@ -59,7 +60,9 @@
 
 <p>By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the <a href="https://www.highcharts.com/docs/export-module/export-module-overview">exporting module</a> to be included for that to show up.</p>
 
-<p><img src="https://i.imgur.com/D8hmB7I.png" alt="" /></p>
+<p><a href="https://i.imgur.com/D8hmB7I.png" data-lightbox="https://i.imgur.com/D8hmB7I.png" class="lightbox-img">
+    <img src="https://i.imgur.com/D8hmB7I.png" />
+</a></p>
 
 <p>While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?</p>
 
@@ -156,5 +159,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 </footer>
 
     </main>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" async defer></script>
 </body>
 </html>
