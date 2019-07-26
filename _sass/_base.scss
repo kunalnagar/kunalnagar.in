@@ -1,9 +1,10 @@
 html,
 body {
     font-family: $font-family;
-    font-size: small;
+    // font-size: $font-size;
     background-color: #f1f1f1;
     height: 100%;
+    line-height: 1.5;
 }
 
 ::selection {
@@ -20,21 +21,22 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $headings-font-family;
-    padding-bottom: 0.3rem;
-    margin: 1em 0 0.2em 0;
-    border-bottom: 1px solid #ccc;
+    clear: both;
 }
 
+h1 { font-size: 18pt; line-height: 1; margin-bottom: 1em; }
+h2 { font-size: 14pt; line-height: 1.28; margin: 1.28em 0; }
+h3 { font-size: 12pt; line-height: 1.5; margin: 1.5em 0; }
+
 p {
-    margin: 0 0 0.6em 0;
-    line-height: 1.5rem;
+    margin: 1.5em 0;
 }
 
 ul,
 ol {
 
     li {
-        line-height: 1.6rem;
+        margin: 0.5em 0;
     }
 }
 

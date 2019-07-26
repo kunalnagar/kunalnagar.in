@@ -163,30 +163,20 @@ main {
         }
 
         .title {
-            font-weight: 400;
-            color: #2f2f2f;
             margin-top: 0;
-            margin-bottom: 0.7rem;
-            line-height: 2.5rem;
         }
 
         .date {
-            color: gray;
-            font-size: 0.7rem;
-        }
-
-        .breadcrumb-separator {
-            color: gray;
-            font-size: 0.7rem;
-            margin: 0 0.5rem;
+            color: #888;
+            // font-size: 0.7rem;
         }
 
         .btn-share {
-            font-size: 0.7rem;
             color: #6d6d6d;
             border: 0;
             transition: 0;
             font-weight: 600;
+            margin-left: 1em;
 
             &:hover {
                 color: $link-color;
@@ -200,10 +190,10 @@ main {
 
         h2,
         h3 {
-            font-weight: 500;
-            padding-bottom: 0.2rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            // font-weight: 500;
+            // padding-bottom: 0.2rem;
+            // margin-top: 2rem;
+            // margin-bottom: 1rem;
 
             a {
                 margin-left: 0.5rem;
@@ -240,17 +230,6 @@ main {
             	margin: 0.5em auto;
             	max-width: 100%;
 	        }
-        }
-
-        ul {
-            margin-bottom: 1.5rem;
-
-            li {
-
-                p {
-                    margin-bottom: 0.5rem;
-                }
-            }
         }
     }
 }
