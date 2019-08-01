@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.description }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <title>{{ page.title }} – Kunal Nagar</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
     <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:url" content="https://kunalnagar.in{{ page.url }}">
+    <meta property="og:type" content="article">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -22,7 +26,7 @@
                     <h1 class="section-heading title">{{ page.title }}</h1>
                     <div class="l-flex l-items-center">
                         <time class="date">{{ page.date | date: "%B %d, %Y" }}</time>
-                        <a href="http://twitter.com/share?text={{ page.title }}&url={{ page.url }}&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                        <a href="http://twitter.com/share?text={{ page.title }}&url=https://kunalnagar.in{{ page.url }}&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
                             Share
                         </a>
                     </div>
