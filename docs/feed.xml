@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-08-01T06:02:28+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Git Verified Commits</title><link href="https://kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+05:30</published><updated>2019-07-31T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://kunalnagar.in/blog/git-verified-commits/">&lt;p&gt;Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2019-08-15T07:35:49+05:30</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Install Global Node Modules without Sudo</title><link href="https://kunalnagar.in/blog/install-global-node-modules/" rel="alternate" type="text/html" title="Install Global Node Modules without Sudo" /><published>2019-08-15T00:00:00+05:30</published><updated>2019-08-15T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/install-global-node-modules</id><content type="html" xml:base="https://kunalnagar.in/blog/install-global-node-modules/">&lt;p&gt;If you’re on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://i.imgur.com/i4hiG88.png&quot; data-lightbox=&quot;http://i.imgur.com/i4hiG88.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;http://i.imgur.com/i4hiG88.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By default, Node installs global modules to your bin directory: &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/node_modules&lt;/code&gt; which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.npm-global&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;steps-to-follow&quot;&gt;Steps to follow&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a new directory in your home folder
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir ~/.npm-global
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tell npm to use the newly created directory to install global modules
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm config set prefix ~/.npm-global
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add this to your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; depending on whether you’re on Linux/macOS respectively
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; export PATH=~/.npm-global/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Update your current terminal session by reloading the profile
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.profile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Try and install a sample module globally and it should work
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g @vue/cli
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://i.imgur.com/bkSOL0p.png&quot; data-lightbox=&quot;http://i.imgur.com/bkSOL0p.png&quot; class=&quot;lightbox-img&quot;&gt;
+    &lt;img src=&quot;http://i.imgur.com/bkSOL0p.png&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And you’re done! Of course, you could skip all this and just use &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://npm.github.io/installation-setup-docs/installing/a-note-on-permissions.html&quot;&gt;A note on permissions (Official NPM)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">If you’re on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:</summary></entry><entry><title type="html">Git Verified Commits</title><link href="https://kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+05:30</published><updated>2019-07-31T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://kunalnagar.in/blog/git-verified-commits/">&lt;p&gt;Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://i.imgur.com/2ohqgII.png&quot; data-lightbox=&quot;https://i.imgur.com/2ohqgII.png&quot; class=&quot;lightbox-img&quot;&gt;
     &lt;img src=&quot;https://i.imgur.com/2ohqgII.png&quot; /&gt;
@@ -850,65 +892,4 @@ updates-v3
 
 &lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
 
-&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Set Windows Photo Viewer as your Default Image Viewer</title><link href="https://kunalnagar.in/blog/set-windows-photo-viewer-default/" rel="alternate" type="text/html" title="Set Windows Photo Viewer as your Default Image Viewer" /><published>2018-12-23T00:00:00+05:30</published><updated>2018-12-23T00:00:00+05:30</updated><id>https://kunalnagar.in/blog/set-windows-photo-viewer-default</id><content type="html" xml:base="https://kunalnagar.in/blog/set-windows-photo-viewer-default/">&lt;p&gt;Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.&lt;/p&gt;
-
-&lt;p&gt;So I researched around a bit and it turns out, there is a way to bring back the old Windows Photo Viewer. Here’s how:&lt;/p&gt;
-
-&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
-&lt;p&gt;Create a new registry file and paste the following contents in it. For example, you can name it &lt;code&gt;photoviewer.reg&lt;/code&gt;, it doesn’t really matter.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll]
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell]
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open]
-&quot;MuiVerb&quot;=&quot;@photoviewer.dll,-3043&quot;
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\command]
-@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
-00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
-6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
-00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
-25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
-00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
-6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
-00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
-5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
-00,31,00,00,00
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\DropTarget]
-&quot;Clsid&quot;=&quot;{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}&quot;
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print]
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\command]
-@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
-00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
-6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
-00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
-25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
-00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
-6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
-00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
-5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
-00,31,00,00,00
-
-[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\DropTarget]
-&quot;Clsid&quot;=&quot;{60fd46de-f830-4894-a628-6fa81bc0190d}&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, you should have a file on your machine called &lt;code&gt;photoviewer.reg&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
-
-&lt;p&gt;Double click the registry file we created and follow the instructions.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
-
-&lt;p&gt;Once the registry entries have been successfully added, &lt;em&gt;right-click on an image&lt;/em&gt; &amp;gt; &lt;em&gt;Open with&lt;/em&gt; &amp;gt; &lt;em&gt;Another application&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;A dialog will pop-up, choose more apps (not from the app store) and select “Windows Photo Viewer” from the list.&lt;/p&gt;
-
-&lt;p&gt;And you’re done! If you don’t see the Windows Photo Viewer option still, try logging out and back in again.&lt;/p&gt;</content><author><name></name></author><summary type="html">Every now and then I’ll have to use my Windows PC at work. I hate Windows. And I need to open quite a few images. By default, the images open in the “Photos” app on Windows 10 which takes about a minute or so to open a 100KB JPEG file. It’s pathetic.</summary></entry></feed>
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry></feed>

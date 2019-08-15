@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn how to install global node modules without running into permission issues (sudo)">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Install Global Node Modules without Sudo - Kunal Nagar</title>
+    <meta property="og:image" content="https://kunalnagar.in/assets/img/post.png">
+    <meta property="og:title" content="Install Global Node Modules without Sudo - Kunal Nagar">
+    <meta property="og:description" content="Learn how to install global node modules without running into permission issues (sudo)">
+    <meta property="og:url" content="https://kunalnagar.in/blog/install-global-node-modules/">
+    <meta property="og:type" content="article">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+    <div class="container l-container navbar-container">
+        <section class="brand">
+            <a href="/" class="link" title="Home">
+                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
+                <span>Kunal Nagar</span>
+            </a>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="/assets/downloads/Resume_Kunal_Nagar.pdf" title="View professional journey">Résumé</a>
+                </li>
+                <li>
+                    <a href="/foss" title="View open source work">Open Source</a>
+                </li>
+                <li>
+                    <a href="/blog" title="Read blog">Blog</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</nav>
+
+        <div class="container l-container p-blog-single">
+            <section class="section header">
+                <img src="/assets/img/foss/node.png" class="img" />
+                <div>
+                    <h1 class="section-heading title">Install Global Node Modules without Sudo</h1>
+                    <div class="l-flex l-items-center">
+                        <time class="date">August 15, 2019</time>
+                        <a href="http://twitter.com/share?text=Install Global Node Modules without Sudo&url=https://kunalnagar.in/blog/install-global-node-modules/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                            Share
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section content"><p>If you’re on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:</p>
+
+<p><a href="http://i.imgur.com/i4hiG88.png" data-lightbox="http://i.imgur.com/i4hiG88.png" class="lightbox-img">
+    <img src="http://i.imgur.com/i4hiG88.png" />
+</a></p>
+
+<p>By default, Node installs global modules to your bin directory: <code class="highlighter-rouge">/usr/bin/node_modules</code> which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to <code class="highlighter-rouge">~/.npm-global</code></p>
+
+<h2 id="steps-to-follow">Steps to follow</h2>
+
+<ol>
+  <li>Create a new directory in your home folder
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir ~/.npm-global
+</code></pre></div>    </div>
+  </li>
+  <li>Tell npm to use the newly created directory to install global modules
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm config set prefix ~/.npm-global
+</code></pre></div>    </div>
+  </li>
+  <li>Add this to your <code class="highlighter-rouge">~/.profile</code> or <code class="highlighter-rouge">~/.bash_profile</code> depending on whether you’re on Linux/macOS respectively
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export PATH=~/.npm-global/bin:$PATH
+</code></pre></div>    </div>
+  </li>
+  <li>Update your current terminal session by reloading the profile
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.profile
+</code></pre></div>    </div>
+  </li>
+  <li>Try and install a sample module globally and it should work
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g @vue/cli
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><a href="http://i.imgur.com/bkSOL0p.png" data-lightbox="http://i.imgur.com/bkSOL0p.png" class="lightbox-img">
+    <img src="http://i.imgur.com/bkSOL0p.png" />
+</a></p>
+
+<p>And you’re done! Of course, you could skip all this and just use <code class="highlighter-rouge">sudo</code>, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="http://npm.github.io/installation-setup-docs/installing/a-note-on-permissions.html">A note on permissions (Official NPM)</a></li>
+</ul>
+</section>
+        </div>
+        <footer>
+    <script src="/assets/js/main.js" async defer></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-51202219-2']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</footer>
+
+    </main>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" async defer></script>
+</body>
+</html>
