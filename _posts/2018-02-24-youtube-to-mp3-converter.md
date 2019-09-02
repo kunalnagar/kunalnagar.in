@@ -8,8 +8,6 @@ img: "/assets/img/foss/youtube.png"
 tags: [Open Source, Woot, Blah]
 ---
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/oA-D7TdjVnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 So my parents listen to music on YouTube. Because apparently, services like [Saavn](https://www.saavn.com/) or [Gaana](https://gaana.com/) don't make sense to them. And honestly, I can't blame them. They're gonna use what seems familiar to them.
 
 One day they asked me - how can I download this song to my phone and listen to it without opening the YouTube app? And I suggested numerous YouTube to Mp3 converters on the internet. The thing I missed was that my parents cannot differentiate between an actual download button and the one that is loaded with ads. Unfortunately, a lot of these free services have ads loaded on them and that causes popups like this that send my parents into a frenzy.
