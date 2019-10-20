@@ -18,46 +18,19 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <b>Résumé</b>
-                    <a href="/assets/downloads/Resume-KunalNagar.docx" title="Resume (.docx) Word format">.docx</a> |
-                    <a href="/assets/downloads/Resume-KunalNagar.pdf" title="Resume (.pdf) format">.pdf</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
 </nav>
 
-        <div class="container l-container p-blog-single">
-            <section class="section header">
-                <img src="/assets/img/foss/copy-paste.jpg" class="img" />
-                <div>
-                    <h1 class="section-heading title">GitHub Copy Path Widget using ZeroClipboard</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">September 03, 2016</time>
-                        <a href="http://twitter.com/share?text=GitHub Copy Path Widget using ZeroClipboard&url=https://kunalnagar.in/blog/github-style-copy-path-zeroclipboard/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section content"><p>In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</p>
+        <div class="page-blog-single">
+            <h1>GitHub Copy Path Widget using ZeroClipboard</h1>
+            <time>September 03, 2016</time>
+            <article><p>In this article, we will be creating the Clone Widget on GitHub that allows you to copy a Repo URL by clicking a button. It works natively in Chrome and falls back to Flash in Firefox &amp; Safari. If Flash is not installed, the Copy button is not shown, but the user can still select the path and copy it manually.</p>
 
 <p><a href="/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png" data-lightbox="/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png" class="lightbox-img">
     <img src="/assets/img/blog/github-style-copy-path-zeroclipboard/zeroclipboard-1.png" />
@@ -358,10 +331,9 @@ var _initNoFlash = function() {
 
 <p>If you have any questions, please fire away in the comments below. Thanks!</p>
 
-</section>
+</article>
         </div>
         <footer>
-    <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-51202219-2']);

@@ -17,152 +17,134 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <b>Résumé</b>
-                    <a href="/assets/downloads/Resume-KunalNagar.docx" title="Resume (.docx) Word format">.docx</a> |
-                    <a href="/assets/downloads/Resume-KunalNagar.pdf" title="Resume (.pdf) format">.pdf</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
 </nav>
 
-        <div class="container l-container p-foss">
-    <section class="section projects">
-        <p>
-            I build stuff and I try to make it available to as many people as possible. <i>For free.</i>
-        </p>
-        <ul>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/react.png" /></p>
-                    <p class="title">react-twitter</p>
-                    <p class="description">Twitter's JavaScript Widgets as React components</p>
-                    <a href="https://github.com/kunalnagar/react-twitter" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/imdb.png" /></p>
-                    <p class="title">IMDb API</p>
-                    <p class="description">An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists</p>
-                    <a href="https://github.com/kunalnagar/expressyo-imdb-scraper" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/vue.png" /></p>
-                    <p class="title">vue-imdb</p>
-                    <p class="description">A Vue.js component using the previous IMDb API service to render a user's watchlist</p>
-                    <a href="https://github.com/kunalnagar/vue-imdb" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/electron.svg" /></p>
-                    <p class="title">encrypt0r</p>
-                    <p class="description">An Electron app to encrypt/decrypt your files by setting a passphrase</p>
-                    <a href="/blog/encryptor-encrypt-decrypt-files-passphrase/" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/wp.png" /></p>
-                    <p class="title">Custom 404 Pro</p>
-                    <p class="description">A WordPress plugin (with over 80,000+ installs) that allows you to replace the default 404 page with a custom page.</p>
-                    <a href="/blog/custom-404-pro/" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/vue.png" /></p>
-                    <p class="title">vue-base-components</p>
-                    <p class="description">A collection of pre-built base components to jumpstart your brand new Vue.js project.</p>
-                    <a href="/blog/vue-base-components/" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/jquery.png" /></p>
-                    <p class="title">jquery.peekABar</p>
-                    <p class="description">A jQuery notification bar plugin with multiple customization options</p>
-                    <a href="https://kunalnagar.github.io/jquery.peekABar/" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/jquery.png" /></p>
-                    <p class="title">jquery.ghostfm</p>
-                    <p class="description">Showcase your last.fm listening history using this jQuery widget with a minimalist mode as well.</p>
-                    <a href="https://kunalnagar.github.io/jquery.ghostfm/" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            
-        </ul>
-    </section>
-    <section class="section tinkers">
-        <h2 class="section-heading">Demos & Experiments</h2>
-        <p>
-            I tinker around. When I see stuff on the internet that's challenging, I try to re-create it. This contains demos and experimental browser API stuff. Take a look!
-        </p>
-        <ul>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/highcharts.png" /></p>
-                    <p class="title">HighCharts to PDF</p>
-                    <p class="description">A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF.</p>
-                    <a href="/blog/highcharts-export-pdf/" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/mailchimp.svg" /></p>
-                    <p class="title">MailChimp Signup Form</p>
-                    <p class="description">Interactive registration form to enable users to signup easily.</p>
-                    <a href="https://kunalnagar.github.io/mailchimp-signup/" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/copy-paste.jpg" /></p>
-                    <p class="title">Clipboard Demo</p>
-                    <p class="description">Demos to copy input/paragraph elements to the Clipboard using native browser APIs</p>
-                    <a href="https://kunalnagar.github.io/clipboard-demo/" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/youtube.png" /></p>
-                    <p class="title">YouTube Jukebox</p>
-                    <p class="description">A temporary sidebar playlist to quickly add videos to from YouTube, kinda like a jukebox.</p>
-                    <a href="/blog/chrome-extension-youtube-jukebox/" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/adstomp.png" /></p>
-                    <p class="title">AdStomp</p>
-                    <p class="description">A Chrome Extension to block ads on news-reading websites. Also integrates a custom reader mode.</p>
-                    <a href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            
-                <li>
-                    <p class="img"><img src="/assets/img/foss/node.png" /></p>
-                    <p class="title">Node.js file upload</p>
-                    <p class="description">A Node.js demo to upload a file and get percentage based updates on upload progress</p>
-                    <a href="https://github.com/kunalnagar/nodejs-basic-file-upload" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            
-        </ul>
-    </section>
+        <div class="page-foss">
+    <p>I build stuff and I try to make it available to as many people as possible, for free.</p>
+    <h2>Popular</h2>
+    <ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a class="link" href="/blog/encryptor-encrypt-decrypt-files-passphrase/" target="_blank" rel="noopener noreferrer">encrypt0r</a>
+            <p class="description">An Electron app to encrypt/decrypt your files by setting a passphrase</p>
+        </li>
+        
+        
+        
+        <li>
+            <a class="link" href="/blog/custom-404-pro/" target="_blank" rel="noopener noreferrer">Custom 404 Pro</a>
+            <p class="description">A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page.</p>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+    <h2>Other</h2>
+    <ul>
+        
+        
+        <li>
+            <a class="link" href="https://github.com/kunalnagar/react-twitter" target="_blank" rel="noopener noreferrer">react-twitter</a>
+            <p class="description">Twitter's JavaScript Widgets as React components</p>
+        </li>
+        
+        
+        
+        <li>
+            <a class="link" href="https://github.com/kunalnagar/expressyo-imdb-scraper" target="_blank" rel="noopener noreferrer">IMDb API</a>
+            <p class="description">An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists</p>
+        </li>
+        
+        
+        
+        <li>
+            <a class="link" href="https://github.com/kunalnagar/vue-imdb" target="_blank" rel="noopener noreferrer">vue-imdb</a>
+            <p class="description">A Vue.js component using the previous IMDb API service to render a user's watchlist</p>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a class="link" href="/blog/vue-base-components/" target="_blank" rel="noopener noreferrer">vue-base-components</a>
+            <p class="description">A collection of pre-built base components to jumpstart your brand new Vue.js project.</p>
+        </li>
+        
+        
+        
+        <li>
+            <a class="link" href="https://kunalnagar.github.io/jquery.peekABar/" target="_blank" rel="noopener noreferrer">jquery.peekABar</a>
+            <p class="description">A jQuery notification bar plugin with multiple customization options</p>
+        </li>
+        
+        
+        
+        <li>
+            <a class="link" href="https://kunalnagar.github.io/jquery.ghostfm/" target="_blank" rel="noopener noreferrer">jquery.ghostfm</a>
+            <p class="description">Showcase your last.fm listening history using this jQuery widget with a minimalist mode as well.</p>
+        </li>
+        
+        
+    </ul>
+    <h2>Experiments</h2>
+    <p>I tinker around. When I see stuff on the internet that's challenging, I try to re-create it.</p>
+    <ul>
+        
+        <li>
+            <a class="link" href="/blog/highcharts-export-pdf/" target="_blank" rel="noopener noreferrer">HighCharts to PDF</a>
+            <p class="description">A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF.</p>
+        </li>
+        
+        <li>
+            <a class="link" href="https://kunalnagar.github.io/mailchimp-signup/" target="_blank" rel="noopener noreferrer">MailChimp Signup Form</a>
+            <p class="description">Interactive registration form to enable users to signup easily.</p>
+        </li>
+        
+        <li>
+            <a class="link" href="https://kunalnagar.github.io/clipboard-demo/" target="_blank" rel="noopener noreferrer">Clipboard Demo</a>
+            <p class="description">Demos to copy input/paragraph elements to the Clipboard using native browser APIs</p>
+        </li>
+        
+        <li>
+            <a class="link" href="/blog/chrome-extension-youtube-jukebox/" target="_blank" rel="noopener noreferrer">YouTube Jukebox</a>
+            <p class="description">A temporary sidebar playlist to quickly add videos to from YouTube, kinda like a jukebox.</p>
+        </li>
+        
+        <li>
+            <a class="link" href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch" target="_blank" rel="noopener noreferrer">AdStomp</a>
+            <p class="description">A Chrome Extension to block ads on news-reading websites. Also integrates a custom reader mode.</p>
+        </li>
+        
+        <li>
+            <a class="link" href="https://github.com/kunalnagar/nodejs-basic-file-upload" target="_blank" rel="noopener noreferrer">Node.js file upload</a>
+            <p class="description">A Node.js demo to upload a file and get percentage based updates on upload progress</p>
+        </li>
+        
+    </ul>
 </div>
-
         <footer>
-    <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-51202219-2']);

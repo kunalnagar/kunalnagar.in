@@ -18,46 +18,19 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <b>Résumé</b>
-                    <a href="/assets/downloads/Resume-KunalNagar.docx" title="Resume (.docx) Word format">.docx</a> |
-                    <a href="/assets/downloads/Resume-KunalNagar.pdf" title="Resume (.pdf) format">.pdf</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
 </nav>
 
-        <div class="container l-container p-blog-single">
-            <section class="section header">
-                <img src="/assets/img/foss/php.png" class="img" />
-                <div>
-                    <h1 class="section-heading title">Install Laravel 5 on OS X</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">April 14, 2015</time>
-                        <a href="http://twitter.com/share?text=Install Laravel 5 on OS X&url=https://kunalnagar.in/blog/install-laravel-5-on-os-x/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section content"><p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
+        <div class="page-blog-single">
+            <h1>Install Laravel 5 on OS X</h1>
+            <time>April 14, 2015</time>
+            <article><p><strong>Note:</strong> I originally wrote this article on <a href="https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1#.j78hmfoxh">Medium</a>.</p>
 
 <p>If you’re like me, you’ve probably spent countless hours on the web trying to figure out how to install the dev-develop version of Laravel on your machine. As of today, the latest Laravel version 4.2 but if you want to see the awesome Laravel 5 features, you need to upgrade.</p>
 
@@ -270,10 +243,9 @@ mv composer.phar /usr/local/bin/composer
 
 <p>Congratulations! You just set up a new Laravel 5 project from scratch.</p>
 
-</section>
+</article>
         </div>
         <footer>
-    <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-51202219-2']);

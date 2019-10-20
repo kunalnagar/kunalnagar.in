@@ -18,46 +18,19 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <b>Résumé</b>
-                    <a href="/assets/downloads/Resume-KunalNagar.docx" title="Resume (.docx) Word format">.docx</a> |
-                    <a href="/assets/downloads/Resume-KunalNagar.pdf" title="Resume (.pdf) format">.pdf</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
 </nav>
 
-        <div class="container l-container p-blog-single">
-            <section class="section header">
-                <img src="/assets/img/foss/wp.png" class="img" />
-                <div>
-                    <h1 class="section-heading title">Speed up WordPress using Redis</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">May 31, 2018</time>
-                        <a href="http://twitter.com/share?text=Speed up WordPress using Redis&url=https://kunalnagar.in/blog/wordpress-redis-speed/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section content"><p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can be combined with other databases like MySQL to provide a mechanism to cache your queries.</p>
+        <div class="page-blog-single">
+            <h1>Speed up WordPress using Redis</h1>
+            <time>May 31, 2018</time>
+            <article><p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It can be combined with other databases like MySQL to provide a mechanism to cache your queries.</p>
 
 <h2 id="how-does-this-work">How does this work?</h2>
 
@@ -68,10 +41,9 @@
 <p>When a user requests a WordPress page for the first time, a MySQL query is performed on the server. Redis caches this query, so when another user requests the same WordPress page, the results are provided from Redis without the need to query the database again.</p>
 
 <p><strong>For the full post , check out the</strong> <a href="https://scalegrid.io/blog/using-redis-object-cache-to-speed-up-your-wordpress-installation/">ScaleGrid blog</a>.</p>
-</section>
+</article>
         </div>
         <footer>
-    <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-51202219-2']);

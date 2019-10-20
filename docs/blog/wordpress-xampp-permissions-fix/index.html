@@ -18,46 +18,19 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <b>Résumé</b>
-                    <a href="/assets/downloads/Resume-KunalNagar.docx" title="Resume (.docx) Word format">.docx</a> |
-                    <a href="/assets/downloads/Resume-KunalNagar.pdf" title="Resume (.pdf) format">.pdf</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
 </nav>
 
-        <div class="container l-container p-blog-single">
-            <section class="section header">
-                <img src="/assets/img/foss/wp.png" class="img" />
-                <div>
-                    <h1 class="section-heading title">Permissions fix for WordPress development on XAMPP (Mac)</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">March 11, 2019</time>
-                        <a href="http://twitter.com/share?text=Permissions fix for WordPress development on XAMPP (Mac)&url=https://kunalnagar.in/blog/wordpress-xampp-permissions-fix/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section content"><p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
+        <div class="page-blog-single">
+            <h1>Permissions fix for WordPress development on XAMPP (Mac)</h1>
+            <time>March 11, 2019</time>
+            <article><p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
 
 <h2 id="identifying-the-issue">Identifying the issue</h2>
 
@@ -86,10 +59,9 @@ Group: xampp
 <hr />
 
 <p><strong>Side note:</strong> I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. <a href="https://wordpress.org/plugins/custom-404-pro/">Check it out!</a></p>
-</section>
+</article>
         </div>
         <footer>
-    <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-51202219-2']);
