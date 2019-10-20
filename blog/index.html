@@ -2,20 +2,15 @@
 layout: default
 title: Blog
 ---
-<div class="container l-container p-blog">
-    <section class="section projects">
-        <ul>
+
+<div class="page-blog">
+    <p>I write about my life experiences, personal or professional.</p>
+    <ul>
         {% for post in site.posts %}
-            <li>
-                <a href="{{ post.url }}">
-                    <p class="img"><img src="{{ post.img }}" /></p>
-                    <div class="details">
-                        <p class="title">{{ post.title }}</p>
-                        <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-                    </div>
-                </a>
-            </li>
+        <li>
+            <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+            <a class="link" href="{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endfor %}
-        </ul>
-    </section>
+    </ul>
 </div>

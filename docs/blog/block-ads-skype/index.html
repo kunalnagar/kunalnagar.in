@@ -18,46 +18,19 @@
 </head>
 <body>
     <main>
-        <nav class="navbar">
-    <div class="container l-container navbar-container">
-        <section class="brand">
-            <a href="/" class="link" title="Home">
-                <img src="/assets/img/logo.png" class="img" alt="Kunal Nagar - Logo" />
-                <span>Kunal Nagar</span>
-            </a>
-        </section>
-        <section class="links">
-            <ul>
-                <li>
-                    <b>Résumé</b>
-                    <a href="/assets/downloads/Resume-KunalNagar.docx" title="Resume (.docx) Word format">.docx</a> |
-                    <a href="/assets/downloads/Resume-KunalNagar.pdf" title="Resume (.pdf) format">.pdf</a>
-                </li>
-                <li>
-                    <a href="/foss" title="View open source work">Open Source</a>
-                </li>
-                <li>
-                    <a href="/blog" title="Read blog">Blog</a>
-                </li>
-            </ul>
-        </section>
-    </div>
+        <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+        <li><a href="/foss">Open Source</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
 </nav>
 
-        <div class="container l-container p-blog-single">
-            <section class="section header">
-                <img src="/assets/img/foss/adstomp.png" class="img" />
-                <div>
-                    <h1 class="section-heading title">Block Ads in Skype</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">October 13, 2018</time>
-                        <a href="http://twitter.com/share?text=Block Ads in Skype&url=https://kunalnagar.in/blog/block-ads-skype/&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section content"><p>I hate ads. So much so that I’ve created a <a href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en">Chrome Extension</a> to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</p>
+        <div class="page-blog-single">
+            <h1>Block Ads in Skype</h1>
+            <time>October 13, 2018</time>
+            <article><p>I hate ads. So much so that I’ve created a <a href="https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en">Chrome Extension</a> to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</p>
 
 <p><b>Side note:</b> If you’re a privacy nut, you might want to check out my <a href="/assets/downloads/siteblock.txt">hosts</a> file. It will block crypto-miners, google ads, youtube ads and much more. As always, <a href="mailto:knlnagar@gmail.com">feedback</a> is appreciated.</p>
 
@@ -108,10 +81,9 @@
 </code></pre></div></div>
 
 <p>Reboot your system and your Skype ads should be gone. Didn’t work? Wrong hosts file entry? <a href="mailto:knlnagar@gmail.com">Tell me</a> about it.</p>
-</section>
+</article>
         </div>
         <footer>
-    <script src="/assets/js/main.js" async defer></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-51202219-2']);

@@ -22,13 +22,15 @@
             "img": "/assets/img/foss/electron.svg",
             "title": "encrypt0r",
             "description": "An Electron app to encrypt/decrypt your files by setting a passphrase",
-            "link": "/blog/encryptor-encrypt-decrypt-files-passphrase/"
+            "link": "/blog/encryptor-encrypt-decrypt-files-passphrase/",
+            "popular": true
         },
         {
             "img": "/assets/img/foss/wp.png",
             "title": "Custom 404 Pro",
-            "description": "A WordPress plugin (with over 80,000+ installs) that allows you to replace the default 404 page with a custom page.",
-            "link": "/blog/custom-404-pro/"
+            "description": "A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page.",
+            "link": "/blog/custom-404-pro/",
+            "popular": true
         },
         {
             "img": "/assets/img/foss/vue.png",

@@ -1,15 +1,17 @@
 .highlighter-rouge {
     max-width: 100%;
     overflow-x: auto;
+    font-size: 14px;
 
     pre {
         background-color: #eaeaea63;
-        padding: 1em 1.5em;
+        padding: 5px 10px;
         overflow: auto;
     }
 }
 
 code.highlighter-rouge {
+    font-size: 14px;
     padding: 2px 5px;
     margin: 0.2em;
     color: #c7254e;

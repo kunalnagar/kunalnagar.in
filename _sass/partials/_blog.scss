@@ -1,0 +1,30 @@
+.page-blog {
+
+    ul {
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .date {
+                color: gray;
+                margin: 0;
+                flex: 1;
+            }
+
+            .link {
+                flex: 2;
+                // text-align: right;
+            }
+        }
+    }
+
+    &-single {
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

@@ -2,36 +2,39 @@
 layout: default
 title: Open Source
 ---
-<div class="container l-container p-foss">
-    <section class="section projects">
-        <p>
-            I build stuff and I try to make it available to as many people as possible. <i>For free.</i>
-        </p>
-        <ul>
-            {% for project in site.data.foss.projects %}
-                <li>
-                    <p class="img"><img src="{{ project.img }}" /></p>
-                    <p class="title">{{ project.title }}</p>
-                    <p class="description">{{ project.description }}</p>
-                    <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="button">View</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
-    <section class="section tinkers">
-        <h2 class="section-heading">Demos & Experiments</h2>
-        <p>
-            I tinker around. When I see stuff on the internet that's challenging, I try to re-create it. This contains demos and experimental browser API stuff. Take a look!
-        </p>
-        <ul>
-            {% for tinker in site.data.foss.tinkers %}
-                <li>
-                    <p class="img"><img src="{{ tinker.img }}" /></p>
-                    <p class="title">{{ tinker.title }}</p>
-                    <p class="description">{{ tinker.description }}</p>
-                    <a href="{{ tinker.link }}" target="_blank" rel="noopener noreferrer" class="button button-outline">View</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
+
+<div class="page-foss">
+    <p>I build stuff and I try to make it available to as many people as possible, for free.</p>
+    <h2>Popular</h2>
+    <ul>
+        {% for project in site.data.foss.projects %}
+        {% if project.popular %}
+        <li>
+            <a class="link" href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+            <p class="description">{{ project.description }}</p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <h2>Other</h2>
+    <ul>
+        {% for project in site.data.foss.projects %}
+        {% unless project.popular %}
+        <li>
+            <a class="link" href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+            <p class="description">{{ project.description }}</p>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+    <h2>Experiments</h2>
+    <p>I tinker around. When I see stuff on the internet that's challenging, I try to re-create it.</p>
+    <ul>
+        {% for tinker in site.data.foss.tinkers %}
+        <li>
+            <a class="link" href="{{ tinker.link }}" target="_blank" rel="noopener noreferrer">{{ tinker.title }}</a>
+            <p class="description">{{ tinker.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
 </div>

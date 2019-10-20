@@ -19,20 +19,10 @@
 <body>
     <main>
         {% include header.html %}
-        <div class="container l-container p-blog-single">
-            <section class="section header">
-                <img src="{{ page.img }}" class="img" />
-                <div>
-                    <h1 class="section-heading title">{{ page.title }}</h1>
-                    <div class="l-flex l-items-center">
-                        <time class="date">{{ page.date | date: "%B %d, %Y" }}</time>
-                        <a href="http://twitter.com/share?text={{ page.title }}&url=https://kunalnagar.in{{ page.url }}&via=_kunalnagar" class="btn-share" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                            Share
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="section content">{{ content }}</section>
+        <div class="page-blog-single">
+            <h1>{{ page.title }}</h1>
+            <time>{{ page.date | date: "%B %d, %Y" }}</time>
+            <article>{{ content }}</article>
         </div>
         {% include footer.html %}
     </main>

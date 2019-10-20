@@ -1,60 +1,14 @@
-.navbar {
+nav {
+    border-bottom: 1px solid gray;
 
-    .navbar-container {
-        height: 3rem;
+    ul {
+        padding: 0;
+        list-style-type: none;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        margin-top: 1em;
-        padding-bottom: 0;
 
-        .brand {
-
-            a {
-                display: flex;
-                align-items: center;
-                color: black;
-                font-weight: bold;
-                text-decoration: none;
-
-                img {
-                    width: 35px;
-                    height: 35px;
-                    margin-right: 1rem;
-                }
-
-                span {
-                    font-size: 1.3rem;
-
-                    @media screen and (max-width: 567px) {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        .links {
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    display: inline-block;
-                    margin-left: 1rem;
-
-                    &:first-child {
-                        margin-left: 0;
-                    }
-
-                    a {
-                        font-weight: bold;
-                        text-decoration: none;
-                    }
-                }
-            }
-
+        li {
+            
         }
     }
 }
