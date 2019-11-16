@@ -4,6 +4,8 @@ node_js: '10'
 
 # Script that is run before the script phase
 before_script:
+  - npm install
+  - bundle install
   - npm run build
 
 # Deployment information
