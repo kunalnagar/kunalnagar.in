@@ -5,7 +5,7 @@ title: Frontend Developer
 
 Hi! My name is Kunal Nagar.
 
-I currently work as a Frontend Developer on the Consumer Team at [HomeX][homex] in their Toronto office where we allow users to seamlessly schedule home service appointments.
+Currently, I work as a Frontend Developer at [HomeX][homex] in their Toronto office where we allow users to seamlessly schedule home service appointments.
 
 Most recently, I was at [ScaleGrid][scalegrid], enabling users to manage their database clusters by creating dashboards and monitoring solutions.
 
