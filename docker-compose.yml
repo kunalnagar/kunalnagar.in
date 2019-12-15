@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+
+  app:
+    container_name: docker_kunalnagar.in
+    build: .
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    ports:
+      - 4000:4000
+    restart: always
+    command: >
+      sh -c "bundle install &&
+            npm install &&
+            npm run dev"
