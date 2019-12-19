@@ -22,7 +22,7 @@ Here are a few requirements to follow along:
 
 Let's start off with the fact that you have the code for a Jekyll site on your computer. It could be yours or anyone else's for that matter.
 
-{% include components/lightbox-img.html src="https://i.imgur.com/oiKnu70.png" %}
+{% include components/lightbox-img.html src="https://i.imgur.com/oiKnu70.png" alt="Screenshot showing cloned repository in VSCode" %}
 
 With Docker, we can setup a development environment to run this Jekyll site so we don't have to install unnecessary dependencies on our computer.
 

@@ -9,7 +9,7 @@
             margin-bottom: 10px;
 
             .date {
-                color: gray;
+                color: $text-color-muted;
                 margin: 0;
                 flex: 1;
             }
@@ -42,7 +42,8 @@
     &-single {
 
         time {
-            color: gray;
+            color: $text-color-muted;
+            font-weight: 600;
         }
 
         img {
