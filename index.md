@@ -5,7 +5,7 @@ title: Frontend Developer
 
 Hi. I'm Kunal.
 
-I work as a Frontend Developer at [HomeX][homex] in their Toronto 🇨🇦office where we allow users to seamlessly schedule home service appointments.
+I work as a Frontend Developer at [HomeX][homex] in their Toronto 🇨🇦 office where we allow users to seamlessly schedule home service appointments.
 
 Most recently, I worked at [ScaleGrid][scalegrid], enabling users to manage their database clusters by creating dashboards and monitoring solutions.
 

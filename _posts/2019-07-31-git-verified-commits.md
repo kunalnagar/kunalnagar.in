@@ -9,7 +9,7 @@ permalink: /blog/git-verified-commits/
 
 Verified or Signed commits act as a source of trust in open-source development. It's a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here's an example of how it looks on GitHub:
 
-{% include components/lightbox-img.html src="https://i.imgur.com/2ohqgII.png" %}
+{% include components/lightbox-img.html src="https://i.imgur.com/2ohqgII.png" alt="Screenshot showing a verified badge next to commits on GitHub" %}
 
 ## Add a GPG key to your account
 
@@ -19,7 +19,7 @@ For the sake of this article, we will be dealing with verified commits on GitHub
 
 GitHub uses [OpenPGP](https://www.openpgp.org/) libraries to confirm that your locally signed commits and tags are cryptographically verifiable against a public key that you have added to your GitHub account.
 
-{% include components/lightbox-img.html src="https://i.imgur.com/FvSL0aC.png" %}
+{% include components/lightbox-img.html src="https://i.imgur.com/FvSL0aC.png" alt="Screenshot showing GPG keys section in GitHub settings" %}
 
 ## Tell Git to use your GPG key
 
