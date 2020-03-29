@@ -1,6 +1,4 @@
-_site/
-node_modules/
-docs/
-.sass-cache
-.jekyll-metadata
+.next
+node_modules
+docs
 .DS_Store

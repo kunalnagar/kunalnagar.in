@@ -1,17 +1,62 @@
 {
-    "name": "kunalnagar.in",
-    "version": "4.0.1",
-    "description": "Personal website for Kunal Nagar",
-    "homepage": "https://kunalnagar.in",
-    "dependencies": {},
-    "devDependencies": {},
-    "scripts": {
-        "dev": "bundle exec jekyll serve -l --host 0.0.0.0",
-        "build": "bundle exec jekyll build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:kunalnagar/kunalnagar.github.io.git"
-    },
-    "author": "Kunal Nagar <knlnagar@gmail.com>"
+  "name": "kunalnagar.in",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "build:preview": "npm run build && next start",
+    "lint": "eslint --fix src/ --ext .ts,.tsx --max-warnings 0",
+    "start": "next",
+    "storybook": "start-storybook"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "package.json": [
+      "sort-package-json"
+    ],
+    "src/**/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix src/ --ext .ts,.tsx --max-warnings 0"
+    ]
+  },
+  "dependencies": {
+    "next": "^9.3.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@storybook/react": "^5.3.17",
+    "@types/node": "^13.9.3",
+    "@types/react": "^16.9.25",
+    "@types/styled-components": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^6.8.0",
+    "eslint-config-kunalnagar": "0.0.5",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.2",
+    "sort-package-json": "^1.40.0",
+    "typescript": "^3.8.3"
+  }
 }
