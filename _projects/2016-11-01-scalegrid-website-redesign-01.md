@@ -1,7 +1,7 @@
 ---
 layout: project
-title:  "ScaleGrid Website Redesign - Part 01"
-date:   2016-11-01
+title: 'ScaleGrid Website Redesign - Part 01'
+date: 2016-11-01
 cover: /assets/projects/2016-11-01-scalegrid-website-redesign-01/redesign.png
 excerpt: "The first ScaleGrid website redesign since I joined. Fast loading, performance, responsive - the usual stuff. But it wasn't enough."
 tags: [ScaleGrid]

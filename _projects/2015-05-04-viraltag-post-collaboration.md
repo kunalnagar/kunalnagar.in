@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag Post Collaboration"
-date:   2015-05-04
+title: 'Viraltag Post Collaboration'
+date: 2015-05-04
 cover: /assets/projects/2015-05-04-viraltag-post-collaboration/cover.png
-excerpt: "Viraltag Post Collaboration"
+excerpt: 'Viraltag Post Collaboration'
 ---
 
 ![Viraltag Post Collaboration](/assets/projects/2015-05-04-viraltag-post-collaboration/cover.png)

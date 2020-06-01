@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Browse YouTube like a boss"
-date:   2015-10-18
-description: "Enjoy a great YouTube Experience using the YouTube Jukebox Chrome Extension."
-img: "/assets/img/foss/chrome.png"
+title: 'Browse YouTube like a boss'
+date: 2015-10-18
+description: 'Enjoy a great YouTube Experience using the YouTube Jukebox Chrome Extension.'
+img: '/assets/img/foss/chrome.png'
 permalink: /blog/chrome-extension-youtube-jukebox/
 ---
 
@@ -13,8 +13,8 @@ YouTube is great. I use it all the time to learn, relax, listen to music and pro
 
 It adds two things to youtube.com:
 
-* An "Add to Jukebox" button next to every video
-* A Sidebar for consuming videos and making a list
+- An "Add to Jukebox" button next to every video
+- A Sidebar for consuming videos and making a list
 
 As soon as you activate the extension, you’ll see an “Add to Jukebox” button next to every video on YouTube.
 

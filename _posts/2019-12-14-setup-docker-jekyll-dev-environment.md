@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Setup a Jekyll development environment with Docker"
+title: 'Setup a Jekyll development environment with Docker'
 date: 2019-12-14
-description: "Learn how to setup a Jekyll development environment using Docker"
+description: 'Learn how to setup a Jekyll development environment using Docker'
 permalink: /blog/setup-docker-jekyll-dev-environment/
 ---
 
@@ -16,7 +16,7 @@ Here are a few requirements to follow along:
 
 - [Jekyll site](https://github.com/kunalnagar/kunalnagar.in)
 - [Install Docker](https://docs.docker.com/v17.09/engine/installation/) on your development machine
-- [Bash/ZSH Terminal](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+- [Bash/ZSH Terminal](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>)
 
 ### Step 1
 

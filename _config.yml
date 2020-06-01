@@ -13,35 +13,35 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Kunal Nagar"
-email: "knlnagar@gmail.com"
-description: "Hi. I'm Kunal. I make the web fast by using JavaScript responsibly."
-baseurl: ""
-url: "https://kunalnagar.in"
+title: Kunal Nagar | Frontend Developer
+email: knlnagar@gmail.com
+description: Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.
+baseurl: ''
+url: 'https://kunalnagar.in'
 
 # Variables
-twitter_username: "_kunalnagar"
-github_username:  "kunalnagar"
-google_analytics_key: "UA-51202219-2"
-
-permalink: pretty
-destination: ./docs
+twitter_username: _kunalnagar
+github_username: kunalnagar
+google_analytics_key: UA-51202219-2
 
 # Ignore the projects data type until it's all sorted out
 collections:
-    projects:
-        output: false
+  projects:
+    output: false
 
 # Build settings
 markdown: kramdown
-
+permalink: pretty
+destination: ./release
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
 sass:
-    style: compressed
-
+  load_paths:
+    - _sass
+    - node_modules
+  style: compressed
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

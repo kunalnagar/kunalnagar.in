@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Git Verified Commits"
+title: 'Git Verified Commits'
 date: 2019-07-31
-description: "Learn how to sign commits using your GPG key"
-img: "/assets/img/foss/check.png"
+description: 'Learn how to sign commits using your GPG key'
+img: '/assets/img/foss/check.png'
 permalink: /blog/git-verified-commits/
 ---
 
@@ -23,7 +23,7 @@ GitHub uses [OpenPGP](https://www.openpgp.org/) libraries to confirm that your l
 
 ## Tell Git to use your GPG key
 
-After adding the public GPG key to your GitHub account, you need to tell ```git``` on your machine to use that key to sign commits. But first, let's get a list of keys on your account using:
+After adding the public GPG key to your GitHub account, you need to tell `git` on your machine to use that key to sign commits. But first, let's get a list of keys on your account using:
 
 ```
 $ gpg --list-secret-keys --keyid-format LONG
@@ -36,7 +36,7 @@ uid                 [ unknown] Kunal Nagar <knlnagar@gmail.com>
 ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 ```
 
-In the above example, my public key is ```ABD83AC02AAC0953``` and we'll use that:
+In the above example, my public key is `ABD83AC02AAC0953` and we'll use that:
 
 ```
 $ git config --global user.signingkey ABD83AC02AAC0953
@@ -44,7 +44,7 @@ $ git config --global user.signingkey ABD83AC02AAC0953
 
 ## Signing your commit
 
-When you're ready to commit your work, just add the ```-S``` flag to your commit command:
+When you're ready to commit your work, just add the `-S` flag to your commit command:
 
 ```
 $ git commit -m -S "Testing signed commits"
@@ -55,4 +55,5 @@ If your key has a passphrase, you'll be asked to enter it now.
 That's it! Push your commit and you can see the verified commit on your git hosting provider.
 
 ## References
-* [Managing Commit Signature Verification (GitHub Knowledge Base)](https://help.github.com/en/articles/managing-commit-signature-verification)
+
+- [Managing Commit Signature Verification (GitHub Knowledge Base)](https://help.github.com/en/articles/managing-commit-signature-verification)

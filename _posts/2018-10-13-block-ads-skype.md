@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Block Ads in Skype"
-date:   2018-10-13
-description: "Hate Skype Ads? Learn how to remove them at the source."
-img: "/assets/img/foss/adstomp.png"
+title: 'Block Ads in Skype'
+date: 2018-10-13
+description: 'Hate Skype Ads? Learn how to remove them at the source.'
+img: '/assets/img/foss/adstomp.png'
 permalink: /blog/block-ads-skype/
 ---
 
@@ -49,7 +49,7 @@ I figured out a way to block Skype ads using a handful of host file entries. Dow
 
 The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.
 
-Based on your OS, go to: ```%appdata%/skype/YOUR_USER_NAME/config.xml``` and set all ```Advert``` related values to 0.
+Based on your OS, go to: `%appdata%/skype/YOUR_USER_NAME/config.xml` and set all `Advert` related values to 0.
 
 ```
 <AdvertEastRailsEnabled>0</AdvertEastRailsEnabled>

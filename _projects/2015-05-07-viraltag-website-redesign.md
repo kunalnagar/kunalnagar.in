@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag Website Redesign"
-date:   2015-05-06
+title: 'Viraltag Website Redesign'
+date: 2015-05-06
 cover: /assets/projects/2015-05-07-viraltag-website-redesign/cover.png
-excerpt: "Viraltag Website Redesign"
+excerpt: 'Viraltag Website Redesign'
 ---
 
 ![Viraltag Website Redesign](/assets/projects/2015-05-07-viraltag-website-redesign/cover.png)

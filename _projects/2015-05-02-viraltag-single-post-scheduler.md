@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag Single Post Scheduler"
-date:   2015-05-02
+title: 'Viraltag Single Post Scheduler'
+date: 2015-05-02
 cover: /assets/projects/2015-05-02-viraltag-single-post-scheduler/cover.png
-excerpt: "Viraltag Single Post Scheduler"
+excerpt: 'Viraltag Single Post Scheduler'
 ---
 
 ![Viraltag Single Post Scheduler](/assets/projects/2015-05-02-viraltag-single-post-scheduler/cover.png)

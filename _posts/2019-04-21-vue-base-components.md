@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "An Introduction to Vue Base Components"
+title: 'An Introduction to Vue Base Components'
 date: 2019-04-21
-description: "A collection of Vue Base Components to jumpstart your development"
-img: "/assets/img/foss/vue.png"
+description: 'A collection of Vue Base Components to jumpstart your development'
+img: '/assets/img/foss/vue.png'
 permalink: /blog/vue-base-components/
 ---
 
@@ -27,14 +27,14 @@ Let's take an example of a simple button.
 
 When developing a custom button, here's a basic checklist of things you'd like the button to do:
 
-* Base button (works out of the box)
-* Add a link and navigate on click
-* Icon Support
-* Loading states
-* Enabled/Disabled states
-* Multiple themes (for e.g. link view where the button looks like a link instead of a button)
+- Base button (works out of the box)
+- Add a link and navigate on click
+- Icon Support
+- Loading states
+- Enabled/Disabled states
+- Multiple themes (for e.g. link view where the button looks like a link instead of a button)
 
-When you use the ```<BaseButton />``` component out of the box, it will look something like:
+When you use the `<BaseButton />` component out of the box, it will look something like:
 
 {% include components/lightbox-img.html src="https://i.imgur.com/F2p7Kl9.png" %}
 
@@ -70,12 +70,12 @@ There are a number of advantages to using Base Components - the most important b
 
 **Secondly**, if you make any updates to your primary button, you would only need to update the Base Button file and all the changes would be propagated to multiple instances throughout your project.
 
-**Note:** It's important to make sure that the API remains consistent. For example, if the ```prop``` for providing a link in a Base Button is changed from ```href``` to ```link```, the functionality of the button breaks and the Button is useless.
+**Note:** It's important to make sure that the API remains consistent. For example, if the `prop` for providing a link in a Base Button is changed from `href` to `link`, the functionality of the button breaks and the Button is useless.
 
-**Thirdly**, Base Components contain event hooks. For example, if you want custom code to be run when your ```<BaseInput />``` is focused, you can hook into the ```base:input:focus``` event.
+**Thirdly**, Base Components contain event hooks. For example, if you want custom code to be run when your `<BaseInput />` is focused, you can hook into the `base:input:focus` event.
 
 ## Links
 
 This project is Open Source and under active development. Feel free to submit ideas/PRs!
 
-* [GitHub](https://github.com/kunalnagar/vue-base-components)
+- [GitHub](https://github.com/kunalnagar/vue-base-components)

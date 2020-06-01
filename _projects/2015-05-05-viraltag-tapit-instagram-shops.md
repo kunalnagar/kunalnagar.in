@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag TapIt Instagram Shops"
-date:   2015-05-05
+title: 'Viraltag TapIt Instagram Shops'
+date: 2015-05-05
 cover: /assets/projects/2015-05-05-viraltag-tapit-instagram-shops/cover.png
-excerpt: "Viraltag TapIt Instagram Shops"
+excerpt: 'Viraltag TapIt Instagram Shops'
 ---
 
 ![Viraltag TapIt Instagram Shops](/assets/projects/2015-05-05-viraltag-tapit-instagram-shops/cover.png)

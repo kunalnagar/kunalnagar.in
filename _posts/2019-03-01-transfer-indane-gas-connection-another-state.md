@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Transfer your Indane gas connection to another state"
+title: 'Transfer your Indane gas connection to another state'
 date: 2019-03-01
-description: "I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection."
-img: "/assets/img/foss/gas.png"
+description: 'I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection.'
+img: '/assets/img/foss/gas.png'
 permalink: /blog/transfer-indane-gas-connection-another-state/
 ---
 
@@ -29,8 +29,8 @@ The original documents usually contain the deposit amount for two cylinders that
 
 If you don't own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:
 
-* You need to visit the agency on the same day the cylinders are being picked up.
-* The cylinders need to reach the agency BEFORE the transfer process can be started.
+- You need to visit the agency on the same day the cylinders are being picked up.
+- The cylinders need to reach the agency BEFORE the transfer process can be started.
 
 ## Step 3: Visit current agency
 
@@ -38,7 +38,7 @@ Once the cylinders are at the agency, you can ask any of the staff to start the 
 
 During the process, you'll have to tell them the destination city and state.
 
-**Note:** Only city and state name is required. So for me, it would be *Jaipur Rajasthan*. You can register with any agency in the destination city.
+**Note:** Only city and state name is required. So for me, it would be _Jaipur Rajasthan_. You can register with any agency in the destination city.
 
 {% include components/lightbox-img.html src="https://i.imgur.com/Y3PfQC6.jpg" %}
 

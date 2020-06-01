@@ -4,7 +4,7 @@ title: YouTube to Mp3 converter
 date: 2018-02-24
 description: Building a YouTube to Mp3 converter with Node.js
 permalink: /blog/youtube-to-mp3-converter/
-img: "/assets/img/foss/youtube.png"
+img: '/assets/img/foss/youtube.png'
 tags: [Open Source, Woot, Blah]
 ---
 
@@ -17,17 +17,20 @@ Hence, I decided to create a converter for them that is ad-free and does the job
 Alright. You're interested in how to build such a thing. You can do this in any technology you want. I will be discussing the business logic first and then suggest doing it in Node.js - because that's how I did it.
 
 ## Business Logic
+
 A YouTube to Mp3 converter is quite simple, actually.
-* You use the YouTube API to send a URL and it sends you back a list of formats that the video is available in based on the quality when it was uploaded.
-* It returns a couple of standard formats like mp4, mov etc and one format called m4a.
-* We download that m4a and then use ffmpeg to convert it to mp3
-* And we're done.
+
+- You use the YouTube API to send a URL and it sends you back a list of formats that the video is available in based on the quality when it was uploaded.
+- It returns a couple of standard formats like mp4, mov etc and one format called m4a.
+- We download that m4a and then use ffmpeg to convert it to mp3
+- And we're done.
 
 ## Implementing in Node.js
+
 Unless you're really passionate about building this thing out, I would recommend using the already built Node packages out there for downloading and converting YouTube videos. There are node packages for doing this thing entirely as well. But you're here to learn, so let's convert out Business Logic to code. Here are the packages you'll need:
 
-* [node-ytdl-core](https://github.com/fent/node-ytdl-core) for getting the YouTube info for a particular URL
-* [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) to convert the received m4a file to mp3
+- [node-ytdl-core](https://github.com/fent/node-ytdl-core) for getting the YouTube info for a particular URL
+- [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) to convert the received m4a file to mp3
 
 As far as the backend, we'll be using [ExpressJS](https://expressjs.com/) hosted on [Heroku](https://heroku.com)
 

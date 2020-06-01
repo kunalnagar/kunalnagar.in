@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Customize your Bash Prompt"
+title: 'Customize your Bash Prompt'
 date: 2019-02-23
-description: "I like to keep my bash prompt clean and simple. Learn how to setup a minimal bash prompt."
-img: "/assets/img/foss/terminal.png"
+description: 'I like to keep my bash prompt clean and simple. Learn how to setup a minimal bash prompt.'
+img: '/assets/img/foss/terminal.png'
 permalink: /blog/customize-bash-prompt/
 ---
 
@@ -34,6 +34,7 @@ Couple of things:
 - Shows me the branch I'm on (if I'm in a git repo)
 
 Things I don't need here:
+
 - Machine name
 - Date
 - 10 billion colours
@@ -41,7 +42,7 @@ Things I don't need here:
 
 ## How to set it up
 
-If you're really impressed by it and just want the code, copy paste the following in your ```~/.bash_profile``` and move on with your life.
+If you're really impressed by it and just want the code, copy paste the following in your `~/.bash_profile` and move on with your life.
 
 ```
 git_prompt() {
@@ -69,7 +70,7 @@ PS1+="\n=> ";
 
 If you're like me and want to understand what this gibberish means, read on.
 
-The ```git_prompt()``` method spits out the current branch name, if it exists. Let's try to break it down.
+The `git_prompt()` method spits out the current branch name, if it exists. Let's try to break it down.
 
 ## Step 1
 
@@ -90,7 +91,7 @@ fatal: not a git repository (or any of the parent directories): .git
 
 So basically, this command is used to check if our current working directory is a git repo or not.
 
-What's the writing to ```/dev/null``` and ```2>&1``` mean? Read more [here](https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts)
+What's the writing to `/dev/null` and `2>&1` mean? Read more [here](https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts)
 
 ## Step 2
 
@@ -108,13 +109,13 @@ updates-v3
 => git symbolic-ref --quiet --short HEAD 2> /dev/null
 ```
 
-The ```git symbolic-ref``` allows us to read, modify and delete [symbolic refs](https://stackoverflow.com/a/1526526)
+The `git symbolic-ref` allows us to read, modify and delete [symbolic refs](https://stackoverflow.com/a/1526526)
 
-For more information on the flags, check out [```--quiet```](https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet) and [```--short```](https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short)
+For more information on the flags, check out [`--quiet`](https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet) and [`--short`](https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short)
 
 As you can see from the above example, when the above command is run, it spits out the branch name.
 
-The ```git rev-parse``` is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info
+The `git rev-parse` is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info
 
 ```
 [kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
@@ -124,17 +125,17 @@ updates-v3
 
 ## Step 3
 
-Cool, now we have the branch name. Now we just need to set the bash variable ```PS``` to show our minimal prompt
+Cool, now we have the branch name. Now we just need to set the bash variable `PS` to show our minimal prompt
 
 ```
 PS1="\n[\u] at \w";
 ```
 
-```\n```: New line
+`\n`: New line
 
-```\u```: Current user (name)
+`\u`: Current user (name)
 
-```\w```: Path relative to home (notice the tilda in the path names in the screenshots)
+`\w`: Path relative to home (notice the tilda in the path names in the screenshots)
 
 ```
 PS1+=" \$(git_prompt)";

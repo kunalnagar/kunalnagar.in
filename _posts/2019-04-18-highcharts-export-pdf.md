@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Export multiple Highcharts graphs as PDF"
+title: 'Export multiple Highcharts graphs as PDF'
 date: 2019-04-18
-description: "Learn how to export multiple Highcharts graphs to a PDF"
-img: "/assets/img/foss/highcharts.png"
+description: 'Learn how to export multiple Highcharts graphs to a PDF'
+img: '/assets/img/foss/highcharts.png'
 permalink: /blog/highcharts-export-pdf/
 ---
 
@@ -23,10 +23,10 @@ While it works pretty well out of the box, the problem is that you can only down
 
 You'll need the following libraries:
 
-* Highcharts - Core
-* Highcharts - Exporting Plugin
-* Highcharts - Offline Exporting Plugin
-* jsPDF
+- Highcharts - Core
+- Highcharts - Exporting Plugin
+- Highcharts - Offline Exporting Plugin
+- jsPDF
 
 ```
 <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -48,7 +48,7 @@ exporting: {
 
 The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I've come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.
 
-In this example, we'll be using two charts - one scatter and one pie chart. Let's assume that their respective Highchart objects are ```chart1``` and ```chart2```
+In this example, we'll be using two charts - one scatter and one pie chart. Let's assume that their respective Highchart objects are `chart1` and `chart2`
 
 We will also need an instance of jsPDF:
 
@@ -56,14 +56,14 @@ We will also need an instance of jsPDF:
 var pdf = new jsPDF('p', 'mm', [1000, 1400]);
 ```
 
-If you look at the Highcharts API, it has a method called [```exportChartLocal```](https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal) that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don't really want that - instead we want the ```dataURL``` (a base64 encoded string) of the image that we can put on the PDF using [```addImage```](http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html).
+If you look at the Highcharts API, it has a method called [`exportChartLocal`](https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal) that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don't really want that - instead we want the `dataURL` (a base64 encoded string) of the image that we can put on the PDF using [`addImage`](http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html).
 
 ```
 chart1.exportChartLocal('image/svg+xml');
 chart2.exportChartLocal('image/svg+xml');
 ```
 
-To stop the download popup and get the ```dataURL```, we need to hook into the ```downloadURL``` method on the base Highcharts object that will give us the ```dataURL``` and the ```filename``` of the image.
+To stop the download popup and get the `dataURL`, we need to hook into the `downloadURL` method on the base Highcharts object that will give us the `dataURL` and the `filename` of the image.
 
 ```
 Highcharts.downloadURL = function (dataURL, filename) {
@@ -71,7 +71,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 };
 ```
 
-Yet another problem here is that there is no callback to the ```exportChartLocal``` method so we'll have to use a counter and an array to store the dataURLs in an array.
+Yet another problem here is that there is no callback to the `exportChartLocal` method so we'll have to use a counter and an array to store the dataURLs in an array.
 
 ```
 var counter = 0;

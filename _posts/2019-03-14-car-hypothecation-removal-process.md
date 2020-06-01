@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Car Hypothecation Removal Process"
+title: 'Car Hypothecation Removal Process'
 date: 2019-03-14
-description: "I recently foreclosed my car loan and had to go through the Hypothecation Removal process."
-img: "/assets/img/foss/car.png"
+description: 'I recently foreclosed my car loan and had to go through the Hypothecation Removal process.'
+img: '/assets/img/foss/car.png'
 permalink: /blog/car-hypothecation-removal-process/
 ---
 
@@ -25,10 +25,10 @@ I bought my car on a loan that was financed by HDFC. If you're going through the
 
 The one I visited was on [CMH Road](https://goo.gl/maps/dDAxnikAUG42). Here are a few tips for visiting this branch:
 
-* There is no parking, but you can park anywhere on [9th A Main Road](https://www.google.com/maps/dir/12.977557,77.637256/HDFC+Bank,+548%2FD,+Maruthi+Mansion,+Chinmaya+Mission+Hospital+Rd,+Hoysala+Nagar,+Indiranagar,+Bengaluru,+Karnataka+560038/@12.9775688,77.6371918,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae16a4846628d3:0x73c439b206b2295b!2m2!1d77.6367715!2d12.9780695!3e0).
-* The rush is INSANE every single day (usually 3-4 hours waiting, they have a token system)
-* Try to go early in the morning on weekdays - it opens up at 9am and people usually start queuing up at 8:30am
-* If you're going on a Saturday, pack a bag and some lunch, and possibly dinner as well
+- There is no parking, but you can park anywhere on [9th A Main Road](https://www.google.com/maps/dir/12.977557,77.637256/HDFC+Bank,+548%2FD,+Maruthi+Mansion,+Chinmaya+Mission+Hospital+Rd,+Hoysala+Nagar,+Indiranagar,+Bengaluru,+Karnataka+560038/@12.9775688,77.6371918,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae16a4846628d3:0x73c439b206b2295b!2m2!1d77.6367715!2d12.9780695!3e0).
+- The rush is INSANE every single day (usually 3-4 hours waiting, they have a token system)
+- Try to go early in the morning on weekdays - it opens up at 9am and people usually start queuing up at 8:30am
+- If you're going on a Saturday, pack a bag and some lunch, and possibly dinner as well
 
 {% include components/lightbox-img.html src="https://i.imgur.com/sdMdH1v.jpg" %}
 
@@ -36,16 +36,16 @@ The one I visited was on [CMH Road](https://goo.gl/maps/dDAxnikAUG42). Here are 
 
 Before you visit the branch, you need to get the following documents in order:
 
-* **Loan documents** - I just took a printout of the _Loan Welcome letter_ and the _Loan Repayment Schedule_. These were emailed to me at the time of purchasing the car. You can also get these from your HDFC Bank Dashboard.
-<br /><br />**Note:** If you don't own an HDFC Bank account (like me), you can create an account online and don't need to visit the branch. Go to the HDFC Bank Website and create an account using your _Loan Account Number_ and an _OTP_ will be sent to your mobile.
-<br /><br />Once your account has been created, all your loan documents will be accessible from the Dashboard.
+- **Loan documents** - I just took a printout of the _Loan Welcome letter_ and the _Loan Repayment Schedule_. These were emailed to me at the time of purchasing the car. You can also get these from your HDFC Bank Dashboard.
+  <br /><br />**Note:** If you don't own an HDFC Bank account (like me), you can create an account online and don't need to visit the branch. Go to the HDFC Bank Website and create an account using your _Loan Account Number_ and an _OTP_ will be sent to your mobile.
+  <br /><br />Once your account has been created, all your loan documents will be accessible from the Dashboard.
 
-* **ID proof** - I carried my Aadhar Card Original + 2 copies
-* **PAN card** - Original + 2 copies
-* **Cheque book** - I used a cheque to foreclose my loan. Again, if you already have an account with the HDFC Bank, you probably won't need this.
-* **Car Insurance** - for safety
-* _**A fucking pen**_ - the people there yell and look at you weird if you don't have a pen. Always carry a god damn pen. Blue.
-* I don't remember if I carried photos or not, but just keep 2 passport size photos handy in case the person on the other side of the counter flips their lid
+- **ID proof** - I carried my Aadhar Card Original + 2 copies
+- **PAN card** - Original + 2 copies
+- **Cheque book** - I used a cheque to foreclose my loan. Again, if you already have an account with the HDFC Bank, you probably won't need this.
+- **Car Insurance** - for safety
+- _**A fucking pen**_ - the people there yell and look at you weird if you don't have a pen. Always carry a god damn pen. Blue.
+- I don't remember if I carried photos or not, but just keep 2 passport size photos handy in case the person on the other side of the counter flips their lid
 
 ### Visiting the branch
 
@@ -64,22 +64,22 @@ Anyway, once everything looks okay, they'll give you an acknowledgement that loo
 
 Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:
 
-* Loan Foreclosure Letter
+- Loan Foreclosure Letter
 
 {% include components/lightbox-img.html src="https://i.imgur.com/3IH5TK3.png" %}
 
-* Form 35 - 2 copies
+- Form 35 - 2 copies
 
 {% include components/lightbox-img.html src="https://i.imgur.com/5NURJ7q.png" %}
 
-* HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)
+- HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)
 
 {% include components/lightbox-img.html src="https://i.imgur.com/c6kJSQ1.png" %}
 
 **Note:** My address had a typo and I didn't realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:
 
-* Visit a regular branch with an Address Proof and get your address changed
-* Visit the loan department branch and collect the documents in person (I did this)
+- Visit a regular branch with an Address Proof and get your address changed
+- Visit the loan department branch and collect the documents in person (I did this)
 
 <u><b>Please note that the validitiy of the NOC is 3 months from the date of issue. If you want another NOC, the cost is Rs. 500/-</b></u>
 
@@ -95,11 +95,11 @@ My car was registered at the [Koramangala RTO (KA01)](https://goo.gl/maps/SiCcHX
 
 Please follow these steps:
 
-* Visit [this page](https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml) and enter your vehicle number
-* Select the option for Hypothecation Removal
-* Enter the required details about your car (Chassis number etc), your mobile number and an OTP will be sent for you to validate
-* Once everything looks good, you will be presented with a form to fill out. You'll also need your insurance details.
-* Fill out the form, make the payment (Rs. 200/-) and you'll get an application receipt that looks like the following:
+- Visit [this page](https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml) and enter your vehicle number
+- Select the option for Hypothecation Removal
+- Enter the required details about your car (Chassis number etc), your mobile number and an OTP will be sent for you to validate
+- Once everything looks good, you will be presented with a form to fill out. You'll also need your insurance details.
+- Fill out the form, make the payment (Rs. 200/-) and you'll get an application receipt that looks like the following:
 
 {% include components/lightbox-img.html src="https://i.imgur.com/5svcpQq.png" %}
 
@@ -109,13 +109,13 @@ You'll also get a confirmation on your mobile with the application number. Keep 
 
 Here are the documents required before you visit the RTO:
 
-* Application Receipt from the Vahan Portal
-* Loan Foreclosure Letter (usually not required, but safe to carry)
-* Bank NOC and Form 35
-* Original RC
-* Valid Insurance Copy (1 nos.)
-* Valid PUC (Pollution Check) Copy (1 nos.)
-* PAN Card Copy (1 nos., usually not required but safe to carry)
+- Application Receipt from the Vahan Portal
+- Loan Foreclosure Letter (usually not required, but safe to carry)
+- Bank NOC and Form 35
+- Original RC
+- Valid Insurance Copy (1 nos.)
+- Valid PUC (Pollution Check) Copy (1 nos.)
+- PAN Card Copy (1 nos., usually not required but safe to carry)
 
 It's a good idea to always carry some sort of ID proof every time, so I also carried my Aadhar Card.
 
@@ -127,19 +127,19 @@ This is by far the most confusing part of the process. So follow it line by line
 
 Before going to the RTO, you need to do a few things. Find a stationery shop around the RTO and get the following things:
 
-* A file with a hole on the top left
+- A file with a hole on the top left
 
 {% include components/lightbox-img.html src="https://i.imgur.com/kv2suwl.png" %}
 
-* Thread
+- Thread
 
 {% include components/lightbox-img.html src="https://i.imgur.com/0saesew.jpg" %}
 
-* Plastic cover
+- Plastic cover
 
 {% include components/lightbox-img.html src="https://i.imgur.com/pY2m4f0.jpg" %}
 
-* Postal Cover with Rs. 18/- worth of stamps already pasted on it
+- Postal Cover with Rs. 18/- worth of stamps already pasted on it
 
 {% include components/lightbox-img.html src="https://i.imgur.com/QW8xvFv.jpg" %}
 
@@ -151,25 +151,25 @@ You will use the items your purchased from the stationery shop to prepare the fi
 
 {% include components/lightbox-img.html src="https://i.imgur.com/3n8DpE0.png" %}
 
-* First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put **Central Bangalore**, you may need to ask the concerned person in the RTO what to put there.
+- First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put **Central Bangalore**, you may need to ask the concerned person in the RTO what to put there.
 
 {% include components/lightbox-img.html src="https://i.imgur.com/5U2hSdi.jpg" %}
 
-* Put your original RC in the plastic cover
+- Put your original RC in the plastic cover
 
-* Write your name, address, mobile number and car registration number on the postal cover
+- Write your name, address, mobile number and car registration number on the postal cover
 
 {% include components/lightbox-img.html src="https://i.imgur.com/AtHFbRh.png" %}
 
 Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):
 
-* Application Receipt
-* NOC
-* Form 35
-* Insurance
-* PUC
-* RC Card Packet
-* Postal Cover
+- Application Receipt
+- NOC
+- Form 35
+- Insurance
+- PUC
+- RC Card Packet
+- Postal Cover
 
 ...and tie them all together in the file using the thread. To pierce through them use the sharp end of the thread you bought.
 

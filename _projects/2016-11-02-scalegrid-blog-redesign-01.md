@@ -1,7 +1,7 @@
 ---
 layout: project
-title:  "ScaleGrid Blog Redesign - Part 01"
-date:   2016-11-02
+title: 'ScaleGrid Blog Redesign - Part 01'
+date: 2016-11-02
 cover: /assets/projects/2016-11-02-scalegrid-blog-redesign-01/redesign.png
 excerpt: "The first ScaleGrid blog redesign since I joined. Fast loading, performance, responsive - the usual stuff. But it wasn't enough. Part 02 soon."
 tags: [ScaleGrid]

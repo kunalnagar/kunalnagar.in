@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ionic Push Notifications"
-date:   2015-04-21
-description: "Learn how to set up Push Notifications in Ionic"
-img: "/assets/img/foss/notification.png"
+title: 'Ionic Push Notifications'
+date: 2015-04-21
+description: 'Learn how to set up Push Notifications in Ionic'
+img: '/assets/img/foss/notification.png'
 permalink: /blog/ionic-push-notifications/
 ---
 

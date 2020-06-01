@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag iOS Mobile App"
-date:   2015-05-01
+title: 'Viraltag iOS Mobile App'
+date: 2015-05-01
 cover: /assets/projects/2015-05-01-viraltag-ios-mobile-app/cover.png
-excerpt: "Viraltag iOS Mobile App"
+excerpt: 'Viraltag iOS Mobile App'
 tags: [Viraltag]
 ---
 

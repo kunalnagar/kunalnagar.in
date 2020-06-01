@@ -6,20 +6,20 @@ sitemap: false
 ---
 
 <div class="page page-projects">
-    <section class="section">
-        <div class="container">
-            <div class="section--header">
-                <h1 class="section--header--heading">I work, occasionally.</h1>
-            </div>
-            <div class="section--body">
-                <ul>
-                {% for project in site.projects %}
-                    <li>
-                        <a href="{{ project.url }}">{{ project.title }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </section>
+  <section class="section">
+    <div class="container">
+      <div class="section--header">
+        <h1 class="section--header--heading">I work, occasionally.</h1>
+      </div>
+      <div class="section--body">
+        <ul>
+          {% for project in site.projects %}
+          <li>
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
 </div>

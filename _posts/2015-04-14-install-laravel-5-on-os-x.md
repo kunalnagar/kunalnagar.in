@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Install Laravel 5 on OS X"
-date:   2015-04-14
-description: "Learn how to install Laravel 5 on OS X using the dev-develop branch."
-img: "/assets/img/foss/php.png"
+title: 'Install Laravel 5 on OS X'
+date: 2015-04-14
+description: 'Learn how to install Laravel 5 on OS X using the dev-develop branch.'
+img: '/assets/img/foss/php.png'
 permalink: /blog/install-laravel-5-on-os-x/
 ---
 
@@ -17,8 +17,8 @@ In this article, you will learn how to setup Laravel 5 from scratch on OS X.
 
 Here are some things you must have:
 
-* A Terminal
-* XAMPP / MAMP (I will show you how to set it up using both of them)
+- A Terminal
+- XAMPP / MAMP (I will show you how to set it up using both of them)
 
 ## Step 1: Installing Composer
 
@@ -145,8 +145,8 @@ It uses Vagrant which allows you to create lightweight, reproducible, and portab
 
 Before installing Laravel Homestead, you need to install 2 things:
 
-* Vagrant [(Download)][vagrant-download]
-* Oracle VirtualBox [(Download)][oracle-vbox-download]
+- Vagrant [(Download)][vagrant-download]
+- Oracle VirtualBox [(Download)][oracle-vbox-download]
 
 Once you have installed Vagrant on your machine, it is time to install Homestead.
 

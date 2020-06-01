@@ -4,13 +4,13 @@ title: Blog
 ---
 
 <div class="page-blog">
-    <p>I write about my life experiences, personal or professional.</p>
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-            <a class="link" href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+  <p>I write about my life experiences, personal or professional.</p>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+      <a class="link" href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </div>

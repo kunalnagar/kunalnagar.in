@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Rewrite WordPress Multisites"
-date:   2016-09-17
-description: "Learn how to rewrite WordPress Multisites to any folder on your server."
-img: "/assets/img/foss/wp.png"
+title: 'Rewrite WordPress Multisites'
+date: 2016-09-17
+description: 'Learn how to rewrite WordPress Multisites to any folder on your server.'
+img: '/assets/img/foss/wp.png'
 permalink: /blog/rewrite-wordpress-multisites/
 ---
 
@@ -86,4 +86,3 @@ define('SITECOOKIEPATH', '');
 
 [wordpress-multisite]: https://codex.wordpress.org/Create_A_Network
 [rewrite-redirect]: http://weblogs.asp.net/owscott/rewrite-vs-redirect-what-s-the-difference
-

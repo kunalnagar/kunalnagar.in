@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag Chrome Extension"
-date:   2015-05-08
+title: 'Viraltag Chrome Extension'
+date: 2015-05-08
 cover: /assets/projects/2015-05-08-viraltag-chrome-extension/cover.png
-excerpt: "Viraltag Chrome Extension"
+excerpt: 'Viraltag Chrome Extension'
 ---
 
 ![Viraltag Chrome Extension](/assets/projects/2015-05-08-viraltag-chrome-extension/cover.png)

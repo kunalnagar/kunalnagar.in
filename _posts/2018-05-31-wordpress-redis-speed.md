@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Speed up WordPress using Redis"
+title: 'Speed up WordPress using Redis'
 date: 2018-05-31
-description: "Learn how to use Redis as an Object Cache to Speed Up Your WordPress Installation"
-img: "/assets/img/foss/wp.png"
+description: 'Learn how to use Redis as an Object Cache to Speed Up Your WordPress Installation'
+img: '/assets/img/foss/wp.png'
 permalink: /blog/wordpress-redis-speed/
 ---
 

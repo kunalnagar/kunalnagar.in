@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Permissions fix for WordPress development on XAMPP (Mac)"
+title: 'Permissions fix for WordPress development on XAMPP (Mac)'
 date: 2019-03-11
-description: "Fix permissions on XAMPP for Mac for WordPress Development"
-img: "/assets/img/foss/wp.png"
+description: 'Fix permissions on XAMPP for Mac for WordPress Development'
+img: '/assets/img/foss/wp.png'
 permalink: /blog/wordpress-xampp-permissions-fix/
 ---
 
-I use XAMPP for WordPress Development on my mac. It's easy, fast and doesn't require too much setup. If you've used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the ```wp-config.php``` file is not automatically created because of permissions issues.
+I use XAMPP for WordPress Development on my mac. It's easy, fast and doesn't require too much setup. If you've used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the `wp-config.php` file is not automatically created because of permissions issues.
 
 ## Identifying the issue
 
@@ -18,19 +18,19 @@ User: daemon
 Group: xampp
 ```
 
-You can find this under ```/Applications/XAMPP/etc/httpd.conf```
+You can find this under `/Applications/XAMPP/etc/httpd.conf`
 
-This means that there must be a ```daemon``` user on your Mac that's part of the ```xampp``` group to allow writes.
+This means that there must be a `daemon` user on your Mac that's part of the `xampp` group to allow writes.
 
 ## The Fix
 
-Just change the user to your ```mac_username``` and the group to ```staff```. My Mac's username is ```kunalnagar```, and so my config looks like the following:
+Just change the user to your `mac_username` and the group to `staff`. My Mac's username is `kunalnagar`, and so my config looks like the following:
 
 {% include components/lightbox-img.html src="https://i.imgur.com/DEMPMFo.png" %}
 
-And that's it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the ```htdocs``` directory.
+And that's it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the `htdocs` directory.
 
-If you set up a new WordPress install, the ```wp-config.php``` file will be automatically written for you.
+If you set up a new WordPress install, the `wp-config.php` file will be automatically written for you.
 
 ---
 

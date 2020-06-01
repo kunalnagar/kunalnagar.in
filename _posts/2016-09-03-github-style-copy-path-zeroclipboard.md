@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "GitHub Copy Path Widget using ZeroClipboard"
-date:   2016-09-03
-description: "Learn how to create a copy to Clipboard Widget like GitHub uses for their Cloning Paths using ZeroClipboard."
-img: "/assets/img/foss/copy-paste.jpg"
+title: 'GitHub Copy Path Widget using ZeroClipboard'
+date: 2016-09-03
+description: 'Learn how to create a copy to Clipboard Widget like GitHub uses for their Cloning Paths using ZeroClipboard.'
+img: '/assets/img/foss/copy-paste.jpg'
 permalink: /blog/github-style-copy-path-zeroclipboard/
 ---
 
@@ -21,9 +21,9 @@ We are going to be creating a similar widget with just the input text box and th
 
 ## Dependencies
 
-* [ZeroClipboard][zeroclipboard-github] For the actual copy task
-* [Bootstrap][bootstrap-site] For Visual Flair
-* [FontAwesome][fontawesome-site] For the Copy Icon
+- [ZeroClipboard][zeroclipboard-github] For the actual copy task
+- [Bootstrap][bootstrap-site] For Visual Flair
+- [FontAwesome][fontawesome-site] For the Copy Icon
 
 ## Step 1
 

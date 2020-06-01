@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Shared Modules using RequireJS"
-date:   2016-09-10
-description: "Learn how to create modules that can be shared across other modules using RequireJS"
-img: "/assets/img/foss/js.png"
+title: 'Shared Modules using RequireJS'
+date: 2016-09-10
+description: 'Learn how to create modules that can be shared across other modules using RequireJS'
+img: '/assets/img/foss/js.png'
 permalink: /blog/shared-modules-using-requirejs/
 ---
 
@@ -17,8 +17,8 @@ Here is the basic folder structure that we're going to follow. I'll explain this
 
 The common folder contains the individual common modules like Logger, Modal and Tabs.
 
-* <b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like [Logentries][logentries] or [Sentry][sentry]
-* <b>modal.js</b> & <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs
+- <b>logger.js</b> - may contain code to output/log code either to the Console or to a third party tool like [Logentries][logentries] or [Sentry][sentry]
+- <b>modal.js</b> & <b>tabs.js</b> - may contain code to initialise, destroy, center, show, hide modals/tabs
 
 Here is an example of <b>logger.js</b> that can be used to log messages. Note the use of the Singleton Pattern.
 

@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "ScaleGrid Dashboard Redesign"
-date:   2016-11-03
+title: 'ScaleGrid Dashboard Redesign'
+date: 2016-11-03
 cover: /assets/projects/2016-11-03-scalegrid-dashboard-redesign/redesign.png
-excerpt: "The first ScaleGrid dashboard redesign since I joined. Fast loading, performance - the usual stuff."
+excerpt: 'The first ScaleGrid dashboard redesign since I joined. Fast loading, performance - the usual stuff.'
 tags: [ScaleGrid]
 ---
 

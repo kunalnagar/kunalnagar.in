@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Setup Multiple SSH Keys on a Mac"
-date:   2015-02-13
-description: "Learn how to set up multiple SSH keys on a Mac."
-img: "/assets/img/foss/terminal.png"
+title: 'Setup Multiple SSH Keys on a Mac'
+date: 2015-02-13
+description: 'Learn how to set up multiple SSH keys on a Mac.'
+img: '/assets/img/foss/terminal.png'
 permalink: /blog/setup-multiple-ssh-keys-mac/
 ---
 
@@ -16,6 +16,7 @@ Learn how to setup multiple SSH keys on your mac. This can be useful when you ne
 [Generating SSH Keys (Github Article)][generating-ssh-keys]
 
 Boilerplate Text for Config file:
+
 ```
 Host testgithub
  HostName github.com

@@ -1,40 +1,37 @@
 .page-foss {
+  ul {
+    padding: 0;
 
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .link {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .description {
+        margin: 0;
+        flex: 3;
+      }
+    }
+  }
+
+  @media screen and (max-width: 650px) {
     ul {
-        padding: 0;
+      li {
+        flex-wrap: wrap;
 
-        li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-
-            .link {
-                flex: 1;
-                margin-right: 20px;
-            }
-
-            .description {
-                margin: 0;
-                flex: 3;
-            }
+        .link {
+          flex: none;
         }
-    }
 
-    @media screen and (max-width: 650px) {
-        
-        ul {
-
-            li {
-                flex-wrap: wrap;
-
-                .link {
-                    flex: none;
-                }
-
-                .description {
-                    flex: auto;
-                }
-            }
+        .description {
+          flex: auto;
         }
+      }
     }
+  }
 }

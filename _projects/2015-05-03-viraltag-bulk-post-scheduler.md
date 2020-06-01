@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Viraltag Bulk Post Scheduler"
-date:   2015-05-03
+title: 'Viraltag Bulk Post Scheduler'
+date: 2015-05-03
 cover: /assets/projects/2015-05-03-viraltag-bulk-post-scheduler/cover.png
-excerpt: "Viraltag Bulk Post Scheduler"
+excerpt: 'Viraltag Bulk Post Scheduler'
 ---
 
 ![Viraltag Bulk Post Scheduler](/assets/projects/2015-05-03-viraltag-bulk-post-scheduler/cover.png)

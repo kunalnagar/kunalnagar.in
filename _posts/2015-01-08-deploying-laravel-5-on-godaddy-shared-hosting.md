@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Deploy Laravel 5 on GoDaddy Shared Hosting"
-date:   2015-01-08
-description: "Learn how to deploy Laravel 5 on GoDaddy Shared Hosting."
-img: "/assets/img/foss/php.png"
+title: 'Deploy Laravel 5 on GoDaddy Shared Hosting'
+date: 2015-01-08
+description: 'Learn how to deploy Laravel 5 on GoDaddy Shared Hosting.'
+img: '/assets/img/foss/php.png'
 permalink: /blog/deploying-laravel-5-on-godaddy-shared-hosting/
 ---
 
@@ -15,9 +15,9 @@ So your awesome project is ready for deployment and you need to set it up on GoD
 
 Here are some things that you need before we get started:
 
-* A GoDaddy shared hosting account
-* SSH Access
-* Awesome Laravel Project to be deployed
+- A GoDaddy shared hosting account
+- SSH Access
+- Awesome Laravel Project to be deployed
 
 ## Steps
 
@@ -29,10 +29,10 @@ Before we start, let’s assume that your home directory on the server is
 
 and all your code goes into the html folder.
 
-* Create a folder on the same level as the html folder to hold your future Laravel installations. It’s just good practice.
-* Connect via SFTP to your shared hosting server.
-* Zip your entire project directory and upload it to the new folder you just created. Unzip it.
-* Move the public folder into the html folder and rename it to something like awesome-project.
+- Create a folder on the same level as the html folder to hold your future Laravel installations. It’s just good practice.
+- Connect via SFTP to your shared hosting server.
+- Zip your entire project directory and upload it to the new folder you just created. Unzip it.
+- Move the public folder into the html folder and rename it to something like awesome-project.
 
 The approach mentioned above makes all of our application logic safe and our public folder is the one that is exposed.
 
@@ -65,6 +65,6 @@ http://yoursite.com
 
 and enjoy your awesome new project.
 
-*Please note that this article only discusses deploying the project files. If you need to deploy your migrations, there are tons of articles that you can look up. The confusing part is setting up the directory structure and this article covers that point.*
+_Please note that this article only discusses deploying the project files. If you need to deploy your migrations, there are tons of articles that you can look up. The confusing part is setting up the directory structure and this article covers that point._
 
 [medium-link]: https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd#.lup9tnaqo

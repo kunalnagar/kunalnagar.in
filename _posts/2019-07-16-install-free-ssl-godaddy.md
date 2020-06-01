@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Install free SSL certificates using LetsEncrypt on GoDaddy"
+title: 'Install free SSL certificates using LetsEncrypt on GoDaddy'
 date: 2019-07-16
-description: "Learn how to install free SSL certificates on GoDaddy using LetsEncrypt"
-img: "/assets/img/foss/godaddy.jpg"
+description: 'Learn how to install free SSL certificates on GoDaddy using LetsEncrypt'
+img: '/assets/img/foss/godaddy.jpg'
 permalink: /blog/install-free-ssl-godaddy/
 ---
 
 This is a straight-forward guide to installing free SSL certificates on GoDaddy. There's no need to pay when LetsEncrypt provides them for free. Here's a list of things you need to have before we get started:
 
-* [A GoDaddy account](https://in.godaddy.com/hosting/web-hosting) - I have a Deluxe Hosting plan with access to cPanel
-* [SSLForFree](https://www.sslforfree.com/) - A site to create your SSL certificates
-* [DNSChecker](https://dnschecker.org/) - A DNS Check Propagation Tool
+- [A GoDaddy account](https://in.godaddy.com/hosting/web-hosting) - I have a Deluxe Hosting plan with access to cPanel
+- [SSLForFree](https://www.sslforfree.com/) - A site to create your SSL certificates
+- [DNSChecker](https://dnschecker.org/) - A DNS Check Propagation Tool
 
 ## Step 1
 
@@ -29,7 +29,7 @@ You'll receive a set of instructions to modify the domain DNS.
 
 Open your GoDaddy account, navigate to the Domain DNS settings and follow the TXT record.
 
-**Note:** Instead of entering the entire ```_acme-challenge.yourdomain.com```, just use ```_acme-challenge``` in the name/host box. This is how one of the entries should look like:
+**Note:** Instead of entering the entire `_acme-challenge.yourdomain.com`, just use `_acme-challenge` in the name/host box. This is how one of the entries should look like:
 
 {% include components/lightbox-img.html src="https://i.imgur.com/jFH0vFP.png" %}
 
@@ -51,7 +51,7 @@ After you see all green checks, go back to SSLForFree and click on the link in S
 
 If you see this screen, you're halfway there. Click on the "Download SSL Certificate link" and you'll be presented with the following textareas:
 
-*
+\*
 
 ## Step 5
 
