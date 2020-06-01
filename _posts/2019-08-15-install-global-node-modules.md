@@ -45,7 +45,7 @@ source ~/.profile
 npm install -g @vue/cli
 ```
 
-{% include components/lightbox-img.html src="http://i.imgur.com/bkSOL0p.png" alt="Screenshot showing valid permissions on Linux when installing an NPM package globally" %}
+{% include components/lightbox-img.html src="https://i.imgur.com/bkSOL0p.png" alt="Screenshot showing valid permissions on Linux when installing an NPM package globally" %}
 
 And you're done! Of course, you could skip all this and just use `sudo`, but it's not recommended and highly discouraged. Do things the right way and get the basics right.
 
