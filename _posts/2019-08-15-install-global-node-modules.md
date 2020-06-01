@@ -9,7 +9,7 @@ permalink: /blog/install-global-node-modules/
 
 If you're on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:
 
-{% include components/lightbox-img.html src="http://i.imgur.com/i4hiG88.png" alt="Screenshot showing invalid permissions on Linux when installing an NPM package globally" %}
+{% include components/lightbox-img.html src="https://i.imgur.com/i4hiG88.png" alt="Screenshot showing invalid permissions on Linux when installing an NPM package globally" %}
 
 By default, Node installs global modules to your bin directory: `/usr/bin/node_modules` which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don't need to use sudo since you already own the directory. In this case, we'll be installing all global npm modules to `~/.npm-global`
 
