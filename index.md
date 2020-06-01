@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Frontend Developer
 ---
 
 Hi. I'm Kunal.

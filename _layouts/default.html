@@ -9,12 +9,14 @@
       property="og:image"
       content="https://kunalnagar.in/assets/img/post.png"
     />
-    <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+    {% if page.title %} {% assign title = page.title | append: ' - ' | append:
+    site.title %} {% else %} {% assign title = site.title %} {% endif %}
+    <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:url" content="https://kunalnagar.in{{ page.url }}" />
     <meta property="og:type" content="website" />
     <meta name="robots" content="index, follow" />
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ title }}</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
   </head>
