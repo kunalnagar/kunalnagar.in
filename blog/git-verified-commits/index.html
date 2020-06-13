@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn how to sign commits using your GPG key" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Git Verified Commits - Kunal Nagar | Frontend Developer</title>
+    <meta
+      property="og:image"
+      content="https://kunalnagar.in/assets/img/post.png"
+    />
+    <meta property="og:title" content="Git Verified Commits - Kunal Nagar | Frontend Developer" />
+    <meta property="og:description" content="Learn how to sign commits using your GPG key" />
+    <meta property="og:url" content="https://kunalnagar.in/blog/git-verified-commits/" />
+    <meta property="og:type" content="article" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+    <li><a href="/foss">Open Source</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+      <div class="page-blog-single">
+        <h1>Git Verified Commits</h1>
+        <time>July 31, 2019</time>
+        <article><p>Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:</p>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/2ohqgII.png" aria-label="Screenshot showing a verified badge next to commits on GitHub" data-lightbox="https://i.imgur.com/2ohqgII.png" class="lightbox-img">
+  <img src="https://i.imgur.com/2ohqgII.png" alt="Screenshot showing a verified badge next to commits on GitHub" />
+</a></p>
+
+<h2 id="add-a-gpg-key-to-your-account">Add a GPG key to your account</h2>
+
+<p>You can use GPG to sign commits with your GPG key. For more information on GPG, go <a href="https://gnupg.org/">here</a>.</p>
+
+<p>For the sake of this article, we will be dealing with verified commits on GitHub. We will also assume that you have a GPG key.</p>
+
+<p>GitHub uses <a href="https://www.openpgp.org/">OpenPGP</a> libraries to confirm that your locally signed commits and tags are cryptographically verifiable against a public key that you have added to your GitHub account.</p>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/FvSL0aC.png" aria-label="Screenshot showing GPG keys section in GitHub settings" data-lightbox="https://i.imgur.com/FvSL0aC.png" class="lightbox-img">
+  <img src="https://i.imgur.com/FvSL0aC.png" alt="Screenshot showing GPG keys section in GitHub settings" />
+</a></p>
+
+<h2 id="tell-git-to-use-your-gpg-key">Tell Git to use your GPG key</h2>
+
+<p>After adding the public GPG key to your GitHub account, you need to tell <code class="highlighter-rouge">git</code> on your machine to use that key to sign commits. But first, let’s get a list of keys on your account using:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gpg --list-secret-keys --keyid-format LONG
+
+/home/kunal/.gnupg/pubring.kbx
+------------------------------
+sec   rsa4096/ABD83AC02AAC0953 2019-07-31 [SC] [expires: 2035-07-27]
+      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+uid                 [ unknown] Kunal Nagar &lt;knlnagar@gmail.com&gt;
+ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
+</code></pre></div></div>
+
+<p>In the above example, my public key is <code class="highlighter-rouge">ABD83AC02AAC0953</code> and we’ll use that:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global user.signingkey ABD83AC02AAC0953
+</code></pre></div></div>
+
+<h2 id="signing-your-commit">Signing your commit</h2>
+
+<p>When you’re ready to commit your work, just add the <code class="highlighter-rouge">-S</code> flag to your commit command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git commit -m -S "Testing signed commits"
+</code></pre></div></div>
+
+<p>If your key has a passphrase, you’ll be asked to enter it now.</p>
+
+<p>That’s it! Push your commit and you can see the verified commit on your git hosting provider.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://help.github.com/en/articles/managing-commit-signature-verification">Managing Commit Signature Verification (GitHub Knowledge Base)</a></li>
+</ul>
+</article>
+      </div>
+      <footer>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:700|Noto+Sans:400,700&display=swap"
+    rel="stylesheet"
+  />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src =
+        ('https:' == document.location.protocol
+          ? 'https://ssl'
+          : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="/assets/js/main.js"></script>
+</footer>
+
+    </main>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>

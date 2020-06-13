@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn how to install global node modules without running into permission issues (sudo)" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Install Global Node Modules without Sudo - Kunal Nagar | Frontend Developer</title>
+    <meta
+      property="og:image"
+      content="https://kunalnagar.in/assets/img/post.png"
+    />
+    <meta property="og:title" content="Install Global Node Modules without Sudo - Kunal Nagar | Frontend Developer" />
+    <meta property="og:description" content="Learn how to install global node modules without running into permission issues (sudo)" />
+    <meta property="og:url" content="https://kunalnagar.in/blog/install-global-node-modules/" />
+    <meta property="og:type" content="article" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+    <li><a href="/foss">Open Source</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+      <div class="page-blog-single">
+        <h1>Install Global Node Modules without Sudo</h1>
+        <time>August 15, 2019</time>
+        <article><p>If you’re on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:</p>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/i4hiG88.png" aria-label="Screenshot showing invalid permissions on Linux when installing an NPM package globally" data-lightbox="https://i.imgur.com/i4hiG88.png" class="lightbox-img">
+  <img src="https://i.imgur.com/i4hiG88.png" alt="Screenshot showing invalid permissions on Linux when installing an NPM package globally" />
+</a></p>
+
+<p>By default, Node installs global modules to your bin directory: <code class="highlighter-rouge">/usr/bin/node_modules</code> which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to <code class="highlighter-rouge">~/.npm-global</code></p>
+
+<h2 id="steps-to-follow">Steps to follow</h2>
+
+<ol>
+  <li>Create a new directory in your home folder</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir ~/.npm-global
+</code></pre></div></div>
+
+<ol>
+  <li>Tell npm to use the newly created directory to install global modules</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm config set prefix ~/.npm-global
+</code></pre></div></div>
+
+<ol>
+  <li>Add this to your <code class="highlighter-rouge">~/.profile</code> or <code class="highlighter-rouge">~/.bash_profile</code> depending on whether you’re on Linux/macOS respectively</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export PATH=~/.npm-global/bin:$PATH
+</code></pre></div></div>
+
+<ol>
+  <li>Update your current terminal session by reloading the profile</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.profile
+</code></pre></div></div>
+
+<ol>
+  <li>Try and install a sample module globally and it should work</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g @vue/cli
+</code></pre></div></div>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/bkSOL0p.png" aria-label="Screenshot showing valid permissions on Linux when installing an NPM package globally" data-lightbox="https://i.imgur.com/bkSOL0p.png" class="lightbox-img">
+  <img src="https://i.imgur.com/bkSOL0p.png" alt="Screenshot showing valid permissions on Linux when installing an NPM package globally" />
+</a></p>
+
+<p>And you’re done! Of course, you could skip all this and just use <code class="highlighter-rouge">sudo</code>, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="http://npm.github.io/installation-setup-docs/installing/a-note-on-permissions.html">A note on permissions (Official NPM)</a></li>
+</ul>
+</article>
+      </div>
+      <footer>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:700|Noto+Sans:400,700&display=swap"
+    rel="stylesheet"
+  />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src =
+        ('https:' == document.location.protocol
+          ? 'https://ssl'
+          : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="/assets/js/main.js"></script>
+</footer>
+
+    </main>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A collection of Vue Base Components to jumpstart your development" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>An Introduction to Vue Base Components - Kunal Nagar | Frontend Developer</title>
+    <meta
+      property="og:image"
+      content="https://kunalnagar.in/assets/img/post.png"
+    />
+    <meta property="og:title" content="An Introduction to Vue Base Components - Kunal Nagar | Frontend Developer" />
+    <meta property="og:description" content="A collection of Vue Base Components to jumpstart your development" />
+    <meta property="og:url" content="https://kunalnagar.in/blog/vue-base-components/" />
+    <meta property="og:type" content="article" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+    <li><a href="/foss">Open Source</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+      <div class="page-blog-single">
+        <h1>An Introduction to Vue Base Components</h1>
+        <time>April 21, 2019</time>
+        <article><!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/wB8Tk90.png" aria-label="" data-lightbox="https://i.imgur.com/wB8Tk90.png" class="lightbox-img">
+  <img src="https://i.imgur.com/wB8Tk90.png" alt="" />
+</a></p>
+
+<p>Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it’s important that your product feels cohesive to your customers.</p>
+
+<h2 id="inspiration">Inspiration</h2>
+
+<p>This project takes inspiration from <a href="https://vuetifyjs.com/en/">Vuetify</a> which is an excellent Material Component Framework.</p>
+
+<p>But you don’t necessarily want to use Material design for every project that you use. Sometimes, you’d prefer a set of minimally styled components that work consistently across browsers at the very least with an ability to add a theming layer that relates to your product/brand. That’s exactly what this project aims to do.</p>
+
+<h2 id="what-are-vue-base-components">What are Vue Base Components?</h2>
+
+<p>Vue Base Components (or any custom components) essentially wrap basic HTML elements like Inputs, Selects, Buttons etc with a little more functionality use in everyday UI/UX patterns. Most of the time, they’re available as <a href="https://vuejs.org/v2/guide/single-file-components.html">Single File Components</a> (ideally) and can be easily imported in your own project.</p>
+
+<p>Let’s take an example of a simple button.</p>
+
+<h2 id="example-basebutton">Example: BaseButton</h2>
+
+<p>When developing a custom button, here’s a basic checklist of things you’d like the button to do:</p>
+
+<ul>
+  <li>Base button (works out of the box)</li>
+  <li>Add a link and navigate on click</li>
+  <li>Icon Support</li>
+  <li>Loading states</li>
+  <li>Enabled/Disabled states</li>
+  <li>Multiple themes (for e.g. link view where the button looks like a link instead of a button)</li>
+</ul>
+
+<p>When you use the <code class="highlighter-rouge">&lt;BaseButton /&gt;</code> component out of the box, it will look something like:</p>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/F2p7Kl9.png" aria-label="" data-lightbox="https://i.imgur.com/F2p7Kl9.png" class="lightbox-img">
+  <img src="https://i.imgur.com/F2p7Kl9.png" alt="" />
+</a></p>
+
+<p>If you want to add an icon, it’s as simple as doing:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;BaseButton icon="save" /&gt;
+</code></pre></div></div>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/qqyZQFz.png" aria-label="" data-lightbox="https://i.imgur.com/qqyZQFz.png" class="lightbox-img">
+  <img src="https://i.imgur.com/qqyZQFz.png" alt="" />
+</a></p>
+
+<p>If you want to change the text:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;BaseButton icon="download" text="Download" /&gt;
+</code></pre></div></div>
+
+<!-- prettier-ignore -->
+<p><a href="https://i.imgur.com/DnQZHND.png" aria-label="" data-lightbox="https://i.imgur.com/DnQZHND.png" class="lightbox-img">
+  <img src="https://i.imgur.com/DnQZHND.png" alt="" />
+</a></p>
+
+<p>If you want to add a link:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;BaseButton href="https://google.com" /&gt;
+</code></pre></div></div>
+
+<p><strong>Note:</strong> This project ships with the <a href="https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free">free version of Font Awesome icons</a> (solid styles only) by default but there will be an option to add your Subscription key so you can use the entire suite.</p>
+
+<h2 id="advantages">Advantages</h2>
+
+<p>There are a number of advantages to using Base Components - the most important being consistent.</p>
+
+<p><strong>If you have</strong> a primary button in your product, you’d like that button to look the same and function everywhere, no matter what context it’s used in.</p>
+
+<p><strong>Secondly</strong>, if you make any updates to your primary button, you would only need to update the Base Button file and all the changes would be propagated to multiple instances throughout your project.</p>
+
+<p><strong>Note:</strong> It’s important to make sure that the API remains consistent. For example, if the <code class="highlighter-rouge">prop</code> for providing a link in a Base Button is changed from <code class="highlighter-rouge">href</code> to <code class="highlighter-rouge">link</code>, the functionality of the button breaks and the Button is useless.</p>
+
+<p><strong>Thirdly</strong>, Base Components contain event hooks. For example, if you want custom code to be run when your <code class="highlighter-rouge">&lt;BaseInput /&gt;</code> is focused, you can hook into the <code class="highlighter-rouge">base:input:focus</code> event.</p>
+
+<h2 id="links">Links</h2>
+
+<p>This project is Open Source and under active development. Feel free to submit ideas/PRs!</p>
+
+<ul>
+  <li><a href="https://github.com/kunalnagar/vue-base-components">GitHub</a></li>
+</ul>
+</article>
+      </div>
+      <footer>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:700|Noto+Sans:400,700&display=swap"
+    rel="stylesheet"
+  />
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51202219-2']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src =
+        ('https:' == document.location.protocol
+          ? 'https://ssl'
+          : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="/assets/js/main.js"></script>
+</footer>
+
+    </main>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>

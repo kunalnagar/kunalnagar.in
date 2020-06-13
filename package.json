@@ -1,0 +1,30 @@
+{
+  "name": "kunalnagar.in",
+  "version": "1.0.0",
+  "description": "Personal website for Kunal Nagar",
+  "homepage": "https://kunalnagar.in",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-scss": "^4.3.1",
+    "husky": "^4.2.5",
+    "normalize.scss": "^0.1.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "bundle exec jekyll serve -l",
+    "build": "bundle exec jekyll build",
+    "pretty-quick": "pretty-quick"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kunalnagar/kunalnagar.github.io.git"
+  },
+  "author": "Kunal Nagar <knlnagar@gmail.com>"
+}
