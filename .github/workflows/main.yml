@@ -14,9 +14,9 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - name: Update bundler
-        run: bundle update --bundler
-      - name: Install ruby dependencies
+      - name: Install bundler 2
+        run: gem install bundler:2.0.2
+      - name: Bundle install
         run: |
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
