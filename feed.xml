@@ -1,4 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-06-13T19:10:10+00:00</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">Setup a Jekyll development environment with Docker</title><link href="https://kunalnagar.in/blog/setup-docker-jekyll-dev-environment/" rel="alternate" type="text/html" title="Setup a Jekyll development environment with Docker" /><published>2019-12-14T00:00:00+00:00</published><updated>2019-12-14T00:00:00+00:00</updated><id>https://kunalnagar.in/blog/setup-docker-jekyll-dev-environment</id><content type="html" xml:base="https://kunalnagar.in/blog/setup-docker-jekyll-dev-environment/">&lt;p&gt;Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-06-16T12:50:55+00:00</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I did not have any COVID-19 symptoms&lt;/li&gt;
+  &lt;li&gt;I do not have COVID-19 (test results below)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most recently, Doug Ford announced that anyone can get tested for COVID-19 in Ontario:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;If you are worried you have &lt;a href=&quot;https://twitter.com/hashtag/COVID19?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#COVID19&lt;/a&gt;, or that you’ve been exposed to someone who has the virus please get tested. You will not be turned away. This is about protecting the health and safety of your loved ones. &lt;a href=&quot;https://t.co/b3bJrD6XZO&quot;&gt;pic.twitter.com/b3bJrD6XZO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Doug Ford (@fordnation) &lt;a href=&quot;https://twitter.com/fordnation/status/1264571201969676295?ref_src=twsrc%5Etfw&quot;&gt;May 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;It was a regular Sunday and I woke up with a little bit of nausea which went away immediately. But in these tough times, you never really know, so I decided to get a COVID-19 test.&lt;/p&gt;
+
+&lt;h2 id=&quot;finding-an-assessment-centre&quot;&gt;Finding an Assessment Centre&lt;/h2&gt;
+
+&lt;p&gt;As per the &lt;a href=&quot;https://www.toronto.ca/home/covid-19/covid-19-what-you-should-do/covid-19-have-symptoms-or-been-exposed/covid-19-assessment-centres/&quot;&gt;City of Toronto website&lt;/a&gt;, the closest centre for me was &lt;a href=&quot;https://goo.gl/maps/Bw2eCS9zswqrH6417&quot;&gt;St. Michael’s COVID-19 Assessment Centre&lt;/a&gt;. They do not require any referrals, and it’s walk-in.&lt;/p&gt;
+
+&lt;p&gt;I took my mask and reached the centre at 10:00AM. It was a lovely day with the sun shining and a cool breeze of 12 degrees celsius. I took a few pictures along the way of the St. Michael’s Cathedral. I also, badly need a haircut:&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/qZHXscn.jpg&quot; aria-label=&quot;Me returning from the COVID-19 Assessment Centre&quot; data-lightbox=&quot;https://i.imgur.com/qZHXscn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/qZHXscn.jpg&quot; alt=&quot;Me returning from the COVID-19 Assessment Centre&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/ikb2kuf.jpg&quot; aria-label=&quot;St. Michael's Cathedral Building&quot; data-lightbox=&quot;https://i.imgur.com/ikb2kuf.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/ikb2kuf.jpg&quot; alt=&quot;St. Michael's Cathedral Building&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/q4Xo4RH.jpg&quot; aria-label=&quot;St. Michael's Cathedral Inside&quot; data-lightbox=&quot;https://i.imgur.com/q4Xo4RH.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/q4Xo4RH.jpg&quot; alt=&quot;St. Michael's Cathedral Inside&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/3bshbtw.jpg&quot; aria-label=&quot;St. Michael's Cathedral Sign&quot; data-lightbox=&quot;https://i.imgur.com/3bshbtw.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/3bshbtw.jpg&quot; alt=&quot;St. Michael's Cathedral Sign&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On reaching the centre, I got to know that their weekend timings are 12PM to 6PM, so I roamed around for a bit and had a lovely conversation with a 95 year old woman who still volunteers as a swim coach at University of Toronto.&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Rv9zP30.jpg&quot; aria-label=&quot;Assessment Centre Hours&quot; data-lightbox=&quot;https://i.imgur.com/Rv9zP30.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/Rv9zP30.jpg&quot; alt=&quot;Assessment Centre Hours&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;at-the-assessment-centre&quot;&gt;At the Assessment Centre&lt;/h2&gt;
+
+&lt;p&gt;I was second in line. As my turn arrived, they asked me to throw away the mask that I was wearing, sanitize my hands for 15 seconds and gave me a fresh mask.&lt;/p&gt;
+
+&lt;h3 id=&quot;booth-1&quot;&gt;Booth 1&lt;/h3&gt;
+
+&lt;p&gt;After that, I was redirected to a counter where I had to give my personal information. This includes my health card number, address and phone number:&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/4rnJ0qn.jpg&quot; aria-label=&quot;At the counter giving information to Hospital staff&quot; data-lightbox=&quot;https://i.imgur.com/4rnJ0qn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/4rnJ0qn.jpg&quot; alt=&quot;At the counter giving information to Hospital staff&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/tPleMnN.png&quot; aria-label=&quot;Printed name tag for recognition&quot; data-lightbox=&quot;https://i.imgur.com/tPleMnN.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/tPleMnN.png&quot; alt=&quot;Printed name tag for recognition&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;booth-2&quot;&gt;Booth 2&lt;/h3&gt;
+
+&lt;p&gt;Next, I was told to go to Booth 2 where I was asked general questions about my travels and my contact with COVID-19 patients etc. I told them that I woke up with a light nausea that went away and I’m fine now. Based on the information, they highlighted some stuff on my COVID-19 information packet and asked me to wait until my next turn:&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/iOSTwBG.jpg&quot; aria-label=&quot;Booth 2&quot; data-lightbox=&quot;https://i.imgur.com/iOSTwBG.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/iOSTwBG.jpg&quot; alt=&quot;Booth 2&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;booth-3&quot;&gt;Booth 3&lt;/h2&gt;
+
+&lt;p&gt;This is where I met Dr. Aisha Khatib who took my swab. She was assisted by Dr. Yuri who questioned me in booth 2. Unfortunately I could not get any photos here as it prohibited. I can still describe the experience though.&lt;/p&gt;
+
+&lt;p&gt;Before taking the swab, Dr. Aisha confirmed what I told to Dr. Yuri and explained the swab procedure. It’s basically a long Q-tip that goes up your nose. And boy, does it sting.&lt;/p&gt;
+
+&lt;p&gt;The swab itself is just a 2-3 second procedure, but they go deep up your nose - enough to make your eyes water. When she was done, it took me about 15 seconds to realize what had happened. All things aside, it isn’t as bad as it sounds.&lt;/p&gt;
+
+&lt;p&gt;After the swab was done, I was told that the results would be available in about &lt;strong&gt;4 days&lt;/strong&gt; at &lt;a href=&quot;https://covid-19.ontario.ca/&quot;&gt;covid-19.ontario.ca&lt;/a&gt;. Here is a screen-grab of my results:&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/CSaOzIk.png&quot; aria-label=&quot;COVID-19 Test Results&quot; data-lightbox=&quot;https://i.imgur.com/CSaOzIk.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/CSaOzIk.png&quot; alt=&quot;COVID-19 Test Results&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;covid-19-information-packet&quot;&gt;COVID-19 Information Packet&lt;/h2&gt;
+
+&lt;p&gt;When you go through testing, you get the following information packet, that includes a mask as well. As I was being questioned in Booth 2, Dr. Yuri highlighted the category I fall under (as shown below).&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/0UoUXsS.png&quot; aria-label=&quot;COVID-19 Information Packet Page 1&quot; data-lightbox=&quot;https://i.imgur.com/0UoUXsS.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/0UoUXsS.png&quot; alt=&quot;COVID-19 Information Packet Page 1&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/OJr6QLD.png&quot; aria-label=&quot;COVID-19 Information Packet Page 2&quot; data-lightbox=&quot;https://i.imgur.com/OJr6QLD.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/OJr6QLD.png&quot; alt=&quot;COVID-19 Information Packet Page 2&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/x6dmUYf.png&quot; aria-label=&quot;COVID-19 Information Packet Page 3&quot; data-lightbox=&quot;https://i.imgur.com/x6dmUYf.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/x6dmUYf.png&quot; alt=&quot;COVID-19 Information Packet Page 3&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;!-- prettier-ignore --&gt;
+&lt;a href=&quot;https://i.imgur.com/yVjIQ3q.png&quot; aria-label=&quot;COVID-19 Information Packet Page 4&quot; data-lightbox=&quot;https://i.imgur.com/yVjIQ3q.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/yVjIQ3q.png&quot; alt=&quot;COVID-19 Information Packet Page 4&quot; /&gt;
+&lt;/a&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And that’s it! Hope this helps someone out there having second thoughts on getting a test. This is about protecting the health and safety of your loved ones.&lt;/p&gt;</content><author><name></name></author><summary type="html">Before I start writing about my experience, I want to make a few things very clear:</summary></entry><entry><title type="html">Setup a Jekyll development environment with Docker</title><link href="https://kunalnagar.in/blog/setup-docker-jekyll-dev-environment/" rel="alternate" type="text/html" title="Setup a Jekyll development environment with Docker" /><published>2019-12-14T00:00:00+00:00</published><updated>2019-12-14T00:00:00+00:00</updated><id>https://kunalnagar.in/blog/setup-docker-jekyll-dev-environment</id><content type="html" xml:base="https://kunalnagar.in/blog/setup-docker-jekyll-dev-environment/">&lt;p&gt;Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.&lt;/p&gt;
 
 &lt;p&gt;This guide assumes that you have a basic knowledge of Jekyll, Docker and are comfortable working with the Terminal. If not, I would highly recommend that you keep reading as I try to provide documentation links when possible.&lt;/p&gt;
 
@@ -897,84 +1043,4 @@ Group: xampp
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+00:00</published><updated>2019-03-01T00:00:00+00:00</updated><id>https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
-
-&lt;p&gt;I’m assuming you are registered with an Indane gas agency. Mine was &lt;a href=&quot;https://goo.gl/maps/7t2LnjqDFTN2&quot;&gt;Gajanana Enterprises Koramangala&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is a list of stuff you’ll need before you visit the agency:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Original documents of the connection&lt;/li&gt;
-  &lt;li&gt;Gas Regulator&lt;/li&gt;
-  &lt;li&gt;ID Proof (1 copy, carry original) - I carried my Aadhar card&lt;/li&gt;
-  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
-  &lt;li&gt;Gas cylinders&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was &lt;strong&gt;Rs. 3,050/-&lt;/strong&gt; as shown below. This is the amount you’ll get back after the transfer.&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/qdD7fha.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/qdD7fha.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/qdD7fha.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h2&gt;
-
-&lt;p&gt;If you don’t own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You need to visit the agency on the same day the cylinders are being picked up.&lt;/li&gt;
-  &lt;li&gt;The cylinders need to reach the agency BEFORE the transfer process can be started.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;step-3-visit-current-agency&quot;&gt;Step 3: Visit current agency&lt;/h2&gt;
-
-&lt;p&gt;Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.&lt;/p&gt;
-
-&lt;p&gt;During the process, you’ll have to tell them the destination city and state.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Only city and state name is required. So for me, it would be &lt;em&gt;Jaipur Rajasthan&lt;/em&gt;. You can register with any agency in the destination city.&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/Y3PfQC6.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The staff will put in a request for transfer. It usually takes a while for the request to sync to the &lt;strong&gt;Indane Central server&lt;/strong&gt;. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/LcFYHf8.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Keep this document safely as you need to present it to the other agency where you’re transferring.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency’s copy of the above document.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-4-visit-transferring-agency&quot;&gt;Step 4: Visit transferring agency&lt;/h2&gt;
-
-&lt;p&gt;Once you have the Transfer document, you need to visit the transferring agency with the following details:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Transfer document&lt;/li&gt;
-  &lt;li&gt;ID Proof (1 copy, carry original)&lt;/li&gt;
-  &lt;li&gt;Adress Proof (1 copy, carry original)&lt;/li&gt;
-  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;For me, the ID proof and the address proof are the same (Aadhar card), so I carried two copies of the Aadhar card.&lt;/p&gt;
-
-&lt;p&gt;Once you’re at the agency, you’ll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.&lt;/p&gt;
-
-&lt;p&gt;Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.&lt;/p&gt;
-
-&lt;p&gt;You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/J0mbeYm.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry></feed>
