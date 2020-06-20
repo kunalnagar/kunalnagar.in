@@ -1,4 +1,4 @@
-on: [push]
+on: [pull_request]
 
 jobs:
   main:
@@ -26,11 +26,11 @@ jobs:
         run: npm run build
       - name: Logging some variables
         run: |
-          echo ${{ github.event }}
+          echo ${{ github.base_ref }}
           echo ${{ github.event_name }}
           echo ${{ github.ref }}
       - name: Release
-        if: ${{ github.event == 'release' && startsWith(github.ref, 'refs/tags/') }}
+        if: ${{ github.base_ref == 'master' && startsWith(github.ref, 'refs/tags/') }}
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
