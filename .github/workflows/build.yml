@@ -1,7 +1,14 @@
-on: [push]
+name: Build site
+
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '*.*'
 
 jobs:
-  main:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,15 +31,3 @@ jobs:
         run: npm run pretty-quick
       - name: Create build
         run: npm run build
-      - name: Logging some variables
-        run: |
-          echo ${{ github.event }}
-          echo ${{ github.event_name }}
-          echo ${{ github.ref }}
-      - name: Release
-        if: ${{ github.event == 'release' && startsWith(github.ref, 'refs/tags/') }}
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: release
