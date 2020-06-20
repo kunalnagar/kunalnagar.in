@@ -8,12 +8,14 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.7.1'
-      - uses: actions/cache@v2
+      - uses: actions/cache@v1
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+      - name: Setup bundle path to vendor/bundle
+        run: bundle config path vendor/bundle
       - name: Check/Install bundle dependencies
         run: bundle check || bundle install
       - name: Install npm dependencies
