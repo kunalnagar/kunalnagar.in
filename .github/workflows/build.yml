@@ -1,0 +1,28 @@
+name: Build site
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7.1'
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install bundler 2
+        run: gem install bundler:2.0.2
+      - name: Install bundle dependencies
+        run: bundle check || bundle install
+      - name: Install npm dependencies
+        run: npm install
+      - name: Run linter
+        run: npm run pretty-quick
+      - name: Create build
+        run: npm run build
