@@ -3,7 +3,7 @@ name: Build site
 on: [push]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
