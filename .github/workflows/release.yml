@@ -21,11 +21,11 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Install bundler 2
         run: gem install bundler:2.0.2
+      - name: Bundle setup
+        run: bundle config path vendor/bundle
       - name: Install bundle dependencies
         if: steps.bundler-cache.outputs.cache-hit != 'true'
-        run: |
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
+        run: bundle install --jobs 4 --retry 3
       - name: Install npm dependencies
         run: npm install
       - name: Run linter
