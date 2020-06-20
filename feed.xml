@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-06-20T16:52:25+00:00</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-06-20T18:14:49+00:00</updated><id>https://kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;I did not have any COVID-19 symptoms&lt;/li&gt;
@@ -21,15 +21,15 @@
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/qZHXscn.jpg&quot; aria-label=&quot;Me returning from the COVID-19 Assessment Centre&quot; data-lightbox=&quot;https://i.imgur.com/qZHXscn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/qZHXscn.jpg&quot; alt=&quot;Me returning from the COVID-19 Assessment Centre&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; aria-label=&quot;Me returning from the COVID-19 Assessment Centre&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; alt=&quot;Me returning from the COVID-19 Assessment Centre&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/ikb2kuf.jpg&quot; aria-label=&quot;St. Michael's Cathedral Building&quot; data-lightbox=&quot;https://i.imgur.com/ikb2kuf.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/ikb2kuf.jpg&quot; alt=&quot;St. Michael's Cathedral Building&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; aria-label=&quot;St. Michael's Cathedral Building&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; alt=&quot;St. Michael's Cathedral Building&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
@@ -37,15 +37,15 @@
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/q4Xo4RH.jpg&quot; aria-label=&quot;St. Michael's Cathedral Inside&quot; data-lightbox=&quot;https://i.imgur.com/q4Xo4RH.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/q4Xo4RH.jpg&quot; alt=&quot;St. Michael's Cathedral Inside&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; aria-label=&quot;St. Michael's Cathedral Inside&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; alt=&quot;St. Michael's Cathedral Inside&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/3bshbtw.jpg&quot; aria-label=&quot;St. Michael's Cathedral Sign&quot; data-lightbox=&quot;https://i.imgur.com/3bshbtw.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/3bshbtw.jpg&quot; alt=&quot;St. Michael's Cathedral Sign&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; aria-label=&quot;St. Michael's Cathedral Sign&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; alt=&quot;St. Michael's Cathedral Sign&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
@@ -54,8 +54,8 @@
 &lt;p&gt;On reaching the centre, I got to know that their weekend timings are 12PM to 6PM, so I roamed around for a bit and had a lovely conversation with a 95 year old woman who still volunteers as a swim coach at University of Toronto.&lt;/p&gt;
 
 &lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Rv9zP30.jpg&quot; aria-label=&quot;Assessment Centre Hours&quot; data-lightbox=&quot;https://i.imgur.com/Rv9zP30.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/Rv9zP30.jpg&quot; alt=&quot;Assessment Centre Hours&quot; /&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; aria-label=&quot;Assessment Centre Hours&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; alt=&quot;Assessment Centre Hours&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;at-the-assessment-centre&quot;&gt;At the Assessment Centre&lt;/h2&gt;
@@ -69,15 +69,15 @@
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/4rnJ0qn.jpg&quot; aria-label=&quot;At the counter giving information to Hospital staff&quot; data-lightbox=&quot;https://i.imgur.com/4rnJ0qn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/4rnJ0qn.jpg&quot; alt=&quot;At the counter giving information to Hospital staff&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; aria-label=&quot;At the counter giving information to Hospital staff&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; alt=&quot;At the counter giving information to Hospital staff&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/tPleMnN.png&quot; aria-label=&quot;Printed name tag for recognition&quot; data-lightbox=&quot;https://i.imgur.com/tPleMnN.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/tPleMnN.png&quot; alt=&quot;Printed name tag for recognition&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; aria-label=&quot;Printed name tag for recognition&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; alt=&quot;Printed name tag for recognition&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
@@ -88,8 +88,8 @@
 &lt;p&gt;Next, I was told to go to Booth 2 where I was asked general questions about my travels and my contact with COVID-19 patients etc. I told them that I woke up with a light nausea that went away and I’m fine now. Based on the information, they highlighted some stuff on my COVID-19 information packet and asked me to wait until my next turn:&lt;/p&gt;
 
 &lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/iOSTwBG.jpg&quot; aria-label=&quot;Booth 2&quot; data-lightbox=&quot;https://i.imgur.com/iOSTwBG.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/iOSTwBG.jpg&quot; alt=&quot;Booth 2&quot; /&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; aria-label=&quot;Booth 2&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; alt=&quot;Booth 2&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;booth-3&quot;&gt;Booth 3&lt;/h2&gt;
@@ -103,8 +103,8 @@
 &lt;p&gt;After the swab was done, I was told that the results would be available in about &lt;strong&gt;4 days&lt;/strong&gt; at &lt;a href=&quot;https://covid-19.ontario.ca/&quot;&gt;covid-19.ontario.ca&lt;/a&gt;. Here is a screen-grab of my results:&lt;/p&gt;
 
 &lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/CSaOzIk.png&quot; aria-label=&quot;COVID-19 Test Results&quot; data-lightbox=&quot;https://i.imgur.com/CSaOzIk.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/CSaOzIk.png&quot; alt=&quot;COVID-19 Test Results&quot; /&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; aria-label=&quot;COVID-19 Test Results&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; alt=&quot;COVID-19 Test Results&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;covid-19-information-packet&quot;&gt;COVID-19 Information Packet&lt;/h2&gt;
@@ -114,15 +114,15 @@
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/0UoUXsS.png&quot; aria-label=&quot;COVID-19 Information Packet Page 1&quot; data-lightbox=&quot;https://i.imgur.com/0UoUXsS.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/0UoUXsS.png&quot; alt=&quot;COVID-19 Information Packet Page 1&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 1&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; alt=&quot;COVID-19 Information Packet Page 1&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/OJr6QLD.png&quot; aria-label=&quot;COVID-19 Information Packet Page 2&quot; data-lightbox=&quot;https://i.imgur.com/OJr6QLD.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/OJr6QLD.png&quot; alt=&quot;COVID-19 Information Packet Page 2&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 2&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; alt=&quot;COVID-19 Information Packet Page 2&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
@@ -130,15 +130,15 @@
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/x6dmUYf.png&quot; aria-label=&quot;COVID-19 Information Packet Page 3&quot; data-lightbox=&quot;https://i.imgur.com/x6dmUYf.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/x6dmUYf.png&quot; alt=&quot;COVID-19 Information Packet Page 3&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 3&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; alt=&quot;COVID-19 Information Packet Page 3&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
     &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;https://i.imgur.com/yVjIQ3q.png&quot; aria-label=&quot;COVID-19 Information Packet Page 4&quot; data-lightbox=&quot;https://i.imgur.com/yVjIQ3q.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/yVjIQ3q.png&quot; alt=&quot;COVID-19 Information Packet Page 4&quot; /&gt;
+&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 4&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; alt=&quot;COVID-19 Information Packet Page 4&quot; /&gt;
 &lt;/a&gt;
 
   &lt;/div&gt;
