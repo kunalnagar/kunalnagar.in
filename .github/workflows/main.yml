@@ -16,8 +16,8 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Setup bundle path to vendor/bundle
         run: bundle config path vendor/bundle
-      - name: Install bundle dependencies
-        run: bundle install --jobs 4 --retry 3
+      - name: Check/Install bundle dependencies
+        run: bundle check || bundle install
       - name: Install npm dependencies
         run: npm install
       - name: Run linter
