@@ -26,11 +26,11 @@ jobs:
         run: npm run build
       - name: Logging some variables
         run: |
-          echo ${{ github }}
+          echo ${{ github.event }}
           echo ${{ github.event_name }}
           echo ${{ github.ref }}
       - name: Release
-        if: ${{ github.event_name == 'release' && startsWith(github.ref, 'refs/tags/') }}
+        if: ${{ github.event == 'release' && startsWith(github.ref, 'refs/tags/') }}
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
