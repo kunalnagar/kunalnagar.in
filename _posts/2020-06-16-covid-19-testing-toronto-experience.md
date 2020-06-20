@@ -25,24 +25,24 @@ I took my mask and reached the centre at 10:00AM. It was a lovely day with the s
 
 <div class="row">
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/qZHXscn.jpg" alt="Me returning from the COVID-19 Assessment Centre" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg" alt="Me returning from the COVID-19 Assessment Centre" %}
   </div>
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/ikb2kuf.jpg" alt="St. Michael's Cathedral Building" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg" alt="St. Michael's Cathedral Building" %}
   </div>
 </div>
 <div class="row">
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/q4Xo4RH.jpg" alt="St. Michael's Cathedral Inside" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg" alt="St. Michael's Cathedral Inside" %}
   </div>
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/3bshbtw.jpg" alt="St. Michael's Cathedral Sign" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg" alt="St. Michael's Cathedral Sign" %}
   </div>
 </div>
 
 On reaching the centre, I got to know that their weekend timings are 12PM to 6PM, so I roamed around for a bit and had a lovely conversation with a 95 year old woman who still volunteers as a swim coach at University of Toronto.
 
-{% include components/lightbox-img.html src="https://i.imgur.com/Rv9zP30.jpg" alt="Assessment Centre Hours" %}
+{% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg" alt="Assessment Centre Hours" %}
 
 ## At the Assessment Centre
 
@@ -54,10 +54,10 @@ After that, I was redirected to a counter where I had to give my personal inform
 
 <div class="row">
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/4rnJ0qn.jpg" alt="At the counter giving information to Hospital staff" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg" alt="At the counter giving information to Hospital staff" %}
   </div>
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/tPleMnN.png" alt="Printed name tag for recognition" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg" alt="Printed name tag for recognition" %}
   </div>
 </div>
 
@@ -65,7 +65,7 @@ After that, I was redirected to a counter where I had to give my personal inform
 
 Next, I was told to go to Booth 2 where I was asked general questions about my travels and my contact with COVID-19 patients etc. I told them that I woke up with a light nausea that went away and I'm fine now. Based on the information, they highlighted some stuff on my COVID-19 information packet and asked me to wait until my next turn:
 
-{% include components/lightbox-img.html src="https://i.imgur.com/iOSTwBG.jpg" alt="Booth 2" %}
+{% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg" alt="Booth 2" %}
 
 ## Booth 3
 
@@ -77,7 +77,7 @@ The swab itself is just a 2-3 second procedure, but they go deep up your nose - 
 
 After the swab was done, I was told that the results would be available in about **4 days** at [covid-19.ontario.ca](https://covid-19.ontario.ca/). Here is a screen-grab of my results:
 
-{% include components/lightbox-img.html src="https://i.imgur.com/CSaOzIk.png" alt="COVID-19 Test Results" %}
+{% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg" alt="COVID-19 Test Results" %}
 
 ## COVID-19 Information Packet
 
@@ -85,18 +85,18 @@ When you go through testing, you get the following information packet, that incl
 
 <div class="row">
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/0UoUXsS.png" alt="COVID-19 Information Packet Page 1" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg" alt="COVID-19 Information Packet Page 1" %}
   </div>
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/OJr6QLD.png" alt="COVID-19 Information Packet Page 2" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg" alt="COVID-19 Information Packet Page 2" %}
   </div>
 </div>
 <div class="row">
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/x6dmUYf.png" alt="COVID-19 Information Packet Page 3" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg" alt="COVID-19 Information Packet Page 3" %}
   </div>
   <div class="column">
-    {% include components/lightbox-img.html src="https://i.imgur.com/yVjIQ3q.png" alt="COVID-19 Information Packet Page 4" %}
+    {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg" alt="COVID-19 Information Packet Page 4" %}
   </div>
 </div>
 
