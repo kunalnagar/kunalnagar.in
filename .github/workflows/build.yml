@@ -24,8 +24,6 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Setup bundle path to vendor/bundle
         run: bundle config path vendor/bundle
-      # - name: Check if bundle cache is available
-      #   run: bundle check
       - name: Install bundle dependencies if not cached
         if: steps.bundle_cache.outputs.cache-hit != 'true'
         run: bundle install --jobs 4 --retry 3
