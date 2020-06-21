@@ -22,8 +22,8 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      # - name: Setup bundle path to vendor/bundle
-      #   run: bundle config path vendor/bundle
+      - name: Setup bundle path to vendor/bundle
+        run: bundle config path vendor/bundle
       # - name: Check if bundle cache is available
       #   run: bundle check
       - name: Install bundle dependencies if not cached
