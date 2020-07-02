@@ -5,11 +5,15 @@ var filterPosts = debounce(function () {
     .value.trim()
     .toLowerCase();
   $postLinks.forEach(function ($link) {
-    var linkText = $link.textContent.trim().toLowerCase();
-    if (linkText.indexOf(searchValue) !== -1) {
-      $link.parentNode.style.display = 'auto';
+    if (searchValue.trim() === '') {
+      $link.parentNode.classList.remove('is-hidden');
     } else {
-      $link.parentNode.style.display = 'none';
+      var linkText = $link.textContent.trim().toLowerCase();
+      if (linkText.indexOf(searchValue) !== -1) {
+        $link.parentNode.classList.remove('is-hidden');
+      } else {
+        $link.parentNode.classList.add('is-hidden');
+      }
     }
   });
 }, 250);
