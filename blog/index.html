@@ -31,7 +31,8 @@
 </nav>
  <div class="page-blog">
   <p>I write about my life experiences, personal or professional.</p>
-  <ul>
+  <input type="text" id="search" placeholder="Search" class="input" />
+  <ul id="posts_list">
     
     <li>
       <p class="date">June 16, 2020</p>
@@ -196,10 +197,6 @@
   </ul>
 </div>
  <footer>
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:700|Noto+Sans:400,700&display=swap"
-    rel="stylesheet"
-  />
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-51202219-2']);
@@ -216,6 +213,7 @@
       s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <script src="/assets/js/utils.js"></script>
   <script src="/assets/js/main.js"></script>
 </footer>
 
