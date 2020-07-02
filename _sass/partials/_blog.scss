@@ -7,6 +7,10 @@
       align-items: center;
       margin-bottom: 10px;
 
+      &.is-hidden {
+        display: none;
+      }
+
       .date {
         color: $text-color-muted;
         margin: 0;
