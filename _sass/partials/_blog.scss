@@ -1,4 +1,11 @@
 .page-blog {
+  #search {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+  }
+
   ul {
     padding: 0;
 
@@ -12,14 +19,15 @@
       }
 
       .date {
+        font-family: $font-family-monospace;
+        font-size: 14px;
         color: $text-color-muted;
         margin: 0;
         flex: 1;
-        font-size: 1.5rem;
       }
 
       .link {
-        text-decoration: none;
+        // text-decoration: none;
         color: $text-color;
         flex: 2;
 
@@ -39,7 +47,6 @@
 
         .date {
           flex: none;
-          font-size: 1.3rem;
         }
 
         .link {
@@ -51,13 +58,14 @@
 
   &-single {
     time {
+      font-family: $font-family-monospace;
+      font-size: 14px;
       color: $text-color-muted;
-      font-weight: 600;
     }
 
     img {
       max-width: 100%;
-      max-height: 60rem;
+      max-height: 400px;
     }
   }
 }

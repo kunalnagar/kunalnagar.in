@@ -1,13 +1,18 @@
 nav {
-  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
 
   ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
     li {
+      margin-right: 20px;
+
+      @media screen and (max-width: 650px) {
+        margin-right: 10px;
+      }
     }
   }
 }
