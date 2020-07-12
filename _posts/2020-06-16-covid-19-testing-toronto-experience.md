@@ -30,8 +30,6 @@ I took my mask and reached the centre at 10:00AM. It was a lovely day with the s
   <div class="column">
     {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg" alt="St. Michael's Cathedral Building" %}
   </div>
-</div>
-<div class="row">
   <div class="column">
     {% include components/lightbox-img.html src="/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg" alt="St. Michael's Cathedral Inside" %}
   </div>

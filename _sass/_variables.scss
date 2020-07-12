@@ -1,18 +1,11 @@
-$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family: arial, helvetica;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace;
 
-$base-font-size: 62.5%;
-$font-size: 1.7rem;
-
-$max-width: 850px;
-
-$text-color: #333;
+$text-color: black;
 $text-color-muted: #564c4c;
 
-$link-color: #0047b3;
+$link-color: #2a2aff;
 $link-visited-color: #7834bc;
 
 $border-color: #bbbbbb;
