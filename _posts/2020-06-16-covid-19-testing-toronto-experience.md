@@ -11,9 +11,7 @@ Before I start writing about my experience, I want to make a few things very cle
 - I did not have any COVID-19 symptoms
 - I do not have COVID-19 (test results below)
 
-Most recently, Doug Ford announced that anyone can get tested for COVID-19 in Ontario:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you are worried you have <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a>, or that you’ve been exposed to someone who has the virus please get tested. You will not be turned away. This is about protecting the health and safety of your loved ones. <a href="https://t.co/b3bJrD6XZO">pic.twitter.com/b3bJrD6XZO</a></p>&mdash; Doug Ford (@fordnation) <a href="https://twitter.com/fordnation/status/1264571201969676295?ref_src=twsrc%5Etfw">May 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Most recently, Doug Ford [announced](https://twitter.com/fordnation/status/1264571201969676295) that anyone can get tested for COVID-19 in Ontario:
 
 It was a regular Sunday and I woke up with a little bit of nausea which went away immediately. But in these tough times, you never really know, so I decided to get a COVID-19 test.
 
