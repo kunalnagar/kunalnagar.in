@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+  jekyll:
+    image: kunalnagar/ruby-node
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/home/kunalnagar.in
+    command: >
+      bash -c "node -v
+      && cd /home/kunalnagar.in
+      && bundle config set path 'vendor/bundle'
+      && bundle install
+      && npm install
+      && npm run dev"

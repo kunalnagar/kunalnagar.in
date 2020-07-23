@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "Personal website for Kunal Nagar",
   "homepage": "https://kunalnagar.in",
   "dependencies": {
@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "bundle exec jekyll serve -l",
+    "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "build": "bundle exec jekyll build",
     "pretty-quick": "pretty-quick"
   },
