@@ -29,6 +29,8 @@ jobs:
         run: npm run pretty-quick
       - name: Create build
         run: npm run build
+      - name: Install rsync
+        run: apt-get update && apt-get install -y rsync
       - name: Release
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
