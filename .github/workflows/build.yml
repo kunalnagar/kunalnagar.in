@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: kunalnagar/ruby-node:slim
+      image: kunalnagar/ruby-node
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
