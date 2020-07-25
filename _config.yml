@@ -17,6 +17,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+exclude:
+  - node_modules
+  - vendor
+
 sass:
   load_paths:
     - _sass

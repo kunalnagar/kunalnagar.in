@@ -19,9 +19,9 @@
       }
 
       .date {
-        font-family: $font-family-monospace;
-        font-size: 14px;
+        font-size: 16px;
         color: $text-color-muted;
+        font-style: italic;
         margin: 0;
         flex: 1;
       }
@@ -58,9 +58,11 @@
 
   &-single {
     time {
-      font-family: $font-family-monospace;
-      font-size: 14px;
+      font-size: 16px;
       color: $text-color-muted;
+      font-style: italic;
+      margin: 0;
+      flex: 1;
     }
 
     img {
