@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-07-23T14:47:01+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer Toronto</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-07-25T02:16:52+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer Toronto</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;I did not have any COVID-19 symptoms&lt;/li&gt;
@@ -470,91 +470,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 
 &lt;div class=&quot;embed-container&quot;&gt;
   &lt;iframe src=&quot;https://www.youtube.com/embed/ksqTu7TX83g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">An Introduction to Vue Base Components</title><link href="https://www.kunalnagar.in/blog/vue-base-components/" rel="alternate" type="text/html" title="An Introduction to Vue Base Components" /><published>2019-04-21T00:00:00+00:00</published><updated>2019-04-21T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/vue-base-components</id><content type="html" xml:base="https://www.kunalnagar.in/blog/vue-base-components/">&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/wB8Tk90.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/wB8Tk90.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/wB8Tk90.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Every front-end project needs a collection of UI components that look and feel consistently across the product. Branding and design play an important role and it’s important that your product feels cohesive to your customers.&lt;/p&gt;
-
-&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
-
-&lt;p&gt;This project takes inspiration from &lt;a href=&quot;https://vuetifyjs.com/en/&quot;&gt;Vuetify&lt;/a&gt; which is an excellent Material Component Framework.&lt;/p&gt;
-
-&lt;p&gt;But you don’t necessarily want to use Material design for every project that you use. Sometimes, you’d prefer a set of minimally styled components that work consistently across browsers at the very least with an ability to add a theming layer that relates to your product/brand. That’s exactly what this project aims to do.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-are-vue-base-components&quot;&gt;What are Vue Base Components?&lt;/h2&gt;
-
-&lt;p&gt;Vue Base Components (or any custom components) essentially wrap basic HTML elements like Inputs, Selects, Buttons etc with a little more functionality use in everyday UI/UX patterns. Most of the time, they’re available as &lt;a href=&quot;https://vuejs.org/v2/guide/single-file-components.html&quot;&gt;Single File Components&lt;/a&gt; (ideally) and can be easily imported in your own project.&lt;/p&gt;
-
-&lt;p&gt;Let’s take an example of a simple button.&lt;/p&gt;
-
-&lt;h2 id=&quot;example-basebutton&quot;&gt;Example: BaseButton&lt;/h2&gt;
-
-&lt;p&gt;When developing a custom button, here’s a basic checklist of things you’d like the button to do:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Base button (works out of the box)&lt;/li&gt;
-  &lt;li&gt;Add a link and navigate on click&lt;/li&gt;
-  &lt;li&gt;Icon Support&lt;/li&gt;
-  &lt;li&gt;Loading states&lt;/li&gt;
-  &lt;li&gt;Enabled/Disabled states&lt;/li&gt;
-  &lt;li&gt;Multiple themes (for e.g. link view where the button looks like a link instead of a button)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;BaseButton /&amp;gt;&lt;/code&gt; component out of the box, it will look something like:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/F2p7Kl9.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/F2p7Kl9.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/F2p7Kl9.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want to add an icon, it’s as simple as doing:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton icon=&quot;save&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/qqyZQFz.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/qqyZQFz.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/qqyZQFz.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want to change the text:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton icon=&quot;download&quot; text=&quot;Download&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/DnQZHND.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/DnQZHND.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/DnQZHND.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want to add a link:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;BaseButton href=&quot;https://google.com&quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This project ships with the &lt;a href=&quot;https://fontawesome.com/icons?d=gallery&amp;amp;s=solid&amp;amp;m=free&quot;&gt;free version of Font Awesome icons&lt;/a&gt; (solid styles only) by default but there will be an option to add your Subscription key so you can use the entire suite.&lt;/p&gt;
-
-&lt;h2 id=&quot;advantages&quot;&gt;Advantages&lt;/h2&gt;
-
-&lt;p&gt;There are a number of advantages to using Base Components - the most important being consistent.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;If you have&lt;/strong&gt; a primary button in your product, you’d like that button to look the same and function everywhere, no matter what context it’s used in.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Secondly&lt;/strong&gt;, if you make any updates to your primary button, you would only need to update the Base Button file and all the changes would be propagated to multiple instances throughout your project.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It’s important to make sure that the API remains consistent. For example, if the &lt;code class=&quot;highlighter-rouge&quot;&gt;prop&lt;/code&gt; for providing a link in a Base Button is changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;href&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;link&lt;/code&gt;, the functionality of the button breaks and the Button is useless.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Thirdly&lt;/strong&gt;, Base Components contain event hooks. For example, if you want custom code to be run when your &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;BaseInput /&amp;gt;&lt;/code&gt; is focused, you can hook into the &lt;code class=&quot;highlighter-rouge&quot;&gt;base:input:focus&lt;/code&gt; event.&lt;/p&gt;
-
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;This project is Open Source and under active development. Feel free to submit ideas/PRs!&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/vue-base-components&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://www.kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+00:00</published><updated>2019-04-18T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://www.kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://www.kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+00:00</published><updated>2019-04-18T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://www.kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
 
 &lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
 
@@ -1038,4 +954,84 @@ Group: xampp
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+00:00</published><updated>2019-03-01T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
+
+&lt;p&gt;I’m assuming you are registered with an Indane gas agency. Mine was &lt;a href=&quot;https://goo.gl/maps/7t2LnjqDFTN2&quot;&gt;Gajanana Enterprises Koramangala&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a list of stuff you’ll need before you visit the agency:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Original documents of the connection&lt;/li&gt;
+  &lt;li&gt;Gas Regulator&lt;/li&gt;
+  &lt;li&gt;ID Proof (1 copy, carry original) - I carried my Aadhar card&lt;/li&gt;
+  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
+  &lt;li&gt;Gas cylinders&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was &lt;strong&gt;Rs. 3,050/-&lt;/strong&gt; as shown below. This is the amount you’ll get back after the transfer.&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h2&gt;
+
+&lt;p&gt;If you don’t own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to visit the agency on the same day the cylinders are being picked up.&lt;/li&gt;
+  &lt;li&gt;The cylinders need to reach the agency BEFORE the transfer process can be started.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-3-visit-current-agency&quot;&gt;Step 3: Visit current agency&lt;/h2&gt;
+
+&lt;p&gt;Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.&lt;/p&gt;
+
+&lt;p&gt;During the process, you’ll have to tell them the destination city and state.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Only city and state name is required. So for me, it would be &lt;em&gt;Jaipur Rajasthan&lt;/em&gt;. You can register with any agency in the destination city.&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The staff will put in a request for transfer. It usually takes a while for the request to sync to the &lt;strong&gt;Indane Central server&lt;/strong&gt;. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep this document safely as you need to present it to the other agency where you’re transferring.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency’s copy of the above document.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4-visit-transferring-agency&quot;&gt;Step 4: Visit transferring agency&lt;/h2&gt;
+
+&lt;p&gt;Once you have the Transfer document, you need to visit the transferring agency with the following details:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Transfer document&lt;/li&gt;
+  &lt;li&gt;ID Proof (1 copy, carry original)&lt;/li&gt;
+  &lt;li&gt;Adress Proof (1 copy, carry original)&lt;/li&gt;
+  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For me, the ID proof and the address proof are the same (Aadhar card), so I carried two copies of the Aadhar card.&lt;/p&gt;
+
+&lt;p&gt;Once you’re at the agency, you’ll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.&lt;/p&gt;
+
+&lt;p&gt;Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.&lt;/p&gt;
+
+&lt;p&gt;You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry></feed>
