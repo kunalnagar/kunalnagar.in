@@ -68,7 +68,7 @@
   <img src="https://i.imgur.com/i4hiG88.png" alt="Screenshot showing invalid permissions on Linux when installing an NPM package globally" />
 </a></p>
 
-<p>By default, Node installs global modules to your bin directory: <code class="highlighter-rouge">/usr/bin/node_modules</code> which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to <code class="highlighter-rouge">~/.npm-global</code></p>
+<p>By default, Node installs global modules to your bin directory: <code class="language-plaintext highlighter-rouge">/usr/bin/node_modules</code> which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to <code class="language-plaintext highlighter-rouge">~/.npm-global</code></p>
 
 <h2 id="steps-to-follow">Steps to follow</h2>
 
@@ -76,35 +76,35 @@
   <li>Create a new directory in your home folder</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir ~/.npm-global
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir ~/.npm-global
 </code></pre></div></div>
 
 <ol>
   <li>Tell npm to use the newly created directory to install global modules</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm config set prefix ~/.npm-global
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm config set prefix ~/.npm-global
 </code></pre></div></div>
 
 <ol>
-  <li>Add this to your <code class="highlighter-rouge">~/.profile</code> or <code class="highlighter-rouge">~/.bash_profile</code> depending on whether you’re on Linux/macOS respectively</li>
+  <li>Add this to your <code class="language-plaintext highlighter-rouge">~/.profile</code> or <code class="language-plaintext highlighter-rouge">~/.bash_profile</code> depending on whether you’re on Linux/macOS respectively</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export PATH=~/.npm-global/bin:$PATH
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> export PATH=~/.npm-global/bin:$PATH
 </code></pre></div></div>
 
 <ol>
   <li>Update your current terminal session by reloading the profile</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.profile
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.profile
 </code></pre></div></div>
 
 <ol>
   <li>Try and install a sample module globally and it should work</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g @vue/cli
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g @vue/cli
 </code></pre></div></div>
 
 <!-- prettier-ignore -->
@@ -112,7 +112,7 @@
   <img src="https://i.imgur.com/bkSOL0p.png" alt="Screenshot showing valid permissions on Linux when installing an NPM package globally" />
 </a></p>
 
-<p>And you’re done! Of course, you could skip all this and just use <code class="highlighter-rouge">sudo</code>, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.</p>
+<p>And you’re done! Of course, you could skip all this and just use <code class="language-plaintext highlighter-rouge">sudo</code>, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.</p>
 
 <h2 id="references">References</h2>
 

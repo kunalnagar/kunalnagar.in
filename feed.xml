@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-07-25T02:16:52+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer Toronto</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-07-25T02:36:55+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar | Frontend Developer Toronto</title><subtitle>Hi. I'm Kunal. I make the web fast by using JavaScript responsibly.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;I did not have any COVID-19 symptoms&lt;/li&gt;
@@ -166,16 +166,16 @@
 
 &lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
 
-&lt;p&gt;It’s time to set up our &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; files. The &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; will setup our development environment from scratch and the &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; will make sure that our NPM dependencies are installed, the development server is started up and we can get to work.&lt;/p&gt;
+&lt;p&gt;It’s time to set up our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; files. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; will setup our development environment from scratch and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; will make sure that our NPM dependencies are installed, the development server is started up and we can get to work.&lt;/p&gt;
 
-&lt;p&gt;Here is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and here’s what it does:&lt;/p&gt;
+&lt;p&gt;Here is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and here’s what it does:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Base Operating System - Ubuntu 18.04 LTS&lt;/li&gt;
   &lt;li&gt;Default Terminal - Bash&lt;/li&gt;
   &lt;li&gt;Update the system and make it ready for installing dependencies&lt;/li&gt;
   &lt;li&gt;Install Jekyll dependencies&lt;/li&gt;
-  &lt;li&gt;Configure Ruby and make &lt;code class=&quot;highlighter-rouge&quot;&gt;gem&lt;/code&gt; available from the command line&lt;/li&gt;
+  &lt;li&gt;Configure Ruby and make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem&lt;/code&gt; available from the command line&lt;/li&gt;
   &lt;li&gt;Install Jekyll and Bundler&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -186,7 +186,7 @@
   &lt;li&gt;Expose port 4000 (since Jekyll runs on that port)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM ubuntu:18.04
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FROM ubuntu:18.04
 
 SHELL [&quot;/bin/bash&quot;, &quot;-c&quot;]
 
@@ -208,16 +208,16 @@ RUN curl -sSL &quot;https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar
 EXPOSE 4000
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; comes in. Here are the steps in brief:&lt;/p&gt;
+&lt;p&gt;With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; comes in. Here are the steps in brief:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Setup an &lt;code class=&quot;highlighter-rouge&quot;&gt;app&lt;/code&gt; container&lt;/li&gt;
-  &lt;li&gt;Map the Jekyll site on your computer using the &lt;code class=&quot;highlighter-rouge&quot;&gt;volumes&lt;/code&gt; key&lt;/li&gt;
-  &lt;li&gt;Map the port on your local machine to the Docker container (port &lt;code class=&quot;highlighter-rouge&quot;&gt;4000&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Setup an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app&lt;/code&gt; container&lt;/li&gt;
+  &lt;li&gt;Map the Jekyll site on your computer using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volumes&lt;/code&gt; key&lt;/li&gt;
+  &lt;li&gt;Map the port on your local machine to the Docker container (port &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4000&lt;/code&gt;)&lt;/li&gt;
   &lt;li&gt;Start the development server&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;version: '3.6'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;version: '3.6'
 services:
 
   app:
@@ -237,13 +237,13 @@ services:
 
 &lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
 
-&lt;p&gt;All you need to do is run &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up -d&lt;/code&gt; and you’re ready to start working on your Jekyll site at &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;All you need to do is run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up -d&lt;/code&gt; and you’re ready to start working on your Jekyll site at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
 
 &lt;p&gt;If you run into issues, you can use the following commands to inspect your container:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# See a LIVE view of your Docker container's logs
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# See a LIVE view of your Docker container's logs
 docker logs -f &amp;lt;container_name&amp;gt;
 
 # Login to your Docker container and browser around
@@ -261,7 +261,7 @@ docker exec -ti &amp;lt;container_name&amp;gt; bash
   &lt;img src=&quot;https://i.imgur.com/i4hiG88.png&quot; alt=&quot;Screenshot showing invalid permissions on Linux when installing an NPM package globally&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;By default, Node installs global modules to your bin directory: &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/node_modules&lt;/code&gt; which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.npm-global&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;By default, Node installs global modules to your bin directory: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/bin/node_modules&lt;/code&gt; which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.npm-global&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;steps-to-follow&quot;&gt;Steps to follow&lt;/h2&gt;
 
@@ -269,35 +269,35 @@ docker exec -ti &amp;lt;container_name&amp;gt; bash
   &lt;li&gt;Create a new directory in your home folder&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir ~/.npm-global
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir ~/.npm-global
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Tell npm to use the newly created directory to install global modules&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm config set prefix ~/.npm-global
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm config set prefix ~/.npm-global
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Add this to your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; depending on whether you’re on Linux/macOS respectively&lt;/li&gt;
+  &lt;li&gt;Add this to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; depending on whether you’re on Linux/macOS respectively&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; export PATH=~/.npm-global/bin:$PATH
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; export PATH=~/.npm-global/bin:$PATH
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Update your current terminal session by reloading the profile&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.profile
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.profile
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Try and install a sample module globally and it should work&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g @vue/cli
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g @vue/cli
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;!-- prettier-ignore --&gt;
@@ -305,7 +305,7 @@ docker exec -ti &amp;lt;container_name&amp;gt; bash
   &lt;img src=&quot;https://i.imgur.com/bkSOL0p.png&quot; alt=&quot;Screenshot showing valid permissions on Linux when installing an NPM package globally&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And you’re done! Of course, you could skip all this and just use &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.&lt;/p&gt;
+&lt;p&gt;And you’re done! Of course, you could skip all this and just use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -333,9 +333,9 @@ docker exec -ti &amp;lt;container_name&amp;gt; bash
 
 &lt;h2 id=&quot;tell-git-to-use-your-gpg-key&quot;&gt;Tell Git to use your GPG key&lt;/h2&gt;
 
-&lt;p&gt;After adding the public GPG key to your GitHub account, you need to tell &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; on your machine to use that key to sign commits. But first, let’s get a list of keys on your account using:&lt;/p&gt;
+&lt;p&gt;After adding the public GPG key to your GitHub account, you need to tell &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; on your machine to use that key to sign commits. But first, let’s get a list of keys on your account using:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gpg --list-secret-keys --keyid-format LONG
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gpg --list-secret-keys --keyid-format LONG
 
 /home/kunal/.gnupg/pubring.kbx
 ------------------------------
@@ -345,16 +345,16 @@ uid                 [ unknown] Kunal Nagar &amp;lt;knlnagar@gmail.com&amp;gt;
 ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;In the above example, my public key is &lt;code class=&quot;highlighter-rouge&quot;&gt;ABD83AC02AAC0953&lt;/code&gt; and we’ll use that:&lt;/p&gt;
+&lt;p&gt;In the above example, my public key is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ABD83AC02AAC0953&lt;/code&gt; and we’ll use that:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git config --global user.signingkey ABD83AC02AAC0953
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git config --global user.signingkey ABD83AC02AAC0953
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;signing-your-commit&quot;&gt;Signing your commit&lt;/h2&gt;
 
-&lt;p&gt;When you’re ready to commit your work, just add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-S&lt;/code&gt; flag to your commit command:&lt;/p&gt;
+&lt;p&gt;When you’re ready to commit your work, just add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-S&lt;/code&gt; flag to your commit command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m -S &quot;Testing signed commits&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git commit -m -S &quot;Testing signed commits&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If your key has a passphrase, you’ll be asked to enter it now.&lt;/p&gt;
@@ -395,7 +395,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 
 &lt;p&gt;Open your GoDaddy account, navigate to the Domain DNS settings and follow the TXT record.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Instead of entering the entire &lt;code class=&quot;highlighter-rouge&quot;&gt;_acme-challenge.yourdomain.com&lt;/code&gt;, just use &lt;code class=&quot;highlighter-rouge&quot;&gt;_acme-challenge&lt;/code&gt; in the name/host box. This is how one of the entries should look like:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Instead of entering the entire &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_acme-challenge.yourdomain.com&lt;/code&gt;, just use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_acme-challenge&lt;/code&gt; in the name/host box. This is how one of the entries should look like:&lt;/p&gt;
 
 &lt;!-- prettier-ignore --&gt;
 &lt;p&gt;&lt;a href=&quot;https://i.imgur.com/jFH0vFP.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/jFH0vFP.png&quot; class=&quot;lightbox-img&quot;&gt;
@@ -496,7 +496,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
   &lt;li&gt;jsPDF&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://code.highcharts.com/highcharts.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script src=&quot;https://code.highcharts.com/highcharts.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script src=&quot;https://code.highcharts.com/modules/exporting.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script src=&quot;https://code.highcharts.com/modules/offline-exporting.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
@@ -504,7 +504,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you want offline exporting and don’t want to send graph data to Highsoft’s servers (for privacy reasons), yo need to add the following option to the Highcharts graph options:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exporting: {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exporting: {
     enabled: false,
     fallbackToExportServer: false
 }
@@ -514,29 +514,29 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 
 &lt;p&gt;The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I’ve come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.&lt;/p&gt;
 
-&lt;p&gt;In this example, we’ll be using two charts - one scatter and one pie chart. Let’s assume that their respective Highchart objects are &lt;code class=&quot;highlighter-rouge&quot;&gt;chart1&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;chart2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In this example, we’ll be using two charts - one scatter and one pie chart. Let’s assume that their respective Highchart objects are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chart1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chart2&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;We will also need an instance of jsPDF:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var pdf = new jsPDF('p', 'mm', [1000, 1400]);
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var pdf = new jsPDF('p', 'mm', [1000, 1400]);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;If you look at the Highcharts API, it has a method called &lt;a href=&quot;https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt;&lt;/a&gt; that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don’t really want that - instead we want the &lt;code class=&quot;highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; (a base64 encoded string) of the image that we can put on the PDF using &lt;a href=&quot;http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;addImage&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you look at the Highcharts API, it has a method called &lt;a href=&quot;https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt;&lt;/a&gt; that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don’t really want that - instead we want the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; (a base64 encoded string) of the image that we can put on the PDF using &lt;a href=&quot;http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addImage&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chart1.exportChartLocal('image/svg+xml');
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chart1.exportChartLocal('image/svg+xml');
 chart2.exportChartLocal('image/svg+xml');
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;To stop the download popup and get the &lt;code class=&quot;highlighter-rouge&quot;&gt;dataURL&lt;/code&gt;, we need to hook into the &lt;code class=&quot;highlighter-rouge&quot;&gt;downloadURL&lt;/code&gt; method on the base Highcharts object that will give us the &lt;code class=&quot;highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; and the &lt;code class=&quot;highlighter-rouge&quot;&gt;filename&lt;/code&gt; of the image.&lt;/p&gt;
+&lt;p&gt;To stop the download popup and get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dataURL&lt;/code&gt;, we need to hook into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;downloadURL&lt;/code&gt; method on the base Highcharts object that will give us the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filename&lt;/code&gt; of the image.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Highcharts.downloadURL = function (dataURL, filename) {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Highcharts.downloadURL = function (dataURL, filename) {
     pdf.addImage(dataURL, 'SVG', 10, 10);
 };
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Yet another problem here is that there is no callback to the &lt;code class=&quot;highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt; method so we’ll have to use a counter and an array to store the dataURLs in an array.&lt;/p&gt;
+&lt;p&gt;Yet another problem here is that there is no callback to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt; method so we’ll have to use a counter and an array to store the dataURLs in an array.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var counter = 0;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var counter = 0;
 var imageURLs = [];
 Highcharts.downloadURL = function (dataURL, filename) {
     imageURLs.push(dataURL);
@@ -546,7 +546,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;To check if all the dataURLs are added to the array, we need to poll continuously. Once the array is prepared, we loop over it and add the image URLs to the PDF:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var interval = setInterval(function() {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var interval = setInterval(function() {
     if(counter === 2) {
         clearInterval(interval);
         imageURLs.forEach(function(img) {
@@ -925,32 +925,32 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;Once the status changes to &lt;strong&gt;Approved&lt;/strong&gt;, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.&lt;/p&gt;
 
-&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+00:00</published><updated>2019-03-11T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
+&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+00:00</published><updated>2019-03-11T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
 
 &lt;h2 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h2&gt;
 
 &lt;p&gt;After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User: daemon
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User: daemon
 Group: xampp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You can find this under &lt;code class=&quot;highlighter-rouge&quot;&gt;/Applications/XAMPP/etc/httpd.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can find this under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/Applications/XAMPP/etc/httpd.conf&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;This means that there must be a &lt;code class=&quot;highlighter-rouge&quot;&gt;daemon&lt;/code&gt; user on your Mac that’s part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;xampp&lt;/code&gt; group to allow writes.&lt;/p&gt;
+&lt;p&gt;This means that there must be a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;daemon&lt;/code&gt; user on your Mac that’s part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xampp&lt;/code&gt; group to allow writes.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-fix&quot;&gt;The Fix&lt;/h2&gt;
 
-&lt;p&gt;Just change the user to your &lt;code class=&quot;highlighter-rouge&quot;&gt;mac_username&lt;/code&gt; and the group to &lt;code class=&quot;highlighter-rouge&quot;&gt;staff&lt;/code&gt;. My Mac’s username is &lt;code class=&quot;highlighter-rouge&quot;&gt;kunalnagar&lt;/code&gt;, and so my config looks like the following:&lt;/p&gt;
+&lt;p&gt;Just change the user to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mac_username&lt;/code&gt; and the group to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staff&lt;/code&gt;. My Mac’s username is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kunalnagar&lt;/code&gt;, and so my config looks like the following:&lt;/p&gt;
 
 &lt;!-- prettier-ignore --&gt;
 &lt;p&gt;&lt;a href=&quot;https://i.imgur.com/DEMPMFo.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/DEMPMFo.png&quot; class=&quot;lightbox-img&quot;&gt;
   &lt;img src=&quot;https://i.imgur.com/DEMPMFo.png&quot; alt=&quot;&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the &lt;code class=&quot;highlighter-rouge&quot;&gt;htdocs&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htdocs&lt;/code&gt; directory.&lt;/p&gt;
 
-&lt;p&gt;If you set up a new WordPress install, the &lt;code class=&quot;highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file will be automatically written for you.&lt;/p&gt;
+&lt;p&gt;If you set up a new WordPress install, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file will be automatically written for you.&lt;/p&gt;
 
 &lt;hr /&gt;
 

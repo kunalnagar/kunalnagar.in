@@ -109,9 +109,9 @@
 
 <h2 id="how-to-set-it-up">How to set it up</h2>
 
-<p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
+<p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="language-plaintext highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git_prompt() {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git_prompt() {
 
     local branchName="";
 
@@ -136,13 +136,13 @@ PS1+="\n=&gt; ";
 
 <p>If you’re like me and want to understand what this gibberish means, read on.</p>
 
-<p>The <code class="highlighter-rouge">git_prompt()</code> method spits out the current branch name, if it exists. Let’s try to break it down.</p>
+<p>The <code class="language-plaintext highlighter-rouge">git_prompt()</code> method spits out the current branch name, if it exists. Let’s try to break it down.</p>
 
 <h2 id="step-1">Step 1</h2>
 
 <p>Let’s run the first half of the command in a git repo and a normal folder and see what happens</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
 =&gt; git rev-parse --git-dir
 .git
 
@@ -156,13 +156,13 @@ fatal: not a git repository (or any of the parent directories): .git
 
 <p>So basically, this command is used to check if our current working directory is a git repo or not.</p>
 
-<p>What’s the writing to <code class="highlighter-rouge">/dev/null</code> and <code class="highlighter-rouge">2&gt;&amp;1</code> mean? Read more <a href="https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts">here</a></p>
+<p>What’s the writing to <code class="language-plaintext highlighter-rouge">/dev/null</code> and <code class="language-plaintext highlighter-rouge">2&gt;&amp;1</code> mean? Read more <a href="https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts">here</a></p>
 
 <h2 id="step-2">Step 2</h2>
 
 <p>Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
 =&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null
 updates-v3
 
@@ -173,38 +173,38 @@ updates-v3
 =&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">git symbolic-ref</code> allows us to read, modify and delete <a href="https://stackoverflow.com/a/1526526">symbolic refs</a></p>
+<p>The <code class="language-plaintext highlighter-rouge">git symbolic-ref</code> allows us to read, modify and delete <a href="https://stackoverflow.com/a/1526526">symbolic refs</a></p>
 
-<p>For more information on the flags, check out <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet"><code class="highlighter-rouge">--quiet</code></a> and <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short"><code class="highlighter-rouge">--short</code></a></p>
+<p>For more information on the flags, check out <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet"><code class="language-plaintext highlighter-rouge">--quiet</code></a> and <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short"><code class="language-plaintext highlighter-rouge">--short</code></a></p>
 
 <p>As you can see from the above example, when the above command is run, it spits out the branch name.</p>
 
-<p>The <code class="highlighter-rouge">git rev-parse</code> is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info</p>
+<p>The <code class="language-plaintext highlighter-rouge">git rev-parse</code> is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
 =&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || git rev-parse
 updates-v3
 </code></pre></div></div>
 
 <h2 id="step-3">Step 3</h2>
 
-<p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="highlighter-rouge">PS</code> to show our minimal prompt</p>
+<p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="language-plaintext highlighter-rouge">PS</code> to show our minimal prompt</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1="\n[\u] at \w";
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1="\n[\u] at \w";
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">\n</code>: New line</p>
+<p><code class="language-plaintext highlighter-rouge">\n</code>: New line</p>
 
-<p><code class="highlighter-rouge">\u</code>: Current user (name)</p>
+<p><code class="language-plaintext highlighter-rouge">\u</code>: Current user (name)</p>
 
-<p><code class="highlighter-rouge">\w</code>: Path relative to home (notice the tilda in the path names in the screenshots)</p>
+<p><code class="language-plaintext highlighter-rouge">\w</code>: Path relative to home (notice the tilda in the path names in the screenshots)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+=" \$(git_prompt)";
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+=" \$(git_prompt)";
 </code></pre></div></div>
 
 <p>This appends the branch name in parentheses (if it’s a git repo)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+="\n=&gt; ";
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+="\n=&gt; ";
 </code></pre></div></div>
 
 <p>Just a new line. With a short arrow.</p>

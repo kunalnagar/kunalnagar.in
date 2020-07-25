@@ -84,20 +84,20 @@
 
 <p>To install composer, run the following commands in the terminal:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -sS https://getcomposer.org/installer | php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 </code></pre></div></div>
 
 <p>This will install Composer globally for you. To verify that your composer installation is successful, try running:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer
 </code></pre></div></div>
 
 <p>…and you’ll see a bunch of composer commands flow down your terminal screen. Hurray!</p>
 
 <p>You can also update composer by running:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer self-update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer self-update
 </code></pre></div></div>
 
 <p>For more information, check out the in-depth guide on their website for <a href="https://getcomposer.org/doc/00-intro.md">Getting Started with Composer</a>.</p>
@@ -106,7 +106,7 @@ mv composer.phar /usr/local/bin/composer
 
 <p>When installing Laravel for the first time, more than 90% of the people face this dreaded PHP error:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MCrypt PHP extension not installed.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MCrypt PHP extension not installed.
 </code></pre></div></div>
 
 <p>…and then they spend countless hours on the internet trying to figure out how to solve this and most of them will tell you to install MAMP. But what if you have XAMPP installed?</p>
@@ -117,55 +117,55 @@ mv composer.phar /usr/local/bin/composer
 
 <p>Open your .bash_profile by running:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim ~/.bash_profile
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim ~/.bash_profile
 </code></pre></div></div>
 
 <p>…and paste the following line at the end:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
 </code></pre></div></div>
 
 <p>Save the file by pressing : and typing wq and then press enter to quit out.</p>
 
 <p>Remember to reload the .bash_profile by running:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.bash_profile
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.bash_profile
 </code></pre></div></div>
 
 <h3 id="for-mamp-users">For MAMP users</h3>
 
 <p>The procedure is pretty much the same. You start out by opening your .bash_profile and pasting the following line at the end:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/Applications/MAMP/bin/php/php5.6/bin:$PATH
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/Applications/MAMP/bin/php/php5.6/bin:$PATH
 </code></pre></div></div>
 
 <p>Important note: This assumes that you have PHP 5.6 installed on your machine.</p>
 
 <p>Remember to reload the .bash_profile by running:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.bash_profile
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ~/.bash_profile
 </code></pre></div></div>
 
 <h2 id="step-3-installing-laravel-5">Step 3: Installing Laravel 5</h2>
 
 <p>To create a new Laravel 5 project, run the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel dev-develop
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel dev-develop
 </code></pre></div></div>
 
 <p>This will pull in the latest dev branch from the Github repo. If you want the latest stable version, run the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel --prefer-dist
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel --prefer-dist
 </code></pre></div></div>
 
 <p>If everything goes well, try running:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan -V
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan -V
 </code></pre></div></div>
 
 <p>and if it says:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Laravel Framework version 5.0-dev
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Laravel Framework version 5.0-dev
 </code></pre></div></div>
 
 <p>then you’re good to go!</p>
@@ -198,7 +198,7 @@ mv composer.phar /usr/local/bin/composer
 
 <p>Once you have installed Vagrant on your machine, it is time to install Homestead.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant box add laravel/homestead
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant box add laravel/homestead
 </code></pre></div></div>
 
 <p>It might take some time to install depending on your internet connection.</p>
@@ -209,39 +209,39 @@ mv composer.phar /usr/local/bin/composer
 
 <p>Once the installation completes, you need to create a Homestead.yaml file that will hold all the configuration for our VM.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>homestead init
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>homestead init
 </code></pre></div></div>
 
 <p>By default, this will create a Homestead.yaml file in your root directory.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.homestead/Homestead.yaml
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/.homestead/Homestead.yaml
 </code></pre></div></div>
 
 <p>Open up the file and let’s discuss what’s relevant:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>authorize: ~/.ssh/id_rsa.pub
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>authorize: ~/.ssh/id_rsa.pub
 </code></pre></div></div>
 
 <p>You need to setup an SSH key on your machine that will allow you to SSH into your VM.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>folders:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>folders:
   — map: ~/path/to/project
     to: /home/vagrant/project-name
 </code></pre></div></div>
 
 <p>The above code maps the project on your machine to the project on the VM. For example, if your project directory is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/Documents/LaravelProjects/laravel-test
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/Documents/LaravelProjects/laravel-test
 </code></pre></div></div>
 
 <p>It’s going to map to the following in the VM:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/vagrant/laravel-test
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/vagrant/laravel-test
 </code></pre></div></div>
 
 <p>Let’s look at the most important part:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sites:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sites:
   — map: project.app
     to: /home/vagrant/project-name/public
 </code></pre></div></div>
@@ -250,27 +250,27 @@ mv composer.phar /usr/local/bin/composer
 
 <p>For example, you can enter something like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://personal.app
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://personal.app
 </code></pre></div></div>
 
 <p>…and see your Laravel project. You can also use the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8000
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8000
 </code></pre></div></div>
 
 <p>Okay, so we are ready to start Homestead. To do that, run the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>homestead up
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>homestead up
 </code></pre></div></div>
 
 <p>It will spit out a bunch of commands in your terminal. Once it’s done, you can SSH into your shiny new server by:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>homestead ssh
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>homestead ssh
 </code></pre></div></div>
 
 <p>…and if everything is setup correctly, you’ll see the following prompt:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant@homestead:~/project-name
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant@homestead:~/project-name
 </code></pre></div></div>
 
 <p>Congratulations! You just set up a new Laravel 5 project from scratch.</p>

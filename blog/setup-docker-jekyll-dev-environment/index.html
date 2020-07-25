@@ -88,16 +88,16 @@
 
 <h3 id="step-2">Step 2</h3>
 
-<p>It’s time to set up our <code class="highlighter-rouge">Dockerfile</code> and <code class="highlighter-rouge">docker-compose.yml</code> files. The <code class="highlighter-rouge">Dockerfile</code> will setup our development environment from scratch and the <code class="highlighter-rouge">docker-compose.yml</code> will make sure that our NPM dependencies are installed, the development server is started up and we can get to work.</p>
+<p>It’s time to set up our <code class="language-plaintext highlighter-rouge">Dockerfile</code> and <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> files. The <code class="language-plaintext highlighter-rouge">Dockerfile</code> will setup our development environment from scratch and the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> will make sure that our NPM dependencies are installed, the development server is started up and we can get to work.</p>
 
-<p>Here is the <code class="highlighter-rouge">Dockerfile</code> and here’s what it does:</p>
+<p>Here is the <code class="language-plaintext highlighter-rouge">Dockerfile</code> and here’s what it does:</p>
 
 <ul>
   <li>Base Operating System - Ubuntu 18.04 LTS</li>
   <li>Default Terminal - Bash</li>
   <li>Update the system and make it ready for installing dependencies</li>
   <li>Install Jekyll dependencies</li>
-  <li>Configure Ruby and make <code class="highlighter-rouge">gem</code> available from the command line</li>
+  <li>Configure Ruby and make <code class="language-plaintext highlighter-rouge">gem</code> available from the command line</li>
   <li>Install Jekyll and Bundler</li>
 </ul>
 
@@ -108,7 +108,7 @@
   <li>Expose port 4000 (since Jekyll runs on that port)</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu:18.04
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu:18.04
 
 SHELL ["/bin/bash", "-c"]
 
@@ -130,16 +130,16 @@ RUN curl -sSL "https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar.xz" 
 EXPOSE 4000
 </code></pre></div></div>
 
-<p>With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the <code class="highlighter-rouge">docker-compose.yml</code> comes in. Here are the steps in brief:</p>
+<p>With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> comes in. Here are the steps in brief:</p>
 
 <ul>
-  <li>Setup an <code class="highlighter-rouge">app</code> container</li>
-  <li>Map the Jekyll site on your computer using the <code class="highlighter-rouge">volumes</code> key</li>
-  <li>Map the port on your local machine to the Docker container (port <code class="highlighter-rouge">4000</code>)</li>
+  <li>Setup an <code class="language-plaintext highlighter-rouge">app</code> container</li>
+  <li>Map the Jekyll site on your computer using the <code class="language-plaintext highlighter-rouge">volumes</code> key</li>
+  <li>Map the port on your local machine to the Docker container (port <code class="language-plaintext highlighter-rouge">4000</code>)</li>
   <li>Start the development server</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.6'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.6'
 services:
 
   app:
@@ -159,13 +159,13 @@ services:
 
 <h3 id="step-3">Step 3</h3>
 
-<p>All you need to do is run <code class="highlighter-rouge">docker-compose up -d</code> and you’re ready to start working on your Jekyll site at <code class="highlighter-rouge">http://localhost:4000</code></p>
+<p>All you need to do is run <code class="language-plaintext highlighter-rouge">docker-compose up -d</code> and you’re ready to start working on your Jekyll site at <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></p>
 
 <h3 id="notes">Notes</h3>
 
 <p>If you run into issues, you can use the following commands to inspect your container:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># See a LIVE view of your Docker container's logs
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># See a LIVE view of your Docker container's logs
 docker logs -f &lt;container_name&gt;
 
 # Login to your Docker container and browser around

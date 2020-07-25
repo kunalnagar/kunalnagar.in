@@ -75,24 +75,24 @@
 
 <p>Add the Android Platform to our app using:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic platform add android
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic platform add android
 </code></pre></div></div>
 
 <h3 id="step-3">Step 3</h3>
 
 <p>Build out the app using the process described here so that we can get the SHA1 key. To generate the .keystore file, use this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
 </code></pre></div></div>
 
 <p>To get the SHA1 from the keystore, use this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keytool -list -v -keystore my-release-key.keystore -alias androiddebugkey -storepass android -keypass android
 </code></pre></div></div>
 
 <p>You will get something like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias name: androiddebugkey
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias name: androiddebugkey
 Creation date: 17 Feb 12
 Entry type: PrivateKeyEntry
 Certificate chain length: 1
@@ -155,58 +155,58 @@ Version: 3
 
 <p>Here is the PHP script:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
-<span class="c1">// API access key from Google API's Console</span>
-<span class="nb">define</span><span class="p">(</span> <span class="s1">'API_ACCESS_KEY'</span><span class="p">,</span> <span class="s1">'ENTER_PUBLIC_API_ACCESS_KEY_FROM_API_CONSOLE'</span> <span class="p">);</span>
+// API access key from Google API's Console
+define( 'API_ACCESS_KEY', 'ENTER_PUBLIC_API_ACCESS_KEY_FROM_API_CONSOLE' );
 
-<span class="nv">$registrationIds</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span> <span class="p">);</span>
+$registrationIds = array( $_GET['id'] );
 
-<span class="c1">// prep the bundle</span>
-<span class="nv">$msg</span> <span class="o">=</span> <span class="k">array</span>
-<span class="p">(</span>
-	<span class="s1">'message'</span> 	<span class="o">=&gt;</span> <span class="s1">'New Message'</span><span class="p">,</span>
-	<span class="s1">'title'</span>		<span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
-	<span class="s1">'subtitle'</span>	<span class="o">=&gt;</span> <span class="s1">'Subtitle'</span><span class="p">,</span>
-	<span class="s1">'tickerText'</span>	<span class="o">=&gt;</span> <span class="s1">'Ticker Text'</span><span class="p">,</span>
-	<span class="s1">'vibrate'</span>	<span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
-	<span class="s1">'sound'</span>		<span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
-	<span class="s1">'largeIcon'</span>	<span class="o">=&gt;</span> <span class="s1">'large_icon'</span><span class="p">,</span>
-	<span class="s1">'smallIcon'</span>	<span class="o">=&gt;</span> <span class="s1">'small_icon'</span>
-<span class="p">);</span>
+// prep the bundle
+$msg = array
+(
+	'message' 	=&gt; 'New Message',
+	'title'		=&gt; 'Title',
+	'subtitle'	=&gt; 'Subtitle',
+	'tickerText'	=&gt; 'Ticker Text',
+	'vibrate'	=&gt; 1,
+	'sound'		=&gt; 1,
+	'largeIcon'	=&gt; 'large_icon',
+	'smallIcon'	=&gt; 'small_icon'
+);
 
-<span class="nv">$fields</span> <span class="o">=</span> <span class="k">array</span>
-<span class="p">(</span>
-	<span class="s1">'registration_ids'</span> 	<span class="o">=&gt;</span> <span class="nv">$registrationIds</span><span class="p">,</span>
-	<span class="s1">'data'</span>			<span class="o">=&gt;</span> <span class="nv">$msg</span>
-<span class="p">);</span>
+$fields = array
+(
+	'registration_ids' 	=&gt; $registrationIds,
+	'data'			=&gt; $msg
+);
 
-<span class="nv">$headers</span> <span class="o">=</span> <span class="k">array</span>
-<span class="p">(</span>
-	<span class="s1">'Authorization: key='</span> <span class="o">.</span> <span class="nx">API_ACCESS_KEY</span><span class="p">,</span>
-	<span class="s1">'Content-Type: application/json'</span>
-<span class="p">);</span>
+$headers = array
+(
+	'Authorization: key=' . API_ACCESS_KEY,
+	'Content-Type: application/json'
+);
 
-<span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
-<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="s1">'https://android.googleapis.com/gcm/send'</span> <span class="p">);</span>
-<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
-<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="nv">$headers</span> <span class="p">);</span>
-<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
-<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_SSL_VERIFYPEER</span><span class="p">,</span> <span class="kc">false</span> <span class="p">);</span>
-<span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nb">json_encode</span><span class="p">(</span> <span class="nv">$fields</span> <span class="p">)</span> <span class="p">);</span>
-<span class="nv">$result</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span> <span class="p">);</span>
-<span class="nb">curl_close</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">);</span>
+$ch = curl_init();
+curl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
+curl_setopt( $ch,CURLOPT_POST, true );
+curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
+curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
+curl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );
+curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );
+$result = curl_exec($ch );
+curl_close( $ch );
 
-<span class="k">echo</span> <span class="nv">$result</span><span class="p">;</span>
+echo $result;
 
-<span class="cp">?&gt;</span>
+?&gt;
 </code></pre></div></div>
 
 <h3 id="step-6">Step 6</h3>
 
 <p>Now that our PHP script is ready, install the Push Notifications plugin from ngCordova and then we need to write Ionic code to register our device:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>angular.module('starter').controller('TestCtrl', function($rootScope, $scope, $cordovaPush, $cordovaDevice) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>angular.module('starter').controller('TestCtrl', function($rootScope, $scope, $cordovaPush, $cordovaDevice) {
     var androidConfig = {
         "senderID": "ENTER_PROJECT_ID_FROM_API_CONSOLE_OVERVIEW",
     };
@@ -247,7 +247,7 @@ Version: 3
 
 <p>When you run your PHP script, pass in the Registration ID as a GET parameter like:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/script.php?id=ENTER_REGISTRATION_ID_HERE
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost/script.php?id=ENTER_REGISTRATION_ID_HERE
 </code></pre></div></div>
 
 <p>Before you hit Enter, minimise the app on your Android Device and return to the Home Screen so that you can see the proper effect of the Push Notification arriving. Trust me, it feels good.</p>

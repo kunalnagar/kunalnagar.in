@@ -65,28 +65,28 @@
 
 <p>Here is a simple script that you can download and run from your terminal. Right-Click and save the file on your Desktop. Make sure to keep the file extension as <strong>.sh</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
 
-<span class="k">function </span>switch_files <span class="o">{</span>
-    <span class="nb">mv</span> <span class="nv">$1</span>.png <span class="nv">$1</span>.tmp.png
-    <span class="nb">mv</span> <span class="nv">$1</span><span class="nt">-inverse</span>.png <span class="nv">$1</span>.png
-    <span class="nb">mv</span> <span class="nv">$1</span>.tmp.png <span class="nv">$1</span><span class="nt">-inverse</span>.png
-    <span class="nb">mv</span> <span class="nv">$1</span>@2x.png <span class="nv">$1</span>@2x.tmp.png
-    <span class="nb">mv</span> <span class="nv">$1</span><span class="nt">-inverse</span>@2x.png <span class="nv">$1</span>@2x.png
-    <span class="nb">mv</span> <span class="nv">$1</span>@2x.tmp.png <span class="nv">$1</span><span class="nt">-inverse</span>@2x.png
-<span class="o">}</span>
+function switch_files {
+    mv $1.png $1.tmp.png
+    mv $1-inverse.png $1.png
+    mv $1.tmp.png $1-inverse.png
+    mv $1@2x.png $1@2x.tmp.png
+    mv $1-inverse@2x.png $1@2x.png
+    mv $1@2x.tmp.png $1-inverse@2x.png
+}
 
-<span class="nv">RUNNING</span><span class="o">=</span><span class="sb">`</span>ps aux | <span class="nb">grep</span> <span class="s1">'/Google Drive'</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="nb">grep</span> | <span class="nb">wc</span> <span class="nt">-l</span> | bc<span class="sb">`</span>
-<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$RUNNING</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
-    </span>killall <span class="s1">'Google Drive'</span>
-    <span class="k">while</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$RUNNING</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"1"</span> <span class="o">]</span><span class="p">;</span> <span class="k">do
-        </span><span class="nb">sleep </span>1
-        <span class="nv">RUNNING</span><span class="o">=</span><span class="sb">`</span>ps aux | <span class="nb">grep</span> <span class="s1">'/Google Drive'</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="nb">grep</span> | <span class="nb">wc</span> <span class="nt">-l</span> | bc<span class="sb">`</span>
-    <span class="k">done
+RUNNING=`ps aux | grep '/Google Drive' | grep -v grep | wc -l | bc`
+if [ "$RUNNING" = "1" ]; then
+    killall 'Google Drive'
+    while [ "$RUNNING" = "1" ]; do
+        sleep 1
+        RUNNING=`ps aux | grep '/Google Drive' | grep -v grep | wc -l | bc`
+    done
 fi
-</span><span class="nb">sleep </span>3
+sleep 3
 
-<span class="nb">cd</span> <span class="s1">'/Applications/Google Drive.app/Contents/Resources/'</span>
+cd '/Applications/Google Drive.app/Contents/Resources/'
 switch_files mac-animate1
 switch_files mac-animate2
 switch_files mac-animate3
@@ -99,12 +99,12 @@ switch_files mac-error
 switch_files mac-inactive
 switch_files mac-normal
 switch_files mac-paused
-open <span class="s1">'/Applications/Google Drive.app'</span>
+open '/Applications/Google Drive.app'
 </code></pre></div></div>
 
 <p>Then, run the following command:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash ~/Desktop/fix-google-drive-dark-mode-icons.sh
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash ~/Desktop/fix-google-drive-dark-mode-icons.sh
 </code></pre></div></div>
 
 <p>It might take a while for the prompt to respond, but when you are done, your Google Drive Icon in the Menu Bar will be visible.</p>

@@ -61,32 +61,32 @@
       <div class="page-blog-single">
         <h1>Permissions fix for WordPress development on XAMPP (Mac)</h1>
         <time>March 11, 2019</time>
-        <article><p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
+        <article><p>I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the <code class="language-plaintext highlighter-rouge">wp-config.php</code> file is not automatically created because of permissions issues.</p>
 
 <h2 id="identifying-the-issue">Identifying the issue</h2>
 
 <p>After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User: daemon
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User: daemon
 Group: xampp
 </code></pre></div></div>
 
-<p>You can find this under <code class="highlighter-rouge">/Applications/XAMPP/etc/httpd.conf</code></p>
+<p>You can find this under <code class="language-plaintext highlighter-rouge">/Applications/XAMPP/etc/httpd.conf</code></p>
 
-<p>This means that there must be a <code class="highlighter-rouge">daemon</code> user on your Mac that’s part of the <code class="highlighter-rouge">xampp</code> group to allow writes.</p>
+<p>This means that there must be a <code class="language-plaintext highlighter-rouge">daemon</code> user on your Mac that’s part of the <code class="language-plaintext highlighter-rouge">xampp</code> group to allow writes.</p>
 
 <h2 id="the-fix">The Fix</h2>
 
-<p>Just change the user to your <code class="highlighter-rouge">mac_username</code> and the group to <code class="highlighter-rouge">staff</code>. My Mac’s username is <code class="highlighter-rouge">kunalnagar</code>, and so my config looks like the following:</p>
+<p>Just change the user to your <code class="language-plaintext highlighter-rouge">mac_username</code> and the group to <code class="language-plaintext highlighter-rouge">staff</code>. My Mac’s username is <code class="language-plaintext highlighter-rouge">kunalnagar</code>, and so my config looks like the following:</p>
 
 <!-- prettier-ignore -->
 <p><a href="https://i.imgur.com/DEMPMFo.png" aria-label="" data-lightbox="https://i.imgur.com/DEMPMFo.png" class="lightbox-img">
   <img src="https://i.imgur.com/DEMPMFo.png" alt="" />
 </a></p>
 
-<p>And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the <code class="highlighter-rouge">htdocs</code> directory.</p>
+<p>And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the <code class="language-plaintext highlighter-rouge">htdocs</code> directory.</p>
 
-<p>If you set up a new WordPress install, the <code class="highlighter-rouge">wp-config.php</code> file will be automatically written for you.</p>
+<p>If you set up a new WordPress install, the <code class="language-plaintext highlighter-rouge">wp-config.php</code> file will be automatically written for you.</p>
 
 <hr />
 

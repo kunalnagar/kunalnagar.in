@@ -79,7 +79,7 @@
 
 <p>Before we start, let’s assume that your home directory on the server is</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/content/kunalnagar/html
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/content/kunalnagar/html
 </code></pre></div></div>
 
 <p>and all your code goes into the html folder.</p>
@@ -95,25 +95,25 @@
 
 <p>Open up the index.php file and change the paths to reflect our new directory structure. Here are the following lines you should change:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require __DIR__.'/../bootstrap/autoload.php';
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require __DIR__.'/../bootstrap/autoload.php';
 $app = require_once __DIR__.'/../bootstrap/app.php';
 </code></pre></div></div>
 
 <p>Finally, we modify the main .htaccess file in the html directory. We do this so that you don’t have to type:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://yoursite.com/awesome-project
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://yoursite.com/awesome-project
 </code></pre></div></div>
 
 <p>Here are the contents of the .htaccess file:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine On
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine On
 RewriteCond %{REQUEST_URI} !^awesome-project
 RewriteRule ^(.*)$ awesome-project/$1 [L]
 </code></pre></div></div>
 
 <p>And you’re done! Try visiting:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://yoursite.com
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://yoursite.com
 </code></pre></div></div>
 
 <p>and enjoy your awesome new project.</p>
