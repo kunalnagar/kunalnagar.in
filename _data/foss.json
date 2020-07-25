@@ -28,27 +28,15 @@
     {
       "img": "/assets/img/foss/wp.png",
       "title": "Custom 404 Pro",
-      "description": "A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page.",
+      "description": "A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page or URL",
       "link": "/blog/custom-404-pro/",
       "popular": true
-    },
-    {
-      "img": "/assets/img/foss/vue.png",
-      "title": "vue-base-components",
-      "description": "A collection of pre-built base components to jumpstart your brand new Vue.js project.",
-      "link": "/blog/vue-base-components/"
     },
     {
       "img": "/assets/img/foss/jquery.png",
       "title": "jquery.peekABar",
       "description": "A jQuery notification bar plugin with multiple customization options",
       "link": "https://kunalnagar.github.io/jquery.peekABar/"
-    },
-    {
-      "img": "/assets/img/foss/jquery.png",
-      "title": "jquery.ghostfm",
-      "description": "Showcase your last.fm listening history using this jQuery widget with a minimalist mode as well.",
-      "link": "https://kunalnagar.github.io/jquery.ghostfm/"
     }
   ],
   "tinkers": [
@@ -57,12 +45,6 @@
       "title": "HighCharts to PDF",
       "description": "A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF.",
       "link": "/blog/highcharts-export-pdf/"
-    },
-    {
-      "img": "/assets/img/foss/mailchimp.svg",
-      "title": "MailChimp Signup Form",
-      "description": "Interactive registration form to enable users to signup easily.",
-      "link": "https://kunalnagar.github.io/mailchimp-signup/"
     },
     {
       "img": "/assets/img/foss/copy-paste.jpg",
@@ -75,18 +57,6 @@
       "title": "YouTube Jukebox",
       "description": "A temporary sidebar playlist to quickly add videos to from YouTube, kinda like a jukebox.",
       "link": "/blog/chrome-extension-youtube-jukebox/"
-    },
-    {
-      "img": "/assets/img/foss/adstomp.png",
-      "title": "AdStomp",
-      "description": "A Chrome Extension to block ads on news-reading websites. Also integrates a custom reader mode.",
-      "link": "https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch"
-    },
-    {
-      "img": "/assets/img/foss/node.png",
-      "title": "Node.js file upload",
-      "description": "A Node.js demo to upload a file and get percentage based updates on upload progress",
-      "link": "https://github.com/kunalnagar/nodejs-basic-file-upload"
     }
   ]
 }

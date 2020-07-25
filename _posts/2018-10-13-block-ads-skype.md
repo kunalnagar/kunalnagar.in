@@ -59,4 +59,4 @@ Based on your OS, go to: `%appdata%/skype/YOUR_USER_NAME/config.xml` and set all
 <AdvertSmallEastRailCutoff>0</AdvertSmallEastRailCutoff>
 ```
 
-Reboot your system and your Skype ads should be gone. Didn't work? Wrong hosts file entry? [Tell me](mailto:knlnagar@gmail.com) about it.
+Reboot your system and your Skype ads should be gone.

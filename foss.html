@@ -5,18 +5,21 @@ title: Open Source
 
 <div class="page-foss">
   <p>
-    I build stuff and I try to make it available to as many people as possible,
-    for free.
+    I build stuff and try to open-source most of it. For more, check out my
+    <a
+      class="link"
+      href="https://github.com/kunalnagar"
+      target="_blank"
+      rel="noopener noreferrer"
+      >GitHub</a
+    >
+    profile.
   </p>
   <h2>Popular</h2>
   <ul>
     {% for project in site.data.foss.projects %} {% if project.popular %}
     <li>
-      <a
-        class="link"
-        href="{{ project.link }}"
-        target="_blank"
-        rel="noopener noreferrer"
+      <a class="link" href="{{ project.link }}" rel="noopener noreferrer"
         >{{ project.title }}</a
       >
       <p class="description">{{ project.description }}</p>
