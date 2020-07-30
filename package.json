@@ -1,8 +1,8 @@
 {
   "name": "kunalnagar.in",
-  "version": "1.3.6",
-  "description": "Personal website for Kunal Nagar",
-  "homepage": "https://kunalnagar.in",
+  "version": "1.3.7",
+  "description": "Personal website",
+  "homepage": "https://www.kunalnagar.in",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "bootstrap-scss": "^4.3.1",
@@ -13,6 +13,9 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
     "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "build": "bundle exec jekyll build",
     "pretty-quick": "pretty-quick"

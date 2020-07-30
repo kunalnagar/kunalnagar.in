@@ -10,7 +10,9 @@ Most recently, I worked at [ScaleGrid][scalegrid], enabling users to manage thei
 
 Before that, I was at [Viraltag][viraltag], a social media scheduling tool where I built their scheduler, chrome extension and iOS application from scratch.
 
-My primary job is to use JavaScript responsibly.
+<hr />
+
+Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
 
 [homex]: https://homex.com/
 [scalegrid]: https://scalegrid.io
