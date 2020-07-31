@@ -29,7 +29,7 @@ jobs:
       - name: Install npm dependencies
         run: npm install
       - name: Authenticate snyk
-        run: npm run snyk:authenticate
+        run: ./node_modules/bin/snyk config set api=${{ secrets.SNYK_TOKEN }}
       - name: Run snyk
         run: npm run snyk:test
       - name: Run linter
