@@ -25,6 +25,8 @@ jobs:
         run: bundle install --jobs 4 --retry 3
       - name: Install npm dependencies
         run: npm install
+      - name: Run snyk
+        run: npm run snyk:test
       - name: Run linter
         run: npm run pretty-quick
       - name: Create build

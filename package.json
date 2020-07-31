@@ -11,14 +11,18 @@
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "snyk": "^1.369.2"
+  },
   "scripts": {
     "start": "docker-compose up -d",
     "stop": "docker-compose down",
     "logs": "docker-compose logs -f",
     "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "build": "bundle exec jekyll build",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "snyk:monitor": "snyk monitor",
+    "snyk:test": "snyk test"
   },
   "husky": {
     "hooks": {
