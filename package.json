@@ -19,12 +19,21 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && sort-package-json && git add"
+      "pre-commit": "lint-staged"
     }
   },
-  "dependencies": {},
+  "lint-staged": {
+    "*": [
+      "pretty-quick"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "snyk": "^1.369.2",
