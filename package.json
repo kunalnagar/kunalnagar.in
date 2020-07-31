@@ -3,16 +3,13 @@
   "version": "1.4.0",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
-  "dependencies": {
-    "bootstrap": "^4.5.0",
-    "bootstrap-scss": "^4.3.1",
-    "husky": "^4.2.5",
-    "normalize.scss": "^0.1.0",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "snyk": "^1.369.2"
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "snyk": "^1.369.2",
+    "sort-package-json": "^1.44.0"
   },
   "scripts": {
     "start": "docker-compose up -d",
@@ -25,7 +22,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "pretty-quick --staged && sort-package-json"
     }
   },
   "repository": {
