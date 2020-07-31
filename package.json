@@ -21,7 +21,7 @@
     "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "build": "bundle exec jekyll build",
     "pretty-quick": "pretty-quick",
-    "snyk:monitor": "snyk monitor",
+    "snyk:authenticate": "snyk config set api=${{ secrets.SNYK_TOKEN }}",
     "snyk:test": "snyk test"
   },
   "husky": {
