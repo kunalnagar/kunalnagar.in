@@ -3,6 +3,25 @@
   "version": "1.4.0",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kunalnagar/kunalnagar.github.io.git"
+  },
+  "author": "Kunal Nagar <knlnagar@gmail.com>",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
+    "logs": "docker-compose logs -f",
+    "pretty-quick": "pretty-quick",
+    "snyk:test": "snyk test",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && sort-package-json && git add"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "husky": "^4.2.5",
@@ -10,24 +29,5 @@
     "pretty-quick": "^2.0.1",
     "snyk": "^1.369.2",
     "sort-package-json": "^1.44.0"
-  },
-  "scripts": {
-    "start": "docker-compose up -d",
-    "stop": "docker-compose down",
-    "logs": "docker-compose logs -f",
-    "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
-    "build": "bundle exec jekyll build",
-    "pretty-quick": "pretty-quick",
-    "snyk:test": "snyk test"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && sort-package-json"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:kunalnagar/kunalnagar.github.io.git"
-  },
-  "author": "Kunal Nagar <knlnagar@gmail.com>"
+  }
 }
