@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
@@ -13,7 +13,6 @@
     "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",
-    "snyk:test": "snyk test",
     "start": "docker-compose up -d",
     "stop": "docker-compose down"
   },
@@ -35,7 +34,6 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "snyk": "^1.369.2",
     "sort-package-json": "^1.44.0"
   }
 }
