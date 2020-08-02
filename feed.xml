@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-08-01T20:45:14+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2020-08-02T01:41:29+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;I did not have any COVID-19 symptoms&lt;/li&gt;
@@ -254,64 +254,7 @@ docker exec -ti &amp;lt;container_name&amp;gt; bash
 
 &lt;h3 id=&quot;next-steps&quot;&gt;Next steps&lt;/h3&gt;
 
-&lt;p&gt;Currently, this site is built on &lt;a href=&quot;https://travis-ci.com/kunalnagar/kunalnagar.in&quot;&gt;Travis&lt;/a&gt; with a different configuration than what I have on Docker. Now that I have a development environment set up, I’d like to deploy the same using Travis.&lt;/p&gt;</content><author><name></name></author><summary type="html">Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.</summary></entry><entry><title type="html">Install Global Node Modules without Sudo</title><link href="https://www.kunalnagar.in/blog/install-global-node-modules/" rel="alternate" type="text/html" title="Install Global Node Modules without Sudo" /><published>2019-08-15T00:00:00+00:00</published><updated>2019-08-15T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/install-global-node-modules</id><content type="html" xml:base="https://www.kunalnagar.in/blog/install-global-node-modules/">&lt;p&gt;If you’re on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/i4hiG88.png&quot; aria-label=&quot;Screenshot showing invalid permissions on Linux when installing an NPM package globally&quot; data-lightbox=&quot;https://i.imgur.com/i4hiG88.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/i4hiG88.png&quot; alt=&quot;Screenshot showing invalid permissions on Linux when installing an NPM package globally&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;By default, Node installs global modules to your bin directory: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/bin/node_modules&lt;/code&gt; which may require elevated privileges to access. Instead, you could tell Node to install these modules in your home directory. This way you don’t need to use sudo since you already own the directory. In this case, we’ll be installing all global npm modules to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.npm-global&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;steps-to-follow&quot;&gt;Steps to follow&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create a new directory in your home folder&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir ~/.npm-global
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Tell npm to use the newly created directory to install global modules&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm config set prefix ~/.npm-global
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Add this to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; depending on whether you’re on Linux/macOS respectively&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; export PATH=~/.npm-global/bin:$PATH
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Update your current terminal session by reloading the profile&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.profile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Try and install a sample module globally and it should work&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g @vue/cli
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/bkSOL0p.png&quot; aria-label=&quot;Screenshot showing valid permissions on Linux when installing an NPM package globally&quot; data-lightbox=&quot;https://i.imgur.com/bkSOL0p.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/bkSOL0p.png&quot; alt=&quot;Screenshot showing valid permissions on Linux when installing an NPM package globally&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And you’re done! Of course, you could skip all this and just use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt;, but it’s not recommended and highly discouraged. Do things the right way and get the basics right.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://npm.github.io/installation-setup-docs/installing/a-note-on-permissions.html&quot;&gt;A note on permissions (Official NPM)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">If you’re on Linux or macOS and have tried installing a node module globally, you might run into permission issues like the following:</summary></entry><entry><title type="html">Git Verified Commits</title><link href="https://www.kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+00:00</published><updated>2019-07-31T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://www.kunalnagar.in/blog/git-verified-commits/">&lt;p&gt;Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:&lt;/p&gt;
+&lt;p&gt;Currently, this site is built on &lt;a href=&quot;https://travis-ci.com/kunalnagar/kunalnagar.in&quot;&gt;Travis&lt;/a&gt; with a different configuration than what I have on Docker. Now that I have a development environment set up, I’d like to deploy the same using Travis.&lt;/p&gt;</content><author><name></name></author><summary type="html">Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.</summary></entry><entry><title type="html">Git Verified Commits</title><link href="https://www.kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+00:00</published><updated>2019-07-31T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://www.kunalnagar.in/blog/git-verified-commits/">&lt;p&gt;Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:&lt;/p&gt;
 
 &lt;!-- prettier-ignore --&gt;
 &lt;p&gt;&lt;a href=&quot;https://i.imgur.com/2ohqgII.png&quot; aria-label=&quot;Screenshot showing a verified badge next to commits on GitHub&quot; data-lightbox=&quot;https://i.imgur.com/2ohqgII.png&quot; class=&quot;lightbox-img&quot;&gt;
@@ -365,112 +308,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://help.github.com/en/articles/managing-commit-signature-verification&quot;&gt;Managing Commit Signature Verification (GitHub Knowledge Base)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:</summary></entry><entry><title type="html">Install free SSL certificates using LetsEncrypt on GoDaddy</title><link href="https://www.kunalnagar.in/blog/install-free-ssl-godaddy/" rel="alternate" type="text/html" title="Install free SSL certificates using LetsEncrypt on GoDaddy" /><published>2019-07-16T00:00:00+00:00</published><updated>2019-07-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/install-free-ssl-godaddy</id><content type="html" xml:base="https://www.kunalnagar.in/blog/install-free-ssl-godaddy/">&lt;p&gt;This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://in.godaddy.com/hosting/web-hosting&quot;&gt;A GoDaddy account&lt;/a&gt; - I have a Deluxe Hosting plan with access to cPanel&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.sslforfree.com/&quot;&gt;SSLForFree&lt;/a&gt; - A site to create your SSL certificates&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dnschecker.org/&quot;&gt;DNSChecker&lt;/a&gt; - A DNS Check Propagation Tool&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
-
-&lt;p&gt;Visit SSLForFree and enter your domain on the homepage. I would recommend adding support for sub-domains along with the main domain just in case you plan on going down this path in the future.&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/AfhLxJ5.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/AfhLxJ5.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/AfhLxJ5.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Click on Create and you’ll go to a page where you need to Manually Verify your Domain&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
-
-&lt;p&gt;You’ll receive a set of instructions to modify the domain DNS.&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/nvTDcK3.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/nvTDcK3.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/nvTDcK3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Open your GoDaddy account, navigate to the Domain DNS settings and follow the TXT record.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Instead of entering the entire &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_acme-challenge.yourdomain.com&lt;/code&gt;, just use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_acme-challenge&lt;/code&gt; in the name/host box. This is how one of the entries should look like:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/jFH0vFP.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/jFH0vFP.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/jFH0vFP.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
-
-&lt;p&gt;Once the TXT records are added, visit the DNSChecker site, add your name/host value in the box, choose TXT and hit Search.&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/sbu69oL.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/sbu69oL.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/sbu69oL.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You’ll have to wait about 5-10 minutes for the DNS to finish propgating and once it’s finished you’ll see the following success shot:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/BXUJlrg.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/BXUJlrg.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/BXUJlrg.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-4&quot;&gt;Step 4&lt;/h2&gt;
-
-&lt;p&gt;After you see all green checks, go back to SSLForFree and click on the link in Step 3 to verify that the DNS settings have taken effect. You’ll see a screen like the following:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/9MIElfe.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/9MIElfe.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/9MIElfe.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you see this screen, you’re halfway there. Click on the “Download SSL Certificate link” and you’ll be presented with the following textareas:&lt;/p&gt;
-
-&lt;p&gt;*&lt;/p&gt;
-
-&lt;h2 id=&quot;step-5&quot;&gt;Step 5&lt;/h2&gt;
-
-&lt;p&gt;Open GoDaddy and go to your cPanel dashboard &amp;gt; &lt;em&gt;SSL settings&lt;/em&gt; &amp;gt; &lt;em&gt;Manage SSL sites&lt;/em&gt;. Choose the domain for which you want to install the SSL for. Enter the above three keys in the textboxes and click on &lt;em&gt;Install Certificate&lt;/em&gt;.&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/W6UcB4G.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/W6UcB4G.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/W6UcB4G.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;When your certificate is successfully installed, you’ll see it in the Manage section of the SSL page and you’re ready to go. Visit the domain with the HTTPS prefix and you should see your secured website!&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/IsEbaDz.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/IsEbaDz.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/IsEbaDz.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you’d like to know more about what LetsEncrypt is doing to provide free SSL to the world, check out this video:&lt;/p&gt;
-
-&lt;style&gt;
-  .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-  }
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-&lt;/style&gt;
-
-&lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe src=&quot;https://www.youtube.com/embed/ksqTu7TX83g&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a straight-forward guide to installing free SSL certificates on GoDaddy. There’s no need to pay when LetsEncrypt provides them for free. Here’s a list of things you need to have before we get started:</summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://www.kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+00:00</published><updated>2019-04-18T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://www.kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:</summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://www.kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+00:00</published><updated>2019-04-18T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://www.kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
 
 &lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
 
@@ -925,36 +763,7 @@ Highcharts.downloadURL = function (dataURL, filename) {
 
 &lt;p&gt;Once the status changes to &lt;strong&gt;Approved&lt;/strong&gt;, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.&lt;/p&gt;
 
-&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Permissions fix for WordPress development on XAMPP (Mac)</title><link href="https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix/" rel="alternate" type="text/html" title="Permissions fix for WordPress development on XAMPP (Mac)" /><published>2019-03-11T00:00:00+00:00</published><updated>2019-03-11T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix</id><content type="html" xml:base="https://www.kunalnagar.in/blog/wordpress-xampp-permissions-fix/">&lt;p&gt;I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file is not automatically created because of permissions issues.&lt;/p&gt;
-
-&lt;h2 id=&quot;identifying-the-issue&quot;&gt;Identifying the issue&lt;/h2&gt;
-
-&lt;p&gt;After a bit of research I realized that the Apache server that is installed with the XAMPP package has the following User and Group set by default:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;User: daemon
-Group: xampp
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can find this under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/Applications/XAMPP/etc/httpd.conf&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This means that there must be a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;daemon&lt;/code&gt; user on your Mac that’s part of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xampp&lt;/code&gt; group to allow writes.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-fix&quot;&gt;The Fix&lt;/h2&gt;
-
-&lt;p&gt;Just change the user to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mac_username&lt;/code&gt; and the group to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staff&lt;/code&gt;. My Mac’s username is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kunalnagar&lt;/code&gt;, and so my config looks like the following:&lt;/p&gt;
-
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/DEMPMFo.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/DEMPMFo.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/DEMPMFo.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;And that’s it. Restart the Apache server from the XAMPP console and you should be able to install plugins, themes directly from the WP Admin Dashboard because your Mac user can now write to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;htdocs&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;If you set up a new WordPress install, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wp-config.php&lt;/code&gt; file will be automatically written for you.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Side note:&lt;/strong&gt; I have an open-source WordPress plugin for managing 404 errors on your site. It allows you to set any page on your WordPress site as a default 404 page. You can even redirect users to a custom URL. &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">I use XAMPP for WordPress Development on my mac. It’s easy, fast and doesn’t require too much setup. If you’ve used XAMPP on Mac before, it has permissions issues by default. I noticed this when I tried to installing WordPress plugins from the Admin dashboard. Also, when you do a fresh WordPress setup, the wp-config.php file is not automatically created because of permissions issues.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+00:00</published><updated>2019-03-01T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+00:00</published><updated>2019-03-01T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
 
@@ -1034,4 +843,282 @@ Group: xampp
   &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry></feed>
+&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="https://www.kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+00:00</published><updated>2019-02-23T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://www.kunalnagar.in/blog/customize-bash-prompt/">&lt;p&gt;I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.&lt;/p&gt;
+
+&lt;p&gt;By default, macOS gives you this terminal:&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/n57DPG3.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/n57DPG3.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/n57DPG3.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I fucking hate it. Why do I need to see my machine name every time I open the terminal? &lt;a href=&quot;https://www.merriam-webster.com/dictionary/phooey&quot;&gt;Phooey&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Plus, when I navigate to a git repo, it doesn’t even show what branch I’m on. Double phooey.&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/sNgVmfJ.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/sNgVmfJ.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/sNgVmfJ.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;my-setup&quot;&gt;My setup&lt;/h2&gt;
+
+&lt;p&gt;Here’s what I have and I’m really happy with it.&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;https://i.imgur.com/3Dwoh1Z.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-do-i-like-about-it&quot;&gt;What do I like about it?&lt;/h2&gt;
+
+&lt;p&gt;Couple of things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shows me what user I’m logged in as (good on unix systems when you want to switch between root and normal user)&lt;/li&gt;
+  &lt;li&gt;Shows me the full (read FULL) path of where I am. Yes, FULL.&lt;/li&gt;
+  &lt;li&gt;Shows me the branch I’m on (if I’m in a git repo)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Things I don’t need here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Machine name&lt;/li&gt;
+  &lt;li&gt;Date&lt;/li&gt;
+  &lt;li&gt;10 billion colours&lt;/li&gt;
+  &lt;li&gt;Emoji.      &lt;small&gt;&lt;small&gt;&lt;small&gt;Well…&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-to-set-it-up&quot;&gt;How to set it up&lt;/h2&gt;
+
+&lt;p&gt;If you’re really impressed by it and just want the code, copy paste the following in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt; and move on with your life.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git_prompt() {
+
+    local branchName=&quot;&quot;;
+
+    # Check if the current directory is in a Git repository.
+    if git rev-parse --git-dir &amp;gt; /dev/null 2&amp;gt;&amp;amp;1; then
+        branchName=&quot;$(git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null || \
+	        git rev-parse --short HEAD 2&amp;gt; /dev/null || \
+		    echo '(unknown)')&quot;;
+        echo -e &quot;(${branchName})&quot;;
+    else
+        return;
+    fi;
+
+}
+
+PS1=&quot;\n[\u] at \w&quot;;
+
+PS1+=&quot; \$(git_prompt)&quot;;
+
+PS1+=&quot;\n=&amp;gt; &quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re like me and want to understand what this gibberish means, read on.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git_prompt()&lt;/code&gt; method spits out the current branch name, if it exists. Let’s try to break it down.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
+
+&lt;p&gt;Let’s run the first half of the command in a git repo and a normal folder and see what happens&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; git rev-parse --git-dir
+.git
+
+[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; cd ..
+
+[kunalnagar] at ~/Documents/Code
+=&amp;gt; git rev-parse --git-dir
+fatal: not a git repository (or any of the parent directories): .git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So basically, this command is used to check if our current working directory is a git repo or not.&lt;/p&gt;
+
+&lt;p&gt;What’s the writing to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/null&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&amp;gt;&amp;amp;1&lt;/code&gt; mean? Read more &lt;a href=&quot;https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
+
+&lt;p&gt;Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null
+updates-v3
+
+[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; cd ..
+
+[kunalnagar] at ~/Documents/Code
+=&amp;gt; git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git symbolic-ref&lt;/code&gt; allows us to read, modify and delete &lt;a href=&quot;https://stackoverflow.com/a/1526526&quot;&gt;symbolic refs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For more information on the flags, check out &lt;a href=&quot;https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--quiet&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--short&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see from the above example, when the above command is run, it spits out the branch name.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git rev-parse&lt;/code&gt; is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+=&amp;gt; git symbolic-ref --quiet --short HEAD 2&amp;gt; /dev/null || git rev-parse
+updates-v3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
+
+&lt;p&gt;Cool, now we have the branch name. Now we just need to set the bash variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PS&lt;/code&gt; to show our minimal prompt&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS1=&quot;\n[\u] at \w&quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\n&lt;/code&gt;: New line&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\u&lt;/code&gt;: Current user (name)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\w&lt;/code&gt;: Path relative to home (notice the tilda in the path names in the screenshots)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS1+=&quot; \$(git_prompt)&quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This appends the branch name in parentheses (if it’s a git repo)&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS1+=&quot;\n=&amp;gt; &quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
+
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Block Ads in Skype</title><link href="https://www.kunalnagar.in/blog/block-ads-skype/" rel="alternate" type="text/html" title="Block Ads in Skype" /><published>2018-10-13T00:00:00+00:00</published><updated>2018-10-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/block-ads-skype</id><content type="html" xml:base="https://www.kunalnagar.in/blog/block-ads-skype/">&lt;p&gt;I hate ads. So much so that I’ve created a &lt;a href=&quot;https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en&quot;&gt;Chrome Extension&lt;/a&gt; to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Side note:&lt;/b&gt; If you’re a privacy nut, you might want to check out my &lt;a href=&quot;/assets/downloads/siteblock.txt&quot;&gt;hosts&lt;/a&gt; file. It will block crypto-miners, google ads, youtube ads and much more. As always, &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;feedback&lt;/a&gt; is appreciated.&lt;/p&gt;
+
+&lt;p&gt;I figured out a way to block Skype ads using a handful of host file entries. Download a &lt;a href=&quot;/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt&quot;&gt;.txt&lt;/a&gt; version here. I’ve mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Block Skype ads (core)
+127.0.0.1 *.msads.net
+127.0.0.1 *.msecn.net
+127.0.0.1 *.rad.msn.com
+127.0.0.1 a.ads2.msads.net
+127.0.0.1 ac3.msn.com
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 adnexus.net
+127.0.0.1 adnxs.com
+127.0.0.1 ads1.msn.com
+127.0.0.1 ads2.msads.net
+127.0.0.1 aka-cdn-ns.adtech.de
+
+# If you want to see Skype Home, comment the line below
+127.0.0.1 apps.skype.com
+
+127.0.0.1 b.ads2.msads.net
+127.0.0.1 bs.serving-sys.com
+127.0.0.1 cdn.atdmt.com
+127.0.0.1 cds26.ams9.msecn.net
+127.0.0.1 db3aqu.atdmt.com
+127.0.0.1 ec.atdmt.com
+127.0.0.1 flex.msn.com
+127.0.0.1 g.msn.com
+127.0.0.1 live.rads.msn.com
+127.0.0.1 msntest.serving-sys.com
+127.0.0.1 rad.msn.com
+127.0.0.1 sO.2mdn.net
+127.0.0.1 secure.flashtalking.com
+127.0.0.1 static.2mdn.net
+127.0.0.1 static.2mdn.net
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.&lt;/p&gt;
+
+&lt;p&gt;Based on your OS, go to: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%appdata%/skype/YOUR_USER_NAME/config.xml&lt;/code&gt; and set all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Advert&lt;/code&gt; related values to 0.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;AdvertEastRailsEnabled&amp;gt;0&amp;lt;/AdvertEastRailsEnabled&amp;gt;
+&amp;lt;AdvertLargeEastRailCutoff&amp;gt;0&amp;lt;/AdvertLargeEastRailCutoff&amp;gt;
+&amp;lt;AdvertNorthRailCutoff&amp;gt;0&amp;lt;/AdvertNorthRailCutoff&amp;gt;
+&amp;lt;AdvertPlaceholder&amp;gt;0&amp;lt;/AdvertPlaceholder&amp;gt;
+&amp;lt;AdvertSmallEastRailCutoff&amp;gt;0&amp;lt;/AdvertSmallEastRailCutoff&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Reboot your system and your Skype ads should be gone.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry><entry><title type="html">Custom 404 Pro</title><link href="https://www.kunalnagar.in/blog/custom-404-pro/" rel="alternate" type="text/html" title="Custom 404 Pro" /><published>2015-04-22T00:00:00+00:00</published><updated>2015-04-22T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/custom-404-pro</id><content type="html" xml:base="https://www.kunalnagar.in/blog/custom-404-pro/">&lt;p&gt;Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has &lt;strong&gt;100,000+ active installs&lt;/strong&gt; as of June 2019.&lt;/p&gt;
+
+&lt;p&gt;While this may sound trivial to many developers, I built this for people who are less technical and don’t know how to write PHP. It was one of my friends, actually, who gave me the idea as they weren’t able to figure this out.&lt;/p&gt;
+
+&lt;h2 id=&quot;global-redirect-settings&quot;&gt;Global Redirect Settings&lt;/h2&gt;
+
+&lt;p&gt;These settings apply to all Logs. For example, if you choose the URL option, the plugin will redirect any 404s to the URL you specify. Here is a screenshot of what I had when this Blog was still WordPress.&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-1.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-1.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-1.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A couple more options for you to choose from:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None (Do nothing)&lt;/li&gt;
+  &lt;li&gt;WordPress Page (Select an already created Page)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-2.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-2.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-2.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You also get a Log Viewer to see all the 404s that happened on your site. The plugin records the following data for every 404:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;User IP Address&lt;/li&gt;
+  &lt;li&gt;404 Path (The invalid URL that resulted in the 404)&lt;/li&gt;
+  &lt;li&gt;User Agent (Browser Type, etc)&lt;/li&gt;
+  &lt;li&gt;Global Settings Type&lt;/li&gt;
+  &lt;li&gt;Date&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-3.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-3.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-3.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is an option to filter the Logs as well. In the screenshot above, you can see the filters being chosen as Internet Explorer, v8.0, Operating System (Windows).&lt;/p&gt;
+
+&lt;p&gt;You can also change the Settings for Individual Logs. For example, if the Global Settings say to redirect to a specific URL, you can set a specific 404 or Log to redirect to a specific URL just by editing the Log.&lt;/p&gt;
+
+&lt;p&gt;For example, let’s take the following Log and edit it:&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-4.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-4.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-4.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-5.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-5.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-5.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just enter the custom URL in the respective field and everytime a 404 happens on that path, it will redirect to the custom URL and override the Global Settings for this Log.&lt;/p&gt;
+
+&lt;h2 id=&quot;general-settings&quot;&gt;General Settings&lt;/h2&gt;
+
+&lt;p&gt;There are some general settings available with the plugin:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Email (sends an email to the Admin on every 404)&lt;/li&gt;
+  &lt;li&gt;Clear Logs (helpful if you have tons of logs)&lt;/li&gt;
+  &lt;li&gt;Logging Status (enabled/disabled)&lt;/li&gt;
+  &lt;li&gt;Error Type (302/301/404)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- prettier-ignore --&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-6.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-6.png&quot; class=&quot;lightbox-img&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog/custom-404-pro/custom-404-pro-6.png&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There have been requests from users to record the 404 as a soft 302 or a 301 redirect. You can set that up here as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+
+&lt;p&gt;The plugin is free and you can download it &lt;a href=&quot;https://wordpress.org/plugins/custom-404-pro&quot;&gt;here&lt;/a&gt;. Please rate the plugin if you enjoyed using it.&lt;/p&gt;
+
+&lt;p&gt;It is also open-sourced which means anyone can contribute. You can find the code on &lt;a href=&quot;https://github.com/kunalnagar/custom-404-pro&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Custom 404 Pro is a WordPress plugin that allows users to override the default 404 page with any page from the WordPress Dashboard. You can even redirect users to a different URL everytime you get a 404. It has 100,000+ active installs as of June 2019.</summary></entry></feed>
