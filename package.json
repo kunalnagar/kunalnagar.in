@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
@@ -14,7 +14,7 @@
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",
     "start": "docker-compose up -d",
-    "stop": "docker-compose down"
+    "stop": "docker-compose down -v"
   },
   "husky": {
     "hooks": {
