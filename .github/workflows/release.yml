@@ -1,16 +1,19 @@
 name: Release site
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - 'master'
+    tags-ignore:
+      - '*.*'
 
 jobs:
   release:
-    runs-on: ubuntu-latest
-    container:
-      image: kunalnagar/ruby-node
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      - name: Install bundler 2.1.4
+        run: sudo gem install bundler -v 2.1.4
       - uses: actions/cache@v2
         id: bundle_cache
         with:
@@ -29,8 +32,6 @@ jobs:
         run: npm run pretty-quick
       - name: Create build
         run: npm run build
-      - name: Install rsync
-        run: apt-get update && apt-get install -y rsync
       - name: Release
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
