@@ -33,6 +33,8 @@ jobs:
       - name: Create build
         run: npm run build
       - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
       - name: Release
         uses: JamesIves/github-pages-deploy-action@releases/v3
