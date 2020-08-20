@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      - name: Install bundler 2.1.4
+        run: gem install bundler -v 2.1.4
       - uses: actions/cache@v2
         id: bundle_cache
         with:
