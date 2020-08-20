@@ -32,6 +32,8 @@ jobs:
         run: npm run pretty-quick
       - name: Create build
         run: npm run build
+      - name: Run semantic-release
+        run: npm run deploy
       - name: Release
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
