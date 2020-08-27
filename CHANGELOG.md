@@ -1,5 +1,19 @@
 # Changelog
 
+### [1.4.7](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.6...v1.4.7) (2020-08-20)
+
+
+### Bug Fixes
+
+* Add conventional-commits package ([d135121](https://github.com/kunalnagar/kunalnagar.github.io/commit/d1351219fe99e927fdccf4c8e4dee26b840c9f6e))
+* GitHub token ([a07eff2](https://github.com/kunalnagar/kunalnagar.github.io/commit/a07eff23bd68fb6f4ad88210833c19c306714f22))
+* Semantic release step ([d9f3841](https://github.com/kunalnagar/kunalnagar.github.io/commit/d9f384172f7168e416e3fa683178c29e25943538))
+
+
+### Chores
+
+* Setup Semantic Release ([#14](https://github.com/kunalnagar/kunalnagar.github.io/issues/14)) ([4b69a15](https://github.com/kunalnagar/kunalnagar.github.io/commit/4b69a154320e6cd70daeb7acf79f2250c49c7090))
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [1.4.6](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.2.1...v1.4.6) (2020-08-20)
