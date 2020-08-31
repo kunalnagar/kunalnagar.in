@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.8](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.7...v1.4.8) (2020-08-27)
+
+
+### Chores
+
+* **deps-dev:** bump pretty-quick from 2.0.1 to 2.0.2 ([#15](https://github.com/kunalnagar/kunalnagar.github.io/issues/15)) ([031ccd2](https://github.com/kunalnagar/kunalnagar.github.io/commit/031ccd283fb800de03eb20be7911a8b9305c468d))
+
 ### [1.4.7](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.6...v1.4.7) (2020-08-20)
 
 
