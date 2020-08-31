@@ -1,6 +1,6 @@
 .page-blog {
   #search {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 10px;
     margin-bottom: 10px;
     width: calc(100% - 20px);
@@ -19,7 +19,7 @@
       }
 
       .date {
-        font-size: 16px;
+        font-size: 18px;
         color: $text-color-muted;
         font-style: italic;
         margin: 0;
@@ -58,7 +58,7 @@
 
   &-single {
     time {
-      font-size: 16px;
+      font-size: 18px;
       color: $text-color-muted;
       font-style: italic;
       margin: 0;
