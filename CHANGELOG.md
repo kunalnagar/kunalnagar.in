@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.9](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.8...v1.4.9) (2020-08-31)
+
+
+### Chores
+
+* Increase font size ([4ed3177](https://github.com/kunalnagar/kunalnagar.github.io/commit/4ed3177ed7a86299fdbccac4be791b4b1a8de555))
+
 ### [1.4.8](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.7...v1.4.8) (2020-08-27)
 
 
