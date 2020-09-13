@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.11](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.10...v1.4.11) (2020-09-07)
+
+
+### Chores
+
+* **deps-dev:** bump lint-staged from 10.2.13 to 10.3.0 ([#18](https://github.com/kunalnagar/kunalnagar.github.io/issues/18)) ([5aa7a53](https://github.com/kunalnagar/kunalnagar.github.io/commit/5aa7a53ac178664676a294981c337622abe15943))
+
 ### [1.4.10](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.9...v1.4.10) (2020-09-02)
 
 
