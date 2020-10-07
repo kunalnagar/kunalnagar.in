@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.1...v1.5.2) (2020-10-07)
+
+
+### Chores
+
+* Remove packages ([c25de2d](https://github.com/kunalnagar/kunalnagar.github.io/commit/c25de2d9fb3c34f70edfb246403c45e9e42e8e8a))
+* Remove semantic release ([6b81cfe](https://github.com/kunalnagar/kunalnagar.github.io/commit/6b81cfe7f6bfd2ee40f61974504f1504a9954e44))
+
 ### [1.5.1](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.0...v1.5.1) (2020-10-07)
 
 
