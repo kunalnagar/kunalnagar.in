@@ -13,7 +13,7 @@ I hate ads. So much so that I've created a [Chrome Extension](https://chrome.goo
 
 I figured out a way to block Skype ads using a handful of host file entries. Download a [.txt](/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt) version here. I've mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).
 
-```
+{% highlight shell %}
 # Block Skype ads (core)
 127.0.0.1 *.msads.net
 127.0.0.1 *.msecn.net
@@ -45,18 +45,18 @@ I figured out a way to block Skype ads using a handful of host file entries. Dow
 127.0.0.1 secure.flashtalking.com
 127.0.0.1 static.2mdn.net
 127.0.0.1 static.2mdn.net
-```
+{% endhighlight %}
 
 The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.
 
 Based on your OS, go to: `%appdata%/skype/YOUR_USER_NAME/config.xml` and set all `Advert` related values to 0.
 
-```
+{% highlight xml %}
 <AdvertEastRailsEnabled>0</AdvertEastRailsEnabled>
 <AdvertLargeEastRailCutoff>0</AdvertLargeEastRailCutoff>
 <AdvertNorthRailCutoff>0</AdvertNorthRailCutoff>
 <AdvertPlaceholder>0</AdvertPlaceholder>
 <AdvertSmallEastRailCutoff>0</AdvertSmallEastRailCutoff>
-```
+{% endhighlight %}
 
 Reboot your system and your Skype ads should be gone.

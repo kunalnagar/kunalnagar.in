@@ -17,11 +17,11 @@ Learn how to setup multiple SSH keys on your mac. This can be useful when you ne
 
 Boilerplate Text for Config file:
 
-```
+{% highlight shell %}
 Host testgithub
  HostName github.com
  User git
  IdentityFile ~/.ssh/id_rsa_testgithub
-```
+{% endhighlight %}
 
 [generating-ssh-keys]: https://help.github.com/articles/generating-an-ssh-key/

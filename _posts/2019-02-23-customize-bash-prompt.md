@@ -44,7 +44,7 @@ Things I don't need here:
 
 If you're really impressed by it and just want the code, copy paste the following in your `~/.bash_profile` and move on with your life.
 
-```
+{% highlight shell %}
 git_prompt() {
 
     local branchName="";
@@ -66,7 +66,7 @@ PS1="\n[\u] at \w";
 PS1+=" \$(git_prompt)";
 
 PS1+="\n=> ";
-```
+{% endhighlight %}
 
 If you're like me and want to understand what this gibberish means, read on.
 
@@ -76,7 +76,7 @@ The `git_prompt()` method spits out the current branch name, if it exists. Let's
 
 Let's run the first half of the command in a git repo and a normal folder and see what happens
 
-```
+{% highlight shell %}
 [kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
 => git rev-parse --git-dir
 .git
@@ -87,7 +87,7 @@ Let's run the first half of the command in a git repo and a normal folder and se
 [kunalnagar] at ~/Documents/Code
 => git rev-parse --git-dir
 fatal: not a git repository (or any of the parent directories): .git
-```
+{% endhighlight %}
 
 So basically, this command is used to check if our current working directory is a git repo or not.
 
@@ -97,7 +97,7 @@ What's the writing to `/dev/null` and `2>&1` mean? Read more [here](https://asku
 
 Once we've figured out that we are, actually, inside a git repo, we need to figure out what branch we're in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I've found that works across a wide range of scenarios.
 
-```
+{% highlight shell %}
 [kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
 => git symbolic-ref --quiet --short HEAD 2> /dev/null
 updates-v3
@@ -107,7 +107,7 @@ updates-v3
 
 [kunalnagar] at ~/Documents/Code
 => git symbolic-ref --quiet --short HEAD 2> /dev/null
-```
+{% endhighlight %}
 
 The `git symbolic-ref` allows us to read, modify and delete [symbolic refs](https://stackoverflow.com/a/1526526)
 
@@ -117,19 +117,19 @@ As you can see from the above example, when the above command is run, it spits o
 
 The `git rev-parse` is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info
 
-```
+{% highlight shell %}
 [kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
 => git symbolic-ref --quiet --short HEAD 2> /dev/null || git rev-parse
 updates-v3
-```
+{% endhighlight %}
 
 ## Step 3
 
 Cool, now we have the branch name. Now we just need to set the bash variable `PS` to show our minimal prompt
 
-```
+{% highlight shell %}
 PS1="\n[\u] at \w";
-```
+{% endhighlight %}
 
 `\n`: New line
 
@@ -137,15 +137,15 @@ PS1="\n[\u] at \w";
 
 `\w`: Path relative to home (notice the tilda in the path names in the screenshots)
 
-```
+{% highlight shell %}
 PS1+=" \$(git_prompt)";
-```
+{% endhighlight %}
 
 This appends the branch name in parentheses (if it's a git repo)
 
-```
+{% highlight shell %}
 PS1+="\n=> ";
-```
+{% endhighlight %}
 
 Just a new line. With a short arrow.
 
