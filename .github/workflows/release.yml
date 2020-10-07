@@ -2,10 +2,8 @@ name: Release site
 
 on:
   push:
-    branches:
-      - 'master'
     tags:
-      - '*.*'
+      - '*'
 
 jobs:
   release:
