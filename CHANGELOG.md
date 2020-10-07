@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.3](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.2...v1.5.3) (2020-10-07)
+
+
+### Bug Fixes
+
+* Tag syntax ([f3eb412](https://github.com/kunalnagar/kunalnagar.github.io/commit/f3eb412ad9dbb6527c9744541302eb11fc87d50c))
+* Tags syntax ([32a3906](https://github.com/kunalnagar/kunalnagar.github.io/commit/32a390656af7b65331711d29d08996c70267f99a))
+
+
+### Chores
+
+* Bring back gh-pages release ([8d7e858](https://github.com/kunalnagar/kunalnagar.github.io/commit/8d7e85809a6e0d68dbce258045b3738c8be6a4dd))
+
 ### [1.5.2](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.1...v1.5.2) (2020-10-07)
 
 
