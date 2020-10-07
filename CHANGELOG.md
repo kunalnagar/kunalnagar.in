@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.12...v1.5.0) (2020-10-07)
+
+
+### Features
+
+* Cleaner design ([#26](https://github.com/kunalnagar/kunalnagar.github.io/issues/26)) ([68dfc6a](https://github.com/kunalnagar/kunalnagar.github.io/commit/68dfc6a2a014c7ef82fb05ba90cafcb2a68bb338))
+
 ### [1.4.12](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.11...v1.4.12) (2020-09-13)
 
 
