@@ -14,6 +14,7 @@
     "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",
+    "release": "standard-version",
     "start": "docker-compose up -d",
     "stop": "docker-compose down -v"
   },
@@ -31,14 +32,12 @@
     ]
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/git": "^9.0.0",
     "conventional-changelog-conventionalcommits": "^4.4.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "semantic-release": "^17.1.1",
-    "sort-package-json": "^1.44.0"
+    "sort-package-json": "^1.44.0",
+    "standard-version": "^9.0.0"
   }
 }
