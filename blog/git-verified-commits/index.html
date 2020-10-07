@@ -85,27 +85,24 @@
 
 <p>After adding the public GPG key to your GitHub account, you need to tell <code class="language-plaintext highlighter-rouge">git</code> on your machine to use that key to sign commits. But first, let’s get a list of keys on your account using:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gpg --list-secret-keys --keyid-format LONG
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>gpg <span class="nt">--list-secret-keys</span> <span class="nt">--keyid-format</span> LONG
 
 /home/kunal/.gnupg/pubring.kbx
-------------------------------
-sec   rsa4096/ABD83AC02AAC0953 2019-07-31 [SC] [expires: 2035-07-27]
+<span class="nt">------------------------------</span>
+sec   rsa4096/ABD83AC02AAC0953 2019-07-31 <span class="o">[</span>SC] <span class="o">[</span>expires: 2035-07-27]
       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-uid                 [ unknown] Kunal Nagar &lt;knlnagar@gmail.com&gt;
-ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
-</code></pre></div></div>
+uid                 <span class="o">[</span> unknown] Kunal Nagar &lt;knlnagar@gmail.com&gt;
+ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 <span class="o">[</span>E] <span class="o">[</span>expires: 2035-07-27]</code></pre></figure>
 
 <p>In the above example, my public key is <code class="language-plaintext highlighter-rouge">ABD83AC02AAC0953</code> and we’ll use that:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global user.signingkey ABD83AC02AAC0953
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git config <span class="nt">--global</span> user.signingkey ABD83AC02AAC0953</code></pre></figure>
 
 <h2 id="signing-your-commit">Signing your commit</h2>
 
 <p>When you’re ready to commit your work, just add the <code class="language-plaintext highlighter-rouge">-S</code> flag to your commit command:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git commit -m -S "Testing signed commits"
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="nt">-S</span> <span class="s2">"Testing signed commits"</span></code></pre></figure>
 
 <p>If your key has a passphrase, you’ll be asked to enter it now.</p>
 

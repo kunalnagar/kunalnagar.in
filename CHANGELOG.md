@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.12](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.11...v1.4.12) (2020-09-13)
+
+
+### Chores
+
+* **deps:** bump node-fetch from 2.6.0 to 2.6.1 ([#19](https://github.com/kunalnagar/kunalnagar.github.io/issues/19)) ([6213ba4](https://github.com/kunalnagar/kunalnagar.github.io/commit/6213ba4d38e60751d8a18146022720c3ee608aad))
+
 ### [1.4.11](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.10...v1.4.11) (2020-09-07)
 
 

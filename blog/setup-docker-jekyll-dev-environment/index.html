@@ -108,27 +108,27 @@
   <li>Expose port 4000 (since Jekyll runs on that port)</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM ubuntu:18.04
+<figure class="highlight"><pre><code class="language-docker" data-lang="docker"><span class="k">FROM</span><span class="s"> ubuntu:18.04</span>
 
-SHELL ["/bin/bash", "-c"]
+<span class="k">SHELL</span><span class="s"> ["/bin/bash", "-c"]</span>
 
-RUN apt-get update &amp;&amp; apt-get upgrade -y
+<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get upgrade <span class="nt">-y</span>
 
-RUN apt-get install curl ruby-full build-essential zlib1g-dev -y
+<span class="k">RUN </span>apt-get <span class="nb">install </span>curl ruby-full build-essential zlib1g-dev <span class="nt">-y</span>
 
-RUN echo '# Install Ruby Gems to ~/gems' &gt;&gt; ~/.bashrc &amp;&amp; \
-  echo 'export GEM_HOME="$HOME/gems"' &gt;&gt; ~/.bashrc &amp;&amp; \
-  echo 'export PATH="$HOME/gems/bin:$PATH"' &gt;&gt; ~/.bashrc &amp;&amp; \
-  source ~/.bashrc
+<span class="k">RUN </span><span class="nb">echo</span> <span class="s1">'# Install Ruby Gems to ~/gems'</span> <span class="o">&gt;&gt;</span> ~/.bashrc <span class="o">&amp;&amp;</span> <span class="se">\
+</span> <span class="nb">echo</span> <span class="s1">'export GEM_HOME="$HOME/gems"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc <span class="o">&amp;&amp;</span> <span class="se">\
+</span>  <span class="nb">echo</span> <span class="s1">'export PATH="$HOME/gems/bin:\$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc <span class="o">&amp;&amp;</span> <span class="se">\
+</span> <span class="nb">source</span> ~/.bashrc
 
-RUN gem install jekyll bundler &amp;&amp; gem update --system
+<span class="k">RUN </span>gem <span class="nb">install </span>jekyll bundler <span class="o">&amp;&amp;</span> gem update <span class="nt">--system</span>
 
-# Optional (Installing Node and NPM)
-RUN curl -sSL "https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar.xz" | tar --strip-components=2 -xJ -C /usr/local/bin/ node-v12.13.1-linux-x64/bin/node &amp;&amp; \
-  curl https://www.npmjs.com/install.sh | bash
+<span class="c"># Optional (Installing Node and NPM)</span>
 
-EXPOSE 4000
-</code></pre></div></div>
+<span class="k">RUN </span>curl <span class="nt">-sSL</span> <span class="s2">"https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar.xz"</span> | <span class="nb">tar</span> <span class="nt">--strip-components</span><span class="o">=</span>2 <span class="nt">-xJ</span> <span class="nt">-C</span> /usr/local/bin/ node-v12.13.1-linux-x64/bin/node <span class="o">&amp;&amp;</span> <span class="se">\
+</span> curl https://www.npmjs.com/install.sh | bash
+
+<span class="k">EXPOSE</span><span class="s"> 4000</span></code></pre></figure>
 
 <p>With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> comes in. Here are the steps in brief:</p>
 
@@ -139,23 +139,22 @@ EXPOSE 4000
   <li>Start the development server</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3.6'
-services:
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.6'</span>
+<span class="na">services</span><span class="pi">:</span>
 
-  app:
-    container_name: docker_kunalnagar.in
-    build: .
-    volumes:
-      - .:/var/www/html
-    working_dir: /var/www/html
-    ports:
-      - 4000:4000
-    restart: always
-    command: &gt;
-      sh -c "bundle install &amp;&amp;
-            npm install &amp;&amp;
-            npm run dev"
-</code></pre></div></div>
+  <span class="na">app</span><span class="pi">:</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">docker_kunalnagar.in</span>
+    <span class="na">build</span><span class="pi">:</span> <span class="s">.</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">.:/var/www/html</span>
+    <span class="na">working_dir</span><span class="pi">:</span> <span class="s">/var/www/html</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">4000:4000</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="pi">&gt;</span>
+      <span class="s">sh -c "bundle install &amp;&amp;</span>
+            <span class="s">npm install &amp;&amp;</span>
+            <span class="s">npm run dev"</span></code></pre></figure>
 
 <h3 id="step-3">Step 3</h3>
 
@@ -165,12 +164,11 @@ services:
 
 <p>If you run into issues, you can use the following commands to inspect your container:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># See a LIVE view of your Docker container's logs
-docker logs -f &lt;container_name&gt;
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># See a LIVE view of your Docker container's logs</span>
+docker logs <span class="nt">-f</span> &lt;container_name&gt;
 
-# Login to your Docker container and browser around
-docker exec -ti &lt;container_name&gt; bash
-</code></pre></div></div>
+<span class="c"># Login to your Docker container and browser around</span>
+docker <span class="nb">exec</span> <span class="nt">-ti</span> &lt;container_name&gt; bash</code></pre></figure>
 
 <p>The code for this website is hosted <a href="https://github.com/kunalnagar/kunalnagar.in">here</a> if you want to take a look at the big picture and how it all comes together.</p>
 

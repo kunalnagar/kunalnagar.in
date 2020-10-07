@@ -111,28 +111,27 @@
 
 <p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="language-plaintext highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git_prompt() {
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git_prompt<span class="o">()</span> <span class="o">{</span>
 
-    local branchName="";
+    <span class="nb">local </span><span class="nv">branchName</span><span class="o">=</span><span class="s2">""</span><span class="p">;</span>
 
-    # Check if the current directory is in a Git repository.
-    if git rev-parse --git-dir &gt; /dev/null 2&gt;&amp;1; then
-        branchName="$(git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || \
-	        git rev-parse --short HEAD 2&gt; /dev/null || \
-		    echo '(unknown)')";
-        echo -e "(${branchName})";
-    else
-        return;
-    fi;
+    <span class="c"># Check if the current directory is in a Git repository.</span>
+    <span class="k">if </span>git rev-parse <span class="nt">--git-dir</span> <span class="o">&gt;</span> /dev/null 2&gt;&amp;1<span class="p">;</span> <span class="k">then
+        </span><span class="nv">branchName</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span>git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null <span class="o">||</span> <span class="se">\</span>
+	        git rev-parse <span class="nt">--short</span> HEAD 2&gt; /dev/null <span class="o">||</span> <span class="se">\</span>
+		    <span class="nb">echo</span> <span class="s1">'(unknown)'</span><span class="si">)</span><span class="s2">"</span><span class="p">;</span>
+        <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"(</span><span class="k">${</span><span class="nv">branchName</span><span class="k">}</span><span class="s2">)"</span><span class="p">;</span>
+    <span class="k">else
+        return</span><span class="p">;</span>
+    <span class="k">fi</span><span class="p">;</span>
 
-}
+<span class="o">}</span>
 
-PS1="\n[\u] at \w";
+<span class="nv">PS1</span><span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">[</span><span class="se">\u</span><span class="s2">] at </span><span class="se">\w</span><span class="s2">"</span><span class="p">;</span>
 
-PS1+=" \$(git_prompt)";
+PS1+<span class="o">=</span><span class="s2">" </span><span class="se">\$</span><span class="s2">(git_prompt)"</span><span class="p">;</span>
 
-PS1+="\n=&gt; ";
-</code></pre></div></div>
+PS1+<span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=&gt; "</span><span class="p">;</span></code></pre></figure>
 
 <p>If you’re like me and want to understand what this gibberish means, read on.</p>
 
@@ -142,17 +141,16 @@ PS1+="\n=&gt; ";
 
 <p>Let’s run the first half of the command in a git repo and a normal folder and see what happens</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
-=&gt; git rev-parse --git-dir
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
+<span class="o">=&gt;</span> git rev-parse <span class="nt">--git-dir</span>
 .git
 
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
-=&gt; cd ..
+<span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
+<span class="o">=&gt;</span> <span class="nb">cd</span> ..
 
-[kunalnagar] at ~/Documents/Code
-=&gt; git rev-parse --git-dir
-fatal: not a git repository (or any of the parent directories): .git
-</code></pre></div></div>
+<span class="o">[</span>kunalnagar] at ~/Documents/Code
+<span class="o">=&gt;</span> git rev-parse <span class="nt">--git-dir</span>
+fatal: not a git repository <span class="o">(</span>or any of the parent directories<span class="o">)</span>: .git</code></pre></figure>
 
 <p>So basically, this command is used to check if our current working directory is a git repo or not.</p>
 
@@ -162,16 +160,15 @@ fatal: not a git repository (or any of the parent directories): .git
 
 <p>Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
-=&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
+<span class="o">=&gt;</span> git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null
 updates-v3
 
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
-=&gt; cd ..
+<span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
+<span class="o">=&gt;</span> <span class="nb">cd</span> ..
 
-[kunalnagar] at ~/Documents/Code
-=&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null
-</code></pre></div></div>
+<span class="o">[</span>kunalnagar] at ~/Documents/Code
+<span class="o">=&gt;</span> git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null</code></pre></figure>
 
 <p>The <code class="language-plaintext highlighter-rouge">git symbolic-ref</code> allows us to read, modify and delete <a href="https://stackoverflow.com/a/1526526">symbolic refs</a></p>
 
@@ -181,17 +178,15 @@ updates-v3
 
 <p>The <code class="language-plaintext highlighter-rouge">git rev-parse</code> is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
-=&gt; git symbolic-ref --quiet --short HEAD 2&gt; /dev/null || git rev-parse
-updates-v3
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
+<span class="o">=&gt;</span> git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null <span class="o">||</span> git rev-parse
+updates-v3</code></pre></figure>
 
 <h2 id="step-3">Step 3</h2>
 
 <p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="language-plaintext highlighter-rouge">PS</code> to show our minimal prompt</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1="\n[\u] at \w";
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">PS1</span><span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">[</span><span class="se">\u</span><span class="s2">] at </span><span class="se">\w</span><span class="s2">"</span><span class="p">;</span></code></pre></figure>
 
 <p><code class="language-plaintext highlighter-rouge">\n</code>: New line</p>
 
@@ -199,13 +194,11 @@ updates-v3
 
 <p><code class="language-plaintext highlighter-rouge">\w</code>: Path relative to home (notice the tilda in the path names in the screenshots)</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+=" \$(git_prompt)";
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PS1+<span class="o">=</span><span class="s2">" </span><span class="se">\$</span><span class="s2">(git_prompt)"</span><span class="p">;</span></code></pre></figure>
 
 <p>This appends the branch name in parentheses (if it’s a git repo)</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS1+="\n=&gt; ";
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PS1+<span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=&gt; "</span><span class="p">;</span></code></pre></figure>
 
 <p>Just a new line. With a short arrow.</p>
 
