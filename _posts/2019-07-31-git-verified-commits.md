@@ -25,7 +25,7 @@ GitHub uses [OpenPGP](https://www.openpgp.org/) libraries to confirm that your l
 
 After adding the public GPG key to your GitHub account, you need to tell `git` on your machine to use that key to sign commits. But first, let's get a list of keys on your account using:
 
-```
+{% highlight shell %}
 $ gpg --list-secret-keys --keyid-format LONG
 
 /home/kunal/.gnupg/pubring.kbx
@@ -34,21 +34,21 @@ sec   rsa4096/ABD83AC02AAC0953 2019-07-31 [SC] [expires: 2035-07-27]
       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 uid                 [ unknown] Kunal Nagar <knlnagar@gmail.com>
 ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
-```
+{% endhighlight %}
 
 In the above example, my public key is `ABD83AC02AAC0953` and we'll use that:
 
-```
+{% highlight shell %}
 $ git config --global user.signingkey ABD83AC02AAC0953
-```
+{% endhighlight %}
 
 ## Signing your commit
 
 When you're ready to commit your work, just add the `-S` flag to your commit command:
 
-```
+{% highlight shell %}
 $ git commit -m -S "Testing signed commits"
-```
+{% endhighlight %}
 
 If your key has a passphrase, you'll be asked to enter it now.
 

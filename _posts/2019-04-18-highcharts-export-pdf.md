@@ -28,21 +28,21 @@ You'll need the following libraries:
 - Highcharts - Offline Exporting Plugin
 - jsPDF
 
-```
+{% highlight html %}
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-```
+{% endhighlight %}
 
 **Note:** If you want offline exporting and don't want to send graph data to Highsoft's servers (for privacy reasons), yo need to add the following option to the Highcharts graph options:
 
-```
+{% highlight javascript %}
 exporting: {
-    enabled: false,
-    fallbackToExportServer: false
+  enabled: false,
+  fallbackToExportServer: false
 }
-```
+{% endhighlight %}
 
 ## Adding graphs to PDF
 
@@ -52,50 +52,50 @@ In this example, we'll be using two charts - one scatter and one pie chart. Let'
 
 We will also need an instance of jsPDF:
 
-```
+{% highlight javascript %}
 var pdf = new jsPDF('p', 'mm', [1000, 1400]);
-```
+{% endhighlight %}
 
 If you look at the Highcharts API, it has a method called [`exportChartLocal`](https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal) that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don't really want that - instead we want the `dataURL` (a base64 encoded string) of the image that we can put on the PDF using [`addImage`](http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html).
 
-```
+{% highlight javascript %}
 chart1.exportChartLocal('image/svg+xml');
 chart2.exportChartLocal('image/svg+xml');
-```
+{% endhighlight %}
 
 To stop the download popup and get the `dataURL`, we need to hook into the `downloadURL` method on the base Highcharts object that will give us the `dataURL` and the `filename` of the image.
 
-```
+{% highlight javascript %}
 Highcharts.downloadURL = function (dataURL, filename) {
-    pdf.addImage(dataURL, 'SVG', 10, 10);
+  pdf.addImage(dataURL, 'SVG', 10, 10);
 };
-```
+{% endhighlight %}
 
 Yet another problem here is that there is no callback to the `exportChartLocal` method so we'll have to use a counter and an array to store the dataURLs in an array.
 
-```
+{% highlight javascript %}
 var counter = 0;
 var imageURLs = [];
 Highcharts.downloadURL = function (dataURL, filename) {
-    imageURLs.push(dataURL);
-    counter++;
+  imageURLs.push(dataURL);
+  counter++;
 };
-```
+{% endhighlight %}
 
 To check if all the dataURLs are added to the array, we need to poll continuously. Once the array is prepared, we loop over it and add the image URLs to the PDF:
 
-```
+{% highlight javascript %}
 var interval = setInterval(function() {
-    if(counter === 2) {
-        clearInterval(interval);
-        imageURLs.forEach(function(img) {
-            pdf.addImage(img, 'SVG', 10, 10);
-            pdf.addPage();
-        });
-        pdf.save('test.pdf');
-    }
+  if(counter === 2) {
+    clearInterval(interval);
+    imageURLs.forEach(function(img) {
+      pdf.addImage(img, 'SVG', 10, 10);
+      pdf.addPage();
+    });
+    pdf.save('test.pdf');
+  }
 }, 100);
-```
+{% endhighlight %}
 
 And it's done! Here's a demo of the entire process. Switch to the **Result** tab and click on the **Export** button to download the PDF. The code contains comments so it's easy to follow.
 

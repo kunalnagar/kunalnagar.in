@@ -1,9 +1,10 @@
 .page-blog {
   #search {
-    font-size: 18px;
-    padding: 5px 10px;
+    padding: 0.5rem 0.8rem;
     margin-bottom: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 1.6rem);
+    border: 0;
+    border-bottom: 1px solid grey;
   }
 
   ul {
@@ -19,7 +20,7 @@
       }
 
       .date {
-        font-size: 18px;
+        font-size: 0.8rem;
         color: $text-color-muted;
         font-style: italic;
         margin: 0;
@@ -27,13 +28,12 @@
       }
 
       .link {
-        // text-decoration: none;
         color: $text-color;
         flex: 2;
+        text-decoration: none;
 
         &:hover {
           text-decoration: underline;
-          color: $link-color;
         }
       }
     }
@@ -58,7 +58,7 @@
 
   &-single {
     time {
-      font-size: 18px;
+      font-size: 0.8rem;
       color: $text-color-muted;
       font-style: italic;
       margin: 0;

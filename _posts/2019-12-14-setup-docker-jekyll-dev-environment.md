@@ -44,7 +44,7 @@ Here are some optional steps. I have Node and NPM setup to run the development s
 - Install Node and NPM
 - Expose port 4000 (since Jekyll runs on that port)
 
-```
+{% highlight docker %}
 FROM ubuntu:18.04
 
 SHELL ["/bin/bash", "-c"]
@@ -54,18 +54,19 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install curl ruby-full build-essential zlib1g-dev -y
 
 RUN echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc && \
-  echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc && \
-  echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc && \
-  source ~/.bashrc
+ echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc && \
+  echo 'export PATH="$HOME/gems/bin:\$PATH"' >> ~/.bashrc && \
+ source ~/.bashrc
 
 RUN gem install jekyll bundler && gem update --system
 
 # Optional (Installing Node and NPM)
+
 RUN curl -sSL "https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar.xz" | tar --strip-components=2 -xJ -C /usr/local/bin/ node-v12.13.1-linux-x64/bin/node && \
-  curl https://www.npmjs.com/install.sh | bash
+ curl https://www.npmjs.com/install.sh | bash
 
 EXPOSE 4000
-```
+{% endhighlight %}
 
 With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the `docker-compose.yml` comes in. Here are the steps in brief:
 
@@ -74,7 +75,7 @@ With the file above, a working Jekyll environment should be setup. Now, we want 
 - Map the port on your local machine to the Docker container (port `4000`)
 - Start the development server
 
-```
+{% highlight yaml %}
 version: '3.6'
 services:
 
@@ -91,7 +92,7 @@ services:
       sh -c "bundle install &&
             npm install &&
             npm run dev"
-```
+{% endhighlight %}
 
 ### Step 3
 
@@ -101,13 +102,13 @@ All you need to do is run `docker-compose up -d` and you're ready to start worki
 
 If you run into issues, you can use the following commands to inspect your container:
 
-```
+{% highlight shell %}
 # See a LIVE view of your Docker container's logs
 docker logs -f <container_name>
 
 # Login to your Docker container and browser around
 docker exec -ti <container_name> bash
-```
+{% endhighlight %}
 
 The code for this website is hosted [here](https://github.com/kunalnagar/kunalnagar.in) if you want to take a look at the big picture and how it all comes together.
 
