@@ -57,6 +57,12 @@
   }
 
   &-single {
+    ul {
+      li {
+        padding: 0.2rem 0;
+      }
+    }
+
     time {
       font-size: 0.8rem;
       color: $text-color-muted;
