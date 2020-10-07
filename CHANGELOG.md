@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.5.1](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.0...v1.5.1) (2020-10-07)
+
+
+### Bug Fixes
+
+* Syntax highlighting file ([41070ad](https://github.com/kunalnagar/kunalnagar.github.io/commit/41070ade9f81858d2e076baa3ded840eda3554e8))
+
 ## [1.5.0](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.4.12...v1.5.0) (2020-10-07)
 
 
