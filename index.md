@@ -16,6 +16,8 @@ Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
 
 **PGP**: A7AE2EFB1E910B953D7508228DD60BE767FBAED7
 
+knlnagar [at] gmail [dot] com
+
 [homex]: https://homex.com/
 [scalegrid]: https://scalegrid.io
 [viraltag]: https://www.viraltag.com/
