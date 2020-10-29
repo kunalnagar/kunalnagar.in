@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.4](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.3...v1.5.4) (2020-10-29)
+
+
+### Chores
+
+* Add PGP key on site ([47463ac](https://github.com/kunalnagar/kunalnagar.github.io/commit/47463ace9db6f8f7b4ec3ac80e4fd6a5a1aae548))
+* **release:** 1.5.3 ([fd67eb7](https://github.com/kunalnagar/kunalnagar.github.io/commit/fd67eb7038c726b4a4379fcf1f78a1de9ffa3c13))
+
 ### [1.5.3](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.2...v1.5.3) (2020-10-07)
 
 
