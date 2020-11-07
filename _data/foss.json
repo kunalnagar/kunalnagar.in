@@ -37,6 +37,12 @@
       "title": "jquery.peekABar",
       "description": "A jQuery notification bar plugin with multiple customization options",
       "link": "https://kunalnagar.github.io/jquery.peekABar/"
+    },
+    {
+      "title": "healthie",
+      "description": "A simple middleware that adds a health check endpoint to your Express.js applications.",
+      "link": "/blog/express-health-check-middleware/",
+      "popular": true
     }
   ],
   "tinkers": [
