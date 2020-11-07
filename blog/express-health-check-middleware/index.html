@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A simple middleware that adds a health check endpoint to your Express.js applications." />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>healthie - A health check middleware for Express.js - Kunal Nagar</title>
+    <meta
+      property="og:image"
+      content="https://kunalnagar.in/assets/img/post.png"
+    />
+    <meta property="og:title" content="healthie - A health check middleware for Express.js - Kunal Nagar" />
+    <meta property="og:description" content="A simple middleware that adds a health check endpoint to your Express.js applications." />
+    <meta property="og:url" content="https://kunalnagar.in/blog/express-health-check-middleware/" />
+    <meta property="og:type" content="article" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+  <ul>
+    <li>
+      <a title="Home" href="/" class="d--flex"
+        ><svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35px"
+          height="35px"
+          viewBox="0 0 412.000000 416.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,416.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M0 2070 l0 -2070 2060 0 2060 0 0 2070 0 2070 -2060 0 -2060 0 0
+     -2070z m1780 296 c0 -215 4 -377 9 -380 5 -4 18 5 28 18 10 13 168 184 351
+     380 l333 356 90 0 c51 0 89 -4 87 -9 -1 -5 -109 -126 -239 -268 -321 -351
+     -305 -332 -292 -351 5 -10 134 -181 287 -382 152 -201 276 -368 276 -372 0 -5
+     -41 -8 -90 -8 l-90 0 -251 336 c-138 184 -254 334 -257 332 -4 -2 -60 -58
+     -124 -124 l-118 -122 0 -211 0 -211 -85 0 -85 0 0 695 0 695 85 0 85 0 0 -374z"
+            />
+          </g></svg
+      ></a>
+    </li>
+    <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+    <li><a href="/foss">Open Source</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+      <div class="page-blog-single">
+        <h1>healthie - A health check middleware for Express.js</h1>
+        <time>November 07, 2020</time>
+        <article><h2 id="tldr">TL;DR</h2>
+
+<p><code class="language-plaintext highlighter-rouge">healthie</code> is a free and open-source Express.js middleware that adds a <code class="language-plaintext highlighter-rouge">/health</code> endpoint to your Express.js applications and returns it’s uptime with a status of <code class="language-plaintext highlighter-rouge">OK</code>.</p>
+
+<p>Source code and documentation: <a href="https://github.com/kunalnagar/healthie">https://github.com/kunalnagar/healthie</a></p>
+
+<h2 id="inspiration">Inspiration</h2>
+
+<p>I recently stumbled onto <a href="https://expressjs.com/en/advanced/healthcheck-graceful-shutdown.html">some options recommended by Express.js</a> to add health check customization options to your project. While all of them are fantastic and well-maintained, they provide a lot more functionality than I need.</p>
+
+<p>I built this package purely to dive deep into Express.js middleware. So if you do like it, feel free to fork or share. Going forward, I think it would be reasonable to provide an option to customize the health-check route, or the status message.</p>
+
+<h2 id="installation">Installation</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save @kunalnagarco/healthie
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">handleHealthCheck</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@kunalnagarco/healthie</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">handleHealthCheck</span><span class="p">());</span>
+</code></pre></div></div>
+
+<h2 id="result">Result</h2>
+
+<p>Visit <code class="language-plaintext highlighter-rouge">/health</code> and you should see the following:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"uptime"</span><span class="p">:</span><span class="w"> </span><span class="mf">36.883064168</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">process.uptime</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+</article>
+      </div>
+      <footer>
+  <script src="/assets/js/utils.js"></script>
+  <script src="/assets/js/main.js"></script>
+</footer>
+
+    </main>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>
