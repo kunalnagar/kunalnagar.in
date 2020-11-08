@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.5...v1.6.0) (2020-11-07)
+
+
+### Features
+
+* New blog post on healthie ([#27](https://github.com/kunalnagar/kunalnagar.github.io/issues/27)) ([4bbe1a8](https://github.com/kunalnagar/kunalnagar.github.io/commit/4bbe1a8ca3899aab1a0996438c11618558c74618))
+
 ### [1.5.5](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.4...v1.5.5) (2020-10-29)
 
 
