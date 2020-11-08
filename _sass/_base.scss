@@ -1,14 +1,24 @@
+html {
+  background-color: lighten($border-color, 15%);
+}
+
 body {
   font-family: $font-family;
   font-size: $font-size;
   color: $text-color;
+  background-color: white;
+  box-shadow: 0 0 5px 2px #cdcdcd;
+  border-radius: 4px;
   line-height: 1.5;
-  padding: 0;
+  margin: 1rem auto;
+  padding: 1.5rem;
   max-width: 800px;
-  margin: 0 auto;
+  min-height: calc(100vh - 5rem);
 
   @media screen and (max-width: 650px) {
-    margin: 0 20px;
+    padding: 1rem;
+    margin: 0;
+    min-height: calc(100vh - 2rem);
   }
 }
 
