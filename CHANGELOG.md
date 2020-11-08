@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.6.0...v1.7.0) (2020-11-08)
+
+
+### Features
+
+* Minor design tweaks ([#28](https://github.com/kunalnagar/kunalnagar.github.io/issues/28)) ([cf51af1](https://github.com/kunalnagar/kunalnagar.github.io/commit/cf51af1fcaab25aad009454a65c5cdc31d438dcd))
+
 ## [1.6.0](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.5.5...v1.6.0) (2020-11-07)
 
 
