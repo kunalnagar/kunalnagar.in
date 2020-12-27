@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.2](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.0...v1.7.2) (2020-12-16)
+
+
+### Chores
+
+* **deps:** bump ini from 1.3.5 to 1.3.8 ([#29](https://github.com/kunalnagar/kunalnagar.github.io/issues/29)) ([f0cce45](https://github.com/kunalnagar/kunalnagar.github.io/commit/f0cce45299d70d1e0df82c2a49cd1fb9f1d95f43))
+* **release:** 1.7.1 ([9b9ebae](https://github.com/kunalnagar/kunalnagar.github.io/commit/9b9ebae57179a39678f3c2c6de444bc160fd5425))
+* Update PGP key ([640a27f](https://github.com/kunalnagar/kunalnagar.github.io/commit/640a27f3b3285ff7311b6da288c6adeabdb35b9e))
+* **release:** 1.7.0 ([68f80d7](https://github.com/kunalnagar/kunalnagar.github.io/commit/68f80d7c2c83eb253bde903bca91f8cef1b1324d))
+
 ### [1.7.1](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.0...v1.7.1) (2020-11-29)
 
 
