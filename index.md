@@ -10,16 +10,15 @@ Most recently, I worked at [ScaleGrid][scalegrid], enabling users to manage thei
 
 Before that, I was at [Viraltag][viraltag], a social media scheduling tool where I built their scheduler, chrome extension and iOS application from scratch.
 
-<hr />
-
 Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
 
-```
-PGP: 275C8D15FCB80AC358C45C5DF864FDB2A25913EA
-knlnagar [at] gmail [dot] com
-```
+<hr />
+
+PGP: [Download .asc][pgp-download]
+<br />knlnagar [at] gmail [dot] com
 
 [homex]: https://homex.com/
 [scalegrid]: https://scalegrid.io
 [viraltag]: https://www.viraltag.com/
 [viraltag-chrome-extension]: https://chrome.google.com/webstore/detail/viraltag/jgalnfddmdhldmolecmlopbabjbngoka?hl=en
+[pgp-download]: /assets/downloads/knlnagar_at_gmail_dot_com-public.asc
