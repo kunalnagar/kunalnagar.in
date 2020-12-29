@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.4](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.3...v1.7.4) (2020-12-29)
+
+
+### Chores
+
+* Update PGP ([0288bf9](https://github.com/kunalnagar/kunalnagar.github.io/commit/0288bf99884014113c681d437d7737ec58652ae4))
+* **release:** 1.7.3 ([bd59035](https://github.com/kunalnagar/kunalnagar.github.io/commit/bd590356007413bde2db4c7acb86f77608365159))
+
 ### [1.7.3](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.2...v1.7.3) (2020-12-27)
 
 
