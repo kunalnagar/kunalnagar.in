@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.5](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.4...v1.7.5) (2021-01-09)
+
+
+### Chores
+
+* Remove location ([d347937](https://github.com/kunalnagar/kunalnagar.github.io/commit/d347937a982b3676c59b757746ef854f2fbcfa85))
+
 ### [1.7.4](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.3...v1.7.4) (2020-12-29)
 
 
