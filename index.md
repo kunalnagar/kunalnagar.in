@@ -4,11 +4,11 @@ layout: default
 
 Hi. I'm Kunal.
 
-I work as a Frontend Developer at [HomeX][homex] where we allow users to seamlessly schedule home service appointments.
+I work as a Senior Frontend Developer at [CircleCI][circleci] where we help automate the software delivery pipeline so developers can ship quality applications more efficiently.
 
-Most recently, I worked at [ScaleGrid][scalegrid], enabling users to manage their database clusters by creating dashboards and monitoring solutions.
+Most recently, I worked at [HomeX][homex], that allows users to seamlessly schedule home service appointments.
 
-Before that, I was at [Viraltag][viraltag], a social media scheduling tool where I built their scheduler, chrome extension and iOS application from scratch.
+Before that, I was at [ScaleGrid][scalegrid], enabling users to manage their database clusters by creating dashboards and monitoring solutions.
 
 Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
 
@@ -17,8 +17,7 @@ Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
 PGP: [Download .asc][pgp-download]
 <br />knlnagar [at] gmail [dot] com
 
+[circleci]: https://circleci.com/
 [homex]: https://homex.com/
 [scalegrid]: https://scalegrid.io
-[viraltag]: https://www.viraltag.com/
-[viraltag-chrome-extension]: https://chrome.google.com/webstore/detail/viraltag/jgalnfddmdhldmolecmlopbabjbngoka?hl=en
 [pgp-download]: /assets/downloads/knlnagar_at_gmail_dot_com-public.asc
