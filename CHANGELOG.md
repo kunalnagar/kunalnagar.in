@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.6](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.5...v1.7.6) (2021-02-18)
+
+
+### Chores
+
+* New Job at CircleCI ([6cfe3f6](https://github.com/kunalnagar/kunalnagar.github.io/commit/6cfe3f65ef0af558d8ed816d96994587978ab06c))
+
 ### [1.7.5](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.4...v1.7.5) (2021-01-09)
 
 
