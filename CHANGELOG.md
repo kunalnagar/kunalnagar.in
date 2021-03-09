@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.7](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.6...v1.7.7) (2021-03-09)
+
+
+### Chores
+
+* Remove key ([9ae84f7](https://github.com/kunalnagar/kunalnagar.github.io/commit/9ae84f73ea5c5ee48c551dd058f4c8a358d24410))
+* **release:** 1.7.6 ([8e565fe](https://github.com/kunalnagar/kunalnagar.github.io/commit/8e565fe7e4ec3dbc9e324f6dfe4c65cfd6e1abfa))
+
 ### [1.7.6](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.5...v1.7.6) (2021-02-18)
 
 
