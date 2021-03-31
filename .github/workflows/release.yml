@@ -2,8 +2,10 @@ name: Release site
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - 'master'
+    tags-ignore:
+      - '*.*'
 
 jobs:
   release:
@@ -30,6 +32,10 @@ jobs:
         run: npm run pretty-quick
       - name: Create build
         run: npm run build
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy
       - name: Release
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
