@@ -1,5 +1,7 @@
 nav {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 
   ul {
     margin: 0;
@@ -7,6 +9,7 @@ nav {
     list-style-type: none;
     display: flex;
     align-items: center;
+    flex: 1;
 
     li {
       margin-right: 20px;
