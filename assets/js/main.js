@@ -23,7 +23,24 @@ function enablePostFiltering() {
 }
 
 ready(function () {
+  var $html = document.getElementsByTagName('html')[0];
   var $blogListPage = document.querySelector('.page-blog');
+  var $colorSchemeToggle = document.getElementById('color_scheme');
+  $colorSchemeToggle.addEventListener('change', function (e) {
+    var $colorSchemeSun = document.querySelector('svg.sun');
+    var $colorSchemeMoon = document.querySelector('svg.moon');
+    if (e.currentTarget.checked) {
+      $html.classList.remove('light');
+      $html.classList.add('dark');
+      $colorSchemeMoon.style.display = 'block';
+      $colorSchemeSun.style.display = 'none';
+    } else {
+      $html.classList.remove('dark');
+      $html.classList.add('light');
+      $colorSchemeMoon.style.display = 'none';
+      $colorSchemeSun.style.display = 'block';
+    }
+  });
   if ($blogListPage) {
     enablePostFiltering();
   }

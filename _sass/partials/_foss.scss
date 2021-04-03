@@ -1,11 +1,19 @@
 .page-foss {
   ul {
     padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 
     li {
-      display: flex;
-      align-items: center;
+      flex: 1 0 calc(50% - 2rem);
+      max-width: 50%;
+      list-style: none;
       margin-bottom: 10px;
+
+      &:nth-child(odd) {
+        margin-right: 2rem;
+      }
 
       .link {
         flex: 1;

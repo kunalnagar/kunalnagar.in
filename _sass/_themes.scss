@@ -1,0 +1,45 @@
+@mixin theme() {
+  @each $theme, $map in $themes {
+    // $theme: darkTheme, lightTheme
+    // $map: ('text-color': ..., 'bg-color': ...)
+
+    // make the $map globally accessible, so that theme-get() can access it
+    $theme-map: $map !global;
+
+    // make a class for each theme using interpolation -> #{}
+    // use & for making the theme class ancestor of the class
+    // from which you use @include theme() {...}
+    .#{$theme} & {
+      @content; // the content inside @include theme() {...}
+    }
+  }
+  // no use of the variable $theme-map now
+  $theme-map: null !global;
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}
+
+$themes: (
+  light: (
+    'background-color': #ffffff,
+    'text-color': #555555,
+    'text-color-muted': #564c4c,
+    'link-color-nav': #374151,
+    'link-color': #000000,
+    'link-color-border': rgba(125, 125, 125, 0.1),
+    'link-color-border-hover': #555555,
+    'border-color': #bbbbbb,
+    'border-radius': 4px,
+  ),
+  dark: (
+    'background-color': #484848,
+    'text-color': #f7f7f7,
+    'text-color-muted': #564c4c,
+    'link-color-nav': #374151,
+    'link-color': #6b6be2,
+    'border-color': #bbbbbb,
+    'border-radius': 4px,
+  ),
+);

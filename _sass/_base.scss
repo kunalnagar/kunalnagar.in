@@ -1,44 +1,66 @@
 html {
-  background-color: lighten($border-color, 15%);
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
   font-family: $font-family;
   font-size: $font-size;
-  color: $text-color;
-  background-color: white;
-  box-shadow: 0 0 5px 2px #cdcdcd;
-  border-radius: 4px;
-  line-height: 1.5;
-  margin: 1rem auto;
-  padding: 1.5rem;
-  max-width: 800px;
-  min-height: calc(100vh - 5rem);
-
-  @media screen and (max-width: 650px) {
-    padding: 1rem;
-    margin: 0;
-    min-height: calc(100vh - 2rem);
+  @include theme() {
+    color: theme-get('text-color');
+    background-color: theme-get('background-color');
   }
-}
+  line-height: 1.5;
+  margin: 0;
 
-a {
-  color: $link-color;
+  a {
+    text-decoration: none;
+    @include theme() {
+      color: theme-get('link-color');
+    }
+  }
 
-  &:hover {
-    color: $link-color-hover;
+  main {
+    margin: 0 auto;
+    padding: 2.5rem 1.75rem;
+    max-width: 65ch;
+
+    a {
+      @include theme() {
+        color: theme-get('link-color');
+        border-bottom: 1px solid theme-get('link-color-border');
+      }
+      text-decoration: none;
+      transition: border 0.3s ease-in-out;
+
+      &:hover {
+        @include theme() {
+          border-bottom-color: theme-get('link-color-border-hover');
+        }
+      }
+    }
+
+    p {
+      margin: 1.25rem 0;
+    }
   }
 }
 
 h1,
 h2,
 h3 {
-  line-height: 32px;
+  @include theme() {
+    color: theme-get('link-color');
+  }
+  line-height: 1.111111;
 }
 
 h1 {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 2.25em;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 h2 {

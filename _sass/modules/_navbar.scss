@@ -1,7 +1,13 @@
 nav {
-  margin-bottom: 30px;
+  height: 2rem;
+  padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  .brand {
+    border-bottom: none;
+  }
 
   ul {
     margin: 0;
@@ -9,21 +15,47 @@ nav {
     list-style-type: none;
     display: flex;
     align-items: center;
-    flex: 1;
 
     li {
-      margin-right: 20px;
+      margin-right: 1rem;
+      display: flex;
 
       &:last-child {
         margin-right: 0;
       }
 
-      @media screen and (max-width: 650px) {
-        margin-right: 15px;
+      // @media screen and (max-width: 650px) {
+      //   margin-right: 15px;
+      // }
+
+      label {
+        cursor: pointer;
+
+        #color_scheme {
+          display: none;
+        }
+
+        .moon {
+          display: none;
+        }
       }
 
       a {
-        font-weight: bold;
+        display: flex;
+        transition: opacity 0.2s ease;
+        @include theme() {
+          color: theme-get('link-color-nav');
+        }
+        opacity: 0.6;
+        outline: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        svg {
+          font-size: 1.2rem;
+        }
       }
     }
   }

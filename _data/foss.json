@@ -20,6 +20,7 @@
     },
     {
       "img": "/assets/img/foss/electron.svg",
+      "icon": "mdi:electron-framework",
       "title": "encrypt0r",
       "description": "An Electron app to encrypt/decrypt your files by setting a passphrase",
       "link": "/blog/encryptor-encrypt-decrypt-files-passphrase/",
@@ -27,6 +28,7 @@
     },
     {
       "img": "/assets/img/foss/wp.png",
+      "icon": "cib:wordpress",
       "title": "Custom 404 Pro",
       "description": "A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page or URL",
       "link": "/blog/custom-404-pro/",
@@ -39,6 +41,7 @@
       "link": "https://kunalnagar.github.io/jquery.peekABar/"
     },
     {
+      "icon": "mdi:nodejs",
       "title": "healthie",
       "description": "A simple middleware that adds a health check endpoint to your Express.js applications.",
       "link": "/blog/express-health-check-middleware/",

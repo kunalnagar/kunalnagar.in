@@ -21,14 +21,18 @@
 
       .date {
         font-size: 0.8rem;
-        color: $text-color-muted;
+        @include theme() {
+          color: theme-get('text-color-muted');
+        }
         font-style: italic;
         margin: 0;
         flex: 1;
       }
 
       .link {
-        color: $text-color;
+        @include theme() {
+          color: theme-get('text-color');
+        }
         flex: 2;
         text-decoration: none;
 
@@ -65,7 +69,9 @@
 
     time {
       font-size: 0.8rem;
-      color: $text-color-muted;
+      @include theme() {
+        color: theme-get('text-color-muted');
+      }
       font-style: italic;
       margin: 0;
       flex: 1;

@@ -2,7 +2,9 @@
 layout: default
 ---
 
-Hi. I'm Kunal.
+# Kunal Nagar
+
+Hey, I am Kunal and I have been trying to write JavaScript responsibly since 2011.
 
 I work as a Senior Frontend Developer at [CircleCI][circleci] where we help automate the software delivery pipeline so developers can ship quality applications more efficiently.
 
