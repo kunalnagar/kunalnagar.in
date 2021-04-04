@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.9](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.8...v1.7.9) (2021-04-04)
+
+
+### Bug Fixes
+
+* Repository URL in package.json ([#37](https://github.com/kunalnagar/kunalnagar.in/issues/37)) ([8aed943](https://github.com/kunalnagar/kunalnagar.in/commit/8aed94354831aa9d5cb9a291058c4885884790a1))
+
 ### [1.7.8](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.7...v1.7.8) (2021-03-31)
 
 
