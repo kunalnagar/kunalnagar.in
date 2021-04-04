@@ -1,19 +1,28 @@
+// @include theme() does not work on the `html` tag
+// since it's the root element in the DOM
 html {
-  background-color: lighten($border-color, 15%);
+  &.light {
+    background-color: #e1e1e1;
+  }
+  &.dark {
+    background-color: #626262;
+  }
 }
 
 body {
   font-family: $font-family;
   font-size: $font-size;
-  color: $text-color;
-  background-color: white;
-  box-shadow: 0 0 5px 2px #cdcdcd;
   border-radius: 4px;
   line-height: 1.5;
   margin: 1rem auto;
   padding: 1.5rem;
   max-width: 800px;
   min-height: calc(100vh - 5rem);
+  @include theme() {
+    color: theme-get('text-color');
+    background-color: theme-get('background-color');
+    box-shadow: theme-get('box-shadow');
+  }
 
   @media screen and (max-width: 650px) {
     padding: 1rem;
@@ -22,11 +31,21 @@ body {
   }
 }
 
+hr {
+  @include theme() {
+    border-bottom-color: theme-get('hr-color');
+  }
+}
+
 a {
-  color: $link-color;
+  @include theme() {
+    color: theme-get('link-color');
+  }
 
   &:hover {
-    color: $link-color-hover;
+    @include theme() {
+      color: theme-get('link-color-hover');
+    }
   }
 }
 

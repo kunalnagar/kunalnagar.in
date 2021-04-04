@@ -1,0 +1,53 @@
+$theme-map: null;
+
+@mixin theme() {
+  @each $theme, $map in $themes {
+    // $theme: darkTheme, lightTheme
+    // $map: ('text-color': ..., 'bg-color': ...)
+
+    // make the $map globally accessible, so that theme-get() can access it
+    $theme-map: $map !global;
+
+    // make a class for each theme using interpolation -> #{}
+    // use & for making the theme class ancestor of the class
+    // from which you use @include theme() {...}
+    .#{$theme} & {
+      @content; // the content inside @include theme() {...}
+    }
+  }
+  // no use of the variable $theme-map now
+  $theme-map: null !global;
+}
+
+@function theme-get($key) {
+  @return map-get($theme-map, $key);
+}
+
+$themes: (
+  light: (
+    'html-background-color': #e1e1e1,
+    'background-color': #ffffff,
+    'box-shadow': 0 0 5px 2px #cdcdcd,
+    'text-color': #212529,
+    'text-color-muted': #383f45,
+    'link-color': #2a2aff,
+    'link-color-hover': #0056b3,
+    'logo-fill': #000000,
+    'hr-color': rgb(238, 238, 238),
+    'code-color': #e83e8c,
+    'code-pre-background-color': #f6f6f6,
+  ),
+  dark: (
+    'html-background-color': #626262,
+    'background-color': #434343,
+    'box-shadow': 0 0 5px 2px #332e2e,
+    'text-color': #adbac7,
+    'text-color-muted': #8fa1b2,
+    'link-color': #81c5ff,
+    'link-color-hover': #3d96f6,
+    'logo-fill': #ffffff,
+    'hr-color': #909090,
+    'code-color': #ff9ac8,
+    'code-pre-background-color': #000000,
+  ),
+);

@@ -1,11 +1,14 @@
 nav {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
+    flex: 1;
     align-items: center;
 
     li {
@@ -22,6 +25,26 @@ nav {
       a {
         font-weight: bold;
       }
+
+      &.brand {
+        svg > g {
+          @include theme() {
+            fill: theme-get('logo-fill');
+          }
+        }
+      }
+    }
+  }
+
+  #btn_color_scheme {
+    cursor: pointer;
+    border: none;
+    padding: 0.3rem 0.4rem;
+    border-radius: $border-radius;
+
+    @include theme() {
+      background-color: theme-get('logo-fill');
+      color: theme-get('background-color');
     }
   }
 }
