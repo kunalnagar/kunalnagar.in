@@ -22,31 +22,58 @@ function enablePostFiltering() {
   document.getElementById('search').addEventListener('input', filterPosts);
 }
 
+function _switchToLightMode() {
+  var $html = document.getElementsByTagName('html')[0];
+  var $btnToggleColorScheme = document.getElementById('btn_color_scheme');
+  $html.classList.remove('dark');
+  $html.classList.add('light');
+  localStorage.setItem('COLOR_SCHEME', 'light');
+  $btnToggleColorScheme.textContent = 'Dark';
+}
+
+function _switchToDarkMode() {
+  var $html = document.getElementsByTagName('html')[0];
+  var $btnToggleColorScheme = document.getElementById('btn_color_scheme');
+  $html.classList.remove('light');
+  $html.classList.add('dark');
+  localStorage.setItem('COLOR_SCHEME', 'dark');
+  $btnToggleColorScheme.textContent = 'Light';
+}
+
 function handleColorScheme() {
   var $html = document.getElementsByTagName('html')[0];
   var $btnToggleColorScheme = document.getElementById('btn_color_scheme');
   if (localStorage.getItem('COLOR_SCHEME') === null) {
-    $html.classList.add('light');
-    localStorage.setItem('COLOR_SCHEME', 'light');
-    $btnToggleColorScheme.textContent = 'Switch to Dark Mode';
+    if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+      _switchToDarkMode();
+    } else {
+      _switchToLightMode();
+    }
   } else if (localStorage.getItem('COLOR_SCHEME') === 'light') {
-    $html.classList.add('light');
-    $btnToggleColorScheme.textContent = 'Switch to Dark Mode';
-  } else {
-    $html.classList.add('dark');
-    $btnToggleColorScheme.textContent = 'Switch to Light Mode';
+    _switchToLightMode();
+  } else if (localStorage.getItem('COLOR_SCHEME') === 'dark') {
+    _switchToDarkMode();
   }
   $btnToggleColorScheme.addEventListener('click', function () {
     if ($html.classList.contains('light')) {
-      $html.classList.replace('light', 'dark');
-      $btnToggleColorScheme.textContent = 'Switch to Light Mode';
-      localStorage.setItem('COLOR_SCHEME', 'dark');
+      _switchToDarkMode();
     } else {
-      $html.classList.replace('dark', 'light');
-      $btnToggleColorScheme.textContent = 'Switch to Dark Mode';
-      localStorage.setItem('COLOR_SCHEME', 'light');
+      _switchToLightMode();
     }
   });
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', (e) => {
+      const newColorScheme = e.matches ? 'dark' : 'light';
+      if (newColorScheme === 'dark') {
+        _switchToDarkMode();
+      } else {
+        _switchToLightMode();
+      }
+    });
 }
 
 ready(function () {
