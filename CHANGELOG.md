@@ -1,5 +1,15 @@
 # Changelog
 
+### [1.7.8](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.7...v1.7.8) (2021-03-31)
+
+
+### Chores
+
+* Add semantic release ([#32](https://github.com/kunalnagar/kunalnagar.github.io/issues/32)) ([3a77c5d](https://github.com/kunalnagar/kunalnagar.github.io/commit/3a77c5d895d667c08c744115be96e6ca4e8b2ae5))
+* **deps:** bump kramdown from 2.3.0 to 2.3.1 ([#30](https://github.com/kunalnagar/kunalnagar.github.io/issues/30)) ([c673a85](https://github.com/kunalnagar/kunalnagar.github.io/commit/c673a85f06c9f55f4056173b495b6c6111339bd6))
+* **deps:** bump y18n from 4.0.0 to 4.0.1 ([#31](https://github.com/kunalnagar/kunalnagar.github.io/issues/31)) ([58e7eec](https://github.com/kunalnagar/kunalnagar.github.io/commit/58e7eec8e59343228f5727af28df984afcd11bff))
+* **release:** 1.7.7 ([740012a](https://github.com/kunalnagar/kunalnagar.github.io/commit/740012a791db3bc2b9a2271438c8400793eecfb8))
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [1.7.7](https://github.com/kunalnagar/kunalnagar.github.io/compare/v1.7.6...v1.7.7) (2021-03-09)
