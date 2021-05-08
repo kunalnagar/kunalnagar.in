@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.10](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.9...v1.7.10) (2021-05-08)
+
+
+### Chores
+
+* **deps:** bump rexml from 3.2.4 to 3.2.5 ([#38](https://github.com/kunalnagar/kunalnagar.in/issues/38)) ([fcbd0ab](https://github.com/kunalnagar/kunalnagar.in/commit/fcbd0ab901a7e2056a6fe263f307f9be3c70e602))
+
 ### [1.7.9](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.8...v1.7.9) (2021-04-04)
 
 
