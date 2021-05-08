@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.7.11](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.10...v1.7.11) (2021-05-08)
+
+
+### Chores
+
+* **deps:** bump hosted-git-info from 2.8.8 to 2.8.9 ([#39](https://github.com/kunalnagar/kunalnagar.in/issues/39)) ([e17f63a](https://github.com/kunalnagar/kunalnagar.in/commit/e17f63ad4c82aceef5bc047aee91b87a6e8ddd3a))
+* **deps:** bump lodash from 4.17.20 to 4.17.21 ([#40](https://github.com/kunalnagar/kunalnagar.in/issues/40)) ([8793012](https://github.com/kunalnagar/kunalnagar.in/commit/8793012ba454010029544d4fea27d255898d6bbe))
+
 ### [1.7.10](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.9...v1.7.10) (2021-05-08)
 
 
