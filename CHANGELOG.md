@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.12](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.11...v1.7.12) (2021-05-09)
+
+
+### Chores
+
+* Update Renovate config ([65628dd](https://github.com/kunalnagar/kunalnagar.in/commit/65628ddca91b426bd0bec88290f5c001fac2bd30))
+
 ### [1.7.11](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.10...v1.7.11) (2021-05-08)
 
 
