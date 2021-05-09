@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.13](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.12...v1.7.13) (2021-05-09)
+
+
+### Chores
+
+* **deps:** pin dependencies ([70ec04d](https://github.com/kunalnagar/kunalnagar.in/commit/70ec04d73274999a6ea6d315c475b99b208eab48))
+
 ### [1.7.12](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.11...v1.7.12) (2021-05-09)
 
 
