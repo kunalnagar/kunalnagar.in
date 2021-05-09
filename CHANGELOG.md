@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.16](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.15...v1.7.16) (2021-05-09)
+
+
+### Chores
+
+* **deps:** update dependency lint-staged to v10.5.4 ([288a031](https://github.com/kunalnagar/kunalnagar.in/commit/288a031d41ad29e7b150b14f91f9ec25569599da))
+
 ### [1.7.15](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.14...v1.7.15) (2021-05-09)
 
 
