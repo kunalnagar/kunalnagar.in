@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.15](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.14...v1.7.15) (2021-05-09)
+
+
+### Chores
+
+* **deps:** update dependency husky to v4.3.8 ([28544b9](https://github.com/kunalnagar/kunalnagar.in/commit/28544b9c7f7b0aa7c99892f1aed4d5e3f8e057cc))
+
 ### [1.7.14](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.13...v1.7.14) (2021-05-09)
 
 
