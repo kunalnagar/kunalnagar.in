@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.17](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.16...v1.7.17) (2021-05-10)
+
+
+### Chores
+
+* **deps:** update dependency prettier to v2.3.0 ([d98425a](https://github.com/kunalnagar/kunalnagar.in/commit/d98425ae098ef72505b0bca261dcde5ac513db9e))
+
 ### [1.7.16](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.15...v1.7.16) (2021-05-09)
 
 
