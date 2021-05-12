@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.18](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.17...v1.7.18) (2021-05-10)
+
+
+### Chores
+
+* **deps:** update dependency sort-package-json to v1.50.0 ([012231c](https://github.com/kunalnagar/kunalnagar.in/commit/012231c1067110b68c1a3c3d28096139429a6b02))
+
 ### [1.7.17](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.16...v1.7.17) (2021-05-10)
 
 
