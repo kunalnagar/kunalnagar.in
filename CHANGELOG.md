@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.20](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.19...v1.7.20) (2021-05-12)
+
+
+### Chores
+
+* **deps:** update dependency semantic-release to v17.4.3 ([390be9e](https://github.com/kunalnagar/kunalnagar.in/commit/390be9e634a8f90cb467c0312f431ab680141c43))
+
 ### [1.7.19](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.18...v1.7.19) (2021-05-12)
 
 
