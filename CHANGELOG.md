@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.21](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.20...v1.7.21) (2021-05-14)
+
+
+### Chores
+
+* **deps:** update dependency jekyll to ~> 4.2.0 ([d9f3f32](https://github.com/kunalnagar/kunalnagar.in/commit/d9f3f327472b6866bf03d9976a53208e7957e895))
+
 ### [1.7.20](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.19...v1.7.20) (2021-05-12)
 
 
