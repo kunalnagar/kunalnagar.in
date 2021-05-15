@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.22](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.21...v1.7.22) (2021-05-15)
+
+
+### Chores
+
+* **deps:** update dependency tzinfo to v2 ([#62](https://github.com/kunalnagar/kunalnagar.in/issues/62)) ([bf1eaf5](https://github.com/kunalnagar/kunalnagar.in/commit/bf1eaf58fd09582660e55df2c0c073c85ed38e61))
+
 ### [1.7.21](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.20...v1.7.21) (2021-05-14)
 
 
