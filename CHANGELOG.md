@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.7.23](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.22...v1.7.23) (2021-05-22)
+
+
+### Chores
+
+* Housekeeping + Add Spotify playlist ([909be91](https://github.com/kunalnagar/kunalnagar.in/commit/909be9188e67c5084aa19351234f76e77bd5d1f8))
+
 ### [1.7.22](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.21...v1.7.22) (2021-05-15)
 
 
