@@ -17,7 +17,6 @@ encrypt0r is built on the latest technologies and available for all operating sy
 
 - [Electron](https://electronjs.org/)
 - [Open Source](https://github.com/kunalnagar/encrypt0r)
-- Travis CI (for builds) [![Build Status](https://travis-ci.org/kunalnagar/encrypt0r.svg?branch=master)](https://travis-ci.org/kunalnagar/encrypt0r)
 
 ## Download
 

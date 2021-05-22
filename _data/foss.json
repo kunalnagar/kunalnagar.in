@@ -1,22 +1,10 @@
 {
   "projects": [
     {
-      "img": "/assets/img/foss/react.png",
-      "title": "react-twitter",
-      "description": "Twitter's JavaScript Widgets as React components",
-      "link": "https://github.com/kunalnagar/react-twitter"
-    },
-    {
       "img": "/assets/img/foss/imdb.png",
       "title": "IMDb API",
       "description": "An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists",
       "link": "https://github.com/kunalnagar/expressyo-imdb-scraper"
-    },
-    {
-      "img": "/assets/img/foss/vue.png",
-      "title": "vue-imdb",
-      "description": "A Vue.js component using the previous IMDb API service to render a user's watchlist",
-      "link": "https://github.com/kunalnagar/vue-imdb"
     },
     {
       "img": "/assets/img/foss/electron.svg",
@@ -51,12 +39,6 @@
       "title": "HighCharts to PDF",
       "description": "A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF.",
       "link": "/blog/highcharts-export-pdf/"
-    },
-    {
-      "img": "/assets/img/foss/youtube.png",
-      "title": "YouTube Jukebox",
-      "description": "A temporary sidebar playlist to quickly add videos to from YouTube, kinda like a jukebox.",
-      "link": "/blog/chrome-extension-youtube-jukebox/"
     }
   ]
 }

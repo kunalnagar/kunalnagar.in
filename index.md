@@ -10,9 +10,13 @@ Most recently, I worked at [HomeX][homex], that allows users to seamlessly sched
 
 Before that, I was at [ScaleGrid][scalegrid], enabling users to manage their database clusters by creating dashboards and monitoring solutions.
 
+Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
+
 <hr />
 
-Use JavaScript responsibly. Make the web faster, and a little [whimsical](/404).
+Here's some music I like:
+
+<iframe src="https://open.spotify.com/embed/playlist/17jbCOYI8OwCGzS9S6xskE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 [circleci]: https://circleci.com/
 [homex]: https://homex.com/
