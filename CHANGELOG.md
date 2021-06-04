@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.23...v1.8.0) (2021-06-04)
+
+
+### Features
+
+* Add react-component-library to FOSS ([ead8ede](https://github.com/kunalnagar/kunalnagar.in/commit/ead8ede2a21d49f9d0cc178c9bcefaf5ce24829a))
+
 ### [1.7.23](https://github.com/kunalnagar/kunalnagar.in/compare/v1.7.22...v1.7.23) (2021-05-22)
 
 
