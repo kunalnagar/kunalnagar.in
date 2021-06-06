@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2021-06-05T12:28:22+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">healthie - A health check middleware for Express.js</title><link href="https://www.kunalnagar.in/blog/express-health-check-middleware/" rel="alternate" type="text/html" title="healthie - A health check middleware for Express.js" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/express-health-check-middleware</id><content type="html" xml:base="https://www.kunalnagar.in/blog/express-health-check-middleware/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2021-06-06T01:27:41+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">InstagramPostEmbed - A React component to embed an Instagram Post</title><link href="https://www.kunalnagar.in/blog/react-instagram-post-embed/" rel="alternate" type="text/html" title="InstagramPostEmbed - A React component to embed an Instagram Post" /><published>2021-06-05T00:00:00+00:00</published><updated>2021-06-05T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/react-instagram-post-embed</id><content type="html" xml:base="https://www.kunalnagar.in/blog/react-instagram-post-embed/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;InstagramPostEmbed /&amp;gt;&lt;/code&gt; is an Open Source React component that uses the &lt;a href=&quot;https://developers.facebook.com/docs/instagram/oembed&quot;&gt;oEmbed API&lt;/a&gt; to embed an Instagram post. View it in &lt;a href=&quot;https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default&quot;&gt;action&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kunalnagarco/react-component-library/blob/master/src/components/InstagramPostEmbed/InstagramPostEmbed.tsx&quot;&gt;Source code&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
+
+&lt;p&gt;I built this component to familiarize myself with the Facebook Developer Network. So if you do like it, feel free to fork or share. You can find more components &lt;a href=&quot;https://github.com/kunalnagarco/react-component-library/tree/master/src/components&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--save&lt;/span&gt; @kunalnagarco/react-component-library
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InstagramPostEmbed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;@kunalnagarco/react-component-library&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Single Post&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CO_u0wftV4Q/&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Multiple Posts&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CORs4wShENX/&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNyrgMsh3a2/&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Hide Caption&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;hideCaption&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNxdfcCB8Yb/&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Max width 320px&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;320&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNxdfcCB8Yb/&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Max width 658&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;658&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNxdfcCB8Yb/&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;At the very minimum, you will need two things to use this component:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This component requires the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clientAccessToken&lt;/code&gt; which can be obtained by creating a Facebook App. For full requirements, please follow the instructions in the &lt;a href=&quot;https://developers.facebook.com/docs/instagram/oembed#requirements&quot;&gt;Requirements section&lt;/a&gt; of the documentation.&lt;/li&gt;
+  &lt;li&gt;You will also need the full link to an Instagram Post.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;technical-quirk&quot;&gt;Technical Quirk&lt;/h2&gt;
+
+&lt;p&gt;The component will automatically take care of the quirk for you. I just thought it’s an interesting point that folks might tend to miss while developing with the API.&lt;/p&gt;
+
+&lt;p&gt;After fetching the post details from the oEmbed API, you’ll get a blob of HTML that can be inserted into the DOM. The embed HTML contains a reference to the Instagram &lt;a href=&quot;https://www.instagram.com/static/bundles/metro/EmbedSDK.js/33cd2c5d5d59.js?fbclid=IwAR1TCV_bYJgZ3k4lAY7p01lJ_XvJP__4rAFmyAaCddmnPoBOgOplo1o1CG0&quot;&gt;embed.js&lt;/a&gt; JavaScript library. Since the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html&lt;/code&gt; is already in the DOM, the embed script needs to scan all the embed code and re-initialize it. This can be done by calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instgrm.Embeds.process()&lt;/code&gt; function after loading the library.&lt;/p&gt;
+
+&lt;p&gt;If this is not done, you’ll get an empty Instagram post embed.&lt;/p&gt;
+
+&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+
+&lt;p&gt;Watch this component &lt;a href=&quot;https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default&quot;&gt;in action&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;support&quot;&gt;Support&lt;/h2&gt;
+
+&lt;p&gt;If you find a bug, please &lt;a href=&quot;https://github.com/kunalnagarco/react-component-library/issues&quot;&gt;open an issue&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TL;DR</summary></entry><entry><title type="html">healthie - A health check middleware for Express.js</title><link href="https://www.kunalnagar.in/blog/express-health-check-middleware/" rel="alternate" type="text/html" title="healthie - A health check middleware for Express.js" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/express-health-check-middleware</id><content type="html" xml:base="https://www.kunalnagar.in/blog/express-health-check-middleware/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;healthie&lt;/code&gt; is a free and open-source Express.js middleware that adds a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/health&lt;/code&gt; endpoint to your Express.js applications and returns it’s uptime with a status of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OK&lt;/code&gt;.&lt;/p&gt;
 
@@ -1005,52 +1086,4 @@ updates-v3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Just a new line. With a short arrow.&lt;/p&gt;
 
-&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry><entry><title type="html">Block Ads in Skype</title><link href="https://www.kunalnagar.in/blog/block-ads-skype/" rel="alternate" type="text/html" title="Block Ads in Skype" /><published>2018-10-13T00:00:00+00:00</published><updated>2018-10-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/block-ads-skype</id><content type="html" xml:base="https://www.kunalnagar.in/blog/block-ads-skype/">&lt;p&gt;I hate ads. So much so that I’ve created a &lt;a href=&quot;https://chrome.google.com/webstore/detail/adstomp/omoobfkabeoablabejdmodnablfjjbch?hl=en&quot;&gt;Chrome Extension&lt;/a&gt; to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Side note:&lt;/b&gt; If you’re a privacy nut, you might want to check out my &lt;a href=&quot;/assets/downloads/siteblock.txt&quot;&gt;hosts&lt;/a&gt; file. It will block crypto-miners, google ads, youtube ads and much more. As always, &lt;a href=&quot;mailto:knlnagar@gmail.com&quot;&gt;feedback&lt;/a&gt; is appreciated.&lt;/p&gt;
-
-&lt;p&gt;I figured out a way to block Skype ads using a handful of host file entries. Download a &lt;a href=&quot;/assets/downloads/2018-10-13-block-ads-skype/hosts-skype.txt&quot;&gt;.txt&lt;/a&gt; version here. I’ve mentioned them below if you want to take a look. These entries have been tested on the latest Skype version as of today (October 13, 2018).&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Block Skype ads (core)&lt;/span&gt;
-127.0.0.1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.msads.net
-127.0.0.1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.msecn.net
-127.0.0.1 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.rad.msn.com
-127.0.0.1 a.ads2.msads.net
-127.0.0.1 ac3.msn.com
-127.0.0.1 ad.doubleclick.net
-127.0.0.1 adnexus.net
-127.0.0.1 adnxs.com
-127.0.0.1 ads1.msn.com
-127.0.0.1 ads2.msads.net
-127.0.0.1 aka-cdn-ns.adtech.de
-
-&lt;span class=&quot;c&quot;&gt;# If you want to see Skype Home, comment the line below&lt;/span&gt;
-127.0.0.1 apps.skype.com
-
-127.0.0.1 b.ads2.msads.net
-127.0.0.1 bs.serving-sys.com
-127.0.0.1 cdn.atdmt.com
-127.0.0.1 cds26.ams9.msecn.net
-127.0.0.1 db3aqu.atdmt.com
-127.0.0.1 ec.atdmt.com
-127.0.0.1 flex.msn.com
-127.0.0.1 g.msn.com
-127.0.0.1 live.rads.msn.com
-127.0.0.1 msntest.serving-sys.com
-127.0.0.1 rad.msn.com
-127.0.0.1 sO.2mdn.net
-127.0.0.1 secure.flashtalking.com
-127.0.0.1 static.2mdn.net
-127.0.0.1 static.2mdn.net&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The above host file entries will not remove the placeholders in the side bar. For that, you need to get technical.&lt;/p&gt;
-
-&lt;p&gt;Based on your OS, go to: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%appdata%/skype/YOUR_USER_NAME/config.xml&lt;/code&gt; and set all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Advert&lt;/code&gt; related values to 0.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;AdvertEastRailsEnabled&amp;gt;&lt;/span&gt;0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AdvertEastRailsEnabled&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;AdvertLargeEastRailCutoff&amp;gt;&lt;/span&gt;0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AdvertLargeEastRailCutoff&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;AdvertNorthRailCutoff&amp;gt;&lt;/span&gt;0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AdvertNorthRailCutoff&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;AdvertPlaceholder&amp;gt;&lt;/span&gt;0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AdvertPlaceholder&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;AdvertSmallEastRailCutoff&amp;gt;&lt;/span&gt;0&lt;span class=&quot;nt&quot;&gt;&amp;lt;/AdvertSmallEastRailCutoff&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Reboot your system and your Skype ads should be gone.&lt;/p&gt;</content><author><name></name></author><summary type="html">I hate ads. So much so that I’ve created a Chrome Extension to block them at some sites I visit regularly. But then I realized the best way to stop these things is at the source itself. Enter the hosts file.</summary></entry></feed>
+&lt;p&gt;And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.&lt;/p&gt;</content><author><name></name></author><summary type="html">I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</summary></entry></feed>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An open source React component that uses the oEmbed API to embed an Instagram Post" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>InstagramPostEmbed - A React component to embed an Instagram Post - Kunal Nagar</title>
+    <meta
+      property="og:image"
+      content="https://kunalnagar.in/assets/img/post.png"
+    />
+    <meta property="og:title" content="InstagramPostEmbed - A React component to embed an Instagram Post - Kunal Nagar" />
+    <meta property="og:description" content="An open source React component that uses the oEmbed API to embed an Instagram Post" />
+    <meta property="og:url" content="https://kunalnagar.in/blog/react-instagram-post-embed/" />
+    <meta property="og:type" content="article" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <nav>
+  <ul>
+    <li class="brand">
+      <a title="Home" href="/" class="d--flex"
+        ><svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="35px"
+          height="35px"
+          viewBox="0 0 412.000000 416.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,416.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M0 2070 l0 -2070 2060 0 2060 0 0 2070 0 2070 -2060 0 -2060 0 0
+     -2070z m1780 296 c0 -215 4 -377 9 -380 5 -4 18 5 28 18 10 13 168 184 351
+     380 l333 356 90 0 c51 0 89 -4 87 -9 -1 -5 -109 -126 -239 -268 -321 -351
+     -305 -332 -292 -351 5 -10 134 -181 287 -382 152 -201 276 -368 276 -372 0 -5
+     -41 -8 -90 -8 l-90 0 -251 336 c-138 184 -254 334 -257 332 -4 -2 -60 -58
+     -124 -124 l-118 -122 0 -211 0 -211 -85 0 -85 0 0 695 0 695 85 0 85 0 0 -374z"
+            />
+          </g></svg
+      ></a>
+    </li>
+    <li><a href="/assets/downloads/Resume-KunalNagar.pdf">Resume</a></li>
+    <li><a href="/foss">Open Source</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+  <button type="button" id="btn_color_scheme" title="Toggle Color Scheme">
+    Dark
+  </button>
+</nav>
+
+      <div class="page-blog-single">
+        <h1>InstagramPostEmbed - A React component to embed an Instagram Post</h1>
+        <time>June 05, 2021</time>
+        <article><h2 id="tldr">TL;DR</h2>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;InstagramPostEmbed /&gt;</code> is an Open Source React component that uses the <a href="https://developers.facebook.com/docs/instagram/oembed">oEmbed API</a> to embed an Instagram post. View it in <a href="https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default">action</a>.</p>
+
+<p><a href="https://github.com/kunalnagarco/react-component-library/blob/master/src/components/InstagramPostEmbed/InstagramPostEmbed.tsx">Source code</a></p>
+
+<h2 id="inspiration">Inspiration</h2>
+
+<p>I built this component to familiarize myself with the Facebook Developer Network. So if you do like it, feel free to fork or share. You can find more components <a href="https://github.com/kunalnagarco/react-component-library/tree/master/src/components">here</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--save</span> @kunalnagarco/react-component-library
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">InstagramPostEmbed</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@kunalnagarco/react-component-library</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// Single Post</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CO_u0wftV4Q/"</span>
+<span class="p">/&gt;</span>
+
+<span class="c1">// Multiple Posts</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CORs4wShENX/"</span>
+<span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNyrgMsh3a2/"</span>
+<span class="p">/&gt;</span>
+
+<span class="c1">// Hide Caption</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">hideCaption</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNxdfcCB8Yb/"</span>
+<span class="p">/&gt;</span>
+
+<span class="c1">// Max width 320px</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">maxWidth</span><span class="p">=</span><span class="si">{</span><span class="mi">320</span><span class="si">}</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNxdfcCB8Yb/"</span>
+<span class="p">/&gt;</span>
+
+<span class="c1">// Max width 658</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">maxWidth</span><span class="p">=</span><span class="si">{</span><span class="mi">658</span><span class="si">}</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNxdfcCB8Yb/"</span>
+<span class="p">/&gt;</span>
+</code></pre></div></div>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>At the very minimum, you will need two things to use this component:</p>
+
+<ul>
+  <li>This component requires the <code class="language-plaintext highlighter-rouge">clientAccessToken</code> which can be obtained by creating a Facebook App. For full requirements, please follow the instructions in the <a href="https://developers.facebook.com/docs/instagram/oembed#requirements">Requirements section</a> of the documentation.</li>
+  <li>You will also need the full link to an Instagram Post.</li>
+</ul>
+
+<h2 id="technical-quirk">Technical Quirk</h2>
+
+<p>The component will automatically take care of the quirk for you. I just thought it’s an interesting point that folks might tend to miss while developing with the API.</p>
+
+<p>After fetching the post details from the oEmbed API, you’ll get a blob of HTML that can be inserted into the DOM. The embed HTML contains a reference to the Instagram <a href="https://www.instagram.com/static/bundles/metro/EmbedSDK.js/33cd2c5d5d59.js?fbclid=IwAR1TCV_bYJgZ3k4lAY7p01lJ_XvJP__4rAFmyAaCddmnPoBOgOplo1o1CG0">embed.js</a> JavaScript library. Since the <code class="language-plaintext highlighter-rouge">html</code> is already in the DOM, the embed script needs to scan all the embed code and re-initialize it. This can be done by calling <code class="language-plaintext highlighter-rouge">instgrm.Embeds.process()</code> function after loading the library.</p>
+
+<p>If this is not done, you’ll get an empty Instagram post embed.</p>
+
+<h2 id="demo">Demo</h2>
+
+<p>Watch this component <a href="https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default">in action</a>.</p>
+
+<h2 id="support">Support</h2>
+
+<p>If you find a bug, please <a href="https://github.com/kunalnagarco/react-component-library/issues">open an issue</a>.</p>
+</article>
+      </div>
+      <footer>
+  <script src="/assets/js/utils.js"></script>
+  <script src="/assets/js/main.js"></script>
+</footer>
+
+    </main>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>
