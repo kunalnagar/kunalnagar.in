@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.8.1...v1.9.0) (2021-06-06)
+
+
+### Features
+
+* New Blog Post - InstagramPostEmbed ([#64](https://github.com/kunalnagar/kunalnagar.in/issues/64)) ([22c0c5c](https://github.com/kunalnagar/kunalnagar.in/commit/22c0c5c801f8491b01b393c19a0b610bf6c5fd41))
+
 ### [1.8.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.8.0...v1.8.1) (2021-06-05)
 
 
