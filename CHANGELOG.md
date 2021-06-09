@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.9.0...v1.10.0) (2021-06-06)
+
+
+### Features
+
+* Add Atom Feed link on Blog List page ([#66](https://github.com/kunalnagar/kunalnagar.in/issues/66)) ([b95727f](https://github.com/kunalnagar/kunalnagar.in/commit/b95727f8d7df43d50bcfdf273b88ad35d4331638))
+
 ## [1.9.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.8.1...v1.9.0) (2021-06-06)
 
 
