@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.1...v1.10.2) (2021-06-09)
+
+
+### Chores
+
+* **deps:** update dependency trim-newlines to 3.0.1 [security] ([#69](https://github.com/kunalnagar/kunalnagar.in/issues/69)) ([31be036](https://github.com/kunalnagar/kunalnagar.in/commit/31be0363d7f6c75d6e19d640e39395816f1b8708))
+
 ### [1.10.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.0...v1.10.1) (2021-06-09)
 
 
