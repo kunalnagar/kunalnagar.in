@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.0...v1.10.1) (2021-06-09)
+
+
+### Chores
+
+* **deps:** update dependency normalize-url to 6.0.1 [security] ([#67](https://github.com/kunalnagar/kunalnagar.in/issues/67)) ([27d9431](https://github.com/kunalnagar/kunalnagar.in/commit/27d943140f92688f9188b92daa1b6449309a3a06))
+
 ## [1.10.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.9.0...v1.10.0) (2021-06-06)
 
 
