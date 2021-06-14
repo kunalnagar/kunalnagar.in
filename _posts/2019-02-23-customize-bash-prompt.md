@@ -77,14 +77,14 @@ The `git_prompt()` method spits out the current branch name, if it exists. Let's
 Let's run the first half of the command in a git repo and a normal folder and see what happens
 
 {% highlight shell %}
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+[katiaalamir] at ~/Documents/Code/personal-main (updates-v3)
 => git rev-parse --git-dir
 .git
 
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+[katiaalamir] at ~/Documents/Code/personal-main (updates-v3)
 => cd ..
 
-[kunalnagar] at ~/Documents/Code
+[katiaalamir] at ~/Documents/Code
 => git rev-parse --git-dir
 fatal: not a git repository (or any of the parent directories): .git
 {% endhighlight %}
@@ -98,14 +98,14 @@ What's the writing to `/dev/null` and `2>&1` mean? Read more [here](https://asku
 Once we've figured out that we are, actually, inside a git repo, we need to figure out what branch we're in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I've found that works across a wide range of scenarios.
 
 {% highlight shell %}
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+[katiaalamir] at ~/Documents/Code/personal-main (updates-v3)
 => git symbolic-ref --quiet --short HEAD 2> /dev/null
 updates-v3
 
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+[katiaalamir] at ~/Documents/Code/personal-main (updates-v3)
 => cd ..
 
-[kunalnagar] at ~/Documents/Code
+[katiaalamir] at ~/Documents/Code
 => git symbolic-ref --quiet --short HEAD 2> /dev/null
 {% endhighlight %}
 
@@ -118,7 +118,7 @@ As you can see from the above example, when the above command is run, it spits o
 The `git rev-parse` is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info
 
 {% highlight shell %}
-[kunalnagar] at ~/Documents/Code/personal-main (updates-v3)
+[katiaalamir] at ~/Documents/Code/personal-main (updates-v3)
 => git symbolic-ref --quiet --short HEAD 2> /dev/null || git rev-parse
 updates-v3
 {% endhighlight %}

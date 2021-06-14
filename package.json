@@ -1,13 +1,13 @@
 {
-  "name": "kunalnagar.in",
+  "name": "katiaalamir.com",
   "version": "1.10.3",
   "description": "Personal website",
-  "homepage": "https://www.kunalnagar.in",
+  "homepage": "https://www.katiaalamir.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kunalnagar/kunalnagar.in.git"
+    "url": "git@github.com:katiaalamir/katiaalamir.com.git"
   },
-  "author": "Kunal Nagar <knlnagar@gmail.com>",
+  "author": "Katia Al-Amir <katia.amir@gmail.com>",
   "scripts": {
     "build": "bundle exec jekyll build",
     "deploy": "semantic-release --debug",

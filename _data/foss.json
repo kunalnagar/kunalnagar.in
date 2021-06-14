@@ -4,7 +4,7 @@
       "img": "/assets/img/foss/imdb.png",
       "title": "IMDb API",
       "description": "An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists",
-      "link": "https://github.com/kunalnagar/expressyo-imdb-scraper"
+      "link": "https://github.com/katiaalamir/expressyo-imdb-scraper"
     },
     {
       "img": "/assets/img/foss/electron.svg",
@@ -24,7 +24,7 @@
       "img": "/assets/img/foss/jquery.png",
       "title": "jquery.peekABar",
       "description": "A jQuery notification bar plugin with multiple customization options",
-      "link": "https://kunalnagar.github.io/jquery.peekABar/"
+      "link": "https://katiaalamir.github.io/jquery.peekABar/"
     },
     {
       "title": "healthie",
@@ -35,7 +35,7 @@
     {
       "title": "react-component-library",
       "description": "A library of reusable React components",
-      "link": "https://github.com/kunalnagarco/react-component-library"
+      "link": "https://github.com/katiaalamirco/react-component-library"
     }
   ],
   "tinkers": [

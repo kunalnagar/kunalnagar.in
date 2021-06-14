@@ -99,4 +99,4 @@ var interval = setInterval(function() {
 
 And it's done! Here's a demo of the entire process. Switch to the **Result** tab and click on the **Export** button to download the PDF. The code contains comments so it's easy to follow.
 
-<iframe width="100%" height="500" src="//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="500" src="//jsfiddle.net/katiaalamir/aku06o24/53/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>

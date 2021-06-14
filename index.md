@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Hi. I'm Kunal.
+Hi. I'm Katia.
 
 I work as a Senior Frontend Developer at [CircleCI][circleci] where we help automate the software delivery pipeline so developers can ship quality applications more efficiently.
 

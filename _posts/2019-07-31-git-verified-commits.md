@@ -28,11 +28,11 @@ After adding the public GPG key to your GitHub account, you need to tell `git` o
 {% highlight shell %}
 $ gpg --list-secret-keys --keyid-format LONG
 
-/home/kunal/.gnupg/pubring.kbx
+/home/Katia/.gnupg/pubring.kbx
 ------------------------------
 sec   rsa4096/ABD83AC02AAC0953 2019-07-31 [SC] [expires: 2035-07-27]
       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-uid                 [ unknown] Kunal Nagar <knlnagar@gmail.com>
+uid                 [ unknown] Katia Al-Amir <katia.amir@gmail.com>
 ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 [E] [expires: 2035-07-27]
 {% endhighlight %}
 

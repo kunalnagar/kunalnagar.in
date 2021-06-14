@@ -2,7 +2,7 @@
 
 # IMPORTANT:
 # Set the GitHub repo url
-GITHUB_REPO_URL="https://github.com/kunalnagar/kunalnagar.in"
+GITHUB_REPO_URL="https://github.com/katia-aa"
 
 # Clear the console (UNIX only)
 clear

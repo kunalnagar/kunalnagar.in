@@ -16,17 +16,17 @@ encrypt0r provides a simple drag and drop interface to encrypt/decrypt your file
 encrypt0r is built on the latest technologies and available for all operating systems:
 
 - [Electron](https://electronjs.org/)
-- [Open Source](https://github.com/kunalnagar/encrypt0r)
+- [Open Source](https://github.com/katiaalamir/encrypt0r)
 
 ## Download
 
 Here are direct links to download for your preferred platform:
 
-- [macOS](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac.zip)
-- [Linux x64 Debian](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-deb.zip)
-- [Linux x64 Source](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip)
-- [Windows x86](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip)
-- [Windows x64](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip)
+- [macOS](https://github.com/katiaalamir/encrypt0r/releases/latest/download/encrypt0r-mac.zip)
+- [Linux x64 Debian](https://github.com/katiaalamir/encrypt0r/releases/latest/download/encrypt0r-linux-deb.zip)
+- [Linux x64 Source](https://github.com/katiaalamir/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip)
+- [Windows x86](https://github.com/katiaalamir/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip)
+- [Windows x64](https://github.com/katiaalamir/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip)
 
 ## Signing
 
@@ -46,4 +46,4 @@ If you download the app on Mac/Windows, you will get an untrusted developer warn
 
 ## Bugs/Contribute
 
-Found a problem? Have improvements? Create a new [issue](https://github.com/kunalnagar/encrypt0r/issues)
+Found a problem? Have improvements? Create a new [issue](https://github.com/katiaalamir/encrypt0r/issues)

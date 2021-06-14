@@ -10,7 +10,7 @@ permalink: /blog/express-health-check-middleware/
 
 `healthie` is a free and open-source Express.js middleware that adds a `/health` endpoint to your Express.js applications and returns it's uptime with a status of `OK`.
 
-Source code and documentation: [https://github.com/kunalnagar/healthie](https://github.com/kunalnagar/healthie)
+Source code and documentation: [https://github.com/katiaalamir/healthie](https://github.com/katiaalamir/healthie)
 
 ## Inspiration
 
@@ -21,7 +21,7 @@ I built this package purely to dive deep into Express.js middleware. So if you d
 ## Installation
 
 ```
-npm install --save @kunalnagarco/healthie
+npm install --save @katiaalamirco/healthie
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ npm install --save @kunalnagarco/healthie
 ```js
 const express = require('express');
 const app = express();
-const { handleHealthCheck } = require('@kunalnagarco/healthie');
+const { handleHealthCheck } = require('@katiaalamirco/healthie');
 
 app.use(handleHealthCheck());
 ```

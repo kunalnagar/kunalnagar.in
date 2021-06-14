@@ -14,7 +14,7 @@ This guide assumes that you have a basic knowledge of Jekyll, Docker and are com
 
 Here are a few requirements to follow along:
 
-- [Jekyll site](https://github.com/kunalnagar/kunalnagar.in)
+- [Jekyll site](https://github.com/katia-aa)
 - [Install Docker](https://docs.docker.com/v17.09/engine/installation/) on your development machine
 - [Bash/ZSH Terminal](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>)
 
@@ -80,7 +80,7 @@ version: '3.6'
 services:
 
   app:
-    container_name: docker_kunalnagar.in
+    container_name: docker_katiaalamir.com
     build: .
     volumes:
       - .:/var/www/html
@@ -110,8 +110,8 @@ docker logs -f <container_name>
 docker exec -ti <container_name> bash
 {% endhighlight %}
 
-The code for this website is hosted [here](https://github.com/kunalnagar/kunalnagar.in) if you want to take a look at the big picture and how it all comes together.
+The code for this website is hosted [here](https://github.com/katia-aa) if you want to take a look at the big picture and how it all comes together.
 
 ### Next steps
 
-Currently, this site is built on [Travis](https://travis-ci.com/kunalnagar/kunalnagar.in) with a different configuration than what I have on Docker. Now that I have a development environment set up, I'd like to deploy the same using Travis.
+Currently, this site is built on [Travis](https://travis-ci.com/katiaalamir/katiaalamir.com) with a different configuration than what I have on Docker. Now that I have a development environment set up, I'd like to deploy the same using Travis.
