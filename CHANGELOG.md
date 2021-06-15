@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.3](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.2...v1.10.3) (2021-06-09)
+
+
+### Chores
+
+* **deps:** update dependency glob-parent to 5.1.2 [security] ([#68](https://github.com/kunalnagar/kunalnagar.in/issues/68)) ([a4106f9](https://github.com/kunalnagar/kunalnagar.in/commit/a4106f9edc34d35aa0cceb80cb3ebcac2ab73d65))
+
 ### [1.10.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.1...v1.10.2) (2021-06-09)
 
 
