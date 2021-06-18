@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.10.8](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.7...v1.10.8) (2021-06-18)
+
+
+### Chores
+
+* **deps:** update dependency lint-staged to v11 ([#73](https://github.com/kunalnagar/kunalnagar.in/issues/73)) ([6ebc776](https://github.com/kunalnagar/kunalnagar.in/commit/6ebc7763950e5c9407e0468aa57834750a36d04e))
+* **deps:** update dependency pretty-quick to v3 ([#74](https://github.com/kunalnagar/kunalnagar.in/issues/74)) ([2d7e166](https://github.com/kunalnagar/kunalnagar.in/commit/2d7e166f4937f5ddf986b84b60cb6d18c5a373cb))
+
 ### [1.10.7](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.6...v1.10.7) (2021-06-18)
 
 
