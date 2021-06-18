@@ -10,7 +10,7 @@
   "author": "Kunal Nagar <knlnagar@gmail.com>",
   "scripts": {
     "build": "bundle exec jekyll build",
-    "deploy": "semantic-release --debug",
+    "release": "semantic-release",
     "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",

@@ -1,15 +1,15 @@
-name: Release site
+name: Continuous Integration
 
 on:
   push:
     branches:
-      - 'master'
+      - '**'
     tags-ignore:
       - '*.*'
 
 jobs:
-  release:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install bundler 2.1.4
@@ -21,24 +21,22 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - name: Setup bundle path to vendor/bundle
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Set bundle path to vendor/bundle
         run: bundle config path vendor/bundle
       - name: Install bundle dependencies if not cached
         if: steps.bundle_cache.outputs.cache-hit != 'true'
         run: bundle install --jobs 4 --retry 3
       - name: Install npm dependencies
-        run: npm install
-      - name: Run linter
+        run: npm ci
+      - name: Lint
         run: npm run pretty-quick
-      - name: Create build
+      - name: Build
         run: npm run build
-      - name: Run semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run deploy
-      - name: Release
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: release
+      - name: Release (dry-run)
+        run: npm run release -- --dry-run
