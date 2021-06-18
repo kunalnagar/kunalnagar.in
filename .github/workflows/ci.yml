@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
       - name: Install bundler 2.1.4
         run: sudo gem install bundler -v 2.1.4
       - name: Cache ruby (bundler) dependencies
