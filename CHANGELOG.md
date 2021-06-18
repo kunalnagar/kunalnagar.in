@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.10.7](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.6...v1.10.7) (2021-06-18)
+
+
+### Bug Fixes
+
+* Continuous Deployment process ([8a893a2](https://github.com/kunalnagar/kunalnagar.in/commit/8a893a289786e6d802071062ffc8f3b4dc59b16b))
+
+
+### Chores
+
+* Update CI/CD ([#72](https://github.com/kunalnagar/kunalnagar.in/issues/72)) ([d06536c](https://github.com/kunalnagar/kunalnagar.in/commit/d06536c4045ca15677e25a9a3a68cc28d73e5dea))
+
 ### [1.10.6](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.5...v1.10.6) (2021-06-15)
 
 
