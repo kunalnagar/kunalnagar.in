@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.10](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.9...v1.10.10) (2021-06-21)
+
+
+### Chores
+
+* Add Mac M1 download link for encrypt0r ([f78f22d](https://github.com/kunalnagar/kunalnagar.in/commit/f78f22d9a2ba137171123421bb3fa5e1ea9615c1))
+
 ### [1.10.9](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.8...v1.10.9) (2021-06-21)
 
 
