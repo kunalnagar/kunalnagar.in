@@ -22,7 +22,8 @@ encrypt0r is built on the latest technologies and available for all operating sy
 
 Here are direct links to download for your preferred platform:
 
-- [macOS](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac.zip)
+- [Apple Mac](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac.zip)
+- [Apple Mac M1](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac-m1.zip) [New]
 - [Linux x64 Debian](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-deb.zip)
 - [Linux x64 Source](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip)
 - [Windows x86](https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip)
