@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.11](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.10...v1.10.11) (2021-06-21)
+
+
+### Chores
+
+* Update Resume ([1c5ef34](https://github.com/kunalnagar/kunalnagar.in/commit/1c5ef34e6e71b776c8939dbbd3dbef0bd21c93e7))
+
 ### [1.10.10](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.9...v1.10.10) (2021-06-21)
 
 
