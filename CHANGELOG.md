@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.12](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.11...v1.10.12) (2021-06-26)
+
+
+### Chores
+
+* **deps:** update dependency prettier to v2.3.2 ([32cb004](https://github.com/kunalnagar/kunalnagar.in/commit/32cb004a152e7aede63e8db20186dac866327069))
+
 ### [1.10.11](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.10...v1.10.11) (2021-06-21)
 
 
