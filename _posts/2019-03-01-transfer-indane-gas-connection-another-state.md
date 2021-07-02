@@ -13,7 +13,6 @@ permalink: /blog/transfer-indane-gas-connection-another-state/
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
      data-ad-client="ca-pub-4822630732996446"
-     data-adtest="on"
      data-ad-slot="5463774838"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
@@ -49,7 +48,6 @@ If you don't own a vehicle and cannot carry the cylinders, you can call the agen
      data-ad-layout="in-article"
      data-ad-format="fluid"
      data-ad-client="ca-pub-4822630732996446"
-     data-adtest="on"
      data-ad-slot="7432502698"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
