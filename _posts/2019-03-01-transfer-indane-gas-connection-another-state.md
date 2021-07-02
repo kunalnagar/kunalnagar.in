@@ -7,7 +7,7 @@ img: '/assets/img/foss/gas.png'
 permalink: /blog/transfer-indane-gas-connection-another-state/
 ---
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{% include components/adsbygoogle.html %}
 
 <!-- Top Full Width -->
 <ins class="adsbygoogle"
