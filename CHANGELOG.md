@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.11.0...v1.12.0) (2021-07-02)
+
+
+### Features
+
+* Add Google Adsense ([#81](https://github.com/kunalnagar/kunalnagar.in/issues/81)) ([33f83e3](https://github.com/kunalnagar/kunalnagar.in/commit/33f83e3e5a62469a522ddc4a94fccf3834070c1f))
+
 ## [1.11.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.14...v1.11.0) (2021-07-02)
 
 
