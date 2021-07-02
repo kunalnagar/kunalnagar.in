@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.14...v1.11.0) (2021-07-02)
+
+
+### Features
+
+* Add Google Adsense on Indane Transfer Page ([#80](https://github.com/kunalnagar/kunalnagar.in/issues/80)) ([d7ce190](https://github.com/kunalnagar/kunalnagar.in/commit/d7ce1900c740bb61a40d5239cd0eab8e00d831b8))
+
 ### [1.10.14](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.13...v1.10.14) (2021-07-01)
 
 
