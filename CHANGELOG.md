@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.12.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.12.0...v1.12.1) (2021-07-02)
+
+
+### Bug Fixes
+
+* Update Google Ads client ([8d9faad](https://github.com/kunalnagar/kunalnagar.in/commit/8d9faad5cb239dafb5cc08d16be8a8ef52ec415c))
+
 ## [1.12.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.11.0...v1.12.0) (2021-07-02)
 
 
