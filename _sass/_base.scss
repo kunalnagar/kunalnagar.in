@@ -18,6 +18,7 @@ body {
   padding: 1.5rem;
   max-width: 800px;
   min-height: calc(100vh - 5rem);
+  overflow-x: hidden;
   @include theme() {
     color: theme-get('text-color');
     background-color: theme-get('background-color');

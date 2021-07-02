@@ -1,0 +1,65 @@
+footer {
+  .cookie-monster {
+    &--shell {
+      position: fixed;
+      right: -2rem;
+      width: 1px;
+      height: 1px;
+      transition: right linear 0.5s;
+
+      &.show {
+        display: flex;
+        align-items: flex-end;
+        bottom: 0;
+        right: 1rem;
+        width: 5rem;
+        height: auto;
+      }
+    }
+
+    &--notice {
+      position: fixed;
+      visibility: hidden;
+      width: 8rem;
+      opacity: 0;
+      bottom: 3rem;
+      right: 5rem;
+      padding: 0.5rem;
+      padding-bottom: 0.7rem;
+      background-color: white;
+      border-radius: $border-radius;
+      transition: visibility 0s, opacity 0.5s linear;
+
+      &--button {
+        padding: 0.3rem;
+        cursor: pointer;
+      }
+
+      &.show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      @include theme() {
+        border: 2px dashed theme-get('cookie-monster-color');
+      }
+
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &--img {
+      max-width: 100%;
+    }
+
+    &--button {
+      cursor: pointer;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}
