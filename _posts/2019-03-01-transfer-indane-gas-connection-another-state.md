@@ -7,6 +7,18 @@ img: '/assets/img/foss/gas.png'
 permalink: /blog/transfer-indane-gas-connection-another-state/
 ---
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Top Full Width -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4822630732996446"
+     data-adtest="on"
+     data-ad-slot="5463774838"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.
 
 ## Step 1: Gathering documents
@@ -31,6 +43,17 @@ If you don't own a vehicle and cannot carry the cylinders, you can call the agen
 
 - You need to visit the agency on the same day the cylinders are being picked up.
 - The cylinders need to reach the agency BEFORE the transfer process can be started.
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4822630732996446"
+     data-adtest="on"
+     data-ad-slot="7432502698"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Step 3: Visit current agency
 
