@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.0...v1.15.1) (2021-07-03)
+
+
+### Bug Fixes
+
+* Minimal performance improvements ([#87](https://github.com/kunalnagar/kunalnagar.in/issues/87)) ([3f24113](https://github.com/kunalnagar/kunalnagar.in/commit/3f24113511d32ae4cd866d8fe15597ee86c010ae))
+
 ## [1.15.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.14.1...v1.15.0) (2021-07-03)
 
 
