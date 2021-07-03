@@ -1,12 +1,4 @@
-function ready(fn) {
-  if (document.readyState != 'loading') {
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-
-function debounce(func, wait, immediate) {
+export const debounce = (func, wait, immediate) => {
   var timeout;
   return function () {
     var context = this,
@@ -20,4 +12,4 @@ function debounce(func, wait, immediate) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
-}
+};
