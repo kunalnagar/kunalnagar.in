@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.14.1...v1.15.0) (2021-07-03)
+
+
+### Features
+
+* Add Lighthouse CI ([#85](https://github.com/kunalnagar/kunalnagar.in/issues/85)) ([163fddf](https://github.com/kunalnagar/kunalnagar.in/commit/163fddfc8c8b13c7ebdc42ef627f6599ccfb1497))
+
 ### [1.14.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.14.0...v1.14.1) (2021-07-03)
 
 
