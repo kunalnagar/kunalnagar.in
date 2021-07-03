@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.13.0...v1.14.0) (2021-07-03)
+
+
+### Features
+
+* Add Webpack for bundling JS ([#83](https://github.com/kunalnagar/kunalnagar.in/issues/83)) ([efa220b](https://github.com/kunalnagar/kunalnagar.in/commit/efa220bcf01bd03fa33c01cc717c7d5b62993ee4))
+
 ## [1.13.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.12.1...v1.13.0) (2021-07-03)
 
 
