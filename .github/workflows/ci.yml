@@ -53,6 +53,6 @@ jobs:
             http://localhost:4000/
             http://localhost:4000/foss
             http://localhost:4000/blog
-        budgetPath: ./budget.json
-        uploadArtifacts: true
-        temporaryPublicStorage: true
+          budgetPath: ./budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
