@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.14.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.14.0...v1.14.1) (2021-07-03)
+
+
+### Chores
+
+* **deps:** pin dependencies ([5082438](https://github.com/kunalnagar/kunalnagar.in/commit/5082438f5899fb272c52338d64f29dab83b68e71))
+
 ## [1.14.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.13.0...v1.14.0) (2021-07-03)
 
 
