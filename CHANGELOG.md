@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.12.1...v1.13.0) (2021-07-03)
+
+
+### Features
+
+* Cookie Monster notice ([#78](https://github.com/kunalnagar/kunalnagar.in/issues/78)) ([c5dbc22](https://github.com/kunalnagar/kunalnagar.in/commit/c5dbc22570be1a0302e9c530cdc2181fa8fc503a))
+
 ### [1.12.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.12.0...v1.12.1) (2021-07-02)
 
 
