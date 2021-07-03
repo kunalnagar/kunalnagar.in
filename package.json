@@ -18,7 +18,7 @@
     "dev:webpack": "webpack --mode development --watch",
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",
-    "start": "docker-compose up -d",
+    "start": "docker-compose up -d --build",
     "stop": "docker-compose down -v"
   },
   "husky": {
