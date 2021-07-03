@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       assert: {
-        budgetsFile: './budget.json',
+        preset: 'lighthouse:recommended',
       },
       url: [
         'http://localhost:4000/',
