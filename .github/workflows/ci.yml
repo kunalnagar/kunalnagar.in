@@ -44,3 +44,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run release -- --dry-run && tree release
+      - name: Start server
+        run: rm -rf release && npm run dev
+      - name: Audit URLs using Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            http://localhost:4000/
+            http://localhost:4000/foss
+            http://localhost:4000/blog
+        budgetPath: ./budget.json
+        uploadArtifacts: true
+        temporaryPublicStorage: true
