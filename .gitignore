@@ -6,6 +6,7 @@ release
 .jekyll-metadata
 node_modules/
 .DS_Store
+assets/js
 vendor
 
 # Local Netlify folder

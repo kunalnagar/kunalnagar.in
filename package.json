@@ -9,9 +9,13 @@
   },
   "author": "Kunal Nagar <knlnagar@gmail.com>",
   "scripts": {
-    "build": "bundle exec jekyll build",
+    "build": "run-s build:webpack build:jekyll",
+    "build:webpack": "webpack --mode production",
+    "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
     "release": "semantic-release",
-    "dev": "bundle exec jekyll serve --livereload --host=0.0.0.0",
+    "dev": "bundle exec jekyll clean && run-p dev:{webpack,jekyll}",
+    "dev:jekyll": "sleep 5 && bundle exec jekyll serve --watch --host=0.0.0.0",
+    "dev:webpack": "webpack --mode development --watch",
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",
     "start": "docker-compose up -d",
@@ -31,14 +35,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
+    "babel-loader": "^8.2.2",
     "conventional-changelog-conventionalcommits": "4.6.0",
     "husky": "4.3.8",
     "lint-staged": "11.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "2.3.2",
     "pretty-quick": "3.1.1",
     "semantic-release": "17.4.4",
-    "sort-package-json": "1.50.0"
+    "sort-package-json": "1.50.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
   }
 }
