@@ -1,5 +1,26 @@
 # Changelog
 
+### [1.12.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.12.0...v1.12.1) (2021-07-02)
+
+
+### Bug Fixes
+
+* Update Google Ads client ([8d9faad](https://github.com/kunalnagar/kunalnagar.in/commit/8d9faad5cb239dafb5cc08d16be8a8ef52ec415c))
+
+## [1.12.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.11.0...v1.12.0) (2021-07-02)
+
+
+### Features
+
+* Add Google Adsense ([#81](https://github.com/kunalnagar/kunalnagar.in/issues/81)) ([33f83e3](https://github.com/kunalnagar/kunalnagar.in/commit/33f83e3e5a62469a522ddc4a94fccf3834070c1f))
+
+## [1.11.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.14...v1.11.0) (2021-07-02)
+
+
+### Features
+
+* Add Google Adsense on Indane Transfer Page ([#80](https://github.com/kunalnagar/kunalnagar.in/issues/80)) ([d7ce190](https://github.com/kunalnagar/kunalnagar.in/commit/d7ce1900c740bb61a40d5239cd0eab8e00d831b8))
+
 ### [1.10.14](https://github.com/kunalnagar/kunalnagar.in/compare/v1.10.13...v1.10.14) (2021-07-01)
 
 
