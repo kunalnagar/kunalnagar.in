@@ -32,6 +32,10 @@ body {
   }
 }
 
+main {
+  transition: opacity linear 0.2s;
+}
+
 hr {
   @include theme() {
     border-bottom-color: theme-get('hr-color');
