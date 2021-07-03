@@ -76,10 +76,51 @@ function handleColorScheme() {
     });
 }
 
+function handleCookieMonster() {
+  console.info(
+    "🍪 Looking for the beloved cookie monster? Run `localStorage.removeItem('AGREE_COOKIE')` and reload the page",
+  );
+  if (!localStorage.getItem('AGREE_COOKIE')) {
+    var $cookieMonsterShell = document.querySelector('.cookie-monster--shell');
+    var $cookieMonsterButton = document.querySelector(
+      '.cookie-monster--button',
+    );
+    var $cookieMonsterNotice = document.querySelector(
+      '.cookie-monster--notice',
+    );
+    var $cookieMonsterOhkayButton = document.querySelector(
+      '.cookie-monster--notice--button',
+    );
+    var $main = document.getElementsByTagName('main')[0];
+    $cookieMonsterOhkayButton.addEventListener('click', function () {
+      localStorage.setItem('AGREE_COOKIE', 'true');
+      $main.classList.remove('o--10');
+      $main.style.pointerEvents = 'auto';
+      $cookieMonsterNotice.classList.remove('show');
+      $cookieMonsterShell.classList.remove('show');
+    });
+    $cookieMonsterButton.addEventListener('click', function () {
+      if ($cookieMonsterNotice.classList.contains('show')) {
+        $main.classList.remove('o--10');
+        $main.style.pointerEvents = 'auto';
+        $cookieMonsterNotice.classList.remove('show');
+      } else {
+        $main.classList.add('o--10');
+        $main.style.pointerEvents = 'none';
+        $cookieMonsterNotice.classList.add('show');
+      }
+    });
+    setTimeout(function () {
+      $cookieMonsterShell.classList.add('show');
+    }, 1000);
+  }
+}
+
 ready(function () {
   var $blogListPage = document.querySelector('.page-blog');
   if ($blogListPage) {
     enablePostFiltering();
   }
+  handleCookieMonster();
   handleColorScheme();
 });
