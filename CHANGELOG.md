@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.3](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.2...v1.15.3) (2021-07-04)
+
+
+### Chores
+
+* Add ads.txt ([3a54c64](https://github.com/kunalnagar/kunalnagar.in/commit/3a54c6458c4498ce63384b80757463834fefdaca))
+
 ### [1.15.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.1...v1.15.2) (2021-07-03)
 
 
