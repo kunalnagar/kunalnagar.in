@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.1...v1.15.2) (2021-07-03)
+
+
+### Chores
+
+* Switch custom Docker image to something more popular ([#89](https://github.com/kunalnagar/kunalnagar.in/issues/89)) ([0f0c725](https://github.com/kunalnagar/kunalnagar.in/commit/0f0c7252e3c76e4e374a96ae9922a99917430246))
+
 ### [1.15.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.0...v1.15.1) (2021-07-03)
 
 
