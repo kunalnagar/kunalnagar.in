@@ -48,7 +48,7 @@
     "pretty-quick": "3.1.1",
     "semantic-release": "17.4.4",
     "sort-package-json": "1.50.0",
-    "webpack": "5.42.0",
+    "webpack": "5.42.1",
     "webpack-cli": "4.7.2"
   }
 }
