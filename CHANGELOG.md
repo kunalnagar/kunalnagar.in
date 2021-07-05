@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.6](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.5...v1.15.6) (2021-07-05)
+
+
+### Chores
+
+* Validate Pull Request Title ([#92](https://github.com/kunalnagar/kunalnagar.in/issues/92)) ([6843f55](https://github.com/kunalnagar/kunalnagar.in/commit/6843f554001fe3dde994ae89a192f2037cbcc530))
+
 ### [1.15.5](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.4...v1.15.5) (2021-07-05)
 
 
