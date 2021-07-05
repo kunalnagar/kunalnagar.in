@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.7](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.6...v1.15.7) (2021-07-05)
+
+
+### Chores
+
+* Update robots.txt ([8dff235](https://github.com/kunalnagar/kunalnagar.in/commit/8dff235de86e70fecb5990fc8ea52a31ad1bd515))
+
 ### [1.15.6](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.5...v1.15.6) (2021-07-05)
 
 
