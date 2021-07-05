@@ -1,5 +1,26 @@
 # Changelog
 
+### [1.15.5](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.4...v1.15.5) (2021-07-05)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#91](https://github.com/kunalnagar/kunalnagar.in/issues/91)) ([be5624e](https://github.com/kunalnagar/kunalnagar.in/commit/be5624e5ae06033af29c7ccba71ea266c3440ccd))
+
+### [1.15.4](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.3...v1.15.4) (2021-07-04)
+
+
+### Chores
+
+* Update Ads ([a0710cf](https://github.com/kunalnagar/kunalnagar.in/commit/a0710cf70f28d073f6b43beff37f2e9b5728db5a))
+
+### [1.15.3](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.2...v1.15.3) (2021-07-04)
+
+
+### Chores
+
+* Add ads.txt ([3a54c64](https://github.com/kunalnagar/kunalnagar.in/commit/3a54c6458c4498ce63384b80757463834fefdaca))
+
 ### [1.15.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.1...v1.15.2) (2021-07-03)
 
 
