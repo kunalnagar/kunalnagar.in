@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.14](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.13...v1.15.14) (2021-07-08)
+
+
+### Chores
+
+* **deps:** update dependency webpack to v5.44.0 ([dd47a24](https://github.com/kunalnagar/kunalnagar.in/commit/dd47a2484634f24db2c585c61c9f25a0eb701fa2))
+
 ### [1.15.13](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.12...v1.15.13) (2021-07-08)
 
 
