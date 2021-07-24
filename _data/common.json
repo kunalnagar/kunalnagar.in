@@ -2,5 +2,11 @@
   "resume": {
     "docx": "/assets/downloads/Resume-KunalNagar.docx",
     "pdf": "/assets/downloads/Resume-KunalNagar.pdf"
-  }
+  },
+  "social": {
+    "twitter": "https://twitter.com/_kunalnagar",
+    "github": "https://github.com/kunalnagar",
+    "linkedin": "https://www.linkedin.com/in/kunalnagar88/"
+  },
+  "jekyll-template": "https://github.com/kunalnagarco/jekyll-site-template"
 }

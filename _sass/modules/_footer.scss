@@ -1,4 +1,35 @@
 footer {
+  margin: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
+
+  @include theme() {
+    border-top: 1px dashed theme-get('html-background-color');
+  }
+
+  .footer {
+    &-links {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      margin-bottom: 0;
+
+      li {
+        margin: 0 0.5rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          @include theme() {
+            color: theme-get('text-color-muted');
+          }
+        }
+      }
+    }
+  }
+
   .cookie-monster {
     &--shell {
       position: fixed;

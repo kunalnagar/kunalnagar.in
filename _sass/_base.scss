@@ -35,6 +35,7 @@ body {
 /* Used in the cookie monster experiment */
 main {
   transition: opacity linear 0.2s;
+  min-height: calc(100vh - 9.6rem);
 }
 
 hr {
