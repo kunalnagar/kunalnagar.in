@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.31...v1.16.0) (2021-07-24)
+
+
+### Features
+
+* Add footer links ([#96](https://github.com/kunalnagar/kunalnagar.in/issues/96)) ([5b3a98d](https://github.com/kunalnagar/kunalnagar.in/commit/5b3a98daf4104dd092c0b74a941bd695e51e300c))
+
 ### [1.15.31](https://github.com/kunalnagar/kunalnagar.in/compare/v1.15.30...v1.15.31) (2021-07-24)
 
 
