@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.16.6](https://github.com/kunalnagar/kunalnagar.in/compare/v1.16.5...v1.16.6) (2021-07-29)
+
+
+### Chores
+
+* **deps:** update node.js to v14.17.4 ([d6b42e8](https://github.com/kunalnagar/kunalnagar.in/commit/d6b42e86809929a911e808b066c6741650873a5e))
+
 ### [1.16.5](https://github.com/kunalnagar/kunalnagar.in/compare/v1.16.4...v1.16.5) (2021-07-29)
 
 
