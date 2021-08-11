@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.16.18](https://github.com/kunalnagar/kunalnagar.in/compare/v1.16.17...v1.16.18) (2021-08-11)
+
+
+### Chores
+
+* **deps:** update dependency webpack to v5.50.0 ([655b616](https://github.com/kunalnagar/kunalnagar.in/commit/655b616f4340e3c24de713807cf9223041d0f029))
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.2.50 ([1c3a7f6](https://github.com/kunalnagar/kunalnagar.in/commit/1c3a7f67ec0b9d5b6796ad1dcd7efc4a517decf4))
+
 ### [1.16.17](https://github.com/kunalnagar/kunalnagar.in/compare/v1.16.16...v1.16.17) (2021-08-10)
 
 
