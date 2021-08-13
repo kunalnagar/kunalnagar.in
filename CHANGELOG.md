@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.16.19...v1.17.0) (2021-08-13)
+
+
+### Features
+
+* New Blog Post - GitHub action for CVE ([#100](https://github.com/kunalnagar/kunalnagar.in/issues/100)) ([56c47b6](https://github.com/kunalnagar/kunalnagar.in/commit/56c47b6d03b0132e50f27d2fc02a136d38626ef5))
+
 ### [1.16.19](https://github.com/kunalnagar/kunalnagar.in/compare/v1.16.18...v1.16.19) (2021-08-11)
 
 
