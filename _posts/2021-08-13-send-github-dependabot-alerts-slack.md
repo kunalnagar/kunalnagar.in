@@ -26,9 +26,9 @@ There are a few things you need to setup on the repository before this action ca
 
 1. [Enable Dependabot Alerts](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories).
 
-2. Create a [GitHub Personal Access Token](https://github.com/settings/tokens).
+2. Create a [GitHub Personal Access Token](https://github.com/settings/tokens) and add it to the [repository's secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
-3. Ideally, you'd want to send these alerts to a dedicated Slack channel. Create a [Webhook URL](https://api.slack.com/messaging/webhooks) for the channel. You may also use the [Incoming Webhooks Slack app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks?tab=more_info) that makes it a lot easier.
+3. Ideally, you'd want to send these alerts to a dedicated Slack channel. Create a [Webhook URL](https://api.slack.com/messaging/webhooks) for the channel and add it to the repository's secrets. You may also use the [Incoming Webhooks Slack app](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks?tab=more_info) that makes it a lot easier.
 
 3. Create a new GitHub action:
 
