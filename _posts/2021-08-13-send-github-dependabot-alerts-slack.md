@@ -16,15 +16,15 @@ An Open Source GitHub action that sends [Dependabot Security Alerts](https://doc
 
 ## Inspiration
 
-GitHub has a webhook event called [repository_vulnerability_alert](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert) that is triggered when a vulnerability is discovered on a repository/organization. Unfortunately, there's no documentation (that I could find) to watch for this event in a GitHub action and send it to alerting platforms.
+GitHub has a webhook event called [repository_vulnerability_alert](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert) that is triggered when a vulnerability is discovered on a repository/organization. Unfortunately, there's no documentation (that I could find) to [watch for this event](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) in a GitHub action and send it to alerting platforms.
 
-I created this GitHub action that can be run on a CRON schedule (every 6 hours is recommended) and sends the Dependabot alerts to Slack.
+I created this GitHub action that can be run on a CRON schedule (every 6 hours is recommended) and sends Dependabot alerts to Slack.
 
 ## Installation
 
 There are a few things you need to setup on the repository before this action can be used:
 
-1. [Enable Dependabot Alerts](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories).
+1. [Enable Dependabot Alerts](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories) for the repository.
 
 2. Create a [GitHub Personal Access Token](https://github.com/settings/tokens) and add it to the [repository's secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
@@ -47,10 +47,15 @@ There are a few things you need to setup on the repository before this action ca
           #         https://github.com/kunalnagarco/action-cve/releases
           - uses: kunalnagarco/action-cve@vX.X.X
             with:
+              # Create a Personal Access Token here:
+              #     https://github.com/settings/tokens
               token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
               # Create a Slack Incoming Webhook URL:
               #     https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
               slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
+              # Number of vulnerability alerts to send
+              # Default: 20
+              count: 10
     ```
 
 After these steps, any Dependabot Alerts on the repository will be sent to the Slack channel every 6 hours.
