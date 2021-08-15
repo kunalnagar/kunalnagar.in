@@ -40,6 +40,8 @@ There are a few things you need to setup on the repository before this action ca
 
     <script src="https://gist.github.com/kunalnagar/7e20b7fb4340162b06ad246bcc0a8288.js"></script>
 
+**For more documentation, please check out the [Wiki](https://github.com/kunalnagarco/action-cve/wiki).**
+
 ## Support
 
 If you find a bug, please [open an issue](https://github.com/kunalnagarco/action-cve/issues).
