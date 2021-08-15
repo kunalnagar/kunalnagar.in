@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.17.4](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.3...v1.17.4) (2021-08-15)
+
+
+### Chores
+
+* **deps:** update dependency webpack-cli to v4.8.0 ([84e9c87](https://github.com/kunalnagar/kunalnagar.in/commit/84e9c877fc12b9c62555fde23103dee080ca8ed2))
+
 ### [1.17.3](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.2...v1.17.3) (2021-08-15)
 
 
