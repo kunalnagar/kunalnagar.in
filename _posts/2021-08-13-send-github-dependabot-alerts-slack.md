@@ -6,6 +6,8 @@ description: 'An open source GitHub action to send Dependabot alerts to Slack'
 permalink: /blog/send-github-dependabot-alerts-slack/
 ---
 
+![marketing](https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png)
+
 ## @kunalnagarco/action-cve
 
 An Open Source GitHub action that sends [Dependabot Security Alerts](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates) to [Slack](https://api.slack.com/messaging/webhooks).
