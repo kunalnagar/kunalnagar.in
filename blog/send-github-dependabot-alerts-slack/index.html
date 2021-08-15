@@ -74,17 +74,15 @@
 
 <h2 id="kunalnagarcoaction-cve">@kunalnagarco/action-cve</h2>
 
-<p>An Open Source GitHub action that sends <a href="https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates">Dependabot Security Alerts</a> to <a href="https://api.slack.com/messaging/webhooks">Slack</a>.</p>
+<p>An Open Source GitHub action that sends <a href="https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates">Dependabot Security Alerts</a> to <a href="https://api.slack.com/messaging/webhooks">Slack</a> and <a href="https://developer.pagerduty.com/docs/events-api-v2/trigger-events/">PagerDuty</a>.</p>
 
 <p><a href="https://github.com/kunalnagarco/action-cve">Source code</a></p>
-
-<p><img src="https://user-images.githubusercontent.com/2741371/129387647-f5fdead5-a002-4e3d-9d55-cb7ebe988ff1.png" alt="image" /></p>
 
 <h2 id="inspiration">Inspiration</h2>
 
 <p>GitHub has a webhook event called <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert">repository_vulnerability_alert</a> that is triggered when a vulnerability is discovered on a repository/organization. Unfortunately, there’s no documentation (that I could find) to <a href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows">watch for this event</a> in a GitHub action and send it to alerting platforms.</p>
 
-<p>I created this GitHub action that can be run on a CRON schedule (every 6 hours is recommended) and sends Dependabot alerts to Slack.</p>
+<p>I created this GitHub action that can be run on a CRON schedule (every 6 hours is recommended).</p>
 
 <h2 id="installation">Installation</h2>
 
@@ -98,39 +96,22 @@
     <p>Create a <a href="https://github.com/settings/tokens">GitHub Personal Access Token</a> and add it to the <a href="https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository">repository’s secrets</a>.</p>
   </li>
   <li>
-    <p>Ideally, you’d want to send these alerts to a dedicated Slack channel. Create a <a href="https://api.slack.com/messaging/webhooks">Webhook URL</a> for the channel and add it to the repository’s secrets. You may also use the <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks?tab=more_info">Incoming Webhooks Slack app</a> that makes it a lot easier.</p>
+    <p><strong>For Slack</strong>, you’d want to send these alerts to a dedicated channel. Create a <a href="https://api.slack.com/messaging/webhooks">Webhook URL</a> for the channel and add it to the repository’s secrets. You may also use the <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks?tab=more_info">Incoming Webhooks Slack app</a> that makes it a lot easier.</p>
+
+    <p><a href="https://user-images.githubusercontent.com/2741371/129387647-f5fdead5-a002-4e3d-9d55-cb7ebe988ff1.png">Screenshot</a></p>
+
+    <p><strong>For PagerDuty</strong>, the action will send an <a href="https://developer.pagerduty.com/docs/events-api-v2/trigger-events/">Alert Event</a> which should create a new Incident with an <code class="language-plaintext highlighter-rouge">info</code> severity.</p>
+
+    <p><a href="https://user-images.githubusercontent.com/2741371/129468542-33ecda7a-7696-40c8-99e4-76d327fca959.png">Screenshot</a></p>
   </li>
   <li>
     <p>Create a new GitHub action:</p>
 
-    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">name</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Check</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">Vulnerabilities'</span>
-
- <span class="na">on</span><span class="pi">:</span>
-   <span class="na">schedule</span><span class="pi">:</span>
-     <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s1">'</span><span class="s">0</span><span class="nv"> </span><span class="s">*/6</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*'</span> <span class="c1"># every 6 hours</span>
-
- <span class="na">jobs</span><span class="pi">:</span>
-   <span class="na">main</span><span class="pi">:</span>
-     <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
-     <span class="na">steps</span><span class="pi">:</span>
-       <span class="c1"># X.X.X - Latest version available at:</span>
-       <span class="c1">#         https://github.com/kunalnagarco/action-cve/releases</span>
-       <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">kunalnagarco/action-cve@vX.X.X</span>
-         <span class="na">with</span><span class="pi">:</span>
-           <span class="c1"># Create a Personal Access Token here:</span>
-           <span class="c1">#     https://github.com/settings/tokens</span>
-           <span class="na">token</span><span class="pi">:</span> <span class="s">$</span>
-           <span class="c1"># Create a Slack Incoming Webhook URL:</span>
-           <span class="c1">#     https://slack.com/apps/A0F7XDUAZ-incoming-webhooks</span>
-           <span class="na">slack_webhook</span><span class="pi">:</span> <span class="s">$</span>
-           <span class="c1"># Number of vulnerability alerts to send</span>
-           <span class="c1"># Default: 20</span>
-           <span class="na">count</span><span class="pi">:</span> <span class="m">10</span>
-</code></pre></div>    </div>
+    <script src="https://gist.github.com/kunalnagar/7e20b7fb4340162b06ad246bcc0a8288.js"></script>
   </li>
 </ol>
 
-<p>After these steps, any Dependabot Alerts on the repository will be sent to the Slack channel every 6 hours.</p>
+<p><strong>For more documentation, please check out the <a href="https://github.com/kunalnagarco/action-cve/wiki">Wiki</a>.</strong></p>
 
 <h2 id="support">Support</h2>
 
