@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.17.3](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.2...v1.17.3) (2021-08-15)
+
+
+### Chores
+
+* Add a link to Wiki ([4b9d34c](https://github.com/kunalnagar/kunalnagar.in/commit/4b9d34cde70aec79206c5d01fd40886173a8d58a))
+* Update usage for GitHub CVE with Gist ([39afee1](https://github.com/kunalnagar/kunalnagar.in/commit/39afee11b3741ed5e1e6bad90fc359f2985a9e5c))
+
 ### [1.17.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.1...v1.17.2) (2021-08-15)
 
 
