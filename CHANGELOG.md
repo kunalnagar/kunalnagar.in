@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.17.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.1...v1.17.2) (2021-08-15)
+
+
+### Chores
+
+* Add image to GitHub CVE blog post ([4c39048](https://github.com/kunalnagar/kunalnagar.in/commit/4c39048c027517068d3522d9f71a92f3923b03cf))
+
 ### [1.17.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.0...v1.17.1) (2021-08-14)
 
 
