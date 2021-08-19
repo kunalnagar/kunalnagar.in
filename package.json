@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "1.17.6",
+  "version": "1.17.7",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
@@ -48,7 +48,7 @@
     "pretty-quick": "3.1.1",
     "semantic-release": "17.4.5",
     "sort-package-json": "1.50.0",
-    "webpack": "5.51.0",
+    "webpack": "5.51.1",
     "webpack-cli": "4.8.0"
   }
 }
