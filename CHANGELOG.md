@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.17.8](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.7...v1.17.8) (2021-08-19)
+
+
+### Chores
+
+* **deps:** update dependency webpack to v5.51.1 ([2409b92](https://github.com/kunalnagar/kunalnagar.in/commit/2409b923f73672d896b3900799927bf768f3205c))
+
 ### [1.17.7](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.6...v1.17.7) (2021-08-19)
 
 
