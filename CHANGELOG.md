@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.17.11](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.10...v1.17.11) (2021-09-04)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.15.4 ([b6a8224](https://github.com/kunalnagar/kunalnagar.in/commit/b6a82240698404db1ecc62126592ffb1f2fba2af))
+
 ### [1.17.10](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.9...v1.17.10) (2021-09-01)
 
 
