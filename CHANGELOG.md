@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.17.14](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.13...v1.17.14) (2021-09-04)
+
+
+### Chores
+
+* **deps:** update dependency @babel/core to v7.15.5 ([0e23a5c](https://github.com/kunalnagar/kunalnagar.in/commit/0e23a5caa42e2da1fdfebc9e1f54f4d4ccc743ef))
+
 ### [1.17.13](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.12...v1.17.13) (2021-09-04)
 
 
