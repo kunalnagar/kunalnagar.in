@@ -28,7 +28,7 @@
     },
     {
       "title": "healthie",
-      "description": "A simple middleware that adds a health check endpoint to your Express.js applications.",
+      "description": "A simple middleware that adds a health check endpoint to your Express.js applications",
       "link": "/blog/express-health-check-middleware/",
       "popular": true
     },
@@ -36,13 +36,23 @@
       "title": "react-component-library",
       "description": "A library of reusable React components",
       "link": "https://github.com/kunalnagarco/react-component-library"
+    },
+    {
+      "title": "action-cve",
+      "description": "A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty",
+      "link": "https://github.com/kunalnagarco/action-cve"
+    },
+    {
+      "title": "action-semantic-pr",
+      "description": "A GitHub action to validate pull request titles according to the Conventional Commit specification",
+      "link": "https://github.com/kunalnagarco/action-semantic-pr"
     }
   ],
   "tinkers": [
     {
       "img": "/assets/img/foss/highcharts.png",
       "title": "HighCharts to PDF",
-      "description": "A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF.",
+      "description": "A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF",
       "link": "/blog/highcharts-export-pdf/"
     }
   ]
