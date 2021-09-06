@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.17.15](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.14...v1.17.15) (2021-09-05)
+
+
+### Chores
+
+* **deps:** update dependency @semantic-release/git to v9.0.1 ([e8dddf3](https://github.com/kunalnagar/kunalnagar.in/commit/e8dddf39a932153320a949a0f15a8e40471f82a5))
+
 ### [1.17.14](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.13...v1.17.14) (2021-09-04)
 
 
