@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.6](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.5...v1.18.6) (2021-09-11)
+
+
+### Chores
+
+* **deps:** update dependency sort-package-json to v1.51.0 ([48c90a7](https://github.com/kunalnagar/kunalnagar.in/commit/48c90a7db330ace580f927287a45dc1e773df94b))
+
 ### [1.18.5](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.4...v1.18.5) (2021-09-11)
 
 
