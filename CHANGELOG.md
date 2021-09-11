@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.1...v1.18.2) (2021-09-11)
+
+
+### Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v4.6.1 ([876dd50](https://github.com/kunalnagar/kunalnagar.in/commit/876dd50f7fceaad50692b9663d4c660057c86d78))
+
 ### [1.18.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.0...v1.18.1) (2021-09-11)
 
 
