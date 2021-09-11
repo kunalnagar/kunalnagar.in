@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.0...v1.18.1) (2021-09-11)
+
+
+### Chores
+
+* **deps:** update dependency @babel/preset-env to v7.15.6 ([ef7c348](https://github.com/kunalnagar/kunalnagar.in/commit/ef7c3482913e43c6a387576b2c13f7379201e726))
+
 ## [1.18.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.16...v1.18.0) (2021-09-06)
 
 
