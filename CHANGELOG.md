@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.16...v1.18.0) (2021-09-06)
+
+
+### Features
+
+* Add new GitHub Actions to FOSS page ([cc8d79b](https://github.com/kunalnagar/kunalnagar.in/commit/cc8d79b3818e65da82b27d7267374a2da0aeac19))
+
 ### [1.17.16](https://github.com/kunalnagar/kunalnagar.in/compare/v1.17.15...v1.17.16) (2021-09-06)
 
 
