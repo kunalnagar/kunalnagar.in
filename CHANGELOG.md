@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.9](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.8...v1.18.9) (2021-09-18)
+
+
+### Chores
+
+* **deps:** update dependency prettier to v2.4.1 ([698856c](https://github.com/kunalnagar/kunalnagar.in/commit/698856cc560ced928e5b6c745887003d520a1d79))
+
 ### [1.18.8](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.7...v1.18.8) (2021-09-14)
 
 
