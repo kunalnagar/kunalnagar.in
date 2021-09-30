@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.18](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.17...v1.18.18) (2021-09-30)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#106](https://github.com/kunalnagar/kunalnagar.in/issues/106)) ([2fd34af](https://github.com/kunalnagar/kunalnagar.in/commit/2fd34afad280f8e8816fe967955d0a747dcf2f01))
+
 ### [1.18.17](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.16...v1.18.17) (2021-09-26)
 
 
