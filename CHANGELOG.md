@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.24](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.23...v1.18.24) (2021-10-09)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.15.8 ([d038814](https://github.com/kunalnagar/kunalnagar.in/commit/d038814d1b9c88683c8614143bde5620cc9d1132))
+
 ### [1.18.23](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.22...v1.18.23) (2021-10-03)
 
 
