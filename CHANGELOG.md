@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.19.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.30...v1.19.0) (2021-10-10)
+
+
+### Features
+
+* Add react-hooks OSS ([#109](https://github.com/kunalnagar/kunalnagar.in/issues/109)) ([af46c07](https://github.com/kunalnagar/kunalnagar.in/commit/af46c074965a61af239154f4a5f2e0e623802ba8))
+
 ### [1.18.30](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.29...v1.18.30) (2021-10-10)
 
 
