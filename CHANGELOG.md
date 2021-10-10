@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.18.29](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.28...v1.18.29) (2021-10-09)
+
+
+### Chores
+
+* **deps:** update dependency lint-staged to v11.2.2 ([0c7adc1](https://github.com/kunalnagar/kunalnagar.in/commit/0c7adc1efb4f42b346aebdd1b951f962821b633a))
+
 ### [1.18.28](https://github.com/kunalnagar/kunalnagar.in/compare/v1.18.27...v1.18.28) (2021-10-09)
 
 
