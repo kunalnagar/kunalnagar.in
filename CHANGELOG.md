@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.7](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.6...v1.19.7) (2021-10-23)
+
+
+### Chores
+
+* **deps:** update dependency webpack-cli to v4.9.1 ([4dcf9b1](https://github.com/kunalnagar/kunalnagar.in/commit/4dcf9b1d12f5f727af3b3a9ba59ad917929399b0))
+
 ### [1.19.6](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.5...v1.19.6) (2021-10-23)
 
 
