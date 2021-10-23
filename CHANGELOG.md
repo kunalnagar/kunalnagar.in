@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.8](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.7...v1.19.8) (2021-10-23)
+
+
+### Chores
+
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.2.69 ([64cfce3](https://github.com/kunalnagar/kunalnagar.in/commit/64cfce3cf1324dd8afcf657e7241296f147ff2b3))
+
 ### [1.19.7](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.6...v1.19.7) (2021-10-23)
 
 
