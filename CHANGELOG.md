@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.16](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.15...v1.19.16) (2021-10-30)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.16.0 ([34b368a](https://github.com/kunalnagar/kunalnagar.in/commit/34b368a8974e21144bbfb5f8073e6605527ed761))
+
 ### [1.19.15](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.14...v1.19.15) (2021-10-30)
 
 
