@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.17](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.16...v1.19.17) (2021-10-30)
+
+
+### Chores
+
+* **deps:** update dependency webpack to v5.61.0 ([67853ee](https://github.com/kunalnagar/kunalnagar.in/commit/67853eedf2a88f000336d094d23ca7500c68bce0))
+
 ### [1.19.16](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.15...v1.19.16) (2021-10-30)
 
 
