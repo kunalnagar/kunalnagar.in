@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.19.22](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.21...v1.19.22) (2021-12-23)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.16.5 ([#113](https://github.com/kunalnagar/kunalnagar.in/issues/113)) ([36982e0](https://github.com/kunalnagar/kunalnagar.in/commit/36982e0f3181060f4f53e80c81606d5c114669f2))
+* **deps:** update dependency prettier to v2.5.1 ([#116](https://github.com/kunalnagar/kunalnagar.in/issues/116)) ([5b88aa5](https://github.com/kunalnagar/kunalnagar.in/commit/5b88aa524fbb40a927f93231645d8dbf580610ce))
+* **deps:** update node.js to v14.18.2 ([#115](https://github.com/kunalnagar/kunalnagar.in/issues/115)) ([ab6b98c](https://github.com/kunalnagar/kunalnagar.in/commit/ab6b98ce9348c309b62b1fa595ebec41d93b2d5b))
+
 ### [1.19.21](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.20...v1.19.21) (2021-11-11)
 
 
