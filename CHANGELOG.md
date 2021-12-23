@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.23](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.22...v1.19.23) (2021-12-23)
+
+
+### Chores
+
+* **deps:** update dependency pretty-quick to v3.1.3 ([#114](https://github.com/kunalnagar/kunalnagar.in/issues/114)) ([2a5a6d7](https://github.com/kunalnagar/kunalnagar.in/commit/2a5a6d7b54b28fc78dd7b48253bff169a048d587))
+
 ### [1.19.22](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.21...v1.19.22) (2021-12-23)
 
 
