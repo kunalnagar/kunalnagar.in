@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.26](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.25...v1.19.26) (2021-12-31)
+
+
+### Chores
+
+* **deps:** update node.js to v16 ([#118](https://github.com/kunalnagar/kunalnagar.in/issues/118)) ([ef04211](https://github.com/kunalnagar/kunalnagar.in/commit/ef042116e83f56c6343a81fe6a9361a39136a6eb))
+
 ### [1.19.25](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.24...v1.19.25) (2021-12-28)
 
 
