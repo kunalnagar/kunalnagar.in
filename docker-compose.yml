@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   jekyll:
-    image: timbru31/ruby-node:2.7-14
+    image: timbru31/ruby-node:2.7-16
     ports:
       - 4000:4000
     volumes:
@@ -10,7 +10,6 @@ services:
     command: >
       bash -c "node -v
       && cd /home/kunalnagar.in
-      && bundle config set path 'vendor/bundle'
       && bundle install
       && npm install
       && npm run dev"
