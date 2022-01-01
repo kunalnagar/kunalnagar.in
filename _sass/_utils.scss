@@ -14,10 +14,6 @@
   align-items: center;
 }
 
-.t--center {
-  text-align: center;
-}
-
 .highlight pre {
   @include theme() {
     background-color: theme-get('code-pre-background-color');
