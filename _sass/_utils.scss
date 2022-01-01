@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .highlight pre {
   @include theme() {
     background-color: theme-get('code-pre-background-color');
