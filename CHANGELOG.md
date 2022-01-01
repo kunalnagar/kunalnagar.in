@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.20.0...v1.21.0) (2022-01-01)
+
+
+### Features
+
+* Front page Resume ([#124](https://github.com/kunalnagar/kunalnagar.in/issues/124)) ([3040221](https://github.com/kunalnagar/kunalnagar.in/commit/3040221512f0085c50643858f571ff7c8d0b98f3))
+
 ## [1.20.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.26...v1.20.0) (2021-12-31)
 
 
