@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<div class="page-home">
+  <section class="intro">
+    <p>
+      <b>Hi, I'm Kunal.</b> I've been trying to write JavaScript responsibly
+      since 2013.
+    </p>
+    <p>
+      You can reach me via
+      <a
+        href="mailto:hireme@kunalnagar.in?subject=Hello!&body=Hey Kunal! How's it going?"
+        target="_blank"
+        rel="noopener noreferrer"
+        >email</a
+      >,
+      <a
+        href="https://www.linkedin.com/in/kunalnagar88/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >,
+      <a
+        href="https://twitter.com/_kunalnagar"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Twitter</a
+      >
+      or
+      <a
+        href="https://github.com/kunalnagar"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >.
+    </p>
+    <p>
+      <b>Resume:</b>
+      <a
+        href="{{ site.data.common.resume.pdf }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >PDF</a
+      >
+      or
+      <a
+        href="{{ site.data.common.resume.txt }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >PlainText</a
+      >
+    </p>
+  </section>
+
+  <section>
+    <h4>Skills</h4>
+    <ul>
+      {% for skill in site.data.resume.skills %}
+      <li>{{ skill | join: ", " }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="work-experience">
+    <h4>Work Experience</h4>
+    <ul class="experiences">
+      {% for company in site.data.resume.experiences %}
+      <li class="company">
+        <div class="d--flex items-center company-summary">
+          <img src="{{ company.logo }}" />
+          <a
+            href="{{ company.website }}"
+            title="Visit {{ company.title }} website"
+            class="company-title"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ company.title }}</a
+          >
+          <p class="company-position">{{ company.position }}</p>
+          <p class="company-tenure">{{ company.tenure }}</p>
+        </div>
+        <div class="company-points">
+          <ul>
+            {% for point in company.points %}
+            <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="education">
+    <h4>Education</h4>
+    <p>
+      Masters of Engineering in Software Systems, BITS Pilani Dubai Campus
+      (2013)
+    </p>
+  </section>
+</div>

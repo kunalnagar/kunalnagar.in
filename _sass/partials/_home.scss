@@ -1,0 +1,83 @@
+.page-home {
+  .intro {
+    border-radius: $border-radius;
+    padding: 0 1rem;
+
+    @include theme() {
+      border: 1px solid theme-get('color-blue-300');
+      background-color: theme-get('color-blue-100');
+    }
+  }
+
+  .work-experience {
+    .experiences {
+      list-style: none;
+      padding-left: 1rem;
+
+      @media screen and (max-width: 650px) {
+        padding: 0;
+      }
+
+      .company {
+        margin-bottom: 1.5rem;
+
+        @media screen and (max-width: 650px) {
+          margin-bottom: 2rem;
+        }
+
+        img {
+          height: 30px;
+
+          @media screen and (max-width: 650px) {
+            margin-bottom: 0.3rem;
+          }
+        }
+
+        p,
+        a {
+          margin: 0 1rem;
+
+          @media screen and (max-width: 650px) {
+            margin: 0;
+          }
+        }
+
+        a {
+          @include theme() {
+            color: theme-get('text-color');
+          }
+        }
+
+        &-summary {
+          @media screen and (max-width: 650px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+
+        &-title {
+          font-weight: bold;
+        }
+
+        &-position {
+          margin-left: 0 !important;
+          font-style: italic;
+          flex: 1;
+        }
+
+        &-points {
+          margin-top: 0.5rem;
+          margin-left: 1.5rem;
+
+          @media screen and (max-width: 650px) {
+            padding: 0;
+
+            ul {
+              padding-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
