@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.26...v1.20.0) (2021-12-31)
+
+
+### Features
+
+* Use Node 16.x LTS ([#119](https://github.com/kunalnagar/kunalnagar.in/issues/119)) ([428cce8](https://github.com/kunalnagar/kunalnagar.in/commit/428cce836df1f7628c20ad71292a5e633a99936b))
+
 ### [1.19.26](https://github.com/kunalnagar/kunalnagar.in/compare/v1.19.25...v1.19.26) (2021-12-31)
 
 
