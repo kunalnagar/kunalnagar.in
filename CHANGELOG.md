@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.21.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.21.0...v1.21.1) (2022-01-07)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.16.7 ([#120](https://github.com/kunalnagar/kunalnagar.in/issues/120)) ([001181a](https://github.com/kunalnagar/kunalnagar.in/commit/001181abfcc092aa4c3f3c09026d435573014c99))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v4.6.3 ([#121](https://github.com/kunalnagar/kunalnagar.in/issues/121)) ([645dc80](https://github.com/kunalnagar/kunalnagar.in/commit/645dc809a83bcb74b2399cbd84c605f0b482e871))
+* **deps:** update dependency sort-package-json to v1.53.1 ([#122](https://github.com/kunalnagar/kunalnagar.in/issues/122)) ([3962f80](https://github.com/kunalnagar/kunalnagar.in/commit/3962f80ba1e77c933040b8e6199857bcb66fe152))
+
 ## [1.21.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.20.0...v1.21.0) (2022-01-01)
 
 
