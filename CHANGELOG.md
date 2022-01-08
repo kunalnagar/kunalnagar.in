@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.21.2...v1.22.0) (2022-01-08)
+
+
+### Features
+
+* Remove Google Ads ([#126](https://github.com/kunalnagar/kunalnagar.in/issues/126)) ([46d9ef0](https://github.com/kunalnagar/kunalnagar.in/commit/46d9ef05e5643817b4dd547f16db3fcd80fdb51c))
+
 ### [1.21.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.21.1...v1.21.2) (2022-01-07)
 
 
