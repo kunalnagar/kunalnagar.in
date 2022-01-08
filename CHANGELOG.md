@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.21.2](https://github.com/kunalnagar/kunalnagar.in/compare/v1.21.1...v1.21.2) (2022-01-07)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#125](https://github.com/kunalnagar/kunalnagar.in/issues/125)) ([ef92573](https://github.com/kunalnagar/kunalnagar.in/commit/ef9257364b7f3cc56dda859381f9f3ab69de798e))
+* **deps:** update dependency webpack to v5.65.0 ([#123](https://github.com/kunalnagar/kunalnagar.in/issues/123)) ([9dcac4b](https://github.com/kunalnagar/kunalnagar.in/commit/9dcac4b62ab21d45933720838dbeca137076b15e))
+
 ### [1.21.1](https://github.com/kunalnagar/kunalnagar.in/compare/v1.21.0...v1.21.1) (2022-01-07)
 
 

@@ -4,7 +4,7 @@ Welcome! This is the repository for my [personal website](https://www.kunalnagar
 
 ## Requirements
 * Docker
-* Node 14.x
+* Node 16.x
 
 ## Getting started
 
