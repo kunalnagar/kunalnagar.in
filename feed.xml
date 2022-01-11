@@ -1,533 +1,533 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2022-01-11T03:58:05+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Send GitHub Dependabot Alerts to Slack</title><link href="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/" rel="alternate" type="text/html" title="Send GitHub Dependabot Alerts to Slack" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack</id><content type="html" xml:base="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png&quot; alt=&quot;marketing&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2022-01-11T05:10:30+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Send GitHub Dependabot Alerts to Slack</title><link href="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/" rel="alternate" type="text/html" title="Send GitHub Dependabot Alerts to Slack" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack</id><content type="html" xml:base="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/"><![CDATA[<p><img src="https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png" alt="marketing" /></p>
 
-&lt;h2 id=&quot;kunalnagarcoaction-cve&quot;&gt;@kunalnagarco/action-cve&lt;/h2&gt;
+<h2 id="kunalnagarcoaction-cve">@kunalnagarco/action-cve</h2>
 
-&lt;p&gt;An Open Source GitHub action that sends &lt;a href=&quot;https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates&quot;&gt;Dependabot Security Alerts&lt;/a&gt; to &lt;a href=&quot;https://api.slack.com/messaging/webhooks&quot;&gt;Slack&lt;/a&gt; and &lt;a href=&quot;https://developer.pagerduty.com/docs/events-api-v2/trigger-events/&quot;&gt;PagerDuty&lt;/a&gt;.&lt;/p&gt;
+<p>An Open Source GitHub action that sends <a href="https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates">Dependabot Security Alerts</a> to <a href="https://api.slack.com/messaging/webhooks">Slack</a> and <a href="https://developer.pagerduty.com/docs/events-api-v2/trigger-events/">PagerDuty</a>.</p>
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/kunalnagarco/action-cve&quot;&gt;Source code&lt;/a&gt;&lt;/p&gt;
+<p><a href="https://github.com/kunalnagarco/action-cve">Source code</a></p>
 
-&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
+<h2 id="inspiration">Inspiration</h2>
 
-&lt;p&gt;GitHub has a webhook event called &lt;a href=&quot;https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert&quot;&gt;repository_vulnerability_alert&lt;/a&gt; that is triggered when a vulnerability is discovered on a repository/organization. Unfortunately, there’s no documentation (that I could find) to &lt;a href=&quot;https://docs.github.com/en/actions/reference/events-that-trigger-workflows&quot;&gt;watch for this event&lt;/a&gt; in a GitHub action and send it to alerting platforms.&lt;/p&gt;
+<p>GitHub has a webhook event called <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#repository_vulnerability_alert">repository_vulnerability_alert</a> that is triggered when a vulnerability is discovered on a repository/organization. Unfortunately, there’s no documentation (that I could find) to <a href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows">watch for this event</a> in a GitHub action and send it to alerting platforms.</p>
 
-&lt;p&gt;I created this GitHub action that can be run on a CRON schedule (every 6 hours is recommended).&lt;/p&gt;
+<p>I created this GitHub action that can be run on a CRON schedule (every 6 hours is recommended).</p>
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+<h2 id="installation">Installation</h2>
 
-&lt;p&gt;There are a few things you need to setup on the repository before this action can be used:&lt;/p&gt;
+<p>There are a few things you need to setup on the repository before this action can be used:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories&quot;&gt;Enable Dependabot Alerts&lt;/a&gt; for the repository.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create a &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;GitHub Personal Access Token&lt;/a&gt; and add it to the &lt;a href=&quot;https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository&quot;&gt;repository’s secrets&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;For Slack&lt;/strong&gt;, you’d want to send these alerts to a dedicated channel. Create a &lt;a href=&quot;https://api.slack.com/messaging/webhooks&quot;&gt;Webhook URL&lt;/a&gt; for the channel and add it to the repository’s secrets. You may also use the &lt;a href=&quot;https://slack.com/apps/A0F7XDUAZ-incoming-webhooks?tab=more_info&quot;&gt;Incoming Webhooks Slack app&lt;/a&gt; that makes it a lot easier.&lt;/p&gt;
+<ol>
+  <li>
+    <p><a href="https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories">Enable Dependabot Alerts</a> for the repository.</p>
+  </li>
+  <li>
+    <p>Create a <a href="https://github.com/settings/tokens">GitHub Personal Access Token</a> and add it to the <a href="https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository">repository’s secrets</a>.</p>
+  </li>
+  <li>
+    <p><strong>For Slack</strong>, you’d want to send these alerts to a dedicated channel. Create a <a href="https://api.slack.com/messaging/webhooks">Webhook URL</a> for the channel and add it to the repository’s secrets. You may also use the <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks?tab=more_info">Incoming Webhooks Slack app</a> that makes it a lot easier.</p>
 
-    &lt;p&gt;&lt;a href=&quot;https://user-images.githubusercontent.com/2741371/129387647-f5fdead5-a002-4e3d-9d55-cb7ebe988ff1.png&quot;&gt;Screenshot&lt;/a&gt;&lt;/p&gt;
+    <p><a href="https://user-images.githubusercontent.com/2741371/129387647-f5fdead5-a002-4e3d-9d55-cb7ebe988ff1.png">Screenshot</a></p>
 
-    &lt;p&gt;&lt;strong&gt;For PagerDuty&lt;/strong&gt;, the action will send an &lt;a href=&quot;https://developer.pagerduty.com/docs/events-api-v2/trigger-events/&quot;&gt;Alert Event&lt;/a&gt; which should create a new Incident with an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;info&lt;/code&gt; severity.&lt;/p&gt;
+    <p><strong>For PagerDuty</strong>, the action will send an <a href="https://developer.pagerduty.com/docs/events-api-v2/trigger-events/">Alert Event</a> which should create a new Incident with an <code class="language-plaintext highlighter-rouge">info</code> severity.</p>
 
-    &lt;p&gt;&lt;a href=&quot;https://user-images.githubusercontent.com/2741371/129468542-33ecda7a-7696-40c8-99e4-76d327fca959.png&quot;&gt;Screenshot&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create a new GitHub action:&lt;/p&gt;
+    <p><a href="https://user-images.githubusercontent.com/2741371/129468542-33ecda7a-7696-40c8-99e4-76d327fca959.png">Screenshot</a></p>
+  </li>
+  <li>
+    <p>Create a new GitHub action:</p>
 
-    &lt;script src=&quot;https://gist.github.com/kunalnagar/7e20b7fb4340162b06ad246bcc0a8288.js&quot;&gt;&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    <script src="https://gist.github.com/kunalnagar/7e20b7fb4340162b06ad246bcc0a8288.js"></script>
+  </li>
+</ol>
 
-&lt;p&gt;&lt;strong&gt;For more documentation, please check out the &lt;a href=&quot;https://github.com/kunalnagarco/action-cve/wiki&quot;&gt;Wiki&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+<p><strong>For more documentation, please check out the <a href="https://github.com/kunalnagarco/action-cve/wiki">Wiki</a>.</strong></p>
 
-&lt;h2 id=&quot;support&quot;&gt;Support&lt;/h2&gt;
+<h2 id="support">Support</h2>
 
-&lt;p&gt;If you find a bug, please &lt;a href=&quot;https://github.com/kunalnagarco/action-cve/issues&quot;&gt;open an issue&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">InstagramPostEmbed - A React component to embed an Instagram Post</title><link href="https://www.kunalnagar.in/blog/react-instagram-post-embed/" rel="alternate" type="text/html" title="InstagramPostEmbed - A React component to embed an Instagram Post" /><published>2021-06-05T00:00:00+00:00</published><updated>2021-06-05T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/react-instagram-post-embed</id><content type="html" xml:base="https://www.kunalnagar.in/blog/react-instagram-post-embed/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+<p>If you find a bug, please <a href="https://github.com/kunalnagarco/action-cve/issues">open an issue</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[An open source GitHub action to send Dependabot alerts to Slack]]></summary></entry><entry><title type="html">InstagramPostEmbed - A React component to embed an Instagram Post</title><link href="https://www.kunalnagar.in/blog/react-instagram-post-embed/" rel="alternate" type="text/html" title="InstagramPostEmbed - A React component to embed an Instagram Post" /><published>2021-06-05T00:00:00+00:00</published><updated>2021-06-05T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/react-instagram-post-embed</id><content type="html" xml:base="https://www.kunalnagar.in/blog/react-instagram-post-embed/"><![CDATA[<h2 id="tldr">TL;DR</h2>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;InstagramPostEmbed /&amp;gt;&lt;/code&gt; is an Open Source React component that uses the &lt;a href=&quot;https://developers.facebook.com/docs/instagram/oembed&quot;&gt;oEmbed API&lt;/a&gt; to embed an Instagram post. View it in &lt;a href=&quot;https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default&quot;&gt;action&lt;/a&gt;.&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">&lt;InstagramPostEmbed /&gt;</code> is an Open Source React component that uses the <a href="https://developers.facebook.com/docs/instagram/oembed">oEmbed API</a> to embed an Instagram post. View it in <a href="https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default">action</a>.</p>
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/kunalnagarco/react-component-library/blob/master/src/components/InstagramPostEmbed/InstagramPostEmbed.tsx&quot;&gt;Source code&lt;/a&gt;&lt;/p&gt;
+<p><a href="https://github.com/kunalnagarco/react-component-library/blob/master/src/components/InstagramPostEmbed/InstagramPostEmbed.tsx">Source code</a></p>
 
-&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
+<h2 id="inspiration">Inspiration</h2>
 
-&lt;p&gt;I built this component to familiarize myself with the Facebook Developer Network. So if you do like it, feel free to fork or share. You can find more components &lt;a href=&quot;https://github.com/kunalnagarco/react-component-library/tree/master/src/components&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+<p>I built this component to familiarize myself with the Facebook Developer Network. So if you do like it, feel free to fork or share. You can find more components <a href="https://github.com/kunalnagarco/react-component-library/tree/master/src/components">here</a>.</p>
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+<h2 id="installation">Installation</h2>
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--save&lt;/span&gt; @kunalnagarco/react-component-library
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--save</span> @kunalnagarco/react-component-library
+</code></pre></div></div>
 
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+<h2 id="usage">Usage</h2>
 
-&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;InstagramPostEmbed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;@kunalnagarco/react-component-library&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">InstagramPostEmbed</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@kunalnagarco/react-component-library</span><span class="dl">'</span><span class="p">;</span>
 
-&lt;span class=&quot;c1&quot;&gt;// Single Post&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CO_u0wftV4Q/&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+<span class="c1">// Single Post</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CO_u0wftV4Q/"</span>
+<span class="p">/&gt;</span>
 
-&lt;span class=&quot;c1&quot;&gt;// Multiple Posts&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CORs4wShENX/&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNyrgMsh3a2/&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+<span class="c1">// Multiple Posts</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CORs4wShENX/"</span>
+<span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNyrgMsh3a2/"</span>
+<span class="p">/&gt;</span>
 
-&lt;span class=&quot;c1&quot;&gt;// Hide Caption&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;hideCaption&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNxdfcCB8Yb/&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+<span class="c1">// Hide Caption</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">hideCaption</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNxdfcCB8Yb/"</span>
+<span class="p">/&gt;</span>
 
-&lt;span class=&quot;c1&quot;&gt;// Max width 320px&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;320&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNxdfcCB8Yb/&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
+<span class="c1">// Max width 320px</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">maxWidth</span><span class="p">=</span><span class="si">{</span><span class="mi">320</span><span class="si">}</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNxdfcCB8Yb/"</span>
+<span class="p">/&gt;</span>
 
-&lt;span class=&quot;c1&quot;&gt;// Max width 658&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;InstagramPostEmbed&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;clientAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;token&amp;gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;maxWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;658&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.instagram.com/p/CNxdfcCB8Yb/&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="c1">// Max width 658</span>
+<span class="p">&lt;</span><span class="nc">InstagramPostEmbed</span>
+  <span class="na">clientAccessToken</span><span class="p">=</span><span class="s">"&lt;token&gt;"</span>
+  <span class="na">maxWidth</span><span class="p">=</span><span class="si">{</span><span class="mi">658</span><span class="si">}</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">"https://www.instagram.com/p/CNxdfcCB8Yb/"</span>
+<span class="p">/&gt;</span>
+</code></pre></div></div>
 
-&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+<h2 id="requirements">Requirements</h2>
 
-&lt;p&gt;At the very minimum, you will need two things to use this component:&lt;/p&gt;
+<p>At the very minimum, you will need two things to use this component:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;This component requires the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clientAccessToken&lt;/code&gt; which can be obtained by creating a Facebook App. For full requirements, please follow the instructions in the &lt;a href=&quot;https://developers.facebook.com/docs/instagram/oembed#requirements&quot;&gt;Requirements section&lt;/a&gt; of the documentation.&lt;/li&gt;
-  &lt;li&gt;You will also need the full link to an Instagram Post.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>This component requires the <code class="language-plaintext highlighter-rouge">clientAccessToken</code> which can be obtained by creating a Facebook App. For full requirements, please follow the instructions in the <a href="https://developers.facebook.com/docs/instagram/oembed#requirements">Requirements section</a> of the documentation.</li>
+  <li>You will also need the full link to an Instagram Post.</li>
+</ul>
 
-&lt;h2 id=&quot;technical-quirk&quot;&gt;Technical Quirk&lt;/h2&gt;
+<h2 id="technical-quirk">Technical Quirk</h2>
 
-&lt;p&gt;The component will automatically take care of the quirk for you. I just thought it’s an interesting point that folks might tend to miss while developing with the API.&lt;/p&gt;
+<p>The component will automatically take care of the quirk for you. I just thought it’s an interesting point that folks might tend to miss while developing with the API.</p>
 
-&lt;p&gt;After fetching the post details from the oEmbed API, you’ll get a blob of HTML that can be inserted into the DOM. The embed HTML contains a reference to the Instagram &lt;a href=&quot;https://www.instagram.com/static/bundles/metro/EmbedSDK.js/33cd2c5d5d59.js?fbclid=IwAR1TCV_bYJgZ3k4lAY7p01lJ_XvJP__4rAFmyAaCddmnPoBOgOplo1o1CG0&quot;&gt;embed.js&lt;/a&gt; JavaScript library. Since the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html&lt;/code&gt; is already in the DOM, the embed script needs to scan all the embed code and re-initialize it. This can be done by calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instgrm.Embeds.process()&lt;/code&gt; function after loading the library.&lt;/p&gt;
+<p>After fetching the post details from the oEmbed API, you’ll get a blob of HTML that can be inserted into the DOM. The embed HTML contains a reference to the Instagram <a href="https://www.instagram.com/static/bundles/metro/EmbedSDK.js/33cd2c5d5d59.js?fbclid=IwAR1TCV_bYJgZ3k4lAY7p01lJ_XvJP__4rAFmyAaCddmnPoBOgOplo1o1CG0">embed.js</a> JavaScript library. Since the <code class="language-plaintext highlighter-rouge">html</code> is already in the DOM, the embed script needs to scan all the embed code and re-initialize it. This can be done by calling <code class="language-plaintext highlighter-rouge">instgrm.Embeds.process()</code> function after loading the library.</p>
 
-&lt;p&gt;If this is not done, you’ll get an empty Instagram post embed.&lt;/p&gt;
+<p>If this is not done, you’ll get an empty Instagram post embed.</p>
 
-&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+<h2 id="demo">Demo</h2>
 
-&lt;p&gt;Watch this component &lt;a href=&quot;https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default&quot;&gt;in action&lt;/a&gt;.&lt;/p&gt;
+<p>Watch this component <a href="https://kunalnagarco.github.io/react-component-library/?path=/story/instagrampostembed--default">in action</a>.</p>
 
-&lt;h2 id=&quot;support&quot;&gt;Support&lt;/h2&gt;
+<h2 id="support">Support</h2>
 
-&lt;p&gt;If you find a bug, please &lt;a href=&quot;https://github.com/kunalnagarco/react-component-library/issues&quot;&gt;open an issue&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">TL;DR</summary></entry><entry><title type="html">healthie - A health check middleware for Express.js</title><link href="https://www.kunalnagar.in/blog/express-health-check-middleware/" rel="alternate" type="text/html" title="healthie - A health check middleware for Express.js" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/express-health-check-middleware</id><content type="html" xml:base="https://www.kunalnagar.in/blog/express-health-check-middleware/">&lt;h2 id=&quot;tldr&quot;&gt;TL;DR&lt;/h2&gt;
+<p>If you find a bug, please <a href="https://github.com/kunalnagarco/react-component-library/issues">open an issue</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[An open source React component that uses the oEmbed API to embed an Instagram Post]]></summary></entry><entry><title type="html">healthie - A health check middleware for Express.js</title><link href="https://www.kunalnagar.in/blog/express-health-check-middleware/" rel="alternate" type="text/html" title="healthie - A health check middleware for Express.js" /><published>2020-11-07T00:00:00+00:00</published><updated>2020-11-07T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/express-health-check-middleware</id><content type="html" xml:base="https://www.kunalnagar.in/blog/express-health-check-middleware/"><![CDATA[<h2 id="tldr">TL;DR</h2>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;healthie&lt;/code&gt; is a free and open-source Express.js middleware that adds a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/health&lt;/code&gt; endpoint to your Express.js applications and returns it’s uptime with a status of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OK&lt;/code&gt;.&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">healthie</code> is a free and open-source Express.js middleware that adds a <code class="language-plaintext highlighter-rouge">/health</code> endpoint to your Express.js applications and returns it’s uptime with a status of <code class="language-plaintext highlighter-rouge">OK</code>.</p>
 
-&lt;p&gt;Source code and documentation: &lt;a href=&quot;https://github.com/kunalnagar/healthie&quot;&gt;https://github.com/kunalnagar/healthie&lt;/a&gt;&lt;/p&gt;
+<p>Source code and documentation: <a href="https://github.com/kunalnagar/healthie">https://github.com/kunalnagar/healthie</a></p>
 
-&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;/h2&gt;
+<h2 id="inspiration">Inspiration</h2>
 
-&lt;p&gt;I recently stumbled onto &lt;a href=&quot;https://expressjs.com/en/advanced/healthcheck-graceful-shutdown.html&quot;&gt;some options recommended by Express.js&lt;/a&gt; to add health check customization options to your project. While all of them are fantastic and well-maintained, they provide a lot more functionality than I need.&lt;/p&gt;
+<p>I recently stumbled onto <a href="https://expressjs.com/en/advanced/healthcheck-graceful-shutdown.html">some options recommended by Express.js</a> to add health check customization options to your project. While all of them are fantastic and well-maintained, they provide a lot more functionality than I need.</p>
 
-&lt;p&gt;I built this package purely to dive deep into Express.js middleware. So if you do like it, feel free to fork or share. Going forward, I think it would be reasonable to provide an option to customize the health-check route, or the status message.&lt;/p&gt;
+<p>I built this package purely to dive deep into Express.js middleware. So if you do like it, feel free to fork or share. Going forward, I think it would be reasonable to provide an option to customize the health-check route, or the status message.</p>
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+<h2 id="installation">Installation</h2>
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install --save @kunalnagarco/healthie
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save @kunalnagarco/healthie
+</code></pre></div></div>
 
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
+<h2 id="usage">Usage</h2>
 
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;express&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;handleHealthCheck&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;@kunalnagarco/healthie&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">handleHealthCheck</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@kunalnagarco/healthie</span><span class="dl">'</span><span class="p">);</span>
 
-&lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleHealthCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">handleHealthCheck</span><span class="p">());</span>
+</code></pre></div></div>
 
-&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+<h2 id="result">Result</h2>
 
-&lt;p&gt;Visit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/health&lt;/code&gt; and you should see the following:&lt;/p&gt;
+<p>Visit <code class="language-plaintext highlighter-rouge">/health</code> and you should see the following:</p>
 
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;uptime&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;36.883064168&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;process.uptime&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;status&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;OK&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">TL;DR</summary></entry><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/">&lt;p&gt;Before I start writing about my experience, I want to make a few things very clear:&lt;/p&gt;
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"uptime"</span><span class="p">:</span><span class="w"> </span><span class="mf">36.883064168</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">process.uptime</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[A simple middleware that adds a health check endpoint to your Express.js applications.]]></summary></entry><entry><title type="html">My experience getting tested for COVID-19 in Toronto</title><link href="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/" rel="alternate" type="text/html" title="My experience getting tested for COVID-19 in Toronto" /><published>2020-06-16T00:00:00+00:00</published><updated>2020-06-16T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience</id><content type="html" xml:base="https://www.kunalnagar.in/blog/covid-19-testing-toronto-experience/"><![CDATA[<p>Before I start writing about my experience, I want to make a few things very clear:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;I did not have any COVID-19 symptoms&lt;/li&gt;
-  &lt;li&gt;I do not have COVID-19 (test results below)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>I did not have any COVID-19 symptoms</li>
+  <li>I do not have COVID-19 (test results below)</li>
+</ul>
 
-&lt;p&gt;Most recently, Doug Ford &lt;a href=&quot;https://twitter.com/fordnation/status/1264571201969676295&quot;&gt;announced&lt;/a&gt; that anyone can get tested for COVID-19 in Ontario:&lt;/p&gt;
+<p>Most recently, Doug Ford <a href="https://twitter.com/fordnation/status/1264571201969676295">announced</a> that anyone can get tested for COVID-19 in Ontario:</p>
 
-&lt;p&gt;It was a regular Sunday and I woke up with a little bit of nausea which went away immediately. But in these tough times, you never really know, so I decided to get a COVID-19 test.&lt;/p&gt;
+<p>It was a regular Sunday and I woke up with a little bit of nausea which went away immediately. But in these tough times, you never really know, so I decided to get a COVID-19 test.</p>
 
-&lt;h2 id=&quot;finding-an-assessment-centre&quot;&gt;Finding an Assessment Centre&lt;/h2&gt;
+<h2 id="finding-an-assessment-centre">Finding an Assessment Centre</h2>
 
-&lt;p&gt;As per the &lt;a href=&quot;https://www.toronto.ca/home/covid-19/covid-19-what-you-should-do/covid-19-have-symptoms-or-been-exposed/covid-19-assessment-centres/&quot;&gt;City of Toronto website&lt;/a&gt;, the closest centre for me was &lt;a href=&quot;https://goo.gl/maps/Bw2eCS9zswqrH6417&quot;&gt;St. Michael’s COVID-19 Assessment Centre&lt;/a&gt;. They do not require any referrals, and it’s walk-in.&lt;/p&gt;
+<p>As per the <a href="https://www.toronto.ca/home/covid-19/covid-19-what-you-should-do/covid-19-have-symptoms-or-been-exposed/covid-19-assessment-centres/">City of Toronto website</a>, the closest centre for me was <a href="https://goo.gl/maps/Bw2eCS9zswqrH6417">St. Michael’s COVID-19 Assessment Centre</a>. They do not require any referrals, and it’s walk-in.</p>
 
-&lt;p&gt;I took my mask and reached the centre at 10:00AM. It was a lovely day with the sun shining and a cool breeze of 12 degrees celsius. I took a few pictures along the way of the St. Michael’s Cathedral. I also, badly need a haircut:&lt;/p&gt;
+<p>I took my mask and reached the centre at 10:00AM. It was a lovely day with the sun shining and a cool breeze of 12 degrees celsius. I took a few pictures along the way of the St. Michael’s Cathedral. I also, badly need a haircut:</p>
 
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; alt=&quot;Me returning from the COVID-19 Assessment Centre&quot; /&gt;
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg" alt="Me returning from the COVID-19 Assessment Centre" />
 
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; alt=&quot;St. Michael's Cathedral Building&quot; /&gt;
+  </div>
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg" alt="St. Michael's Cathedral Building" />
 
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; alt=&quot;St. Michael's Cathedral Inside&quot; /&gt;
+  </div>
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg" alt="St. Michael's Cathedral Inside" />
 
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; alt=&quot;St. Michael's Cathedral Sign&quot; /&gt;
+  </div>
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg" alt="St. Michael's Cathedral Sign" />
 
-  &lt;/div&gt;
-&lt;/div&gt;
+  </div>
+</div>
 
-&lt;p&gt;On reaching the centre, I got to know that their weekend timings are 12PM to 6PM, so I roamed around for a bit and had a lovely conversation with a 95 year old woman who still volunteers as a swim coach at University of Toronto.&lt;/p&gt;
+<p>On reaching the centre, I got to know that their weekend timings are 12PM to 6PM, so I roamed around for a bit and had a lovely conversation with a 95 year old woman who still volunteers as a swim coach at University of Toronto.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; alt=&quot;Assessment Centre Hours&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg" alt="Assessment Centre Hours" /></p>
 
-&lt;h2 id=&quot;at-the-assessment-centre&quot;&gt;At the Assessment Centre&lt;/h2&gt;
+<h2 id="at-the-assessment-centre">At the Assessment Centre</h2>
 
-&lt;p&gt;I was second in line. As my turn arrived, they asked me to throw away the mask that I was wearing, sanitize my hands for 15 seconds and gave me a fresh mask.&lt;/p&gt;
+<p>I was second in line. As my turn arrived, they asked me to throw away the mask that I was wearing, sanitize my hands for 15 seconds and gave me a fresh mask.</p>
 
-&lt;h3 id=&quot;booth-1&quot;&gt;Booth 1&lt;/h3&gt;
+<h3 id="booth-1">Booth 1</h3>
 
-&lt;p&gt;After that, I was redirected to a counter where I had to give my personal information. This includes my health card number, address and phone number:&lt;/p&gt;
+<p>After that, I was redirected to a counter where I had to give my personal information. This includes my health card number, address and phone number:</p>
 
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; alt=&quot;At the counter giving information to Hospital staff&quot; /&gt;
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg" alt="At the counter giving information to Hospital staff" />
 
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; alt=&quot;Printed name tag for recognition&quot; /&gt;
+  </div>
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg" alt="Printed name tag for recognition" />
 
-  &lt;/div&gt;
-&lt;/div&gt;
+  </div>
+</div>
 
-&lt;h3 id=&quot;booth-2&quot;&gt;Booth 2&lt;/h3&gt;
+<h3 id="booth-2">Booth 2</h3>
 
-&lt;p&gt;Next, I was told to go to Booth 2 where I was asked general questions about my travels and my contact with COVID-19 patients etc. I told them that I woke up with a light nausea that went away and I’m fine now. Based on the information, they highlighted some stuff on my COVID-19 information packet and asked me to wait until my next turn:&lt;/p&gt;
+<p>Next, I was told to go to Booth 2 where I was asked general questions about my travels and my contact with COVID-19 patients etc. I told them that I woke up with a light nausea that went away and I’m fine now. Based on the information, they highlighted some stuff on my COVID-19 information packet and asked me to wait until my next turn:</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; alt=&quot;Booth 2&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg" alt="Booth 2" /></p>
 
-&lt;h2 id=&quot;booth-3&quot;&gt;Booth 3&lt;/h2&gt;
+<h2 id="booth-3">Booth 3</h2>
 
-&lt;p&gt;This is where I met Dr. Aisha Khatib who took my swab. She was assisted by Dr. Yuri who questioned me in booth 2. Unfortunately I could not get any photos here as it prohibited. I can still describe the experience though.&lt;/p&gt;
+<p>This is where I met Dr. Aisha Khatib who took my swab. She was assisted by Dr. Yuri who questioned me in booth 2. Unfortunately I could not get any photos here as it prohibited. I can still describe the experience though.</p>
 
-&lt;p&gt;Before taking the swab, Dr. Aisha confirmed what I told to Dr. Yuri and explained the swab procedure. It’s basically a long Q-tip that goes up your nose. And boy, does it sting.&lt;/p&gt;
+<p>Before taking the swab, Dr. Aisha confirmed what I told to Dr. Yuri and explained the swab procedure. It’s basically a long Q-tip that goes up your nose. And boy, does it sting.</p>
 
-&lt;p&gt;The swab itself is just a 2-3 second procedure, but they go deep up your nose - enough to make your eyes water. When she was done, it took me about 15 seconds to realize what had happened. All things aside, it isn’t as bad as it sounds.&lt;/p&gt;
+<p>The swab itself is just a 2-3 second procedure, but they go deep up your nose - enough to make your eyes water. When she was done, it took me about 15 seconds to realize what had happened. All things aside, it isn’t as bad as it sounds.</p>
 
-&lt;p&gt;After the swab was done, I was told that the results would be available in about &lt;strong&gt;4 days&lt;/strong&gt; at &lt;a href=&quot;https://covid-19.ontario.ca/&quot;&gt;covid-19.ontario.ca&lt;/a&gt;. Here is a screen-grab of my results:&lt;/p&gt;
+<p>After the swab was done, I was told that the results would be available in about <strong>4 days</strong> at <a href="https://covid-19.ontario.ca/">covid-19.ontario.ca</a>. Here is a screen-grab of my results:</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; alt=&quot;COVID-19 Test Results&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg" alt="COVID-19 Test Results" /></p>
 
-&lt;h2 id=&quot;covid-19-information-packet&quot;&gt;COVID-19 Information Packet&lt;/h2&gt;
+<h2 id="covid-19-information-packet">COVID-19 Information Packet</h2>
 
-&lt;p&gt;When you go through testing, you get the following information packet, that includes a mask as well. As I was being questioned in Booth 2, Dr. Yuri highlighted the category I fall under (as shown below).&lt;/p&gt;
+<p>When you go through testing, you get the following information packet, that includes a mask as well. As I was being questioned in Booth 2, Dr. Yuri highlighted the category I fall under (as shown below).</p>
 
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; alt=&quot;COVID-19 Information Packet Page 1&quot; /&gt;
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg" alt="COVID-19 Information Packet Page 1" />
 
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; alt=&quot;COVID-19 Information Packet Page 2&quot; /&gt;
+  </div>
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg" alt="COVID-19 Information Packet Page 2" />
 
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; alt=&quot;COVID-19 Information Packet Page 3&quot; /&gt;
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg" alt="COVID-19 Information Packet Page 3" />
 
-  &lt;/div&gt;
-  &lt;div class=&quot;column&quot;&gt;
-    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; alt=&quot;COVID-19 Information Packet Page 4&quot; /&gt;
+  </div>
+  <div class="column">
+    <img src="/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg" alt="COVID-19 Information Packet Page 4" />
 
-  &lt;/div&gt;
-&lt;/div&gt;
+  </div>
+</div>
 
-&lt;p&gt;And that’s it! Hope this helps someone out there having second thoughts on getting a test. This is about protecting the health and safety of your loved ones.&lt;/p&gt;</content><author><name></name></author><summary type="html">Before I start writing about my experience, I want to make a few things very clear:</summary></entry><entry><title type="html">Setup a Jekyll development environment with Docker</title><link href="https://www.kunalnagar.in/blog/setup-docker-jekyll-dev-environment/" rel="alternate" type="text/html" title="Setup a Jekyll development environment with Docker" /><published>2019-12-14T00:00:00+00:00</published><updated>2019-12-14T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/setup-docker-jekyll-dev-environment</id><content type="html" xml:base="https://www.kunalnagar.in/blog/setup-docker-jekyll-dev-environment/">&lt;p&gt;Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.&lt;/p&gt;
+<p>And that’s it! Hope this helps someone out there having second thoughts on getting a test. This is about protecting the health and safety of your loved ones.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I got tested for COVID-19 in Toronto. This is my experience.]]></summary></entry><entry><title type="html">Setup a Jekyll development environment with Docker</title><link href="https://www.kunalnagar.in/blog/setup-docker-jekyll-dev-environment/" rel="alternate" type="text/html" title="Setup a Jekyll development environment with Docker" /><published>2019-12-14T00:00:00+00:00</published><updated>2019-12-14T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/setup-docker-jekyll-dev-environment</id><content type="html" xml:base="https://www.kunalnagar.in/blog/setup-docker-jekyll-dev-environment/"><![CDATA[<p>Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.</p>
 
-&lt;p&gt;This guide assumes that you have a basic knowledge of Jekyll, Docker and are comfortable working with the Terminal. If not, I would highly recommend that you keep reading as I try to provide documentation links when possible.&lt;/p&gt;
+<p>This guide assumes that you have a basic knowledge of Jekyll, Docker and are comfortable working with the Terminal. If not, I would highly recommend that you keep reading as I try to provide documentation links when possible.</p>
 
-&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
+<h3 id="requirements">Requirements</h3>
 
-&lt;p&gt;Here are a few requirements to follow along:&lt;/p&gt;
+<p>Here are a few requirements to follow along:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/kunalnagar.in&quot;&gt;Jekyll site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.docker.com/v17.09/engine/installation/&quot;&gt;Install Docker&lt;/a&gt; on your development machine&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&quot;&gt;Bash/ZSH Terminal&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://github.com/kunalnagar/kunalnagar.in">Jekyll site</a></li>
+  <li><a href="https://docs.docker.com/v17.09/engine/installation/">Install Docker</a> on your development machine</li>
+  <li><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash/ZSH Terminal</a></li>
+</ul>
 
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+<h3 id="step-1">Step 1</h3>
 
-&lt;p&gt;Let’s start off with the fact that you have the code for a Jekyll site on your computer. It could be yours or anyone else’s for that matter.&lt;/p&gt;
+<p>Let’s start off with the fact that you have the code for a Jekyll site on your computer. It could be yours or anyone else’s for that matter.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/oiKnu70.png&quot; alt=&quot;Screenshot showing cloned repository in VSCode&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/oiKnu70.png" alt="Screenshot showing cloned repository in VSCode" /></p>
 
-&lt;p&gt;With Docker, we can setup a development environment to run this Jekyll site so we don’t have to install unnecessary dependencies on our computer.&lt;/p&gt;
+<p>With Docker, we can setup a development environment to run this Jekyll site so we don’t have to install unnecessary dependencies on our computer.</p>
 
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+<h3 id="step-2">Step 2</h3>
 
-&lt;p&gt;It’s time to set up our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; files. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; will setup our development environment from scratch and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; will make sure that our NPM dependencies are installed, the development server is started up and we can get to work.&lt;/p&gt;
+<p>It’s time to set up our <code class="language-plaintext highlighter-rouge">Dockerfile</code> and <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> files. The <code class="language-plaintext highlighter-rouge">Dockerfile</code> will setup our development environment from scratch and the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> will make sure that our NPM dependencies are installed, the development server is started up and we can get to work.</p>
 
-&lt;p&gt;Here is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; and here’s what it does:&lt;/p&gt;
+<p>Here is the <code class="language-plaintext highlighter-rouge">Dockerfile</code> and here’s what it does:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Base Operating System - Ubuntu 18.04 LTS&lt;/li&gt;
-  &lt;li&gt;Default Terminal - Bash&lt;/li&gt;
-  &lt;li&gt;Update the system and make it ready for installing dependencies&lt;/li&gt;
-  &lt;li&gt;Install Jekyll dependencies&lt;/li&gt;
-  &lt;li&gt;Configure Ruby and make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem&lt;/code&gt; available from the command line&lt;/li&gt;
-  &lt;li&gt;Install Jekyll and Bundler&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Base Operating System - Ubuntu 18.04 LTS</li>
+  <li>Default Terminal - Bash</li>
+  <li>Update the system and make it ready for installing dependencies</li>
+  <li>Install Jekyll dependencies</li>
+  <li>Configure Ruby and make <code class="language-plaintext highlighter-rouge">gem</code> available from the command line</li>
+  <li>Install Jekyll and Bundler</li>
+</ul>
 
-&lt;p&gt;Here are some optional steps. I have Node and NPM setup to run the development server and create a build if needed:&lt;/p&gt;
+<p>Here are some optional steps. I have Node and NPM setup to run the development server and create a build if needed:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Install Node and NPM&lt;/li&gt;
-  &lt;li&gt;Expose port 4000 (since Jekyll runs on that port)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Install Node and NPM</li>
+  <li>Expose port 4000 (since Jekyll runs on that port)</li>
+</ul>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-docker&quot; data-lang=&quot;docker&quot;&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; ubuntu:18.04&lt;/span&gt;
+<figure class="highlight"><pre><code class="language-docker" data-lang="docker"><span class="k">FROM</span><span class="s"> ubuntu:18.04</span>
 
-&lt;span class=&quot;k&quot;&gt;SHELL&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;/bin/bash&quot;, &quot;-c&quot;]&lt;/span&gt;
+<span class="k">SHELL</span><span class="s"> ["/bin/bash", "-c"]</span>
 
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;apt-get update &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get upgrade &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get upgrade <span class="nt">-y</span>
 
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;curl ruby-full build-essential zlib1g-dev &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
+<span class="k">RUN </span>apt-get <span class="nb">install </span>curl ruby-full build-essential zlib1g-dev <span class="nt">-y</span>
 
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'# Install Ruby Gems to ~/gems'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'export GEM_HOME=&quot;$HOME/gems&quot;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt;  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'export PATH=&quot;$HOME/gems/bin:\$PATH&quot;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.bashrc &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.bashrc
+<span class="k">RUN </span><span class="nb">echo</span> <span class="s1">'# Install Ruby Gems to ~/gems'</span> <span class="o">&gt;&gt;</span> ~/.bashrc <span class="o">&amp;&amp;</span> <span class="se">\
+</span> <span class="nb">echo</span> <span class="s1">'export GEM_HOME="$HOME/gems"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc <span class="o">&amp;&amp;</span> <span class="se">\
+</span>  <span class="nb">echo</span> <span class="s1">'export PATH="$HOME/gems/bin:\$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc <span class="o">&amp;&amp;</span> <span class="se">\
+</span> <span class="nb">source</span> ~/.bashrc
 
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll bundler &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; gem update &lt;span class=&quot;nt&quot;&gt;--system&lt;/span&gt;
+<span class="k">RUN </span>gem <span class="nb">install </span>jekyll bundler <span class="o">&amp;&amp;</span> gem update <span class="nt">--system</span>
 
-&lt;span class=&quot;c&quot;&gt;# Optional (Installing Node and NPM)&lt;/span&gt;
+<span class="c"># Optional (Installing Node and NPM)</span>
 
-&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-sSL&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar.xz&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--strip-components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nt&quot;&gt;-xJ&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; /usr/local/bin/ node-v12.13.1-linux-x64/bin/node &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\
-&lt;/span&gt; curl https://www.npmjs.com/install.sh | bash
+<span class="k">RUN </span>curl <span class="nt">-sSL</span> <span class="s2">"https://nodejs.org/dist/v12.13.1/node-v12.13.1-linux-x64.tar.xz"</span> | <span class="nb">tar</span> <span class="nt">--strip-components</span><span class="o">=</span>2 <span class="nt">-xJ</span> <span class="nt">-C</span> /usr/local/bin/ node-v12.13.1-linux-x64/bin/node <span class="o">&amp;&amp;</span> <span class="se">\
+</span> curl https://www.npmjs.com/install.sh | bash
 
-&lt;span class=&quot;k&quot;&gt;EXPOSE&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; 4000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<span class="k">EXPOSE</span><span class="s"> 4000</span></code></pre></figure>
 
-&lt;p&gt;With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; comes in. Here are the steps in brief:&lt;/p&gt;
+<p>With the file above, a working Jekyll environment should be setup. Now, we want to map our Jekyll Site to this working environment and start the server. This is where the <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> comes in. Here are the steps in brief:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Setup an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app&lt;/code&gt; container&lt;/li&gt;
-  &lt;li&gt;Map the Jekyll site on your computer using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volumes&lt;/code&gt; key&lt;/li&gt;
-  &lt;li&gt;Map the port on your local machine to the Docker container (port &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4000&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Start the development server&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Setup an <code class="language-plaintext highlighter-rouge">app</code> container</li>
+  <li>Map the Jekyll site on your computer using the <code class="language-plaintext highlighter-rouge">volumes</code> key</li>
+  <li>Map the port on your local machine to the Docker container (port <code class="language-plaintext highlighter-rouge">4000</code>)</li>
+  <li>Start the development server</li>
+</ul>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.6'&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.6'</span>
+<span class="na">services</span><span class="pi">:</span>
 
-  &lt;span class=&quot;na&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;container_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docker_kunalnagar.in&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.:/var/www/html&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;working_dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/www/html&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;4000:4000&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;restart&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;always&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;sh -c &quot;bundle install &amp;amp;&amp;amp;&lt;/span&gt;
-            &lt;span class=&quot;s&quot;&gt;npm install &amp;amp;&amp;amp;&lt;/span&gt;
-            &lt;span class=&quot;s&quot;&gt;npm run dev&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  <span class="na">app</span><span class="pi">:</span>
+    <span class="na">container_name</span><span class="pi">:</span> <span class="s">docker_kunalnagar.in</span>
+    <span class="na">build</span><span class="pi">:</span> <span class="s">.</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">.:/var/www/html</span>
+    <span class="na">working_dir</span><span class="pi">:</span> <span class="s">/var/www/html</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">4000:4000</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
+    <span class="na">command</span><span class="pi">:</span> <span class="pi">&gt;</span>
+      <span class="s">sh -c "bundle install &amp;&amp;</span>
+            <span class="s">npm install &amp;&amp;</span>
+            <span class="s">npm run dev"</span></code></pre></figure>
 
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+<h3 id="step-3">Step 3</h3>
 
-&lt;p&gt;All you need to do is run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose up -d&lt;/code&gt; and you’re ready to start working on your Jekyll site at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
+<p>All you need to do is run <code class="language-plaintext highlighter-rouge">docker-compose up -d</code> and you’re ready to start working on your Jekyll site at <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></p>
 
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+<h3 id="notes">Notes</h3>
 
-&lt;p&gt;If you run into issues, you can use the following commands to inspect your container:&lt;/p&gt;
+<p>If you run into issues, you can use the following commands to inspect your container:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# See a LIVE view of your Docker container's logs&lt;/span&gt;
-docker logs &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &amp;lt;container_name&amp;gt;
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># See a LIVE view of your Docker container's logs</span>
+docker logs <span class="nt">-f</span> &lt;container_name&gt;
 
-&lt;span class=&quot;c&quot;&gt;# Login to your Docker container and browser around&lt;/span&gt;
-docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ti&lt;/span&gt; &amp;lt;container_name&amp;gt; bash&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<span class="c"># Login to your Docker container and browser around</span>
+docker <span class="nb">exec</span> <span class="nt">-ti</span> &lt;container_name&gt; bash</code></pre></figure>
 
-&lt;p&gt;The code for this website is hosted &lt;a href=&quot;https://github.com/kunalnagar/kunalnagar.in&quot;&gt;here&lt;/a&gt; if you want to take a look at the big picture and how it all comes together.&lt;/p&gt;
+<p>The code for this website is hosted <a href="https://github.com/kunalnagar/kunalnagar.in">here</a> if you want to take a look at the big picture and how it all comes together.</p>
 
-&lt;h3 id=&quot;next-steps&quot;&gt;Next steps&lt;/h3&gt;
+<h3 id="next-steps">Next steps</h3>
 
-&lt;p&gt;Currently, this site is built on &lt;a href=&quot;https://travis-ci.com/kunalnagar/kunalnagar.in&quot;&gt;Travis&lt;/a&gt; with a different configuration than what I have on Docker. Now that I have a development environment set up, I’d like to deploy the same using Travis.&lt;/p&gt;</content><author><name></name></author><summary type="html">Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.</summary></entry><entry><title type="html">Git Verified Commits</title><link href="https://www.kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+00:00</published><updated>2019-07-31T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://www.kunalnagar.in/blog/git-verified-commits/">&lt;p&gt;Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:&lt;/p&gt;
+<p>Currently, this site is built on <a href="https://travis-ci.com/kunalnagar/kunalnagar.in">Travis</a> with a different configuration than what I have on Docker. Now that I have a development environment set up, I’d like to deploy the same using Travis.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learn how to setup a Jekyll development environment using Docker]]></summary></entry><entry><title type="html">Git Verified Commits</title><link href="https://www.kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+00:00</published><updated>2019-07-31T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://www.kunalnagar.in/blog/git-verified-commits/"><![CDATA[<p>Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/2ohqgII.png&quot; alt=&quot;Screenshot showing a verified badge next to commits on GitHub&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/2ohqgII.png" alt="Screenshot showing a verified badge next to commits on GitHub" /></p>
 
-&lt;h2 id=&quot;add-a-gpg-key-to-your-account&quot;&gt;Add a GPG key to your account&lt;/h2&gt;
+<h2 id="add-a-gpg-key-to-your-account">Add a GPG key to your account</h2>
 
-&lt;p&gt;You can use GPG to sign commits with your GPG key. For more information on GPG, go &lt;a href=&quot;https://gnupg.org/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+<p>You can use GPG to sign commits with your GPG key. For more information on GPG, go <a href="https://gnupg.org/">here</a>.</p>
 
-&lt;p&gt;For the sake of this article, we will be dealing with verified commits on GitHub. We will also assume that you have a GPG key.&lt;/p&gt;
+<p>For the sake of this article, we will be dealing with verified commits on GitHub. We will also assume that you have a GPG key.</p>
 
-&lt;p&gt;GitHub uses &lt;a href=&quot;https://www.openpgp.org/&quot;&gt;OpenPGP&lt;/a&gt; libraries to confirm that your locally signed commits and tags are cryptographically verifiable against a public key that you have added to your GitHub account.&lt;/p&gt;
+<p>GitHub uses <a href="https://www.openpgp.org/">OpenPGP</a> libraries to confirm that your locally signed commits and tags are cryptographically verifiable against a public key that you have added to your GitHub account.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FvSL0aC.png&quot; alt=&quot;Screenshot showing GPG keys section in GitHub settings&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/FvSL0aC.png" alt="Screenshot showing GPG keys section in GitHub settings" /></p>
 
-&lt;h2 id=&quot;tell-git-to-use-your-gpg-key&quot;&gt;Tell Git to use your GPG key&lt;/h2&gt;
+<h2 id="tell-git-to-use-your-gpg-key">Tell Git to use your GPG key</h2>
 
-&lt;p&gt;After adding the public GPG key to your GitHub account, you need to tell &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; on your machine to use that key to sign commits. But first, let’s get a list of keys on your account using:&lt;/p&gt;
+<p>After adding the public GPG key to your GitHub account, you need to tell <code class="language-plaintext highlighter-rouge">git</code> on your machine to use that key to sign commits. But first, let’s get a list of keys on your account using:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpg &lt;span class=&quot;nt&quot;&gt;--list-secret-keys&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--keyid-format&lt;/span&gt; LONG
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>gpg <span class="nt">--list-secret-keys</span> <span class="nt">--keyid-format</span> LONG
 
 /home/kunal/.gnupg/pubring.kbx
-&lt;span class=&quot;nt&quot;&gt;------------------------------&lt;/span&gt;
-sec   rsa4096/ABD83AC02AAC0953 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;SC] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;expires: 2035-07-27]
+<span class="nt">------------------------------</span>
+sec   rsa4096/ABD83AC02AAC0953 2019-07-31 <span class="o">[</span>SC] <span class="o">[</span>expires: 2035-07-27]
       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-uid                 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; unknown] Kunal Nagar &amp;lt;knlnagar@gmail.com&amp;gt;
-ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;E] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;expires: 2035-07-27]&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+uid                 <span class="o">[</span> unknown] Kunal Nagar &lt;knlnagar@gmail.com&gt;
+ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 <span class="o">[</span>E] <span class="o">[</span>expires: 2035-07-27]</code></pre></figure>
 
-&lt;p&gt;In the above example, my public key is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ABD83AC02AAC0953&lt;/code&gt; and we’ll use that:&lt;/p&gt;
+<p>In the above example, my public key is <code class="language-plaintext highlighter-rouge">ABD83AC02AAC0953</code> and we’ll use that:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; user.signingkey ABD83AC02AAC0953&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git config <span class="nt">--global</span> user.signingkey ABD83AC02AAC0953</code></pre></figure>
 
-&lt;h2 id=&quot;signing-your-commit&quot;&gt;Signing your commit&lt;/h2&gt;
+<h2 id="signing-your-commit">Signing your commit</h2>
 
-&lt;p&gt;When you’re ready to commit your work, just add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-S&lt;/code&gt; flag to your commit command:&lt;/p&gt;
+<p>When you’re ready to commit your work, just add the <code class="language-plaintext highlighter-rouge">-S</code> flag to your commit command:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Testing signed commits&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="nt">-S</span> <span class="s2">"Testing signed commits"</span></code></pre></figure>
 
-&lt;p&gt;If your key has a passphrase, you’ll be asked to enter it now.&lt;/p&gt;
+<p>If your key has a passphrase, you’ll be asked to enter it now.</p>
 
-&lt;p&gt;That’s it! Push your commit and you can see the verified commit on your git hosting provider.&lt;/p&gt;
+<p>That’s it! Push your commit and you can see the verified commit on your git hosting provider.</p>
 
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+<h2 id="references">References</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/en/articles/managing-commit-signature-verification&quot;&gt;Managing Commit Signature Verification (GitHub Knowledge Base)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:</summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://www.kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+00:00</published><updated>2019-04-18T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://www.kunalnagar.in/blog/highcharts-export-pdf/">&lt;p&gt;Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.&lt;/p&gt;
+<ul>
+  <li><a href="https://help.github.com/en/articles/managing-commit-signature-verification">Managing Commit Signature Verification (GitHub Knowledge Base)</a></li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Learn how to sign commits using your GPG key]]></summary></entry><entry><title type="html">Export multiple Highcharts graphs as PDF</title><link href="https://www.kunalnagar.in/blog/highcharts-export-pdf/" rel="alternate" type="text/html" title="Export multiple Highcharts graphs as PDF" /><published>2019-04-18T00:00:00+00:00</published><updated>2019-04-18T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/highcharts-export-pdf</id><content type="html" xml:base="https://www.kunalnagar.in/blog/highcharts-export-pdf/"><![CDATA[<p>Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</p>
 
-&lt;p&gt;If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.&lt;/p&gt;
+<p>If you want to skip to the code, there’s a fiddle at the end of the post. Knock yourself out.</p>
 
-&lt;h2 id=&quot;default-export&quot;&gt;Default Export&lt;/h2&gt;
+<h2 id="default-export">Default Export</h2>
 
-&lt;p&gt;By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the &lt;a href=&quot;https://www.highcharts.com/docs/export-module/export-module-overview&quot;&gt;exporting module&lt;/a&gt; to be included for that to show up.&lt;/p&gt;
+<p>By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the <a href="https://www.highcharts.com/docs/export-module/export-module-overview">exporting module</a> to be included for that to show up.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/D8hmB7I.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/D8hmB7I.png" alt="" /></p>
 
-&lt;p&gt;While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?&lt;/p&gt;
+<p>While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?</p>
 
-&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+<h2 id="setup">Setup</h2>
 
-&lt;p&gt;You’ll need the following libraries:&lt;/p&gt;
+<p>You’ll need the following libraries:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Highcharts - Core&lt;/li&gt;
-  &lt;li&gt;Highcharts - Exporting Plugin&lt;/li&gt;
-  &lt;li&gt;Highcharts - Offline Exporting Plugin&lt;/li&gt;
-  &lt;li&gt;jsPDF&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Highcharts - Core</li>
+  <li>Highcharts - Exporting Plugin</li>
+  <li>Highcharts - Offline Exporting Plugin</li>
+  <li>jsPDF</li>
+</ul>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://code.highcharts.com/highcharts.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://code.highcharts.com/modules/exporting.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://code.highcharts.com/modules/offline-exporting.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.highcharts.com/highcharts.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.highcharts.com/modules/exporting.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.highcharts.com/modules/offline-exporting.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you want offline exporting and don’t want to send graph data to Highsoft’s servers (for privacy reasons), yo need to add the following option to the Highcharts graph options:&lt;/p&gt;
+<p><strong>Note:</strong> If you want offline exporting and don’t want to send graph data to Highsoft’s servers (for privacy reasons), yo need to add the following option to the Highcharts graph options:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;exporting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;enabled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;fallbackToExportServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">exporting</span><span class="p">:</span> <span class="p">{</span>
+  <span class="nl">enabled</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">fallbackToExportServer</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span></code></pre></figure>
 
-&lt;h2 id=&quot;adding-graphs-to-pdf&quot;&gt;Adding graphs to PDF&lt;/h2&gt;
+<h2 id="adding-graphs-to-pdf">Adding graphs to PDF</h2>
 
-&lt;p&gt;The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I’ve come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.&lt;/p&gt;
+<p>The way this works is that we need to export the Highcharts graph as an image and then slap it on the PDF. After a lot of testing, I’ve come to a conclusion that exporting a chart as SVG on the PDF gives best results and quality.</p>
 
-&lt;p&gt;In this example, we’ll be using two charts - one scatter and one pie chart. Let’s assume that their respective Highchart objects are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chart1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chart2&lt;/code&gt;&lt;/p&gt;
+<p>In this example, we’ll be using two charts - one scatter and one pie chart. Let’s assume that their respective Highchart objects are <code class="language-plaintext highlighter-rouge">chart1</code> and <code class="language-plaintext highlighter-rouge">chart2</code></p>
 
-&lt;p&gt;We will also need an instance of jsPDF:&lt;/p&gt;
+<p>We will also need an instance of jsPDF:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pdf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jsPDF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;mm&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">pdf</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">jsPDF</span><span class="p">(</span><span class="dl">'</span><span class="s1">p</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">mm</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">1400</span><span class="p">]);</span></code></pre></figure>
 
-&lt;p&gt;If you look at the Highcharts API, it has a method called &lt;a href=&quot;https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt;&lt;/a&gt; that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don’t really want that - instead we want the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; (a base64 encoded string) of the image that we can put on the PDF using &lt;a href=&quot;http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addImage&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+<p>If you look at the Highcharts API, it has a method called <a href="https://api.highcharts.com/class-reference/Highcharts.Chart#exportChartLocal"><code class="language-plaintext highlighter-rouge">exportChartLocal</code></a> that allows you to export a chart in a specific format (JPEG, PNG, SVG and PDF). The problem is that calling the method triggers a download popup in the browser. We don’t really want that - instead we want the <code class="language-plaintext highlighter-rouge">dataURL</code> (a base64 encoded string) of the image that we can put on the PDF using <a href="http://raw.githack.com/MrRio/jsPDF/master/docs/module-addImage.html"><code class="language-plaintext highlighter-rouge">addImage</code></a>.</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;chart1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exportChartLocal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;image/svg+xml&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;chart2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exportChartLocal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;image/svg+xml&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">chart1</span><span class="p">.</span><span class="nx">exportChartLocal</span><span class="p">(</span><span class="dl">'</span><span class="s1">image/svg+xml</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">chart2</span><span class="p">.</span><span class="nx">exportChartLocal</span><span class="p">(</span><span class="dl">'</span><span class="s1">image/svg+xml</span><span class="dl">'</span><span class="p">);</span></code></pre></figure>
 
-&lt;p&gt;To stop the download popup and get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dataURL&lt;/code&gt;, we need to hook into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;downloadURL&lt;/code&gt; method on the base Highcharts object that will give us the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dataURL&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;filename&lt;/code&gt; of the image.&lt;/p&gt;
+<p>To stop the download popup and get the <code class="language-plaintext highlighter-rouge">dataURL</code>, we need to hook into the <code class="language-plaintext highlighter-rouge">downloadURL</code> method on the base Highcharts object that will give us the <code class="language-plaintext highlighter-rouge">dataURL</code> and the <code class="language-plaintext highlighter-rouge">filename</code> of the image.</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Highcharts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;downloadURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;SVG&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">Highcharts</span><span class="p">.</span><span class="nx">downloadURL</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">dataURL</span><span class="p">,</span> <span class="nx">filename</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">pdf</span><span class="p">.</span><span class="nx">addImage</span><span class="p">(</span><span class="nx">dataURL</span><span class="p">,</span> <span class="dl">'</span><span class="s1">SVG</span><span class="dl">'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="p">};</span></code></pre></figure>
 
-&lt;p&gt;Yet another problem here is that there is no callback to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exportChartLocal&lt;/code&gt; method so we’ll have to use a counter and an array to store the dataURLs in an array.&lt;/p&gt;
+<p>Yet another problem here is that there is no callback to the <code class="language-plaintext highlighter-rouge">exportChartLocal</code> method so we’ll have to use a counter and an array to store the dataURLs in an array.</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;imageURLs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Highcharts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;downloadURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;imageURLs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">imageURLs</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">Highcharts</span><span class="p">.</span><span class="nx">downloadURL</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">dataURL</span><span class="p">,</span> <span class="nx">filename</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">imageURLs</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">dataURL</span><span class="p">);</span>
+  <span class="nx">counter</span><span class="o">++</span><span class="p">;</span>
+<span class="p">};</span></code></pre></figure>
 
-&lt;p&gt;To check if all the dataURLs are added to the array, we need to poll continuously. Once the array is prepared, we loop over it and add the image URLs to the PDF:&lt;/p&gt;
+<p>To check if all the dataURLs are added to the array, we need to poll continuously. Once the array is prepared, we loop over it and add the image URLs to the PDF:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;interval&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;clearInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;interval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;imageURLs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;SVG&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addPage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;test.pdf&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">interval</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">counter</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">interval</span><span class="p">);</span>
+    <span class="nx">imageURLs</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">img</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">pdf</span><span class="p">.</span><span class="nx">addImage</span><span class="p">(</span><span class="nx">img</span><span class="p">,</span> <span class="dl">'</span><span class="s1">SVG</span><span class="dl">'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+      <span class="nx">pdf</span><span class="p">.</span><span class="nx">addPage</span><span class="p">();</span>
+    <span class="p">});</span>
+    <span class="nx">pdf</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="dl">'</span><span class="s1">test.pdf</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="mi">100</span><span class="p">);</span></code></pre></figure>
 
-&lt;p&gt;And it’s done! Here’s a demo of the entire process. Switch to the &lt;strong&gt;Result&lt;/strong&gt; tab and click on the &lt;strong&gt;Export&lt;/strong&gt; button to download the PDF. The code contains comments so it’s easy to follow.&lt;/p&gt;
+<p>And it’s done! Here’s a demo of the entire process. Switch to the <strong>Result</strong> tab and click on the <strong>Export</strong> button to download the PDF. The code contains comments so it’s easy to follow.</p>
 
-&lt;iframe width=&quot;100%&quot; height=&quot;500&quot; src=&quot;//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; allowpaymentrequest=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</content><author><name></name></author><summary type="html">Most recently, I was tasked to convert a page containing multiple graphs to a single PDF without using server-side technologies. The graphs were rendered using Highcharts and the final PDF needed to have really good quality.</summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://www.kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+00:00</published><updated>2019-04-08T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://www.kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/">&lt;p&gt;Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.&lt;/p&gt;
+<iframe width="100%" height="500" src="//jsfiddle.net/kunalnagar/aku06o24/53/embedded/js,html,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="" frameborder="0"></iframe>]]></content><author><name></name></author><summary type="html"><![CDATA[Learn how to export multiple Highcharts graphs to a PDF]]></summary></entry><entry><title type="html">encrypt0r - Encrypt and Decrypt files using a Passphrase</title><link href="https://www.kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="alternate" type="text/html" title="encrypt0r - Encrypt and Decrypt files using a Passphrase" /><published>2019-04-08T00:00:00+00:00</published><updated>2019-04-08T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase</id><content type="html" xml:base="https://www.kunalnagar.in/blog/encryptor-encrypt-decrypt-files-passphrase/"><![CDATA[<p>Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.</p>
 
-&lt;p&gt;encrypt0r provides a simple drag and drop interface to encrypt/decrypt your files using a password.&lt;/p&gt;
+<p>encrypt0r provides a simple drag and drop interface to encrypt/decrypt your files using a password.</p>
 
-&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
+<h2 id="technologies">Technologies</h2>
 
-&lt;p&gt;encrypt0r is built on the latest technologies and available for all operating systems:&lt;/p&gt;
+<p>encrypt0r is built on the latest technologies and available for all operating systems:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://electronjs.org/&quot;&gt;Electron&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r&quot;&gt;Open Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://electronjs.org/">Electron</a></li>
+  <li><a href="https://github.com/kunalnagar/encrypt0r">Open Source</a></li>
+</ul>
 
-&lt;h2 id=&quot;download&quot;&gt;Download&lt;/h2&gt;
+<h2 id="download">Download</h2>
 
-&lt;p&gt;Here are direct links to download for your preferred platform:&lt;/p&gt;
+<p>Here are direct links to download for your preferred platform:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac.zip&quot;&gt;Apple Mac&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac-m1.zip&quot;&gt;Apple Mac M1&lt;/a&gt; [New]&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-deb.zip&quot;&gt;Linux x64 Debian&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip&quot;&gt;Linux x64 Source&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip&quot;&gt;Windows x86&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip&quot;&gt;Windows x64&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li><a href="https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac.zip">Apple Mac</a></li>
+  <li><a href="https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-mac-m1.zip">Apple Mac M1</a> [New]</li>
+  <li><a href="https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-deb.zip">Linux x64 Debian</a></li>
+  <li><a href="https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-linux-x64.zip">Linux x64 Source</a></li>
+  <li><a href="https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x86.zip">Windows x86</a></li>
+  <li><a href="https://github.com/kunalnagar/encrypt0r/releases/latest/download/encrypt0r-windows-x64.zip">Windows x64</a></li>
+</ul>
 
-&lt;h2 id=&quot;signing&quot;&gt;Signing&lt;/h2&gt;
+<h2 id="signing">Signing</h2>
 
-&lt;p&gt;If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.&lt;/p&gt;
+<p>If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.</p>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; It is absolutely safe to run the app on Mac/Windows. I’m not interested in your data or running malicious scripts. If you’re worried about what the app is doing underneath, the code is all there, have at it :)&lt;/p&gt;
+<p><strong>Note:</strong> It is absolutely safe to run the app on Mac/Windows. I’m not interested in your data or running malicious scripts. If you’re worried about what the app is doing underneath, the code is all there, have at it :)</p>
 
-&lt;style&gt;
+<style>
   .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -544,19 +544,19 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
     width: 100%;
     height: 100%;
   }
-&lt;/style&gt;
+</style>
 
-&lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe src=&quot;https://www.youtube.com/embed/VIVz7MtNEO0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/VIVz7MtNEO0" frameborder="0" allowfullscreen=""></iframe>
+</div>
 
-&lt;h2 id=&quot;screenshot&quot;&gt;Screenshot&lt;/h2&gt;
+<h2 id="screenshot">Screenshot</h2>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/WQXyqsj.png" alt="" /></p>
 
-&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+<h2 id="demo">Demo</h2>
 
-&lt;style&gt;
+<style>
   .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -573,305 +573,305 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
     width: 100%;
     height: 100%;
   }
-&lt;/style&gt;
+</style>
 
-&lt;div class=&quot;embed-container&quot;&gt;
-  &lt;iframe src=&quot;https://www.youtube.com/embed/WBf2bRMRFME&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/WBf2bRMRFME" frameborder="0" allowfullscreen=""></iframe>
+</div>
 
-&lt;h2 id=&quot;bugscontribute&quot;&gt;Bugs/Contribute&lt;/h2&gt;
+<h2 id="bugscontribute">Bugs/Contribute</h2>
 
-&lt;p&gt;Found a problem? Have improvements? Create a new &lt;a href=&quot;https://github.com/kunalnagar/encrypt0r/issues&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Sometimes you just need a quick way to encrypt files securely using a passphrase. Not all operating systems have this functionality, especially Windows.</summary></entry><entry><title type="html">Car Hypothecation Removal Process</title><link href="https://www.kunalnagar.in/blog/car-hypothecation-removal-process/" rel="alternate" type="text/html" title="Car Hypothecation Removal Process" /><published>2019-03-14T00:00:00+00:00</published><updated>2019-03-14T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/car-hypothecation-removal-process</id><content type="html" xml:base="https://www.kunalnagar.in/blog/car-hypothecation-removal-process/">&lt;p&gt;This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.&lt;/p&gt;
+<p>Found a problem? Have improvements? Create a new <a href="https://github.com/kunalnagar/encrypt0r/issues">issue</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learn how to encrypt and decrypt files with a passphrase using encrypt0r]]></summary></entry><entry><title type="html">Car Hypothecation Removal Process</title><link href="https://www.kunalnagar.in/blog/car-hypothecation-removal-process/" rel="alternate" type="text/html" title="Car Hypothecation Removal Process" /><published>2019-03-14T00:00:00+00:00</published><updated>2019-03-14T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/car-hypothecation-removal-process</id><content type="html" xml:base="https://www.kunalnagar.in/blog/car-hypothecation-removal-process/"><![CDATA[<p>This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</p>
 
-&lt;h2 id=&quot;what-is-hypothecation&quot;&gt;What is hypothecation?&lt;/h2&gt;
+<h2 id="what-is-hypothecation">What is hypothecation?</h2>
 
-&lt;p&gt;&lt;strong&gt;The internet says this:&lt;/strong&gt; Hypothecation occurs when an asset is pledged as collateral to secure a loan, without giving up title, possession or ownership rights, such as income generated by the asset. However, the lender can seize the asset if the terms of the agreement are not met.&lt;/p&gt;
+<p><strong>The internet says this:</strong> Hypothecation occurs when an asset is pledged as collateral to secure a loan, without giving up title, possession or ownership rights, such as income generated by the asset. However, the lender can seize the asset if the terms of the agreement are not met.</p>
 
-&lt;p&gt;It basically means that when you buy things on a loan, you get to play with those things but they’re technically not yours. And you better pay the EMIs on time or else the mean bank will take it away.&lt;/p&gt;
+<p>It basically means that when you buy things on a loan, you get to play with those things but they’re technically not yours. And you better pay the EMIs on time or else the mean bank will take it away.</p>
 
-&lt;p&gt;Before we get into the Hypothecation Removal process, we need to foreclose the loan on your car. If you’ve already done so, you can skip the next section.&lt;/p&gt;
+<p>Before we get into the Hypothecation Removal process, we need to foreclose the loan on your car. If you’ve already done so, you can skip the next section.</p>
 
-&lt;h2 id=&quot;loan-foreclosure&quot;&gt;Loan foreclosure&lt;/h2&gt;
+<h2 id="loan-foreclosure">Loan foreclosure</h2>
 
-&lt;p&gt;I bought my car on a loan that was financed by HDFC. If you’re going through the Hypothecation Removal process, it is assumed that you have foreclosed your loan. I was living in Bangalore and HDFC Bank has two (yes, just two) loan department branches for the entire of Bangalore.&lt;/p&gt;
+<p>I bought my car on a loan that was financed by HDFC. If you’re going through the Hypothecation Removal process, it is assumed that you have foreclosed your loan. I was living in Bangalore and HDFC Bank has two (yes, just two) loan department branches for the entire of Bangalore.</p>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; For those of you who don’t know, loans are handled by loan department branches. If you go to a regular HDFC bank branch, they’ll not be able to help you out and will directly tell you to visit a loan branch.&lt;/p&gt;
+<p><strong>Note:</strong> For those of you who don’t know, loans are handled by loan department branches. If you go to a regular HDFC bank branch, they’ll not be able to help you out and will directly tell you to visit a loan branch.</p>
 
-&lt;p&gt;The one I visited was on &lt;a href=&quot;https://goo.gl/maps/dDAxnikAUG42&quot;&gt;CMH Road&lt;/a&gt;. Here are a few tips for visiting this branch:&lt;/p&gt;
+<p>The one I visited was on <a href="https://goo.gl/maps/dDAxnikAUG42">CMH Road</a>. Here are a few tips for visiting this branch:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;There is no parking, but you can park anywhere on &lt;a href=&quot;https://www.google.com/maps/dir/12.977557,77.637256/HDFC+Bank,+548%2FD,+Maruthi+Mansion,+Chinmaya+Mission+Hospital+Rd,+Hoysala+Nagar,+Indiranagar,+Bengaluru,+Karnataka+560038/@12.9775688,77.6371918,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae16a4846628d3:0x73c439b206b2295b!2m2!1d77.6367715!2d12.9780695!3e0&quot;&gt;9th A Main Road&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;The rush is INSANE every single day (usually 3-4 hours waiting, they have a token system)&lt;/li&gt;
-  &lt;li&gt;Try to go early in the morning on weekdays - it opens up at 9am and people usually start queuing up at 8:30am&lt;/li&gt;
-  &lt;li&gt;If you’re going on a Saturday, pack a bag and some lunch, and possibly dinner as well&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>There is no parking, but you can park anywhere on <a href="https://www.google.com/maps/dir/12.977557,77.637256/HDFC+Bank,+548%2FD,+Maruthi+Mansion,+Chinmaya+Mission+Hospital+Rd,+Hoysala+Nagar,+Indiranagar,+Bengaluru,+Karnataka+560038/@12.9775688,77.6371918,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae16a4846628d3:0x73c439b206b2295b!2m2!1d77.6367715!2d12.9780695!3e0">9th A Main Road</a>.</li>
+  <li>The rush is INSANE every single day (usually 3-4 hours waiting, they have a token system)</li>
+  <li>Try to go early in the morning on weekdays - it opens up at 9am and people usually start queuing up at 8:30am</li>
+  <li>If you’re going on a Saturday, pack a bag and some lunch, and possibly dinner as well</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/sdMdH1v.jpg" alt="" /></p>
 
-&lt;h3 id=&quot;gathering-documents&quot;&gt;Gathering documents&lt;/h3&gt;
+<h3 id="gathering-documents">Gathering documents</h3>
 
-&lt;p&gt;Before you visit the branch, you need to get the following documents in order:&lt;/p&gt;
+<p>Before you visit the branch, you need to get the following documents in order:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Loan documents&lt;/strong&gt; - I just took a printout of the &lt;em&gt;Loan Welcome letter&lt;/em&gt; and the &lt;em&gt;Loan Repayment Schedule&lt;/em&gt;. These were emailed to me at the time of purchasing the car. You can also get these from your HDFC Bank Dashboard.
-&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you don’t own an HDFC Bank account (like me), you can create an account online and don’t need to visit the branch. Go to the HDFC Bank Website and create an account using your &lt;em&gt;Loan Account Number&lt;/em&gt; and an &lt;em&gt;OTP&lt;/em&gt; will be sent to your mobile.
-&lt;br /&gt;&lt;br /&gt;Once your account has been created, all your loan documents will be accessible from the Dashboard.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ID proof&lt;/strong&gt; - I carried my Aadhar Card Original + 2 copies&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;PAN card&lt;/strong&gt; - Original + 2 copies&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Cheque book&lt;/strong&gt; - I used a cheque to foreclose my loan. Again, if you already have an account with the HDFC Bank, you probably won’t need this.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Car Insurance&lt;/strong&gt; - for safety&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;&lt;strong&gt;A fucking pen&lt;/strong&gt;&lt;/em&gt; - the people there yell and look at you weird if you don’t have a pen. Always carry a god damn pen. Blue.&lt;/li&gt;
-  &lt;li&gt;I don’t remember if I carried photos or not, but just keep 2 passport size photos handy in case the person on the other side of the counter flips their lid&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>
+    <p><strong>Loan documents</strong> - I just took a printout of the <em>Loan Welcome letter</em> and the <em>Loan Repayment Schedule</em>. These were emailed to me at the time of purchasing the car. You can also get these from your HDFC Bank Dashboard.
+<br /><br /><strong>Note:</strong> If you don’t own an HDFC Bank account (like me), you can create an account online and don’t need to visit the branch. Go to the HDFC Bank Website and create an account using your <em>Loan Account Number</em> and an <em>OTP</em> will be sent to your mobile.
+<br /><br />Once your account has been created, all your loan documents will be accessible from the Dashboard.</p>
+  </li>
+  <li><strong>ID proof</strong> - I carried my Aadhar Card Original + 2 copies</li>
+  <li><strong>PAN card</strong> - Original + 2 copies</li>
+  <li><strong>Cheque book</strong> - I used a cheque to foreclose my loan. Again, if you already have an account with the HDFC Bank, you probably won’t need this.</li>
+  <li><strong>Car Insurance</strong> - for safety</li>
+  <li><em><strong>A fucking pen</strong></em> - the people there yell and look at you weird if you don’t have a pen. Always carry a god damn pen. Blue.</li>
+  <li>I don’t remember if I carried photos or not, but just keep 2 passport size photos handy in case the person on the other side of the counter flips their lid</li>
+</ul>
 
-&lt;h3 id=&quot;visiting-the-branch&quot;&gt;Visiting the branch&lt;/h3&gt;
+<h3 id="visiting-the-branch">Visiting the branch</h3>
 
-&lt;p&gt;Once you visit the branch, you’ll meet a guard at the gate entrance. This guy is the boss - you don’t wanna mess with him. He’ll have a bunch of forms - tell him you need to foreclose your loan. He’ll give you a form and write the token number on top.&lt;/p&gt;
+<p>Once you visit the branch, you’ll meet a guard at the gate entrance. This guy is the boss - you don’t wanna mess with him. He’ll have a bunch of forms - tell him you need to foreclose your loan. He’ll give you a form and write the token number on top.</p>
 
-&lt;p&gt;Then you go inside the branch, take a seat, fill up the form and wait for your token to be called out.&lt;/p&gt;
+<p>Then you go inside the branch, take a seat, fill up the form and wait for your token to be called out.</p>
 
-&lt;p&gt;When your token is called out, you go to the respective counter, and follow the instructions of the staff. They’ll basically see your documents and ask your preferred method of foreclosing the loan. This process hardly takes 5 minutes.&lt;/p&gt;
+<p>When your token is called out, you go to the respective counter, and follow the instructions of the staff. They’ll basically see your documents and ask your preferred method of foreclosing the loan. This process hardly takes 5 minutes.</p>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If your EMI is coming up and it gets deducted from your bank account during this process, the amount will automatically be refunded to your bank account within a few days.&lt;/p&gt;
+<p><strong>Note:</strong> If your EMI is coming up and it gets deducted from your bank account during this process, the amount will automatically be refunded to your bank account within a few days.</p>
 
-&lt;p&gt;Anyway, once everything looks okay, they’ll give you an acknowledgement that looks like the following:&lt;/p&gt;
+<p>Anyway, once everything looks okay, they’ll give you an acknowledgement that looks like the following:</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/LwrihIa.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/LwrihIa.png" alt="" /></p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/euXsulr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/euXsulr.png" alt="" /></p>
 
-&lt;p&gt;Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:&lt;/p&gt;
+<p>Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Loan Foreclosure Letter&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Loan Foreclosure Letter</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3IH5TK3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/3IH5TK3.png" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;Form 35 - 2 copies&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Form 35 - 2 copies</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5NURJ7q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/5NURJ7q.png" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/c6kJSQ1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/c6kJSQ1.png" alt="" /></p>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; My address had a typo and I didn’t realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:&lt;/p&gt;
+<p><strong>Note:</strong> My address had a typo and I didn’t realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Visit a regular branch with an Address Proof and get your address changed&lt;/li&gt;
-  &lt;li&gt;Visit the loan department branch and collect the documents in person (I did this)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Visit a regular branch with an Address Proof and get your address changed</li>
+  <li>Visit the loan department branch and collect the documents in person (I did this)</li>
+</ul>
 
-&lt;p&gt;&lt;u&gt;&lt;b&gt;Please note that the validitiy of the NOC is 3 months from the date of issue. If you want another NOC, the cost is Rs. 500/-&lt;/b&gt;&lt;/u&gt;&lt;/p&gt;
+<p><u><b>Please note that the validitiy of the NOC is 3 months from the date of issue. If you want another NOC, the cost is Rs. 500/-</b></u></p>
 
-&lt;h2 id=&quot;hypothecation-removal&quot;&gt;Hypothecation Removal&lt;/h2&gt;
+<h2 id="hypothecation-removal">Hypothecation Removal</h2>
 
-&lt;p&gt;At this point, you should have received a confirmation message on your mobile that the loan has been foreclosed. You should also have the documents from the bank. Now, you’re all set to follow the Hypothecation Removal procedure.&lt;/p&gt;
+<p>At this point, you should have received a confirmation message on your mobile that the loan has been foreclosed. You should also have the documents from the bank. Now, you’re all set to follow the Hypothecation Removal procedure.</p>
 
-&lt;p&gt;My car was registered at the &lt;a href=&quot;https://goo.gl/maps/SiCcHXgGNom&quot;&gt;Koramangala RTO (KA01)&lt;/a&gt;. This RTO has upgraded to the new &lt;a href=&quot;https://parivahan.gov.in/parivahan/&quot;&gt;Vahan system&lt;/a&gt;.&lt;/p&gt;
+<p>My car was registered at the <a href="https://goo.gl/maps/SiCcHXgGNom">Koramangala RTO (KA01)</a>. This RTO has upgraded to the new <a href="https://parivahan.gov.in/parivahan/">Vahan system</a>.</p>
 
-&lt;p&gt;&lt;strong&gt;Note (Important):&lt;/strong&gt; In this sysytem, you need to generate an online application and pay the required amount BEFORE anything can happen at the RTO. There is a cash counter at the RTO but they don’t give a fuck there.&lt;/p&gt;
+<p><strong>Note (Important):</strong> In this sysytem, you need to generate an online application and pay the required amount BEFORE anything can happen at the RTO. There is a cash counter at the RTO but they don’t give a fuck there.</p>
 
-&lt;h3 id=&quot;generate-an-application-for-hypothecation-removal&quot;&gt;Generate an application for Hypothecation Removal&lt;/h3&gt;
+<h3 id="generate-an-application-for-hypothecation-removal">Generate an application for Hypothecation Removal</h3>
 
-&lt;p&gt;Please follow these steps:&lt;/p&gt;
+<p>Please follow these steps:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Visit &lt;a href=&quot;https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml&quot;&gt;this page&lt;/a&gt; and enter your vehicle number&lt;/li&gt;
-  &lt;li&gt;Select the option for Hypothecation Removal&lt;/li&gt;
-  &lt;li&gt;Enter the required details about your car (Chassis number etc), your mobile number and an OTP will be sent for you to validate&lt;/li&gt;
-  &lt;li&gt;Once everything looks good, you will be presented with a form to fill out. You’ll also need your insurance details.&lt;/li&gt;
-  &lt;li&gt;Fill out the form, make the payment (Rs. 200/-) and you’ll get an application receipt that looks like the following:&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Visit <a href="https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml">this page</a> and enter your vehicle number</li>
+  <li>Select the option for Hypothecation Removal</li>
+  <li>Enter the required details about your car (Chassis number etc), your mobile number and an OTP will be sent for you to validate</li>
+  <li>Once everything looks good, you will be presented with a form to fill out. You’ll also need your insurance details.</li>
+  <li>Fill out the form, make the payment (Rs. 200/-) and you’ll get an application receipt that looks like the following:</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5svcpQq.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/5svcpQq.png" alt="" /></p>
 
-&lt;p&gt;You’ll also get a confirmation on your mobile with the application number. Keep this number handy (I usually screenshot such messages) as you will need it later to check the status of your application online.&lt;/p&gt;
+<p>You’ll also get a confirmation on your mobile with the application number. Keep this number handy (I usually screenshot such messages) as you will need it later to check the status of your application online.</p>
 
-&lt;h3 id=&quot;gathering-documents-1&quot;&gt;Gathering Documents&lt;/h3&gt;
+<h3 id="gathering-documents-1">Gathering Documents</h3>
 
-&lt;p&gt;Here are the documents required before you visit the RTO:&lt;/p&gt;
+<p>Here are the documents required before you visit the RTO:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Application Receipt from the Vahan Portal&lt;/li&gt;
-  &lt;li&gt;Loan Foreclosure Letter (usually not required, but safe to carry)&lt;/li&gt;
-  &lt;li&gt;Bank NOC and Form 35&lt;/li&gt;
-  &lt;li&gt;Original RC&lt;/li&gt;
-  &lt;li&gt;Valid Insurance Copy (1 nos.)&lt;/li&gt;
-  &lt;li&gt;Valid PUC (Pollution Check) Copy (1 nos.)&lt;/li&gt;
-  &lt;li&gt;PAN Card Copy (1 nos., usually not required but safe to carry)&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Application Receipt from the Vahan Portal</li>
+  <li>Loan Foreclosure Letter (usually not required, but safe to carry)</li>
+  <li>Bank NOC and Form 35</li>
+  <li>Original RC</li>
+  <li>Valid Insurance Copy (1 nos.)</li>
+  <li>Valid PUC (Pollution Check) Copy (1 nos.)</li>
+  <li>PAN Card Copy (1 nos., usually not required but safe to carry)</li>
+</ul>
 
-&lt;p&gt;It’s a good idea to always carry some sort of ID proof every time, so I also carried my Aadhar Card.&lt;/p&gt;
+<p>It’s a good idea to always carry some sort of ID proof every time, so I also carried my Aadhar Card.</p>
 
-&lt;h3 id=&quot;visiting-the-rto&quot;&gt;Visiting the RTO&lt;/h3&gt;
+<h3 id="visiting-the-rto">Visiting the RTO</h3>
 
-&lt;p&gt;This is by far the most confusing part of the process. So follow it line by line and you shouldn’t have any issues. If you’re from a different state or even a different RTO in Bangalore, the process may slightly differ for you. Please do your own research.&lt;/p&gt;
+<p>This is by far the most confusing part of the process. So follow it line by line and you shouldn’t have any issues. If you’re from a different state or even a different RTO in Bangalore, the process may slightly differ for you. Please do your own research.</p>
 
-&lt;p&gt;&lt;strong&gt;The Koramangala RTO is on the second floor and you need to visit room 11 for this process.&lt;/strong&gt;&lt;/p&gt;
+<p><strong>The Koramangala RTO is on the second floor and you need to visit room 11 for this process.</strong></p>
 
-&lt;p&gt;Before going to the RTO, you need to do a few things. Find a stationery shop around the RTO and get the following things:&lt;/p&gt;
+<p>Before going to the RTO, you need to do a few things. Find a stationery shop around the RTO and get the following things:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;A file with a hole on the top left&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>A file with a hole on the top left</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kv2suwl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/kv2suwl.png" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;Thread&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Thread</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/0saesew.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/0saesew.jpg" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;Plastic cover&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Plastic cover</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/pY2m4f0.jpg" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;Postal Cover with Rs. 18/- worth of stamps already pasted on it&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Postal Cover with Rs. 18/- worth of stamps already pasted on it</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/QW8xvFv.jpg" alt="" /></p>
 
-&lt;h3 id=&quot;preparing-the-file-for-submission&quot;&gt;Preparing the file for submission&lt;/h3&gt;
+<h3 id="preparing-the-file-for-submission">Preparing the file for submission</h3>
 
-&lt;p&gt;You will use the items your purchased from the stationery shop to prepare the file for submission.&lt;/p&gt;
+<p>You will use the items your purchased from the stationery shop to prepare the file for submission.</p>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you’re at the Koramangala RTO, this is your guy. He helped me through the entire process - step by step. He’s also probably the only one there who doesn’t have an attitude problem. So, a huge thanks to him!&lt;/p&gt;
+<p><strong>Note:</strong> If you’re at the Koramangala RTO, this is your guy. He helped me through the entire process - step by step. He’s also probably the only one there who doesn’t have an attitude problem. So, a huge thanks to him!</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3n8DpE0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/3n8DpE0.png" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put &lt;strong&gt;Central Bangalore&lt;/strong&gt;, you may need to ask the concerned person in the RTO what to put there.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put <strong>Central Bangalore</strong>, you may need to ask the concerned person in the RTO what to put there.</li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/5U2hSdi.jpg" alt="" /></p>
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Put your original RC in the plastic cover&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Write your name, address, mobile number and car registration number on the postal cover&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>
+    <p>Put your original RC in the plastic cover</p>
+  </li>
+  <li>
+    <p>Write your name, address, mobile number and car registration number on the postal cover</p>
+  </li>
+</ul>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AtHFbRh.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/AtHFbRh.png" alt="" /></p>
 
-&lt;p&gt;Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):&lt;/p&gt;
+<p>Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):</p>
 
-&lt;ul&gt;
-  &lt;li&gt;Application Receipt&lt;/li&gt;
-  &lt;li&gt;NOC&lt;/li&gt;
-  &lt;li&gt;Form 35&lt;/li&gt;
-  &lt;li&gt;Insurance&lt;/li&gt;
-  &lt;li&gt;PUC&lt;/li&gt;
-  &lt;li&gt;RC Card Packet&lt;/li&gt;
-  &lt;li&gt;Postal Cover&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Application Receipt</li>
+  <li>NOC</li>
+  <li>Form 35</li>
+  <li>Insurance</li>
+  <li>PUC</li>
+  <li>RC Card Packet</li>
+  <li>Postal Cover</li>
+</ul>
 
-&lt;p&gt;…and tie them all together in the file using the thread. To pierce through them use the sharp end of the thread you bought.&lt;/p&gt;
+<p>…and tie them all together in the file using the thread. To pierce through them use the sharp end of the thread you bought.</p>
 
-&lt;h3 id=&quot;submission-of-file&quot;&gt;Submission of file&lt;/h3&gt;
+<h3 id="submission-of-file">Submission of file</h3>
 
-&lt;p&gt;Your file is ready. Get it reviewed by the concerned person - he will sign and date it and ask you to go to another counter for getting the acknowledgement.&lt;/p&gt;
+<p>Your file is ready. Get it reviewed by the concerned person - he will sign and date it and ask you to go to another counter for getting the acknowledgement.</p>
 
-&lt;p&gt;For Koramangala RTO, it’s the following lady.&lt;/p&gt;
+<p>For Koramangala RTO, it’s the following lady.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Modqkgz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/Modqkgz.png" alt="" /></p>
 
-&lt;p&gt;Give the file to her - she will check the file for any problems and if everything looks good, she’ll give you an acknowledgement that looks like the following:&lt;/p&gt;
+<p>Give the file to her - she will check the file for any problems and if everything looks good, she’ll give you an acknowledgement that looks like the following:</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/S18dWNr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/S18dWNr.png" alt="" /></p>
 
-&lt;p&gt;&lt;strong&gt;Keep this acknowledgement safely. Since your original RC has been submitted, this is the only proof.&lt;/strong&gt;&lt;/p&gt;
+<p><strong>Keep this acknowledgement safely. Since your original RC has been submitted, this is the only proof.</strong></p>
 
-&lt;p&gt;And you’re done!&lt;/p&gt;
+<p>And you’re done!</p>
 
-&lt;h3 id=&quot;tracking-application-progress&quot;&gt;Tracking application progress&lt;/h3&gt;
+<h3 id="tracking-application-progress">Tracking application progress</h3>
 
-&lt;p&gt;To track the progress of your application, you can bookmark &lt;a href=&quot;https://vahan.parivahan.gov.in/vahanservice/vahan/ui/appl_status/form_Know_Appl_Status.xhtml&quot;&gt;this link&lt;/a&gt;, enter the application number and track the progress.&lt;/p&gt;
+<p>To track the progress of your application, you can bookmark <a href="https://vahan.parivahan.gov.in/vahanservice/vahan/ui/appl_status/form_Know_Appl_Status.xhtml">this link</a>, enter the application number and track the progress.</p>
 
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FAMJ2dk.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="https://i.imgur.com/FAMJ2dk.png" alt="" /></p>
 
-&lt;p&gt;Once the status changes to &lt;strong&gt;Approved&lt;/strong&gt;, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.&lt;/p&gt;
+<p>Once the status changes to <strong>Approved</strong>, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.</p>
 
-&lt;p&gt;Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!&lt;/p&gt;</content><author><name></name></author><summary type="html">This post describes the process for hypothecation removal for a 4-wheeler. The process may be slightly different for a 2-wheeler.</summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+00:00</published><updated>2019-03-01T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/">&lt;p&gt;I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.&lt;/p&gt;
+<p>Hope this guide helps you in the Hypothecation Removal process. Share it with your friends!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I recently foreclosed my car loan and had to go through the Hypothecation Removal process.]]></summary></entry><entry><title type="html">Transfer your Indane gas connection to another state</title><link href="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/" rel="alternate" type="text/html" title="Transfer your Indane gas connection to another state" /><published>2019-03-01T00:00:00+00:00</published><updated>2019-03-01T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state</id><content type="html" xml:base="https://www.kunalnagar.in/blog/transfer-indane-gas-connection-another-state/"><![CDATA[<p>I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</p>
 
-&lt;h2 id=&quot;step-1-gathering-documents&quot;&gt;Step 1: Gathering documents&lt;/h2&gt;
+<h2 id="step-1-gathering-documents">Step 1: Gathering documents</h2>
 
-&lt;p&gt;I’m assuming you are registered with an Indane gas agency. Mine was &lt;a href=&quot;https://goo.gl/maps/7t2LnjqDFTN2&quot;&gt;Gajanana Enterprises Koramangala&lt;/a&gt;&lt;/p&gt;
+<p>I’m assuming you are registered with an Indane gas agency. Mine was <a href="https://goo.gl/maps/7t2LnjqDFTN2">Gajanana Enterprises Koramangala</a></p>
 
-&lt;p&gt;Here is a list of stuff you’ll need before you visit the agency:&lt;/p&gt;
+<p>Here is a list of stuff you’ll need before you visit the agency:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;Original documents of the connection&lt;/li&gt;
-  &lt;li&gt;Gas Regulator&lt;/li&gt;
-  &lt;li&gt;ID Proof (1 copy, carry original) - I carried my Aadhar card&lt;/li&gt;
-  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
-  &lt;li&gt;Gas cylinders&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>Original documents of the connection</li>
+  <li>Gas Regulator</li>
+  <li>ID Proof (1 copy, carry original) - I carried my Aadhar card</li>
+  <li>Passport size photo (1 nos.)</li>
+  <li>Gas cylinders</li>
+</ol>
 
-&lt;p&gt;The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was &lt;strong&gt;Rs. 3,050/-&lt;/strong&gt; as shown below. This is the amount you’ll get back after the transfer.&lt;/p&gt;
+<p>The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was <strong>Rs. 3,050/-</strong> as shown below. This is the amount you’ll get back after the transfer.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg" alt="" /></p>
 
-&lt;h2 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h2&gt;
+<h2 id="step-2-cylinders">Step 2: Cylinders</h2>
 
-&lt;p&gt;If you don’t own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:&lt;/p&gt;
+<p>If you don’t own a vehicle and cannot carry the cylinders, you can call the agency and ask them to arrange a pickup for Rs. 100/-. There are a couple of gotchas to this approach:</p>
 
-&lt;ul&gt;
-  &lt;li&gt;You need to visit the agency on the same day the cylinders are being picked up.&lt;/li&gt;
-  &lt;li&gt;The cylinders need to reach the agency BEFORE the transfer process can be started.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>You need to visit the agency on the same day the cylinders are being picked up.</li>
+  <li>The cylinders need to reach the agency BEFORE the transfer process can be started.</li>
+</ul>
 
-&lt;h2 id=&quot;step-3-visit-current-agency&quot;&gt;Step 3: Visit current agency&lt;/h2&gt;
+<h2 id="step-3-visit-current-agency">Step 3: Visit current agency</h2>
 
-&lt;p&gt;Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.&lt;/p&gt;
+<p>Once the cylinders are at the agency, you can ask any of the staff to start the transfer process.</p>
 
-&lt;p&gt;During the process, you’ll have to tell them the destination city and state.&lt;/p&gt;
+<p>During the process, you’ll have to tell them the destination city and state.</p>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Only city and state name is required. So for me, it would be &lt;em&gt;Jaipur Rajasthan&lt;/em&gt;. You can register with any agency in the destination city.&lt;/p&gt;
+<p><strong>Note:</strong> Only city and state name is required. So for me, it would be <em>Jaipur Rajasthan</em>. You can register with any agency in the destination city.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg" alt="" /></p>
 
-&lt;p&gt;The staff will put in a request for transfer. It usually takes a while for the request to sync to the &lt;strong&gt;Indane Central server&lt;/strong&gt;. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:&lt;/p&gt;
+<p>The staff will put in a request for transfer. It usually takes a while for the request to sync to the <strong>Indane Central server</strong>. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg" alt="" /></p>
 
-&lt;p&gt;&lt;strong&gt;Keep this document safely as you need to present it to the other agency where you’re transferring.&lt;/strong&gt;&lt;/p&gt;
+<p><strong>Keep this document safely as you need to present it to the other agency where you’re transferring.</strong></p>
 
-&lt;p&gt;The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency’s copy of the above document.&lt;/p&gt;
+<p>The staff will also give you your deposit amount. I got Rs. 3,050/- in cash and had to acknowledge that on the agency’s copy of the above document.</p>
 
-&lt;h2 id=&quot;step-4-visit-transferring-agency&quot;&gt;Step 4: Visit transferring agency&lt;/h2&gt;
+<h2 id="step-4-visit-transferring-agency">Step 4: Visit transferring agency</h2>
 
-&lt;p&gt;Once you have the Transfer document, you need to visit the transferring agency with the following details:&lt;/p&gt;
+<p>Once you have the Transfer document, you need to visit the transferring agency with the following details:</p>
 
-&lt;ol&gt;
-  &lt;li&gt;Transfer document&lt;/li&gt;
-  &lt;li&gt;ID Proof (1 copy, carry original)&lt;/li&gt;
-  &lt;li&gt;Adress Proof (1 copy, carry original)&lt;/li&gt;
-  &lt;li&gt;Passport size photo (1 nos.)&lt;/li&gt;
-&lt;/ol&gt;
+<ol>
+  <li>Transfer document</li>
+  <li>ID Proof (1 copy, carry original)</li>
+  <li>Adress Proof (1 copy, carry original)</li>
+  <li>Passport size photo (1 nos.)</li>
+</ol>
 
-&lt;p&gt;For me, the ID proof and the address proof are the same (Aadhar card), so I carried two copies of the Aadhar card.&lt;/p&gt;
+<p>For me, the ID proof and the address proof are the same (Aadhar card), so I carried two copies of the Aadhar card.</p>
 
-&lt;p&gt;Once you’re at the agency, you’ll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.&lt;/p&gt;
+<p>Once you’re at the agency, you’ll go through the entire process of the transfer request and yet again, the Indane Central Server will fuck up. This time, it took about 45 mins.</p>
 
-&lt;p&gt;Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.&lt;/p&gt;
+<p>Anyway, after the request is acknowledged, you should receive a confirmation on your registered mobile number. The staff will also print out a document for you and prepare the new connection papers.</p>
 
-&lt;p&gt;You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:&lt;/p&gt;
+<p>You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg" alt="" /></p>
 
-&lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry></feed>
+<p>And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection.]]></summary></entry></feed>
