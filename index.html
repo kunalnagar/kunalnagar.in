@@ -2,102 +2,66 @@
 layout: default
 ---
 
-<div class="page-home">
+<div class="page page-home">
   <section class="intro">
     <p>
-      <b>Hi, I'm Kunal.</b> I've been trying to write JavaScript responsibly
-      since 2013.
+      Hello! I'm Kunal. I help automate the software delivery pipeline as a
+      Senior Frontend Engineer at {% include components/link-external.html
+      href="https://circleci.com/" text="CircleCI" %}.
     </p>
+
     <p>
-      You can reach me via
-      <a
-        href="mailto:hireme@kunalnagar.in?subject=Hello!&body=Hey Kunal! How's it going?"
-        target="_blank"
-        rel="noopener noreferrer"
-        >email</a
-      >,
-      <a
-        href="https://www.linkedin.com/in/kunalnagar88/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >LinkedIn</a
-      >,
-      <a
-        href="https://twitter.com/_kunalnagar"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Twitter</a
-      >
-      or
-      <a
-        href="https://github.com/kunalnagar"
-        target="_blank"
-        rel="noopener noreferrer"
-        >GitHub</a
-      >.
+      I am intermittently lurking on {% include components/link-external.html
+      href="https://twitter.com/_kunalnagar" text="Twitter" %}. You may also
+      reach me via {% include components/link-external.html
+      href="mailto:me@kunalnagar.in?subject=Hello!&body=Hey Kunal! How's it
+      going?" text="email" %}.
     </p>
+
     <p>
-      <b>Resume:</b>
-      <a
-        href="{{ site.data.common.resume.pdf }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        >PDF</a
-      >
-      or
-      <a
-        href="{{ site.data.common.resume.txt }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        >PlainText</a
-      >
+      If you are looking to work with me, you can find my Resume in {% include
+      components/link-external.html
+      href="/assets/downloads/Resume-KunalNagar.pdf" text="PDF" %} or {% include
+      components/link-external.html
+      href="/assets/downloads/Resume-KunalNagar.txt" text="Text" %}.
     </p>
   </section>
-
-  <section>
-    <h4>Skills</h4>
-    <ul>
-      {% for skill in site.data.resume.skills %}
-      <li>{{ skill | join: ", " }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section class="work-experience">
-    <h4>Work Experience</h4>
-    <ul class="experiences">
-      {% for company in site.data.resume.experiences %}
-      <li class="company">
-        <div class="d--flex items-center company-summary">
-          <img src="{{ company.logo }}" />
-          <a
-            href="{{ company.website }}"
-            title="Visit {{ company.title }} website"
-            class="company-title"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{{ company.title }}</a
-          >
-          <p class="company-position">{{ company.position }}</p>
-          <p class="company-tenure">{{ company.tenure }}</p>
-        </div>
-        <div class="company-points">
-          <ul>
-            {% for point in company.points %}
-            <li>{{ point }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+  <section class="section blog-posts">
+    <h2>Blog posts</h2>
+    {% assign posts_limit = 7 %}
+    <ul class="blog-posts__list">
+      {% for post in site.posts limit: posts_limit %}
+      <li>
+        {% include components/link-internal.html href=post.url text=post.title
+        %}
+        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
       </li>
       {% endfor %}
     </ul>
-  </section>
-
-  <section class="education">
-    <h4>Education</h4>
     <p>
-      Masters of Engineering in Software Systems, BITS Pilani Dubai Campus
-      (2013)
+      {% assign posts_left = site.posts.size | minus: posts_limit %} {% assign
+      link_text=posts_left | append: ' more posts' %} I wrote {% include
+      components/link-internal.html href="/blog" text=link_text %}. They're also
+      available via an {% include components/link-external.html href="/feed.xml"
+      text="RSS feed" %}.
+    </p>
+  </section>
+  <section class="section open-source">
+    <h2>Open Source</h2>
+    <ul class="blog-posts__list">
+      {% for project in site.data.foss.projects limit: posts_limit %} {% if
+      project.popular %}
+      <li>
+        {% include components/link-internal.html href=project.link
+        text=project.description %}
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+    <p>
+      I built {% include components/link-internal.html href="/foss" text="a few
+      more projects." %}. They are also available on {% include
+      components/link-external.html href="https://github.com/kunalnagar"
+      text="GitHub" %}.
     </p>
   </section>
 </div>

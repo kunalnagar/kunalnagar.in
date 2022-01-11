@@ -1,3 +1,13 @@
+.section {
+  margin: 4rem 0;
+}
+
+.muted {
+  @include theme() {
+    color: theme-get('text-color-muted');
+  }
+}
+
 .row {
   display: flex;
   flex-direction: row;

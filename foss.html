@@ -3,61 +3,28 @@ layout: default
 title: Open Source
 ---
 
-<div class="page-foss">
+<div class="page page-foss">
   <p>
-    I build stuff and try to open-source most of it. For more, check out my
-    <a
-      class="link"
-      href="https://github.com/kunalnagar"
-      target="_blank"
-      rel="noopener noreferrer"
-      >GitHub</a
-    >
-    profile.
+    I build stuff and try to open-source most of it. For more, check out my {%
+    include components/link-external.html href="https://github.com/kunalnagar"
+    text="GitHub" %}.
   </p>
-  <h2>Popular</h2>
-  <ul>
-    {% for project in site.data.foss.projects %} {% if project.popular %}
-    <li>
-      <a class="link" href="{{ project.link }}" rel="noopener noreferrer"
-        >{{ project.title }}</a
-      >
-      <p class="description">{{ project.description }}</p>
-    </li>
-    {% endif %} {% endfor %}
-  </ul>
-  <h2>Other</h2>
-  <ul>
-    {% for project in site.data.foss.projects %} {% unless project.popular %}
-    <li>
-      <a
-        class="link"
-        href="{{ project.link }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        >{{ project.title }}</a
-      >
-      <p class="description">{{ project.description }}</p>
-    </li>
-    {% endunless %} {% endfor %}
-  </ul>
-  <h2>Experiments</h2>
-  <p>
-    I tinker around. When I see stuff on the internet that's challenging, I try
-    to re-create it.
-  </p>
-  <ul>
-    {% for tinker in site.data.foss.tinkers %}
-    <li>
-      <a
-        class="link"
-        href="{{ tinker.link }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        >{{ tinker.title }}</a
-      >
-      <p class="description">{{ tinker.description }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+  <section class="section">
+    <h2>Open Source</h2>
+    <ul class="list popular">
+      {% for project in site.data.foss.projects %}
+      <li>
+        {% include components/link-external.html href=project.link
+        text=project.title %}
+        <p class="description">{{ project.description }}</p>
+      </li>
+      {% endfor %} {% for tinker in site.data.foss.tinkers %}
+      <li>
+        {% include components/link-external.html href=tinker.link
+        text=tinker.title %}
+        <p class="description">{{ tinker.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>

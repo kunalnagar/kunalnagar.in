@@ -1,89 +1,52 @@
 .page-blog {
-  #search {
-    padding: 0.5rem 0.8rem;
-    margin-bottom: 10px;
-    width: calc(100% - 1.6rem);
-    border: 0;
-    background-color: transparent;
-    @include theme() {
-      color: theme-get('text-color');
-      border-bottom: 1px solid theme-get('hr-color');
-    }
-  }
-
-  ul {
-    padding: 0;
+  #posts_list {
+    margin-bottom: 2rem;
+    padding-left: 0;
+    list-style: none;
 
     li {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
+      justify-content: space-between;
+      margin-bottom: 1rem;
 
-      &.is-hidden {
-        display: none;
+      .post-description {
+        margin: 0;
       }
 
       .date {
-        font-size: 0.8rem;
         @include theme() {
           color: theme-get('text-color-muted');
         }
-        font-style: italic;
-        margin: 0;
-        flex: 1;
       }
 
-      .link {
-        @include theme() {
-          color: theme-get('text-color');
-        }
-        flex: 2;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 650px) {
-    ul {
-      li {
+      @media screen and (max-width: 650px) {
         display: block;
-        margin-bottom: 30px;
-
-        .date {
-          flex: none;
-        }
-
-        .link {
-          flex: none;
-        }
       }
     }
   }
 
   &-single {
-    ul {
-      li {
-        padding: 0.2rem 0;
-      }
+    h1 {
+      margin-bottom: 0.2rem;
     }
 
-    time {
-      font-size: 0.8rem;
-      @include theme() {
-        color: theme-get('text-color-muted');
-      }
-      font-style: italic;
-      margin: 0;
-      flex: 1;
+    h2,
+    h3,
+    h4 {
+      margin-top: 4rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
     }
 
     img {
       max-width: 100%;
-      max-height: 300px;
     }
+
+    // article {
+    //   margin-top: 3rem;
+    // }
   }
 }
