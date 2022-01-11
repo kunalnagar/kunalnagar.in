@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.22.0...v2.0.0) (2022-01-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Minimal version
+
+### Features
+
+* New Minimal Design ([#128](https://github.com/kunalnagar/kunalnagar.in/issues/128)) ([1e793f2](https://github.com/kunalnagar/kunalnagar.in/commit/1e793f27fd006e7f6ae6102ce598e6e726efa4df))
+
 ## [1.22.0](https://github.com/kunalnagar/kunalnagar.in/compare/v1.21.2...v1.22.0) (2022-01-08)
 
 
