@@ -20,6 +20,10 @@
             color: theme-get('text-color-muted');
           }
         }
+
+        @media screen and (max-width: 650px) {
+          display: block;
+        }
       }
     }
   }
