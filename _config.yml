@@ -4,11 +4,6 @@ description: Hi. I'm Kunal. Use JavaScript responsibly and help make the web fas
 baseurl: ''
 url: 'https://www.kunalnagar.in'
 
-# Ignore the projects data type until it's all sorted out
-collections:
-  projects:
-    output: false
-
 # Build settings
 markdown: kramdown
 permalink: pretty
