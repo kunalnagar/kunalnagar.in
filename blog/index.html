@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,137 +24,126 @@
     <main><nav>
   <ul>
     <li class="brand">
-      <a title="Home" href="/" class="d--flex"
-        ><svg
-          version="1.0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="35px"
-          height="35px"
-          viewBox="0 0 412.000000 416.000000"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g
-            transform="translate(0.000000,416.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
-          >
-            <path
-              d="M0 2070 l0 -2070 2060 0 2060 0 0 2070 0 2070 -2060 0 -2060 0 0
-     -2070z m1780 296 c0 -215 4 -377 9 -380 5 -4 18 5 28 18 10 13 168 184 351
-     380 l333 356 90 0 c51 0 89 -4 87 -9 -1 -5 -109 -126 -239 -268 -321 -351
-     -305 -332 -292 -351 5 -10 134 -181 287 -382 152 -201 276 -368 276 -372 0 -5
-     -41 -8 -90 -8 l-90 0 -251 336 c-138 184 -254 334 -257 332 -4 -2 -60 -58
-     -124 -124 l-118 -122 0 -211 0 -211 -85 0 -85 0 0 695 0 695 85 0 85 0 0 -374z"
-            />
-          </g></svg
-      ></a>
+      <a class="internal-link" href="/">Kunal Nagar</a>
+
     </li>
-    <li><a href="/foss">Open Source</a></li>
-    <li><a href="/blog">Blog</a></li>
   </ul>
-  <button type="button" id="btn_color_scheme" title="Toggle Color Scheme">
-    Dark
-  </button>
 </nav>
- <div class="page-blog">
+ <div class="page page-blog">
   <p>
-    I write about my life experiences, personal or professional. Looking for the
-    <a href="/feed.xml">Atom Feed</a>?
+    I write about my personal and professional life experiences. Looking for the
+    <a href="/feed.xml" target="_blank" rel="noopener noreferrer"
+  >RSS feed</a
+>
+?
   </p>
-  <input type="text" id="search" placeholder="Search" class="input" />
-  <ul id="posts_list">
-    
-    <li>
-      <p class="date">August 13, 2021</p>
-      <a class="link" href="/blog/send-github-dependabot-alerts-slack/">Send GitHub Dependabot Alerts to Slack</a>
-    </li>
-    
-    <li>
-      <p class="date">June 05, 2021</p>
-      <a class="link" href="/blog/react-instagram-post-embed/">InstagramPostEmbed - A React component to embed an Instagram Post</a>
-    </li>
-    
-    <li>
-      <p class="date">November 07, 2020</p>
-      <a class="link" href="/blog/express-health-check-middleware/">healthie - A health check middleware for Express.js</a>
-    </li>
-    
-    <li>
-      <p class="date">June 16, 2020</p>
-      <a class="link" href="/blog/covid-19-testing-toronto-experience/">My experience getting tested for COVID-19 in Toronto</a>
-    </li>
-    
-    <li>
-      <p class="date">December 14, 2019</p>
-      <a class="link" href="/blog/setup-docker-jekyll-dev-environment/">Setup a Jekyll development environment with Docker</a>
-    </li>
-    
-    <li>
-      <p class="date">July 31, 2019</p>
-      <a class="link" href="/blog/git-verified-commits/">Git Verified Commits</a>
-    </li>
-    
-    <li>
-      <p class="date">April 18, 2019</p>
-      <a class="link" href="/blog/highcharts-export-pdf/">Export multiple Highcharts graphs as PDF</a>
-    </li>
-    
-    <li>
-      <p class="date">April 08, 2019</p>
-      <a class="link" href="/blog/encryptor-encrypt-decrypt-files-passphrase/">encrypt0r - Encrypt and Decrypt files using a Passphrase</a>
-    </li>
-    
-    <li>
-      <p class="date">March 14, 2019</p>
-      <a class="link" href="/blog/car-hypothecation-removal-process/">Car Hypothecation Removal Process</a>
-    </li>
-    
-    <li>
-      <p class="date">March 01, 2019</p>
-      <a class="link" href="/blog/transfer-indane-gas-connection-another-state/">Transfer your Indane gas connection to another state</a>
-    </li>
-    
-    <li>
-      <p class="date">February 23, 2019</p>
-      <a class="link" href="/blog/customize-bash-prompt/">Customize your Bash Prompt</a>
-    </li>
-    
-    <li>
-      <p class="date">October 13, 2018</p>
-      <a class="link" href="/blog/block-ads-skype/">Block Ads in Skype</a>
-    </li>
-    
-    <li>
-      <p class="date">April 22, 2015</p>
-      <a class="link" href="/blog/custom-404-pro/">Custom 404 Pro</a>
-    </li>
-    
-    <li>
-      <p class="date">February 13, 2015</p>
-      <a class="link" href="/blog/setup-multiple-ssh-keys-mac/">Setup Multiple SSH Keys on a Mac</a>
-    </li>
-    
-  </ul>
+  <section class="section">
+    <h2>Blog posts</h2>
+    <ul id="posts_list">
+      
+      <li>
+        <a class="internal-link" href="/blog/send-github-dependabot-alerts-slack/">Send GitHub Dependabot Alerts to Slack</a>
+
+        <span class="date">Aug 13, 2021</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/react-instagram-post-embed/">InstagramPostEmbed - A React component to embed an Instagram Post</a>
+
+        <span class="date">Jun 05, 2021</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/express-health-check-middleware/">healthie - A health check middleware for Express.js</a>
+
+        <span class="date">Nov 07, 2020</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/covid-19-testing-toronto-experience/">My experience getting tested for COVID-19 in Toronto</a>
+
+        <span class="date">Jun 16, 2020</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/setup-docker-jekyll-dev-environment/">Setup a Jekyll development environment with Docker</a>
+
+        <span class="date">Dec 14, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/git-verified-commits/">Git Verified Commits</a>
+
+        <span class="date">Jul 31, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/highcharts-export-pdf/">Export multiple Highcharts graphs as PDF</a>
+
+        <span class="date">Apr 18, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/encryptor-encrypt-decrypt-files-passphrase/">encrypt0r - Encrypt and Decrypt files using a Passphrase</a>
+
+        <span class="date">Apr 08, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/car-hypothecation-removal-process/">Car Hypothecation Removal Process</a>
+
+        <span class="date">Mar 14, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/transfer-indane-gas-connection-another-state/">Transfer your Indane gas connection to another state</a>
+
+        <span class="date">Mar 01, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/customize-bash-prompt/">Customize your Bash Prompt</a>
+
+        <span class="date">Feb 23, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/block-ads-skype/">Block Ads in Skype</a>
+
+        <span class="date">Oct 13, 2018</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/custom-404-pro/">Custom 404 Pro</a>
+
+        <span class="date">Apr 22, 2015</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/setup-multiple-ssh-keys-mac/">Setup Multiple SSH Keys on a Mac</a>
+
+        <span class="date">Feb 13, 2015</span>
+      </li>
+      
+    </ul>
+  </section>
 </div>
 </main>
     <footer>
-  <div class="cookie-monster--shell">
-    <div class="cookie-monster--notice">
-      <h4>OM NOM NOM</h4>
-      <p>This site gots cookies 🍪</p>
-      <button type="button" class="cookie-monster--notice--button">
-        Oh-kay.
-      </button>
-    </div>
-    <button type="button" class="cookie-monster--button" title="Boop me.">
-      <img
-        src="/assets/img/cookie-monster.png"
-        alt="Cookie Monster"
-        class="cookie-monster--img"
-      />
-    </button>
-  </div>
-  <script src="/assets/js/main-bundle.js"></script>
+  <p class="muted">
+    This website is powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer"
+  >Jekyll</a
+>
+ and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer"
+  >GitHub
+    Pages</a
+>
+. It does not track you. <a href="https://github.com/kunalnagar/kunalnagar.in" target="_blank" rel="noopener noreferrer"
+  >Source code is
+    available on GitHub</a
+>
+.
+  </p>
 </footer>
 
   </body>

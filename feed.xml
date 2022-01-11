@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2022-01-08T04:26:02+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Send GitHub Dependabot Alerts to Slack</title><link href="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/" rel="alternate" type="text/html" title="Send GitHub Dependabot Alerts to Slack" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack</id><content type="html" xml:base="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png&quot; alt=&quot;marketing&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2022-01-11T03:47:56+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Send GitHub Dependabot Alerts to Slack</title><link href="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/" rel="alternate" type="text/html" title="Send GitHub Dependabot Alerts to Slack" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack</id><content type="html" xml:base="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/">&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png&quot; alt=&quot;marketing&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;kunalnagarcoaction-cve&quot;&gt;@kunalnagarco/action-cve&lt;/h2&gt;
 
@@ -177,41 +177,26 @@
 
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; aria-label=&quot;Me returning from the COVID-19 Assessment Centre&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; alt=&quot;Me returning from the COVID-19 Assessment Centre&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/qZHXscn.jpg&quot; alt=&quot;Me returning from the COVID-19 Assessment Centre&quot; /&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; aria-label=&quot;St. Michael's Cathedral Building&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; alt=&quot;St. Michael's Cathedral Building&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/ikb2kuf.jpg&quot; alt=&quot;St. Michael's Cathedral Building&quot; /&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; aria-label=&quot;St. Michael's Cathedral Inside&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; alt=&quot;St. Michael's Cathedral Inside&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/q4Xo4RH.jpg&quot; alt=&quot;St. Michael's Cathedral Inside&quot; /&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; aria-label=&quot;St. Michael's Cathedral Sign&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; alt=&quot;St. Michael's Cathedral Sign&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/3bshbtw.jpg&quot; alt=&quot;St. Michael's Cathedral Sign&quot; /&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;On reaching the centre, I got to know that their weekend timings are 12PM to 6PM, so I roamed around for a bit and had a lovely conversation with a 95 year old woman who still volunteers as a swim coach at University of Toronto.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; aria-label=&quot;Assessment Centre Hours&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; alt=&quot;Assessment Centre Hours&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/Rv9zP30.jpg&quot; alt=&quot;Assessment Centre Hours&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;at-the-assessment-centre&quot;&gt;At the Assessment Centre&lt;/h2&gt;
 
@@ -223,17 +208,11 @@
 
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; aria-label=&quot;At the counter giving information to Hospital staff&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; alt=&quot;At the counter giving information to Hospital staff&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/4rnJ0qn.jpg&quot; alt=&quot;At the counter giving information to Hospital staff&quot; /&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; aria-label=&quot;Printed name tag for recognition&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; alt=&quot;Printed name tag for recognition&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/tPleMnN.jpg&quot; alt=&quot;Printed name tag for recognition&quot; /&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
@@ -242,10 +221,7 @@
 
 &lt;p&gt;Next, I was told to go to Booth 2 where I was asked general questions about my travels and my contact with COVID-19 patients etc. I told them that I woke up with a light nausea that went away and I’m fine now. Based on the information, they highlighted some stuff on my COVID-19 information packet and asked me to wait until my next turn:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; aria-label=&quot;Booth 2&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; alt=&quot;Booth 2&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/iOSTwBG.jpg&quot; alt=&quot;Booth 2&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;booth-3&quot;&gt;Booth 3&lt;/h2&gt;
 
@@ -257,10 +233,7 @@
 
 &lt;p&gt;After the swab was done, I was told that the results would be available in about &lt;strong&gt;4 days&lt;/strong&gt; at &lt;a href=&quot;https://covid-19.ontario.ca/&quot;&gt;covid-19.ontario.ca&lt;/a&gt;. Here is a screen-grab of my results:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; aria-label=&quot;COVID-19 Test Results&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; alt=&quot;COVID-19 Test Results&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/CSaOzIk.jpg&quot; alt=&quot;COVID-19 Test Results&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;covid-19-information-packet&quot;&gt;COVID-19 Information Packet&lt;/h2&gt;
 
@@ -268,33 +241,21 @@
 
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 1&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; alt=&quot;COVID-19 Information Packet Page 1&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/0UoUXsS.jpg&quot; alt=&quot;COVID-19 Information Packet Page 1&quot; /&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 2&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; alt=&quot;COVID-19 Information Packet Page 2&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/OJr6QLD.jpg&quot; alt=&quot;COVID-19 Information Packet Page 2&quot; /&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 3&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; alt=&quot;COVID-19 Information Packet Page 3&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/x6dmUYf.jpg&quot; alt=&quot;COVID-19 Information Packet Page 3&quot; /&gt;
 
   &lt;/div&gt;
   &lt;div class=&quot;column&quot;&gt;
-    &lt;!-- prettier-ignore --&gt;
-&lt;a href=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; aria-label=&quot;COVID-19 Information Packet Page 4&quot; data-lightbox=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; alt=&quot;COVID-19 Information Packet Page 4&quot; /&gt;
-&lt;/a&gt;
+    &lt;img src=&quot;/assets/img/blog/covid-19-testing-toronto-experience/yVjIQ3q.jpg&quot; alt=&quot;COVID-19 Information Packet Page 4&quot; /&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;
@@ -317,10 +278,7 @@
 
 &lt;p&gt;Let’s start off with the fact that you have the code for a Jekyll site on your computer. It could be yours or anyone else’s for that matter.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/oiKnu70.png&quot; aria-label=&quot;Screenshot showing cloned repository in VSCode&quot; data-lightbox=&quot;https://i.imgur.com/oiKnu70.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/oiKnu70.png&quot; alt=&quot;Screenshot showing cloned repository in VSCode&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/oiKnu70.png&quot; alt=&quot;Screenshot showing cloned repository in VSCode&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With Docker, we can setup a development environment to run this Jekyll site so we don’t have to install unnecessary dependencies on our computer.&lt;/p&gt;
 
@@ -414,10 +372,7 @@ docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n
 
 &lt;p&gt;Currently, this site is built on &lt;a href=&quot;https://travis-ci.com/kunalnagar/kunalnagar.in&quot;&gt;Travis&lt;/a&gt; with a different configuration than what I have on Docker. Now that I have a development environment set up, I’d like to deploy the same using Travis.&lt;/p&gt;</content><author><name></name></author><summary type="html">Most recently, I’ve been converting all my development environments to Docker. The primary reason for doing this stemmed from the frustration of installing multiple dependencies on my Mac and trying to keep them up-to-date.</summary></entry><entry><title type="html">Git Verified Commits</title><link href="https://www.kunalnagar.in/blog/git-verified-commits/" rel="alternate" type="text/html" title="Git Verified Commits" /><published>2019-07-31T00:00:00+00:00</published><updated>2019-07-31T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/git-verified-commits</id><content type="html" xml:base="https://www.kunalnagar.in/blog/git-verified-commits/">&lt;p&gt;Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/2ohqgII.png&quot; aria-label=&quot;Screenshot showing a verified badge next to commits on GitHub&quot; data-lightbox=&quot;https://i.imgur.com/2ohqgII.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/2ohqgII.png&quot; alt=&quot;Screenshot showing a verified badge next to commits on GitHub&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/2ohqgII.png&quot; alt=&quot;Screenshot showing a verified badge next to commits on GitHub&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;add-a-gpg-key-to-your-account&quot;&gt;Add a GPG key to your account&lt;/h2&gt;
 
@@ -427,10 +382,7 @@ docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n
 
 &lt;p&gt;GitHub uses &lt;a href=&quot;https://www.openpgp.org/&quot;&gt;OpenPGP&lt;/a&gt; libraries to confirm that your locally signed commits and tags are cryptographically verifiable against a public key that you have added to your GitHub account.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/FvSL0aC.png&quot; aria-label=&quot;Screenshot showing GPG keys section in GitHub settings&quot; data-lightbox=&quot;https://i.imgur.com/FvSL0aC.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/FvSL0aC.png&quot; alt=&quot;Screenshot showing GPG keys section in GitHub settings&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FvSL0aC.png&quot; alt=&quot;Screenshot showing GPG keys section in GitHub settings&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tell-git-to-use-your-gpg-key&quot;&gt;Tell Git to use your GPG key&lt;/h2&gt;
 
@@ -471,10 +423,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;By default, Highcharts has exporting functionality built in to the hamburger menu available on the top right of every graph. Of course, you need the &lt;a href=&quot;https://www.highcharts.com/docs/export-module/export-module-overview&quot;&gt;exporting module&lt;/a&gt; to be included for that to show up.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/D8hmB7I.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/D8hmB7I.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/D8hmB7I.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/D8hmB7I.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;While it works pretty well out of the box, the problem is that you can only download one graph at a time. What if you need to add multiple graphs (like a dashboard) to a PDF?&lt;/p&gt;
 
@@ -603,10 +552,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;h2 id=&quot;screenshot&quot;&gt;Screenshot&lt;/h2&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/WQXyqsj.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/WQXyqsj.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WQXyqsj.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
 
@@ -660,10 +606,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
   &lt;li&gt;If you’re going on a Saturday, pack a bag and some lunch, and possibly dinner as well&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/sdMdH1v.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;gathering-documents&quot;&gt;Gathering documents&lt;/h3&gt;
 
@@ -695,15 +638,9 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;Anyway, once everything looks okay, they’ll give you an acknowledgement that looks like the following:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/LwrihIa.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/LwrihIa.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/LwrihIa.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/LwrihIa.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/euXsulr.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/euXsulr.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/euXsulr.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/euXsulr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Also, the following documents will be dispatched to the address on your loan account. You will also get regular updates on your mobile:&lt;/p&gt;
 
@@ -711,28 +648,19 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
   &lt;li&gt;Loan Foreclosure Letter&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/3IH5TK3.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/3IH5TK3.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/3IH5TK3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3IH5TK3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Form 35 - 2 copies&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/5NURJ7q.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/5NURJ7q.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/5NURJ7q.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5NURJ7q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;HDFC Bank NOC - 2 copies (one for RTO, one for your insurance company)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/c6kJSQ1.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/c6kJSQ1.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/c6kJSQ1.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/c6kJSQ1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; My address had a typo and I didn’t realize it until I got a message that my documents have been returned to the bank. In such cases, you have two options:&lt;/p&gt;
 
@@ -763,10 +691,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
   &lt;li&gt;Fill out the form, make the payment (Rs. 200/-) and you’ll get an application receipt that looks like the following:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/5svcpQq.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/5svcpQq.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/5svcpQq.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5svcpQq.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You’ll also get a confirmation on your mobile with the application number. Keep this number handy (I usually screenshot such messages) as you will need it later to check the status of your application online.&lt;/p&gt;
 
@@ -798,37 +723,25 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
   &lt;li&gt;A file with a hole on the top left&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/kv2suwl.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/kv2suwl.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/kv2suwl.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/kv2suwl.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Thread&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/0saesew.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/0saesew.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/0saesew.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/0saesew.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Plastic cover&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/pY2m4f0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Postal Cover with Rs. 18/- worth of stamps already pasted on it&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/QW8xvFv.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;preparing-the-file-for-submission&quot;&gt;Preparing the file for submission&lt;/h3&gt;
 
@@ -836,19 +749,13 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you’re at the Koramangala RTO, this is your guy. He helped me through the entire process - step by step. He’s also probably the only one there who doesn’t have an attitude problem. So, a huge thanks to him!&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/3n8DpE0.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/3n8DpE0.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/3n8DpE0.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/3n8DpE0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;First, fill up the Form 35 copies with the RTO name and the dates as shown below. For me, I was asked to put &lt;strong&gt;Central Bangalore&lt;/strong&gt;, you may need to ask the concerned person in the RTO what to put there.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/5U2hSdi.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -859,10 +766,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/AtHFbRh.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/AtHFbRh.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/AtHFbRh.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AtHFbRh.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you have all of these documents, you can now prepare the file. Put them in the following order (confirm first with the concerned person):&lt;/p&gt;
 
@@ -884,17 +788,11 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;For Koramangala RTO, it’s the following lady.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/Modqkgz.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/Modqkgz.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/Modqkgz.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Modqkgz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Give the file to her - she will check the file for any problems and if everything looks good, she’ll give you an acknowledgement that looks like the following:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/S18dWNr.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/S18dWNr.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/S18dWNr.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/S18dWNr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keep this acknowledgement safely. Since your original RC has been submitted, this is the only proof.&lt;/strong&gt;&lt;/p&gt;
 
@@ -904,10 +802,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;To track the progress of your application, you can bookmark &lt;a href=&quot;https://vahan.parivahan.gov.in/vahanservice/vahan/ui/appl_status/form_Know_Appl_Status.xhtml&quot;&gt;this link&lt;/a&gt;, enter the application number and track the progress.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;https://i.imgur.com/FAMJ2dk.png&quot; aria-label=&quot;&quot; data-lightbox=&quot;https://i.imgur.com/FAMJ2dk.png&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;https://i.imgur.com/FAMJ2dk.png&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/FAMJ2dk.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once the status changes to &lt;strong&gt;Approved&lt;/strong&gt;, I would recommend visiting the RTO, giving them the acknowledgement and collecting the RC. Or you can wait for the Speed Post to arrive at the address you mentioned on the Postal Cover.&lt;/p&gt;
 
@@ -929,10 +824,7 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;The original documents usually contain the deposit amount for two cylinders that you paid for at the time of getting a new connection. Mine was &lt;strong&gt;Rs. 3,050/-&lt;/strong&gt; as shown below. This is the amount you’ll get back after the transfer.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/qdD7fha.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-2-cylinders&quot;&gt;Step 2: Cylinders&lt;/h2&gt;
 
@@ -951,17 +843,11 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Only city and state name is required. So for me, it would be &lt;em&gt;Jaipur Rajasthan&lt;/em&gt;. You can register with any agency in the destination city.&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/Y3PfQC6.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The staff will put in a request for transfer. It usually takes a while for the request to sync to the &lt;strong&gt;Indane Central server&lt;/strong&gt;. For me, it took about 15-20 mins. Once the request is acknowledged, you will get an SMS on the registered mobile number that your connection has been transferred OUT of the current agency. The staff will also print out a document for you that looks like the following:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/LcFYHf8.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Keep this document safely as you need to present it to the other agency where you’re transferring.&lt;/strong&gt;&lt;/p&gt;
 
@@ -986,9 +872,6 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 &lt;span class=&quot;o&quot;&gt;[&lt;/
 
 &lt;p&gt;You will also have to pay the deposit you got from the previous agency here along with other charges. This includes booking of two cylinders, paying for regulator etc:&lt;/p&gt;
 
-&lt;!-- prettier-ignore --&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; aria-label=&quot;&quot; data-lightbox=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; class=&quot;lightbox-img&quot;&gt;
-  &lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently moved from Bangalore to Jaipur and had to transfer my gas connection. This post outlines the process of transferring an Indane gas connection from one state to another.</summary></entry></feed>

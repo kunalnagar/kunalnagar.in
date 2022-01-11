@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,180 +24,121 @@
     <main><nav>
   <ul>
     <li class="brand">
-      <a title="Home" href="/" class="d--flex"
-        ><svg
-          version="1.0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="35px"
-          height="35px"
-          viewBox="0 0 412.000000 416.000000"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g
-            transform="translate(0.000000,416.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
-          >
-            <path
-              d="M0 2070 l0 -2070 2060 0 2060 0 0 2070 0 2070 -2060 0 -2060 0 0
-     -2070z m1780 296 c0 -215 4 -377 9 -380 5 -4 18 5 28 18 10 13 168 184 351
-     380 l333 356 90 0 c51 0 89 -4 87 -9 -1 -5 -109 -126 -239 -268 -321 -351
-     -305 -332 -292 -351 5 -10 134 -181 287 -382 152 -201 276 -368 276 -372 0 -5
-     -41 -8 -90 -8 l-90 0 -251 336 c-138 184 -254 334 -257 332 -4 -2 -60 -58
-     -124 -124 l-118 -122 0 -211 0 -211 -85 0 -85 0 0 695 0 695 85 0 85 0 0 -374z"
-            />
-          </g></svg
-      ></a>
+      <a class="internal-link" href="/">Kunal Nagar</a>
+
     </li>
-    <li><a href="/foss">Open Source</a></li>
-    <li><a href="/blog">Blog</a></li>
   </ul>
-  <button type="button" id="btn_color_scheme" title="Toggle Color Scheme">
-    Dark
-  </button>
 </nav>
- <div class="page-foss">
+ <div class="page page-foss">
   <p>
-    I build stuff and try to open-source most of it. For more, check out my
-    <a
-      class="link"
-      href="https://github.com/kunalnagar"
-      target="_blank"
-      rel="noopener noreferrer"
-      >GitHub</a
-    >
-    profile.
+    I build stuff and try to open-source most of it. For more, check out my <a href="https://github.com/kunalnagar" target="_blank" rel="noopener noreferrer"
+  >GitHub</a
+>
+.
   </p>
-  <h2>Popular</h2>
-  <ul>
+  <section class="section">
+    <h2>Open Source</h2>
+    <ul class="list popular">
+      
+      <li>
+        <a href="https://github.com/kunalnagar/expressyo-imdb-scraper" target="_blank" rel="noopener noreferrer"
+  >IMDb API</a
+>
+
+        <p class="description">An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists</p>
+      </li>
+      
+      <li>
+        <a href="/blog/encryptor-encrypt-decrypt-files-passphrase/" target="_blank" rel="noopener noreferrer"
+  >encrypt0r</a
+>
+
+        <p class="description">An Electron app to encrypt/decrypt your files by setting a passphrase</p>
+      </li>
+      
+      <li>
+        <a href="/blog/custom-404-pro/" target="_blank" rel="noopener noreferrer"
+  >Custom 404 Pro</a
+>
+
+        <p class="description">A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page or URL</p>
+      </li>
+      
+      <li>
+        <a href="https://kunalnagar.github.io/jquery.peekABar/" target="_blank" rel="noopener noreferrer"
+  >jquery.peekABar</a
+>
+
+        <p class="description">A jQuery notification bar plugin with multiple customization options</p>
+      </li>
+      
+      <li>
+        <a href="/blog/express-health-check-middleware/" target="_blank" rel="noopener noreferrer"
+  >healthie</a
+>
+
+        <p class="description">A simple middleware that adds a health check endpoint to your Express.js applications</p>
+      </li>
+      
+      <li>
+        <a href="https://github.com/kunalnagarco/react-component-library" target="_blank" rel="noopener noreferrer"
+  >react-component-library</a
+>
+
+        <p class="description">A library of reusable React components</p>
+      </li>
+      
+      <li>
+        <a href="https://github.com/kunalnagarco/action-cve" target="_blank" rel="noopener noreferrer"
+  >action-cve</a
+>
+
+        <p class="description">A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty</p>
+      </li>
+      
+      <li>
+        <a href="https://github.com/kunalnagarco/action-semantic-pr" target="_blank" rel="noopener noreferrer"
+  >action-semantic-pr</a
+>
+
+        <p class="description">A GitHub action to validate pull request titles according to the Conventional Commit specification</p>
+      </li>
+      
+      <li>
+        <a href="https://github.com/kunalnagarco/react-hooks" target="_blank" rel="noopener noreferrer"
+  >react-hooks</a
+>
+
+        <p class="description">A list of commonly-used React hooks</p>
+      </li>
        
-    <li>
-      <a class="link" href="/blog/encryptor-encrypt-decrypt-files-passphrase/" rel="noopener noreferrer"
-        >encrypt0r</a
-      >
-      <p class="description">An Electron app to encrypt/decrypt your files by setting a passphrase</p>
-    </li>
+      <li>
+        <a href="/blog/highcharts-export-pdf/" target="_blank" rel="noopener noreferrer"
+  >HighCharts to PDF</a
+>
+
+        <p class="description">A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF</p>
+      </li>
       
-    <li>
-      <a class="link" href="/blog/custom-404-pro/" rel="noopener noreferrer"
-        >Custom 404 Pro</a
-      >
-      <p class="description">A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page or URL</p>
-    </li>
-        
-    <li>
-      <a class="link" href="/blog/express-health-check-middleware/" rel="noopener noreferrer"
-        >healthie</a
-      >
-      <p class="description">A simple middleware that adds a health check endpoint to your Express.js applications</p>
-    </li>
-            
-    <li>
-      <a class="link" href="https://github.com/kunalnagarco/react-hooks" rel="noopener noreferrer"
-        >react-hooks</a
-      >
-      <p class="description">A list of commonly-used React hooks</p>
-    </li>
-     
-  </ul>
-  <h2>Other</h2>
-  <ul>
-     
-    <li>
-      <a
-        class="link"
-        href="https://github.com/kunalnagar/expressyo-imdb-scraper"
-        target="_blank"
-        rel="noopener noreferrer"
-        >IMDb API</a
-      >
-      <p class="description">An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists</p>
-    </li>
-          
-    <li>
-      <a
-        class="link"
-        href="https://kunalnagar.github.io/jquery.peekABar/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >jquery.peekABar</a
-      >
-      <p class="description">A jQuery notification bar plugin with multiple customization options</p>
-    </li>
-        
-    <li>
-      <a
-        class="link"
-        href="https://github.com/kunalnagarco/react-component-library"
-        target="_blank"
-        rel="noopener noreferrer"
-        >react-component-library</a
-      >
-      <p class="description">A library of reusable React components</p>
-    </li>
-      
-    <li>
-      <a
-        class="link"
-        href="https://github.com/kunalnagarco/action-cve"
-        target="_blank"
-        rel="noopener noreferrer"
-        >action-cve</a
-      >
-      <p class="description">A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty</p>
-    </li>
-      
-    <li>
-      <a
-        class="link"
-        href="https://github.com/kunalnagarco/action-semantic-pr"
-        target="_blank"
-        rel="noopener noreferrer"
-        >action-semantic-pr</a
-      >
-      <p class="description">A GitHub action to validate pull request titles according to the Conventional Commit specification</p>
-    </li>
-       
-  </ul>
-  <h2>Experiments</h2>
-  <p>
-    I tinker around. When I see stuff on the internet that's challenging, I try
-    to re-create it.
-  </p>
-  <ul>
-    
-    <li>
-      <a
-        class="link"
-        href="/blog/highcharts-export-pdf/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >HighCharts to PDF</a
-      >
-      <p class="description">A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF</p>
-    </li>
-    
-  </ul>
+    </ul>
+  </section>
 </div>
 </main>
     <footer>
-  <div class="cookie-monster--shell">
-    <div class="cookie-monster--notice">
-      <h4>OM NOM NOM</h4>
-      <p>This site gots cookies 🍪</p>
-      <button type="button" class="cookie-monster--notice--button">
-        Oh-kay.
-      </button>
-    </div>
-    <button type="button" class="cookie-monster--button" title="Boop me.">
-      <img
-        src="/assets/img/cookie-monster.png"
-        alt="Cookie Monster"
-        class="cookie-monster--img"
-      />
-    </button>
-  </div>
-  <script src="/assets/js/main-bundle.js"></script>
+  <p class="muted">
+    This website is powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer"
+  >Jekyll</a
+>
+ and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer"
+  >GitHub
+    Pages</a
+>
+. It does not track you. <a href="https://github.com/kunalnagar/kunalnagar.in" target="_blank" rel="noopener noreferrer"
+  >Source code is
+    available on GitHub</a
+>
+.
+  </p>
 </footer>
 
   </body>

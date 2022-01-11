@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,58 +18,26 @@
     <meta name="robots" content="index, follow" />
     <link rel="preload" as="style" href="/assets/css/highlighting.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    ></script>
   </head>
   <body>
     <main>
       <nav>
   <ul>
     <li class="brand">
-      <a title="Home" href="/" class="d--flex"
-        ><svg
-          version="1.0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="35px"
-          height="35px"
-          viewBox="0 0 412.000000 416.000000"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g
-            transform="translate(0.000000,416.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
-          >
-            <path
-              d="M0 2070 l0 -2070 2060 0 2060 0 0 2070 0 2070 -2060 0 -2060 0 0
-     -2070z m1780 296 c0 -215 4 -377 9 -380 5 -4 18 5 28 18 10 13 168 184 351
-     380 l333 356 90 0 c51 0 89 -4 87 -9 -1 -5 -109 -126 -239 -268 -321 -351
-     -305 -332 -292 -351 5 -10 134 -181 287 -382 152 -201 276 -368 276 -372 0 -5
-     -41 -8 -90 -8 l-90 0 -251 336 c-138 184 -254 334 -257 332 -4 -2 -60 -58
-     -124 -124 l-118 -122 0 -211 0 -211 -85 0 -85 0 0 695 0 695 85 0 85 0 0 -374z"
-            />
-          </g></svg
-      ></a>
+      <a class="internal-link" href="/">Kunal Nagar</a>
+
     </li>
-    <li><a href="/foss">Open Source</a></li>
-    <li><a href="/blog">Blog</a></li>
   </ul>
-  <button type="button" id="btn_color_scheme" title="Toggle Color Scheme">
-    Dark
-  </button>
 </nav>
 
       <div class="page-blog-single">
-        <h1>Git Verified Commits</h1>
-        <time>July 31, 2019</time>
+        <section class="section">
+          <h1>Git Verified Commits</h1>
+          <time class="muted">July 31, 2019</time>
+        </section>
         <article><p>Verified or Signed commits act as a source of trust in open-source development. It’s a way for people to know that the code came from a trusted source. Popular git hosting providers like GitHub, Bitbucket and GitLab have signed commits built into their interface so people can easily verify the authenticity of the repo. Here’s an example of how it looks on GitHub:</p>
 
-<!-- prettier-ignore -->
-<p><a href="https://i.imgur.com/2ohqgII.png" aria-label="Screenshot showing a verified badge next to commits on GitHub" data-lightbox="https://i.imgur.com/2ohqgII.png" class="lightbox-img">
-  <img src="https://i.imgur.com/2ohqgII.png" alt="Screenshot showing a verified badge next to commits on GitHub" />
-</a></p>
+<p><img src="https://i.imgur.com/2ohqgII.png" alt="Screenshot showing a verified badge next to commits on GitHub" /></p>
 
 <h2 id="add-a-gpg-key-to-your-account">Add a GPG key to your account</h2>
 
@@ -79,10 +47,7 @@
 
 <p>GitHub uses <a href="https://www.openpgp.org/">OpenPGP</a> libraries to confirm that your locally signed commits and tags are cryptographically verifiable against a public key that you have added to your GitHub account.</p>
 
-<!-- prettier-ignore -->
-<p><a href="https://i.imgur.com/FvSL0aC.png" aria-label="Screenshot showing GPG keys section in GitHub settings" data-lightbox="https://i.imgur.com/FvSL0aC.png" class="lightbox-img">
-  <img src="https://i.imgur.com/FvSL0aC.png" alt="Screenshot showing GPG keys section in GitHub settings" />
-</a></p>
+<p><img src="https://i.imgur.com/FvSL0aC.png" alt="Screenshot showing GPG keys section in GitHub settings" /></p>
 
 <h2 id="tell-git-to-use-your-gpg-key">Tell Git to use your GPG key</h2>
 
@@ -120,35 +85,21 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 <span class="o">[</span>E] <span class
       </div>
     </main>
     <footer>
-  <div class="cookie-monster--shell">
-    <div class="cookie-monster--notice">
-      <h4>OM NOM NOM</h4>
-      <p>This site gots cookies 🍪</p>
-      <button type="button" class="cookie-monster--notice--button">
-        Oh-kay.
-      </button>
-    </div>
-    <button type="button" class="cookie-monster--button" title="Boop me.">
-      <img
-        src="/assets/img/cookie-monster.png"
-        alt="Cookie Monster"
-        class="cookie-monster--img"
-      />
-    </button>
-  </div>
-  <script src="/assets/js/main-bundle.js"></script>
+  <p class="muted">
+    This website is powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer"
+  >Jekyll</a
+>
+ and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer"
+  >GitHub
+    Pages</a
+>
+. It does not track you. <a href="https://github.com/kunalnagar/kunalnagar.in" target="_blank" rel="noopener noreferrer"
+  >Source code is
+    available on GitHub</a
+>
+.
+  </p>
 </footer>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"
-      async
-      defer
-    ></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,247 +24,151 @@
     <main><nav>
   <ul>
     <li class="brand">
-      <a title="Home" href="/" class="d--flex"
-        ><svg
-          version="1.0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="35px"
-          height="35px"
-          viewBox="0 0 412.000000 416.000000"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g
-            transform="translate(0.000000,416.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
-          >
-            <path
-              d="M0 2070 l0 -2070 2060 0 2060 0 0 2070 0 2070 -2060 0 -2060 0 0
-     -2070z m1780 296 c0 -215 4 -377 9 -380 5 -4 18 5 28 18 10 13 168 184 351
-     380 l333 356 90 0 c51 0 89 -4 87 -9 -1 -5 -109 -126 -239 -268 -321 -351
-     -305 -332 -292 -351 5 -10 134 -181 287 -382 152 -201 276 -368 276 -372 0 -5
-     -41 -8 -90 -8 l-90 0 -251 336 c-138 184 -254 334 -257 332 -4 -2 -60 -58
-     -124 -124 l-118 -122 0 -211 0 -211 -85 0 -85 0 0 695 0 695 85 0 85 0 0 -374z"
-            />
-          </g></svg
-      ></a>
+      <a class="internal-link" href="/">Kunal Nagar</a>
+
     </li>
-    <li><a href="/foss">Open Source</a></li>
-    <li><a href="/blog">Blog</a></li>
   </ul>
-  <button type="button" id="btn_color_scheme" title="Toggle Color Scheme">
-    Dark
-  </button>
 </nav>
- <div class="page-home">
+ <div class="page page-home">
   <section class="intro">
     <p>
-      <b>Hi, I'm Kunal.</b> I've been trying to write JavaScript responsibly
-      since 2013.
+      Hello! I'm Kunal. I help automate the software delivery pipeline as a
+      Senior Frontend Engineer at <a href="https://circleci.com/" target="_blank" rel="noopener noreferrer"
+  >CircleCI</a
+>
+.
     </p>
+
     <p>
-      You can reach me via
-      <a
-        href="mailto:hireme@kunalnagar.in?subject=Hello!&body=Hey Kunal! How's it going?"
-        target="_blank"
-        rel="noopener noreferrer"
-        >email</a
-      >,
-      <a
-        href="https://www.linkedin.com/in/kunalnagar88/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >LinkedIn</a
-      >,
-      <a
-        href="https://twitter.com/_kunalnagar"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Twitter</a
-      >
-      or
-      <a
-        href="https://github.com/kunalnagar"
-        target="_blank"
-        rel="noopener noreferrer"
-        >GitHub</a
-      >.
+      I am intermittently lurking on <a href="https://twitter.com/_kunalnagar" target="_blank" rel="noopener noreferrer"
+  >Twitter</a
+>
+. You may also
+      reach me via <a href="mailto:me@kunalnagar.in?subject=Hello!&body=Hey Kunal! How's it
+      going?" target="_blank" rel="noopener noreferrer"
+  >email</a
+>
+.
     </p>
+
     <p>
-      <b>Resume:</b>
-      <a
-        href="/assets/downloads/Resume-KunalNagar.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        >PDF</a
-      >
-      or
-      <a
-        href="/assets/downloads/Resume-KunalNagar.txt"
-        target="_blank"
-        rel="noopener noreferrer"
-        >PlainText</a
-      >
+      If you are looking to work with me, you can find my Resume in <a href="/assets/downloads/Resume-KunalNagar.pdf" target="_blank" rel="noopener noreferrer"
+  >PDF</a
+>
+ or <a href="/assets/downloads/Resume-KunalNagar.txt" target="_blank" rel="noopener noreferrer"
+  >Text</a
+>
+.
     </p>
   </section>
+  <section class="section blog-posts">
+    <h2>Blog posts</h2>
+    
+    <ul class="blog-posts__list">
+      
+      <li>
+        <a class="internal-link" href="/blog/send-github-dependabot-alerts-slack/">Send GitHub Dependabot Alerts to Slack</a>
 
-  <section>
-    <h4>Skills</h4>
-    <ul>
+        <span class="date">Aug 13, 2021</span>
+      </li>
       
-      <li>React, TypeScript, Webpack, Ligthouse CI, Jest, Mocha, Chai</li>
-      
-      <li>Node.js, Loopback, Express.js, PHP, WordPress</li>
-      
-      <li>Docker, CircleCI, GitHub Actions, Travis CI</li>
-      
-      <li>Agile, Scrum, Jira, Pivotal Tracker, Trello</li>
-      
-    </ul>
-  </section>
+      <li>
+        <a class="internal-link" href="/blog/react-instagram-post-embed/">InstagramPostEmbed - A React component to embed an Instagram Post</a>
 
-  <section class="work-experience">
-    <h4>Work Experience</h4>
-    <ul class="experiences">
-      
-      <li class="company">
-        <div class="d--flex items-center company-summary">
-          <img src="/assets/img/circleci-simple.jpeg" />
-          <a
-            href="https://circleci.com/"
-            title="Visit CircleCI website"
-            class="company-title"
-            target="_blank"
-            rel="noopener noreferrer"
-            >CircleCI</a
-          >
-          <p class="company-position">Senior Frontend Engineer</p>
-          <p class="company-tenure">Feb 2021 – present</p>
-        </div>
-        <div class="company-points">
-          <ul>
-            
-            <li>Build the design system for CircleCI from scratch. Hired as the first person for this new team</li>
-            
-            <li>Follow accessibility (a11y) guidelines to meet AA requirements</li>
-            
-            <li>Build shared JavaScript utilities like logging, analytics, experiments that are used across the org</li>
-            
-          </ul>
-        </div>
+        <span class="date">Jun 05, 2021</span>
       </li>
       
-      <li class="company">
-        <div class="d--flex items-center company-summary">
-          <img src="/assets/img/homex-simple.png" />
-          <a
-            href="https://homex.com/"
-            title="Visit HomeX website"
-            class="company-title"
-            target="_blank"
-            rel="noopener noreferrer"
-            >HomeX</a
-          >
-          <p class="company-position">Senior Frontend Engineer</p>
-          <p class="company-tenure">Nov 2019 – Feb 2021</p>
-        </div>
-        <div class="company-points">
-          <ul>
-            
-            <li>Work on performance for homex.com and building the UI Component library</li>
-            
-            <li>Lead an API initiative that connects multiple external sources</li>
-            
-            <li>Lead and build the remote browser video support tool that was featured on TechCrunch</li>
-            
-          </ul>
-        </div>
+      <li>
+        <a class="internal-link" href="/blog/express-health-check-middleware/">healthie - A health check middleware for Express.js</a>
+
+        <span class="date">Nov 07, 2020</span>
       </li>
       
-      <li class="company">
-        <div class="d--flex items-center company-summary">
-          <img src="/assets/img/scalegrid-simple.jpeg" />
-          <a
-            href="https://scalegrid.io/"
-            title="Visit ScaleGrid website"
-            class="company-title"
-            target="_blank"
-            rel="noopener noreferrer"
-            >ScaleGrid</a
-          >
-          <p class="company-position">Senior Frontend Engineer</p>
-          <p class="company-tenure">Jun 2016 - Jul 2019</p>
-        </div>
-        <div class="company-points">
-          <ul>
-            
-            <li>Develop interactive data intensive dashboards that allow users to create/import their database clusters</li>
-            
-            <li>Work with designers / marketers to build the company site using Hugo</li>
-            
-            <li>Redesign the blog WordPress theme for a better editing and reading experience</li>
-            
-          </ul>
-        </div>
+      <li>
+        <a class="internal-link" href="/blog/covid-19-testing-toronto-experience/">My experience getting tested for COVID-19 in Toronto</a>
+
+        <span class="date">Jun 16, 2020</span>
       </li>
       
-      <li class="company">
-        <div class="d--flex items-center company-summary">
-          <img src="/assets/img/viraltag-simple.jpeg" />
-          <a
-            href="http://www.viraltag.com/"
-            title="Visit Viraltag website"
-            class="company-title"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Viraltag</a
-          >
-          <p class="company-position">Frontend Engineer</p>
-          <p class="company-tenure">May 2015 - May 2016</p>
-        </div>
-        <div class="company-points">
-          <ul>
-            
-            <li>Develop the company's iOS application using Ionic</li>
-            
-            <li>Introduce a new product called TapIt that offers embeddable User Generated Galleries</li>
-            
-            <li>Build a chrome extension to schedule images from any web page to Viraltag, especially Pinterest</li>
-            
-          </ul>
-        </div>
+      <li>
+        <a class="internal-link" href="/blog/setup-docker-jekyll-dev-environment/">Setup a Jekyll development environment with Docker</a>
+
+        <span class="date">Dec 14, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/git-verified-commits/">Git Verified Commits</a>
+
+        <span class="date">Jul 31, 2019</span>
+      </li>
+      
+      <li>
+        <a class="internal-link" href="/blog/highcharts-export-pdf/">Export multiple Highcharts graphs as PDF</a>
+
+        <span class="date">Apr 18, 2019</span>
       </li>
       
     </ul>
-  </section>
-
-  <section class="education">
-    <h4>Education</h4>
     <p>
-      Masters of Engineering in Software Systems, BITS Pilani Dubai Campus
-      (2013)
+        I wrote <a class="internal-link" href="/blog">7 more posts</a>
+. They're also
+      available via an <a href="/feed.xml" target="_blank" rel="noopener noreferrer"
+  >RSS feed</a
+>
+.
+    </p>
+  </section>
+  <section class="section open-source">
+    <h2>Open Source</h2>
+    <ul class="blog-posts__list">
+         
+      <li>
+        <a class="internal-link" href="/blog/encryptor-encrypt-decrypt-files-passphrase/">An Electron app to encrypt/decrypt your files by setting a passphrase</a>
+
+      </li>
+        
+      <li>
+        <a class="internal-link" href="/blog/custom-404-pro/">A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page or URL</a>
+
+      </li>
+          
+      <li>
+        <a class="internal-link" href="/blog/express-health-check-middleware/">A simple middleware that adds a health check endpoint to your Express.js applications</a>
+
+      </li>
+          
+      <li>
+        <a class="internal-link" href="https://github.com/kunalnagarco/action-cve">A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty</a>
+
+      </li>
+       
+    </ul>
+    <p>
+      I built <a class="internal-link" href="/foss">a few
+      more projects.</a>
+. They are also available on <a href="https://github.com/kunalnagar" target="_blank" rel="noopener noreferrer"
+  >GitHub</a
+>
+.
     </p>
   </section>
 </div>
 </main>
     <footer>
-  <div class="cookie-monster--shell">
-    <div class="cookie-monster--notice">
-      <h4>OM NOM NOM</h4>
-      <p>This site gots cookies 🍪</p>
-      <button type="button" class="cookie-monster--notice--button">
-        Oh-kay.
-      </button>
-    </div>
-    <button type="button" class="cookie-monster--button" title="Boop me.">
-      <img
-        src="/assets/img/cookie-monster.png"
-        alt="Cookie Monster"
-        class="cookie-monster--img"
-      />
-    </button>
-  </div>
-  <script src="/assets/js/main-bundle.js"></script>
+  <p class="muted">
+    This website is powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer"
+  >Jekyll</a
+>
+ and <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer"
+  >GitHub
+    Pages</a
+>
+. It does not track you. <a href="https://github.com/kunalnagar/kunalnagar.in" target="_blank" rel="noopener noreferrer"
+  >Source code is
+    available on GitHub</a
+>
+.
+  </p>
 </footer>
 
   </body>
