@@ -40,7 +40,8 @@
     {
       "title": "action-cve",
       "description": "A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty",
-      "link": "https://github.com/kunalnagarco/action-cve"
+      "link": "https://github.com/kunalnagarco/action-cve",
+      "popular": true
     },
     {
       "title": "action-semantic-pr",

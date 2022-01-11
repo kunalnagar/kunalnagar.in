@@ -1,5 +1,5 @@
 nav {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
 
@@ -14,24 +14,18 @@ nav {
     li {
       margin-right: 20px;
 
+      &.brand {
+        a {
+          color: #767676;
+        }
+      }
+
       &:last-child {
         margin-right: 0;
       }
 
       @media screen and (max-width: 650px) {
         margin-right: 15px;
-      }
-
-      a {
-        font-weight: bold;
-      }
-
-      &.brand {
-        svg > g {
-          @include theme() {
-            fill: theme-get('logo-fill');
-          }
-        }
       }
     }
   }
