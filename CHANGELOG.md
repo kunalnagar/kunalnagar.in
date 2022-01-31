@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.0.4...v2.1.0) (2022-01-31)
+
+
+### Features
+
+* Upgrade deps ([#134](https://github.com/kunalnagar/kunalnagar.in/issues/134)) ([d28a939](https://github.com/kunalnagar/kunalnagar.in/commit/d28a9391e012a2b9a7172a34eb66bfdec6460d67))
+
 ### [2.0.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.0.3...v2.0.4) (2022-01-31)
 
 
