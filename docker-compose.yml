@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   jekyll:
-    image: timbru31/ruby-node:3.0-16
+    image: timbru31/ruby-node:2.7-16
     ports:
       - 4000:4000
     volumes:
