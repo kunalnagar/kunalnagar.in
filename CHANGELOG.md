@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.1.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.1.0...v2.1.1) (2022-02-07)
+
+
+### Chores
+
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.4.2 ([#136](https://github.com/kunalnagar/kunalnagar.in/issues/136)) ([fd4bf89](https://github.com/kunalnagar/kunalnagar.in/commit/fd4bf8961fb232dd5ed8a3275b9ebd14bb5367ca))
+* **deps:** update node.js to v16.13.2 ([#135](https://github.com/kunalnagar/kunalnagar.in/issues/135)) ([4ef7659](https://github.com/kunalnagar/kunalnagar.in/commit/4ef76598e78c427c6a68ea2527359f028672d10e))
+* **deps:** update timbru31/ruby-node docker tag to v3 ([#137](https://github.com/kunalnagar/kunalnagar.in/issues/137)) ([05242d2](https://github.com/kunalnagar/kunalnagar.in/commit/05242d219cc9370e18d14b5c68baa1238bfed1b9))
+
 ## [2.1.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.0.4...v2.1.0) (2022-01-31)
 
 

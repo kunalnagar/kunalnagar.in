@@ -1,17 +1,21 @@
 Kunal Nagar
-Senior Frontend Engineer
+Staff Frontend Engineer
 hireme@kunalnagar.in
 
 SKILLS
 
-- React, TypeScript, Webpack, Ligthouse CI, Jest, Mocha, Chai
+- React.js, TypeScript, Webpack, Jest, Styled Components, Sass
 - Node.js, Loopback, Express.js, PHP, WordPress
-- Docker, CircleCI, GitHub Actions, Travis CI
-- Agile, Scrum, Jira, Pivotal Tracker, Trello
+- Docker, CircleCI, GitHub Actions, TravisCI
+- Agile, Scrum, Jira, Confluence, Pivotal Tracker, Trello, GSuite
 
 WORK EXPERIENCE
 
-CircleCI, Senior Frontend Engineer, Toronto, Feb 2021-present
+Okta, Staff Frontend Engineer, Toronto, Feb 2022-present
+
+- TBD
+
+CircleCI, Senior Frontend Engineer, Toronto, Feb 2021-Feb 2022
 
 - Build the design system for CircleCI from scratch. Hired as the first person for this new team
 - Follow accessibility (a11y) guidelines to meet AA requirements
@@ -28,12 +32,6 @@ ScaleGrid, Senior Frontend Engineer, Bangalore, Jun 2016-Jul 2019
 - Develop interactive data intensive dashboards that allow users to create/import their database clusters
 - Work with designers / marketers to build the company site using Hugo
 - Redesign the blog WordPress theme for a better editing and reading experience
-
-Viraltag, Frontend Engineer, Bangalore, May 2015-May 2016
-
-- Develop the company's iOS application using Ionic
-- Introduce a new product called TapIt that offers embeddable User Generated Galleries
-- Build a chrome extension to schedule images from any web page to Viraltag, especially Pinterest
 
 EDUCATION
 
