@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.1.1...v2.2.0) (2022-02-07)
+
+
+### Features
+
+* Update role ([#130](https://github.com/kunalnagar/kunalnagar.in/issues/130)) ([69a926a](https://github.com/kunalnagar/kunalnagar.in/commit/69a926a040abf45e8f606c3da4118beb486e4ee2))
+
 ### [2.1.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.1.0...v2.1.1) (2022-02-07)
 
 
