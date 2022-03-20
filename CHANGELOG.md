@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.2.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.1...v2.2.2) (2022-03-07)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#139](https://github.com/kunalnagar/kunalnagar.in/issues/139)) ([2121e84](https://github.com/kunalnagar/kunalnagar.in/commit/2121e8401e22c45ea75e2c1731928c5e99ca547d))
+* **deps:** update dependency lint-staged to v12.3.5 ([#140](https://github.com/kunalnagar/kunalnagar.in/issues/140)) ([8974dca](https://github.com/kunalnagar/kunalnagar.in/commit/8974dcae389f5a95a5b6fa21c187e551a5348e4f))
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.4.3 ([#141](https://github.com/kunalnagar/kunalnagar.in/issues/141)) ([043f583](https://github.com/kunalnagar/kunalnagar.in/commit/043f583b3472938f93907d4d9a57c07843e915cc))
+
 ### [2.2.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.0...v2.2.1) (2022-02-20)
 
 
