@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git@github.com:kunalnagar/kunalnagar.in.git"
   },
-  "author": "Kunal Nagar <knlnagar@gmail.com>",
+  "author": "Kunal Nagar",
   "scripts": {
     "build": "npm run build:jekyll",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",

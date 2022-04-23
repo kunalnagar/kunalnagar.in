@@ -15,3 +15,6 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+
+# https://github.com/jekyll/jekyll/issues/8523
+gem "webrick"
