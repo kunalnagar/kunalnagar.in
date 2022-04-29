@@ -5,11 +5,11 @@ layout: default
 
 ## Contact
 
-- {{ site.data.common.email.text }}
-- [{{ site.data.common.social.github.text }}]({{ site.data.common.social.github.url }})
-- [{{ site.data.common.social.linkedin.text }}]({{ site.data.common.social.linkedin.url }})
+- {{ site.data.resume.contact.email.privacyText }}
+- [{{ site.data.resume.contact.github.text }}]({{ site.data.resume.contact.github.url }})
+- [{{ site.data.resume.contact.linkedin.text }}]({{ site.data.resume.contact.linkedin.url }})
 
-Download Resume in [PDF]({{ site.data.common.resume.pdf }}) or [text]({{ site.data.common.resume.txt }}) format.
+Download Resume in [PDF]({{ site.data.resume.download.pdf }}) or [text]({{ site.data.resume.download.txt }}) format.
 
 ---
 

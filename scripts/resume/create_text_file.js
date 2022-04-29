@@ -4,8 +4,8 @@ const { getResumeJson } = require('./parse_file')
 const json = getResumeJson()
 
 const str = `Kunal Nagar
-${json.experiences[0].position}
-${json.contact.email.text}
+${json.bio.title}
+${json.contact.email.privacyText}
 
 SKILLS
 
@@ -17,7 +17,7 @@ EDUCATION
 
 ${generateEducationText(json.education[0])}
 `
-fs.rmdirSync(process.cwd() + '/assets/downloads', { recursive: true, force: true })
+fs.rmSync(process.cwd() + '/assets/downloads', { recursive: true, force: true })
 fs.mkdirSync(process.cwd() + '/assets/downloads')
 fs.writeFileSync(process.cwd() + '/assets/downloads/Resume-KunalNagar.txt', str)
 

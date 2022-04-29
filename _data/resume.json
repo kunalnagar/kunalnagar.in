@@ -1,9 +1,33 @@
 {
+  "download": {
+    "txt": "/assets/downloads/Resume-KunalNagar.txt",
+    "pdf": "/assets/downloads/Resume-KunalNagar.pdf"
+  },
+  "bio": {
+    "name": "KUNAL NAGAR",
+    "title": "Frontend engineer, writing JavaScript since 2013"
+  },
   "contact": {
     "email": {
       "url": "mailto:hireme@kunalnagar.in",
       "text": "hireme@kunalnagar.in",
       "privacyText": "hireme [at] kunalnagar [dot] in"
+    },
+    "twitter": {
+      "url": "https://twitter.com/_kunalnagar",
+      "text": "twitter.com/_kunalnagar"
+    },
+    "github": {
+      "url": "https://github.com/kunalnagar",
+      "text": "github.com/kunalnagar"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/kunalnagar88/",
+      "text": "linkedin.com/in/kunalnagar88"
+    },
+    "website": {
+      "url": "https://www.kunalnagar.in",
+      "text": "kunalnagar.in"
     }
   },
   "skills": [
@@ -58,18 +82,6 @@
         "Develop interactive data intensive dashboards that allow users to create/import their database clusters",
         "Work with designers / marketers to build the company site using Hugo",
         "Redesign the blog WordPress theme for a better editing and reading experience"
-      ]
-    },
-    {
-      "website": "http://www.viraltag.com/",
-      "title": "Viraltag",
-      "location": "Bangalore",
-      "position": "Frontend Engineer",
-      "tenure": "May 2015-May 2016",
-      "points": [
-        "Develop the company's iOS application using Ionic",
-        "Introduce a new product called TapIt that offers embeddable User Generated Galleries",
-        "Build a chrome extension to schedule images from any web page to Viraltag, especially Pinterest"
       ]
     }
   ],
