@@ -9,16 +9,16 @@
   },
   "author": "Kunal Nagar",
   "scripts": {
-    "build": "npm run build:jekyll",
+    "build": "npm run scripts:resume:create && npm run build:jekyll",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
+    "scripts:resume:create": "node scripts/resume/create_text_file.js && node scripts/resume/create_pdf_file.js",
     "dev": "bundle exec jekyll clean && npm run dev:jekyll",
     "dev:jekyll": "sleep 5 && bundle exec jekyll serve --watch --host=0.0.0.0",
     "logs": "docker-compose logs -f",
     "pretty-quick": "pretty-quick",
     "release": "semantic-release",
     "start": "docker-compose up -d --build",
-    "stop": "docker-compose down -v",
-    "scripts:resume:create": "node scripts/resume/create_text_file.js && node scripts/resume/create_pdf_file.js"
+    "stop": "docker-compose down -v"
   },
   "husky": {
     "hooks": {

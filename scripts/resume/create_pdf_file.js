@@ -13,7 +13,7 @@ const doc = new PDFDocument({
   }
 })
 
-const path = process.cwd() + '/assets/downloads/Resume-KunalNagar.pdf'
+const path = process.cwd() + json.download.pdf
 
 renderBio()
 doc.moveDown(2)
