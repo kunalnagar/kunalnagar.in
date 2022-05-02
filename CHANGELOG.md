@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.2.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.6...v2.2.7) (2022-05-02)
+
+
+### Chores
+
+* **deps:** update babel monorepo ([#147](https://github.com/kunalnagar/kunalnagar.in/issues/147)) ([26f4168](https://github.com/kunalnagar/kunalnagar.in/commit/26f416883664435ef881a98c04be97bb0a4b8211))
+
 ### [2.2.6](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.5...v2.2.6) (2022-05-02)
 
 
