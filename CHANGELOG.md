@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.2.6](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.5...v2.2.6) (2022-05-02)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#148](https://github.com/kunalnagar/kunalnagar.in/issues/148)) ([5d799f8](https://github.com/kunalnagar/kunalnagar.in/commit/5d799f8ae33eb1e5002b325982407a8eb3136a6e))
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.4.7 ([#146](https://github.com/kunalnagar/kunalnagar.in/issues/146)) ([4d79bd6](https://github.com/kunalnagar/kunalnagar.in/commit/4d79bd6c0149114c43db03de354082cad1bdd9ac))
+
 ### [2.2.5](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.4...v2.2.5) (2022-04-18)
 
 
