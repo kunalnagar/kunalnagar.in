@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.2.8](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.7...v2.2.8) (2022-06-04)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#149](https://github.com/kunalnagar/kunalnagar.in/issues/149)) ([4800214](https://github.com/kunalnagar/kunalnagar.in/commit/48002142eb29f23c3c6c4ca772746460081df12e))
+* **deps:** update babel monorepo to v7.18.2 ([#151](https://github.com/kunalnagar/kunalnagar.in/issues/151)) ([48002cc](https://github.com/kunalnagar/kunalnagar.in/commit/48002cc6ca2a2efc443703ce1f876039252b3aa7))
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.4.9 ([#150](https://github.com/kunalnagar/kunalnagar.in/issues/150)) ([6c440f8](https://github.com/kunalnagar/kunalnagar.in/commit/6c440f830ed307a5bfb4e8a44f972f024ba1e250))
+
 ### [2.2.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.6...v2.2.7) (2022-05-02)
 
 
