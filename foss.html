@@ -4,27 +4,21 @@ title: Open Source
 ---
 
 <div class="page page-foss">
-  <p>
-    I build stuff and try to open-source most of it. For more, check out my {%
-    include components/link-external.html href="https://github.com/kunalnagar"
-    text="GitHub" %}.
-  </p>
-  <section class="section">
-    <h2>Open Source</h2>
-    <ul class="list popular">
+  <h2>Open Source</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
       {% for project in site.data.foss.projects %}
-      <li>
-        {% include components/link-external.html href=project.link
-        text=project.title %}
-        <p class="description">{{ project.description }}</p>
-      </li>
-      {% endfor %} {% for tinker in site.data.foss.tinkers %}
-      <li>
-        {% include components/link-external.html href=tinker.link
-        text=tinker.title %}
-        <p class="description">{{ tinker.description }}</p>
-      </li>
+      <tr>
+        <td><a href="{{ project.link }}">{{ project.title }}</a></td>
+        <td>{{ project.description }}</td>
+      </tr>
       {% endfor %}
-    </ul>
-  </section>
+    </tbody>
+  </table>
 </div>

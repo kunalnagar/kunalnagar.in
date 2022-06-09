@@ -33,11 +33,6 @@
       "popular": true
     },
     {
-      "title": "react-component-library",
-      "description": "A library of reusable React components",
-      "link": "https://github.com/kunalnagarco/react-component-library"
-    },
-    {
       "title": "action-cve",
       "description": "A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty",
       "link": "https://github.com/kunalnagarco/action-cve",

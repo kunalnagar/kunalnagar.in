@@ -1,17 +1,59 @@
 {
+  "download": {
+    "txt": "/assets/downloads/Resume-KunalNagar.txt",
+    "pdf": "/assets/downloads/Resume-KunalNagar.pdf"
+  },
+  "bio": {
+    "name": "KUNAL NAGAR",
+    "title": "Frontend engineer, writing JavaScript since 2013"
+  },
+  "contact": {
+    "email": {
+      "url": "mailto:hireme@kunalnagar.in",
+      "text": "hireme@kunalnagar.in",
+      "privacyText": "hireme [at] kunalnagar [dot] in"
+    },
+    "twitter": {
+      "url": "https://twitter.com/_kunalnagar",
+      "text": "twitter.com/_kunalnagar"
+    },
+    "github": {
+      "url": "https://github.com/kunalnagar",
+      "text": "github.com/kunalnagar"
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/kunalnagar88/",
+      "text": "linkedin.com/in/kunalnagar88"
+    },
+    "website": {
+      "url": "https://www.kunalnagar.in",
+      "text": "www.kunalnagar.in"
+    }
+  },
   "skills": [
-    ["React", "TypeScript", "Webpack", "Ligthouse CI", "Jest", "Mocha", "Chai"],
+    ["React.js", "TypeScript", "Webpack", "Jest", "Styled Components", "Sass"],
     ["Node.js", "Loopback", "Express.js", "PHP", "WordPress"],
-    ["Docker", "CircleCI", "GitHub Actions", "Travis CI"],
-    ["Agile", "Scrum", "Jira", "Pivotal Tracker", "Trello"]
+    ["Docker", "CircleCI", "GitHub Actions", "TravisCI"],
+    ["Agile", "Scrum", "Jira", "Confluence", "Pivotal Tracker", "Trello", "GSuite"]
   ],
   "experiences": [
     {
-      "logo": "/assets/img/circleci-simple.jpeg",
+      "website": "https://www.okta.com/",
+      "title": "Okta",
+      "location": "Toronto",
+      "position": "Staff Frontend Engineer",
+      "tenure": "Feb 2022-present",
+      "points": [
+        "Improve the flow for importing new users into Okta from an Active Directory",
+        "Contribute to the open-source design system Odyssey"
+      ]
+    },
+    {
       "website": "https://circleci.com/",
       "title": "CircleCI",
+      "location": "Toronto",
       "position": "Senior Frontend Engineer",
-      "tenure": "Feb 2021 – present",
+      "tenure": "Feb 2021-Feb 2022",
       "points": [
         "Build the design system for CircleCI from scratch. Hired as the first person for this new team",
         "Follow accessibility (a11y) guidelines to meet AA requirements",
@@ -19,11 +61,11 @@
       ]
     },
     {
-      "logo": "/assets/img/homex-simple.png",
       "website": "https://homex.com/",
       "title": "HomeX",
+      "location": "Toronto",
       "position": "Senior Frontend Engineer",
-      "tenure": "Nov 2019 – Feb 2021",
+      "tenure": "Nov 2019-Feb 2021",
       "points": [
         "Work on performance for homex.com and building the UI Component library",
         "Lead an API initiative that connects multiple external sources",
@@ -31,28 +73,25 @@
       ]
     },
     {
-      "logo": "/assets/img/scalegrid-simple.jpeg",
       "website": "https://scalegrid.io/",
       "title": "ScaleGrid",
+      "location": "Bangalore",
       "position": "Senior Frontend Engineer",
-      "tenure": "Jun 2016 - Jul 2019",
+      "tenure": "Jun 2016-Jul 2019",
       "points": [
         "Develop interactive data intensive dashboards that allow users to create/import their database clusters",
         "Work with designers / marketers to build the company site using Hugo",
         "Redesign the blog WordPress theme for a better editing and reading experience"
       ]
-    },
+    }
+  ],
+  "education": [
     {
-      "logo": "/assets/img/viraltag-simple.jpeg",
-      "website": "http://www.viraltag.com/",
-      "title": "Viraltag",
-      "position": "Frontend Engineer",
-      "tenure": "May 2015 - May 2016",
-      "points": [
-        "Develop the company's iOS application using Ionic",
-        "Introduce a new product called TapIt that offers embeddable User Generated Galleries",
-        "Build a chrome extension to schedule images from any web page to Viraltag, especially Pinterest"
-      ]
+      "degree": "Masters of Engineering",
+      "field": "Software Systems",
+      "institution": "BITS Pilani Dubai Campus",
+      "tenure": "2011-2013",
+      "cgpa": "4.2/5"
     }
   ]
 }

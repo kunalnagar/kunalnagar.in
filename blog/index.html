@@ -4,21 +4,21 @@ title: Blog
 ---
 
 <div class="page page-blog">
-  <p>
-    I write about my personal and professional life experiences. Looking for the
-    {% include components/link-external.html href="/feed.xml" text="RSS feed"
-    %}?
-  </p>
-  <section class="section">
-    <h2>Blog posts</h2>
-    <ul id="posts_list">
+  <h2>Blog</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
       {% for post in site.posts %}
-      <li>
-        {% include components/link-internal.html href=post.url text=post.title
-        %}
-        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-      </li>
+      <tr>
+        <td>{{ post.date | date: "%b %d, %Y" }}</td>
+        <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+      </tr>
       {% endfor %}
-    </ul>
-  </section>
+    </tbody>
+  </table>
 </div>
