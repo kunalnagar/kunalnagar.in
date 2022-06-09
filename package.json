@@ -1,16 +1,17 @@
 {
   "name": "kunalnagar.in",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
     "type": "git",
     "url": "git@github.com:kunalnagar/kunalnagar.in.git"
   },
-  "author": "Kunal Nagar <knlnagar@gmail.com>",
+  "author": "Kunal Nagar",
   "scripts": {
-    "build": "npm run build:jekyll",
+    "build": "npm run scripts:resume:create && npm run build:jekyll",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
+    "scripts:resume:create": "node scripts/resume/create_text_file.js && node scripts/resume/create_pdf_file.js",
     "dev": "bundle exec jekyll clean && npm run dev:jekyll",
     "dev:jekyll": "sleep 5 && bundle exec jekyll serve --watch --host=0.0.0.0",
     "logs": "docker-compose logs -f",
@@ -41,6 +42,7 @@
     "conventional-changelog-conventionalcommits": "4.6.3",
     "husky": "7.0.4",
     "lint-staged": "12.3.5",
+    "pdfkit": "^0.13.0",
     "prettier": "2.5.1",
     "pretty-quick": "3.1.3",
     "semantic-release": "19.0.2",

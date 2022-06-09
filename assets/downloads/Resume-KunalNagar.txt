@@ -1,6 +1,7 @@
-Kunal Nagar
-Staff Frontend Engineer
-hireme@kunalnagar.in
+KUNAL NAGAR
+Frontend engineer, writing JavaScript since 2013
+hireme [at] kunalnagar [dot] in
+www.kunalnagar.in
 
 SKILLS
 
@@ -13,7 +14,8 @@ WORK EXPERIENCE
 
 Okta, Staff Frontend Engineer, Toronto, Feb 2022-present
 
-- TBD
+- Improve the flow for importing new users into Okta from an Active Directory
+- Contribute to the open-source design system Odyssey
 
 CircleCI, Senior Frontend Engineer, Toronto, Feb 2021-Feb 2022
 
@@ -33,7 +35,9 @@ ScaleGrid, Senior Frontend Engineer, Bangalore, Jun 2016-Jul 2019
 - Work with designers / marketers to build the company site using Hugo
 - Redesign the blog WordPress theme for a better editing and reading experience
 
+
 EDUCATION
 
-Masters of Engineering in Software Systems, BITS Pilani Dubai Campus, 2011-2013
+Masters of Engineering, Software Systems, BITS Pilani Dubai Campus, 2011-2013
 CGPA 4.2/5
+
