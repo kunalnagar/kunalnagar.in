@@ -1,5 +1,50 @@
 # Changelog
 
+### [2.2.9](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.8...v2.2.9) (2022-06-07)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#152](https://github.com/kunalnagar/kunalnagar.in/issues/152)) ([6a4e60d](https://github.com/kunalnagar/kunalnagar.in/commit/6a4e60df42a717a30e28323fabc24f15dd588a7e))
+
+### [2.2.8](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.7...v2.2.8) (2022-06-04)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#149](https://github.com/kunalnagar/kunalnagar.in/issues/149)) ([4800214](https://github.com/kunalnagar/kunalnagar.in/commit/48002142eb29f23c3c6c4ca772746460081df12e))
+* **deps:** update babel monorepo to v7.18.2 ([#151](https://github.com/kunalnagar/kunalnagar.in/issues/151)) ([48002cc](https://github.com/kunalnagar/kunalnagar.in/commit/48002cc6ca2a2efc443703ce1f876039252b3aa7))
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.4.9 ([#150](https://github.com/kunalnagar/kunalnagar.in/issues/150)) ([6c440f8](https://github.com/kunalnagar/kunalnagar.in/commit/6c440f830ed307a5bfb4e8a44f972f024ba1e250))
+
+### [2.2.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.6...v2.2.7) (2022-05-02)
+
+
+### Chores
+
+* **deps:** update babel monorepo ([#147](https://github.com/kunalnagar/kunalnagar.in/issues/147)) ([26f4168](https://github.com/kunalnagar/kunalnagar.in/commit/26f416883664435ef881a98c04be97bb0a4b8211))
+
+### [2.2.6](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.5...v2.2.6) (2022-05-02)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#148](https://github.com/kunalnagar/kunalnagar.in/issues/148)) ([5d799f8](https://github.com/kunalnagar/kunalnagar.in/commit/5d799f8ae33eb1e5002b325982407a8eb3136a6e))
+* **deps:** update kunalnagarco/action-semantic-pr action to v1.4.7 ([#146](https://github.com/kunalnagar/kunalnagar.in/issues/146)) ([4d79bd6](https://github.com/kunalnagar/kunalnagar.in/commit/4d79bd6c0149114c43db03de354082cad1bdd9ac))
+
+### [2.2.5](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.4...v2.2.5) (2022-04-18)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#144](https://github.com/kunalnagar/kunalnagar.in/issues/144)) ([a4f9ee4](https://github.com/kunalnagar/kunalnagar.in/commit/a4f9ee49296f33fccd887afd51e4b78fa0ec6565))
+
+### [2.2.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.3...v2.2.4) (2022-04-18)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#143](https://github.com/kunalnagar/kunalnagar.in/issues/143)) ([12a41c2](https://github.com/kunalnagar/kunalnagar.in/commit/12a41c276c6636fca60cb77b11e813c074f5e5f7))
+
 ### [2.2.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.2...v2.2.3) (2022-03-20)
 
 
