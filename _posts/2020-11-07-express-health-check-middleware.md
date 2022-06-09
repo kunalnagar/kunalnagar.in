@@ -20,27 +20,27 @@ I built this package purely to dive deep into Express.js middleware. So if you d
 
 ## Installation
 
-```
+{% highlight shell %}
 npm install --save @kunalnagarco/healthie
-```
+{% endhighlight %}
 
 ## Usage
 
-```js
+{% highlight js %}
 const express = require('express');
 const app = express();
 const { handleHealthCheck } = require('@kunalnagarco/healthie');
 
 app.use(handleHealthCheck());
-```
+{% endhighlight %}
 
 ## Result
 
 Visit `/health` and you should see the following:
 
-```json
+{% highlight json %}
 {
   "uptime": 36.883064168, // process.uptime
   "status": "OK"
 }
-```
+{% endhighlight %}
