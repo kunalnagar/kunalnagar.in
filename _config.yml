@@ -5,6 +5,11 @@ url: 'https://www.kunalnagar.in'
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
 permalink: pretty
 destination: ./release
 plugins:

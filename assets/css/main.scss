@@ -2,10 +2,14 @@
 ---
 
 @import 'variables';
+@import 'reset';
+@import 'highlight';
+@import 'page-blog';
 
 body {
-  font-family: 'Times New Roman', Times, serif;
-  padding: 10px;
+  font-family: $font-family;
+  line-height: 1.5rem;
+  padding: 1rem;
 
   main {
     max-width: 768px;
@@ -13,25 +17,43 @@ body {
   }
 }
 
-ul {
+p {
+  margin: 1rem 0;
+}
+
+ul,
+ol {
+  list-style: disc;
+  margin-left: 2rem;
+
   p {
     margin: 0;
   }
 }
 
-hr {
-  border-top: 1px solid #a9a9a9;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+  color: #000;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 nav {
   ul {
-    list-style-type: none;
-    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
     display: flex;
-
-    li {
-      margin-right: 10px;
-    }
+    gap: 1rem;
+    font-weight: 500;
   }
 }
 
@@ -42,97 +64,25 @@ a {
 img {
   max-width: 100%;
   max-height: 30rem;
+  margin: 1rem 0 0 0;
 }
 
-/*
-Generic Styling, for Desktops/Laptops
-*/
 table {
-  width: 100%;
-  border-collapse: collapse;
-}
-/* Zebra striping */
-tr:nth-of-type(odd) {
-  background: #eee;
-}
-th {
-  background: #333;
-  color: white;
-  font-weight: bold;
-}
-td,
-th {
-  padding: 6px;
-  border: 1px solid #ccc;
-  text-align: left;
-}
-
-/*
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-@media only screen and (max-width: 760px),
-  (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Force table to not be like tables anymore */
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
-
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr {
-    border: 1px solid #ccc;
-  }
-
-  td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-  }
-
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
-  .page-foss {
-    td:nth-of-type(1):before {
-      content: 'Project';
-      font-weight: bold;
-    }
-    td:nth-of-type(2):before {
-      content: 'Description';
-      font-weight: bold;
+  thead {
+    tr {
+      th {
+        padding: 0.5rem 0;
+        text-align: left;
+        font-weight: 500;
+      }
     }
   }
 
-  .page-blog {
-    td:nth-of-type(1):before {
-      content: 'Date';
-      font-weight: bold;
-    }
-    td:nth-of-type(2):before {
-      content: 'Title';
-      font-weight: bold;
+  tbody {
+    tr {
+      td {
+        padding: 0.5rem 0 0 0;
+      }
     }
   }
 }

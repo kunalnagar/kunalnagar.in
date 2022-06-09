@@ -5,13 +5,10 @@ layout: default
 
 ## Contact
 
+- Download Resume in [PDF]({{ site.data.resume.download.pdf }}) or [text]({{ site.data.resume.download.txt }})
 - {{ site.data.resume.contact.email.privacyText }}
 - [{{ site.data.resume.contact.github.text }}]({{ site.data.resume.contact.github.url }})
 - [{{ site.data.resume.contact.linkedin.text }}]({{ site.data.resume.contact.linkedin.url }})
-
-Download Resume in [PDF]({{ site.data.resume.download.pdf }}) or [text]({{ site.data.resume.download.txt }}) format.
-
----
 
 ## Skills
 
