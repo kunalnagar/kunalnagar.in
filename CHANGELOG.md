@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.2...v2.3.3) (2022-06-12)
+
+
+### Chores
+
+* Better syntax for setup-node ([#155](https://github.com/kunalnagar/kunalnagar.in/issues/155)) ([ff0e734](https://github.com/kunalnagar/kunalnagar.in/commit/ff0e73458d9581e8992a4de448b37094a3499bbf))
+
 ### [2.3.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.1...v2.3.2) (2022-06-12)
 
 
