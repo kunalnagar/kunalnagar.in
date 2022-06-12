@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.0...v2.3.1) (2022-06-12)
+
+
+### Chores
+
+* **deps:** update dependency semantic-release to 19.0.3 [security] ([#153](https://github.com/kunalnagar/kunalnagar.in/issues/153)) ([e37e115](https://github.com/kunalnagar/kunalnagar.in/commit/e37e115972c866979d965d8a678e6f2a6414deb2))
+
 ## [2.3.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.9...v2.3.0) (2022-06-09)
 
 
