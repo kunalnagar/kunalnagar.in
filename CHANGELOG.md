@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.9...v2.3.0) (2022-06-09)
+
+
+### Features
+
+* Updates ([#145](https://github.com/kunalnagar/kunalnagar.in/issues/145)) ([010d284](https://github.com/kunalnagar/kunalnagar.in/commit/010d284d6a4ccc70da0dcfce72c8cf74ce53650c))
+
 ### [2.2.9](https://github.com/kunalnagar/kunalnagar.in/compare/v2.2.8...v2.2.9) (2022-06-07)
 
 
