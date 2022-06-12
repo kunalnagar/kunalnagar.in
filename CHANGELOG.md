@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.1...v2.3.2) (2022-06-12)
+
+
+### Chores
+
+* Update node LTS ([#154](https://github.com/kunalnagar/kunalnagar.in/issues/154)) ([9342524](https://github.com/kunalnagar/kunalnagar.in/commit/93425244b94c87663e0b216de5ae16e4d09e338d))
+
 ### [2.3.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.0...v2.3.1) (2022-06-12)
 
 
