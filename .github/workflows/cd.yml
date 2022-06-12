@@ -12,9 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: 'lts/fermium'
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - name: Install bundler 2.1.4
         run: sudo gem install bundler -v 2.1.4
       - name: Cache ruby (bundler) dependencies
