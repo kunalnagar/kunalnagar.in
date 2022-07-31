@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.3.5](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.4...v2.3.5) (2022-07-03)
+
+
+### Chores
+
+* **deps:** pin dependency pdfkit to 0.13.0 ([#159](https://github.com/kunalnagar/kunalnagar.in/issues/159)) ([b1be8c3](https://github.com/kunalnagar/kunalnagar.in/commit/b1be8c33ea40fe24e6ead5899b44ccf2761d4546))
+* **deps:** update babel monorepo to v7.18.6 ([#160](https://github.com/kunalnagar/kunalnagar.in/issues/160)) ([a68f4cb](https://github.com/kunalnagar/kunalnagar.in/commit/a68f4cb69943fe34945912ff147fef66be4b3c9f))
+
 ### [2.3.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.3...v2.3.4) (2022-06-18)
 
 
