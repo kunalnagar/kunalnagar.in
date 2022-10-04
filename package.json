@@ -41,7 +41,7 @@
     "babel-loader": "8.2.5",
     "conventional-changelog-conventionalcommits": "4.6.3",
     "husky": "7.0.4",
-    "lint-staged": "12.5.0",
+    "lint-staged": "12.3.5",
     "pdfkit": "0.13.0",
     "prettier": "2.7.1",
     "pretty-quick": "3.1.3",
