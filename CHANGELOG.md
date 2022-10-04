@@ -1,5 +1,15 @@
 # Changelog
 
+### [2.3.8](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.7...v2.3.8) (2022-10-04)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.19.3 ([#161](https://github.com/kunalnagar/kunalnagar.in/issues/161)) ([d2f6f42](https://github.com/kunalnagar/kunalnagar.in/commit/d2f6f42cbf28a963daf31414c0ea606d8078c486))
+* **deps:** update dependency lint-staged to v12.5.0 ([#162](https://github.com/kunalnagar/kunalnagar.in/issues/162)) ([4641f8b](https://github.com/kunalnagar/kunalnagar.in/commit/4641f8b6036c24b974f1bcd0bb1c2b3df2a7b066))
+* **deps:** update dependency sort-package-json to v1.57.0 ([#166](https://github.com/kunalnagar/kunalnagar.in/issues/166)) ([be3e795](https://github.com/kunalnagar/kunalnagar.in/commit/be3e79597fe2fabaf71356e472ad973521882d32))
+* **deps:** update timbru31/ruby-node docker tag to v3.1 ([#167](https://github.com/kunalnagar/kunalnagar.in/issues/167)) ([ba2dd8c](https://github.com/kunalnagar/kunalnagar.in/commit/ba2dd8cd365047213be9efd7ed718c64c8630486))
+
 ### [2.3.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.6...v2.3.7) (2022-09-05)
 
 
