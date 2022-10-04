@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.3.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.6...v2.3.7) (2022-09-05)
+
+
+### Chores
+
+* **deps:** update dependency prettier to v2.7.1 ([#165](https://github.com/kunalnagar/kunalnagar.in/issues/165)) ([c67f9e9](https://github.com/kunalnagar/kunalnagar.in/commit/c67f9e94b75ea87d7f7dfcf790fbbee4d5a9c231))
+* **deps:** update dependency semantic-release to v19.0.5 ([#164](https://github.com/kunalnagar/kunalnagar.in/issues/164)) ([9b62998](https://github.com/kunalnagar/kunalnagar.in/commit/9b62998e18be817df336754731b13c42f2e9c377))
+
 ### [2.3.6](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.5...v2.3.6) (2022-07-31)
 
 
