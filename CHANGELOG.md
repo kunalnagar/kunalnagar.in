@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.3.11](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.10...v2.3.11) (2022-11-15)
+
+
+### Chores
+
+* **deps:** update babel monorepo ([#170](https://github.com/kunalnagar/kunalnagar.in/issues/170)) ([ce06581](https://github.com/kunalnagar/kunalnagar.in/commit/ce065810aa88108135bca7a808317656ee32bdae))
+* **deps:** update dependency jekyll to "~> 4.3.0" ([#171](https://github.com/kunalnagar/kunalnagar.in/issues/171)) ([fb35516](https://github.com/kunalnagar/kunalnagar.in/commit/fb3551691dcf265c0e99ed78219882263fe9d70a))
+
 ### [2.3.10](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.9...v2.3.10) (2022-10-23)
 
 
