@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.3.13](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.12...v2.3.13) (2022-12-04)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([#173](https://github.com/kunalnagar/kunalnagar.in/issues/173)) ([71c3475](https://github.com/kunalnagar/kunalnagar.in/commit/71c347587aada4d39036805cd3c00dd936e8c4bb))
+* **deps:** update dependency @babel/core to v7.20.5 ([#174](https://github.com/kunalnagar/kunalnagar.in/issues/174)) ([0712653](https://github.com/kunalnagar/kunalnagar.in/commit/07126532f99cf903d26be31b85e933b0eefd9a28))
+* **deps:** update dependency @semantic-release/changelog to v6.0.2 ([#175](https://github.com/kunalnagar/kunalnagar.in/issues/175)) ([bccc627](https://github.com/kunalnagar/kunalnagar.in/commit/bccc62798e0e5c1d16deeae73963e114fa527377))
+
 ### [2.3.12](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.11...v2.3.12) (2022-11-27)
 
 
