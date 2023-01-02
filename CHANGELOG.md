@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.18...v2.4.0) (2023-01-02)
+
+
+### Features
+
+* New blog post - Automatic Resume generation ([#158](https://github.com/kunalnagar/kunalnagar.in/issues/158)) ([0ae90fc](https://github.com/kunalnagar/kunalnagar.in/commit/0ae90fc164cda61b3290dbd509fae37cbd18a6d8))
+
 ### [2.3.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.17...v2.3.18) (2023-01-02)
 
 
