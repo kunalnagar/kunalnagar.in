@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2023-01-02T16:06:37+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Send GitHub Dependabot Alerts to Slack</title><link href="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/" rel="alternate" type="text/html" title="Send GitHub Dependabot Alerts to Slack" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack</id><content type="html" xml:base="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/"><![CDATA[<p><img src="https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png" alt="marketing" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2023-01-02T22:39:22+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Automatic Resume generation in PDF and text from JSON</title><link href="https://www.kunalnagar.in/blog/resume-generator/" rel="alternate" type="text/html" title="Automatic Resume generation in PDF and text from JSON" /><published>2023-01-02T00:00:00+00:00</published><updated>2023-01-02T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/resume-generator</id><content type="html" xml:base="https://www.kunalnagar.in/blog/resume-generator/"><![CDATA[<p><strong>TL;DR</strong> - Store Resume data as JSON and write node scripts to generate dynamic versions like PDF and text. Source <a href="https://github.com/kunalnagar/kunalnagar.in/tree/master/scripts/resume">here</a></p>
+
+<ul>
+  <li><a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/_data/resume.json">Source JSON</a></li>
+  <li><a href="https://www.kunalnagar.in/assets/downloads/Resume-KunalNagar.pdf">PDF version</a></li>
+  <li><a href="https://www.kunalnagar.in/assets/downloads/Resume-KunalNagar.txt">Text version</a></li>
+  <li><a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/index.md?plain=1">Jekyll version</a></li>
+</ul>
+
+<hr />
+
+<p>My website is geared towards recruiters and folks to get to know me professionally. One of the things everyone looks at is the Resume. I offer my Resume as a PDF or a Text file as downloads on this site. When a recruiter reaches out, I just redirect them to my website and they can choose the format that works for them.</p>
+
+<h2 id="inspiration">Inspiration</h2>
+
+<p>Over the years, I’ve found myself updating my Resume and tweaking it’s format. The issue is that I have to do it twice - one for the PDF and another for the text. I’m a lazy developer and thought to myself - let’s automate this such that if there’s an update, I can only update it once and the PDF/text versions would be generated automatically. Another advantage with this approach is the ability to write a generator for a new format - like <code class="language-plaintext highlighter-rouge">.docx</code> that I plan on doing soon.</p>
+
+<h2 id="json---single-source-of-truth">JSON - single source of truth</h2>
+
+<p>Here’s why I decided to use JSON to store the data:</p>
+
+<ul>
+  <li>Easy to read and understand</li>
+  <li>Self-describing syntax. By looking at the structure of a JSON document, it is possible to interpret the context</li>
+  <li>Stored as simple text and can be easily parsed in multiple environments</li>
+</ul>
+
+<p>The source file can be found <a href="https://github.com/kunalnagar/kunalnagar.in/tree/master/scripts/resume">here</a>.</p>
+
+<h3 id="creating-a-pdf">Creating a PDF</h3>
+
+<p>After looking at the libraries available in the ecosystem, I decided to go with <a href="https://pdfkit.org/">pdfkit</a> as it was the easiest to get started and offered a simple enough syntax.</p>
+
+<p>The source code can be found <a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/scripts/resume/create_pdf_file.js">here</a></p>
+
+<p>Essentially, here’s what is happening:</p>
+
+<ul>
+  <li>Get resume data as a JSON object</li>
+  <li>Create an empty PDF document with margins</li>
+  <li>Set the output path</li>
+  <li>Render the different sections of the Resume</li>
+</ul>
+
+<h3 id="creating-a-text-file">Creating a text file</h3>
+
+<p>Writing this generator was a breeze as there is no third-party library required. All you need is to generate a template string and output it to a file using the <a href="https://nodejs.org/api/fs.html#fswritefilesyncfile-data-options">fs</a> module.</p>
+
+<h3 id="auto-generation-during-deployment">Auto-generation during deployment</h3>
+
+<p>Now that we have our node scripts that generate PDF and text versions of our resume, it’s time to write a command to do so dynamically in the CI environment when this website gets generated.</p>
+
+<p>We could also check-in these files into the git repo by manual generation. However, this is a problem for me as I tend to forget things unless enforced by a rule. When merging a PR, it is possible that I forget to run the node scripts locally. Hence, I decided to do this part in CI.</p>
+
+<p>I created a dedicated <code class="language-plaintext highlighter-rouge">package.json</code> <a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/package.json#L14">script</a> to generate these files, but integrated it in the same <code class="language-plaintext highlighter-rouge">build</code> command that generates the website. This way, I didn’t have to change any of my CI/CD scripts.</p>
+
+<h3 id="can-i-use-this-to-generate-my-own-resume">Can I use this to generate my own Resume?</h3>
+
+<p>Absolutely! As long as you are using <a href="https://nodejs.org/en/">Node.js</a>, you should be able to copy the source JSON format, tweak it to add your own data/work experience and run the respective generator to generate the file.</p>
+
+<hr />
+
+<p>And that’s it! Any time I make a change to the source JSON data, all formats are regenerated and deployed automatically.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A process to store Resume data in JSON and generate multiple versions]]></summary></entry><entry><title type="html">Send GitHub Dependabot Alerts to Slack</title><link href="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/" rel="alternate" type="text/html" title="Send GitHub Dependabot Alerts to Slack" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack</id><content type="html" xml:base="https://www.kunalnagar.in/blog/send-github-dependabot-alerts-slack/"><![CDATA[<p><img src="https://user-images.githubusercontent.com/2741371/129468484-bc0cb5f5-1db5-4ea0-96c6-7f1d2d0aa347.png" alt="marketing" /></p>
 
 <h2 id="kunalnagarcoaction-cve">@kunalnagarco/action-cve</h2>
 
@@ -790,136 +852,4 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 <span class="o">[</span>E] <span class
 
 <p><img src="/assets/img/blog/transfer-indane-gas-connection-another-state/J0mbeYm.jpg" alt="" /></p>
 
-<p>And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection.]]></summary></entry><entry><title type="html">Customize your Bash Prompt</title><link href="https://www.kunalnagar.in/blog/customize-bash-prompt/" rel="alternate" type="text/html" title="Customize your Bash Prompt" /><published>2019-02-23T00:00:00+00:00</published><updated>2019-02-23T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/customize-bash-prompt</id><content type="html" xml:base="https://www.kunalnagar.in/blog/customize-bash-prompt/"><![CDATA[<p>I like to keep my bash prompt really minimal. I’m not into colours. I’m not into fancy fonts. I want my prompt to show contextual information so I can focus on the work I’m doing.</p>
-
-<p>By default, macOS gives you this terminal:</p>
-
-<p><img src="https://i.imgur.com/n57DPG3.png" alt="" /></p>
-
-<p>I fucking hate it. Why do I need to see my machine name every time I open the terminal? <a href="https://www.merriam-webster.com/dictionary/phooey">Phooey</a>.</p>
-
-<p>Plus, when I navigate to a git repo, it doesn’t even show what branch I’m on. Double phooey.</p>
-
-<p><img src="https://i.imgur.com/sNgVmfJ.png" alt="" /></p>
-
-<h2 id="my-setup">My setup</h2>
-
-<p>Here’s what I have and I’m really happy with it.</p>
-
-<p><img src="https://i.imgur.com/3Dwoh1Z.png" alt="" /></p>
-
-<h2 id="what-do-i-like-about-it">What do I like about it?</h2>
-
-<p>Couple of things:</p>
-
-<ul>
-  <li>Shows me what user I’m logged in as (good on unix systems when you want to switch between root and normal user)</li>
-  <li>Shows me the full (read FULL) path of where I am. Yes, FULL.</li>
-  <li>Shows me the branch I’m on (if I’m in a git repo)</li>
-</ul>
-
-<p>Things I don’t need here:</p>
-
-<ul>
-  <li>Machine name</li>
-  <li>Date</li>
-  <li>10 billion colours</li>
-  <li>Emoji.      <small><small><small>Well…</small></small></small></li>
-</ul>
-
-<h2 id="how-to-set-it-up">How to set it up</h2>
-
-<p>If you’re really impressed by it and just want the code, copy paste the following in your <code class="language-plaintext highlighter-rouge">~/.bash_profile</code> and move on with your life.</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">git_prompt<span class="o">()</span> <span class="o">{</span>
-
-    <span class="nb">local </span><span class="nv">branchName</span><span class="o">=</span><span class="s2">""</span><span class="p">;</span>
-
-    <span class="c"># Check if the current directory is in a Git repository.</span>
-    <span class="k">if </span>git rev-parse <span class="nt">--git-dir</span> <span class="o">&gt;</span> /dev/null 2&gt;&amp;1<span class="p">;</span> <span class="k">then
-        </span><span class="nv">branchName</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span>git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null <span class="o">||</span> <span class="se">\</span>
-	        git rev-parse <span class="nt">--short</span> HEAD 2&gt; /dev/null <span class="o">||</span> <span class="se">\</span>
-		    <span class="nb">echo</span> <span class="s1">'(unknown)'</span><span class="si">)</span><span class="s2">"</span><span class="p">;</span>
-        <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"(</span><span class="k">${</span><span class="nv">branchName</span><span class="k">}</span><span class="s2">)"</span><span class="p">;</span>
-    <span class="k">else
-        return</span><span class="p">;</span>
-    <span class="k">fi</span><span class="p">;</span>
-
-<span class="o">}</span>
-
-<span class="nv">PS1</span><span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">[</span><span class="se">\u</span><span class="s2">] at </span><span class="se">\w</span><span class="s2">"</span><span class="p">;</span>
-
-PS1+<span class="o">=</span><span class="s2">" </span><span class="se">\$</span><span class="s2">(git_prompt)"</span><span class="p">;</span>
-
-PS1+<span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=&gt; "</span><span class="p">;</span></code></pre></figure>
-
-<p>If you’re like me and want to understand what this gibberish means, read on.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">git_prompt()</code> method spits out the current branch name, if it exists. Let’s try to break it down.</p>
-
-<h2 id="step-1">Step 1</h2>
-
-<p>Let’s run the first half of the command in a git repo and a normal folder and see what happens</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
-<span class="o">=&gt;</span> git rev-parse <span class="nt">--git-dir</span>
-.git
-
-<span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
-<span class="o">=&gt;</span> <span class="nb">cd</span> ..
-
-<span class="o">[</span>kunalnagar] at ~/Documents/Code
-<span class="o">=&gt;</span> git rev-parse <span class="nt">--git-dir</span>
-fatal: not a git repository <span class="o">(</span>or any of the parent directories<span class="o">)</span>: .git</code></pre></figure>
-
-<p>So basically, this command is used to check if our current working directory is a git repo or not.</p>
-
-<p>What’s the writing to <code class="language-plaintext highlighter-rouge">/dev/null</code> and <code class="language-plaintext highlighter-rouge">2&gt;&amp;1</code> mean? Read more <a href="https://askubuntu.com/questions/12098/what-does-outputting-to-dev-null-accomplish-in-bash-scripts">here</a></p>
-
-<h2 id="step-2">Step 2</h2>
-
-<p>Once we’ve figured out that we are, actually, inside a git repo, we need to figure out what branch we’re in. Now please note that this can get fairly complicated with detached HEAD states etc. which is where most solutions on the internet fail. This is the best one I’ve found that works across a wide range of scenarios.</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
-<span class="o">=&gt;</span> git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null
-updates-v3
-
-<span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
-<span class="o">=&gt;</span> <span class="nb">cd</span> ..
-
-<span class="o">[</span>kunalnagar] at ~/Documents/Code
-<span class="o">=&gt;</span> git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null</code></pre></figure>
-
-<p>The <code class="language-plaintext highlighter-rouge">git symbolic-ref</code> allows us to read, modify and delete <a href="https://stackoverflow.com/a/1526526">symbolic refs</a></p>
-
-<p>For more information on the flags, check out <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---quiet"><code class="language-plaintext highlighter-rouge">--quiet</code></a> and <a href="https://git-scm.com/docs/git-symbolic-ref#git-symbolic-ref---short"><code class="language-plaintext highlighter-rouge">--short</code></a></p>
-
-<p>As you can see from the above example, when the above command is run, it spits out the branch name.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">git rev-parse</code> is used as a safety net in scenarios like detached heads where we might need to pick out params from a lot of info</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kunalnagar] at ~/Documents/Code/personal-main <span class="o">(</span>updates-v3<span class="o">)</span>
-<span class="o">=&gt;</span> git symbolic-ref <span class="nt">--quiet</span> <span class="nt">--short</span> HEAD 2&gt; /dev/null <span class="o">||</span> git rev-parse
-updates-v3</code></pre></figure>
-
-<h2 id="step-3">Step 3</h2>
-
-<p>Cool, now we have the branch name. Now we just need to set the bash variable <code class="language-plaintext highlighter-rouge">PS</code> to show our minimal prompt</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">PS1</span><span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">[</span><span class="se">\u</span><span class="s2">] at </span><span class="se">\w</span><span class="s2">"</span><span class="p">;</span></code></pre></figure>
-
-<p><code class="language-plaintext highlighter-rouge">\n</code>: New line</p>
-
-<p><code class="language-plaintext highlighter-rouge">\u</code>: Current user (name)</p>
-
-<p><code class="language-plaintext highlighter-rouge">\w</code>: Path relative to home (notice the tilda in the path names in the screenshots)</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PS1+<span class="o">=</span><span class="s2">" </span><span class="se">\$</span><span class="s2">(git_prompt)"</span><span class="p">;</span></code></pre></figure>
-
-<p>This appends the branch name in parentheses (if it’s a git repo)</p>
-
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PS1+<span class="o">=</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=&gt; "</span><span class="p">;</span></code></pre></figure>
-
-<p>Just a new line. With a short arrow.</p>
-
-<p>And we’re done! Hope this made sense. Bash scripting is fun. A side project I’m working on is to transition my SCSS compilation to CSS using Makefiles. Will post my findings soon.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I like to keep my bash prompt clean and simple. Learn how to setup a minimal bash prompt.]]></summary></entry></feed>
+<p>And you’re done! Hope you find this guide helpful. Share it with someone you think might need it.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[I recently moved from Bangalore to Jaipur and I had to transfer my Indane gas connection.]]></summary></entry></feed>

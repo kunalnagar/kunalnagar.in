@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A process to store Resume data in JSON and generate multiple versions" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Automatic Resume generation in PDF and text from JSON - Kunal Nagar</title>
+    <meta
+      property="og:image"
+      content="https://kunalnagar.in/assets/img/post.png"
+    />
+    <meta property="og:title" content="Automatic Resume generation in PDF and text from JSON - Kunal Nagar" />
+    <meta property="og:description" content="A process to store Resume data in JSON and generate multiple versions" />
+    <meta property="og:url" content="https://kunalnagar.in/blog/resume-generator/" />
+    <meta property="og:type" content="article" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+  <ul>
+    <li><a href="/">Kunal Nagar</a></li>
+    <li><a href="/foss">Open Source</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</nav>
+
+      <div class="page-blog-single">
+        <section class="section">
+          <h1>Automatic Resume generation in PDF and text from JSON</h1>
+          <time class="muted">January 02, 2023</time>
+        </section>
+        <article><p><strong>TL;DR</strong> - Store Resume data as JSON and write node scripts to generate dynamic versions like PDF and text. Source <a href="https://github.com/kunalnagar/kunalnagar.in/tree/master/scripts/resume">here</a></p>
+
+<ul>
+  <li><a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/_data/resume.json">Source JSON</a></li>
+  <li><a href="https://www.kunalnagar.in/assets/downloads/Resume-KunalNagar.pdf">PDF version</a></li>
+  <li><a href="https://www.kunalnagar.in/assets/downloads/Resume-KunalNagar.txt">Text version</a></li>
+  <li><a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/index.md?plain=1">Jekyll version</a></li>
+</ul>
+
+<hr />
+
+<p>My website is geared towards recruiters and folks to get to know me professionally. One of the things everyone looks at is the Resume. I offer my Resume as a PDF or a Text file as downloads on this site. When a recruiter reaches out, I just redirect them to my website and they can choose the format that works for them.</p>
+
+<h2 id="inspiration">Inspiration</h2>
+
+<p>Over the years, I’ve found myself updating my Resume and tweaking it’s format. The issue is that I have to do it twice - one for the PDF and another for the text. I’m a lazy developer and thought to myself - let’s automate this such that if there’s an update, I can only update it once and the PDF/text versions would be generated automatically. Another advantage with this approach is the ability to write a generator for a new format - like <code class="language-plaintext highlighter-rouge">.docx</code> that I plan on doing soon.</p>
+
+<h2 id="json---single-source-of-truth">JSON - single source of truth</h2>
+
+<p>Here’s why I decided to use JSON to store the data:</p>
+
+<ul>
+  <li>Easy to read and understand</li>
+  <li>Self-describing syntax. By looking at the structure of a JSON document, it is possible to interpret the context</li>
+  <li>Stored as simple text and can be easily parsed in multiple environments</li>
+</ul>
+
+<p>The source file can be found <a href="https://github.com/kunalnagar/kunalnagar.in/tree/master/scripts/resume">here</a>.</p>
+
+<h3 id="creating-a-pdf">Creating a PDF</h3>
+
+<p>After looking at the libraries available in the ecosystem, I decided to go with <a href="https://pdfkit.org/">pdfkit</a> as it was the easiest to get started and offered a simple enough syntax.</p>
+
+<p>The source code can be found <a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/scripts/resume/create_pdf_file.js">here</a></p>
+
+<p>Essentially, here’s what is happening:</p>
+
+<ul>
+  <li>Get resume data as a JSON object</li>
+  <li>Create an empty PDF document with margins</li>
+  <li>Set the output path</li>
+  <li>Render the different sections of the Resume</li>
+</ul>
+
+<h3 id="creating-a-text-file">Creating a text file</h3>
+
+<p>Writing this generator was a breeze as there is no third-party library required. All you need is to generate a template string and output it to a file using the <a href="https://nodejs.org/api/fs.html#fswritefilesyncfile-data-options">fs</a> module.</p>
+
+<h3 id="auto-generation-during-deployment">Auto-generation during deployment</h3>
+
+<p>Now that we have our node scripts that generate PDF and text versions of our resume, it’s time to write a command to do so dynamically in the CI environment when this website gets generated.</p>
+
+<p>We could also check-in these files into the git repo by manual generation. However, this is a problem for me as I tend to forget things unless enforced by a rule. When merging a PR, it is possible that I forget to run the node scripts locally. Hence, I decided to do this part in CI.</p>
+
+<p>I created a dedicated <code class="language-plaintext highlighter-rouge">package.json</code> <a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/package.json#L14">script</a> to generate these files, but integrated it in the same <code class="language-plaintext highlighter-rouge">build</code> command that generates the website. This way, I didn’t have to change any of my CI/CD scripts.</p>
+
+<h3 id="can-i-use-this-to-generate-my-own-resume">Can I use this to generate my own Resume?</h3>
+
+<p>Absolutely! As long as you are using <a href="https://nodejs.org/en/">Node.js</a>, you should be able to copy the source JSON format, tweak it to add your own data/work experience and run the respective generator to generate the file.</p>
+
+<hr />
+
+<p>And that’s it! Any time I make a change to the source JSON data, all formats are regenerated and deployed automatically.</p>
+</article>
+      </div>
+    </main>
+    
+  </body>
+</html>

@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.17...v2.3.18) (2023-01-02)
+
+
+### Bug Fixes
+
+* Open Source page ([#172](https://github.com/kunalnagar/kunalnagar.in/issues/172)) ([5052e31](https://github.com/kunalnagar/kunalnagar.in/commit/5052e31e1a806e6278ba65ead1b5078a011494d1))
+
 ### [2.3.17](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.16...v2.3.17) (2023-01-02)
 
 
