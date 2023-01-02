@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.3.16](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.15...v2.3.16) (2023-01-02)
+
+
+### Chores
+
+* **deps:** update dependency @babel/core to v7.20.7 ([#179](https://github.com/kunalnagar/kunalnagar.in/issues/179)) ([5f92d59](https://github.com/kunalnagar/kunalnagar.in/commit/5f92d59750f20b74c018401430882cf647033efe))
+* **deps:** update dependency prettier to v2.8.1 ([#180](https://github.com/kunalnagar/kunalnagar.in/issues/180)) ([658bcde](https://github.com/kunalnagar/kunalnagar.in/commit/658bcdea5b80de8cae48bf1a06e82a15ae5b2961))
+
 ### [2.3.15](https://github.com/kunalnagar/kunalnagar.in/compare/v2.3.14...v2.3.15) (2022-12-23)
 
 
