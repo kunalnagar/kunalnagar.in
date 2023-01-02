@@ -37,17 +37,6 @@
       "description": "A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty",
       "link": "https://github.com/kunalnagarco/action-cve",
       "popular": true
-    },
-    {
-      "title": "action-semantic-pr",
-      "description": "A GitHub action to validate pull request titles according to the Conventional Commit specification",
-      "link": "https://github.com/kunalnagarco/action-semantic-pr"
-    },
-    {
-      "title": "react-hooks",
-      "description": "A list of commonly-used React hooks",
-      "link": "https://github.com/kunalnagarco/react-hooks",
-      "popular": true
     }
   ],
   "tinkers": [
