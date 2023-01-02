@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Automatic Resume generation in PDF and text from JSON'
-date: 2022-06-25
+date: 2023-01-02
 description: 'A process to store Resume data in JSON and generate multiple versions'
 permalink: /blog/resume-generator/
 ---
@@ -20,8 +20,6 @@ My website is geared towards recruiters and folks to get to know me professional
 ## Inspiration
 
 Over the years, I've found myself updating my Resume and tweaking it's format. The issue is that I have to do it twice - one for the PDF and another for the text. I'm a lazy developer and thought to myself - let's automate this such that if there's an update, I can only update it once and the PDF/text versions would be generated automatically. Another advantage with this approach is the ability to write a generator for a new format - like `.docx` that I plan on doing soon.
-
-Please note that this is something that works for me, and may not be the best implementation.
 
 ## JSON - single source of truth
 
@@ -65,5 +63,3 @@ Absolutely! As long as you are using [Node.js](https://nodejs.org/en/), you shou
 ---
 
 And that's it! Any time I make a change to the source JSON data, all formats are regenerated and deployed automatically.
-
-
