@@ -2,7 +2,7 @@
 layout: post
 title: 'Automatic Resume generation in PDF and text from JSON'
 date: 2022-06-25
-description: 'A process to store Resume data in JSON and generate PDF and text versions'
+description: 'A process to store Resume data in JSON and generate multiple versions'
 permalink: /blog/resume-generator/
 ---
 
