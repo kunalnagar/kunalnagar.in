@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.4.15](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.14...v2.4.15) (2023-05-01)
+
+
+### Chores
+
+* **deps:** update dependency @semantic-release/changelog to v6.0.3 ([1c8cfbf](https://github.com/kunalnagar/kunalnagar.in/commit/1c8cfbf97f70847dbc6af9231860f96238f1faac))
+
 ### [2.4.14](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.13...v2.4.14) (2023-04-24)
 
 
