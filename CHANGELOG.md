@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.4.17](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.16...v2.4.17) (2023-05-15)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([286e722](https://github.com/kunalnagar/kunalnagar.in/commit/286e722041e54a9fd6678884a031785ed0357e36))
+
 ### [2.4.16](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.15...v2.4.16) (2023-05-15)
 
 
