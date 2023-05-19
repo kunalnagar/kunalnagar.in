@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.4.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.17...v2.4.18) (2023-05-19)
+
+
+### Chores
+
+* **deps:** update actions/cache action to v3 ([#184](https://github.com/kunalnagar/kunalnagar.in/issues/184)) ([1f713a7](https://github.com/kunalnagar/kunalnagar.in/commit/1f713a72122075ed43411383908ea4c299a00c84))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v5 ([#186](https://github.com/kunalnagar/kunalnagar.in/issues/186)) ([95dae94](https://github.com/kunalnagar/kunalnagar.in/commit/95dae946494c7f868d2b0422f3b37e612ec0fec8))
+* **deps:** update timbru31/ruby-node docker tag to v3.2 ([#183](https://github.com/kunalnagar/kunalnagar.in/issues/183)) ([8ad5178](https://github.com/kunalnagar/kunalnagar.in/commit/8ad51785f6c1e943d5ce75e48b68e97924215b6b))
+
 ### [2.4.17](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.16...v2.4.17) (2023-05-15)
 
 
