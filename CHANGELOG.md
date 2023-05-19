@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.19](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.18...v2.4.19) (2023-05-19)
+
+
+### Chores
+
+* **deps:** update dependency babel-loader to v9 ([#185](https://github.com/kunalnagar/kunalnagar.in/issues/185)) ([3189e0c](https://github.com/kunalnagar/kunalnagar.in/commit/3189e0ce0d8d57f98a42d1a536d62b305b11ca7d))
+
 ## [2.4.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.17...v2.4.18) (2023-05-19)
 
 
