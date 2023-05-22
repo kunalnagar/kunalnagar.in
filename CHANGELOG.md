@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.19...v2.5.0) (2023-05-22)
+
+
+### Features
+
+* Change font to Noto Sans ([#187](https://github.com/kunalnagar/kunalnagar.in/issues/187)) ([919eb40](https://github.com/kunalnagar/kunalnagar.in/commit/919eb401daaeed6313c5fd88b281ec4dbf42aeac))
+
 ## [2.4.19](https://github.com/kunalnagar/kunalnagar.in/compare/v2.4.18...v2.4.19) (2023-05-19)
 
 
