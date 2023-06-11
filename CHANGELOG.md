@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.2...v2.5.3) (2023-06-01)
+
+
+### Chores
+
+* **deps:** update dependency prettier to v2.8.8 ([2ba3c2c](https://github.com/kunalnagar/kunalnagar.in/commit/2ba3c2cdb25ac70dbf73a4e6dcad359f997caea2))
+
 ## [2.5.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.1...v2.5.2) (2023-05-29)
 
 
