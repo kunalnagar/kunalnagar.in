@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.3...v2.5.4) (2023-06-11)
+
+
+### Chores
+
+* **deps:** update dependency husky to v8 ([#188](https://github.com/kunalnagar/kunalnagar.in/issues/188)) ([cdd7aa1](https://github.com/kunalnagar/kunalnagar.in/commit/cdd7aa194e3da1c4541b26813f2b31b36a508d90))
+* **deps:** update dependency sort-package-json to v2 ([#191](https://github.com/kunalnagar/kunalnagar.in/issues/191)) ([36314a6](https://github.com/kunalnagar/kunalnagar.in/commit/36314a6baeb1e702e96724bcf68bc8fc3aae4b6d))
+
 ## [2.5.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.2...v2.5.3) (2023-06-01)
 
 
