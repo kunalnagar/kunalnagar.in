@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.6.1...v2.7.0) (2023-07-04)
+
+
+### Features
+
+* Upgrade node version to LTS Hydrogen (18) ([#194](https://github.com/kunalnagar/kunalnagar.in/issues/194)) ([b39e3a8](https://github.com/kunalnagar/kunalnagar.in/commit/b39e3a84a67f62b86c9cb360e3922d5fbcea774b))
+
 ## [2.6.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.6.0...v2.6.1) (2023-07-04)
 
 
