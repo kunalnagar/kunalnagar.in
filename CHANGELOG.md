@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.7...v2.6.0) (2023-07-04)
+
+
+### Features
+
+* Add giscus comments ([#193](https://github.com/kunalnagar/kunalnagar.in/issues/193)) ([20d8878](https://github.com/kunalnagar/kunalnagar.in/commit/20d8878388a802410cce949811ca914907646d12))
+
 ## [2.5.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.6...v2.5.7) (2023-07-01)
 
 
