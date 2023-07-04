@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.6.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.6.0...v2.6.1) (2023-07-04)
+
+
+### Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v6 ([#192](https://github.com/kunalnagar/kunalnagar.in/issues/192)) ([ca7839a](https://github.com/kunalnagar/kunalnagar.in/commit/ca7839a68f8009169c077497d60ff13e4f9f48f1))
+* **deps:** update dependency lint-staged to v13 ([#189](https://github.com/kunalnagar/kunalnagar.in/issues/189)) ([e841a02](https://github.com/kunalnagar/kunalnagar.in/commit/e841a0270b7edf02c1956c53752d5bbf18722529))
+
 ## [2.6.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.5.7...v2.6.0) (2023-07-04)
 
 
