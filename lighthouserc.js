@@ -14,6 +14,7 @@ module.exports = {
         'http://localhost:4000/',
         'http://localhost:4000/foss',
         'http://localhost:4000/blog',
+        'http://localhost:4000/custom-404-pro',
       ],
       startServerCommand: 'npm run dev',
     },
