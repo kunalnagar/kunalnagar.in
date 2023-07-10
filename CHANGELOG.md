@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.7.0...v2.7.1) (2023-07-04)
+
+
+### Chores
+
+* **deps:** update dependency semantic-release to v21 ([#190](https://github.com/kunalnagar/kunalnagar.in/issues/190)) ([9b0c479](https://github.com/kunalnagar/kunalnagar.in/commit/9b0c479e136d3455bec99c8df11761255a8e0eab))
+
 ## [2.7.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.6.1...v2.7.0) (2023-07-04)
 
 
