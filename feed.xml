@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2023-07-17T02:38:03+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Automatic Resume generation in PDF and text from JSON</title><link href="https://www.kunalnagar.in/blog/resume-generator/" rel="alternate" type="text/html" title="Automatic Resume generation in PDF and text from JSON" /><published>2023-01-02T00:00:00+00:00</published><updated>2023-01-02T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/resume-generator</id><content type="html" xml:base="https://www.kunalnagar.in/blog/resume-generator/"><![CDATA[<p><strong>TL;DR</strong> - Store Resume data as JSON and write node scripts to generate dynamic versions like PDF and text. Source <a href="https://github.com/kunalnagar/kunalnagar.in/tree/master/scripts/resume">here</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://www.kunalnagar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kunalnagar.in/" rel="alternate" type="text/html" /><updated>2023-07-17T02:44:42+00:00</updated><id>https://www.kunalnagar.in/feed.xml</id><title type="html">Kunal Nagar</title><subtitle>Hi. I'm Kunal. Use JavaScript responsibly and help make the web fast.</subtitle><entry><title type="html">Automatic Resume generation in PDF and text from JSON</title><link href="https://www.kunalnagar.in/blog/resume-generator/" rel="alternate" type="text/html" title="Automatic Resume generation in PDF and text from JSON" /><published>2023-01-02T00:00:00+00:00</published><updated>2023-01-02T00:00:00+00:00</updated><id>https://www.kunalnagar.in/blog/resume-generator</id><content type="html" xml:base="https://www.kunalnagar.in/blog/resume-generator/"><![CDATA[<p><strong>TL;DR</strong> - Store Resume data as JSON and write node scripts to generate dynamic versions like PDF and text. Source <a href="https://github.com/kunalnagar/kunalnagar.in/tree/master/scripts/resume">here</a></p>
 
 <ul>
   <li><a href="https://github.com/kunalnagar/kunalnagar.in/blob/master/_data/resume.json">Source JSON</a></li>
@@ -503,59 +503,11 @@ ssb   rsa4096/xxxxxxxxxxxxxxxx 2019-07-31 <span class="o">[</span>E] <span class
 
 <p>If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.</p>
 
-<p><strong>Note:</strong> It is absolutely safe to run the app on Mac/Windows. I’m not interested in your data or running malicious scripts. If you’re worried about what the app is doing underneath, the code is all there, have at it :)</p>
-
-<style>
-  .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-  }
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-<div class="embed-container">
-  <iframe src="https://www.youtube.com/embed/VIVz7MtNEO0" frameborder="0" allowfullscreen=""></iframe>
-</div>
+<p><strong>Note:</strong> It is absolutely safe to run the app on Mac/Windows.</p>
 
 <h2 id="screenshot">Screenshot</h2>
 
 <p><img src="https://i.imgur.com/WQXyqsj.png" alt="" /></p>
-
-<h2 id="demo">Demo</h2>
-
-<style>
-  .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-  }
-  .embed-container iframe,
-  .embed-container object,
-  .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
-
-<div class="embed-container">
-  <iframe src="https://www.youtube.com/embed/WBf2bRMRFME" frameborder="0" allowfullscreen=""></iframe>
-</div>
 
 <h2 id="bugscontribute">Bugs/Contribute</h2>
 
