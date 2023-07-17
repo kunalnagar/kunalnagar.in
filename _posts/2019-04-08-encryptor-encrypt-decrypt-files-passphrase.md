@@ -33,17 +33,11 @@ Here are direct links to download for your preferred platform:
 
 If you download the app on Mac/Windows, you will get an untrusted developer warning. This is because the app is not signed by the developer (aka me). Signing an app requires a Signing Certificate that costs hundreds of dollars per year.
 
-**Note:** It is absolutely safe to run the app on Mac/Windows. I'm not interested in your data or running malicious scripts. If you're worried about what the app is doing underneath, the code is all there, have at it :)
-
-{% include components/yt.html id="VIVz7MtNEO0" %}
+**Note:** It is absolutely safe to run the app on Mac/Windows.
 
 ## Screenshot
 
 {% include components/lightbox-img.html src="https://i.imgur.com/WQXyqsj.png" %}
-
-## Demo
-
-{% include components/yt.html id="WBf2bRMRFME" %}
 
 ## Bugs/Contribute
 

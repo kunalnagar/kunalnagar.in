@@ -9,9 +9,7 @@ permalink: /blog/setup-multiple-ssh-keys-mac/
 
 Learn how to setup multiple SSH keys on your mac. This can be useful when you need multiple accounts (may be for personal use or work) to be setup on a single mac.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/9u4QPEMFK4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Video Notes
+## Notes
 
 [Generating SSH Keys (Github Article)][generating-ssh-keys]
 
