@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.7.2...v2.8.0) (2023-07-17)
+
+
+### Features
+
+* Use free fonts ([23ef593](https://github.com/kunalnagar/kunalnagar.in/commit/23ef593c82b83372c1545cdfe18b12ded9b18e59))
+
 ## [2.7.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.7.1...v2.7.2) (2023-07-10)
 
 
