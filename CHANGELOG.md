@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.9.0...v2.10.0) (2023-07-31)
+
+
+### Features
+
+* Update font ([#197](https://github.com/kunalnagar/kunalnagar.in/issues/197)) ([5f7818e](https://github.com/kunalnagar/kunalnagar.in/commit/5f7818e4a5a64f77f8636ffe245097e63694bb5f))
+
 ## [2.9.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.8.1...v2.9.0) (2023-07-17)
 
 
