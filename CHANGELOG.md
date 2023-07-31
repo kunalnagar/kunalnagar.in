@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.8.1...v2.9.0) (2023-07-17)
+
+
+### Features
+
+* Fix blog posts ([#195](https://github.com/kunalnagar/kunalnagar.in/issues/195)) ([0e6e220](https://github.com/kunalnagar/kunalnagar.in/commit/0e6e220050b2758ed58007eac83babd359885ad0))
+
 ## [2.8.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.8.0...v2.8.1) (2023-07-17)
 
 
