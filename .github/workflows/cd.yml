@@ -15,12 +15,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
-      - name: Install bundler 2.1.4
-        run: sudo gem install bundler -v 2.1.4
       - name: Cache ruby (bundler) dependencies
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
           bundler-cache: true
       - name: Cache npm dependencies
         uses: actions/cache@v3
