@@ -21,6 +21,7 @@ exclude:
   - vendor
 
 sass:
+  implementation: sass-embedded
   load_paths:
     - _sass
     - node_modules
