@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "2.11.3",
+  "version": "2.11.4",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
@@ -34,8 +34,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.22.11",
-    "@babel/preset-env": "7.22.14",
+    "@babel/core": "7.23.0",
+    "@babel/preset-env": "7.22.20",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "babel-loader": "9.1.3",

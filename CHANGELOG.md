@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.11.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.11.3...v2.11.4) (2023-09-01)
+
+
+### Chores
+
+* **deps:** update dependency lint-staged to v13.3.0 ([4579ccc](https://github.com/kunalnagar/kunalnagar.in/commit/4579ccc74b5c618485b939559c02ee86e9d41ff1))
+
 ## [2.11.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.11.2...v2.11.3) (2023-09-01)
 
 
