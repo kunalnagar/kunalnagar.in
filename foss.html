@@ -5,20 +5,12 @@ title: Open Source
 
 <div class="page page-foss">
   <h2>Open Source</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Project</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for project in site.data.foss.projects %}
-      <tr>
-        <td><a href="{{ project.link }}">{{ project.title }}</a></td>
-        <td>{{ project.description }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  <ul>
+    {% for project in site.data.foss.projects %}
+    <li>
+      <a href="{{ project.link }}">{{ project.title }}</a>
+      <p class="muted">{{ project.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
