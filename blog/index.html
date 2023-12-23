@@ -5,20 +5,12 @@ title: Blog
 
 <div class="page page-blog">
   <h2>Blog</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Title</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for post in site.posts %}
-      <tr>
-        <td class="muted">{{ post.date | date: "%b %d, %Y" }}</td>
-        <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p class="muted">{{ post.date | date: "%b %d, %Y" }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </div>

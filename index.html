@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h2>Contact</h2>
+  <ul>
+    <li>
+      Download Resume in
+      <a href="{{ site.data.resume.download.pdf }}">PDF</a> or
+      <a
+        href="{{
+        site.data.resume.download.txt }}"
+        >text</a
+      >
+    </li>
+    <li>{{ site.data.resume.contact.email.privacyText }}</li>
+    <li>
+      <a href="{{ site.data.resume.contact.github.url }}"
+        >{{ site.data.resume.contact.github.text }}</a
+      >
+    </li>
+    <li>
+      <a href="{{ site.data.resume.contact.linkedin.url }}"
+        >{{ site.data.resume.contact.linkedin.text }}</a
+      >
+    </li>
+  </ul>
+  <h2>Skills</h2>
+  <ul>
+    {% for skill_line in site.data.resume.skills %}
+    <li>{{ skill_line | join: ", " }}</li>
+    {% endfor %}
+  </ul>
+  <h2>Work Experience</h2>
+  {% for experience in site.data.resume.experiences %}
+  <h3>
+    <a href="{{ experience.website }}">{{ experience.title }}</a>, {{
+    experience.position }}, {{ experience.location }}, {{ experience.tenure }}
+  </h3>
+  <ul>
+    {% for point in experience.points %}
+    <li>{{ point }}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  <h2>Education</h2>
+  {% assign education = site.data.resume.education.first %}
+  <h3>
+    {{ education.degree }}, {{ education.field }}, {{ education.institution }},
+    {{ education.tenure }}
+  </h3>
+  CGPA {{ education.cgpa }}
+</div>

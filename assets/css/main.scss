@@ -6,6 +6,7 @@
 @import 'highlight';
 @import 'page-blog';
 @import 'page-blog-post';
+@import 'page-foss';
 
 body {
   font-family: $font-family;
@@ -63,7 +64,14 @@ nav {
 }
 
 a {
-  color: #00e;
+  color: $color-link-super;
+}
+
+.page {
+
+  a {
+    color: $color-link;
+  }
 }
 
 img {

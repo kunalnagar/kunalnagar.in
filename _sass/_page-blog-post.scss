@@ -1,7 +1,20 @@
 .page-blog-single {
+
+  h1 {
+    margin-bottom: 0;
+  }
+
   li {
     p {
       margin: 0.5rem 0;
     }
+  }
+
+  time.muted {
+    font-size: 0.8rem;
+  }
+
+  article {
+    margin-top: 2rem;
   }
 }
