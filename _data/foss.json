@@ -1,35 +1,9 @@
 {
   "projects": [
     {
-      "img": "/assets/img/foss/imdb.png",
-      "title": "IMDb API",
-      "description": "An IMDb scraper built on Node.js with an extensive API to fetch titles and watchlists",
-      "link": "https://github.com/kunalnagar/expressyo-imdb-scraper"
-    },
-    {
-      "img": "/assets/img/foss/electron.svg",
-      "title": "encrypt0r",
-      "description": "An Electron app to encrypt/decrypt your files by setting a passphrase",
-      "link": "/blog/encryptor-encrypt-decrypt-files-passphrase/",
-      "popular": true
-    },
-    {
-      "img": "/assets/img/foss/wp.png",
       "title": "Custom 404 Pro",
       "description": "A WordPress plugin (with over 100,000+ downloads) that allows you to replace the default 404 page with a custom page or URL",
       "link": "/blog/custom-404-pro/",
-      "popular": true
-    },
-    {
-      "img": "/assets/img/foss/jquery.png",
-      "title": "jquery.peekABar",
-      "description": "A jQuery notification bar plugin with multiple customization options",
-      "link": "https://kunalnagar.github.io/jquery.peekABar/"
-    },
-    {
-      "title": "healthie",
-      "description": "A simple middleware that adds a health check endpoint to your Express.js applications",
-      "link": "/blog/express-health-check-middleware/",
       "popular": true
     },
     {
@@ -37,11 +11,27 @@
       "description": "A GitHub action that sends Dependabot Vulnerability Alerts to Slack, PagerDuty",
       "link": "https://github.com/kunalnagarco/action-cve",
       "popular": true
+    },
+    {
+      "title": "jquery.peekABar",
+      "description": "A jQuery notification bar plugin with multiple customization options",
+      "link": "https://kunalnagar.github.io/jquery.peekABar/"
+    },
+    {
+      "title": "encrypt0r",
+      "description": "An Electron app to encrypt/decrypt your files by setting a passphrase",
+      "link": "/blog/encryptor-encrypt-decrypt-files-passphrase/",
+      "popular": true
+    },
+    {
+      "title": "healthie",
+      "description": "A simple middleware that adds a health check endpoint to your Express.js applications",
+      "link": "/blog/express-health-check-middleware/",
+      "popular": true
     }
   ],
   "tinkers": [
     {
-      "img": "/assets/img/foss/highcharts.png",
       "title": "HighCharts to PDF",
       "description": "A fiddle on how to export multiple graphs in Highcharts to a PDF using jsPDF",
       "link": "/blog/highcharts-export-pdf/"
