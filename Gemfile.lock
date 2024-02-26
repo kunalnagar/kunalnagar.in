@@ -115,7 +115,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-feed (~> 0.17)
+  jekyll-feed
   jekyll-sitemap
 
 BUNDLED WITH
