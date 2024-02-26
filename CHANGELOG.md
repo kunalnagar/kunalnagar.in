@@ -1,5 +1,42 @@
 # Changelog
 
+## [2.12.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.11.10...v2.12.0) (2024-02-26)
+
+
+### Features
+
+* Minor updates to site ([#210](https://github.com/kunalnagar/kunalnagar.in/issues/210)) ([b26c33e](https://github.com/kunalnagar/kunalnagar.in/commit/b26c33e0860a17d7e22ed419edf530376cda17fa))
+* Update site ([#206](https://github.com/kunalnagar/kunalnagar.in/issues/206)) ([07ce88d](https://github.com/kunalnagar/kunalnagar.in/commit/07ce88dd635bee9aceac0bf0797eb67ebe1eed68))
+* Upgrade dependencies ([#217](https://github.com/kunalnagar/kunalnagar.in/issues/217)) ([7cb88f0](https://github.com/kunalnagar/kunalnagar.in/commit/7cb88f00efe0792412bf40ec3e3befff8ce558fd))
+
+
+### Chores
+
+* **deps:** lock file maintenance ([cfcb36a](https://github.com/kunalnagar/kunalnagar.in/commit/cfcb36ad30b88eded18ee19b411168163831f3ed))
+* **deps:** lock file maintenance ([8d0b38e](https://github.com/kunalnagar/kunalnagar.in/commit/8d0b38e518b04a4d90495c417409e8d18dcd6cf2))
+* **deps:** lock file maintenance ([864d4ae](https://github.com/kunalnagar/kunalnagar.in/commit/864d4aedc8a4c91fcb9a351040a487b15847b84f))
+* **deps:** lock file maintenance ([8a9a792](https://github.com/kunalnagar/kunalnagar.in/commit/8a9a792c8186d99d549d21dea40f25a1c6811d88))
+* **deps:** lock file maintenance ([e3ee5a3](https://github.com/kunalnagar/kunalnagar.in/commit/e3ee5a349d2454c16ab69bfa4362a30b04645404))
+* **deps:** lock file maintenance ([e6e2c68](https://github.com/kunalnagar/kunalnagar.in/commit/e6e2c68e8ff24832ae45753a8a9b63d7a2aa8a5f))
+* **deps:** lock file maintenance ([d1f17c2](https://github.com/kunalnagar/kunalnagar.in/commit/d1f17c22439d5cafc9e2123b7f4499a2608ad613))
+* **deps:** lock file maintenance ([a3f0354](https://github.com/kunalnagar/kunalnagar.in/commit/a3f03543fdb221eeabb06e6b009c963d19648bc7))
+* **deps:** lock file maintenance ([#200](https://github.com/kunalnagar/kunalnagar.in/issues/200)) ([daedac8](https://github.com/kunalnagar/kunalnagar.in/commit/daedac8a6528875bcf92ad6c98b2f77ac4f65dc9))
+* **deps:** update actions/cache action to v4 ([#211](https://github.com/kunalnagar/kunalnagar.in/issues/211)) ([b3fefcf](https://github.com/kunalnagar/kunalnagar.in/commit/b3fefcf21894c3f15017c7491475873b12a3f6f8))
+* **deps:** update actions/checkout action to v4 ([#202](https://github.com/kunalnagar/kunalnagar.in/issues/202)) ([cfe01ed](https://github.com/kunalnagar/kunalnagar.in/commit/cfe01ed4a23c2734ee4607374d35785d9aa5b9a1))
+* **deps:** update actions/setup-node action to v4 ([#203](https://github.com/kunalnagar/kunalnagar.in/issues/203)) ([43f39a4](https://github.com/kunalnagar/kunalnagar.in/commit/43f39a41980533d8380d189948d2f8ae0d06a2b2))
+* **deps:** update babel monorepo to v7.23.7 ([63347ec](https://github.com/kunalnagar/kunalnagar.in/commit/63347ecdc5e95f5dcb9d843c6f365de0b43169f8))
+* **deps:** update babel monorepo to v7.23.9 ([d6666d2](https://github.com/kunalnagar/kunalnagar.in/commit/d6666d2b079d60b1c91c98164a51bb124bed2791))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v7 ([#204](https://github.com/kunalnagar/kunalnagar.in/issues/204)) ([b73575c](https://github.com/kunalnagar/kunalnagar.in/commit/b73575c5c073a76138b5cec0f526eb987748372c))
+* **deps:** update dependency husky to v9 ([#212](https://github.com/kunalnagar/kunalnagar.in/issues/212)) ([b579fd5](https://github.com/kunalnagar/kunalnagar.in/commit/b579fd5baaf4888ab7dde33e31d2ab5931d55519))
+* **deps:** update dependency lint-staged to v15 ([#205](https://github.com/kunalnagar/kunalnagar.in/issues/205)) ([5df0cdf](https://github.com/kunalnagar/kunalnagar.in/commit/5df0cdf0c1f87ae2e0fa85e10a941b12e988687b))
+* **deps:** update dependency lint-staged to v15.2.1 ([6f53f28](https://github.com/kunalnagar/kunalnagar.in/commit/6f53f28af9206f9db82dbe2c4af982a31a291d8a))
+* **deps:** update dependency lint-staged to v15.2.2 ([57b70da](https://github.com/kunalnagar/kunalnagar.in/commit/57b70da82d7bdf25866619f0b56e065b8e6213f8))
+* **deps:** update dependency node to v20 ([#213](https://github.com/kunalnagar/kunalnagar.in/issues/213)) ([13463c1](https://github.com/kunalnagar/kunalnagar.in/commit/13463c1b2a0cd28fea6908904d3ed104cea46cac))
+* **deps:** update dependency pretty-quick to v3.3.1 ([b131b31](https://github.com/kunalnagar/kunalnagar.in/commit/b131b31cc32323fe8ab7c864012f2272ea6b1b69))
+* **deps:** update dependency ruby to v3.2.2 ([#199](https://github.com/kunalnagar/kunalnagar.in/issues/199)) ([e4d7894](https://github.com/kunalnagar/kunalnagar.in/commit/e4d78945dad3d0d89bed83078f292261ce306a3c))
+* **deps:** update dependency sort-package-json to v2.8.0 ([49ef63f](https://github.com/kunalnagar/kunalnagar.in/commit/49ef63fa51e6be112accb90f76299168b0898178))
+* **deps:** update timbru31/ruby-node docker tag to v3.3 ([#201](https://github.com/kunalnagar/kunalnagar.in/issues/201)) ([2f64b15](https://github.com/kunalnagar/kunalnagar.in/commit/2f64b1590a84cde3e880732f88fffbc4168450a3))
+
 ## [2.11.10](https://github.com/kunalnagar/kunalnagar.in/compare/v2.11.9...v2.11.10) (2023-12-01)
 
 
