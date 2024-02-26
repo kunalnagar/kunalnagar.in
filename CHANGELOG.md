@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.12.0...v2.13.0) (2024-02-26)
+
+
+### Features
+
+* Upgrade ruby ([#218](https://github.com/kunalnagar/kunalnagar.in/issues/218)) ([804e4d1](https://github.com/kunalnagar/kunalnagar.in/commit/804e4d1bf50f8c481267a8c4ac659d7cffce5e7f))
+
 ## [2.12.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.11.10...v2.12.0) (2024-02-26)
 
 
