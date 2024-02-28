@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.0...v2.13.1) (2024-02-26)
+
+
+### Chores
+
+* **deps:** update dependency ruby to v3.3.0 ([#208](https://github.com/kunalnagar/kunalnagar.in/issues/208)) ([a9a76ac](https://github.com/kunalnagar/kunalnagar.in/commit/a9a76aca1160f0b262918ee091d4a67c0c3203fd))
+
 ## [2.13.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.12.0...v2.13.0) (2024-02-26)
 
 
