@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.5](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.4...v2.13.5) (2024-03-15)
+
+
+### Chores
+
+* **deps:** update dependency semantic-release to v23.0.3 ([96ed41e](https://github.com/kunalnagar/kunalnagar.in/commit/96ed41e1ef8648d209fa6d26acb549761f69dbb3))
+
 ## [2.13.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.3...v2.13.4) (2024-03-11)
 
 
