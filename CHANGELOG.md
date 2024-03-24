@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.10](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.9...v2.13.10) (2024-03-20)
+
+
+### Chores
+
+* **deps:** update babel monorepo to v7.24.3 ([2979e3b](https://github.com/kunalnagar/kunalnagar.in/commit/2979e3bf83d611bd230556b0850e2ca9e6787bf9))
+
 ## [2.13.9](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.8...v2.13.9) (2024-03-19)
 
 
