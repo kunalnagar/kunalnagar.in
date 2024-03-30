@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.14](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.13...v2.13.14) (2024-03-26)
+
+
+### Chores
+
+* **deps:** update dependency sort-package-json to v2.9.0 ([7a26967](https://github.com/kunalnagar/kunalnagar.in/commit/7a26967c70c5dda1f12531b5cac0e4333741a795))
+
 ## [2.13.13](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.12...v2.13.13) (2024-03-25)
 
 
