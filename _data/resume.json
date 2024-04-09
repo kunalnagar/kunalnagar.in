@@ -13,10 +13,6 @@
       "text": "hireme@kunalnagar.in",
       "privacyText": "hireme [at] kunalnagar [dot] in"
     },
-    "twitter": {
-      "url": "https://twitter.com/_kunalnagar",
-      "text": "twitter.com/_kunalnagar"
-    },
     "github": {
       "url": "https://github.com/kunalnagar",
       "text": "github.com/kunalnagar"
@@ -31,18 +27,45 @@
     }
   },
   "skills": [
-    ["React.js", "TypeScript", "Webpack", "Jest", "Styled Components", "Sass"],
+    [
+      "React.js",
+      "TypeScript",
+      "Webpack",
+      "Jest",
+      "Styled Components",
+      "Sass",
+      "Design Systems"
+    ],
     ["Node.js", "Loopback", "Express.js", "PHP", "WordPress"],
     ["Docker", "CircleCI", "GitHub Actions", "TravisCI"],
-    ["Agile", "Scrum", "Jira", "Confluence", "Pivotal Tracker", "Trello", "GSuite"]
+    [
+      "Agile",
+      "Scrum",
+      "Jira",
+      "Confluence",
+      "Pivotal Tracker",
+      "Trello",
+      "GSuite"
+    ]
   ],
   "experiences": [
     {
       "website": "https://www.okta.com/",
       "title": "Okta",
       "location": "Toronto",
+      "position": "Principal Software Engineer",
+      "tenure": "April 2024-present",
+      "points": [
+        "Migrate legacy UI from Backbone to React at an Enterprise level",
+        "Modernize the UI stack and create a Design System based on MUI"
+      ]
+    },
+    {
+      "website": "https://www.okta.com/",
+      "title": "Okta",
+      "location": "Toronto",
       "position": "Staff Frontend Engineer",
-      "tenure": "Feb 2022-present",
+      "tenure": "Feb 2022-April 2024",
       "points": [
         "Improve the flow for importing new users into Okta from an Active Directory",
         "Contribute to the open-source design system Odyssey"
