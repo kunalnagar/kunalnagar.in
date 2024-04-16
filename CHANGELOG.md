@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.14.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.19...v2.14.0) (2024-04-16)
+
+
+### Features
+
+* Update current position Principal ([#219](https://github.com/kunalnagar/kunalnagar.in/issues/219)) ([9bc924c](https://github.com/kunalnagar/kunalnagar.in/commit/9bc924cdc65f6180bc385708c2af18c7da50b133))
+
 ## [2.13.19](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.18...v2.13.19) (2024-04-08)
 
 
