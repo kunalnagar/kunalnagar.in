@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.19](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.18...v2.13.19) (2024-04-08)
+
+
+### Chores
+
+* **deps:** lock file maintenance ([06c4a83](https://github.com/kunalnagar/kunalnagar.in/commit/06c4a83b03d2daec31b9e99763199ec20d60cf3b))
+
 ## [2.13.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.13.17...v2.13.18) (2024-04-04)
 
 

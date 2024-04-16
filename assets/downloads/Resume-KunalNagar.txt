@@ -5,14 +5,19 @@ www.kunalnagar.in
 
 SKILLS
 
-- React.js, TypeScript, Webpack, Jest, Styled Components, Sass
+- React.js, TypeScript, Webpack, Jest, Styled Components, Sass, Design Systems
 - Node.js, Loopback, Express.js, PHP, WordPress
 - Docker, CircleCI, GitHub Actions, TravisCI
 - Agile, Scrum, Jira, Confluence, Pivotal Tracker, Trello, GSuite
 
 WORK EXPERIENCE
 
-Okta, Staff Frontend Engineer, Toronto, Feb 2022-present
+Okta, Principal Software Engineer, Toronto, April 2024-present
+
+- Migrate legacy UI from Backbone to React at an Enterprise level
+- Modernize the UI stack and create a Design System based on MUI
+
+Okta, Staff Frontend Engineer, Toronto, Feb 2022-April 2024
 
 - Improve the flow for importing new users into Okta from an Active Directory
 - Contribute to the open-source design system Odyssey
