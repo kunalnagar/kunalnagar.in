@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "2.14.2",
+  "version": "2.14.3",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
@@ -45,7 +45,7 @@
     "pdfkit": "0.15.0",
     "prettier": "3.2.5",
     "pretty-quick": "4.0.0",
-    "semantic-release": "23.0.7",
+    "semantic-release": "23.1.1",
     "sort-package-json": "2.10.0"
   }
 }
