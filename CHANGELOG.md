@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.15.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.14.4...v2.15.0) (2024-07-08)
+
+### Features
+
+* Update jquery.peekABar URL to org ([#224](https://github.com/kunalnagar/kunalnagar.in/issues/224)) ([fb74b9e](https://github.com/kunalnagar/kunalnagar.in/commit/fb74b9e7b43863fcccd0aa0027946aa20b4a88c2))
+
+### Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v8 ([#222](https://github.com/kunalnagar/kunalnagar.in/issues/222)) ([e1659e1](https://github.com/kunalnagar/kunalnagar.in/commit/e1659e10cd57d6dba726c15a21d4c4c13b10db28))
+* **deps:** update dependency ruby to v3.3.2 ([#221](https://github.com/kunalnagar/kunalnagar.in/issues/221)) ([f7d2f5d](https://github.com/kunalnagar/kunalnagar.in/commit/f7d2f5d42134bb22df1876fcbceedfbd339b713b))
+* **deps:** update dependency semantic-release to v24 ([#223](https://github.com/kunalnagar/kunalnagar.in/issues/223)) ([c6b8ba9](https://github.com/kunalnagar/kunalnagar.in/commit/c6b8ba9b93917806ecf658a60dd564024dba7d42))
+
 ## [2.14.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.14.3...v2.14.4) (2024-06-01)
 
 
