@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.15.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.0...v2.15.1) (2024-08-01)
+
+### Chores
+
+* **deps:** update dependency lint-staged to v15.2.7 ([4e053da](https://github.com/kunalnagar/kunalnagar.in/commit/4e053daedcb0476a0baded34989b6946881744e0))
+
 ## [2.15.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.14.4...v2.15.0) (2024-07-08)
 
 ### Features
