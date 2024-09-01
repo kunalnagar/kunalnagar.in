@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.15.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.1...v2.15.2) (2024-08-02)
+
+### Chores
+
+* **deps:** update dependency ruby to v3.3.4 ([#225](https://github.com/kunalnagar/kunalnagar.in/issues/225)) ([5c4ba68](https://github.com/kunalnagar/kunalnagar.in/commit/5c4ba68269b4fde0d05f568413fa2b1d75133c73))
+
 ## [2.15.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.0...v2.15.1) (2024-08-01)
 
 ### Chores
