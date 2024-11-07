@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.15.6](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.5...v2.15.6) (2024-11-07)
+
+### Chores
+
+* **deps:** update dependency jekyll to v4.3.4 ([#226](https://github.com/kunalnagar/kunalnagar.in/issues/226)) ([0215820](https://github.com/kunalnagar/kunalnagar.in/commit/0215820ee9d4145664acf4e239fc83261652d5c0))
+* **deps:** update timbru31/ruby-node docker tag to v3.4 ([#228](https://github.com/kunalnagar/kunalnagar.in/issues/228)) ([e9aa2d0](https://github.com/kunalnagar/kunalnagar.in/commit/e9aa2d054f077ea1f36f37de3966987ded3792ed))
+
 ## [2.15.5](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.4...v2.15.5) (2024-11-01)
 
 ### Chores
