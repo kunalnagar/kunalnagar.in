@@ -1,4 +1,15 @@
 {
+  "about": {
+    "title": "Hey there 👋 I'm Kunal.",
+    "image": {
+      "src": "https://avatars.githubusercontent.com/u/2741371?v=4",
+      "alt": "Smiling photo of Kunal Nagar"
+    },
+    "body": [
+      "I wrote my first Hello World program in BASIC in 2002 and I've been hooked ever since. I like building scalable software with a focus on Frontend architecture.",
+      "Make the web fast. Use JavaScript, responsibly."
+    ]
+  },
   "download": {
     "txt": "/assets/downloads/Resume-KunalNagar.txt",
     "pdf": "/assets/downloads/Resume-KunalNagar.pdf"

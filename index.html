@@ -2,7 +2,19 @@
 layout: default
 ---
 
-<div class="page">
+<div class="page page-home">
+  <section class="section about-me">
+    <div>
+      <h1>{{ site.data.resume.about.title }}</h1>
+      {% for para in site.data.resume.about.body %}
+      <p>{{ para }}</p>
+      {% endfor %}
+    </div>
+    <img
+      src="{{ site.data.resume.about.image.src }}"
+      alt="{{ site.data.resume.about.image.alt }}"
+    />
+  </section>
   <h2>Contact</h2>
   <ul>
     <li>
