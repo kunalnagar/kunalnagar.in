@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.0](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.7...v2.16.0) (2024-12-03)
+
+### Features
+
+* add about section on home page ([#230](https://github.com/kunalnagar/kunalnagar.in/issues/230)) ([c4ab0c8](https://github.com/kunalnagar/kunalnagar.in/commit/c4ab0c8148e60577ba03a502c3bcb3d932ced2ed))
+
 ## [2.15.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.15.6...v2.15.7) (2024-12-01)
 
 ### Chores
