@@ -45,7 +45,7 @@
     "pdfkit": "0.15.1",
     "prettier": "3.2.5",
     "pretty-quick": "4.0.0",
-    "semantic-release": "24.0.0",
+    "semantic-release": "24.2.1",
     "sort-package-json": "2.10.0"
   }
 }
