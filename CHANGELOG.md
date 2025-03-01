@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.1...v2.16.2) (2025-01-04)
+
+### Chores
+
+* **deps:** update node.js to v22 ([#229](https://github.com/kunalnagar/kunalnagar.in/issues/229)) ([b09ff9b](https://github.com/kunalnagar/kunalnagar.in/commit/b09ff9b08b341e04d276fe973a6f275e4a34db2f))
+
 ## [2.16.1](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.0...v2.16.1) (2025-01-01)
 
 ### Chores
