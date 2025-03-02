@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.2...v2.16.3) (2025-03-01)
+
+### Chores
+
+* **deps:** update dependency husky to v9.1.7 ([15da324](https://github.com/kunalnagar/kunalnagar.in/commit/15da324ef4be8b345bc830fa9842143fa19adcb5))
+
 ## [2.16.2](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.1...v2.16.2) (2025-01-04)
 
 ### Chores
