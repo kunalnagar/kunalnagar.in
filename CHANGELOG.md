@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.5](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.4...v2.16.5) (2025-03-02)
+
+### Chores
+
+* **deps:** update timbru31/ruby-node docker tag to v3.4 ([#231](https://github.com/kunalnagar/kunalnagar.in/issues/231)) ([d2ca193](https://github.com/kunalnagar/kunalnagar.in/commit/d2ca19312b75cbe6fcbbff436a684b4944f5590f))
+
 ## [2.16.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.3...v2.16.4) (2025-03-02)
 
 ### Chores
