@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.4](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.3...v2.16.4) (2025-03-02)
+
+### Chores
+
+* **deps:** update dependency jekyll to v4.4.1 ([#232](https://github.com/kunalnagar/kunalnagar.in/issues/232)) ([d05c5c2](https://github.com/kunalnagar/kunalnagar.in/commit/d05c5c2a839c2cc9f07a782cc7f32f50f5b18e56))
+
 ## [2.16.3](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.2...v2.16.3) (2025-03-01)
 
 ### Chores
