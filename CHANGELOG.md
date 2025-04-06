@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.8](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.7...v2.16.8) (2025-04-06)
+
+### Chores
+
+* **deps:** update dependency babel-loader to v10 ([#233](https://github.com/kunalnagar/kunalnagar.in/issues/233)) ([53ebb9a](https://github.com/kunalnagar/kunalnagar.in/commit/53ebb9aee1f5444d5280637a37c48f479472ea60))
+
 ## [2.16.7](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.6...v2.16.7) (2025-04-01)
 
 ### Chores
