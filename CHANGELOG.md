@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.9](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.8...v2.16.9) (2025-04-06)
+
+### Chores
+
+* **deps:** update dependency sort-package-json to v3 ([#234](https://github.com/kunalnagar/kunalnagar.in/issues/234)) ([e9589c8](https://github.com/kunalnagar/kunalnagar.in/commit/e9589c854def0787c6cdffcfc88ec36d838d7829))
+
 ## [2.16.8](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.7...v2.16.8) (2025-04-06)
 
 ### Chores
