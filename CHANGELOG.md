@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.12](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.11...v2.16.12) (2025-06-01)
+
+### Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9 ([#236](https://github.com/kunalnagar/kunalnagar.in/issues/236)) ([db86558](https://github.com/kunalnagar/kunalnagar.in/commit/db865588e9cb495c3188cf31d31f9da2fe346430))
+* **deps:** update dependency lint-staged to v16 ([#237](https://github.com/kunalnagar/kunalnagar.in/issues/237)) ([c8a6078](https://github.com/kunalnagar/kunalnagar.in/commit/c8a6078c026d23987c814b1d3c76e8d4589ebf6f))
+
 ## [2.16.11](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.10...v2.16.11) (2025-06-01)
 
 ### Chores
