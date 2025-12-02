@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.15](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.14...v2.16.15) (2025-11-03)
+
+### Chores
+
+* **deps:** update actions/checkout action to v5 ([#238](https://github.com/kunalnagar/kunalnagar.in/issues/238)) ([3e1140e](https://github.com/kunalnagar/kunalnagar.in/commit/3e1140e3183cef39965c61c410f436f4d32a1c9a))
+
 ## [2.16.14](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.13...v2.16.14) (2025-11-01)
 
 ### Chores
