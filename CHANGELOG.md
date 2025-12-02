@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.16](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.15...v2.16.16) (2025-12-02)
+
+### Chores
+
+* **deps:** update actions/setup-node action to v6 ([#239](https://github.com/kunalnagar/kunalnagar.in/issues/239)) ([2bdb639](https://github.com/kunalnagar/kunalnagar.in/commit/2bdb6397bb88b7c471a11e54071bc1f62c7e41df))
+
 ## [2.16.15](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.14...v2.16.15) (2025-11-03)
 
 ### Chores
