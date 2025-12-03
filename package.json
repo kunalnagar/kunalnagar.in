@@ -43,7 +43,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.1.0",
     "pdfkit": "0.17.1",
-    "prettier": "3.2.5",
+    "prettier": "3.7.4",
     "pretty-quick": "4.0.0",
     "semantic-release": "24.0.0",
     "sort-package-json": "3.0.0"
