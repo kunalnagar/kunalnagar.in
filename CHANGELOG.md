@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.17](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.16...v2.16.17) (2026-01-01)
+
+### Chores
+
+* **deps:** update dependency pdfkit to v0.17.2 ([3c6a49d](https://github.com/kunalnagar/kunalnagar.in/commit/3c6a49d363d3b3194aaa8910aac0375ef8319c4a))
+
 ## [2.16.16](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.15...v2.16.16) (2025-12-02)
 
 ### Chores
