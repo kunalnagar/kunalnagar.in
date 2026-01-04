@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.16.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.17...v2.16.18) (2026-01-04)
+
+### Chores
+
+* **deps:** update actions/cache action to v5 ([#240](https://github.com/kunalnagar/kunalnagar.in/issues/240)) ([86185f0](https://github.com/kunalnagar/kunalnagar.in/commit/86185f054141c7fe24b00aaf7ad3e770a4e549df))
+* **deps:** update actions/checkout action to v6 ([#241](https://github.com/kunalnagar/kunalnagar.in/issues/241)) ([73feb48](https://github.com/kunalnagar/kunalnagar.in/commit/73feb48ae201a0252cb0f841ec34aa4c07bccb51))
+
 ## [2.16.17](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.16...v2.16.17) (2026-01-01)
 
 ### Chores
