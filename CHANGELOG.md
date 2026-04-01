@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.19](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.18...v2.16.19) (2026-03-01)
+
+### Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.1.0 ([0699f3d](https://github.com/kunalnagar/kunalnagar.in/commit/0699f3d6ff96b59035ea6d96e697488b7ceb3a97))
+
 ## [2.16.18](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.17...v2.16.18) (2026-01-04)
 
 ### Chores
