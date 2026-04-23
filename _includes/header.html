@@ -1,7 +1,7 @@
 <nav>
   <ul>
-    <li><a href="/">Kunal Nagar</a></li>
-    <li><a href="/foss">Open Source</a></li>
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Kunal Nagar</a></li>
+    <li><a href="/foss" {% if page.url == "/foss" or page.url == "/foss/" %}class="active"{% endif %}>Open Source</a></li>
+    <li><a href="/blog" {% if page.url contains "/blog" %}class="active"{% endif %}>Blog</a></li>
   </ul>
 </nav>

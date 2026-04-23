@@ -9,7 +9,7 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta
       property="og:image"
-      content="https://kunalnagar.in/assets/img/post.png"
+      content="https://kunalnagar.in{{ page.image | default: '/assets/img/post.png' }}"
     />
     <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
@@ -38,7 +38,7 @@
           data-reactions-enabled="1"
           data-emit-metadata="0"
           data-input-position="top"
-          data-theme="light"
+          data-theme="preferred_color_scheme"
           data-lang="en"
           data-loading="lazy"
           crossorigin="anonymous"
