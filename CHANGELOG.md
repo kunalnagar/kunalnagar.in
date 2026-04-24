@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.16.21](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.20...v2.16.21) (2026-04-24)
+
+### Bug Fixes
+
+* remove duplicate lighthouse assertion, brittle sleep, and directory nuke ([#244](https://github.com/kunalnagar/kunalnagar.in/issues/244)) ([e72c9bf](https://github.com/kunalnagar/kunalnagar.in/commit/e72c9bf3405a41ac12d70e79b36e987c1d97b720))
+* template and stylesheet polish ([#245](https://github.com/kunalnagar/kunalnagar.in/issues/245)) ([d70b23c](https://github.com/kunalnagar/kunalnagar.in/commit/d70b23c28ea349b59bb8d556632ada75d4d861b7))
+
+### Chores
+
+* upgrade github-pages-deploy-action from v3 to v4 ([#246](https://github.com/kunalnagar/kunalnagar.in/issues/246)) ([cbf9cc0](https://github.com/kunalnagar/kunalnagar.in/commit/cbf9cc018ef40eb5a2976b0a224b7c79ed824891))
+
 ## [2.16.20](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.19...v2.16.20) (2026-04-01)
 
 ### Chores
