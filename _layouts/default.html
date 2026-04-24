@@ -7,7 +7,7 @@
     <meta name="description" content="{{ site.description }}" />
     <meta
       property="og:image"
-      content="https://kunalnagar.in/assets/img/post.png"
+      content="https://kunalnagar.in{{ page.image | default: '/assets/img/post.png' }}"
     />
     {% if page.title %} {% assign title = page.title | append: ' - ' | append:
     site.title %} {% else %} {% assign title = site.title %} {% endif %}
