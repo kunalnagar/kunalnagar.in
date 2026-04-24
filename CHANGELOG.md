@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.20](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.19...v2.16.20) (2026-04-01)
+
+### Chores
+
+* **deps:** update babel monorepo ([8ea79e4](https://github.com/kunalnagar/kunalnagar.in/commit/8ea79e48ef68c7d771b469d3d6777aefe765520c))
+
 ## [2.16.19](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.18...v2.16.19) (2026-03-01)
 
 ### Chores

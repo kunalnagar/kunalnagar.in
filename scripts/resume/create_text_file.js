@@ -18,8 +18,7 @@ EDUCATION
 
 ${generateEducationText(json.education[0])}
 `
-fs.rmSync(process.cwd() + '/assets/downloads', { recursive: true, force: true })
-fs.mkdirSync(process.cwd() + '/assets/downloads')
+fs.mkdirSync(process.cwd() + '/assets/downloads', { recursive: true })
 fs.writeFileSync(process.cwd() + json.download.txt, str)
 
 function generateSkillsText(skillsJson) {

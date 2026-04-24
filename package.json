@@ -1,6 +1,6 @@
 {
   "name": "kunalnagar.in",
-  "version": "2.16.19",
+  "version": "2.16.20",
   "description": "Personal website",
   "homepage": "https://www.kunalnagar.in",
   "repository": {
@@ -13,7 +13,7 @@
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
     "scripts:resume:create": "node scripts/resume/create_text_file.js && node scripts/resume/create_pdf_file.js",
     "dev": "bundle exec jekyll clean && npm run dev:jekyll",
-    "dev:jekyll": "sleep 5 && bundle exec jekyll serve --watch --host=0.0.0.0",
+    "dev:jekyll": "bundle exec jekyll serve --watch --host=0.0.0.0",
     "logs": "docker compose logs -f",
     "pretty-quick": "pretty-quick",
     "release": "semantic-release",
