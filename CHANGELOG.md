@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.22](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.21...v2.16.22) (2026-04-24)
+
+### Chores
+
+* **deps:** bump low-risk npm dependencies ([#247](https://github.com/kunalnagar/kunalnagar.in/issues/247)) ([34ce7eb](https://github.com/kunalnagar/kunalnagar.in/commit/34ce7eb60b5ff7c8859be2485168b6a1eb938f81))
+
 ## [2.16.21](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.20...v2.16.21) (2026-04-24)
 
 ### Bug Fixes
