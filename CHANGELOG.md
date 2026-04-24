@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.23](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.22...v2.16.23) (2026-04-24)
+
+### Chores
+
+* **deps:** upgrade prettier from 3.2.5 to 3.8.3 ([#248](https://github.com/kunalnagar/kunalnagar.in/issues/248)) ([2781df7](https://github.com/kunalnagar/kunalnagar.in/commit/2781df754194574acc8219e64734adde8ffc17e8))
+
 ## [2.16.22](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.21...v2.16.22) (2026-04-24)
 
 ### Chores
