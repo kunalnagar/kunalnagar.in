@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.24](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.23...v2.16.24) (2026-04-24)
+
+### Chores
+
+* **deps:** upgrade semantic-release from 24.0.0 to 25.0.3 ([#249](https://github.com/kunalnagar/kunalnagar.in/issues/249)) ([d6f8bc2](https://github.com/kunalnagar/kunalnagar.in/commit/d6f8bc2a0dd4f17443037bf49864dbcd8e1db004))
+
 ## [2.16.23](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.22...v2.16.23) (2026-04-24)
 
 ### Chores
