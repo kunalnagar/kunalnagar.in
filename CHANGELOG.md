@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.16.25](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.24...v2.16.25) (2026-04-25)
+
+### Bug Fixes
+
+* remove footer ([#250](https://github.com/kunalnagar/kunalnagar.in/issues/250)) ([0400602](https://github.com/kunalnagar/kunalnagar.in/commit/040060268777f11945984440ea839190f4e8d7c4))
+
 ## [2.16.24](https://github.com/kunalnagar/kunalnagar.in/compare/v2.16.23...v2.16.24) (2026-04-24)
 
 ### Chores
